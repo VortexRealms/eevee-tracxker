@@ -182,7 +182,6 @@ export function CardGrid({
                   {!owned && (
                     <span className="status-pill status-pill-missing">Missing</span>
                   )}
-                  <span className="view-art-pill">Tap to expand</span>
                 </div>
                 <div className="card-body">
                   <div className="card-title">{card.name}</div>
