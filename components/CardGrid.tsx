@@ -25,6 +25,11 @@ function getAccentClass(name: string): string {
   return "is-eevee";
 }
 
+function getEbaySearchUrl(card: PokemonCard): string {
+  const query = [card.name, card.set.name, card.set.series, card.number].join(" ");
+  return `https://www.ebay.com/sch/i.html?_nkw=${encodeURIComponent(query)}`;
+}
+
 export function CardGrid({
   cards,
   collection,
@@ -196,6 +201,14 @@ export function CardGrid({
                 </div>
               </button>
               <div className="card-action-wrap">
+                <a
+                  href={getEbaySearchUrl(card)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="card-action secondary-button ebay-button"
+                >
+                  Search eBay
+                </a>
                 <button
                   type="button"
                   onClick={() => onSetOwned(card.id, !owned)}

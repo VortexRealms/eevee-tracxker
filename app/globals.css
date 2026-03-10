@@ -614,7 +614,14 @@ input {
 }
 
 .card-action-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   padding: 0 14px 16px;
+}
+
+.ebay-button {
+  text-decoration: none;
 }
 
 .card-skeleton {
