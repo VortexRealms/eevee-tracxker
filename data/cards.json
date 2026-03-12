@@ -8028,6 +8028,30 @@
     }
   },
   {
+    "id": "svp-173",
+    "name": "Eevee",
+    "number": "173",
+    "rarity": "Promo",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "hp": "50",
+    "set": {
+      "id": "svp",
+      "name": "Scarlet & Violet Black Star Promos",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023/01/01"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/svp/173.png",
+      "large": "https://images.pokemontcg.io/svp/173_hires.png"
+    }
+  },
+  {
     "id": "swsh12pt5-13",
     "name": "Leafeon V",
     "number": "13",

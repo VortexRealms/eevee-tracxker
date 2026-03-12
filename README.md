@@ -8,9 +8,9 @@ This app **does not** call any paid APIs at runtime. Instead it uses the open
 [`PokemonTCG/pokemon-tcg-data`](https://github.com/PokemonTCG/pokemon-tcg-data)
 repository as a source of static JSON card data:
 
-- `npm run fetch:cards` downloads the JSON files from GitHub
-- Filters them down to only Eevee and the Eeveelutions
-- Writes a local snapshot to `data/cards.json`
+- `npm run fetch:cards` reads card JSON from the local `data/pokemon-tcg-data` clone
+- It filters that data down to only Eevee and the Eeveelutions
+- It writes a local snapshot to `data/cards.json`
 
 The deployed app then reads only from that local `data/cards.json` file.
 
