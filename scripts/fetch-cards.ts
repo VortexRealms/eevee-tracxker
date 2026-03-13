@@ -123,6 +123,9 @@ async function main() {
       const normalizedId = normalizeCardId(card.id);
       const setMeta = await getSetMeta(card.set.id);
 
+      // Skip Pokémon TCG Pocket cards — this app is for the physical TCG only
+      if (setMeta.serieName === "Pokémon TCG Pocket") continue;
+
       // releaseDate: TCGdex uses "YYYY-MM-DD"; normalise to "YYYY/MM/DD"
       const releaseDate = setMeta.releaseDate.replace(/-/g, "/");
 
