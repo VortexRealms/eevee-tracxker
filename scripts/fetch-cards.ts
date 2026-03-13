@@ -128,8 +128,8 @@ async function main() {
 
       const images = card.image
         ? {
-            small: card.image + ".low.webp",
-            large: card.image + ".high.png",
+            small: card.image + "/low.webp",
+            large: card.image + "/high.png",
           }
         : {
             // Fallback to PTCG CDN for cards without images
