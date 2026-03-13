@@ -8302,6 +8302,56 @@
     }
   },
   {
+    "id": "svp-175",
+    "name": "Espeon ex",
+    "number": "175",
+    "rarity": "None",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1",
+      "ex"
+    ],
+    "types": [
+      "Psychic"
+    ],
+    "hp": "270",
+    "set": {
+      "id": "svp",
+      "name": "SVP Black Star Promos",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023/03/31"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/svp-175/medium",
+      "large": "https://images.scrydex.com/pokemon/svp-175/medium"
+    }
+  },
+  {
+    "id": "svp-176",
+    "name": "Umbreon ex",
+    "number": "176",
+    "rarity": "None",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1",
+      "ex"
+    ],
+    "types": [
+      "Darkness"
+    ],
+    "hp": "280",
+    "set": {
+      "id": "svp",
+      "name": "SVP Black Star Promos",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023/03/31"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/svp-176/medium",
+      "large": "https://images.scrydex.com/pokemon/svp-176/medium"
+    }
+  },
+  {
     "id": "svp-200",
     "name": "Eevee",
     "number": "200",
