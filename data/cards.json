@@ -8028,6 +8028,150 @@
     }
   },
   {
+    "id": "svp-167",
+    "name": "Flareon",
+    "number": "167",
+    "rarity": "Promo",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "types": [
+      "Fire"
+    ],
+    "hp": "130",
+    "set": {
+      "id": "svp",
+      "name": "Scarlet & Violet Black Star Promos",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023/01/01"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/svp/167.png",
+      "large": "https://images.pokemontcg.io/svp/167_hires.png"
+    }
+  },
+  {
+    "id": "svp-168",
+    "name": "Vaporeon",
+    "number": "168",
+    "rarity": "Promo",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "types": [
+      "Water"
+    ],
+    "hp": "130",
+    "set": {
+      "id": "svp",
+      "name": "Scarlet & Violet Black Star Promos",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023/01/01"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/svp/168.png",
+      "large": "https://images.pokemontcg.io/svp/168_hires.png"
+    }
+  },
+  {
+    "id": "svp-169",
+    "name": "Jolteon",
+    "number": "169",
+    "rarity": "Promo",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "types": [
+      "Lightning"
+    ],
+    "hp": "110",
+    "set": {
+      "id": "svp",
+      "name": "Scarlet & Violet Black Star Promos",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023/01/01"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/svp/169.png",
+      "large": "https://images.pokemontcg.io/svp/169_hires.png"
+    }
+  },
+  {
+    "id": "svp-170",
+    "name": "Leafeon",
+    "number": "170",
+    "rarity": "Promo",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "types": [
+      "Grass"
+    ],
+    "hp": "120",
+    "set": {
+      "id": "svp",
+      "name": "Scarlet & Violet Black Star Promos",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023/01/01"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/svp/170.png",
+      "large": "https://images.pokemontcg.io/svp/170_hires.png"
+    }
+  },
+  {
+    "id": "svp-171",
+    "name": "Glaceon",
+    "number": "171",
+    "rarity": "Promo",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "types": [
+      "Water"
+    ],
+    "hp": "120",
+    "set": {
+      "id": "svp",
+      "name": "Scarlet & Violet Black Star Promos",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023/01/01"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/svp/171.png",
+      "large": "https://images.pokemontcg.io/svp/171_hires.png"
+    }
+  },
+  {
+    "id": "svp-172",
+    "name": "Sylveon",
+    "number": "172",
+    "rarity": "Promo",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "types": [
+      "Psychic"
+    ],
+    "hp": "120",
+    "set": {
+      "id": "svp",
+      "name": "Scarlet & Violet Black Star Promos",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023/01/01"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/svp/172.png",
+      "large": "https://images.pokemontcg.io/svp/172_hires.png"
+    }
+  },
+  {
     "id": "svp-173",
     "name": "Eevee",
     "number": "173",
@@ -8049,6 +8193,108 @@
     "images": {
       "small": "https://images.pokemontcg.io/svp/173.png",
       "large": "https://images.pokemontcg.io/svp/173_hires.png"
+    }
+  },
+  {
+    "id": "svp-174",
+    "name": "Eevee ex",
+    "number": "174",
+    "rarity": "Promo",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic",
+      "Tera",
+      "ex"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "hp": "200",
+    "set": {
+      "id": "svp",
+      "name": "Scarlet & Violet Black Star Promos",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023/01/01"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/svp/174.png",
+      "large": "https://images.pokemontcg.io/svp/174_hires.png"
+    }
+  },
+  {
+    "id": "svp-175",
+    "name": "Espeon ex",
+    "number": "175",
+    "rarity": "Promo",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1",
+      "Tera",
+      "ex"
+    ],
+    "types": [
+      "Psychic"
+    ],
+    "hp": "270",
+    "set": {
+      "id": "svp",
+      "name": "Scarlet & Violet Black Star Promos",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023/01/01"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/svp/175.png",
+      "large": "https://images.pokemontcg.io/svp/175_hires.png"
+    }
+  },
+  {
+    "id": "svp-176",
+    "name": "Umbreon ex",
+    "number": "176",
+    "rarity": "Promo",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1",
+      "Tera",
+      "ex"
+    ],
+    "types": [
+      "Darkness"
+    ],
+    "hp": "280",
+    "set": {
+      "id": "svp",
+      "name": "Scarlet & Violet Black Star Promos",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023/01/01"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/svp/176.png",
+      "large": "https://images.pokemontcg.io/svp/176_hires.png"
+    }
+  },
+  {
+    "id": "svp-200",
+    "name": "Eevee",
+    "number": "200",
+    "rarity": "Promo",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "hp": "60",
+    "set": {
+      "id": "svp",
+      "name": "Scarlet & Violet Black Star Promos",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023/01/01"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/svp/200.png",
+      "large": "https://images.pokemontcg.io/svp/200_hires.png"
     }
   },
   {
