@@ -1,0 +1,42 @@
+[
+  {
+    "id": "mcd24-9",
+    "name": "Umbreon",
+    "number": "9",
+    "rarity": "None",
+    "supertype": "Pokémon",
+    "subtypes": ["Basic"],
+    "types": ["Darkness"],
+    "hp": "110",
+    "set": {
+      "id": "mcd24",
+      "name": "McDonald's Collection 2024",
+      "series": "Other",
+      "releaseDate": "2024/01/01"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/mcd24-9/medium",
+      "large": "https://images.scrydex.com/pokemon/mcd24-9/medium"
+    }
+  },
+  {
+    "id": "mcd24-13",
+    "name": "Eevee",
+    "number": "13",
+    "rarity": "None",
+    "supertype": "Pokémon",
+    "subtypes": ["Basic"],
+    "types": ["Colorless"],
+    "hp": "50",
+    "set": {
+      "id": "mcd24",
+      "name": "McDonald's Collection 2024",
+      "series": "Other",
+      "releaseDate": "2024/01/01"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/mcd24-13/medium",
+      "large": "https://images.scrydex.com/pokemon/mcd24-13/medium"
+    }
+  }
+]

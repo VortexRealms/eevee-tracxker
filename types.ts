@@ -21,6 +21,12 @@ export interface PokemonCardImages {
   large: string;
 }
 
+export interface CardPricing {
+  usd?: number | null;
+  eur?: number | null;
+  updatedAt?: string;
+}
+
 export interface PokemonCard {
   id: string;
   name: string;
@@ -32,6 +38,7 @@ export interface PokemonCard {
   hp?: string;
   set: PokemonCardSet;
   images: PokemonCardImages;
+  pricing?: CardPricing;
 }
 
 export interface CollectionRow {

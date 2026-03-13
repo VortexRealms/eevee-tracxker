@@ -198,6 +198,20 @@ export function CardGrid({
                     <span className="set-pill">{card.set.series}</span>
                     <span className="mini-pill">{card.set.releaseDate}</span>
                   </div>
+                  {(card.pricing?.usd != null || card.pricing?.eur != null) && (
+                    <div className="price-pill-row">
+                      {card.pricing?.usd != null && (
+                        <span className="price-pill price-pill-usd">
+                          ${card.pricing.usd.toFixed(2)}
+                        </span>
+                      )}
+                      {card.pricing?.eur != null && (
+                        <span className="price-pill price-pill-eur">
+                          €{card.pricing.eur.toFixed(2)}
+                        </span>
+                      )}
+                    </div>
+                  )}
                 </div>
               </button>
               <div className="card-action-wrap">
