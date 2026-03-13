@@ -94,6 +94,20 @@ function chunk<T>(arr: T[], size: number): T[][] {
   return out;
 }
 
+async function fetchEurUsdRate(): Promise<number> {
+  const FALLBACK = 1.08;
+  try {
+    const res = await fetch("https://api.frankfurter.app/latest?from=EUR&to=USD");
+    if (!res.ok) return FALLBACK;
+    const data = (await res.json()) as { rates?: { USD?: number } };
+    const rate = data.rates?.USD;
+    return typeof rate === "number" && rate > 0 ? rate : FALLBACK;
+  } catch {
+    console.warn("  Could not fetch EUR/USD rate, using fallback 1.08");
+    return FALLBACK;
+  }
+}
+
 async function main() {
   const cardsPath = path.join(process.cwd(), "data", "cards.json");
   const raw = await fs.readFile(cardsPath, "utf8");
@@ -101,7 +115,7 @@ async function main() {
 
   console.log(`Fetching prices for ${cards.length} cards from TCGdex...`);
 
-  const prices: Record<string, PriceEntry> = {};
+  const prices: Record<string, PriceEntry | { eurUsdRate: number; ratesUpdatedAt: string }> = {};
   let found = 0;
   let skipped = 0;
 
@@ -138,10 +152,20 @@ async function main() {
     console.log("done");
   }
 
+  // Fetch EUR→USD rate and store as metadata so the UI can use it
+  process.stdout.write("\nFetching EUR/USD exchange rate... ");
+  const eurUsdRate = await fetchEurUsdRate();
+  console.log(`${eurUsdRate}`);
+
+  const output = {
+    _meta: { eurUsdRate, ratesUpdatedAt: TODAY },
+    ...prices,
+  };
+
   const outPath = path.join(process.cwd(), "data", "prices.json");
-  await fs.writeFile(outPath, JSON.stringify(prices, null, 2), "utf8");
+  await fs.writeFile(outPath, JSON.stringify(output, null, 2), "utf8");
   console.log(
-    `\nSaved prices for ${found} cards (${skipped} had no data) to ${outPath}`
+    `Saved prices for ${found} cards (${skipped} had no data) to ${outPath}`
   );
 }
 

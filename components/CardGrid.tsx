@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import type { CollectionRow, PokemonCard } from "../types";
+import { getEurUsdRate } from "../lib/cards";
 
 interface CardGridProps {
   cards: PokemonCard[];
@@ -46,14 +47,25 @@ export function CardGrid({
     [collection]
   );
 
+  const eurUsdRate = getEurUsdRate();
+
   const counts = useMemo(() => {
     let owned = 0;
+    let collectionValue = 0;
     for (const card of cards) {
       const row = collectionById.get(card.id);
-      if (row?.owned) owned += 1;
+      if (!row?.owned) continue;
+      owned += 1;
+      const usd =
+        card.pricing?.usd != null
+          ? card.pricing.usd
+          : card.pricing?.eur != null
+            ? card.pricing.eur * eurUsdRate
+            : null;
+      if (usd != null) collectionValue += usd;
     }
-    return { owned, missing: cards.length - owned };
-  }, [cards, collectionById]);
+    return { owned, missing: cards.length - owned, collectionValue };
+  }, [cards, collectionById, eurUsdRate]);
 
   const searchTokens = useMemo(
     () =>
@@ -104,6 +116,10 @@ export function CardGrid({
             <div className="stat-pill is-missing">
               <span>{counts.missing}</span>
               <small>missing</small>
+            </div>
+            <div className="stat-pill is-value">
+              <span>${counts.collectionValue.toFixed(2)}</span>
+              <small>est. value</small>
             </div>
           </div>
         </div>

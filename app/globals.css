@@ -357,6 +357,14 @@ input {
   background: linear-gradient(135deg, rgba(173, 125, 76, 0.24), rgba(86, 53, 30, 0.14));
 }
 
+.stat-pill.is-value {
+  background: linear-gradient(135deg, rgba(251, 191, 36, 0.18), rgba(120, 83, 10, 0.14));
+}
+
+.stat-pill.is-value span {
+  color: #fbbf24;
+}
+
 .sticky-toolbar {
   position: relative;
   z-index: 1;

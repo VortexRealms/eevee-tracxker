@@ -1,4 +1,8 @@
 {
+  "_meta": {
+    "eurUsdRate": 1.1476,
+    "ratesUpdatedAt": "2026-03-13"
+  },
   "base2-3": {
     "usd": 163.71,
     "eur": 55.98,

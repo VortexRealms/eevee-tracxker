@@ -18,6 +18,14 @@ export function getAllCards(): PokemonCard[] {
   });
 }
 
+/** Returns the EUR→USD exchange rate stored in prices.json, with a safe fallback. */
+export function getEurUsdRate(): number {
+  const meta = (pricesData as any)._meta;
+  return typeof meta?.eurUsdRate === "number" && meta.eurUsdRate > 0
+    ? meta.eurUsdRate
+    : 1.08;
+}
+
 export function mergeCardsWithCollection(
   cards: PokemonCard[],
   collection: CollectionRow[]
