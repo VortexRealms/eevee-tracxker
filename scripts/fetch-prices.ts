@@ -42,9 +42,14 @@ interface TcgdexCardPricing {
     low?: number;
     trend?: number;
     "avg-holo"?: number;
+    "low-holo"?: number;
+    "trend-holo"?: number;
     avg1?: number;
     avg7?: number;
     avg30?: number;
+    "avg1-holo"?: number;
+    "avg7-holo"?: number;
+    "avg30-holo"?: number;
   };
 }
 
@@ -69,10 +74,19 @@ function extractUsd(tcgplayer: TcgdexCardPricing["tcgplayer"]): number | null {
   return typeof price === "number" ? price : null;
 }
 
-/** Best EUR price: prefer holo average > regular average. */
+/** Best EUR price: walk fallback chain from current holo → current avg → recent time windows. */
 function extractEur(cardmarket: TcgdexCardPricing["cardmarket"]): number | null {
   if (!cardmarket) return null;
-  const price = cardmarket["avg-holo"] ?? cardmarket.avg ?? null;
+  const price =
+    cardmarket["avg-holo"] ??
+    cardmarket.avg ??
+    cardmarket["avg1-holo"] ??
+    cardmarket.avg1 ??
+    cardmarket["avg7-holo"] ??
+    cardmarket.avg7 ??
+    cardmarket["avg30-holo"] ??
+    cardmarket.avg30 ??
+    null;
   return typeof price === "number" ? price : null;
 }
 
