@@ -8613,6 +8613,54 @@
     }
   },
   {
+    "id": "mcd24-9",
+    "name": "Umbreon",
+    "number": "9",
+    "rarity": "None",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Darkness"
+    ],
+    "hp": "110",
+    "set": {
+      "id": "mcd24",
+      "name": "McDonald's Collection 2024",
+      "series": "Other",
+      "releaseDate": "2024/01/01"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/mcd24/9.png",
+      "large": "https://images.pokemontcg.io/mcd24/9_hires.png"
+    }
+  },
+  {
+    "id": "mcd24-13",
+    "name": "Eevee",
+    "number": "13",
+    "rarity": "None",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "hp": "50",
+    "set": {
+      "id": "mcd24",
+      "name": "McDonald's Collection 2024",
+      "series": "Other",
+      "releaseDate": "2024/01/01"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/mcd24/13.png",
+      "large": "https://images.pokemontcg.io/mcd24/13_hires.png"
+    }
+  },
+  {
     "id": "sv6-11",
     "name": "Leafeon",
     "number": "11",
