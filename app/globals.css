@@ -658,8 +658,21 @@ input {
   padding: 0 14px 16px;
 }
 
-.ebay-button {
+.search-buttons-row {
+  display: flex;
+  gap: 6px;
+}
+
+.search-button {
+  flex: 1;
+  min-height: 38px;
+  padding: 0 6px;
+  font-size: 0.78rem;
   text-decoration: none;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-skeleton {

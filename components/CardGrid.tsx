@@ -31,6 +31,16 @@ function getEbaySearchUrl(card: PokemonCard): string {
   return `https://www.ebay.com/sch/i.html?_nkw=${encodeURIComponent(query)}`;
 }
 
+function getTcgPlayerSearchUrl(card: PokemonCard): string {
+  const query = [card.name, card.number, card.set.name].join(" ");
+  return `https://www.tcgplayer.com/search/pokemon/product?productLineName=pokemon&q=${encodeURIComponent(query)}`;
+}
+
+function getCardmarketSearchUrl(card: PokemonCard): string {
+  const query = [card.name, card.number, card.set.name].join(" ");
+  return `https://www.cardmarket.com/en/Pokemon/Products/Search?searchString=${encodeURIComponent(query)}`;
+}
+
 export function CardGrid({
   cards,
   collection,
@@ -231,14 +241,32 @@ export function CardGrid({
                 </div>
               </button>
               <div className="card-action-wrap">
-                <a
-                  href={getEbaySearchUrl(card)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="card-action secondary-button ebay-button"
-                >
-                  Search eBay
-                </a>
+                <div className="search-buttons-row">
+                  <a
+                    href={getEbaySearchUrl(card)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="secondary-button search-button"
+                  >
+                    eBay
+                  </a>
+                  <a
+                    href={getTcgPlayerSearchUrl(card)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="secondary-button search-button"
+                  >
+                    TCGplayer
+                  </a>
+                  <a
+                    href={getCardmarketSearchUrl(card)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="secondary-button search-button"
+                  >
+                    Cardmarket
+                  </a>
+                </div>
                 <button
                   type="button"
                   onClick={() => onSetOwned(card.id, !owned)}
