@@ -37,7 +37,11 @@ function getTcgPlayerSearchUrl(card: PokemonCard): string {
 }
 
 function getCardmarketSearchUrl(card: PokemonCard): string {
-  return `https://www.cardmarket.com/en/Pokemon/Products/Search?searchMode=v2&idCategory=0&searchString=${encodeURIComponent(card.name)}&idRarity=0`;
+  const paddedNumber = /^\d+$/.test(card.number)
+    ? card.number.padStart(3, "0")
+    : card.number;
+  const query = `${card.name} ${paddedNumber}`;
+  return `https://www.cardmarket.com/en/Pokemon/Products/Search?searchMode=v2&idCategory=0&searchString=${encodeURIComponent(query)}&idRarity=0`;
 }
 
 export function CardGrid({
