@@ -1,4 +1,35 @@
 {
   "svp-173": { "eur": 11.95 , "usd": 11.66 },
-  "mcd24-9": { "eur": 0.03 , "usd": 0.56 }
+  "mcd24-9": { "eur": 0.03 , "usd": 0.56 },
+  "sv3pt5-133": {
+    "variants": {
+      "normal": { "usd": 0.20 }
+    }
+  },
+  "sv7-113": {
+    "variants": {
+      "normal": { "usd": 0.27 }
+    }
+  },
+  "sv8pt5-22": {
+    "variants": {
+      "holo": { "usd": 0.24 }
+    }
+  },
+  "sv8pt5-33": {
+    "variants": {
+      "holo": { "usd": 0.32 }
+    }
+  },
+  "sv8pt5-40": {
+    "variants": {
+      "holo": { "usd": 0.33 }
+    }
+  },
+  "sv8pt5-74": {
+    "variants": {
+      "normal": { "usd": 0.20 },
+      "reverse": { "usd": 0.28 }
+    }
+  }
 }
