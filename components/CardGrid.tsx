@@ -1,12 +1,27 @@
 import { useMemo, useState } from "react";
 import type { CollectionRow, PokemonCard } from "../types";
-import { getEurUsdRate } from "../lib/cards";
+import { getEurUsdRate, getPriceForCard, parseCardIdAndVariant } from "../lib/cards";
+import { VariantPickerModal } from "./VariantPickerModal";
+
+const VARIANT_LABELS: Record<string, string> = {
+  normal: "Normal",
+  reverse: "Reverse Holofoil",
+  holo: "Holofoil",
+  firstEdition: "1st Edition",
+  wPromo: "W Promo"
+};
+
+const VARIANT_SORT_ORDER = ["normal", "reverse", "holo", "firstEdition", "wPromo"];
+
+function getVariantLabel(variant: string): string {
+  return VARIANT_LABELS[variant] ?? variant.charAt(0).toUpperCase() + variant.slice(1);
+}
 
 interface CardGridProps {
   cards: PokemonCard[];
   collection: CollectionRow[];
   onCardClick: (cardId: string) => void;
-  onSetOwned: (cardId: string, owned: boolean) => void;
+  onSetOwned: (cardId: string, variant: string, owned: boolean) => void;
   isLoading: boolean;
   updatingCardId: string | null;
 }
@@ -54,31 +69,60 @@ export function CardGrid({
 }: CardGridProps) {
   const [search, setSearch] = useState("");
   const [filter, setFilter] = useState<FilterValue>("all");
-
-  const collectionById = useMemo(
-    () => new Map(collection.map((row) => [row.cardId, row])),
-    [collection]
-  );
+  const [variantPickerCard, setVariantPickerCard] = useState<PokemonCard | null>(null);
 
   const eurUsdRate = getEurUsdRate();
 
-  const counts = useMemo(() => {
-    let owned = 0;
-    let collectionValue = 0;
-    for (const card of cards) {
-      const row = collectionById.get(card.id);
-      if (!row?.owned) continue;
-      owned += 1;
-      const usd =
-        card.pricing?.usd != null
-          ? card.pricing.usd
-          : card.pricing?.eur != null
-            ? card.pricing.eur * eurUsdRate
-            : null;
-      if (usd != null) collectionValue += usd;
+  const hasAnyOwnedVariant = useMemo(() => {
+    const set = new Set<string>();
+    for (const row of collection) {
+      if (!row.owned) continue;
+      const { cardId } = parseCardIdAndVariant(row.cardId);
+      set.add(cardId);
     }
-    return { owned, missing: cards.length - owned, collectionValue };
-  }, [cards, collectionById, eurUsdRate]);
+    return (cardId: string) => set.has(cardId);
+  }, [collection]);
+
+  const ownedEntries = useMemo(() => {
+    const entries = collection
+      .filter((row) => row.owned)
+      .map((row) => {
+        const { cardId, variant } = parseCardIdAndVariant(row.cardId);
+        const card = cards.find((c) => c.id === cardId);
+        return card ? { card, variant, row } : null;
+      })
+      .filter((x): x is { card: PokemonCard; variant: string; row: CollectionRow } => x != null);
+
+    const cardIndexMap = new Map(cards.map((c, i) => [c.id, i]));
+    return [...entries].sort((a, b) => {
+      const idxA = cardIndexMap.get(a.card.id) ?? 9999;
+      const idxB = cardIndexMap.get(b.card.id) ?? 9999;
+      if (idxA !== idxB) return idxA - idxB;
+      const vA = VARIANT_SORT_ORDER.indexOf(a.variant);
+      const vB = VARIANT_SORT_ORDER.indexOf(b.variant);
+      return (vA >= 0 ? vA : 999) - (vB >= 0 ? vB : 999);
+    });
+  }, [collection, cards]);
+
+  const counts = useMemo(() => {
+    let collectionValue = 0;
+    const ownedCardIds = new Set<string>();
+    for (const row of collection) {
+      if (!row.owned) continue;
+      const { cardId, variant } = parseCardIdAndVariant(row.cardId);
+      ownedCardIds.add(cardId);
+      const card = cards.find((c) => c.id === cardId);
+      if (card) {
+        const price = getPriceForCard(card, variant);
+        const usd =
+          price.usd != null ? price.usd : price.eur != null ? price.eur * eurUsdRate : null;
+        if (usd != null) collectionValue += usd;
+      }
+    }
+    const owned = ownedCardIds.size;
+    const missing = cards.filter((c) => !ownedCardIds.has(c.id)).length;
+    return { owned, missing, collectionValue };
+  }, [cards, collection, eurUsdRate]);
 
   const searchTokens = useMemo(
     () =>
@@ -90,10 +134,9 @@ export function CardGrid({
     [search]
   );
 
-  const filtered = useMemo(() => {
+  const filteredCards = useMemo(() => {
     return cards.filter((card) => {
-      const row = collectionById.get(card.id);
-      const owned = row?.owned ?? false;
+      const owned = hasAnyOwnedVariant(card.id);
 
       if (filter === "owned" && !owned) return false;
       if (filter === "missing" && owned) return false;
@@ -110,7 +153,22 @@ export function CardGrid({
 
       return searchTokens.every((token) => haystack.includes(token));
     });
-  }, [cards, collectionById, filter, searchTokens]);
+  }, [cards, hasAnyOwnedVariant, filter, searchTokens]);
+
+  const filteredOwned = useMemo(() => {
+    return ownedEntries.filter(({ card }) => {
+      if (searchTokens.length === 0) return true;
+      const haystack = [
+        card.name,
+        card.set.name,
+        card.set.series,
+        card.number
+      ]
+        .join(" ")
+        .toLowerCase();
+      return searchTokens.every((token) => haystack.includes(token));
+    });
+  }, [ownedEntries, searchTokens]);
 
   return (
     <div className="collection-layout">
@@ -122,13 +180,13 @@ export function CardGrid({
               <span>{cards.length}</span>
               <small>total</small>
             </div>
-            <div className="stat-pill is-owned">
-              <span>{counts.owned}</span>
-              <small>owned</small>
-            </div>
             <div className="stat-pill is-missing">
               <span>{counts.missing}</span>
               <small>missing</small>
+            </div>
+            <div className="stat-pill is-owned">
+              <span>{counts.owned}</span>
+              <small>owned</small>
             </div>
             <div className="stat-pill is-value">
               <span>${counts.collectionValue.toFixed(2)}</span>
@@ -178,115 +236,234 @@ export function CardGrid({
             </div>
           ))}
         </div>
-      ) : filtered.length === 0 ? (
+      ) : (filter === "owned" ? filteredOwned : filteredCards).length === 0 ? (
         <div className="empty-state">
           <div className="empty-state-orb" />
           <h2>No matching cards</h2>
           <p>Try a different search, or switch back to the full collection view.</p>
         </div>
-      ) : (
+      ) : filter === "owned" ? (
         <div className="collection-grid">
-          {filtered.map((card) => {
-          const row = collectionById.get(card.id);
-          const owned = row?.owned ?? false;
+          {filteredOwned.map(({ card, variant, row }) => {
+            const compositeKey = row.cardId;
+            const isUpdating = updatingCardId === compositeKey;
 
-          return (
-            <div
-              key={card.id}
-              className={`card-tile ${getAccentClass(card.name)}`}
-            >
-              <button
-                type="button"
-                className="card-open-region"
-                onClick={() => onCardClick(card.id)}
+            return (
+              <div
+                key={compositeKey}
+                className={`card-tile ${getAccentClass(card.name)}`}
               >
-                <div className="card-media-button">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={card.images.small}
-                    alt={card.name}
-                    className="card-image"
-                    loading="lazy"
-                  />
-                  {owned && (
-                    <span className="status-pill status-pill-owned">
-                      Owned
-                    </span>
-                  )}
-                  {!owned && (
-                    <span className="status-pill status-pill-missing">Missing</span>
-                  )}
-                </div>
-                <div className="card-body">
-                  <div className="card-title">{card.name}</div>
-                  <div className="card-subtitle-row">
-                    <span className="card-setname">{card.set.name}</span>
-                    <span className="card-number">#{card.number}</span>
-                  </div>
-                  <div className="card-meta-row">
-                    <span className="set-pill">{card.set.series}</span>
-                    <span className="mini-pill">{card.set.releaseDate}</span>
-                  </div>
-                  {(card.pricing?.usd != null || card.pricing?.eur != null) && (
-                    <div className="price-pill-row">
-                      {card.pricing?.usd != null && (
-                        <span className="price-pill price-pill-usd">
-                          ${card.pricing.usd.toFixed(2)}
-                        </span>
-                      )}
-                      {card.pricing?.eur != null && (
-                        <span className="price-pill price-pill-eur">
-                          €{card.pricing.eur.toFixed(2)}
-                        </span>
-                      )}
-                    </div>
-                  )}
-                </div>
-              </button>
-              <div className="card-action-wrap">
-                <div className="search-buttons-row">
-                  <a
-                    href={getEbaySearchUrl(card)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="secondary-button search-button"
-                  >
-                    eBay
-                  </a>
-                  <a
-                    href={getTcgPlayerSearchUrl(card)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="secondary-button search-button"
-                  >
-                    TCGplayer
-                  </a>
-                  <a
-                    href={getCardmarketSearchUrl(card)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="secondary-button search-button"
-                  >
-                    Cardmarket
-                  </a>
-                </div>
                 <button
                   type="button"
-                  onClick={() => onSetOwned(card.id, !owned)}
-                  className={`card-action ${owned ? "secondary-button danger-button" : "primary-button"}`}
-                  disabled={updatingCardId === card.id}
+                  className="card-open-region"
+                  onClick={() => onCardClick(card.id)}
                 >
-                  {updatingCardId === card.id
-                    ? "Saving..."
-                    : owned
-                      ? "Remove from collection"
-                      : "Add to collection"}
+                  <div className="card-media-button">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={card.images.small}
+                      alt={card.name}
+                      className="card-image"
+                      loading="lazy"
+                    />
+                    <span className="status-pill status-pill-owned">Owned</span>
+                  </div>
+                  <div className="card-body">
+                    <div className="card-title">{card.name}</div>
+                    <div className="card-subtitle-row">
+                      <span className="card-setname">{card.set.name}</span>
+                      <span className="card-number">#{card.number}</span>
+                    </div>
+                    <div className="card-meta-row">
+                      <span className="set-pill">{card.set.series}</span>
+                      <span className="variant-capsule">{getVariantLabel(variant)}</span>
+                      <span className="mini-pill">{card.set.releaseDate}</span>
+                    </div>
+                    {(() => {
+                      const price = getPriceForCard(card, variant);
+                      if (price.usd == null && price.eur == null) return null;
+                      return (
+                        <div className="price-pill-row">
+                          {price.usd != null && (
+                            <span className="price-pill price-pill-usd">
+                              ${price.usd.toFixed(2)}
+                            </span>
+                          )}
+                          {price.eur != null && (
+                            <span className="price-pill price-pill-eur">
+                              €{price.eur.toFixed(2)}
+                            </span>
+                          )}
+                        </div>
+                      );
+                    })()}
+                  </div>
                 </button>
+                <div className="card-action-wrap">
+                  <div className="search-buttons-row">
+                    <a
+                      href={getEbaySearchUrl(card)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="secondary-button search-button"
+                    >
+                      eBay
+                    </a>
+                    <a
+                      href={getTcgPlayerSearchUrl(card)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="secondary-button search-button"
+                    >
+                      TCGplayer
+                    </a>
+                    <a
+                      href={getCardmarketSearchUrl(card)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="secondary-button search-button"
+                    >
+                      Cardmarket
+                    </a>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => onSetOwned(card.id, variant, false)}
+                    className="card-action secondary-button danger-button"
+                    disabled={isUpdating}
+                  >
+                    {isUpdating ? "Saving..." : "Remove from collection"}
+                  </button>
+                </div>
               </div>
-            </div>
-          );
+            );
           })}
         </div>
+      ) : (
+        <div className="collection-grid">
+          {filteredCards.map((card) => {
+            const owned = hasAnyOwnedVariant(card.id);
+            const variants = card.variants ?? ["normal"];
+            const hasMultipleVariants = variants.length > 1;
+            const isUpdating = hasMultipleVariants
+              ? variants.some((v) => updatingCardId === `${card.id}:${v}`)
+              : updatingCardId === card.id;
+
+            const handleAdd = () => {
+              if (hasMultipleVariants) {
+                setVariantPickerCard(card);
+              } else {
+                onSetOwned(card.id, variants[0], true);
+              }
+            };
+
+            return (
+              <div
+                key={card.id}
+                className={`card-tile ${getAccentClass(card.name)}`}
+              >
+                <button
+                  type="button"
+                  className="card-open-region"
+                  onClick={() => onCardClick(card.id)}
+                >
+                  <div className="card-media-button">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={card.images.small}
+                      alt={card.name}
+                      className="card-image"
+                      loading="lazy"
+                    />
+                    {owned && (
+                      <span className="status-pill status-pill-owned">Owned</span>
+                    )}
+                    {!owned && (
+                      <span className="status-pill status-pill-missing">Missing</span>
+                    )}
+                  </div>
+                  <div className="card-body">
+                    <div className="card-title">{card.name}</div>
+                    <div className="card-subtitle-row">
+                      <span className="card-setname">{card.set.name}</span>
+                      <span className="card-number">#{card.number}</span>
+                    </div>
+                    <div className="card-meta-row">
+                      <span className="set-pill">{card.set.series}</span>
+                      <span className="mini-pill">{card.set.releaseDate}</span>
+                    </div>
+                    {(() => {
+                      const price = getPriceForCard(card);
+                      if (price.usd == null && price.eur == null) return null;
+                      return (
+                        <div className="price-pill-row">
+                          {price.usd != null && (
+                            <span className="price-pill price-pill-usd">
+                              ${price.usd.toFixed(2)}
+                            </span>
+                          )}
+                          {price.eur != null && (
+                            <span className="price-pill price-pill-eur">
+                              €{price.eur.toFixed(2)}
+                            </span>
+                          )}
+                        </div>
+                      );
+                    })()}
+                  </div>
+                </button>
+                <div className="card-action-wrap">
+                  <div className="search-buttons-row">
+                    <a
+                      href={getEbaySearchUrl(card)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="secondary-button search-button"
+                    >
+                      eBay
+                    </a>
+                    <a
+                      href={getTcgPlayerSearchUrl(card)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="secondary-button search-button"
+                    >
+                      TCGplayer
+                    </a>
+                    <a
+                      href={getCardmarketSearchUrl(card)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="secondary-button search-button"
+                    >
+                      Cardmarket
+                    </a>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={handleAdd}
+                    className="card-action primary-button"
+                    disabled={isUpdating}
+                  >
+                    {isUpdating ? "Saving..." : "Add to collection"}
+                  </button>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      )}
+
+      {variantPickerCard && (
+        <VariantPickerModal
+          card={variantPickerCard}
+          variants={variantPickerCard.variants ?? ["normal"]}
+          onSelect={(variant) => {
+            onSetOwned(variantPickerCard.id, variant, true);
+            setVariantPickerCard(null);
+          }}
+          onClose={() => setVariantPickerCard(null)}
+        />
       )}
     </div>
   );

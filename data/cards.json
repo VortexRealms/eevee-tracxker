@@ -21,7 +21,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/base/base2/3/low.webp",
       "large": "https://assets.tcgdex.net/en/base/base2/3/high.png"
-    }
+    },
+    "variants": [
+      "holo",
+      "firstEdition"
+    ]
   },
   {
     "id": "base2-4",
@@ -45,7 +49,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/base/base2/4/low.webp",
       "large": "https://assets.tcgdex.net/en/base/base2/4/high.png"
-    }
+    },
+    "variants": [
+      "holo",
+      "firstEdition"
+    ]
   },
   {
     "id": "base2-12",
@@ -69,7 +77,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/base/base2/12/low.webp",
       "large": "https://assets.tcgdex.net/en/base/base2/12/high.png"
-    }
+    },
+    "variants": [
+      "holo",
+      "firstEdition"
+    ]
   },
   {
     "id": "base2-19",
@@ -93,7 +105,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/base/base2/19/low.webp",
       "large": "https://assets.tcgdex.net/en/base/base2/19/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "firstEdition"
+    ]
   },
   {
     "id": "base2-20",
@@ -117,7 +133,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/base/base2/20/low.webp",
       "large": "https://assets.tcgdex.net/en/base/base2/20/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "firstEdition"
+    ]
   },
   {
     "id": "base2-28",
@@ -141,7 +161,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/base/base2/28/low.webp",
       "large": "https://assets.tcgdex.net/en/base/base2/28/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "firstEdition"
+    ]
   },
   {
     "id": "base2-51",
@@ -165,7 +189,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/base/base2/51/low.webp",
       "large": "https://assets.tcgdex.net/en/base/base2/51/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "firstEdition"
+    ]
   },
   {
     "id": "basep-11",
@@ -189,7 +217,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/base/basep/11/low.webp",
       "large": "https://assets.tcgdex.net/en/base/basep/11/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "holo"
+    ]
   },
   {
     "id": "base5-35",
@@ -213,7 +245,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/base/base5/35/low.webp",
       "large": "https://assets.tcgdex.net/en/base/base5/35/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "firstEdition"
+    ]
   },
   {
     "id": "base5-38",
@@ -237,7 +273,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/base/base5/38/low.webp",
       "large": "https://assets.tcgdex.net/en/base/base5/38/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "firstEdition"
+    ]
   },
   {
     "id": "base5-45",
@@ -261,7 +301,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/base/base5/45/low.webp",
       "large": "https://assets.tcgdex.net/en/base/base5/45/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "firstEdition"
+    ]
   },
   {
     "id": "base5-55",
@@ -285,7 +329,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/base/base5/55/low.webp",
       "large": "https://assets.tcgdex.net/en/base/base5/55/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "firstEdition"
+    ]
   },
   {
     "id": "gym2-28",
@@ -309,7 +357,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/gym/gym2/28/low.webp",
       "large": "https://assets.tcgdex.net/en/gym/gym2/28/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "firstEdition"
+    ]
   },
   {
     "id": "gym2-51",
@@ -333,7 +385,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/gym/gym2/51/low.webp",
       "large": "https://assets.tcgdex.net/en/gym/gym2/51/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "firstEdition"
+    ]
   },
   {
     "id": "neo2-1",
@@ -357,7 +413,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/neo/neo2/1/low.webp",
       "large": "https://assets.tcgdex.net/en/neo/neo2/1/high.png"
-    }
+    },
+    "variants": [
+      "holo",
+      "firstEdition"
+    ]
   },
   {
     "id": "neo2-13",
@@ -381,7 +441,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/neo/neo2/13/low.webp",
       "large": "https://assets.tcgdex.net/en/neo/neo2/13/high.png"
-    }
+    },
+    "variants": [
+      "holo",
+      "firstEdition"
+    ]
   },
   {
     "id": "neo2-20",
@@ -405,7 +469,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/neo/neo2/20/low.webp",
       "large": "https://assets.tcgdex.net/en/neo/neo2/20/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "firstEdition"
+    ]
   },
   {
     "id": "neo2-32",
@@ -429,7 +497,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/neo/neo2/32/low.webp",
       "large": "https://assets.tcgdex.net/en/neo/neo2/32/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "firstEdition"
+    ]
   },
   {
     "id": "neo2-38",
@@ -453,7 +525,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/neo/neo2/38/low.webp",
       "large": "https://assets.tcgdex.net/en/neo/neo2/38/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "firstEdition"
+    ]
   },
   {
     "id": "neo4-4",
@@ -477,7 +553,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/neo/neo4/4/low.webp",
       "large": "https://assets.tcgdex.net/en/neo/neo4/4/high.png"
-    }
+    },
+    "variants": [
+      "holo",
+      "firstEdition"
+    ]
   },
   {
     "id": "neo4-46",
@@ -501,7 +581,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/neo/neo4/46/low.webp",
       "large": "https://assets.tcgdex.net/en/neo/neo4/46/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "firstEdition"
+    ]
   },
   {
     "id": "neo4-48",
@@ -525,7 +609,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/neo/neo4/48/low.webp",
       "large": "https://assets.tcgdex.net/en/neo/neo4/48/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "firstEdition"
+    ]
   },
   {
     "id": "neo4-52",
@@ -549,7 +637,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/neo/neo4/52/low.webp",
       "large": "https://assets.tcgdex.net/en/neo/neo4/52/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "firstEdition"
+    ]
   },
   {
     "id": "lc-9",
@@ -573,7 +665,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/lc/lc/9/low.webp",
       "large": "https://assets.tcgdex.net/en/lc/lc/9/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "lc-10",
@@ -597,7 +693,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/lc/lc/10/low.webp",
       "large": "https://assets.tcgdex.net/en/lc/lc/10/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "lc-14",
@@ -621,7 +721,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/lc/lc/14/low.webp",
       "large": "https://assets.tcgdex.net/en/lc/lc/14/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "lc-74",
@@ -645,7 +749,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/lc/lc/74/low.webp",
       "large": "https://assets.tcgdex.net/en/lc/lc/74/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "ecard2-11",
@@ -669,7 +777,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/ecard/ecard2/11/low.webp",
       "large": "https://assets.tcgdex.net/en/ecard/ecard2/11/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "ecard2-41",
@@ -693,7 +805,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/ecard/ecard2/41/low.webp",
       "large": "https://assets.tcgdex.net/en/ecard/ecard2/41/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "ecard2-75",
@@ -717,7 +833,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/ecard/ecard2/75/low.webp",
       "large": "https://assets.tcgdex.net/en/ecard/ecard2/75/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "ecard2-H09",
@@ -741,7 +861,10 @@
     "images": {
       "small": "https://images.pokemontcg.io/ecard2/H09.png",
       "large": "https://images.pokemontcg.io/ecard2/H09_hires.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "ecard2-H29",
@@ -765,7 +888,10 @@
     "images": {
       "small": "https://images.pokemontcg.io/ecard2/H29.png",
       "large": "https://images.pokemontcg.io/ecard2/H29_hires.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "ecard3-8",
@@ -789,7 +915,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/ecard/ecard3/8/low.webp",
       "large": "https://assets.tcgdex.net/en/ecard/ecard3/8/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "ecard3-13",
@@ -813,7 +943,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/ecard/ecard3/13/low.webp",
       "large": "https://assets.tcgdex.net/en/ecard/ecard3/13/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "ecard3-32",
@@ -837,7 +971,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/ecard/ecard3/32/low.webp",
       "large": "https://assets.tcgdex.net/en/ecard/ecard3/32/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "ecard3-33",
@@ -861,7 +999,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/ecard/ecard3/33/low.webp",
       "large": "https://assets.tcgdex.net/en/ecard/ecard3/33/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "ecard3-54",
@@ -885,7 +1027,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/ecard/ecard3/54/low.webp",
       "large": "https://assets.tcgdex.net/en/ecard/ecard3/54/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "ecard3-H07",
@@ -909,7 +1055,10 @@
     "images": {
       "small": "https://images.pokemontcg.io/ecard3/H07.png",
       "large": "https://images.pokemontcg.io/ecard3/H07_hires.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "ecard3-H12",
@@ -933,7 +1082,10 @@
     "images": {
       "small": "https://images.pokemontcg.io/ecard3/H12.png",
       "large": "https://images.pokemontcg.io/ecard3/H12_hires.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "ecard3-H30",
@@ -957,7 +1109,10 @@
     "images": {
       "small": "https://images.pokemontcg.io/ecard3/H30.png",
       "large": "https://images.pokemontcg.io/ecard3/H30_hires.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "ecard3-H31",
@@ -981,7 +1136,10 @@
     "images": {
       "small": "https://images.pokemontcg.io/ecard3/H31.png",
       "large": "https://images.pokemontcg.io/ecard3/H31_hires.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "ex2-5",
@@ -1005,7 +1163,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/ex/ex2/5/low.webp",
       "large": "https://assets.tcgdex.net/en/ex/ex2/5/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "ex2-6",
@@ -1029,7 +1191,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/ex/ex2/6/low.webp",
       "large": "https://assets.tcgdex.net/en/ex/ex2/6/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "ex2-16",
@@ -1053,7 +1219,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/ex/ex2/16/low.webp",
       "large": "https://assets.tcgdex.net/en/ex/ex2/16/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "ex2-24",
@@ -1077,7 +1247,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/ex/ex2/24/low.webp",
       "large": "https://assets.tcgdex.net/en/ex/ex2/24/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "ex2-25",
@@ -1101,7 +1275,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/ex/ex2/25/low.webp",
       "large": "https://assets.tcgdex.net/en/ex/ex2/25/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "ex2-63",
@@ -1125,7 +1303,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/ex/ex2/63/low.webp",
       "large": "https://assets.tcgdex.net/en/ex/ex2/63/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "ex10-5",
@@ -1149,7 +1331,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/ex/ex10/5/low.webp",
       "large": "https://assets.tcgdex.net/en/ex/ex10/5/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "ex10-8",
@@ -1173,7 +1358,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/ex/ex10/8/low.webp",
       "large": "https://assets.tcgdex.net/en/ex/ex10/8/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "ex10-19",
@@ -1197,7 +1385,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/ex/ex10/19/low.webp",
       "large": "https://assets.tcgdex.net/en/ex/ex10/19/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "ex10-55",
@@ -1221,7 +1412,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/ex/ex10/55/low.webp",
       "large": "https://assets.tcgdex.net/en/ex/ex10/55/high.png"
-    }
+    },
+    "variants": [
+      "normal"
+    ]
   },
   {
     "id": "ex10-102",
@@ -1245,7 +1439,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/ex/ex10/102/low.webp",
       "large": "https://assets.tcgdex.net/en/ex/ex10/102/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "ex10-112",
@@ -1269,7 +1466,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/ex/ex10/112/low.webp",
       "large": "https://assets.tcgdex.net/en/ex/ex10/112/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "ex11-4",
@@ -1294,7 +1494,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/ex/ex11/4/low.webp",
       "large": "https://assets.tcgdex.net/en/ex/ex11/4/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "ex11-5",
@@ -1319,7 +1522,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/ex/ex11/5/low.webp",
       "large": "https://assets.tcgdex.net/en/ex/ex11/5/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "ex11-7",
@@ -1344,7 +1550,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/ex/ex11/7/low.webp",
       "large": "https://assets.tcgdex.net/en/ex/ex11/7/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "ex11-17",
@@ -1369,7 +1578,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/ex/ex11/17/low.webp",
       "large": "https://assets.tcgdex.net/en/ex/ex11/17/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "ex11-18",
@@ -1394,7 +1606,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/ex/ex11/18/low.webp",
       "large": "https://assets.tcgdex.net/en/ex/ex11/18/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "ex11-68",
@@ -1418,7 +1633,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/ex/ex11/68/low.webp",
       "large": "https://assets.tcgdex.net/en/ex/ex11/68/high.png"
-    }
+    },
+    "variants": [
+      "normal"
+    ]
   },
   {
     "id": "ex11-69",
@@ -1442,7 +1660,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/ex/ex11/69/low.webp",
       "large": "https://assets.tcgdex.net/en/ex/ex11/69/high.png"
-    }
+    },
+    "variants": [
+      "normal"
+    ]
   },
   {
     "id": "ex11-108",
@@ -1466,7 +1687,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/ex/ex11/108/low.webp",
       "large": "https://assets.tcgdex.net/en/ex/ex11/108/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "ex11-109",
@@ -1490,7 +1714,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/ex/ex11/109/low.webp",
       "large": "https://assets.tcgdex.net/en/ex/ex11/109/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "ex11-110",
@@ -1514,7 +1741,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/ex/ex11/110/low.webp",
       "large": "https://assets.tcgdex.net/en/ex/ex11/110/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "pop3-2",
@@ -1538,7 +1768,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/pop/pop3/2/low.webp",
       "large": "https://assets.tcgdex.net/en/pop/pop3/2/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "pop3-3",
@@ -1562,7 +1795,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/pop/pop3/3/low.webp",
       "large": "https://assets.tcgdex.net/en/pop/pop3/3/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "pop3-6",
@@ -1586,7 +1822,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/pop/pop3/6/low.webp",
       "large": "https://assets.tcgdex.net/en/pop/pop3/6/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "holo"
+    ]
   },
   {
     "id": "pop3-13",
@@ -1610,7 +1850,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/pop/pop3/13/low.webp",
       "large": "https://assets.tcgdex.net/en/pop/pop3/13/high.png"
-    }
+    },
+    "variants": [
+      "normal"
+    ]
   },
   {
     "id": "ex16-100",
@@ -1634,7 +1877,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/ex/ex16/100/low.webp",
       "large": "https://assets.tcgdex.net/en/ex/ex16/100/high.png"
-    }
+    },
+    "variants": [
+      "normal"
+    ]
   },
   {
     "id": "ex16-101",
@@ -1658,7 +1904,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/ex/ex16/101/low.webp",
       "large": "https://assets.tcgdex.net/en/ex/ex16/101/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "holo"
+    ]
   },
   {
     "id": "ex16-102",
@@ -1682,7 +1932,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/ex/ex16/102/low.webp",
       "large": "https://assets.tcgdex.net/en/ex/ex16/102/high.png"
-    }
+    },
+    "variants": [
+      "normal"
+    ]
   },
   {
     "id": "pop5-16",
@@ -1706,7 +1959,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/pop/pop5/16/low.webp",
       "large": "https://assets.tcgdex.net/en/pop/pop5/16/high.png"
-    }
+    },
+    "variants": [
+      "normal"
+    ]
   },
   {
     "id": "pop5-17",
@@ -1730,7 +1986,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/pop/pop5/17/low.webp",
       "large": "https://assets.tcgdex.net/en/pop/pop5/17/high.png"
-    }
+    },
+    "variants": [
+      "normal"
+    ]
   },
   {
     "id": "dp5-5",
@@ -1754,7 +2013,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/dp/dp5/5/low.webp",
       "large": "https://assets.tcgdex.net/en/dp/dp5/5/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "dp5-7",
@@ -1778,7 +2041,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/dp/dp5/7/low.webp",
       "large": "https://assets.tcgdex.net/en/dp/dp5/7/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "dp5-18",
@@ -1802,7 +2069,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/dp/dp5/18/low.webp",
       "large": "https://assets.tcgdex.net/en/dp/dp5/18/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "dp5-19",
@@ -1826,7 +2097,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/dp/dp5/19/low.webp",
       "large": "https://assets.tcgdex.net/en/dp/dp5/19/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "dp5-20",
@@ -1850,7 +2125,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/dp/dp5/20/low.webp",
       "large": "https://assets.tcgdex.net/en/dp/dp5/20/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "dp5-23",
@@ -1874,7 +2154,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/dp/dp5/23/low.webp",
       "large": "https://assets.tcgdex.net/en/dp/dp5/23/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "dp5-24",
@@ -1898,7 +2182,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/dp/dp5/24/low.webp",
       "large": "https://assets.tcgdex.net/en/dp/dp5/24/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "dp5-32",
@@ -1922,7 +2211,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/dp/dp5/32/low.webp",
       "large": "https://assets.tcgdex.net/en/dp/dp5/32/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "dp5-34",
@@ -1946,7 +2239,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/dp/dp5/34/low.webp",
       "large": "https://assets.tcgdex.net/en/dp/dp5/34/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "dp5-62",
@@ -1970,7 +2267,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/dp/dp5/62/low.webp",
       "large": "https://assets.tcgdex.net/en/dp/dp5/62/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "dp5-63",
@@ -1994,7 +2295,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/dp/dp5/63/low.webp",
       "large": "https://assets.tcgdex.net/en/dp/dp5/63/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "dp5-98",
@@ -2018,7 +2323,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/dp/dp5/98/low.webp",
       "large": "https://assets.tcgdex.net/en/dp/dp5/98/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "dp5-99",
@@ -2042,7 +2350,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/dp/dp5/99/low.webp",
       "large": "https://assets.tcgdex.net/en/dp/dp5/99/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "pl2-18",
@@ -2066,7 +2377,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/pl/pl2/18/low.webp",
       "large": "https://assets.tcgdex.net/en/pl/pl2/18/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "pl2-19",
@@ -2090,7 +2405,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/pl/pl2/19/low.webp",
       "large": "https://assets.tcgdex.net/en/pl/pl2/19/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "pl2-26",
@@ -2114,7 +2433,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/pl/pl2/26/low.webp",
       "large": "https://assets.tcgdex.net/en/pl/pl2/26/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "pl2-34",
@@ -2138,7 +2461,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/pl/pl2/34/low.webp",
       "large": "https://assets.tcgdex.net/en/pl/pl2/34/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "pl2-41",
@@ -2162,7 +2489,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/pl/pl2/41/low.webp",
       "large": "https://assets.tcgdex.net/en/pl/pl2/41/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "pl2-45",
@@ -2186,7 +2517,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/pl/pl2/45/low.webp",
       "large": "https://assets.tcgdex.net/en/pl/pl2/45/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "pl2-59",
@@ -2210,7 +2545,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/pl/pl2/59/low.webp",
       "large": "https://assets.tcgdex.net/en/pl/pl2/59/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "pl2-60",
@@ -2234,7 +2573,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/pl/pl2/60/low.webp",
       "large": "https://assets.tcgdex.net/en/pl/pl2/60/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "hgss3-2",
@@ -2258,7 +2601,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/hgss/hgss3/2/low.webp",
       "large": "https://assets.tcgdex.net/en/hgss/hgss3/2/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "hgss3-10",
@@ -2282,7 +2630,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/hgss/hgss3/10/low.webp",
       "large": "https://assets.tcgdex.net/en/hgss/hgss3/10/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "hgss3-17",
@@ -2306,7 +2659,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/hgss/hgss3/17/low.webp",
       "large": "https://assets.tcgdex.net/en/hgss/hgss3/17/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "hgss3-26",
@@ -2330,7 +2687,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/hgss/hgss3/26/low.webp",
       "large": "https://assets.tcgdex.net/en/hgss/hgss3/26/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "hgss3-28",
@@ -2354,7 +2715,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/hgss/hgss3/28/low.webp",
       "large": "https://assets.tcgdex.net/en/hgss/hgss3/28/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "hgss3-41",
@@ -2378,7 +2743,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/hgss/hgss3/41/low.webp",
       "large": "https://assets.tcgdex.net/en/hgss/hgss3/41/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "hgss3-47",
@@ -2402,7 +2771,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/hgss/hgss3/47/low.webp",
       "large": "https://assets.tcgdex.net/en/hgss/hgss3/47/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "hgss3-48",
@@ -2426,7 +2799,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/hgss/hgss3/48/low.webp",
       "large": "https://assets.tcgdex.net/en/hgss/hgss3/48/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "hgss3-81",
@@ -2451,7 +2828,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/hgss/hgss3/81/low.webp",
       "large": "https://assets.tcgdex.net/en/hgss/hgss3/81/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "hgss3-86",
@@ -2476,7 +2856,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/hgss/hgss3/86/low.webp",
       "large": "https://assets.tcgdex.net/en/hgss/hgss3/86/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "col1-4",
@@ -2500,7 +2883,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/col/col1/4/low.webp",
       "large": "https://assets.tcgdex.net/en/col/col1/4/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "col1-13",
@@ -2524,7 +2912,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/col/col1/13/low.webp",
       "large": "https://assets.tcgdex.net/en/col/col1/13/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "col1-22",
@@ -2548,7 +2941,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/col/col1/22/low.webp",
       "large": "https://assets.tcgdex.net/en/col/col1/22/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "col1-44",
@@ -2572,7 +2970,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/col/col1/44/low.webp",
       "large": "https://assets.tcgdex.net/en/col/col1/44/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "col1-45",
@@ -2596,7 +2999,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/col/col1/45/low.webp",
       "large": "https://assets.tcgdex.net/en/col/col1/45/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "col1-52",
@@ -2620,7 +3028,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/col/col1/52/low.webp",
       "large": "https://assets.tcgdex.net/en/col/col1/52/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "col1-56",
@@ -2644,7 +3057,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/col/col1/56/low.webp",
       "large": "https://assets.tcgdex.net/en/col/col1/56/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "bwp-BW87",
@@ -2668,7 +3086,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/bw/bwp/BW87/low.webp",
       "large": "https://assets.tcgdex.net/en/bw/bwp/BW87/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "bwp-BW88",
@@ -2692,7 +3115,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/bw/bwp/BW88/low.webp",
       "large": "https://assets.tcgdex.net/en/bw/bwp/BW88/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "bwp-BW89",
@@ -2716,7 +3144,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/bw/bwp/BW89/low.webp",
       "large": "https://assets.tcgdex.net/en/bw/bwp/BW89/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "bwp-BW90",
@@ -2740,7 +3173,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/bw/bwp/BW90/low.webp",
       "large": "https://assets.tcgdex.net/en/bw/bwp/BW90/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "bwp-BW91",
@@ -2764,7 +3202,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/bw/bwp/BW91/low.webp",
       "large": "https://assets.tcgdex.net/en/bw/bwp/BW91/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "bwp-BW92",
@@ -2788,7 +3231,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/bw/bwp/BW92/low.webp",
       "large": "https://assets.tcgdex.net/en/bw/bwp/BW92/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "bwp-BW93",
@@ -2812,7 +3260,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/bw/bwp/BW93/low.webp",
       "large": "https://assets.tcgdex.net/en/bw/bwp/BW93/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "bwp-BW94",
@@ -2836,7 +3289,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/bw/bwp/BW94/low.webp",
       "large": "https://assets.tcgdex.net/en/bw/bwp/BW94/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "bwp-BW97",
@@ -2860,7 +3318,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/bw/bwp/BW97/low.webp",
       "large": "https://assets.tcgdex.net/en/bw/bwp/BW97/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "bw5-6",
@@ -2884,7 +3347,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/bw/bw5/6/low.webp",
       "large": "https://assets.tcgdex.net/en/bw/bw5/6/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "bw5-12",
@@ -2908,7 +3376,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/bw/bw5/12/low.webp",
       "large": "https://assets.tcgdex.net/en/bw/bw5/12/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "bw5-25",
@@ -2932,7 +3405,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/bw/bw5/25/low.webp",
       "large": "https://assets.tcgdex.net/en/bw/bw5/25/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "bw5-30",
@@ -2956,7 +3434,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/bw/bw5/30/low.webp",
       "large": "https://assets.tcgdex.net/en/bw/bw5/30/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "bw5-37",
@@ -2980,7 +3463,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/bw/bw5/37/low.webp",
       "large": "https://assets.tcgdex.net/en/bw/bw5/37/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "bw5-48",
@@ -3004,7 +3492,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/bw/bw5/48/low.webp",
       "large": "https://assets.tcgdex.net/en/bw/bw5/48/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "bw5-60",
@@ -3028,7 +3521,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/bw/bw5/60/low.webp",
       "large": "https://assets.tcgdex.net/en/bw/bw5/60/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "bw5-61",
@@ -3052,7 +3550,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/bw/bw5/61/low.webp",
       "large": "https://assets.tcgdex.net/en/bw/bw5/61/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "bw5-83",
@@ -3076,7 +3579,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/bw/bw5/83/low.webp",
       "large": "https://assets.tcgdex.net/en/bw/bw5/83/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "bw5-84",
@@ -3100,7 +3608,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/bw/bw5/84/low.webp",
       "large": "https://assets.tcgdex.net/en/bw/bw5/84/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "bw9-11",
@@ -3124,7 +3637,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/bw/bw9/11/low.webp",
       "large": "https://assets.tcgdex.net/en/bw/bw9/11/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "bw9-12",
@@ -3148,7 +3666,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/bw/bw9/12/low.webp",
       "large": "https://assets.tcgdex.net/en/bw/bw9/12/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "bw9-20",
@@ -3172,7 +3695,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/bw/bw9/20/low.webp",
       "large": "https://assets.tcgdex.net/en/bw/bw9/20/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "bw9-23",
@@ -3196,7 +3724,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/bw/bw9/23/low.webp",
       "large": "https://assets.tcgdex.net/en/bw/bw9/23/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "bw9-34",
@@ -3220,7 +3753,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/bw/bw9/34/low.webp",
       "large": "https://assets.tcgdex.net/en/bw/bw9/34/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "bw9-48",
@@ -3244,7 +3782,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/bw/bw9/48/low.webp",
       "large": "https://assets.tcgdex.net/en/bw/bw9/48/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "bw9-64",
@@ -3268,7 +3811,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/bw/bw9/64/low.webp",
       "large": "https://assets.tcgdex.net/en/bw/bw9/64/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "bw9-89",
@@ -3292,7 +3840,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/bw/bw9/89/low.webp",
       "large": "https://assets.tcgdex.net/en/bw/bw9/89/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "bw9-90",
@@ -3316,7 +3869,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/bw/bw9/90/low.webp",
       "large": "https://assets.tcgdex.net/en/bw/bw9/90/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "xyp-XY04",
@@ -3340,7 +3898,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/xy/xyp/XY04/low.webp",
       "large": "https://assets.tcgdex.net/en/xy/xyp/XY04/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "xyp-XY96",
@@ -3364,7 +3927,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/xy/xyp/XY96/low.webp",
       "large": "https://assets.tcgdex.net/en/xy/xyp/XY96/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "bw11-RC14",
@@ -3388,7 +3956,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/bw/bw11/RC14/low.webp",
       "large": "https://assets.tcgdex.net/en/bw/bw11/RC14/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "tk-xy-sy-13",
@@ -3412,7 +3985,12 @@
     "images": {
       "small": "https://images.pokemontcg.io/tk/xy-sy-13.png",
       "large": "https://images.pokemontcg.io/tk/xy-sy-13_hires.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "tk-xy-sy-15",
@@ -3436,7 +4014,12 @@
     "images": {
       "small": "https://images.pokemontcg.io/tk/xy-sy-15.png",
       "large": "https://images.pokemontcg.io/tk/xy-sy-15_hires.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "tk-xy-sy-21",
@@ -3460,7 +4043,12 @@
     "images": {
       "small": "https://images.pokemontcg.io/tk/xy-sy-21.png",
       "large": "https://images.pokemontcg.io/tk/xy-sy-21_hires.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "tk-xy-sy-30",
@@ -3484,7 +4072,12 @@
     "images": {
       "small": "https://images.pokemontcg.io/tk/xy-sy-30.png",
       "large": "https://images.pokemontcg.io/tk/xy-sy-30_hires.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "xy3-7",
@@ -3508,7 +4101,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/xy/xy3/7/low.webp",
       "large": "https://assets.tcgdex.net/en/xy/xy3/7/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "xy3-19",
@@ -3532,7 +4130,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/xy/xy3/19/low.webp",
       "large": "https://assets.tcgdex.net/en/xy/xy3/19/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "xy3-72",
@@ -3556,7 +4159,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/xy/xy3/72/low.webp",
       "large": "https://assets.tcgdex.net/en/xy/xy3/72/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "xy3-80",
@@ -3580,7 +4188,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/xy/xy3/80/low.webp",
       "large": "https://assets.tcgdex.net/en/xy/xy3/80/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "xy7-13",
@@ -3604,7 +4217,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/xy/xy7/13/low.webp",
       "large": "https://assets.tcgdex.net/en/xy/xy7/13/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "xy7-22",
@@ -3628,7 +4246,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/xy/xy7/22/low.webp",
       "large": "https://assets.tcgdex.net/en/xy/xy7/22/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "xy7-26",
@@ -3652,7 +4275,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/xy/xy7/26/low.webp",
       "large": "https://assets.tcgdex.net/en/xy/xy7/26/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "xy7-63",
@@ -3676,7 +4304,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/xy/xy7/63/low.webp",
       "large": "https://assets.tcgdex.net/en/xy/xy7/63/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "xy9-52",
@@ -3701,7 +4334,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/xy/xy9/52/low.webp",
       "large": "https://assets.tcgdex.net/en/xy/xy9/52/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "xy9-117",
@@ -3726,7 +4364,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/xy/xy9/117/low.webp",
       "large": "https://assets.tcgdex.net/en/xy/xy9/117/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "g1-10",
@@ -3750,7 +4393,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/xy/g1/10/low.webp",
       "large": "https://assets.tcgdex.net/en/xy/g1/10/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "g1-24",
@@ -3774,7 +4422,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/xy/g1/24/low.webp",
       "large": "https://assets.tcgdex.net/en/xy/g1/24/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "g1-28",
@@ -3798,7 +4451,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/xy/g1/28/low.webp",
       "large": "https://assets.tcgdex.net/en/xy/g1/28/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "g1-28a",
@@ -3822,7 +4480,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/xy/g1/28a/low.webp",
       "large": "https://assets.tcgdex.net/en/xy/g1/28a/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "g1-RC6",
@@ -3846,7 +4509,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/xy/g1/RC6/low.webp",
       "large": "https://assets.tcgdex.net/en/xy/g1/RC6/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "g1-RC21",
@@ -3870,7 +4538,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/xy/g1/RC21/low.webp",
       "large": "https://assets.tcgdex.net/en/xy/g1/RC21/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "g1-RC28",
@@ -3894,7 +4567,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/xy/g1/RC28/low.webp",
       "large": "https://assets.tcgdex.net/en/xy/g1/RC28/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "g1-RC32",
@@ -3918,7 +4596,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/xy/g1/RC32/low.webp",
       "large": "https://assets.tcgdex.net/en/xy/g1/RC32/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "tk-xy-su-4",
@@ -3942,7 +4625,12 @@
     "images": {
       "small": "https://images.pokemontcg.io/tk/xy-su-4.png",
       "large": "https://images.pokemontcg.io/tk/xy-su-4_hires.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "xy10-20",
@@ -3967,7 +4655,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/xy/xy10/20/low.webp",
       "large": "https://assets.tcgdex.net/en/xy/xy10/20/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "xy10-55",
@@ -3992,7 +4685,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/xy/xy10/55/low.webp",
       "large": "https://assets.tcgdex.net/en/xy/xy10/55/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "xy10-116",
@@ -4017,7 +4715,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/xy/xy10/116/low.webp",
       "large": "https://assets.tcgdex.net/en/xy/xy10/116/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "xy10-119",
@@ -4042,7 +4745,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/xy/xy10/119/low.webp",
       "large": "https://assets.tcgdex.net/en/xy/xy10/119/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "2016xy-12",
@@ -4062,7 +4770,12 @@
     "images": {
       "small": "https://images.pokemontcg.io/2016xy/12.png",
       "large": "https://images.pokemontcg.io/2016xy/12_hires.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm1-61",
@@ -4086,7 +4799,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm1/61/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm1/61/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm1-80",
@@ -4110,7 +4828,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm1/80/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm1/80/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm1-101",
@@ -4134,7 +4857,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm1/101/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm1/101/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm1-140",
@@ -4158,7 +4886,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm1/140/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm1/140/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm1-142",
@@ -4182,7 +4915,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm1/142/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm1/142/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm1-152",
@@ -4206,7 +4944,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm1/152/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm1/152/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm1-154",
@@ -4230,7 +4973,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm1/154/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm1/154/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "smp-SM35",
@@ -4254,7 +5002,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/smp/SM35/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/smp/SM35/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "smp-SM36",
@@ -4278,7 +5031,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/smp/SM36/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/smp/SM36/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "smp-SM146",
@@ -4302,7 +5060,12 @@
     "images": {
       "small": "https://images.pokemontcg.io/smp/SM146.png",
       "large": "https://images.pokemontcg.io/smp/SM146_hires.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "smp-SM147",
@@ -4326,7 +5089,12 @@
     "images": {
       "small": "https://images.pokemontcg.io/smp/SM147.png",
       "large": "https://images.pokemontcg.io/smp/SM147_hires.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "smp-SM169",
@@ -4350,7 +5118,12 @@
     "images": {
       "small": "https://images.pokemontcg.io/smp/SM169.png",
       "large": "https://images.pokemontcg.io/smp/SM169_hires.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "smp-SM171",
@@ -4374,7 +5147,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/smp/SM171/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/smp/SM171/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "smp-SM172",
@@ -4398,7 +5176,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/smp/SM172/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/smp/SM172/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "smp-SM173",
@@ -4422,7 +5205,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/smp/SM173/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/smp/SM173/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "smp-SM174",
@@ -4446,7 +5234,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/smp/SM174/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/smp/SM174/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "smp-SM175",
@@ -4470,7 +5263,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/smp/SM175/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/smp/SM175/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "smp-SM176",
@@ -4494,7 +5292,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/smp/SM176/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/smp/SM176/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "smp-SM184",
@@ -4515,7 +5318,12 @@
     "images": {
       "small": "https://images.pokemontcg.io/smp/SM184.png",
       "large": "https://images.pokemontcg.io/smp/SM184_hires.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "smp-SM186",
@@ -4539,7 +5347,12 @@
     "images": {
       "small": "https://images.pokemontcg.io/smp/SM186.png",
       "large": "https://images.pokemontcg.io/smp/SM186_hires.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "smp-SM233",
@@ -4560,7 +5373,12 @@
     "images": {
       "small": "https://images.pokemontcg.io/smp/SM233.png",
       "large": "https://images.pokemontcg.io/smp/SM233_hires.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "smp-SM235",
@@ -4581,7 +5399,12 @@
     "images": {
       "small": "https://images.pokemontcg.io/smp/SM235.png",
       "large": "https://images.pokemontcg.io/smp/SM235_hires.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "smp-SM237",
@@ -4602,7 +5425,12 @@
     "images": {
       "small": "https://images.pokemontcg.io/smp/SM237.png",
       "large": "https://images.pokemontcg.io/smp/SM237_hires.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "smp-SM238",
@@ -4623,7 +5451,12 @@
     "images": {
       "small": "https://images.pokemontcg.io/smp/SM238.png",
       "large": "https://images.pokemontcg.io/smp/SM238_hires.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "smp-SM240",
@@ -4644,7 +5477,12 @@
     "images": {
       "small": "https://images.pokemontcg.io/smp/SM240.png",
       "large": "https://images.pokemontcg.io/smp/SM240_hires.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "smp-SM241",
@@ -4665,7 +5503,12 @@
     "images": {
       "small": "https://images.pokemontcg.io/smp/SM241.png",
       "large": "https://images.pokemontcg.io/smp/SM241_hires.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "smp-SM242",
@@ -4686,7 +5529,12 @@
     "images": {
       "small": "https://images.pokemontcg.io/smp/SM242.png",
       "large": "https://images.pokemontcg.io/smp/SM242_hires.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm2-92",
@@ -4710,7 +5558,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm2/92/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm2/92/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm2-140",
@@ -4734,7 +5587,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm2/140/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm2/140/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm2-158",
@@ -4758,7 +5616,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm2/158/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm2/158/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm5-13",
@@ -4782,7 +5645,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm5/13/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm5/13/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm5-39",
@@ -4806,7 +5674,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm5/39/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm5/39/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm5-104",
@@ -4830,7 +5703,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm5/104/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm5/104/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm5-105",
@@ -4854,7 +5732,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm5/105/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm5/105/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm5-139",
@@ -4878,7 +5761,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm5/139/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm5/139/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm5-141",
@@ -4902,7 +5790,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm5/141/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm5/141/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm5-157",
@@ -4926,7 +5819,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm5/157/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm5/157/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm5-159",
@@ -4950,7 +5848,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm5/159/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm5/159/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm6-87",
@@ -4974,7 +5877,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm6/87/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm6/87/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "2018sm-11",
@@ -4998,7 +5906,10 @@
     "images": {
       "small": "https://images.pokemontcg.io/2018sm/11.png",
       "large": "https://images.pokemontcg.io/2018sm/11_hires.png"
-    }
+    },
+    "variants": [
+      "normal"
+    ]
   },
   {
     "id": "sm8-89",
@@ -5022,7 +5933,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm8/89/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm8/89/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm8-120",
@@ -5046,7 +5962,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm8/120/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm8/120/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm8-155",
@@ -5070,7 +5991,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm8/155/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm8/155/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm9-120",
@@ -5094,7 +6020,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm9/120/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm9/120/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm9-171",
@@ -5118,7 +6049,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm9/171/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm9/171/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm9-191",
@@ -5142,7 +6078,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm9/191/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm9/191/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm10-130",
@@ -5166,7 +6107,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm10/130/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm10/130/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm10-204",
@@ -5190,7 +6136,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm10/204/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm10/204/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm10-205",
@@ -5214,7 +6165,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm10/205/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm10/205/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm10-225",
@@ -5238,7 +6194,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm10/225/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm10/225/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm11-72",
@@ -5262,7 +6223,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm11/72/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm11/72/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm11-125",
@@ -5286,7 +6252,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm11/125/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm11/125/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm115-18",
@@ -5310,7 +6281,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm115/18/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm115/18/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm115-23",
@@ -5334,7 +6310,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm115/23/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm115/23/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm115-48",
@@ -5358,7 +6339,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm115/48/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm115/48/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm115-49",
@@ -5382,7 +6368,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm115/49/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm115/49/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sma-SV41",
@@ -5406,7 +6397,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sma/SV41/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sma/SV41/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sma-SV46",
@@ -5430,7 +6426,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sma/SV46/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sma/SV46/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sma-SV55",
@@ -5454,7 +6455,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sma/SV55/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sma/SV55/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sma-SV60",
@@ -5478,7 +6484,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sma/SV60/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sma/SV60/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sma-SV69",
@@ -5502,7 +6513,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sma/SV69/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sma/SV69/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sma-SV76",
@@ -5526,7 +6542,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sma/SV76/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sma/SV76/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "2019sm-12",
@@ -5550,7 +6571,10 @@
     "images": {
       "small": "https://images.pokemontcg.io/2019sm/12.png",
       "large": "https://images.pokemontcg.io/2019sm/12_hires.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "sm12-25",
@@ -5574,7 +6598,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm12/25/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm12/25/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm12-42",
@@ -5598,7 +6627,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm12/42/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm12/42/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm12-70",
@@ -5622,7 +6656,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm12/70/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm12/70/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm12-155",
@@ -5646,7 +6685,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm12/155/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm12/155/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm12-166",
@@ -5670,7 +6714,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm12/166/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm12/166/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sm12-167",
@@ -5694,7 +6743,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sm/sm12/167/low.webp",
       "large": "https://assets.tcgdex.net/en/sm/sm12/167/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "swshp-SWSH041",
@@ -5718,7 +6772,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swshp/SWSH041/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH041/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swshp-SWSH042",
@@ -5742,7 +6799,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swshp/SWSH042/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH042/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swshp-SWSH065",
@@ -5767,7 +6827,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swshp/SWSH065/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH065/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swshp-SWSH072",
@@ -5791,7 +6854,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swshp/SWSH072/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH072/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swshp-SWSH087",
@@ -5815,7 +6881,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swshp/SWSH087/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH087/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swshp-SWSH094",
@@ -5839,7 +6908,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swshp/SWSH094/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH094/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swshp-SWSH095",
@@ -5863,7 +6935,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swshp/SWSH095/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH095/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swshp-SWSH118",
@@ -5887,7 +6962,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swshp/SWSH118/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH118/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swshp-SWSH127",
@@ -5911,7 +6989,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swshp/SWSH127/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH127/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swshp-SWSH129",
@@ -5935,7 +7016,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swshp/SWSH129/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH129/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swshp-SWSH134",
@@ -5960,7 +7044,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swshp/SWSH134/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH134/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swshp-SWSH149",
@@ -5985,7 +7072,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swshp/SWSH149/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH149/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swshp-SWSH150",
@@ -6010,7 +7100,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swshp/SWSH150/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH150/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swshp-SWSH151",
@@ -6035,7 +7128,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swshp/SWSH151/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH151/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swshp-SWSH174",
@@ -6059,7 +7155,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swshp/SWSH174/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH174/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "swshp-SWSH175",
@@ -6083,7 +7184,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swshp/SWSH175/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH175/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "swshp-SWSH179",
@@ -6108,7 +7214,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swshp/SWSH179/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH179/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "swshp-SWSH180",
@@ -6132,7 +7243,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swshp/SWSH180/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH180/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "swshp-SWSH181",
@@ -6157,7 +7273,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swshp/SWSH181/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH181/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "swshp-SWSH182",
@@ -6181,7 +7302,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swshp/SWSH182/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH182/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "swshp-SWSH183",
@@ -6206,7 +7332,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swshp/SWSH183/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH183/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "swshp-SWSH184",
@@ -6230,7 +7361,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swshp/SWSH184/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH184/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "swshp-SWSH190",
@@ -6254,7 +7390,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swshp/SWSH190/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH190/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "swshp-SWSH191",
@@ -6278,7 +7419,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swshp/SWSH191/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH191/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "swshp-SWSH192",
@@ -6302,7 +7448,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swshp/SWSH192/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH192/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "swshp-SWSH194",
@@ -6327,7 +7478,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swshp/SWSH194/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH194/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "swshp-SWSH195",
@@ -6352,7 +7508,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swshp/SWSH195/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH195/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "swshp-SWSH196",
@@ -6377,7 +7538,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swshp/SWSH196/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH196/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "swshp-SWSH197",
@@ -6402,7 +7568,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swshp/SWSH197/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH197/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "swshp-SWSH201",
@@ -6427,7 +7598,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swshp/SWSH201/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH201/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "swshp-SWSH202",
@@ -6452,7 +7628,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swshp/SWSH202/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH202/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "swshp-SWSH203",
@@ -6477,7 +7658,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swshp/SWSH203/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH203/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "swshp-SWSH211",
@@ -6501,7 +7687,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swshp/SWSH211/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH211/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "swshp-SWSH212",
@@ -6525,7 +7716,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swshp/SWSH212/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH212/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "swshp-SWSH230",
@@ -6549,7 +7745,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swshp/SWSH230/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH230/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "fut20-2",
@@ -6569,7 +7770,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/fut2020/2/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/fut2020/2/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "swsh4-26",
@@ -6593,7 +7799,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh4/26/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh4/26/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "swsh4-30",
@@ -6617,7 +7827,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh4/30/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh4/30/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "swsh4-47",
@@ -6641,7 +7855,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh4/47/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh4/47/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "swsh4-130",
@@ -6665,7 +7883,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh4/130/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh4/130/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "swsh45-52",
@@ -6689,7 +7911,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh4.5/52/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh4.5/52/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "swsh7-7",
@@ -6714,7 +7940,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh7/7/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/7/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swsh7-8",
@@ -6738,7 +7967,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh7/8/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/8/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swsh7-18",
@@ -6762,7 +7994,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh7/18/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/18/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swsh7-30",
@@ -6786,7 +8021,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh7/30/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/30/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swsh7-40",
@@ -6811,7 +8049,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh7/40/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/40/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swsh7-41",
@@ -6835,7 +8076,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh7/41/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/41/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swsh7-51",
@@ -6859,7 +8103,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh7/51/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/51/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swsh7-64",
@@ -6884,7 +8131,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh7/64/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/64/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swsh7-65",
@@ -6908,7 +8158,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh7/65/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/65/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swsh7-74",
@@ -6933,7 +8186,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh7/74/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/74/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swsh7-75",
@@ -6957,7 +8213,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh7/75/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/75/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swsh7-94",
@@ -6982,7 +8241,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh7/94/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/94/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swsh7-95",
@@ -7006,7 +8268,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh7/95/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/95/high.png"
-    }
+    },
+    "variants": [
+      "normal"
+    ]
   },
   {
     "id": "swsh7-125",
@@ -7030,7 +8295,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh7/125/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/125/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "swsh7-166",
@@ -7055,7 +8324,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh7/166/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/166/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swsh7-167",
@@ -7080,7 +8352,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh7/167/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/167/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swsh7-169",
@@ -7105,7 +8380,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh7/169/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/169/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swsh7-172",
@@ -7130,7 +8408,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh7/172/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/172/high.png"
-    }
+    },
+    "variants": [
+      "normal"
+    ]
   },
   {
     "id": "swsh7-174",
@@ -7155,7 +8436,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh7/174/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/174/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swsh7-175",
@@ -7180,7 +8464,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh7/175/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/175/high.png"
-    }
+    },
+    "variants": [
+      "normal"
+    ]
   },
   {
     "id": "swsh7-177",
@@ -7205,7 +8492,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh7/177/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/177/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swsh7-179",
@@ -7230,7 +8520,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh7/179/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/179/high.png"
-    }
+    },
+    "variants": [
+      "normal"
+    ]
   },
   {
     "id": "swsh7-180",
@@ -7255,7 +8548,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh7/180/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/180/high.png"
-    }
+    },
+    "variants": [
+      "normal"
+    ]
   },
   {
     "id": "swsh7-183",
@@ -7280,7 +8576,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh7/183/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/183/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swsh7-184",
@@ -7305,7 +8604,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh7/184/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/184/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "swsh7-188",
@@ -7330,7 +8634,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh7/188/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/188/high.png"
-    }
+    },
+    "variants": [
+      "normal"
+    ]
   },
   {
     "id": "swsh7-189",
@@ -7355,7 +8662,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh7/189/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/189/high.png"
-    }
+    },
+    "variants": [
+      "normal"
+    ]
   },
   {
     "id": "swsh7-204",
@@ -7379,7 +8689,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh7/204/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/204/high.png"
-    }
+    },
+    "variants": [
+      "normal"
+    ]
   },
   {
     "id": "swsh7-205",
@@ -7403,7 +8716,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh7/205/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/205/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swsh7-208",
@@ -7427,7 +8743,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh7/208/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/208/high.png"
-    }
+    },
+    "variants": [
+      "normal"
+    ]
   },
   {
     "id": "swsh7-209",
@@ -7451,7 +8770,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh7/209/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/209/high.png"
-    }
+    },
+    "variants": [
+      "normal"
+    ]
   },
   {
     "id": "swsh7-211",
@@ -7475,7 +8797,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh7/211/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/211/high.png"
-    }
+    },
+    "variants": [
+      "normal"
+    ]
   },
   {
     "id": "swsh7-212",
@@ -7499,7 +8824,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh7/212/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/212/high.png"
-    }
+    },
+    "variants": [
+      "normal"
+    ]
   },
   {
     "id": "swsh7-214",
@@ -7523,7 +8851,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh7/214/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/214/high.png"
-    }
+    },
+    "variants": [
+      "normal"
+    ]
   },
   {
     "id": "swsh7-215",
@@ -7547,7 +8878,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh7/215/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/215/high.png"
-    }
+    },
+    "variants": [
+      "normal"
+    ]
   },
   {
     "id": "cel25c-17_A",
@@ -7571,7 +8905,10 @@
     "images": {
       "small": "https://images.pokemontcg.io/cel25c/17_A.png",
       "large": "https://images.pokemontcg.io/cel25c/17_A_hires.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swsh8-205",
@@ -7595,7 +8932,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh8/205/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh8/205/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "swsh8-270",
@@ -7619,7 +8960,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh8/270/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh8/270/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swsh9tg-TG01",
@@ -7643,7 +8987,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh9/TG01/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh9/TG01/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swsh9tg-TG02",
@@ -7667,7 +9014,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh9/TG02/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh9/TG02/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swsh9tg-TG04",
@@ -7691,7 +9041,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh9/TG04/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh9/TG04/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swsh9tg-TG11",
@@ -7715,7 +9068,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh9/TG11/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh9/TG11/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swsh9tg-TG14",
@@ -7740,7 +9096,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh9/TG14/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh9/TG14/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swsh9tg-TG15",
@@ -7764,7 +9123,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh9/TG15/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh9/TG15/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swsh9tg-TG22",
@@ -7789,7 +9151,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh9/TG22/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh9/TG22/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swsh9tg-TG23",
@@ -7813,7 +9178,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh9/TG23/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh9/TG23/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swsh10-13",
@@ -7837,7 +9205,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh10/013/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh10/013/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "swsh10-38",
@@ -7861,7 +9233,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh10/038/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh10/038/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "swsh10-119",
@@ -7885,7 +9261,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh10/119/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh10/119/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "pgo-35",
@@ -7909,7 +9289,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh10.5/035/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh10.5/035/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "pgo-54",
@@ -7933,7 +9317,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh10.5/054/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh10.5/054/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "swsh12pt5-13",
@@ -7958,7 +9346,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh12.5/013/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh12.5/013/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swsh12pt5-14",
@@ -7983,7 +9374,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh12.5/014/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh12.5/014/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swsh12pt5-38",
@@ -8008,7 +9402,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh12.5/038/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh12.5/038/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swsh12pt5-108",
@@ -8033,7 +9430,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh12.5/108/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh12.5/108/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swsh12pt5gg-GG35",
@@ -8058,7 +9458,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh12.5/GG35/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh12.5/GG35/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "swsh12pt5gg-GG40",
@@ -8083,7 +9486,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/swsh/swsh12.5/GG40/low.webp",
       "large": "https://assets.tcgdex.net/en/swsh/swsh12.5/GG40/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "svp-43",
@@ -8107,7 +9513,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/svp/043/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/svp/043/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "svp-167",
@@ -8131,7 +9542,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/svp/167/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/svp/167/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "svp-168",
@@ -8155,7 +9571,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/svp/168/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/svp/168/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "svp-169",
@@ -8179,7 +9600,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/svp/169/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/svp/169/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "svp-170",
@@ -8203,7 +9629,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/svp/170/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/svp/170/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "svp-171",
@@ -8227,7 +9658,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/svp/171/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/svp/171/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "svp-172",
@@ -8251,7 +9687,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/svp/172/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/svp/172/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "svp-173",
@@ -8275,7 +9716,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/svp/173/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/svp/173/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "svp-174",
@@ -8299,7 +9745,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/svp/174/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/svp/174/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "svp-175",
@@ -8324,7 +9775,10 @@
     "images": {
       "small": "https://images.scrydex.com/pokemon/svp-175/medium",
       "large": "https://images.scrydex.com/pokemon/svp-175/medium"
-    }
+    },
+    "variants": [
+      "normal"
+    ]
   },
   {
     "id": "svp-176",
@@ -8349,7 +9803,10 @@
     "images": {
       "small": "https://images.scrydex.com/pokemon/svp-176/medium",
       "large": "https://images.scrydex.com/pokemon/svp-176/medium"
-    }
+    },
+    "variants": [
+      "normal"
+    ]
   },
   {
     "id": "svp-200",
@@ -8373,7 +9830,10 @@
     "images": {
       "small": "https://images.pokemontcg.io/svp/200.png",
       "large": "https://images.pokemontcg.io/svp/200_hires.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "sv3-86",
@@ -8397,7 +9857,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv03/086/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv03/086/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "sv3-130",
@@ -8421,7 +9885,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv03/130/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv03/130/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "sv3-166",
@@ -8445,7 +9913,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv03/166/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv03/166/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "sv3pt5-133",
@@ -8469,7 +9941,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv03.5/133/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv03.5/133/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "sv3pt5-134",
@@ -8493,7 +9969,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv03.5/134/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv03.5/134/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sv3pt5-135",
@@ -8517,7 +9997,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv03.5/135/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv03.5/135/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sv3pt5-136",
@@ -8541,7 +10025,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv03.5/136/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv03.5/136/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "mcd24-9",
@@ -8565,7 +10053,10 @@
     "images": {
       "small": "https://images.scrydex.com/pokemon/mcd24-9/medium",
       "large": "https://images.scrydex.com/pokemon/mcd24-9/medium"
-    }
+    },
+    "variants": [
+      "normal"
+    ]
   },
   {
     "id": "mcd24-13",
@@ -8589,7 +10080,10 @@
     "images": {
       "small": "https://images.scrydex.com/pokemon/mcd24-13/medium",
       "large": "https://images.scrydex.com/pokemon/mcd24-13/medium"
-    }
+    },
+    "variants": [
+      "normal"
+    ]
   },
   {
     "id": "sv6-11",
@@ -8613,7 +10107,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv06/011/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv06/011/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "sv6-54",
@@ -8637,7 +10135,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv06/054/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv06/054/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "sv6-135",
@@ -8661,7 +10163,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv06/135/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv06/135/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "sv6-188",
@@ -8685,7 +10191,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv06/188/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv06/188/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "sv6pt5-22",
@@ -8709,7 +10218,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv06.5/022/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv06.5/022/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "sv6pt5-50",
@@ -8733,7 +10246,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv06.5/050/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv06.5/050/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "sv7-113",
@@ -8757,7 +10274,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv07/113/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv07/113/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "sv8-86",
@@ -8781,7 +10302,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv08/086/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv08/086/high.png"
-    }
+    },
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "sv8-143",
@@ -8805,7 +10329,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv08/143/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv08/143/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ]
   },
   {
     "id": "sv8pt5-5",
@@ -8829,7 +10357,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv08.5/005/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/005/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sv8pt5-6",
@@ -8853,7 +10385,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv08.5/006/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/006/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sv8pt5-13",
@@ -8877,7 +10413,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv08.5/013/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/013/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sv8pt5-14",
@@ -8901,7 +10441,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv08.5/014/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/014/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sv8pt5-22",
@@ -8925,7 +10469,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv08.5/022/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/022/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sv8pt5-23",
@@ -8949,7 +10497,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv08.5/023/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/023/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sv8pt5-25",
@@ -8973,7 +10525,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv08.5/025/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/025/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sv8pt5-26",
@@ -8997,7 +10553,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv08.5/026/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/026/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sv8pt5-29",
@@ -9021,7 +10581,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv08.5/029/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/029/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sv8pt5-30",
@@ -9045,7 +10609,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv08.5/030/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/030/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sv8pt5-33",
@@ -9069,7 +10637,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv08.5/033/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/033/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sv8pt5-34",
@@ -9093,7 +10665,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv08.5/034/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/034/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sv8pt5-40",
@@ -9117,7 +10693,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv08.5/040/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/040/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sv8pt5-41",
@@ -9141,7 +10722,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv08.5/041/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/041/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sv8pt5-59",
@@ -9165,7 +10750,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv08.5/059/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/059/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sv8pt5-60",
@@ -9189,7 +10778,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv08.5/060/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/060/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sv8pt5-74",
@@ -9213,7 +10806,12 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv08.5/074/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/074/high.png"
-    }
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sv8pt5-75",
@@ -9237,7 +10835,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv08.5/075/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/075/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sv8pt5-144",
@@ -9261,7 +10863,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv08.5/144/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/144/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sv8pt5-146",
@@ -9285,7 +10891,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv08.5/146/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/146/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sv8pt5-149",
@@ -9309,7 +10919,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv08.5/149/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/149/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sv8pt5-150",
@@ -9333,7 +10947,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv08.5/150/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/150/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sv8pt5-153",
@@ -9357,7 +10975,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv08.5/153/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/153/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sv8pt5-155",
@@ -9381,7 +11003,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv08.5/155/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/155/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sv8pt5-156",
@@ -9405,7 +11031,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv08.5/156/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/156/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sv8pt5-161",
@@ -9429,7 +11059,11 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv08.5/161/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/161/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   },
   {
     "id": "sv8pt5-167",
@@ -9453,6 +11087,10 @@
     "images": {
       "small": "https://assets.tcgdex.net/en/sv/sv08.5/167/low.webp",
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/167/high.png"
-    }
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ]
   }
 ]

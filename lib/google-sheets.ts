@@ -27,6 +27,15 @@ function getSheetsClient() {
   return google.sheets({ version: "v4", auth });
 }
 
+function parseCardIdAndVariant(raw: string): { cardId: string; variant: string } {
+  const s = (raw ?? "").toString().trim();
+  const colon = s.indexOf(":");
+  if (colon >= 0) {
+    return { cardId: s, variant: s.slice(colon + 1) || "normal" };
+  }
+  return { cardId: s, variant: "normal" };
+}
+
 function normalizeRow(row: (string | null | undefined)[]): CollectionRow {
   const [
     cardIdRaw,
@@ -37,7 +46,7 @@ function normalizeRow(row: (string | null | undefined)[]): CollectionRow {
     ownedRaw
   ] = row;
 
-  const cardId = (cardIdRaw ?? "").toString().trim();
+  const { cardId, variant } = parseCardIdAndVariant((cardIdRaw ?? "").toString());
   const name = (nameRaw ?? "").toString();
   const setName = (setNameRaw ?? "").toString();
   const number = (numberRaw ?? "").toString();
@@ -52,6 +61,7 @@ function normalizeRow(row: (string | null | undefined)[]): CollectionRow {
 
   return {
     cardId,
+    variant,
     name,
     setName,
     number,
@@ -74,8 +84,15 @@ export async function getAllCollectionRows(): Promise<CollectionRow[]> {
     .filter((row) => row.cardId.trim() !== "");
 }
 
+/** Match composite key: exact match, or legacy "baseId" when composite is "baseId:normal". */
+function rowMatches(row: CollectionRow, composite: string): boolean {
+  if (row.cardId === composite) return true;
+  if (composite.endsWith(":normal") && row.cardId === composite.slice(0, -7)) return true;
+  return false;
+}
+
 export async function getCollectionRowByCardId(
-  cardId: string
+  compositeCardId: string
 ): Promise<{ rowNumber: number; row: CollectionRow } | null> {
   const sheets = getSheetsClient();
 
@@ -88,8 +105,7 @@ export async function getCollectionRowByCardId(
 
   for (let i = 0; i < values.length; i += 1) {
     const row = normalizeRow(values[i]);
-    if (row.cardId === cardId) {
-      // Row numbers are 1-indexed and we started at row 2.
+    if (rowMatches(row, compositeCardId)) {
       return { rowNumber: i + 2, row };
     }
   }
@@ -99,11 +115,16 @@ export async function getCollectionRowByCardId(
 
 export interface UpsertCollectionInput {
   cardId: string;
+  variant?: string;
   name?: string;
   setName?: string;
   number?: string;
   imageUrl?: string;
   owned?: boolean;
+}
+
+function toCompositeCardId(cardId: string, variant: string): string {
+  return variant && variant !== "normal" ? `${cardId}:${variant}` : `${cardId}:normal`;
 }
 
 export async function upsertCollectionRow(
@@ -115,10 +136,16 @@ export async function upsertCollectionRow(
     throw new Error("cardId is required");
   }
 
-  const existing = await getCollectionRowByCardId(input.cardId);
+  const variant = input.variant ?? "normal";
+  const composite = input.cardId.includes(":")
+    ? input.cardId
+    : toCompositeCardId(input.cardId, variant);
+
+  const existing = await getCollectionRowByCardId(composite);
 
   const base: CollectionRow = existing?.row ?? {
-    cardId: input.cardId,
+    cardId: composite,
+    variant,
     name: input.name ?? "",
     setName: input.setName ?? "",
     number: input.number ?? "",
@@ -127,7 +154,8 @@ export async function upsertCollectionRow(
   };
 
   const merged: CollectionRow = {
-    cardId: base.cardId,
+    cardId: composite,
+    variant,
     name: input.name ?? base.name,
     setName: input.setName ?? base.setName,
     number: input.number ?? base.number,

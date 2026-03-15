@@ -57,35 +57,83 @@ export interface PriceEntry {
   usd?: number | null;
   eur?: number | null;
   updatedAt: string;
+  variants?: Record<string, { usd?: number | null; eur?: number | null }>;
 }
 
-/** Best USD market price: prefer holofoil > reverse > normal variants. */
+/** Extract per-variant USD from TCGplayer. */
+function extractUsdVariants(tcgplayer: TcgdexCardPricing["tcgplayer"]): Record<string, number | null> {
+  const out: Record<string, number | null> = {};
+  if (!tcgplayer) return out;
+  const map: Array<[string, string]> = [
+    ["normal", "normal"],
+    ["reverse-holofoil", "reverse"],
+    ["holofoil", "holo"],
+    ["1st-edition", "firstEdition"],
+    ["unlimited", "normal"],
+    ["unlimited-holofoil", "holo"],
+  ];
+  for (const [tcgKey, variant] of map) {
+    const v = (tcgplayer as Record<string, TcgdexPricingVariant | undefined>)[tcgKey];
+    const price = v?.marketPrice;
+    if (typeof price === "number" && !(variant in out)) out[variant] = price;
+  }
+  return out;
+}
+
+/** Extract per-variant EUR from Cardmarket. avg=normal, avg-holo=holo. */
+function extractEurVariants(cardmarket: TcgdexCardPricing["cardmarket"]): Record<string, number | null> {
+  const out: Record<string, number | null> = {};
+  if (!cardmarket) return out;
+  if (typeof cardmarket.avg === "number") out["normal"] = cardmarket.avg;
+  if (typeof cardmarket["avg-holo"] === "number") out["holo"] = cardmarket["avg-holo"];
+  return out;
+}
+
+/** Build variants object merging USD and EUR per variant. */
+function buildVariants(
+  tcgplayer: TcgdexCardPricing["tcgplayer"],
+  cardmarket: TcgdexCardPricing["cardmarket"]
+): Record<string, { usd: number | null; eur: number | null }> | undefined {
+  const usdMap = extractUsdVariants(tcgplayer);
+  const eurMap = extractEurVariants(cardmarket);
+  const allVariants = new Set([...Object.keys(usdMap), ...Object.keys(eurMap)]);
+  if (allVariants.size === 0) return undefined;
+  const out: Record<string, { usd: number | null; eur: number | null }> = {};
+  for (const v of allVariants) {
+    const usd = usdMap[v] ?? null;
+    const eur = eurMap[v] ?? null;
+    if (usd !== null || eur !== null) out[v] = { usd, eur };
+  }
+  return Object.keys(out).length > 0 ? out : undefined;
+}
+
+/** Best USD market price: prefer normal > reverse > holofoil variants. */
 function extractUsd(tcgplayer: TcgdexCardPricing["tcgplayer"]): number | null {
   if (!tcgplayer) return null;
   const price =
-    tcgplayer.holofoil?.marketPrice ??
-    tcgplayer["1st-edition-holofoil"]?.marketPrice ??
-    tcgplayer["unlimited-holofoil"]?.marketPrice ??
-    tcgplayer["reverse-holofoil"]?.marketPrice ??
-    tcgplayer["1st-edition"]?.marketPrice ??
-    tcgplayer.unlimited?.marketPrice ??
     tcgplayer.normal?.marketPrice ??
+    tcgplayer["reverse-holofoil"]?.marketPrice ??
+    tcgplayer.holofoil?.marketPrice ??
+    tcgplayer["1st-edition"]?.marketPrice ??
+    tcgplayer["1st-edition-holofoil"]?.marketPrice ??
+    tcgplayer.unlimited?.marketPrice ??
+    tcgplayer["unlimited-holofoil"]?.marketPrice ??
     null;
   return typeof price === "number" ? price : null;
 }
 
-/** Best EUR price: walk fallback chain from current holo → current avg → recent time windows. */
+/** Best EUR price: prefer normal avg > holo avg, then time windows. */
 function extractEur(cardmarket: TcgdexCardPricing["cardmarket"]): number | null {
   if (!cardmarket) return null;
   const price =
-    cardmarket["avg-holo"] ??
     cardmarket.avg ??
-    cardmarket["avg1-holo"] ??
+    cardmarket["avg-holo"] ??
     cardmarket.avg1 ??
-    cardmarket["avg7-holo"] ??
+    cardmarket["avg1-holo"] ??
     cardmarket.avg7 ??
-    cardmarket["avg30-holo"] ??
+    cardmarket["avg7-holo"] ??
     cardmarket.avg30 ??
+    cardmarket["avg30-holo"] ??
     null;
   return typeof price === "number" ? price : null;
 }
@@ -156,8 +204,11 @@ async function main() {
       }
       const usd = extractUsd(pricing.tcgplayer);
       const eur = extractEur(pricing.cardmarket);
+      const variants = buildVariants(pricing.tcgplayer, pricing.cardmarket);
       if (usd !== null || eur !== null) {
-        prices[card.id] = { usd, eur, updatedAt: TODAY };
+        const entry: PriceEntry = { usd, eur, updatedAt: TODAY };
+        if (variants) entry.variants = variants;
+        prices[card.id] = entry;
         found++;
       } else {
         skipped++;

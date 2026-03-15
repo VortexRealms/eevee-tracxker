@@ -45,6 +45,14 @@ function buildSubtypes(
   return parts.length > 0 ? parts : undefined;
 }
 
+const VARIANT_ORDER = ["normal", "reverse", "holo", "firstEdition", "wPromo"] as const;
+
+/** Build variants array from TCGdex variants object. */
+function buildVariants(variants: Record<string, boolean> | undefined): string[] {
+  if (!variants || typeof variants !== "object") return ["normal"];
+  return VARIANT_ORDER.filter((k) => variants[k] === true);
+}
+
 /** Batch an array into chunks of `size`. */
 function chunk<T>(arr: T[], size: number): T[][] {
   const out: T[][] = [];
@@ -140,6 +148,7 @@ async function main() {
             large: `https://images.pokemontcg.io/${normalizedId.split("-")[0]}/${normalizedId.split("-").slice(1).join("-")}_hires.png`,
           };
 
+      const builtVariants = buildVariants((card as any).variants);
       cards.push({
         id: normalizedId,
         name: card.name,
@@ -159,6 +168,7 @@ async function main() {
           releaseDate,
         },
         images,
+        variants: builtVariants.length > 0 ? builtVariants : ["normal"],
       });
     }
     console.log("done");
@@ -178,7 +188,7 @@ async function main() {
   // Manual cards override TCGdex cards with the same ID
   const byId = new Map(cards.map((c) => [c.id, c]));
   for (const mc of manualCards) {
-    byId.set(mc.id, mc);
+    byId.set(mc.id, { ...mc, variants: mc.variants ?? ["normal"] });
   }
 
   const merged = Array.from(byId.values());

@@ -636,6 +636,15 @@ input {
   background: linear-gradient(180deg, rgba(69, 16, 24, 0.88), rgba(34, 11, 17, 0.96));
 }
 
+.secondary-button:hover {
+  transform: translateY(-1px);
+}
+
+.secondary-button:active,
+.primary-button:active {
+  transform: translateY(0) scale(0.98);
+}
+
 .secondary-button:disabled {
   cursor: default;
   opacity: 0.7;
@@ -895,6 +904,54 @@ input {
   border-radius: 999px;
   background: rgba(8, 12, 26, 0.78);
   color: white;
+}
+
+.variant-picker-sheet {
+  max-width: 360px;
+  padding: 24px;
+  background: rgba(8, 12, 26, 0.95);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.variant-picker-title {
+  margin: 0 0 4px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #f8fafc;
+}
+
+.variant-picker-subtitle {
+  margin: 0 0 20px;
+  font-size: 0.9rem;
+  color: rgba(248, 250, 252, 0.65);
+}
+
+.variant-picker-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.variant-picker-button {
+  width: 100%;
+  justify-content: center;
+}
+
+.variant-picker-cancel {
+  width: 100%;
+  justify-content: center;
+}
+
+.variant-capsule {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: rgba(248, 250, 252, 0.85);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
 }
 
 .toast {

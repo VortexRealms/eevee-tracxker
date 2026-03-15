@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import type { CollectionRow, PokemonCard } from "../../types";
-import { getAllCards } from "../../lib/cards";
+import { getAllCards, parseCardIdAndVariant } from "../../lib/cards";
 import { CardGrid } from "../../components/CardGrid";
 import { CardModal } from "../../components/CardModal";
 
@@ -39,11 +39,6 @@ export default function ChecklistPage() {
     void loadCollection();
   }, []);
 
-  const collectionById = useMemo(
-    () => new Map((collection ?? []).map((row) => [row.cardId, row])),
-    [collection]
-  );
-
   const activeCard =
     activeCardId != null
       ? cards.find((c) => c.id === activeCardId) ?? null
@@ -55,18 +50,31 @@ export default function ChecklistPage() {
     return () => window.clearTimeout(timeout);
   }, [toast]);
 
-  async function handleSetOwned(cardId: string, owned: boolean) {
+  function rowMatchesCardVariant(
+    row: CollectionRow,
+    targetCardId: string,
+    targetVariant: string
+  ): boolean {
+    const { cardId: rowBase, variant: rowVariant } = parseCardIdAndVariant(row.cardId);
+    const { cardId: targetBase, variant: parsedVariant } = parseCardIdAndVariant(targetCardId);
+    const v = targetVariant || parsedVariant;
+    return rowBase === targetBase && rowVariant === v;
+  }
+
+  async function handleSetOwned(cardId: string, variant: string, owned: boolean) {
     const card = cards.find((c) => c.id === cardId);
     if (!card) return;
 
+    const compositeKey = `${cardId}:${variant}`;
     try {
-      setUpdatingCardId(cardId);
+      setUpdatingCardId(compositeKey);
       setError(null);
       const res = await fetch("/api/collection", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           cardId,
+          variant,
           name: card.name,
           setName: card.set.name,
           number: card.number,
@@ -80,10 +88,20 @@ export default function ChecklistPage() {
       const data = (await res.json()) as { row: CollectionRow };
       setCollection((prev) => {
         const current = prev ?? [];
-        const idx = current.findIndex((r) => r.cardId === data.row.cardId);
-        if (idx === -1) return [...current, data.row];
+        const { cardId: baseId, variant: variantFromRow } = parseCardIdAndVariant(data.row.cardId);
+        const idx = current.findIndex((r) =>
+          rowMatchesCardVariant(r, baseId, variantFromRow)
+        );
         const next = current.slice();
-        next[idx] = data.row;
+        if (idx >= 0) {
+          if (data.row.owned) {
+            next[idx] = data.row;
+          } else {
+            next.splice(idx, 1);
+          }
+        } else if (data.row.owned) {
+          next.push(data.row);
+        }
         return next;
       });
       setToast(

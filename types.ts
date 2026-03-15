@@ -39,10 +39,12 @@ export interface PokemonCard {
   set: PokemonCardSet;
   images: PokemonCardImages;
   pricing?: CardPricing;
+  variants?: string[];
 }
 
 export interface CollectionRow {
   cardId: string;
+  variant?: string;
   name: string;
   setName: string;
   number: string;

@@ -3,23 +3,46 @@ import pricesData from "../data/prices.json";
 import manualPricesData from "../data/manual-prices.json";
 import type { CardPricing, CollectionRow, MergedCard, PokemonCard } from "../types";
 
-type PricesMap = Record<string, { usd?: number | null; eur?: number | null; updatedAt?: string }>;
-type ManualPricesMap = Record<string, { usd?: number; eur?: number }>;
+type VariantPrice = { usd?: number | null; eur?: number | null };
+type PricesMap = Record<
+  string,
+  { usd?: number | null; eur?: number | null; updatedAt?: string; variants?: Record<string, VariantPrice> }
+>;
+type ManualVariantPrice = { usd?: number; eur?: number };
+type ManualPricesMap = Record<
+  string,
+  { usd?: number; eur?: number; variants?: Record<string, ManualVariantPrice> }
+>;
 
 export function getAllCards(): PokemonCard[] {
   const prices = pricesData as PricesMap;
   const manualPrices = manualPricesData as ManualPricesMap;
 
   return (cardsData as PokemonCard[]).map((card) => {
-    const entry = prices[card.id] ?? manualPrices[card.id];
-    if (!entry) return card;
+    const base = prices[card.id];
+    const manual = manualPrices[card.id];
+    if (!base && !manual) return card;
     const pricing: CardPricing = {
-      usd: entry.usd ?? null,
-      eur: entry.eur ?? null,
-      updatedAt: (entry as any).updatedAt,
+      usd: base?.usd ?? manual?.usd ?? null,
+      eur: base?.eur ?? manual?.eur ?? null,
+      updatedAt: (base as any)?.updatedAt,
     };
     return { ...card, pricing };
   });
+}
+
+/** Parse composite cardId (e.g. "sv8pt5-74:normal") into base id and variant. */
+export function parseCardIdAndVariant(
+  composite: string
+): { cardId: string; variant: string } {
+  const colon = composite.indexOf(":");
+  if (colon >= 0) {
+    return {
+      cardId: composite.slice(0, colon),
+      variant: composite.slice(colon + 1) || "normal"
+    };
+  }
+  return { cardId: composite, variant: "normal" };
 }
 
 /** Returns the EUR→USD exchange rate stored in prices.json, with a safe fallback. */
@@ -28,6 +51,49 @@ export function getEurUsdRate(): number {
   return typeof meta?.eurUsdRate === "number" && meta.eurUsdRate > 0
     ? meta.eurUsdRate
     : 1.08;
+}
+
+export interface ResolvedPrice {
+  usd: number | null;
+  eur: number | null;
+}
+
+/**
+ * Get price for a card, optionally for a specific variant.
+ * All/Missing: use getPriceForCard(card) for normal price.
+ * Owned: use getPriceForCard(card, variant) for variant-specific price when available.
+ * Merges prices.json (primary) with manual-prices.json (fallback) at field level.
+ */
+export function getPriceForCard(
+  card: PokemonCard,
+  variant?: string
+): ResolvedPrice {
+  const prices = pricesData as PricesMap;
+  const manualPrices = manualPricesData as ManualPricesMap;
+  const base = prices[card.id];
+  const manual = manualPrices[card.id];
+
+  const v = variant ?? "normal";
+  const baseVariant = base?.variants?.[v];
+  const manualVariant = manual?.variants?.[v];
+
+  const usd =
+    baseVariant?.usd ??
+    base?.usd ??
+    manualVariant?.usd ??
+    manual?.usd ??
+    null;
+  const eur =
+    baseVariant?.eur ??
+    base?.eur ??
+    manualVariant?.eur ??
+    manual?.eur ??
+    null;
+
+  return {
+    usd: typeof usd === "number" ? usd : null,
+    eur: typeof eur === "number" ? eur : null
+  };
 }
 
 export function mergeCardsWithCollection(

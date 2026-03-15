@@ -32,6 +32,7 @@ export async function POST(req: Request) {
 
   const {
     cardId,
+    variant,
     name,
     setName,
     number,
@@ -39,6 +40,7 @@ export async function POST(req: Request) {
     owned
   } = body as {
     cardId?: unknown;
+    variant?: unknown;
     name?: unknown;
     setName?: unknown;
     number?: unknown;
@@ -54,6 +56,7 @@ export async function POST(req: Request) {
     cardId: cardId.trim()
   };
 
+  if (typeof variant === "string" && variant.trim()) input.variant = variant.trim();
   if (typeof name === "string") input.name = name;
   if (typeof setName === "string") input.setName = setName;
   if (typeof number === "string") input.number = number;
