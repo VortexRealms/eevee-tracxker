@@ -74,8 +74,14 @@ export function getPriceForCard(
   const manual = manualPrices[card.id];
 
   const v = variant ?? "normal";
-  const baseVariant = base?.variants?.[v];
-  const manualVariant = manual?.variants?.[v];
+  let baseVariant = base?.variants?.[v];
+  let manualVariant = manual?.variants?.[v];
+
+  // When reverse has no price, use holo as fallback (before card-level)
+  if (v === "reverse") {
+    if (!baseVariant?.usd && !baseVariant?.eur) baseVariant = base?.variants?.["holo"];
+    if (!manualVariant?.usd && !manualVariant?.eur) manualVariant = manual?.variants?.["holo"];
+  }
 
   const usd =
     baseVariant?.usd ??
