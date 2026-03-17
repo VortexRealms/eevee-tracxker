@@ -1,12 +1,12 @@
 {
   "_meta": {
-    "eurUsdRate": 1.1476,
-    "ratesUpdatedAt": "2026-03-15"
+    "eurUsdRate": 1.1478,
+    "ratesUpdatedAt": "2026-03-17"
   },
   "base2-3": {
     "usd": 163.71,
     "eur": 55.98,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
         "usd": 82.88,
@@ -21,7 +21,7 @@
   "base2-4": {
     "usd": 168.81,
     "eur": 54.78,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
         "usd": 86.66,
@@ -36,10 +36,10 @@
   "base2-12": {
     "usd": 239.19,
     "eur": 11.88,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 38.85,
+        "usd": 39.38,
         "eur": null
       },
       "normal": {
@@ -49,121 +49,121 @@
     }
   },
   "base2-19": {
-    "usd": 26.35,
+    "usd": 27.09,
     "eur": 55.98,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "firstEdition": {
-        "usd": 26.35,
+        "usd": 27.09,
         "eur": null
       },
       "normal": {
-        "usd": 13.89,
+        "usd": 13.99,
         "eur": 55.98
       }
     }
   },
   "base2-20": {
-    "usd": 26.47,
+    "usd": 31.12,
     "eur": 54.78,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "firstEdition": {
-        "usd": 26.47,
+        "usd": 31.12,
         "eur": null
       },
       "normal": {
-        "usd": 14.05,
+        "usd": 14.09,
         "eur": 54.78
       }
     }
   },
   "base2-28": {
-    "usd": 31.44,
+    "usd": 31.58,
     "eur": 11.88,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "firstEdition": {
-        "usd": 31.44,
+        "usd": 31.58,
         "eur": null
       },
       "normal": {
-        "usd": 11.81,
+        "usd": 11.67,
         "eur": 11.88
       }
     }
   },
   "base2-51": {
-    "usd": 18.49,
+    "usd": 18.96,
     "eur": 0.85,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "firstEdition": {
-        "usd": 18.49,
+        "usd": 18.96,
         "eur": null
       },
       "normal": {
-        "usd": 1.24,
+        "usd": 1.57,
         "eur": 0.85
       }
     }
   },
   "base5-35": {
-    "usd": 19.94,
+    "usd": 20.25,
     "eur": 6.33,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "firstEdition": {
-        "usd": 19.94,
+        "usd": 20.25,
         "eur": null
       },
       "normal": {
-        "usd": 6.73,
+        "usd": 6.48,
         "eur": 6.33
       }
     }
   },
   "base5-38": {
-    "usd": 17.79,
+    "usd": 18.37,
     "eur": 10.65,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "firstEdition": {
-        "usd": 17.79,
+        "usd": 18.37,
         "eur": null
       },
       "normal": {
-        "usd": 7.4,
+        "usd": 7.7,
         "eur": 10.65
       }
     }
   },
   "base5-45": {
-    "usd": 17.75,
+    "usd": 17.97,
     "eur": 7.75,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "firstEdition": {
-        "usd": 17.75,
+        "usd": 17.97,
         "eur": null
       },
       "normal": {
-        "usd": 5.14,
+        "usd": 4.84,
         "eur": 7.75
       }
     }
   },
   "base5-55": {
-    "usd": 8.23,
+    "usd": 8.67,
     "eur": 4.2,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "firstEdition": {
-        "usd": 8.23,
+        "usd": 8.67,
         "eur": null
       },
       "normal": {
-        "usd": 2.98,
+        "usd": 2.85,
         "eur": 4.2
       }
     }
@@ -171,29 +171,29 @@
   "gym2-28": {
     "usd": 53.04,
     "eur": 40.3,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "firstEdition": {
         "usd": 53.04,
         "eur": null
       },
       "normal": {
-        "usd": 19.11,
+        "usd": 19.3,
         "eur": 40.3
       }
     }
   },
   "gym2-51": {
-    "usd": 25.11,
+    "usd": 24.9,
     "eur": 10.79,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "firstEdition": {
-        "usd": 25.11,
+        "usd": 24.9,
         "eur": null
       },
       "normal": {
-        "usd": 8.61,
+        "usd": 8.71,
         "eur": 10.79
       }
     }
@@ -201,7 +201,7 @@
   "neo2-1": {
     "usd": 384.47,
     "eur": 70.61,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
         "usd": 238.87,
@@ -216,7 +216,7 @@
   "neo2-13": {
     "usd": 439.96,
     "eur": 437.52,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
         "usd": 439.96,
@@ -229,16 +229,16 @@
     }
   },
   "neo2-20": {
-    "usd": 75.5,
+    "usd": 76.14,
     "eur": 70.61,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "firstEdition": {
-        "usd": 75.5,
+        "usd": 76.14,
         "eur": null
       },
       "normal": {
-        "usd": 20.7,
+        "usd": 21,
         "eur": 70.61
       }
     }
@@ -246,14 +246,14 @@
   "neo2-32": {
     "usd": 48,
     "eur": 437.52,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "firstEdition": {
         "usd": 48,
         "eur": null
       },
       "normal": {
-        "usd": 54.33,
+        "usd": 55.38,
         "eur": 437.52
       }
     }
@@ -261,7 +261,7 @@
   "neo2-38": {
     "usd": 15.75,
     "eur": 4.03,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "firstEdition": {
         "usd": 15.75,
@@ -276,7 +276,7 @@
   "neo4-4": {
     "usd": 293.98,
     "eur": 236.13,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
         "usd": 293.98,
@@ -291,7 +291,7 @@
   "neo4-46": {
     "usd": 55.78,
     "eur": 14.57,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "firstEdition": {
         "usd": 55.78,
@@ -304,12 +304,12 @@
     }
   },
   "neo4-48": {
-    "usd": 126.84,
+    "usd": 127.42,
     "eur": 32.64,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "firstEdition": {
-        "usd": 126.84,
+        "usd": 127.42,
         "eur": null
       },
       "normal": {
@@ -319,12 +319,12 @@
     }
   },
   "neo4-52": {
-    "usd": 66.81,
+    "usd": 68.56,
     "eur": 12.56,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "firstEdition": {
-        "usd": 66.81,
+        "usd": 68.56,
         "eur": null
       },
       "normal": {
@@ -336,7 +336,7 @@
   "lc-9": {
     "usd": 212,
     "eur": 31.99,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "reverse": {
         "usd": 212,
@@ -355,7 +355,7 @@
   "lc-10": {
     "usd": 142.54,
     "eur": 89.33,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "reverse": {
         "usd": 142.54,
@@ -374,7 +374,7 @@
   "lc-14": {
     "usd": 224.99,
     "eur": 13.98,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "reverse": {
         "usd": 224.99,
@@ -393,7 +393,7 @@
   "lc-74": {
     "usd": 3.47,
     "eur": 1.55,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 3.47,
@@ -411,12 +411,12 @@
   },
   "ecard2-11": {
     "usd": 91.36,
-    "eur": 303.4,
-    "updatedAt": "2026-03-15",
+    "eur": 219.75,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 91.36,
-        "eur": 303.4
+        "eur": 219.75
       },
       "reverse": {
         "usd": 129.99,
@@ -427,7 +427,7 @@
   "ecard2-41": {
     "usd": 162.6,
     "eur": 307.99,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 162.6,
@@ -442,7 +442,7 @@
   "ecard2-75": {
     "usd": 28.21,
     "eur": 13.65,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 28.21,
@@ -460,8 +460,8 @@
   },
   "ecard2-H09": {
     "usd": 339.08,
-    "eur": 303.4,
-    "updatedAt": "2026-03-15",
+    "eur": 219.75,
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
         "usd": 339.08,
@@ -469,14 +469,14 @@
       },
       "normal": {
         "usd": null,
-        "eur": 303.4
+        "eur": 219.75
       }
     }
   },
   "ecard2-H29": {
     "usd": 700,
     "eur": 307.99,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
         "usd": 700,
@@ -491,7 +491,7 @@
   "ecard3-8": {
     "usd": 46.49,
     "eur": 232.5,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 46.49,
@@ -506,7 +506,7 @@
   "ecard3-13": {
     "usd": 41.79,
     "eur": 192.86,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 41.79,
@@ -520,12 +520,12 @@
   },
   "ecard3-32": {
     "usd": 200.08,
-    "eur": 2780.5,
-    "updatedAt": "2026-03-15",
+    "eur": 2078.73,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 200.08,
-        "eur": 2780.5
+        "eur": 2078.73
       },
       "reverse": {
         "usd": 300,
@@ -536,7 +536,7 @@
   "ecard3-33": {
     "usd": 85.16,
     "eur": 211.25,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 85.16,
@@ -551,7 +551,7 @@
   "ecard3-54": {
     "usd": 31.59,
     "eur": 6.99,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 31.59,
@@ -570,7 +570,7 @@
   "ecard3-H07": {
     "usd": 599.99,
     "eur": 232.5,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
         "usd": 599.99,
@@ -585,7 +585,7 @@
   "ecard3-H12": {
     "usd": null,
     "eur": 192.86,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -595,8 +595,8 @@
   },
   "ecard3-H30": {
     "usd": 659.99,
-    "eur": 2780.5,
-    "updatedAt": "2026-03-15",
+    "eur": 2078.73,
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
         "usd": 659.99,
@@ -604,14 +604,14 @@
       },
       "normal": {
         "usd": null,
-        "eur": 2780.5
+        "eur": 2078.73
       }
     }
   },
   "ecard3-H31": {
     "usd": null,
     "eur": 211.25,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -622,14 +622,14 @@
   "ex2-5": {
     "usd": 54.99,
     "eur": 21.72,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "reverse": {
         "usd": 54.99,
         "eur": null
       },
       "holo": {
-        "usd": 77.17,
+        "usd": 74.92,
         "eur": 29.99
       },
       "normal": {
@@ -641,7 +641,7 @@
   "ex2-6": {
     "usd": 104.5,
     "eur": 16.29,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "reverse": {
         "usd": 104.5,
@@ -660,7 +660,7 @@
   "ex2-16": {
     "usd": 12.5,
     "eur": 4.93,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 12.5,
@@ -677,12 +677,12 @@
     }
   },
   "ex2-24": {
-    "usd": 27.17,
+    "usd": 27.28,
     "eur": 17.37,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 27.17,
+        "usd": 27.28,
         "eur": 17.37
       },
       "reverse": {
@@ -698,7 +698,7 @@
   "ex2-25": {
     "usd": 13.2,
     "eur": 4.86,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 13.2,
@@ -717,7 +717,7 @@
   "ex2-63": {
     "usd": 4.9,
     "eur": 3.49,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 4.9,
@@ -736,14 +736,14 @@
   "ex10-5": {
     "usd": 154.94,
     "eur": 36.35,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "reverse": {
         "usd": 154.94,
         "eur": null
       },
       "holo": {
-        "usd": 69.19,
+        "usd": 69.69,
         "eur": 526.82
       },
       "normal": {
@@ -755,7 +755,7 @@
   "ex10-8": {
     "usd": 59.2,
     "eur": 20.74,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "reverse": {
         "usd": 59.2,
@@ -774,7 +774,7 @@
   "ex10-19": {
     "usd": 85.89,
     "eur": 21.31,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "reverse": {
         "usd": 85.89,
@@ -791,16 +791,16 @@
     }
   },
   "ex10-55": {
-    "usd": 4.89,
+    "usd": 4.9,
     "eur": 2.78,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 4.89,
+        "usd": 4.9,
         "eur": 2.78
       },
       "reverse": {
-        "usd": 37.24,
+        "usd": 44.5,
         "eur": null
       },
       "holo": {
@@ -812,7 +812,7 @@
   "ex10-102": {
     "usd": 399,
     "eur": 425,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
         "usd": 399,
@@ -827,7 +827,7 @@
   "ex10-112": {
     "usd": 899.99,
     "eur": 325,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
         "usd": 899.99,
@@ -842,7 +842,7 @@
   "ex11-4": {
     "usd": null,
     "eur": 34.17,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -857,7 +857,7 @@
   "ex11-5": {
     "usd": null,
     "eur": 32.5,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -872,7 +872,7 @@
   "ex11-7": {
     "usd": null,
     "eur": 27.59,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -887,7 +887,7 @@
   "ex11-17": {
     "usd": null,
     "eur": 79.08,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -902,7 +902,7 @@
   "ex11-18": {
     "usd": null,
     "eur": 40.07,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -917,7 +917,7 @@
   "ex11-68": {
     "usd": null,
     "eur": 4.86,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -932,7 +932,7 @@
   "ex11-69": {
     "usd": 6.77,
     "eur": 4.86,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 6.77,
@@ -950,8 +950,8 @@
   },
   "ex11-108": {
     "usd": 249.99,
-    "eur": 37.66,
-    "updatedAt": "2026-03-15",
+    "eur": 149.99,
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
         "usd": 249.99,
@@ -959,14 +959,14 @@
       },
       "normal": {
         "usd": null,
-        "eur": 37.66
+        "eur": 149.99
       }
     }
   },
   "ex11-109": {
     "usd": 204.48,
     "eur": 36.87,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
         "usd": 204.48,
@@ -981,7 +981,7 @@
   "ex11-110": {
     "usd": 218.34,
     "eur": 54.63,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
         "usd": 218.34,
@@ -996,40 +996,40 @@
   "pop3-2": {
     "usd": 25.23,
     "eur": 15.06,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 25.23,
         "eur": 15.06
       },
       "holo": {
-        "usd": 19.05,
+        "usd": 19.68,
         "eur": 5
       }
     }
   },
   "pop3-3": {
     "usd": 20.93,
-    "eur": 40.65,
-    "updatedAt": "2026-03-15",
+    "eur": 14.26,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 20.93,
-        "eur": 40.65
+        "eur": 14.26
       },
       "holo": {
-        "usd": 13.55,
+        "usd": 13.87,
         "eur": null
       }
     }
   },
   "pop3-6": {
-    "usd": 24.55,
+    "usd": 24.89,
     "eur": 18.45,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 24.55,
+        "usd": 24.89,
         "eur": 18.45
       },
       "holo": {
@@ -1041,7 +1041,7 @@
   "pop3-13": {
     "usd": 33.31,
     "eur": 6.79,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 33.31,
@@ -1052,7 +1052,7 @@
   "ex16-100": {
     "usd": 1499.98,
     "eur": null,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
         "usd": 1499.98,
@@ -1063,7 +1063,7 @@
   "ex16-101": {
     "usd": 1701.21,
     "eur": null,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
         "usd": 1701.21,
@@ -1074,7 +1074,7 @@
   "ex16-102": {
     "usd": 839.94,
     "eur": null,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
         "usd": 839.94,
@@ -1084,8 +1084,8 @@
   },
   "dp5-5": {
     "usd": 149.99,
-    "eur": 28.42,
-    "updatedAt": "2026-03-15",
+    "eur": 14.96,
+    "updatedAt": "2026-03-17",
     "variants": {
       "reverse": {
         "usd": 149.99,
@@ -1093,25 +1093,25 @@
       },
       "holo": {
         "usd": 133.52,
-        "eur": 12.1
+        "eur": 17.75
       },
       "normal": {
         "usd": null,
-        "eur": 28.42
+        "eur": 14.96
       }
     }
   },
   "dp5-7": {
     "usd": 51,
     "eur": 13.71,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "reverse": {
         "usd": 51,
         "eur": null
       },
       "holo": {
-        "usd": 83.93,
+        "usd": 83.86,
         "eur": 16
       },
       "normal": {
@@ -1122,12 +1122,12 @@
   },
   "dp5-18": {
     "usd": 9.28,
-    "eur": 1.94,
-    "updatedAt": "2026-03-15",
+    "eur": 2.1,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 9.28,
-        "eur": 1.94
+        "eur": 2.1
       },
       "reverse": {
         "usd": 18.33,
@@ -1135,18 +1135,18 @@
       },
       "holo": {
         "usd": null,
-        "eur": 4.75
+        "eur": 17.99
       }
     }
   },
   "dp5-19": {
     "usd": 12.49,
-    "eur": 3.32,
-    "updatedAt": "2026-03-15",
+    "eur": 2.96,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 12.49,
-        "eur": 3.32
+        "eur": 2.96
       },
       "reverse": {
         "usd": 16.1,
@@ -1154,18 +1154,18 @@
       },
       "holo": {
         "usd": null,
-        "eur": 5.3
+        "eur": 4.95
       }
     }
   },
   "dp5-20": {
     "usd": 8.79,
-    "eur": 28.42,
-    "updatedAt": "2026-03-15",
+    "eur": 14.96,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 8.79,
-        "eur": 28.42
+        "eur": 14.96
       },
       "reverse": {
         "usd": 49.99,
@@ -1173,18 +1173,18 @@
       },
       "holo": {
         "usd": null,
-        "eur": 12.1
+        "eur": 17.75
       }
     }
   },
   "dp5-23": {
     "usd": 4.81,
-    "eur": 1.62,
-    "updatedAt": "2026-03-15",
+    "eur": 1.35,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 4.81,
-        "eur": 1.62
+        "eur": 1.35
       },
       "reverse": {
         "usd": 20.99,
@@ -1192,14 +1192,14 @@
       },
       "holo": {
         "usd": null,
-        "eur": 4.91
+        "eur": 7.2
       }
     }
   },
   "dp5-24": {
     "usd": 8.85,
     "eur": 13.71,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 8.85,
@@ -1217,12 +1217,12 @@
   },
   "dp5-32": {
     "usd": 52.35,
-    "eur": 6.69,
-    "updatedAt": "2026-03-15",
+    "eur": 11.26,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 52.35,
-        "eur": 6.69
+        "eur": 11.26
       },
       "reverse": {
         "usd": 84.84,
@@ -1230,33 +1230,37 @@
       },
       "holo": {
         "usd": null,
-        "eur": 14.74
+        "eur": 16.77
       }
     }
   },
   "dp5-34": {
     "usd": 13.5,
-    "eur": 3.45,
-    "updatedAt": "2026-03-15",
+    "eur": 4.07,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 13.5,
-        "eur": 3.45
+        "eur": 4.07
       },
       "reverse": {
         "usd": 14.33,
         "eur": null
+      },
+      "holo": {
+        "usd": null,
+        "eur": 1.8
       }
     }
   },
   "dp5-62": {
-    "usd": 2.79,
-    "eur": 0.76,
-    "updatedAt": "2026-03-15",
+    "usd": 2.76,
+    "eur": 0.82,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 2.79,
-        "eur": 0.76
+        "usd": 2.76,
+        "eur": 0.82
       },
       "reverse": {
         "usd": 23.28,
@@ -1264,18 +1268,18 @@
       },
       "holo": {
         "usd": null,
-        "eur": 6.83
+        "eur": 16.87
       }
     }
   },
   "dp5-63": {
     "usd": 6.82,
-    "eur": 0.76,
-    "updatedAt": "2026-03-15",
+    "eur": 0.82,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 6.82,
-        "eur": 0.76
+        "eur": 0.82
       },
       "reverse": {
         "usd": 42.99,
@@ -1283,29 +1287,29 @@
       },
       "holo": {
         "usd": null,
-        "eur": 6.83
+        "eur": 16.87
       }
     }
   },
   "dp5-98": {
     "usd": 220,
-    "eur": 28.42,
-    "updatedAt": "2026-03-15",
+    "eur": 14.96,
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
         "usd": 220,
-        "eur": 12.1
+        "eur": 17.75
       },
       "normal": {
         "usd": null,
-        "eur": 28.42
+        "eur": 14.96
       }
     }
   },
   "dp5-99": {
     "usd": 340,
     "eur": 13.71,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
         "usd": 340,
@@ -1319,30 +1323,26 @@
   },
   "pl2-19": {
     "usd": 7.64,
-    "eur": 4.91,
-    "updatedAt": "2026-03-15",
+    "eur": 3.73,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 7.64,
-        "eur": 4.91
+        "eur": 3.73
       },
       "reverse": {
         "usd": 15.55,
         "eur": null
-      },
-      "holo": {
-        "usd": null,
-        "eur": 6.22
       }
     }
   },
   "pl2-26": {
-    "usd": 10.01,
+    "usd": 10.14,
     "eur": 4.12,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 10.01,
+        "usd": 10.14,
         "eur": 4.12
       },
       "reverse": {
@@ -1356,13 +1356,13 @@
     }
   },
   "pl2-34": {
-    "usd": 11.38,
-    "eur": 6.05,
-    "updatedAt": "2026-03-15",
+    "usd": 11.74,
+    "eur": 5.69,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 11.38,
-        "eur": 6.05
+        "usd": 11.74,
+        "eur": 5.69
       },
       "reverse": {
         "usd": 14.26,
@@ -1370,18 +1370,18 @@
       },
       "holo": {
         "usd": null,
-        "eur": 6.13
+        "eur": 11.5
       }
     }
   },
   "pl2-41": {
     "usd": 5.3,
-    "eur": 1.32,
-    "updatedAt": "2026-03-15",
+    "eur": 1.34,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 5.3,
-        "eur": 1.32
+        "eur": 1.34
       },
       "reverse": {
         "usd": 32.1,
@@ -1389,18 +1389,18 @@
       },
       "holo": {
         "usd": null,
-        "eur": 4.32
+        "eur": 1.95
       }
     }
   },
   "pl2-45": {
-    "usd": 2.34,
-    "eur": 0.67,
-    "updatedAt": "2026-03-15",
+    "usd": 2.36,
+    "eur": 0.61,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 2.34,
-        "eur": 0.67
+        "usd": 2.36,
+        "eur": 0.61
       },
       "reverse": {
         "usd": 12.15,
@@ -1408,18 +1408,18 @@
       },
       "holo": {
         "usd": null,
-        "eur": 4.62
+        "eur": 3.75
       }
     }
   },
   "pl2-59": {
     "usd": 1.43,
-    "eur": 0.64,
-    "updatedAt": "2026-03-15",
+    "eur": 0.5,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 1.43,
-        "eur": 0.64
+        "eur": 0.5
       },
       "reverse": {
         "usd": 24.99,
@@ -1427,33 +1427,33 @@
       },
       "holo": {
         "usd": null,
-        "eur": 7.24
+        "eur": 12.25
       }
     }
   },
   "hgss3-2": {
-    "usd": 23.64,
-    "eur": 8.83,
-    "updatedAt": "2026-03-15",
+    "usd": 24.89,
+    "eur": 8.18,
+    "updatedAt": "2026-03-17",
     "variants": {
       "reverse": {
-        "usd": 23.64,
+        "usd": 24.89,
         "eur": null
       },
       "holo": {
         "usd": 44.05,
-        "eur": 15.49
+        "eur": 7.5
       },
       "normal": {
         "usd": null,
-        "eur": 8.83
+        "eur": 8.18
       }
     }
   },
   "hgss3-10": {
     "usd": 80,
-    "eur": 10.43,
-    "updatedAt": "2026-03-15",
+    "eur": 12.17,
+    "updatedAt": "2026-03-17",
     "variants": {
       "reverse": {
         "usd": 80,
@@ -1461,22 +1461,22 @@
       },
       "holo": {
         "usd": 66.72,
-        "eur": 23.42
+        "eur": 30.36
       },
       "normal": {
         "usd": null,
-        "eur": 10.43
+        "eur": 12.17
       }
     }
   },
   "hgss3-17": {
-    "usd": 6.89,
-    "eur": 14.59,
-    "updatedAt": "2026-03-15",
+    "usd": 7.05,
+    "eur": 6.1,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 6.89,
-        "eur": 14.59
+        "usd": 7.05,
+        "eur": 6.1
       },
       "reverse": {
         "usd": 17.99,
@@ -1484,18 +1484,18 @@
       },
       "holo": {
         "usd": null,
-        "eur": 17.59
+        "eur": 15.24
       }
     }
   },
   "hgss3-26": {
     "usd": 8.04,
-    "eur": 3.78,
-    "updatedAt": "2026-03-15",
+    "eur": 4.38,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 8.04,
-        "eur": 3.78
+        "eur": 4.38
       },
       "reverse": {
         "usd": 31.4,
@@ -1503,18 +1503,18 @@
       },
       "holo": {
         "usd": null,
-        "eur": 9.13
+        "eur": 10.25
       }
     }
   },
   "hgss3-28": {
     "usd": 4.37,
-    "eur": 1.66,
-    "updatedAt": "2026-03-15",
+    "eur": 1.79,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 4.37,
-        "eur": 1.66
+        "eur": 1.79
       },
       "reverse": {
         "usd": 28.58,
@@ -1528,12 +1528,12 @@
   },
   "hgss3-41": {
     "usd": 7.42,
-    "eur": 3.51,
-    "updatedAt": "2026-03-15",
+    "eur": 2.92,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 7.42,
-        "eur": 3.51
+        "eur": 2.92
       },
       "reverse": {
         "usd": 20.74,
@@ -1541,18 +1541,18 @@
       },
       "holo": {
         "usd": null,
-        "eur": 17.44
+        "eur": 15.05
       }
     }
   },
   "hgss3-47": {
-    "usd": 2.38,
-    "eur": 1.01,
-    "updatedAt": "2026-03-15",
+    "usd": 2.45,
+    "eur": 1.19,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 2.38,
-        "eur": 1.01
+        "usd": 2.45,
+        "eur": 1.19
       },
       "reverse": {
         "usd": 25,
@@ -1560,18 +1560,18 @@
       },
       "holo": {
         "usd": null,
-        "eur": 21.47
+        "eur": 17.4
       }
     }
   },
   "hgss3-48": {
     "usd": 2.01,
-    "eur": 1.01,
-    "updatedAt": "2026-03-15",
+    "eur": 1.19,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 2.01,
-        "eur": 1.01
+        "eur": 1.19
       },
       "reverse": {
         "usd": 25,
@@ -1579,44 +1579,44 @@
       },
       "holo": {
         "usd": null,
-        "eur": 21.47
+        "eur": 17.4
       }
     }
   },
   "hgss3-81": {
     "usd": 154.44,
-    "eur": 8.83,
-    "updatedAt": "2026-03-15",
+    "eur": 8.18,
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
         "usd": 154.44,
-        "eur": 15.49
+        "eur": 7.5
       },
       "normal": {
         "usd": null,
-        "eur": 8.83
+        "eur": 8.18
       }
     }
   },
   "hgss3-86": {
     "usd": 377.34,
-    "eur": 10.43,
-    "updatedAt": "2026-03-15",
+    "eur": 12.17,
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
         "usd": 377.34,
-        "eur": 23.42
+        "eur": 30.36
       },
       "normal": {
         "usd": null,
-        "eur": 10.43
+        "eur": 12.17
       }
     }
   },
   "col1-4": {
     "usd": 29.15,
-    "eur": 11.33,
-    "updatedAt": "2026-03-15",
+    "eur": 48.5,
+    "updatedAt": "2026-03-17",
     "variants": {
       "reverse": {
         "usd": 29.15,
@@ -1624,18 +1624,18 @@
       },
       "holo": {
         "usd": 38.57,
-        "eur": 6
+        "eur": null
       },
       "normal": {
         "usd": null,
-        "eur": 11.33
+        "eur": 48.5
       }
     }
   },
   "col1-13": {
     "usd": 18.18,
     "eur": 22.57,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "reverse": {
         "usd": 18.18,
@@ -1654,7 +1654,7 @@
   "col1-22": {
     "usd": 94.5,
     "eur": 130.96,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "reverse": {
         "usd": 94.5,
@@ -1671,28 +1671,32 @@
     }
   },
   "col1-44": {
-    "usd": 2.93,
-    "eur": 3.78,
-    "updatedAt": "2026-03-15",
+    "usd": 2.94,
+    "eur": 3.67,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 2.93,
-        "eur": 3.78
+        "usd": 2.94,
+        "eur": 3.67
       },
       "reverse": {
         "usd": 24.3,
         "eur": null
+      },
+      "holo": {
+        "usd": null,
+        "eur": 37.44
       }
     }
   },
   "col1-45": {
     "usd": 2.1,
-    "eur": 1.71,
-    "updatedAt": "2026-03-15",
+    "eur": 1.7,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 2.1,
-        "eur": 1.71
+        "eur": 1.7
       },
       "reverse": {
         "usd": 27.01,
@@ -1700,18 +1704,18 @@
       },
       "holo": {
         "usd": null,
-        "eur": 26.58
+        "eur": 7.37
       }
     }
   },
   "col1-52": {
     "usd": 3.92,
-    "eur": 5.97,
-    "updatedAt": "2026-03-15",
+    "eur": 4.63,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 3.92,
-        "eur": 5.97
+        "eur": 4.63
       },
       "reverse": {
         "usd": 18.96,
@@ -1719,18 +1723,18 @@
       },
       "holo": {
         "usd": null,
-        "eur": 1
+        "eur": 31.73
       }
     }
   },
   "col1-56": {
     "usd": 1.65,
-    "eur": 2.6,
-    "updatedAt": "2026-03-15",
+    "eur": 1.64,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 1.65,
-        "eur": 2.6
+        "eur": 1.64
       },
       "reverse": {
         "usd": 15.81,
@@ -1738,21 +1742,21 @@
       },
       "holo": {
         "usd": null,
-        "eur": 26.6
+        "eur": 19.28
       }
     }
   },
   "bw5-6": {
-    "usd": 8.21,
+    "usd": 8.83,
     "eur": 4.67,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 8.21,
+        "usd": 8.83,
         "eur": 4.67
       },
       "reverse": {
-        "usd": 17.74,
+        "usd": 17.23,
         "eur": null
       },
       "holo": {
@@ -1762,13 +1766,13 @@
     }
   },
   "bw5-12": {
-    "usd": 3.63,
-    "eur": 3.78,
-    "updatedAt": "2026-03-15",
+    "usd": 3.64,
+    "eur": 2.75,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 3.63,
-        "eur": 3.78
+        "usd": 3.64,
+        "eur": 2.75
       },
       "reverse": {
         "usd": 12.72,
@@ -1776,14 +1780,14 @@
       },
       "holo": {
         "usd": null,
-        "eur": 7.13
+        "eur": 8.75
       }
     }
   },
   "bw5-25": {
     "usd": 5.89,
     "eur": 3.75,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 5.89,
@@ -1800,13 +1804,13 @@
     }
   },
   "bw5-30": {
-    "usd": 5.14,
-    "eur": 2.76,
-    "updatedAt": "2026-03-15",
+    "usd": 5.22,
+    "eur": 2.45,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 5.14,
-        "eur": 2.76
+        "usd": 5.22,
+        "eur": 2.45
       },
       "reverse": {
         "usd": 18.27,
@@ -1814,14 +1818,14 @@
       },
       "holo": {
         "usd": null,
-        "eur": 18.75
+        "eur": 19.16
       }
     }
   },
   "bw5-37": {
     "usd": 4.93,
     "eur": 3.24,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 4.93,
@@ -1838,13 +1842,13 @@
     }
   },
   "bw5-48": {
-    "usd": 8.81,
-    "eur": 4.1,
-    "updatedAt": "2026-03-15",
+    "usd": 8.92,
+    "eur": 2.8,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 8.81,
-        "eur": 4.1
+        "usd": 8.92,
+        "eur": 2.8
       },
       "reverse": {
         "usd": 19.3,
@@ -1852,18 +1856,18 @@
       },
       "holo": {
         "usd": null,
-        "eur": 29.95
+        "eur": 26.3
       }
     }
   },
   "bw5-60": {
     "usd": 14.86,
-    "eur": 9.74,
-    "updatedAt": "2026-03-15",
+    "eur": 8.01,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 14.86,
-        "eur": 9.74
+        "eur": 8.01
       },
       "reverse": {
         "usd": 84.97,
@@ -1871,18 +1875,18 @@
       },
       "holo": {
         "usd": null,
-        "eur": 14.95
+        "eur": 20
       }
     }
   },
   "bw5-61": {
-    "usd": 13.25,
-    "eur": 9.74,
-    "updatedAt": "2026-03-15",
+    "usd": 13.22,
+    "eur": 8.01,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 13.25,
-        "eur": 9.74
+        "usd": 13.22,
+        "eur": 8.01
       },
       "reverse": {
         "usd": 38.22,
@@ -1890,18 +1894,18 @@
       },
       "holo": {
         "usd": null,
-        "eur": 14.95
+        "eur": 20
       }
     }
   },
   "bw5-83": {
-    "usd": 3.91,
-    "eur": 2.2,
-    "updatedAt": "2026-03-15",
+    "usd": 3.99,
+    "eur": 2.52,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 3.91,
-        "eur": 2.2
+        "usd": 3.99,
+        "eur": 2.52
       },
       "reverse": {
         "usd": 47.75,
@@ -1909,18 +1913,18 @@
       },
       "holo": {
         "usd": null,
-        "eur": 23
+        "eur": 23.13
       }
     }
   },
   "bw5-84": {
     "usd": 1.2,
-    "eur": 2.2,
-    "updatedAt": "2026-03-15",
+    "eur": 2.52,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 1.2,
-        "eur": 2.2
+        "eur": 2.52
       },
       "reverse": {
         "usd": 32.45,
@@ -1928,18 +1932,18 @@
       },
       "holo": {
         "usd": null,
-        "eur": 23
+        "eur": 23.13
       }
     }
   },
   "bw9-11": {
-    "usd": 8.82,
-    "eur": 2.81,
-    "updatedAt": "2026-03-15",
+    "usd": 8.56,
+    "eur": 7.06,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 8.82,
-        "eur": 2.81
+        "usd": 8.56,
+        "eur": 7.06
       },
       "reverse": {
         "usd": 33.31,
@@ -1947,18 +1951,18 @@
       },
       "holo": {
         "usd": null,
-        "eur": 12.69
+        "eur": 10.83
       }
     }
   },
   "bw9-12": {
-    "usd": 4.13,
-    "eur": 2.56,
-    "updatedAt": "2026-03-15",
+    "usd": 4.01,
+    "eur": 4.25,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 4.13,
-        "eur": 2.56
+        "usd": 4.01,
+        "eur": 4.25
       },
       "reverse": {
         "usd": 20.93,
@@ -1966,18 +1970,18 @@
       },
       "holo": {
         "usd": null,
-        "eur": 19.99
+        "eur": 33.33
       }
     }
   },
   "bw9-20": {
-    "usd": 3.04,
-    "eur": 1.92,
-    "updatedAt": "2026-03-15",
+    "usd": 3.02,
+    "eur": 2.22,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 3.04,
-        "eur": 1.92
+        "usd": 3.02,
+        "eur": 2.22
       },
       "reverse": {
         "usd": 34.65,
@@ -1985,18 +1989,18 @@
       },
       "holo": {
         "usd": null,
-        "eur": 9.95
+        "eur": 13.5
       }
     }
   },
   "bw9-23": {
-    "usd": 3.76,
-    "eur": 6.05,
-    "updatedAt": "2026-03-15",
+    "usd": 3.73,
+    "eur": 5.15,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 3.76,
-        "eur": 6.05
+        "usd": 3.73,
+        "eur": 5.15
       },
       "reverse": {
         "usd": 22.23,
@@ -2004,18 +2008,18 @@
       },
       "holo": {
         "usd": null,
-        "eur": 9.5
+        "eur": 29.67
       }
     }
   },
   "bw9-34": {
-    "usd": 3.81,
-    "eur": 1.99,
-    "updatedAt": "2026-03-15",
+    "usd": 3.86,
+    "eur": 2.26,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 3.81,
-        "eur": 1.99
+        "usd": 3.86,
+        "eur": 2.26
       },
       "reverse": {
         "usd": 42.31,
@@ -2023,29 +2027,33 @@
       },
       "holo": {
         "usd": null,
-        "eur": 12.13
+        "eur": 17.83
       }
     }
   },
   "bw9-48": {
-    "usd": 5.25,
-    "eur": 2.5,
-    "updatedAt": "2026-03-15",
+    "usd": 5.32,
+    "eur": 3.34,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 5.25,
-        "eur": 2.5
+        "usd": 5.32,
+        "eur": 3.34
       },
       "reverse": {
         "usd": 42.54,
         "eur": null
+      },
+      "holo": {
+        "usd": null,
+        "eur": 17
       }
     }
   },
   "bw9-64": {
     "usd": 75.4,
     "eur": 42.02,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "reverse": {
         "usd": 75.4,
@@ -2062,13 +2070,13 @@
     }
   },
   "bw9-89": {
-    "usd": 0.97,
-    "eur": 1.38,
-    "updatedAt": "2026-03-15",
+    "usd": 0.9,
+    "eur": 1.77,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 0.97,
-        "eur": 1.38
+        "usd": 0.9,
+        "eur": 1.77
       },
       "reverse": {
         "usd": 11.76,
@@ -2076,33 +2084,33 @@
       },
       "holo": {
         "usd": null,
-        "eur": 29.9
+        "eur": 15.88
       }
     }
   },
   "bw9-90": {
-    "usd": 1.44,
-    "eur": 1.38,
-    "updatedAt": "2026-03-15",
+    "usd": 1.45,
+    "eur": 1.77,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 1.44,
-        "eur": 1.38
+        "usd": 1.45,
+        "eur": 1.77
       },
       "reverse": {
-        "usd": 11.27,
+        "usd": 11.24,
         "eur": null
       },
       "holo": {
         "usd": null,
-        "eur": 29.9
+        "eur": 15.88
       }
     }
   },
   "xyp-XY04": {
     "usd": null,
     "eur": 9.62,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -2113,7 +2121,7 @@
   "xyp-XY96": {
     "usd": null,
     "eur": 45.12,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -2124,7 +2132,7 @@
   "bw11-RC14": {
     "usd": null,
     "eur": 13.27,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -2137,45 +2145,45 @@
     }
   },
   "tk-xy-sy-13": {
-    "usd": 5.52,
+    "usd": 6.16,
     "eur": null,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 5.52,
+        "usd": 6.16,
         "eur": null
       }
     }
   },
   "tk-xy-sy-15": {
-    "usd": 9.92,
+    "usd": 10.11,
     "eur": null,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 9.92,
+        "usd": 10.11,
         "eur": null
       }
     }
   },
   "tk-xy-sy-21": {
-    "usd": 5.62,
+    "usd": 5.67,
     "eur": null,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 5.62,
+        "usd": 5.67,
         "eur": null
       }
     }
   },
   "tk-xy-sy-30": {
-    "usd": 18.87,
+    "usd": 19.39,
     "eur": null,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 18.87,
+        "usd": 19.39,
         "eur": null
       }
     }
@@ -2183,7 +2191,7 @@
   "xy3-7": {
     "usd": 2.39,
     "eur": 1.28,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 2.39,
@@ -2202,14 +2210,14 @@
   "xy3-19": {
     "usd": 2.78,
     "eur": 2.23,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 2.78,
         "eur": 2.23
       },
       "reverse": {
-        "usd": 7.36,
+        "usd": 7.56,
         "eur": null
       },
       "holo": {
@@ -2219,16 +2227,16 @@
     }
   },
   "xy3-72": {
-    "usd": 9.12,
+    "usd": 9.47,
     "eur": 5.78,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 9.12,
+        "usd": 9.47,
         "eur": 5.78
       },
       "reverse": {
-        "usd": 17.75,
+        "usd": 18.31,
         "eur": null
       },
       "holo": {
@@ -2238,12 +2246,12 @@
     }
   },
   "xy3-80": {
-    "usd": 0.72,
+    "usd": 0.73,
     "eur": 0.46,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 0.72,
+        "usd": 0.73,
         "eur": 0.46
       },
       "reverse": {
@@ -2257,12 +2265,12 @@
     }
   },
   "xy7-13": {
-    "usd": 0.9,
+    "usd": 0.92,
     "eur": 1.91,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 0.9,
+        "usd": 0.92,
         "eur": 1.91
       },
       "reverse": {
@@ -2276,12 +2284,12 @@
     }
   },
   "xy7-22": {
-    "usd": 0.62,
+    "usd": 0.61,
     "eur": 0.52,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 0.62,
+        "usd": 0.61,
         "eur": 0.52
       },
       "reverse": {
@@ -2297,7 +2305,7 @@
   "xy7-26": {
     "usd": 3.93,
     "eur": 3.22,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "reverse": {
         "usd": 3.93,
@@ -2314,12 +2322,12 @@
     }
   },
   "xy7-63": {
-    "usd": 0.42,
+    "usd": 0.39,
     "eur": 0.29,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 0.42,
+        "usd": 0.39,
         "eur": 0.29
       },
       "reverse": {
@@ -2335,7 +2343,7 @@
   "xy9-52": {
     "usd": 20.15,
     "eur": 29.18,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
         "usd": 20.15,
@@ -2348,12 +2356,12 @@
     }
   },
   "xy9-117": {
-    "usd": 76.38,
+    "usd": 76.58,
     "eur": 29.18,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 76.38,
+        "usd": 76.58,
         "eur": null
       },
       "normal": {
@@ -2363,12 +2371,12 @@
     }
   },
   "g1-10": {
-    "usd": 25.4,
+    "usd": 25.46,
     "eur": 27.39,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 25.4,
+        "usd": 25.46,
         "eur": null
       },
       "normal": {
@@ -2378,12 +2386,12 @@
     }
   },
   "g1-24": {
-    "usd": 18.45,
+    "usd": 18.66,
     "eur": 17.73,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 18.45,
+        "usd": 18.66,
         "eur": null
       },
       "normal": {
@@ -2393,12 +2401,12 @@
     }
   },
   "g1-28": {
-    "usd": 22.08,
+    "usd": 22.21,
     "eur": 14.34,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 22.08,
+        "usd": 22.21,
         "eur": null
       },
       "normal": {
@@ -2410,7 +2418,7 @@
   "g1-RC6": {
     "usd": null,
     "eur": 33.41,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -2421,7 +2429,7 @@
   "g1-RC21": {
     "usd": null,
     "eur": 36.24,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -2432,7 +2440,7 @@
   "g1-RC28": {
     "usd": null,
     "eur": 33.41,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -2443,7 +2451,7 @@
   "g1-RC32": {
     "usd": null,
     "eur": 36.24,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -2454,7 +2462,7 @@
   "tk-xy-su-4": {
     "usd": 2.27,
     "eur": null,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 2.27,
@@ -2465,7 +2473,7 @@
   "xy10-20": {
     "usd": 10.8,
     "eur": 10.26,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
         "usd": 10.8,
@@ -2480,7 +2488,7 @@
   "xy10-55": {
     "usd": 33.91,
     "eur": 36.59,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
         "usd": 33.91,
@@ -2493,12 +2501,12 @@
     }
   },
   "xy10-116": {
-    "usd": 28.52,
+    "usd": 28.51,
     "eur": 10.26,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 28.52,
+        "usd": 28.51,
         "eur": null
       },
       "normal": {
@@ -2510,7 +2518,7 @@
   "xy10-119": {
     "usd": 137.87,
     "eur": 36.59,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
         "usd": 137.87,
@@ -2525,7 +2533,7 @@
   "2016xy-12": {
     "usd": 49.99,
     "eur": null,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
         "usd": 49.99,
@@ -2534,12 +2542,12 @@
     }
   },
   "sm1-61": {
-    "usd": 7.49,
+    "usd": 7.59,
     "eur": 5.99,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 7.49,
+        "usd": 7.59,
         "eur": null
       },
       "normal": {
@@ -2549,12 +2557,12 @@
     }
   },
   "sm1-80": {
-    "usd": 16.7,
+    "usd": 16.74,
     "eur": 10.56,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 16.7,
+        "usd": 16.74,
         "eur": null
       },
       "normal": {
@@ -2564,12 +2572,12 @@
     }
   },
   "sm1-101": {
-    "usd": 0.33,
+    "usd": 0.32,
     "eur": 0.37,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 0.33,
+        "usd": 0.32,
         "eur": 0.37
       },
       "reverse": {
@@ -2583,12 +2591,12 @@
     }
   },
   "sm1-140": {
-    "usd": 22.21,
+    "usd": 22.27,
     "eur": 5.99,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 22.21,
+        "usd": 22.27,
         "eur": null
       },
       "normal": {
@@ -2598,12 +2606,12 @@
     }
   },
   "sm1-142": {
-    "usd": 40.81,
+    "usd": 40.2,
     "eur": 10.56,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 40.81,
+        "usd": 40.2,
         "eur": null
       },
       "normal": {
@@ -2613,12 +2621,12 @@
     }
   },
   "sm1-152": {
-    "usd": 43.56,
+    "usd": 43.85,
     "eur": 5.99,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 43.56,
+        "usd": 43.85,
         "eur": null
       },
       "normal": {
@@ -2630,7 +2638,7 @@
   "sm1-154": {
     "usd": 110.02,
     "eur": 10.56,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
         "usd": 110.02,
@@ -2643,12 +2651,12 @@
     }
   },
   "sm2-92": {
-    "usd": 18.3,
+    "usd": 19.02,
     "eur": 10.79,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 18.3,
+        "usd": 19.02,
         "eur": null
       },
       "normal": {
@@ -2658,12 +2666,12 @@
     }
   },
   "sm2-140": {
-    "usd": 47.58,
+    "usd": 47.9,
     "eur": 10.79,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 47.58,
+        "usd": 47.9,
         "eur": null
       },
       "normal": {
@@ -2673,12 +2681,12 @@
     }
   },
   "sm2-158": {
-    "usd": 128.04,
+    "usd": 128.63,
     "eur": 10.79,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 128.04,
+        "usd": 128.63,
         "eur": null
       },
       "normal": {
@@ -2688,12 +2696,12 @@
     }
   },
   "sm5-13": {
-    "usd": 7.27,
+    "usd": 7.22,
     "eur": 4.32,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 7.27,
+        "usd": 7.22,
         "eur": null
       },
       "normal": {
@@ -2703,12 +2711,12 @@
     }
   },
   "sm5-39": {
-    "usd": 7.31,
+    "usd": 7.27,
     "eur": 5.18,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 7.31,
+        "usd": 7.27,
         "eur": null
       },
       "normal": {
@@ -2720,7 +2728,7 @@
   "sm5-104": {
     "usd": 0.66,
     "eur": 0.62,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 0.66,
@@ -2737,12 +2745,12 @@
     }
   },
   "sm5-105": {
-    "usd": 1.97,
+    "usd": 1.94,
     "eur": 0.62,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 1.97,
+        "usd": 1.94,
         "eur": 0.62
       },
       "reverse": {
@@ -2758,7 +2766,7 @@
   "sm5-139": {
     "usd": 37.94,
     "eur": 4.32,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
         "usd": 37.94,
@@ -2771,12 +2779,12 @@
     }
   },
   "sm5-141": {
-    "usd": 36.79,
+    "usd": 36.63,
     "eur": 5.18,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 36.79,
+        "usd": 36.63,
         "eur": null
       },
       "normal": {
@@ -2786,12 +2794,12 @@
     }
   },
   "sm5-157": {
-    "usd": 86.36,
+    "usd": 86.2,
     "eur": 4.32,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 86.36,
+        "usd": 86.2,
         "eur": null
       },
       "normal": {
@@ -2803,7 +2811,7 @@
   "sm5-159": {
     "usd": 71.93,
     "eur": 5.18,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
         "usd": 71.93,
@@ -2816,16 +2824,16 @@
     }
   },
   "sm6-87": {
-    "usd": 5.09,
+    "usd": 5.05,
     "eur": 6.53,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 5.09,
+        "usd": 5.05,
         "eur": 6.53
       },
       "reverse": {
-        "usd": 14.51,
+        "usd": 14.69,
         "eur": null
       },
       "holo": {
@@ -2837,7 +2845,7 @@
   "2018sm-11": {
     "usd": 13.59,
     "eur": null,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
         "usd": 13.59,
@@ -2846,12 +2854,12 @@
     }
   },
   "sm8-89": {
-    "usd": 2.96,
+    "usd": 3.16,
     "eur": 4.69,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 2.96,
+        "usd": 3.16,
         "eur": 4.69
       },
       "reverse": {
@@ -2865,12 +2873,12 @@
     }
   },
   "sm8-120": {
-    "usd": 8.94,
+    "usd": 8.97,
     "eur": 7.69,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 8.94,
+        "usd": 8.97,
         "eur": 7.69
       },
       "reverse": {
@@ -2886,7 +2894,7 @@
   "sm8-155": {
     "usd": 0.45,
     "eur": 1.18,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 0.45,
@@ -2903,12 +2911,12 @@
     }
   },
   "sm9-120": {
-    "usd": 71.85,
+    "usd": 72.53,
     "eur": 44.55,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 71.85,
+        "usd": 72.53,
         "eur": null
       },
       "normal": {
@@ -2918,12 +2926,12 @@
     }
   },
   "sm9-171": {
-    "usd": 222.66,
+    "usd": 227.23,
     "eur": 44.55,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 222.66,
+        "usd": 227.23,
         "eur": null
       },
       "normal": {
@@ -2935,7 +2943,7 @@
   "sm9-191": {
     "usd": 226.31,
     "eur": 44.55,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
         "usd": 226.31,
@@ -2948,12 +2956,12 @@
     }
   },
   "sm10-130": {
-    "usd": 55.91,
+    "usd": 55.61,
     "eur": 57.6,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 55.91,
+        "usd": 55.61,
         "eur": null
       },
       "normal": {
@@ -2963,12 +2971,12 @@
     }
   },
   "sm10-204": {
-    "usd": 83.43,
+    "usd": 83.68,
     "eur": 57.6,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 83.43,
+        "usd": 83.68,
         "eur": null
       },
       "normal": {
@@ -2978,12 +2986,12 @@
     }
   },
   "sm10-205": {
-    "usd": 536.99,
+    "usd": 542.17,
     "eur": 57.6,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 536.99,
+        "usd": 542.17,
         "eur": null
       },
       "normal": {
@@ -2995,7 +3003,7 @@
   "sm10-225": {
     "usd": 127.65,
     "eur": 57.6,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
         "usd": 127.65,
@@ -3008,12 +3016,12 @@
     }
   },
   "sm11-72": {
-    "usd": 36.38,
+    "usd": 36.37,
     "eur": 21.05,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 36.38,
+        "usd": 36.37,
         "eur": null
       },
       "normal": {
@@ -3023,12 +3031,12 @@
     }
   },
   "sm11-125": {
-    "usd": 62.8,
+    "usd": 63.55,
     "eur": 42.68,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 62.8,
+        "usd": 63.55,
         "eur": null
       },
       "normal": {
@@ -3040,14 +3048,14 @@
   "sm115-18": {
     "usd": 1.25,
     "eur": 0.73,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "reverse": {
         "usd": 1.25,
         "eur": null
       },
       "holo": {
-        "usd": 0.88,
+        "usd": 0.87,
         "eur": 2.64
       },
       "normal": {
@@ -3059,7 +3067,7 @@
   "sm115-23": {
     "usd": 0.46,
     "eur": 0.53,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 0.46,
@@ -3076,16 +3084,16 @@
     }
   },
   "sm115-48": {
-    "usd": 1.77,
+    "usd": 1.79,
     "eur": 0.21,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "reverse": {
-        "usd": 1.77,
+        "usd": 1.79,
         "eur": null
       },
       "holo": {
-        "usd": 1.43,
+        "usd": 1.47,
         "eur": 1.14
       },
       "normal": {
@@ -3095,12 +3103,12 @@
     }
   },
   "sm115-49": {
-    "usd": 0.28,
+    "usd": 0.26,
     "eur": 0.21,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 0.28,
+        "usd": 0.26,
         "eur": 0.21
       },
       "reverse": {
@@ -3116,7 +3124,7 @@
   "2019sm-12": {
     "usd": 17.7,
     "eur": null,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
         "usd": 17.7,
@@ -3125,12 +3133,12 @@
     }
   },
   "sm12-25": {
-    "usd": 0.76,
+    "usd": 0.77,
     "eur": 0.69,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 0.76,
+        "usd": 0.77,
         "eur": 0.69
       },
       "reverse": {
@@ -3144,16 +3152,16 @@
     }
   },
   "sm12-42": {
-    "usd": 0.86,
+    "usd": 0.96,
     "eur": 0.82,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 0.86,
+        "usd": 0.96,
         "eur": 0.82
       },
       "reverse": {
-        "usd": 5.74,
+        "usd": 5.75,
         "eur": null
       },
       "holo": {
@@ -3163,12 +3171,12 @@
     }
   },
   "sm12-70": {
-    "usd": 0.51,
+    "usd": 0.5,
     "eur": 0.47,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 0.51,
+        "usd": 0.5,
         "eur": 0.47
       },
       "reverse": {
@@ -3182,12 +3190,12 @@
     }
   },
   "sm12-155": {
-    "usd": 4.92,
+    "usd": 4.91,
     "eur": 2.47,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 4.92,
+        "usd": 4.91,
         "eur": 2.47
       },
       "reverse": {
@@ -3201,12 +3209,12 @@
     }
   },
   "sm12-166": {
-    "usd": 0.52,
+    "usd": 0.53,
     "eur": 0.76,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 0.52,
+        "usd": 0.53,
         "eur": 0.76
       },
       "reverse": {
@@ -3220,12 +3228,12 @@
     }
   },
   "sm12-167": {
-    "usd": 0.73,
+    "usd": 0.74,
     "eur": 0.76,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 0.73,
+        "usd": 0.74,
         "eur": 0.76
       },
       "reverse": {
@@ -3241,7 +3249,7 @@
   "swshp-SWSH041": {
     "usd": null,
     "eur": 4.46,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -3252,7 +3260,7 @@
   "swshp-SWSH042": {
     "usd": null,
     "eur": 6.28,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -3263,7 +3271,7 @@
   "swshp-SWSH065": {
     "usd": null,
     "eur": 7.25,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -3273,41 +3281,41 @@
   },
   "swshp-SWSH072": {
     "usd": null,
-    "eur": 6.43,
-    "updatedAt": "2026-03-15",
+    "eur": 5.95,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
-        "eur": 6.43
+        "eur": 5.95
       }
     }
   },
   "swshp-SWSH087": {
     "usd": null,
-    "eur": 3.62,
-    "updatedAt": "2026-03-15",
+    "eur": 3.48,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
-        "eur": 3.62
+        "eur": 3.48
       }
     }
   },
   "swshp-SWSH094": {
     "usd": null,
-    "eur": 3.25,
-    "updatedAt": "2026-03-15",
+    "eur": 3.46,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
-        "eur": 3.25
+        "eur": 3.46
       }
     }
   },
   "swshp-SWSH095": {
     "usd": null,
     "eur": 6.28,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -3318,7 +3326,7 @@
   "swshp-SWSH118": {
     "usd": null,
     "eur": 6.28,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -3329,7 +3337,7 @@
   "swshp-SWSH127": {
     "usd": null,
     "eur": 6.28,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -3340,7 +3348,7 @@
   "swshp-SWSH129": {
     "usd": null,
     "eur": 8.62,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -3351,7 +3359,7 @@
   "swshp-SWSH134": {
     "usd": null,
     "eur": 9.46,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -3362,7 +3370,7 @@
   "swshp-SWSH149": {
     "usd": null,
     "eur": 3.5,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -3373,7 +3381,7 @@
   "swshp-SWSH150": {
     "usd": null,
     "eur": 3.63,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -3384,7 +3392,7 @@
   "swshp-SWSH151": {
     "usd": null,
     "eur": 2.92,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -3395,7 +3403,7 @@
   "swshp-SWSH174": {
     "usd": null,
     "eur": 8.2,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -3406,7 +3414,7 @@
   "swshp-SWSH175": {
     "usd": null,
     "eur": 6.28,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -3417,7 +3425,7 @@
   "swshp-SWSH179": {
     "usd": null,
     "eur": 3.5,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -3428,7 +3436,7 @@
   "swshp-SWSH180": {
     "usd": null,
     "eur": 53.38,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -3439,7 +3447,7 @@
   "swshp-SWSH181": {
     "usd": null,
     "eur": 3.63,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -3450,7 +3458,7 @@
   "swshp-SWSH182": {
     "usd": null,
     "eur": 73.14,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -3461,7 +3469,7 @@
   "swshp-SWSH183": {
     "usd": null,
     "eur": 2.92,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -3472,7 +3480,7 @@
   "swshp-SWSH184": {
     "usd": null,
     "eur": 70.23,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -3483,7 +3491,7 @@
   "swshp-SWSH190": {
     "usd": null,
     "eur": 6.28,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -3494,7 +3502,7 @@
   "swshp-SWSH191": {
     "usd": null,
     "eur": 2.4,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -3505,7 +3513,7 @@
   "swshp-SWSH192": {
     "usd": null,
     "eur": 2.65,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -3516,7 +3524,7 @@
   "swshp-SWSH194": {
     "usd": null,
     "eur": 2.4,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -3527,7 +3535,7 @@
   "swshp-SWSH195": {
     "usd": null,
     "eur": 2.37,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -3538,7 +3546,7 @@
   "swshp-SWSH196": {
     "usd": null,
     "eur": 2.65,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -3549,7 +3557,7 @@
   "swshp-SWSH197": {
     "usd": null,
     "eur": 3.15,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -3560,7 +3568,7 @@
   "swshp-SWSH201": {
     "usd": null,
     "eur": 2.2,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -3571,7 +3579,7 @@
   "swshp-SWSH202": {
     "usd": null,
     "eur": 2.65,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -3582,7 +3590,7 @@
   "swshp-SWSH203": {
     "usd": null,
     "eur": 5.07,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -3593,7 +3601,7 @@
   "swshp-SWSH211": {
     "usd": null,
     "eur": 2.65,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -3604,7 +3612,7 @@
   "swshp-SWSH212": {
     "usd": null,
     "eur": 6.28,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -3615,7 +3623,7 @@
   "swshp-SWSH230": {
     "usd": null,
     "eur": 9.93,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -3628,16 +3636,16 @@
     }
   },
   "swsh4-26": {
-    "usd": 0.36,
+    "usd": 0.35,
     "eur": 0.51,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 0.36,
+        "usd": 0.35,
         "eur": 0.51
       },
       "reverse": {
-        "usd": 0.73,
+        "usd": 0.7,
         "eur": null
       },
       "holo": {
@@ -3647,16 +3655,16 @@
     }
   },
   "swsh4-30": {
-    "usd": 0.4,
+    "usd": 0.36,
     "eur": 0.46,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 0.4,
+        "usd": 0.36,
         "eur": 0.46
       },
       "reverse": {
-        "usd": 0.78,
+        "usd": 0.76,
         "eur": null
       },
       "holo": {
@@ -3666,16 +3674,16 @@
     }
   },
   "swsh4-47": {
-    "usd": 0.48,
+    "usd": 0.45,
     "eur": 0.58,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 0.48,
+        "usd": 0.45,
         "eur": 0.58
       },
       "reverse": {
-        "usd": 0.67,
+        "usd": 0.65,
         "eur": null
       },
       "holo": {
@@ -3685,16 +3693,16 @@
     }
   },
   "swsh4-130": {
-    "usd": 0.29,
+    "usd": 0.23,
     "eur": 0.11,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 0.29,
+        "usd": 0.23,
         "eur": 0.11
       },
       "reverse": {
-        "usd": 0.47,
+        "usd": 0.48,
         "eur": null
       },
       "holo": {
@@ -3705,30 +3713,30 @@
   },
   "swsh45-52": {
     "usd": 0.28,
-    "eur": 0.09,
-    "updatedAt": "2026-03-15",
+    "eur": 0.08,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": 0.28,
-        "eur": 0.09
+        "eur": 0.08
       },
       "reverse": {
-        "usd": 0.4,
+        "usd": 0.51,
         "eur": null
       },
       "holo": {
         "usd": null,
-        "eur": 0.35
+        "eur": 0.46
       }
     }
   },
   "swsh7-7": {
-    "usd": 2.53,
+    "usd": 2.44,
     "eur": 2.15,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 2.53,
+        "usd": 2.44,
         "eur": null
       },
       "normal": {
@@ -3738,12 +3746,12 @@
     }
   },
   "swsh7-8": {
-    "usd": 7.18,
+    "usd": 7.1,
     "eur": 6.31,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 7.18,
+        "usd": 7.1,
         "eur": null
       },
       "normal": {
@@ -3753,12 +3761,12 @@
     }
   },
   "swsh7-18": {
-    "usd": 9.74,
+    "usd": 10.18,
     "eur": 6.67,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 9.74,
+        "usd": 10.18,
         "eur": null
       },
       "normal": {
@@ -3768,12 +3776,12 @@
     }
   },
   "swsh7-30": {
-    "usd": 8.8,
+    "usd": 9.07,
     "eur": 6.04,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 8.8,
+        "usd": 9.07,
         "eur": null
       },
       "normal": {
@@ -3783,12 +3791,12 @@
     }
   },
   "swsh7-40": {
-    "usd": 2.01,
+    "usd": 2.2,
     "eur": 1.58,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 2.01,
+        "usd": 2.2,
         "eur": null
       },
       "normal": {
@@ -3798,12 +3806,12 @@
     }
   },
   "swsh7-41": {
-    "usd": 5.46,
+    "usd": 5.47,
     "eur": 4.1,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 5.46,
+        "usd": 5.47,
         "eur": null
       },
       "normal": {
@@ -3813,12 +3821,12 @@
     }
   },
   "swsh7-51": {
-    "usd": 7.38,
+    "usd": 9.25,
     "eur": 6.04,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 7.38,
+        "usd": 9.25,
         "eur": null
       },
       "normal": {
@@ -3828,12 +3836,12 @@
     }
   },
   "swsh7-64": {
-    "usd": 2.66,
+    "usd": 2.88,
     "eur": 2.08,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 2.66,
+        "usd": 2.88,
         "eur": null
       },
       "normal": {
@@ -3843,12 +3851,12 @@
     }
   },
   "swsh7-65": {
-    "usd": 13.05,
+    "usd": 13.54,
     "eur": 8.92,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 13.05,
+        "usd": 13.54,
         "eur": null
       },
       "normal": {
@@ -3858,12 +3866,12 @@
     }
   },
   "swsh7-74": {
-    "usd": 3.68,
+    "usd": 3.84,
     "eur": 2.55,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 3.68,
+        "usd": 3.84,
         "eur": null
       },
       "normal": {
@@ -3873,12 +3881,12 @@
     }
   },
   "swsh7-75": {
-    "usd": 14.73,
+    "usd": 15.55,
     "eur": 8.77,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 14.73,
+        "usd": 15.55,
         "eur": null
       },
       "normal": {
@@ -3888,12 +3896,12 @@
     }
   },
   "swsh7-94": {
-    "usd": 5.78,
+    "usd": 5.77,
     "eur": 4.39,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 5.78,
+        "usd": 5.77,
         "eur": null
       },
       "normal": {
@@ -3903,12 +3911,12 @@
     }
   },
   "swsh7-95": {
-    "usd": 22.91,
+    "usd": 25.05,
     "eur": 19.78,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 22.91,
+        "usd": 25.05,
         "eur": null
       },
       "normal": {
@@ -3918,16 +3926,16 @@
     }
   },
   "swsh7-125": {
-    "usd": 0.32,
+    "usd": 0.28,
     "eur": 0.19,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 0.32,
+        "usd": 0.28,
         "eur": 0.19
       },
       "reverse": {
-        "usd": 1.65,
+        "usd": 1.75,
         "eur": null
       },
       "holo": {
@@ -3937,12 +3945,12 @@
     }
   },
   "swsh7-166": {
-    "usd": 15.99,
+    "usd": 16.38,
     "eur": 2.15,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 15.99,
+        "usd": 16.38,
         "eur": null
       },
       "normal": {
@@ -3952,12 +3960,12 @@
     }
   },
   "swsh7-167": {
-    "usd": 112.79,
+    "usd": 113.08,
     "eur": 2.15,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 112.79,
+        "usd": 113.08,
         "eur": null
       },
       "normal": {
@@ -3967,12 +3975,12 @@
     }
   },
   "swsh7-169": {
-    "usd": 16.46,
+    "usd": 16.11,
     "eur": 6.67,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 16.46,
+        "usd": 16.11,
         "eur": null
       },
       "normal": {
@@ -3982,12 +3990,12 @@
     }
   },
   "swsh7-172": {
-    "usd": 21.42,
+    "usd": 21.54,
     "eur": 6.04,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 21.42,
+        "usd": 21.54,
         "eur": null
       },
       "normal": {
@@ -3997,12 +4005,12 @@
     }
   },
   "swsh7-174": {
-    "usd": 21.19,
+    "usd": 21.26,
     "eur": 1.58,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 21.19,
+        "usd": 21.26,
         "eur": null
       },
       "normal": {
@@ -4012,12 +4020,12 @@
     }
   },
   "swsh7-175": {
-    "usd": 109.3,
+    "usd": 110.93,
     "eur": 1.58,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 109.3,
+        "usd": 110.93,
         "eur": null
       },
       "normal": {
@@ -4027,12 +4035,12 @@
     }
   },
   "swsh7-177": {
-    "usd": 18.03,
+    "usd": 18.1,
     "eur": 6.04,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 18.03,
+        "usd": 18.1,
         "eur": null
       },
       "normal": {
@@ -4042,12 +4050,12 @@
     }
   },
   "swsh7-179": {
-    "usd": 19.88,
+    "usd": 20.1,
     "eur": 2.08,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 19.88,
+        "usd": 20.1,
         "eur": null
       },
       "normal": {
@@ -4057,12 +4065,12 @@
     }
   },
   "swsh7-180": {
-    "usd": 207.33,
+    "usd": 206.34,
     "eur": 2.08,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 207.33,
+        "usd": 206.34,
         "eur": null
       },
       "normal": {
@@ -4072,12 +4080,12 @@
     }
   },
   "swsh7-183": {
-    "usd": 30.82,
+    "usd": 30.86,
     "eur": 2.55,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 30.82,
+        "usd": 30.86,
         "eur": null
       },
       "normal": {
@@ -4087,12 +4095,12 @@
     }
   },
   "swsh7-184": {
-    "usd": 142.31,
+    "usd": 140.67,
     "eur": 2.55,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 142.31,
+        "usd": 140.67,
         "eur": null
       },
       "normal": {
@@ -4102,12 +4110,12 @@
     }
   },
   "swsh7-188": {
-    "usd": 44.9,
+    "usd": 45.28,
     "eur": 4.39,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 44.9,
+        "usd": 45.28,
         "eur": null
       },
       "normal": {
@@ -4117,12 +4125,12 @@
     }
   },
   "swsh7-189": {
-    "usd": 302.91,
+    "usd": 303.73,
     "eur": 4.39,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 302.91,
+        "usd": 303.73,
         "eur": null
       },
       "normal": {
@@ -4132,12 +4140,12 @@
     }
   },
   "swsh7-204": {
-    "usd": 30.73,
+    "usd": 31.17,
     "eur": 6.31,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 30.73,
+        "usd": 31.17,
         "eur": null
       },
       "normal": {
@@ -4147,12 +4155,12 @@
     }
   },
   "swsh7-205": {
-    "usd": 321.08,
+    "usd": 320.15,
     "eur": 6.31,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 321.08,
+        "usd": 320.15,
         "eur": null
       },
       "normal": {
@@ -4162,12 +4170,12 @@
     }
   },
   "swsh7-208": {
-    "usd": 31.13,
+    "usd": 32.3,
     "eur": 4.1,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 31.13,
+        "usd": 32.3,
         "eur": null
       },
       "normal": {
@@ -4177,12 +4185,12 @@
     }
   },
   "swsh7-209": {
-    "usd": 244.1,
+    "usd": 244.01,
     "eur": 4.1,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 244.1,
+        "usd": 244.01,
         "eur": null
       },
       "normal": {
@@ -4192,12 +4200,12 @@
     }
   },
   "swsh7-211": {
-    "usd": 50.95,
+    "usd": 51.29,
     "eur": 8.77,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 50.95,
+        "usd": 51.29,
         "eur": null
       },
       "normal": {
@@ -4209,7 +4217,7 @@
   "swsh7-212": {
     "usd": 321.4,
     "eur": 8.77,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
         "usd": 321.4,
@@ -4222,12 +4230,12 @@
     }
   },
   "swsh7-214": {
-    "usd": 59.34,
+    "usd": 60.02,
     "eur": 19.78,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 59.34,
+        "usd": 60.02,
         "eur": null
       },
       "normal": {
@@ -4237,12 +4245,12 @@
     }
   },
   "swsh7-215": {
-    "usd": 1743.95,
+    "usd": 1803.72,
     "eur": 19.78,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 1743.95,
+        "usd": 1803.72,
         "eur": null
       },
       "normal": {
@@ -4252,12 +4260,12 @@
     }
   },
   "swsh8-205": {
-    "usd": 0.19,
+    "usd": 0.21,
     "eur": 0.11,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 0.19,
+        "usd": 0.21,
         "eur": 0.11
       },
       "reverse": {
@@ -4273,7 +4281,7 @@
   "swsh8-270": {
     "usd": 290.84,
     "eur": 254.56,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
         "usd": 290.84,
@@ -4288,7 +4296,7 @@
   "swsh9tg-TG01": {
     "usd": null,
     "eur": 10.96,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4299,7 +4307,7 @@
   "swsh9tg-TG02": {
     "usd": null,
     "eur": 11.89,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4310,7 +4318,7 @@
   "swsh9tg-TG04": {
     "usd": null,
     "eur": 8.42,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4321,7 +4329,7 @@
   "swsh9tg-TG11": {
     "usd": null,
     "eur": 8.57,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4332,7 +4340,7 @@
   "swsh9tg-TG14": {
     "usd": null,
     "eur": 32.45,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4343,7 +4351,7 @@
   "swsh9tg-TG15": {
     "usd": null,
     "eur": 39.02,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4354,7 +4362,7 @@
   "swsh9tg-TG22": {
     "usd": null,
     "eur": 51.89,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4365,7 +4373,7 @@
   "swsh9tg-TG23": {
     "usd": null,
     "eur": 68.17,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4374,16 +4382,16 @@
     }
   },
   "swsh10-119": {
-    "usd": 0.29,
+    "usd": 0.3,
     "eur": 0.15,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 0.29,
+        "usd": 0.3,
         "eur": 0.15
       },
       "reverse": {
-        "usd": 0.55,
+        "usd": 0.59,
         "eur": null
       },
       "holo": {
@@ -4393,16 +4401,16 @@
     }
   },
   "pgo-35": {
-    "usd": 0.67,
+    "usd": 0.65,
     "eur": 0.26,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "reverse": {
-        "usd": 0.67,
+        "usd": 0.65,
         "eur": null
       },
       "holo": {
-        "usd": 0.48,
+        "usd": 0.51,
         "eur": null
       },
       "normal": {
@@ -4412,12 +4420,12 @@
     }
   },
   "pgo-54": {
-    "usd": 0.2,
+    "usd": 0.21,
     "eur": 0.07,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
-        "usd": 0.2,
+        "usd": 0.21,
         "eur": 0.07
       },
       "reverse": {
@@ -4427,12 +4435,12 @@
     }
   },
   "swsh12pt5-13": {
-    "usd": 1.94,
+    "usd": 1.83,
     "eur": 1.45,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 1.94,
+        "usd": 1.83,
         "eur": null
       },
       "normal": {
@@ -4442,12 +4450,12 @@
     }
   },
   "swsh12pt5-14": {
-    "usd": 2.54,
+    "usd": 3.09,
     "eur": 2.98,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 2.54,
+        "usd": 3.09,
         "eur": null
       },
       "normal": {
@@ -4457,12 +4465,12 @@
     }
   },
   "swsh12pt5-38": {
-    "usd": 1.67,
+    "usd": 1.85,
     "eur": 1.32,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 1.67,
+        "usd": 1.85,
         "eur": null
       },
       "normal": {
@@ -4472,12 +4480,12 @@
     }
   },
   "swsh12pt5-108": {
-    "usd": 5.57,
+    "usd": 5.49,
     "eur": 3.79,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "holo": {
-        "usd": 5.57,
+        "usd": 5.49,
         "eur": null
       },
       "normal": {
@@ -4489,7 +4497,7 @@
   "swsh12pt5gg-GG35": {
     "usd": null,
     "eur": 2.98,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4500,7 +4508,7 @@
   "swsh12pt5gg-GG40": {
     "usd": null,
     "eur": 58.64,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4511,7 +4519,7 @@
   "sv3-86": {
     "usd": null,
     "eur": 0.08,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4526,7 +4534,7 @@
   "sv3-130": {
     "usd": null,
     "eur": 0.1,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4541,7 +4549,7 @@
   "sv3-166": {
     "usd": null,
     "eur": 0.07,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4556,7 +4564,7 @@
   "sv3pt5-133": {
     "usd": null,
     "eur": 0.06,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4564,18 +4572,33 @@
       },
       "holo": {
         "usd": null,
-        "eur": 0.25
+        "eur": 0.28
       }
     }
   },
   "sv3pt5-134": {
     "usd": null,
-    "eur": 0.22,
-    "updatedAt": "2026-03-15",
+    "eur": 0.24,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
-        "eur": 0.22
+        "eur": 0.24
+      },
+      "holo": {
+        "usd": null,
+        "eur": 2.42
+      }
+    }
+  },
+  "sv3pt5-135": {
+    "usd": null,
+    "eur": 0.27,
+    "updatedAt": "2026-03-17",
+    "variants": {
+      "normal": {
+        "usd": null,
+        "eur": 0.27
       },
       "holo": {
         "usd": null,
@@ -4583,40 +4606,25 @@
       }
     }
   },
-  "sv3pt5-135": {
-    "usd": null,
-    "eur": 0.25,
-    "updatedAt": "2026-03-15",
-    "variants": {
-      "normal": {
-        "usd": null,
-        "eur": 0.25
-      },
-      "holo": {
-        "usd": null,
-        "eur": 2.06
-      }
-    }
-  },
   "sv3pt5-136": {
     "usd": null,
-    "eur": 0.09,
-    "updatedAt": "2026-03-15",
+    "eur": 0.08,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
-        "eur": 0.09
+        "eur": 0.08
       },
       "holo": {
         "usd": null,
-        "eur": 0.25
+        "eur": 0.27
       }
     }
   },
   "sv6-11": {
     "usd": null,
     "eur": 0.06,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4631,7 +4639,7 @@
   "sv6-54": {
     "usd": null,
     "eur": 0.05,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4646,7 +4654,7 @@
   "sv6-135": {
     "usd": null,
     "eur": 0.06,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4661,7 +4669,7 @@
   "sv6-188": {
     "usd": null,
     "eur": 53.55,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4671,23 +4679,23 @@
   },
   "sv6pt5-22": {
     "usd": null,
-    "eur": 0.11,
-    "updatedAt": "2026-03-15",
+    "eur": 0.06,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
-        "eur": 0.11
+        "eur": 0.06
       },
       "holo": {
         "usd": null,
-        "eur": 0.22
+        "eur": 0.18
       }
     }
   },
   "sv6pt5-50": {
     "usd": null,
     "eur": 0.07,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4701,49 +4709,49 @@
   },
   "sv7-113": {
     "usd": null,
-    "eur": 0.05,
-    "updatedAt": "2026-03-15",
+    "eur": 0.06,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
-        "eur": 0.05
+        "eur": 0.06
       },
       "holo": {
         "usd": null,
-        "eur": 0.17
+        "eur": 0.21
       }
     }
   },
   "sv8-86": {
     "usd": null,
-    "eur": 1.33,
-    "updatedAt": "2026-03-15",
+    "eur": 1.28,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
-        "eur": 1.33
+        "eur": 1.28
       }
     }
   },
   "sv8-143": {
     "usd": null,
-    "eur": 0.05,
-    "updatedAt": "2026-03-15",
+    "eur": 0.07,
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
-        "eur": 0.05
+        "eur": 0.07
       },
       "holo": {
         "usd": null,
-        "eur": 0.25
+        "eur": 0.28
       }
     }
   },
   "sv8pt5-5": {
     "usd": null,
     "eur": 0.14,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4758,7 +4766,7 @@
   "sv8pt5-6": {
     "usd": null,
     "eur": 3.22,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4769,7 +4777,7 @@
   "sv8pt5-13": {
     "usd": null,
     "eur": 0.15,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4784,7 +4792,7 @@
   "sv8pt5-14": {
     "usd": null,
     "eur": 4.89,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4795,7 +4803,7 @@
   "sv8pt5-22": {
     "usd": null,
     "eur": 0.15,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4810,7 +4818,7 @@
   "sv8pt5-23": {
     "usd": null,
     "eur": 2.57,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4821,7 +4829,7 @@
   "sv8pt5-25": {
     "usd": null,
     "eur": 0.14,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4836,7 +4844,7 @@
   "sv8pt5-26": {
     "usd": null,
     "eur": 1.99,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4847,7 +4855,7 @@
   "sv8pt5-29": {
     "usd": null,
     "eur": 0.15,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4862,7 +4870,7 @@
   "sv8pt5-30": {
     "usd": null,
     "eur": 2.42,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4873,7 +4881,7 @@
   "sv8pt5-33": {
     "usd": null,
     "eur": 0.15,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4888,7 +4896,7 @@
   "sv8pt5-34": {
     "usd": null,
     "eur": 2.38,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4899,7 +4907,7 @@
   "sv8pt5-40": {
     "usd": null,
     "eur": 0.15,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4914,7 +4922,7 @@
   "sv8pt5-41": {
     "usd": null,
     "eur": 1.89,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4925,7 +4933,7 @@
   "sv8pt5-59": {
     "usd": null,
     "eur": 0.28,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4940,7 +4948,7 @@
   "sv8pt5-60": {
     "usd": null,
     "eur": 4.51,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4951,7 +4959,7 @@
   "sv8pt5-74": {
     "usd": null,
     "eur": 0.05,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4966,7 +4974,7 @@
   "sv8pt5-75": {
     "usd": null,
     "eur": 4.16,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4977,7 +4985,7 @@
   "sv8pt5-144": {
     "usd": null,
     "eur": 213.67,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4988,7 +4996,7 @@
   "sv8pt5-146": {
     "usd": null,
     "eur": 140.38,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -4999,7 +5007,7 @@
   "sv8pt5-149": {
     "usd": null,
     "eur": 146.88,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -5010,7 +5018,7 @@
   "sv8pt5-150": {
     "usd": null,
     "eur": 184.86,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -5021,7 +5029,7 @@
   "sv8pt5-153": {
     "usd": null,
     "eur": 140.3,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -5032,7 +5040,7 @@
   "sv8pt5-155": {
     "usd": null,
     "eur": 167.93,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -5043,7 +5051,7 @@
   "sv8pt5-156": {
     "usd": null,
     "eur": 260.22,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -5054,7 +5062,7 @@
   "sv8pt5-161": {
     "usd": null,
     "eur": 1082.81,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
@@ -5065,7 +5073,7 @@
   "sv8pt5-167": {
     "usd": null,
     "eur": 112.58,
-    "updatedAt": "2026-03-15",
+    "updatedAt": "2026-03-17",
     "variants": {
       "normal": {
         "usd": null,
