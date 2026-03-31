@@ -78,5 +78,26 @@
       "small": "https://images.scrydex.com/pokemon/mcd24-13/medium",
       "large": "https://images.scrydex.com/pokemon/mcd24-13/medium"
     }
+  },
+  {
+    "id": "mcd19-12",
+    "name": "Eevee",
+    "number": "12",
+    "rarity": "None",
+    "supertype": "Pokémon",
+    "subtypes": ["Basic"],
+    "types": ["Colorless"],
+    "hp": "60",
+    "set": {
+      "id": "mcd19",
+      "name": "McDonald's Collection 2019",
+      "series": "Other",
+      "releaseDate": "2019/09/01"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/mcd19-12/medium",
+      "large": "https://images.scrydex.com/pokemon/mcd19-12/medium"
+    },
+    "variants": ["holo"]
   }
 ]
