@@ -14,6 +14,11 @@ import path from "node:path";
 import type { PokemonCard } from "../types";
 import { toTcgdexCardId } from "./set-id-map";
 
+/** Canonical PTCG ids whose pricing is fetched under a different TCGdex card id. */
+const PTCG_ID_TO_TCGDEX_PRICING_FETCH: Record<string, string> = {
+  "mcd19-12": "2019sm-12",
+};
+
 const TCGDEX_API = "https://api.tcgdex.net/v2/en/cards";
 const BATCH_SIZE = 10;
 const TODAY = new Date().toISOString().slice(0, 10);
@@ -191,7 +196,8 @@ async function main() {
 
     const results = await Promise.all(
       batch.map(async (card) => {
-        const tcgdexId = toTcgdexCardId(card.id);
+        const tcgdexId =
+          PTCG_ID_TO_TCGDEX_PRICING_FETCH[card.id] ?? toTcgdexCardId(card.id);
         const pricing = await fetchPricing(tcgdexId);
         return { card, pricing };
       })

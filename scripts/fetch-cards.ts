@@ -174,6 +174,11 @@ async function main() {
     console.log("done");
   }
 
+  /** TCGdex ids that duplicate a manual canonical id (same physical card). */
+  const TCGDEX_IDS_SUPERSEDED_BY_MANUAL = new Set(["2019sm-12"]);
+
+  const cardsDeduped = cards.filter((c) => !TCGDEX_IDS_SUPERSEDED_BY_MANUAL.has(c.id));
+
   // Step 3: Load manual cards (not in TCGdex) and merge
   const manualPath = path.join(process.cwd(), "data", "manual-cards.json");
   let manualCards: PokemonCard[] = [];
@@ -186,7 +191,7 @@ async function main() {
   }
 
   // Manual cards override TCGdex cards with the same ID
-  const byId = new Map(cards.map((c) => [c.id, c]));
+  const byId = new Map(cardsDeduped.map((c) => [c.id, c]));
   for (const mc of manualCards) {
     byId.set(mc.id, { ...mc, variants: mc.variants ?? ["normal"] });
   }

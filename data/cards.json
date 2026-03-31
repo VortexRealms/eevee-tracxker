@@ -6569,33 +6569,6 @@
       "releaseDate": "2019/09/01"
     },
     "images": {
-      "small": "https://images.scrydex.com/pokemon/mcd19-12/medium",
-      "large": "https://images.scrydex.com/pokemon/mcd19-12/medium"
-    },
-    "variants": [
-      "holo"
-    ]
-  },
-  {
-    "id": "2019sm-12",
-    "name": "Eevee",
-    "number": "12",
-    "rarity": "None",
-    "supertype": "Pokémon",
-    "subtypes": [
-      "Basic"
-    ],
-    "types": [
-      "Colorless"
-    ],
-    "hp": "60",
-    "set": {
-      "id": "2019sm",
-      "name": "Macdonald's Collection 2019",
-      "series": "McDonald's Collection",
-      "releaseDate": "2019/10/15"
-    },
-    "images": {
       "small": "https://images.pokemontcg.io/2019sm/12.png",
       "large": "https://images.pokemontcg.io/2019sm/12_hires.png"
     },
