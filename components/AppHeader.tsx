@@ -32,7 +32,11 @@ export function AppHeader() {
         <div className="brand-title">Eevee &amp; Friends Tracker</div>
       </div>
       <div className="brand-right">
-        <div className="brand-caption">Local card snapshot • Sheets sync</div>
+        <div className="brand-caption">
+          {pathname === "/public"
+            ? "Public showcase • read-only"
+            : "Local card snapshot • Sheets sync"}
+        </div>
         {showMenu && (
           <div className="menu-anchor">
             <button

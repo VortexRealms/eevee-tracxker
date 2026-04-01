@@ -17,6 +17,8 @@ function getVariantLabel(variant: string): string {
   return VARIANT_LABELS[variant] ?? variant.charAt(0).toUpperCase() + variant.slice(1);
 }
 
+export type CardGridMode = "checklist" | "public";
+
 interface CardGridProps {
   cards: PokemonCard[];
   collection: CollectionRow[];
@@ -24,6 +26,8 @@ interface CardGridProps {
   onSetOwned: (cardId: string, variant: string, owned: boolean) => void;
   isLoading: boolean;
   updatingCardId: string | null;
+  /** Public showcase: owned-only grid, no marketplace links, no add/remove. */
+  mode?: CardGridMode;
 }
 
 type FilterValue = "all" | "owned" | "missing";
@@ -65,10 +69,14 @@ export function CardGrid({
   onCardClick,
   onSetOwned,
   isLoading,
-  updatingCardId
+  updatingCardId,
+  mode = "checklist"
 }: CardGridProps) {
+  const isPublic = mode === "public";
   const [search, setSearch] = useState("");
-  const [filter, setFilter] = useState<FilterValue>("all");
+  const [filter, setFilter] = useState<FilterValue>(() =>
+    isPublic ? "owned" : "all"
+  );
   const [variantPickerCard, setVariantPickerCard] = useState<PokemonCard | null>(null);
 
   const eurUsdRate = getEurUsdRate();
@@ -174,24 +182,30 @@ export function CardGrid({
     <div className="collection-layout">
       <div className="sticky-toolbar">
         <div className="hero-panel">
-          <div className="page-kicker">Checklist</div>
+          <div className="page-kicker">
+            {isPublic ? "Public showcase" : "Checklist"}
+          </div>
           <div className="stats-row">
             <div className="stat-pill">
               <span>{cards.length}</span>
               <small>total</small>
             </div>
-            <div className="stat-pill is-missing">
-              <span>{counts.missing}</span>
-              <small>missing</small>
-            </div>
+            {!isPublic && (
+              <div className="stat-pill is-missing">
+                <span>{counts.missing}</span>
+                <small>missing</small>
+              </div>
+            )}
             <div className="stat-pill is-owned">
               <span>{counts.owned}</span>
               <small>owned</small>
             </div>
-            <div className="stat-pill is-value">
-              <span>${counts.collectionValue.toFixed(2)}</span>
-              <small>est. value</small>
-            </div>
+            {!isPublic && (
+              <div className="stat-pill is-value">
+                <span>${counts.collectionValue.toFixed(2)}</span>
+                <small>est. value</small>
+              </div>
+            )}
           </div>
         </div>
 
@@ -206,22 +220,26 @@ export function CardGrid({
           />
         </div>
 
-        <div className="chip-row chip-row-scroll">
-          {([
-            ["all", "All"],
-            ["owned", "Owned"],
-            ["missing", "Missing"]
-          ] as const).map(([value, label]) => (
-            <button
-              key={value}
-              type="button"
-              className={`filter-chip ${filter === value ? "is-active" : ""}`}
-              onClick={() => setFilter(value)}
-            >
-              {label}
-            </button>
-          ))}
-        </div>
+        {!isPublic && (
+          <div className="chip-row chip-row-scroll">
+            {(
+              [
+                ["all", "All"],
+                ["owned", "Owned"],
+                ["missing", "Missing"]
+              ] as const
+            ).map(([value, label]) => (
+              <button
+                key={value}
+                type="button"
+                className={`filter-chip ${filter === value ? "is-active" : ""}`}
+                onClick={() => setFilter(value)}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
 
       {isLoading ? (
@@ -236,13 +254,14 @@ export function CardGrid({
             </div>
           ))}
         </div>
-      ) : (filter === "owned" ? filteredOwned : filteredCards).length === 0 ? (
+      ) : (isPublic ? filteredOwned : filter === "owned" ? filteredOwned : filteredCards)
+          .length === 0 ? (
         <div className="empty-state">
           <div className="empty-state-orb" />
           <h2>No matching cards</h2>
           <p>Try a different search, or switch back to the full collection view.</p>
         </div>
-      ) : filter === "owned" ? (
+      ) : isPublic || filter === "owned" ? (
         <div className="collection-grid">
           {filteredOwned.map(({ card, variant, row }) => {
             const compositeKey = row.cardId;
@@ -299,42 +318,44 @@ export function CardGrid({
                     })()}
                   </div>
                 </button>
-                <div className="card-action-wrap">
-                  <div className="search-buttons-row">
-                    <a
-                      href={getEbaySearchUrl(card)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="secondary-button search-button"
+                {!isPublic && (
+                  <div className="card-action-wrap">
+                    <div className="search-buttons-row">
+                      <a
+                        href={getEbaySearchUrl(card)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="secondary-button search-button"
+                      >
+                        eBay
+                      </a>
+                      <a
+                        href={getTcgPlayerSearchUrl(card)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="secondary-button search-button"
+                      >
+                        TCGplayer
+                      </a>
+                      <a
+                        href={getCardmarketSearchUrl(card)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="secondary-button search-button"
+                      >
+                        Cardmarket
+                      </a>
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => onSetOwned(card.id, variant, false)}
+                      className="card-action secondary-button danger-button"
+                      disabled={isUpdating}
                     >
-                      eBay
-                    </a>
-                    <a
-                      href={getTcgPlayerSearchUrl(card)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="secondary-button search-button"
-                    >
-                      TCGplayer
-                    </a>
-                    <a
-                      href={getCardmarketSearchUrl(card)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="secondary-button search-button"
-                    >
-                      Cardmarket
-                    </a>
+                      {isUpdating ? "Saving..." : "Remove from collection"}
+                    </button>
                   </div>
-                  <button
-                    type="button"
-                    onClick={() => onSetOwned(card.id, variant, false)}
-                    className="card-action secondary-button danger-button"
-                    disabled={isUpdating}
-                  >
-                    {isUpdating ? "Saving..." : "Remove from collection"}
-                  </button>
-                </div>
+                )}
               </div>
             );
           })}
@@ -454,7 +475,7 @@ export function CardGrid({
         </div>
       )}
 
-      {variantPickerCard && (
+      {!isPublic && variantPickerCard && (
         <VariantPickerModal
           card={variantPickerCard}
           variants={variantPickerCard.variants ?? ["normal"]}
