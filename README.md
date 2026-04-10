@@ -4,12 +4,20 @@ A personal **Next.js 14** application for tracking a **Pokémon TCG** collection
 
 ---
 
+## Data sources (TCGdex)
+
+**Card metadata** (names, sets, types, variants, and image URLs when TCGdex provides them) and **market pricing** (where exposed in their API, e.g. TCGplayer and Cardmarket aggregates) come from the **hosted [TCGdex API](https://tcgdex.dev/)**. See the official docs at **[tcgdex.dev](https://tcgdex.dev/)** (REST endpoints, SDKs, and references).
+
+You **do not** need to clone the TCGdex Git repository. The fetch scripts use the public API only: `scripts/fetch-cards.ts` via the **`@tcgdex/sdk`** npm package, and `scripts/fetch-prices.ts` via `https://api.tcgdex.net/v2/...`. Network access at fetch time is enough.
+
+---
+
 ## Features
 
-- **Catalogue** — English-language Eevee and Eeveelution cards from [TCGdex](https://www.tcgdex.net/) (physical TCG only; Pokémon TCG Pocket sets are excluded when rebuilding data).
+- **Catalogue** — English-language Eevee and Eeveelution cards from [TCGdex](https://www.tcgdex.net/) (data loaded through the [TCGdex API](https://tcgdex.dev/); physical TCG only; Pokémon TCG Pocket sets are excluded when rebuilding data).
 - **Checklist** — Search, filter by All / Owned / Missing, estimated collection value and per-variant pricing where data exists, add and remove owned cards (including a variant picker for multi-variant printings), optional marketplace search shortcuts (eBay, TCGplayer, Cardmarket), and a full-art image modal.
 - **Public showcase** — Route `/public` shows **owned cards only** in the same visual style as the checklist, without marketplace links or edit controls. Data is served from an **unauthenticated** read-only API backed by the same Google Sheet.
-- **Pricing** — Market prices are populated offline from the TCGdex REST API (TCGplayer USD and Cardmarket EUR where available). Committed overrides in `data/manual-prices.json` fill gaps or correct values at display time.
+- **Pricing** — Market prices are populated offline from the **TCGdex REST API** ([tcgdex.dev](https://tcgdex.dev/)), e.g. TCGplayer USD and Cardmarket EUR where the API exposes them. Committed overrides in `data/manual-prices.json` fill gaps or correct values at display time.
 - **Manual card overrides** — Entries in `data/manual-cards.json` replace fetched rows by **card ID** (e.g. promos, custom images, deduplicated IDs).
 
 ---
@@ -20,8 +28,8 @@ A personal **Next.js 14** application for tracking a **Pokémon TCG** collection
 |--------|--------|
 | Framework | Next.js 14 (App Router), React 18, TypeScript |
 | Styling | Tailwind CSS |
-| Card data (build time) | `@tcgdex/sdk` in `scripts/fetch-cards.ts` |
-| Prices (build time) | TCGdex REST API in `scripts/fetch-prices.ts` |
+| Card data (build time) | `@tcgdex/sdk` in `scripts/fetch-cards.ts` (hosted TCGdex API) |
+| Prices (build time) | `fetch` to `api.tcgdex.net` in `scripts/fetch-prices.ts` (hosted TCGdex API) |
 | Collection storage | Google Sheets API (`googleapis`), service account JWT |
 | Auth | Cookie-based session (HMAC-signed), credentials from environment variables |
 
@@ -90,6 +98,8 @@ npm install
 npm run fetch:cards   # Rebuild data/cards.json from TCGdex + manual-cards.json
 npm run fetch:prices  # Rebuild data/prices.json from TCGdex
 
+# No local clone of TCGdex is required—these commands call the public API.
+
 npm run dev
 ```
 
@@ -126,6 +136,8 @@ npm start
 | `manual-cards.json` | Manual card definitions that **override** fetched rows with the same `id`. |
 | `manual-prices.json` | Per-card or per-variant price overrides merged at read time with `prices.json` in `lib/cards.ts`. |
 
+Nothing here depends on checking out the TCGdex source tree—only the committed JSON and the live API.
+
 ---
 
 ## Security and privacy
@@ -138,4 +150,4 @@ npm start
 
 ## Legal notice
 
-Pokémon, card names, and set names are trademarks of their respective owners. This project is an independent fan tool. Card and pricing data used in fetch scripts are subject to **TCGdex** and respective data providers’ terms. This repository is maintained as a **private, personal** project unless you choose otherwise.
+Pokémon, card names, and set names are trademarks of their respective owners. This project is an independent fan tool. Card and pricing data obtained from the **TCGdex API** are subject to [TCGdex](https://tcgdex.dev/) and respective data providers’ terms. This repository is maintained as a **private, personal** project unless you choose otherwise.
