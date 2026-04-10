@@ -23,8 +23,13 @@ export default async function AdminPage() {
         </div>
         <p className="page-copy">
           Run <code className="inline-code">npm run fetch:cards</code> during development
-          to rebuild <code className="inline-code">data/cards.json</code> from your local
-          `pokemon-tcg-data` clone.
+          to rebuild <code className="inline-code">data/cards.json</code> from{" "}
+          <strong>TCGdex</strong>, merged with <code className="inline-code">data/manual-cards.json</code>{" "}
+          for overrides and promos not covered by the API.
+        </p>
+        <p className="page-copy">
+          Run <code className="inline-code">npm run fetch:prices</code> to refresh{" "}
+          <code className="inline-code">data/prices.json</code> from the TCGdex pricing API.
         </p>
       </section>
     </main>
