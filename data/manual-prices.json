@@ -31,5 +31,57 @@
       "normal": { "usd": 0.20 },
       "reverse": { "usd": 0.28 }
     }
+  },
+  "smp-SM186": {
+    "variants": {
+      "normal": { "eur": 1 }
+    }
+  },
+  "swsh10-38": {
+    "variants": {
+      "normal": { "eur": 0.02 },
+      "reverse": { "eur": 0.49 }
+    }
+  },
+  "svp-167": {
+    "variants": {
+      "holo": { "eur": 0.30 }
+    }
+  },
+  "svp-168": {
+    "variants": {
+      "holo": { "eur": 0.30 }
+    }
+  },
+  "svp-169": {
+    "variants": {
+      "holo": { "eur": 0.30 }
+    }
+  },
+  "svp-170": {
+    "variants": {
+      "holo": { "eur": 0.50 }
+    }
+  },
+  "svp-171": {
+    "variants": {
+      "holo": { "eur": 0.49 }
+    }
+  },
+  "svp-172": {
+    "variants": {
+      "holo": { "eur": 0.50 }
+    }
+  },
+  "svp-175": {
+    "variants": {
+      "normal": { "eur": 10.93 }
+    }
+  },
+  "svp-176": {
+    "variants": {
+      "normal": { "eur": 25 }
+    }
   }
+  
 }
