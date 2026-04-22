@@ -10102,7 +10102,9 @@
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/005/high.png"
     },
     "variants": [
-      "holo"
+      "holo",
+      "reverse",
+      "pokeball"
     ]
   },
   {
@@ -10426,7 +10428,9 @@
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/040/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse",
+      "pokeball"
     ]
   },
   {
