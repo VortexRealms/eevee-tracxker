@@ -13940,66 +13940,6 @@
     ]
   },
   {
-    "id": "cbb2c-1001",
-    "name": "Poké Ball",
-    "number": "10 01/04",
-    "rarity": "Gem Pack logo gold foil",
-    "supertype": "Trainer",
-    "set": {
-      "id": "cbb2c",
-      "name": "Gem Pack Vol. 2",
-      "series": "Other",
-      "releaseDate": "2025/05/16"
-    },
-    "images": {
-      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/1001.png",
-      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/1001.png"
-    },
-    "variants": [
-      "normal"
-    ]
-  },
-  {
-    "id": "cbb2c-1002",
-    "name": "Level Ball",
-    "number": "10 02/04",
-    "rarity": "Gem Pack logo gold foil",
-    "supertype": "Trainer",
-    "set": {
-      "id": "cbb2c",
-      "name": "Gem Pack Vol. 2",
-      "series": "Other",
-      "releaseDate": "2025/05/16"
-    },
-    "images": {
-      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/1002.png",
-      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/1002.png"
-    },
-    "variants": [
-      "normal"
-    ]
-  },
-  {
-    "id": "cbb2c-1003",
-    "name": "Quick Ball",
-    "number": "10 03/04",
-    "rarity": "Gem Pack logo gold foil",
-    "supertype": "Trainer",
-    "set": {
-      "id": "cbb2c",
-      "name": "Gem Pack Vol. 2",
-      "series": "Other",
-      "releaseDate": "2025/05/16"
-    },
-    "images": {
-      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/1003.png",
-      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/1003.png"
-    },
-    "variants": [
-      "normal"
-    ]
-  },
-  {
     "id": "cbb2c-1004",
     "name": "Penny",
     "number": "10 04/04",
