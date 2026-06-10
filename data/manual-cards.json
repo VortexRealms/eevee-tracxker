@@ -5,8 +5,12 @@
     "number": "9",
     "rarity": "None",
     "supertype": "Pokémon",
-    "subtypes": ["Basic"],
-    "types": ["Darkness"],
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Darkness"
+    ],
     "hp": "110",
     "set": {
       "id": "mcd24",
@@ -25,8 +29,13 @@
     "number": "175",
     "rarity": "None",
     "supertype": "Pokémon",
-    "subtypes": ["Stage 1", "ex"],
-    "types": ["Psychic"],
+    "subtypes": [
+      "Stage 1",
+      "ex"
+    ],
+    "types": [
+      "Psychic"
+    ],
     "hp": "270",
     "set": {
       "id": "svp",
@@ -45,8 +54,13 @@
     "number": "176",
     "rarity": "None",
     "supertype": "Pokémon",
-    "subtypes": ["Stage 1", "ex"],
-    "types": ["Darkness"],
+    "subtypes": [
+      "Stage 1",
+      "ex"
+    ],
+    "types": [
+      "Darkness"
+    ],
     "hp": "280",
     "set": {
       "id": "svp",
@@ -65,8 +79,12 @@
     "number": "13",
     "rarity": "None",
     "supertype": "Pokémon",
-    "subtypes": ["Basic"],
-    "types": ["Colorless"],
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
     "hp": "50",
     "set": {
       "id": "mcd24",
@@ -85,8 +103,12 @@
     "number": "12",
     "rarity": "None",
     "supertype": "Pokémon",
-    "subtypes": ["Basic"],
-    "types": ["Colorless"],
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
     "hp": "60",
     "set": {
       "id": "mcd19",
@@ -98,7 +120,9 @@
       "small": "https://images.scrydex.com/pokemon/mcd19-12/medium",
       "large": "https://images.scrydex.com/pokemon/mcd19-12/medium"
     },
-    "variants": ["holo"]
+    "variants": [
+      "holo"
+    ]
   },
   {
     "id": "sv8pt5-5",
@@ -157,5 +181,2877 @@
       "reverse",
       "pokeball"
     ]
+  },
+  {
+    "id": "cbb2c-101",
+    "name": "Eevee",
+    "number": "01 01/15",
+    "rarity": "Type/attribute pattern",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/101.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/101.png"
+    }
+  },
+  {
+    "id": "cbb2c-102",
+    "name": "Eevee",
+    "number": "01 02/15",
+    "rarity": "Type/attribute pattern",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/102.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/102.png"
+    }
+  },
+  {
+    "id": "cbb2c-103",
+    "name": "Eevee",
+    "number": "01 03/15",
+    "rarity": "Poké Ball pattern",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/103.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/103.png"
+    }
+  },
+  {
+    "id": "cbb2c-104",
+    "name": "Eevee",
+    "number": "01 04/15",
+    "rarity": "Poké Ball pattern",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/104.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/104.png"
+    }
+  },
+  {
+    "id": "cbb2c-105",
+    "name": "Eevee",
+    "number": "01 05/15",
+    "rarity": "Star finish",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/105.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/105.png"
+    }
+  },
+  {
+    "id": "cbb2c-106",
+    "name": "Eevee",
+    "number": "01 06/15",
+    "rarity": "Star finish",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/106.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/106.png"
+    }
+  },
+  {
+    "id": "cbb2c-107",
+    "name": "Eevee",
+    "number": "01 07/15",
+    "rarity": "Flower finish",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/107.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/107.png"
+    }
+  },
+  {
+    "id": "cbb2c-108",
+    "name": "Eevee",
+    "number": "01 08/15",
+    "rarity": "Flower finish",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/108.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/108.png"
+    }
+  },
+  {
+    "id": "cbb2c-109",
+    "name": "Eevee",
+    "number": "01 09/15",
+    "rarity": "Master Ball pattern",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/109.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/109.png"
+    }
+  },
+  {
+    "id": "cbb2c-110",
+    "name": "Eevee",
+    "number": "01 10/15",
+    "rarity": "Master Ball pattern",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/110.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/110.png"
+    }
+  },
+  {
+    "id": "cbb2c-111",
+    "name": "Eevee",
+    "number": "01 11/15",
+    "rarity": "Gem Pack logo gold foil",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/111.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/111.png"
+    }
+  },
+  {
+    "id": "cbb2c-112",
+    "name": "Eevee",
+    "number": "01 12/15",
+    "rarity": "Gem Pack logo gold foil",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/112.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/112.png"
+    }
+  },
+  {
+    "id": "cbb2c-113",
+    "name": "Eevee V",
+    "number": "01 13/15",
+    "rarity": "Pokémon V",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic",
+      "V"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/113.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/113.png"
+    }
+  },
+  {
+    "id": "cbb2c-114",
+    "name": "Eevee VMAX",
+    "number": "01 14/15",
+    "rarity": "Pokémon VMAX",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "VMAX"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/114.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/114.png"
+    }
+  },
+  {
+    "id": "cbb2c-115",
+    "name": "Eevee",
+    "number": "01 15/15",
+    "rarity": "Exclusive full art",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/115.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/115.png"
+    }
+  },
+  {
+    "id": "cbb2c-201",
+    "name": "Vaporeon",
+    "number": "02 01/14",
+    "rarity": "Type/attribute pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Water"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/201.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/201.png"
+    }
+  },
+  {
+    "id": "cbb2c-202",
+    "name": "Vaporeon",
+    "number": "02 02/14",
+    "rarity": "Type/attribute pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Water"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/202.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/202.png"
+    }
+  },
+  {
+    "id": "cbb2c-203",
+    "name": "Vaporeon",
+    "number": "02 03/14",
+    "rarity": "Poké Ball pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Water"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/203.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/203.png"
+    }
+  },
+  {
+    "id": "cbb2c-204",
+    "name": "Vaporeon",
+    "number": "02 04/14",
+    "rarity": "Poké Ball pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Water"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/204.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/204.png"
+    }
+  },
+  {
+    "id": "cbb2c-205",
+    "name": "Vaporeon",
+    "number": "02 05/14",
+    "rarity": "Star finish",
+    "supertype": "Pokémon",
+    "types": [
+      "Water"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/205.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/205.png"
+    }
+  },
+  {
+    "id": "cbb2c-206",
+    "name": "Vaporeon",
+    "number": "02 06/14",
+    "rarity": "Star finish",
+    "supertype": "Pokémon",
+    "types": [
+      "Water"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/206.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/206.png"
+    }
+  },
+  {
+    "id": "cbb2c-207",
+    "name": "Vaporeon",
+    "number": "02 07/14",
+    "rarity": "Flower finish",
+    "supertype": "Pokémon",
+    "types": [
+      "Water"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/207.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/207.png"
+    }
+  },
+  {
+    "id": "cbb2c-208",
+    "name": "Vaporeon",
+    "number": "02 08/14",
+    "rarity": "Flower finish",
+    "supertype": "Pokémon",
+    "types": [
+      "Water"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/208.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/208.png"
+    }
+  },
+  {
+    "id": "cbb2c-209",
+    "name": "Vaporeon",
+    "number": "02 09/14",
+    "rarity": "Master Ball pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Water"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/209.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/209.png"
+    }
+  },
+  {
+    "id": "cbb2c-210",
+    "name": "Vaporeon",
+    "number": "02 10/14",
+    "rarity": "Master Ball pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Water"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/210.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/210.png"
+    }
+  },
+  {
+    "id": "cbb2c-211",
+    "name": "Vaporeon",
+    "number": "02 11/14",
+    "rarity": "Gem Pack logo gold foil",
+    "supertype": "Pokémon",
+    "types": [
+      "Water"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/211.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/211.png"
+    }
+  },
+  {
+    "id": "cbb2c-212",
+    "name": "Vaporeon",
+    "number": "02 12/14",
+    "rarity": "Gem Pack logo gold foil",
+    "supertype": "Pokémon",
+    "types": [
+      "Water"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/212.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/212.png"
+    }
+  },
+  {
+    "id": "cbb2c-213",
+    "name": "Vaporeon V",
+    "number": "02 13/14",
+    "rarity": "Pokémon V",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic",
+      "V"
+    ],
+    "types": [
+      "Water"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/213.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/213.png"
+    }
+  },
+  {
+    "id": "cbb2c-214",
+    "name": "Vaporeon VMAX",
+    "number": "02 14/14",
+    "rarity": "Pokémon VMAX",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "VMAX"
+    ],
+    "types": [
+      "Water"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/214.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/214.png"
+    }
+  },
+  {
+    "id": "cbb2c-301",
+    "name": "Jolteon",
+    "number": "03 01/14",
+    "rarity": "Type/attribute pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Lightning"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/301.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/301.png"
+    }
+  },
+  {
+    "id": "cbb2c-302",
+    "name": "Jolteon",
+    "number": "03 02/14",
+    "rarity": "Type/attribute pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Lightning"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/302.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/302.png"
+    }
+  },
+  {
+    "id": "cbb2c-303",
+    "name": "Jolteon",
+    "number": "03 03/14",
+    "rarity": "Poké Ball pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Lightning"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/303.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/303.png"
+    }
+  },
+  {
+    "id": "cbb2c-304",
+    "name": "Jolteon",
+    "number": "03 04/14",
+    "rarity": "Poké Ball pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Lightning"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/304.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/304.png"
+    }
+  },
+  {
+    "id": "cbb2c-305",
+    "name": "Jolteon",
+    "number": "03 05/14",
+    "rarity": "Star finish",
+    "supertype": "Pokémon",
+    "types": [
+      "Lightning"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/305.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/305.png"
+    }
+  },
+  {
+    "id": "cbb2c-306",
+    "name": "Jolteon",
+    "number": "03 06/14",
+    "rarity": "Star finish",
+    "supertype": "Pokémon",
+    "types": [
+      "Lightning"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/306.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/306.png"
+    }
+  },
+  {
+    "id": "cbb2c-307",
+    "name": "Jolteon",
+    "number": "03 07/14",
+    "rarity": "Flower finish",
+    "supertype": "Pokémon",
+    "types": [
+      "Lightning"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/307.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/307.png"
+    }
+  },
+  {
+    "id": "cbb2c-308",
+    "name": "Jolteon",
+    "number": "03 08/14",
+    "rarity": "Flower finish",
+    "supertype": "Pokémon",
+    "types": [
+      "Lightning"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/308.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/308.png"
+    }
+  },
+  {
+    "id": "cbb2c-309",
+    "name": "Jolteon",
+    "number": "03 09/14",
+    "rarity": "Master Ball pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Lightning"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/309.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/309.png"
+    }
+  },
+  {
+    "id": "cbb2c-310",
+    "name": "Jolteon",
+    "number": "03 10/14",
+    "rarity": "Master Ball pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Lightning"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/310.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/310.png"
+    }
+  },
+  {
+    "id": "cbb2c-311",
+    "name": "Jolteon",
+    "number": "03 11/14",
+    "rarity": "Gem Pack logo gold foil",
+    "supertype": "Pokémon",
+    "types": [
+      "Lightning"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/311.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/311.png"
+    }
+  },
+  {
+    "id": "cbb2c-312",
+    "name": "Jolteon",
+    "number": "03 12/14",
+    "rarity": "Gem Pack logo gold foil",
+    "supertype": "Pokémon",
+    "types": [
+      "Lightning"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/312.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/312.png"
+    }
+  },
+  {
+    "id": "cbb2c-313",
+    "name": "Jolteon V",
+    "number": "03 13/14",
+    "rarity": "Pokémon V",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic",
+      "V"
+    ],
+    "types": [
+      "Lightning"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/313.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/313.png"
+    }
+  },
+  {
+    "id": "cbb2c-314",
+    "name": "Jolteon VMAX",
+    "number": "03 14/14",
+    "rarity": "Pokémon VMAX",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "VMAX"
+    ],
+    "types": [
+      "Lightning"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/314.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/314.png"
+    }
+  },
+  {
+    "id": "cbb2c-401",
+    "name": "Flareon",
+    "number": "04 01/14",
+    "rarity": "Type/attribute pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Fire"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/401.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/401.png"
+    }
+  },
+  {
+    "id": "cbb2c-402",
+    "name": "Flareon",
+    "number": "04 02/14",
+    "rarity": "Type/attribute pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Fire"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/402.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/402.png"
+    }
+  },
+  {
+    "id": "cbb2c-403",
+    "name": "Flareon",
+    "number": "04 03/14",
+    "rarity": "Poké Ball pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Fire"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/403.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/403.png"
+    }
+  },
+  {
+    "id": "cbb2c-404",
+    "name": "Flareon",
+    "number": "04 04/14",
+    "rarity": "Poké Ball pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Fire"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/404.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/404.png"
+    }
+  },
+  {
+    "id": "cbb2c-405",
+    "name": "Flareon",
+    "number": "04 05/14",
+    "rarity": "Star finish",
+    "supertype": "Pokémon",
+    "types": [
+      "Fire"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/405.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/405.png"
+    }
+  },
+  {
+    "id": "cbb2c-406",
+    "name": "Flareon",
+    "number": "04 06/14",
+    "rarity": "Star finish",
+    "supertype": "Pokémon",
+    "types": [
+      "Fire"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/406.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/406.png"
+    }
+  },
+  {
+    "id": "cbb2c-407",
+    "name": "Flareon",
+    "number": "04 07/14",
+    "rarity": "Flower finish",
+    "supertype": "Pokémon",
+    "types": [
+      "Fire"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/407.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/407.png"
+    }
+  },
+  {
+    "id": "cbb2c-408",
+    "name": "Flareon",
+    "number": "04 08/14",
+    "rarity": "Flower finish",
+    "supertype": "Pokémon",
+    "types": [
+      "Fire"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/408.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/408.png"
+    }
+  },
+  {
+    "id": "cbb2c-409",
+    "name": "Flareon",
+    "number": "04 09/14",
+    "rarity": "Master Ball pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Fire"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/409.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/409.png"
+    }
+  },
+  {
+    "id": "cbb2c-410",
+    "name": "Flareon",
+    "number": "04 10/14",
+    "rarity": "Master Ball pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Fire"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/410.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/410.png"
+    }
+  },
+  {
+    "id": "cbb2c-411",
+    "name": "Flareon",
+    "number": "04 11/14",
+    "rarity": "Gem Pack logo gold foil",
+    "supertype": "Pokémon",
+    "types": [
+      "Fire"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/411.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/411.png"
+    }
+  },
+  {
+    "id": "cbb2c-412",
+    "name": "Flareon",
+    "number": "04 12/14",
+    "rarity": "Gem Pack logo gold foil",
+    "supertype": "Pokémon",
+    "types": [
+      "Fire"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/412.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/412.png"
+    }
+  },
+  {
+    "id": "cbb2c-413",
+    "name": "Flareon V",
+    "number": "04 13/14",
+    "rarity": "Pokémon V",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic",
+      "V"
+    ],
+    "types": [
+      "Fire"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/413.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/413.png"
+    }
+  },
+  {
+    "id": "cbb2c-414",
+    "name": "Flareon VMAX",
+    "number": "04 14/14",
+    "rarity": "Pokémon VMAX",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "VMAX"
+    ],
+    "types": [
+      "Fire"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/414.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/414.png"
+    }
+  },
+  {
+    "id": "cbb2c-501",
+    "name": "Espeon",
+    "number": "05 01/14",
+    "rarity": "Type/attribute pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Psychic"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/501.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/501.png"
+    }
+  },
+  {
+    "id": "cbb2c-502",
+    "name": "Espeon",
+    "number": "05 02/14",
+    "rarity": "Type/attribute pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Psychic"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/502.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/502.png"
+    }
+  },
+  {
+    "id": "cbb2c-503",
+    "name": "Espeon",
+    "number": "05 03/14",
+    "rarity": "Poké Ball pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Psychic"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/503.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/503.png"
+    }
+  },
+  {
+    "id": "cbb2c-504",
+    "name": "Espeon",
+    "number": "05 04/14",
+    "rarity": "Poké Ball pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Psychic"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/504.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/504.png"
+    }
+  },
+  {
+    "id": "cbb2c-505",
+    "name": "Espeon",
+    "number": "05 05/14",
+    "rarity": "Star finish",
+    "supertype": "Pokémon",
+    "types": [
+      "Psychic"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/505.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/505.png"
+    }
+  },
+  {
+    "id": "cbb2c-506",
+    "name": "Espeon",
+    "number": "05 06/14",
+    "rarity": "Star finish",
+    "supertype": "Pokémon",
+    "types": [
+      "Psychic"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/506.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/506.png"
+    }
+  },
+  {
+    "id": "cbb2c-507",
+    "name": "Espeon",
+    "number": "05 07/14",
+    "rarity": "Flower finish",
+    "supertype": "Pokémon",
+    "types": [
+      "Psychic"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/507.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/507.png"
+    }
+  },
+  {
+    "id": "cbb2c-508",
+    "name": "Espeon",
+    "number": "05 08/14",
+    "rarity": "Flower finish",
+    "supertype": "Pokémon",
+    "types": [
+      "Psychic"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/508.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/508.png"
+    }
+  },
+  {
+    "id": "cbb2c-509",
+    "name": "Espeon",
+    "number": "05 09/14",
+    "rarity": "Master Ball pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Psychic"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/509.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/509.png"
+    }
+  },
+  {
+    "id": "cbb2c-510",
+    "name": "Espeon",
+    "number": "05 10/14",
+    "rarity": "Master Ball pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Psychic"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/510.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/510.png"
+    }
+  },
+  {
+    "id": "cbb2c-511",
+    "name": "Espeon",
+    "number": "05 11/14",
+    "rarity": "Gem Pack logo gold foil",
+    "supertype": "Pokémon",
+    "types": [
+      "Psychic"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/511.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/511.png"
+    }
+  },
+  {
+    "id": "cbb2c-512",
+    "name": "Espeon",
+    "number": "05 12/14",
+    "rarity": "Gem Pack logo gold foil",
+    "supertype": "Pokémon",
+    "types": [
+      "Psychic"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/512.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/512.png"
+    }
+  },
+  {
+    "id": "cbb2c-513",
+    "name": "Espeon V",
+    "number": "05 13/14",
+    "rarity": "Pokémon V",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic",
+      "V"
+    ],
+    "types": [
+      "Psychic"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/513.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/513.png"
+    }
+  },
+  {
+    "id": "cbb2c-514",
+    "name": "Espeon VMAX",
+    "number": "05 14/14",
+    "rarity": "Pokémon VMAX",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "VMAX"
+    ],
+    "types": [
+      "Psychic"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/514.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/514.png"
+    }
+  },
+  {
+    "id": "cbb2c-601",
+    "name": "Umbreon",
+    "number": "06 01/15",
+    "rarity": "Type/attribute pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Darkness"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/601.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/601.png"
+    }
+  },
+  {
+    "id": "cbb2c-602",
+    "name": "Umbreon",
+    "number": "06 02/15",
+    "rarity": "Type/attribute pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Darkness"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/602.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/602.png"
+    }
+  },
+  {
+    "id": "cbb2c-603",
+    "name": "Umbreon",
+    "number": "06 03/15",
+    "rarity": "Poké Ball pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Darkness"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/603.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/603.png"
+    }
+  },
+  {
+    "id": "cbb2c-604",
+    "name": "Umbreon",
+    "number": "06 04/15",
+    "rarity": "Poké Ball pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Darkness"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/604.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/604.png"
+    }
+  },
+  {
+    "id": "cbb2c-605",
+    "name": "Umbreon",
+    "number": "06 05/15",
+    "rarity": "Star finish",
+    "supertype": "Pokémon",
+    "types": [
+      "Darkness"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/605.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/605.png"
+    }
+  },
+  {
+    "id": "cbb2c-606",
+    "name": "Umbreon",
+    "number": "06 06/15",
+    "rarity": "Star finish",
+    "supertype": "Pokémon",
+    "types": [
+      "Darkness"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/606.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/606.png"
+    }
+  },
+  {
+    "id": "cbb2c-607",
+    "name": "Umbreon",
+    "number": "06 07/15",
+    "rarity": "Flower finish",
+    "supertype": "Pokémon",
+    "types": [
+      "Darkness"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/607.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/607.png"
+    }
+  },
+  {
+    "id": "cbb2c-608",
+    "name": "Umbreon",
+    "number": "06 08/15",
+    "rarity": "Flower finish",
+    "supertype": "Pokémon",
+    "types": [
+      "Darkness"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/608.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/608.png"
+    }
+  },
+  {
+    "id": "cbb2c-609",
+    "name": "Umbreon",
+    "number": "06 09/15",
+    "rarity": "Master Ball pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Darkness"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/609.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/609.png"
+    }
+  },
+  {
+    "id": "cbb2c-610",
+    "name": "Umbreon",
+    "number": "06 10/15",
+    "rarity": "Master Ball pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Darkness"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/610.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/610.png"
+    }
+  },
+  {
+    "id": "cbb2c-611",
+    "name": "Umbreon",
+    "number": "06 11/15",
+    "rarity": "Gem Pack logo gold foil",
+    "supertype": "Pokémon",
+    "types": [
+      "Darkness"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/611.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/611.png"
+    }
+  },
+  {
+    "id": "cbb2c-612",
+    "name": "Umbreon",
+    "number": "06 12/15",
+    "rarity": "Gem Pack logo gold foil",
+    "supertype": "Pokémon",
+    "types": [
+      "Darkness"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/612.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/612.png"
+    }
+  },
+  {
+    "id": "cbb2c-613",
+    "name": "Umbreon V",
+    "number": "06 13/15",
+    "rarity": "Pokémon V",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic",
+      "V"
+    ],
+    "types": [
+      "Darkness"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/613.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/613.png"
+    }
+  },
+  {
+    "id": "cbb2c-614",
+    "name": "Umbreon VMAX",
+    "number": "06 14/15",
+    "rarity": "Pokémon VMAX",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "VMAX"
+    ],
+    "types": [
+      "Darkness"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/614.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/614.png"
+    }
+  },
+  {
+    "id": "cbb2c-615",
+    "name": "Umbreon",
+    "number": "06 15/15",
+    "rarity": "Exclusive full art",
+    "supertype": "Pokémon",
+    "types": [
+      "Darkness"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/615.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/615.png"
+    }
+  },
+  {
+    "id": "cbb2c-701",
+    "name": "Leafeon",
+    "number": "07 01/15",
+    "rarity": "Type/attribute pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Grass"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/701.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/701.png"
+    }
+  },
+  {
+    "id": "cbb2c-702",
+    "name": "Leafeon",
+    "number": "07 02/15",
+    "rarity": "Type/attribute pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Grass"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/702.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/702.png"
+    }
+  },
+  {
+    "id": "cbb2c-703",
+    "name": "Leafeon",
+    "number": "07 03/15",
+    "rarity": "Poké Ball pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Grass"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/703.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/703.png"
+    }
+  },
+  {
+    "id": "cbb2c-704",
+    "name": "Leafeon",
+    "number": "07 04/15",
+    "rarity": "Poké Ball pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Grass"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/704.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/704.png"
+    }
+  },
+  {
+    "id": "cbb2c-705",
+    "name": "Leafeon",
+    "number": "07 05/15",
+    "rarity": "Star finish",
+    "supertype": "Pokémon",
+    "types": [
+      "Grass"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/705.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/705.png"
+    }
+  },
+  {
+    "id": "cbb2c-706",
+    "name": "Leafeon",
+    "number": "07 06/15",
+    "rarity": "Star finish",
+    "supertype": "Pokémon",
+    "types": [
+      "Grass"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/706.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/706.png"
+    }
+  },
+  {
+    "id": "cbb2c-707",
+    "name": "Leafeon",
+    "number": "07 07/15",
+    "rarity": "Flower finish",
+    "supertype": "Pokémon",
+    "types": [
+      "Grass"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/707.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/707.png"
+    }
+  },
+  {
+    "id": "cbb2c-708",
+    "name": "Leafeon",
+    "number": "07 08/15",
+    "rarity": "Flower finish",
+    "supertype": "Pokémon",
+    "types": [
+      "Grass"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/708.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/708.png"
+    }
+  },
+  {
+    "id": "cbb2c-709",
+    "name": "Leafeon",
+    "number": "07 09/15",
+    "rarity": "Master Ball pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Grass"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/709.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/709.png"
+    }
+  },
+  {
+    "id": "cbb2c-710",
+    "name": "Leafeon",
+    "number": "07 10/15",
+    "rarity": "Master Ball pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Grass"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/710.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/710.png"
+    }
+  },
+  {
+    "id": "cbb2c-711",
+    "name": "Leafeon",
+    "number": "07 11/15",
+    "rarity": "Gem Pack logo gold foil",
+    "supertype": "Pokémon",
+    "types": [
+      "Grass"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/711.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/711.png"
+    }
+  },
+  {
+    "id": "cbb2c-712",
+    "name": "Leafeon",
+    "number": "07 12/15",
+    "rarity": "Gem Pack logo gold foil",
+    "supertype": "Pokémon",
+    "types": [
+      "Grass"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/712.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/712.png"
+    }
+  },
+  {
+    "id": "cbb2c-713",
+    "name": "Leafeon V",
+    "number": "07 13/15",
+    "rarity": "Pokémon V",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic",
+      "V"
+    ],
+    "types": [
+      "Grass"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/713.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/713.png"
+    }
+  },
+  {
+    "id": "cbb2c-714",
+    "name": "Leafeon VMAX",
+    "number": "07 14/15",
+    "rarity": "Pokémon VMAX",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "VMAX"
+    ],
+    "types": [
+      "Grass"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/714.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/714.png"
+    }
+  },
+  {
+    "id": "cbb2c-715",
+    "name": "Leafeon",
+    "number": "07 15/15",
+    "rarity": "Exclusive full art",
+    "supertype": "Pokémon",
+    "types": [
+      "Grass"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/715.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/715.png"
+    }
+  },
+  {
+    "id": "cbb2c-801",
+    "name": "Glaceon",
+    "number": "08 01/14",
+    "rarity": "Type/attribute pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Water"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/801.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/801.png"
+    }
+  },
+  {
+    "id": "cbb2c-802",
+    "name": "Glaceon",
+    "number": "08 02/14",
+    "rarity": "Type/attribute pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Water"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/802.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/802.png"
+    }
+  },
+  {
+    "id": "cbb2c-803",
+    "name": "Glaceon",
+    "number": "08 03/14",
+    "rarity": "Poké Ball pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Water"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/803.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/803.png"
+    }
+  },
+  {
+    "id": "cbb2c-804",
+    "name": "Glaceon",
+    "number": "08 04/14",
+    "rarity": "Poké Ball pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Water"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/804.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/804.png"
+    }
+  },
+  {
+    "id": "cbb2c-805",
+    "name": "Glaceon",
+    "number": "08 05/14",
+    "rarity": "Star finish",
+    "supertype": "Pokémon",
+    "types": [
+      "Water"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/805.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/805.png"
+    }
+  },
+  {
+    "id": "cbb2c-806",
+    "name": "Glaceon",
+    "number": "08 06/14",
+    "rarity": "Star finish",
+    "supertype": "Pokémon",
+    "types": [
+      "Water"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/806.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/806.png"
+    }
+  },
+  {
+    "id": "cbb2c-807",
+    "name": "Glaceon",
+    "number": "08 07/14",
+    "rarity": "Flower finish",
+    "supertype": "Pokémon",
+    "types": [
+      "Water"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/807.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/807.png"
+    }
+  },
+  {
+    "id": "cbb2c-808",
+    "name": "Glaceon",
+    "number": "08 08/14",
+    "rarity": "Flower finish",
+    "supertype": "Pokémon",
+    "types": [
+      "Water"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/808.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/808.png"
+    }
+  },
+  {
+    "id": "cbb2c-809",
+    "name": "Glaceon",
+    "number": "08 09/14",
+    "rarity": "Master Ball pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Water"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/809.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/809.png"
+    }
+  },
+  {
+    "id": "cbb2c-810",
+    "name": "Glaceon",
+    "number": "08 10/14",
+    "rarity": "Master Ball pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Water"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/810.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/810.png"
+    }
+  },
+  {
+    "id": "cbb2c-811",
+    "name": "Glaceon",
+    "number": "08 11/14",
+    "rarity": "Gem Pack logo gold foil",
+    "supertype": "Pokémon",
+    "types": [
+      "Water"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/811.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/811.png"
+    }
+  },
+  {
+    "id": "cbb2c-812",
+    "name": "Glaceon",
+    "number": "08 12/14",
+    "rarity": "Gem Pack logo gold foil",
+    "supertype": "Pokémon",
+    "types": [
+      "Water"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/812.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/812.png"
+    }
+  },
+  {
+    "id": "cbb2c-813",
+    "name": "Glaceon V",
+    "number": "08 13/14",
+    "rarity": "Pokémon V",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic",
+      "V"
+    ],
+    "types": [
+      "Water"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/813.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/813.png"
+    }
+  },
+  {
+    "id": "cbb2c-814",
+    "name": "Glaceon VMAX",
+    "number": "08 14/14",
+    "rarity": "Pokémon VMAX",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "VMAX"
+    ],
+    "types": [
+      "Water"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/814.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/814.png"
+    }
+  },
+  {
+    "id": "cbb2c-901",
+    "name": "Sylveon",
+    "number": "09 01/15",
+    "rarity": "Type/attribute pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Psychic"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/901.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/901.png"
+    }
+  },
+  {
+    "id": "cbb2c-902",
+    "name": "Sylveon",
+    "number": "09 02/15",
+    "rarity": "Type/attribute pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Psychic"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/902.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/902.png"
+    }
+  },
+  {
+    "id": "cbb2c-903",
+    "name": "Sylveon",
+    "number": "09 03/15",
+    "rarity": "Poké Ball pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Psychic"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/903.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/903.png"
+    }
+  },
+  {
+    "id": "cbb2c-904",
+    "name": "Sylveon",
+    "number": "09 04/15",
+    "rarity": "Poké Ball pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Psychic"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/904.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/904.png"
+    }
+  },
+  {
+    "id": "cbb2c-905",
+    "name": "Sylveon",
+    "number": "09 05/15",
+    "rarity": "Star finish",
+    "supertype": "Pokémon",
+    "types": [
+      "Psychic"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/905.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/905.png"
+    }
+  },
+  {
+    "id": "cbb2c-906",
+    "name": "Sylveon",
+    "number": "09 06/15",
+    "rarity": "Star finish",
+    "supertype": "Pokémon",
+    "types": [
+      "Psychic"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/906.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/906.png"
+    }
+  },
+  {
+    "id": "cbb2c-907",
+    "name": "Sylveon",
+    "number": "09 07/15",
+    "rarity": "Flower finish",
+    "supertype": "Pokémon",
+    "types": [
+      "Psychic"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/907.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/907.png"
+    }
+  },
+  {
+    "id": "cbb2c-908",
+    "name": "Sylveon",
+    "number": "09 08/15",
+    "rarity": "Flower finish",
+    "supertype": "Pokémon",
+    "types": [
+      "Psychic"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/908.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/908.png"
+    }
+  },
+  {
+    "id": "cbb2c-909",
+    "name": "Sylveon",
+    "number": "09 09/15",
+    "rarity": "Master Ball pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Psychic"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/909.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/909.png"
+    }
+  },
+  {
+    "id": "cbb2c-910",
+    "name": "Sylveon",
+    "number": "09 10/15",
+    "rarity": "Master Ball pattern",
+    "supertype": "Pokémon",
+    "types": [
+      "Psychic"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/910.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/910.png"
+    }
+  },
+  {
+    "id": "cbb2c-911",
+    "name": "Sylveon",
+    "number": "09 11/15",
+    "rarity": "Gem Pack logo gold foil",
+    "supertype": "Pokémon",
+    "types": [
+      "Psychic"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/911.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/911.png"
+    }
+  },
+  {
+    "id": "cbb2c-912",
+    "name": "Sylveon",
+    "number": "09 12/15",
+    "rarity": "Gem Pack logo gold foil",
+    "supertype": "Pokémon",
+    "types": [
+      "Psychic"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/912.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/912.png"
+    }
+  },
+  {
+    "id": "cbb2c-913",
+    "name": "Sylveon V",
+    "number": "09 13/15",
+    "rarity": "Pokémon V",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic",
+      "V"
+    ],
+    "types": [
+      "Psychic"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/913.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/913.png"
+    }
+  },
+  {
+    "id": "cbb2c-914",
+    "name": "Sylveon VMAX",
+    "number": "09 14/15",
+    "rarity": "Pokémon VMAX",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "VMAX"
+    ],
+    "types": [
+      "Psychic"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/914.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/914.png"
+    }
+  },
+  {
+    "id": "cbb2c-915",
+    "name": "Sylveon",
+    "number": "09 15/15",
+    "rarity": "Exclusive full art",
+    "supertype": "Pokémon",
+    "types": [
+      "Psychic"
+    ],
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/915.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/915.png"
+    }
+  },
+  {
+    "id": "cbb2c-1001",
+    "name": "Poké Ball",
+    "number": "10 01/04",
+    "rarity": "Gem Pack logo gold foil",
+    "supertype": "Trainer",
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/1001.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/1001.png"
+    }
+  },
+  {
+    "id": "cbb2c-1002",
+    "name": "Level Ball",
+    "number": "10 02/04",
+    "rarity": "Gem Pack logo gold foil",
+    "supertype": "Trainer",
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/1002.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/1002.png"
+    }
+  },
+  {
+    "id": "cbb2c-1003",
+    "name": "Quick Ball",
+    "number": "10 03/04",
+    "rarity": "Gem Pack logo gold foil",
+    "supertype": "Trainer",
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/1003.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/1003.png"
+    }
+  },
+  {
+    "id": "cbb2c-1004",
+    "name": "Penny",
+    "number": "10 04/04",
+    "rarity": "Full art",
+    "supertype": "Trainer",
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/1004.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/1004.png"
+    }
+  },
+  {
+    "id": "cbb2c-1101",
+    "name": "Basic Lightning Energy",
+    "number": "11 01/06",
+    "rarity": "Special energy holo",
+    "supertype": "Energy",
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/1101.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/1101.png"
+    }
+  },
+  {
+    "id": "cbb2c-1102",
+    "name": "Basic Psychic Energy",
+    "number": "11 02/06",
+    "rarity": "Special energy holo",
+    "supertype": "Energy",
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/1102.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/1102.png"
+    }
+  },
+  {
+    "id": "cbb2c-1103",
+    "name": "Basic Darkness Energy",
+    "number": "11 03/06",
+    "rarity": "Special energy holo",
+    "supertype": "Energy",
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/1103.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/1103.png"
+    }
+  },
+  {
+    "id": "cbb2c-1104",
+    "name": "Basic Lightning Energy",
+    "number": "11 04/06",
+    "rarity": "Gem Pack logo gold foil",
+    "supertype": "Energy",
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/1104.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/1104.png"
+    }
+  },
+  {
+    "id": "cbb2c-1105",
+    "name": "Basic Psychic Energy",
+    "number": "11 05/06",
+    "rarity": "Gem Pack logo gold foil",
+    "supertype": "Energy",
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/1105.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/1105.png"
+    }
+  },
+  {
+    "id": "cbb2c-1106",
+    "name": "Basic Darkness Energy",
+    "number": "11 06/06",
+    "rarity": "Gem Pack logo gold foil",
+    "supertype": "Energy",
+    "set": {
+      "id": "cbb2c",
+      "name": "Gem Pack Vol. 2",
+      "series": "Other",
+      "releaseDate": "2025/05/16"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/1106.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb2/1106.png"
+    }
   }
 ]
