@@ -8726,7 +8726,7 @@
     ]
   },
   {
-    "id": "swsh9.5tg-TG01",
+    "id": "swsh9tg-TG01",
     "name": "Flareon",
     "number": "TG01",
     "rarity": "Rare",
@@ -8739,21 +8739,21 @@
     ],
     "hp": "110",
     "set": {
-      "id": "swsh9.5tg",
+      "id": "swsh9tg",
       "name": "Brilliant Stars Trainer Gallery",
       "series": "Sword & Shield",
       "releaseDate": "2022/02/25"
     },
     "images": {
-      "small": "https://images.pokemontcg.io/swsh9.5tg/TG01.png",
-      "large": "https://images.pokemontcg.io/swsh9.5tg/TG01_hires.png"
+      "small": "https://images.pokemontcg.io/swsh9tg/TG01.png",
+      "large": "https://images.pokemontcg.io/swsh9tg/TG01_hires.png"
     },
     "variants": [
       "holo"
     ]
   },
   {
-    "id": "swsh9.5tg-TG02",
+    "id": "swsh9tg-TG02",
     "name": "Vaporeon",
     "number": "TG02",
     "rarity": "Rare",
@@ -8766,21 +8766,21 @@
     ],
     "hp": "110",
     "set": {
-      "id": "swsh9.5tg",
+      "id": "swsh9tg",
       "name": "Brilliant Stars Trainer Gallery",
       "series": "Sword & Shield",
       "releaseDate": "2022/02/25"
     },
     "images": {
-      "small": "https://images.pokemontcg.io/swsh9.5tg/TG02.png",
-      "large": "https://images.pokemontcg.io/swsh9.5tg/TG02_hires.png"
+      "small": "https://images.pokemontcg.io/swsh9tg/TG02.png",
+      "large": "https://images.pokemontcg.io/swsh9tg/TG02_hires.png"
     },
     "variants": [
       "holo"
     ]
   },
   {
-    "id": "swsh9.5tg-TG04",
+    "id": "swsh9tg-TG04",
     "name": "Jolteon",
     "number": "TG04",
     "rarity": "Rare",
@@ -8793,21 +8793,21 @@
     ],
     "hp": "100",
     "set": {
-      "id": "swsh9.5tg",
+      "id": "swsh9tg",
       "name": "Brilliant Stars Trainer Gallery",
       "series": "Sword & Shield",
       "releaseDate": "2022/02/25"
     },
     "images": {
-      "small": "https://images.pokemontcg.io/swsh9.5tg/TG04.png",
-      "large": "https://images.pokemontcg.io/swsh9.5tg/TG04_hires.png"
+      "small": "https://images.pokemontcg.io/swsh9tg/TG04.png",
+      "large": "https://images.pokemontcg.io/swsh9tg/TG04_hires.png"
     },
     "variants": [
       "holo"
     ]
   },
   {
-    "id": "swsh9.5tg-TG11",
+    "id": "swsh9tg-TG11",
     "name": "Eevee",
     "number": "TG11",
     "rarity": "Rare",
@@ -8820,21 +8820,21 @@
     ],
     "hp": "70",
     "set": {
-      "id": "swsh9.5tg",
+      "id": "swsh9tg",
       "name": "Brilliant Stars Trainer Gallery",
       "series": "Sword & Shield",
       "releaseDate": "2022/02/25"
     },
     "images": {
-      "small": "https://images.pokemontcg.io/swsh9.5tg/TG11.png",
-      "large": "https://images.pokemontcg.io/swsh9.5tg/TG11_hires.png"
+      "small": "https://images.pokemontcg.io/swsh9tg/TG11.png",
+      "large": "https://images.pokemontcg.io/swsh9tg/TG11_hires.png"
     },
     "variants": [
       "holo"
     ]
   },
   {
-    "id": "swsh9.5tg-TG14",
+    "id": "swsh9tg-TG14",
     "name": "Sylveon V",
     "number": "TG14",
     "rarity": "Ultra Rare",
@@ -8848,21 +8848,21 @@
     ],
     "hp": "200",
     "set": {
-      "id": "swsh9.5tg",
+      "id": "swsh9tg",
       "name": "Brilliant Stars Trainer Gallery",
       "series": "Sword & Shield",
       "releaseDate": "2022/02/25"
     },
     "images": {
-      "small": "https://images.pokemontcg.io/swsh9.5tg/TG14.png",
-      "large": "https://images.pokemontcg.io/swsh9.5tg/TG14_hires.png"
+      "small": "https://images.pokemontcg.io/swsh9tg/TG14.png",
+      "large": "https://images.pokemontcg.io/swsh9tg/TG14_hires.png"
     },
     "variants": [
       "holo"
     ]
   },
   {
-    "id": "swsh9.5tg-TG15",
+    "id": "swsh9tg-TG15",
     "name": "Sylveon VMAX",
     "number": "TG15",
     "rarity": "Ultra Rare",
@@ -8875,21 +8875,21 @@
     ],
     "hp": "310",
     "set": {
-      "id": "swsh9.5tg",
+      "id": "swsh9tg",
       "name": "Brilliant Stars Trainer Gallery",
       "series": "Sword & Shield",
       "releaseDate": "2022/02/25"
     },
     "images": {
-      "small": "https://images.pokemontcg.io/swsh9.5tg/TG15.png",
-      "large": "https://images.pokemontcg.io/swsh9.5tg/TG15_hires.png"
+      "small": "https://images.pokemontcg.io/swsh9tg/TG15.png",
+      "large": "https://images.pokemontcg.io/swsh9tg/TG15_hires.png"
     },
     "variants": [
       "holo"
     ]
   },
   {
-    "id": "swsh9.5tg-TG22",
+    "id": "swsh9tg-TG22",
     "name": "Umbreon V",
     "number": "TG22",
     "rarity": "Ultra Rare",
@@ -8903,21 +8903,21 @@
     ],
     "hp": "200",
     "set": {
-      "id": "swsh9.5tg",
+      "id": "swsh9tg",
       "name": "Brilliant Stars Trainer Gallery",
       "series": "Sword & Shield",
       "releaseDate": "2022/02/25"
     },
     "images": {
-      "small": "https://images.pokemontcg.io/swsh9.5tg/TG22.png",
-      "large": "https://images.pokemontcg.io/swsh9.5tg/TG22_hires.png"
+      "small": "https://images.pokemontcg.io/swsh9tg/TG22.png",
+      "large": "https://images.pokemontcg.io/swsh9tg/TG22_hires.png"
     },
     "variants": [
       "holo"
     ]
   },
   {
-    "id": "swsh9.5tg-TG23",
+    "id": "swsh9tg-TG23",
     "name": "Umbreon VMAX",
     "number": "TG23",
     "rarity": "Ultra Rare",
@@ -8930,14 +8930,14 @@
     ],
     "hp": "310",
     "set": {
-      "id": "swsh9.5tg",
+      "id": "swsh9tg",
       "name": "Brilliant Stars Trainer Gallery",
       "series": "Sword & Shield",
       "releaseDate": "2022/02/25"
     },
     "images": {
-      "small": "https://images.pokemontcg.io/swsh9.5tg/TG23.png",
-      "large": "https://images.pokemontcg.io/swsh9.5tg/TG23_hires.png"
+      "small": "https://images.pokemontcg.io/swsh9tg/TG23.png",
+      "large": "https://images.pokemontcg.io/swsh9tg/TG23_hires.png"
     },
     "variants": [
       "holo"
@@ -9196,7 +9196,7 @@
     ]
   },
   {
-    "id": "swsh12.5gg-GG35",
+    "id": "swsh12pt5gg-GG35",
     "name": "Leafeon VSTAR",
     "number": "GG35",
     "rarity": "Ultra Rare",
@@ -9210,21 +9210,21 @@
     ],
     "hp": "260",
     "set": {
-      "id": "swsh12.5gg",
+      "id": "swsh12pt5gg",
       "name": "Crown Zenith Galarian Gallery",
       "series": "Sword & Shield",
       "releaseDate": "2023/01/20"
     },
     "images": {
-      "small": "https://images.pokemontcg.io/swsh12.5gg/GG35.png",
-      "large": "https://images.pokemontcg.io/swsh12.5gg/GG35_hires.png"
+      "small": "https://images.pokemontcg.io/swsh12pt5gg/GG35.png",
+      "large": "https://images.pokemontcg.io/swsh12pt5gg/GG35_hires.png"
     },
     "variants": [
       "holo"
     ]
   },
   {
-    "id": "swsh12.5gg-GG40",
+    "id": "swsh12pt5gg-GG40",
     "name": "Glaceon VSTAR",
     "number": "GG40",
     "rarity": "Ultra Rare",
@@ -9238,14 +9238,14 @@
     ],
     "hp": "260",
     "set": {
-      "id": "swsh12.5gg",
+      "id": "swsh12pt5gg",
       "name": "Crown Zenith Galarian Gallery",
       "series": "Sword & Shield",
       "releaseDate": "2023/01/20"
     },
     "images": {
-      "small": "https://images.pokemontcg.io/swsh12.5gg/GG40.png",
-      "large": "https://images.pokemontcg.io/swsh12.5gg/GG40_hires.png"
+      "small": "https://images.pokemontcg.io/swsh12pt5gg/GG40.png",
+      "large": "https://images.pokemontcg.io/swsh12pt5gg/GG40_hires.png"
     },
     "variants": [
       "holo"

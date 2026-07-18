@@ -4,7 +4,8 @@
  * TCGdex uses:
  *   - Zero-padded SV set numbers: sv01, sv03.5, sv08.5
  *   - Dot notation for sub-sets: sv03.5, swsh12.5
- *   - Merged TG/GG cards into parent set: swsh9, swsh12.5
+ *   - TG/GG cards as split sub-sets: swsh9.5tg, swsh12.5gg (current)
+ *   - TG/GG cards merged into parent set: swsh9-TG22, swsh12.5-GG35 (legacy)
  *   - pgo is swsh10.5, fut20 is fut2020
  *
  * Pokémon TCG API uses:
@@ -35,6 +36,8 @@ export const TCGDEX_TO_PTCG_SET: Record<string, string> = {
   "swsh4.5": "swsh45",
   "swsh10.5": "pgo",
   "swsh12.5": "swsh12pt5",
+  "swsh12.5gg": "swsh12pt5gg",
+  "swsh9.5tg": "swsh9tg",
   // Other
   fut2020: "fut20",
   // cel25 -> cel25 for regular cards; Classic Collection handled specially in normalizeCardId
@@ -56,8 +59,10 @@ const PADDED_SETS = new Set([
  *   sv06.5-050  -> sv6pt5-50
  *   sv08.5-161  -> sv8pt5-161
  *   swsh12.5-013 -> swsh12pt5-13
- *   swsh12.5-GG35 -> swsh12pt5gg-GG35
- *   swsh9-TG22  -> swsh9tg-TG22
+ *   swsh12.5-GG35   -> swsh12pt5gg-GG35  (legacy merged format)
+ *   swsh12.5gg-GG35 -> swsh12pt5gg-GG35  (current split sub-set)
+ *   swsh9-TG22      -> swsh9tg-TG22       (legacy merged format)
+ *   swsh9.5tg-TG22  -> swsh9tg-TG22       (current split sub-set)
  *   cel25-17A   -> cel25c-17_A
  *   base2-3     -> base2-3   (unchanged)
  *   fut2020-2   -> fut20-2
@@ -106,8 +111,9 @@ export const PTCG_TO_TCGDEX_SET: Record<string, string> = {
   sv6pt5: "sv06.5", sv7: "sv07", sv8: "sv08", sv8pt5: "sv08.5",
   sv9: "sv09", sv10: "sv10", sv10pt5: "sv10.5w", sv10pt5b: "sv10.5b",
   swsh45: "swsh4.5", pgo: "swsh10.5",
-  swsh12pt5: "swsh12.5", swsh12pt5gg: "swsh12.5",
-  swsh9tg: "swsh9",
+  swsh12pt5: "swsh12.5",
+  swsh12pt5gg: "swsh12.5gg",
+  swsh9tg: "swsh9.5tg",
   cel25c: "cel25",
   fut20: "fut2020",
 };
