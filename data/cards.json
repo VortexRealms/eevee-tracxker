@@ -9997,6 +9997,33 @@
     ]
   },
   {
+    "id": "sv3-130-tot2024",
+    "name": "Umbreon",
+    "number": "130/197 (Trick or Trade 2024)",
+    "rarity": "Uncommon — Halloween Stamp",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "types": [
+      "Darkness"
+    ],
+    "hp": "110",
+    "set": {
+      "id": "sv3-tot2024",
+      "name": "Obsidian Flames — Trick or Trade 2024",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2024/08/30"
+    },
+    "images": {
+      "small": "https://cdn.collectory.cc/cards/us/trick-or-trade-2024/umbreon-130.jpg",
+      "large": "https://cdn.collectory.cc/cards/us/trick-or-trade-2024/umbreon-130.jpg"
+    },
+    "variants": [
+      "normal"
+    ]
+  },
+  {
     "id": "sv7-113",
     "name": "Eevee",
     "number": "113",
