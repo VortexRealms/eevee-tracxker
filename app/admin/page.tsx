@@ -24,8 +24,16 @@ export default async function AdminPage() {
         <p className="page-copy">
           Run <code className="inline-code">npm run fetch:cards</code> during development
           to rebuild <code className="inline-code">data/cards.json</code> from{" "}
-          <strong>TCGdex</strong>, merged with <code className="inline-code">data/manual-cards.json</code>{" "}
+          <strong>TCGdex</strong>, merged with{" "}
+          <code className="inline-code">data/included-cards.json</code> for extra TCGdex
+          cards and <code className="inline-code">data/manual-cards.json</code>{" "}
           for overrides and promos not covered by the API.
+        </p>
+        <p className="page-copy">
+          Use <code className="inline-code">npm run cards:pick -- search &quot;Card Name&quot;</code>{" "}
+          to search TCGdex interactively and add cards to{" "}
+          <code className="inline-code">included-cards.json</code>, then run{" "}
+          <code className="inline-code">fetch:cards</code> again.
         </p>
         <p className="page-copy">
           Run <code className="inline-code">npm run fetch:prices</code> to refresh{" "}

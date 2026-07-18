@@ -19,6 +19,7 @@ You **do not** need to clone the TCGdex Git repository. The fetch scripts use th
 - **Public showcase** — Route `/public` shows **owned cards only** in the same visual style as the checklist, without marketplace links or edit controls. Data is served from an **unauthenticated** read-only API backed by the same Google Sheet.
 - **Pricing** — Market prices are populated offline from the **TCGdex REST API** ([tcgdex.dev](https://tcgdex.dev/)), e.g. TCGplayer USD and Cardmarket EUR where the API exposes them. Committed overrides in `data/manual-prices.json` fill gaps or correct values at display time.
 - **Manual card overrides** — Entries in `data/manual-cards.json` replace fetched rows by **card ID** (e.g. promos, custom images, deduplicated IDs).
+- **Included extras** — Entries in `data/included-cards.json` add additional TCGdex cards (e.g. trainers) beyond the Eeveelution name queries. Use `npm run cards:pick` to search and add interactively.
 
 ---
 
@@ -95,8 +96,9 @@ npm install
 # Copy .env.local.example to .env.local (e.g. copy on Windows, cp on macOS/Linux).
 # Edit .env.local with your credentials and sheet ID.
 
-npm run fetch:cards   # Rebuild data/cards.json from TCGdex + manual-cards.json
+npm run fetch:cards   # Rebuild data/cards.json from TCGdex + included-cards.json + manual-cards.json
 npm run fetch:prices  # Rebuild data/prices.json from TCGdex
+npm run cards:pick -- search "Blue's Tactics"  # Search TCGdex and add extras to included-cards.json
 
 # No local clone of TCGdex is required—these commands call the public API.
 
@@ -122,8 +124,9 @@ npm start
 | `npm run build` | Production build |
 | `npm run start` | Start production server |
 | `npm run lint` | ESLint (Next.js) |
-| `npm run fetch:cards` | Fetch Eevee / Eeveelution cards from TCGdex, merge `manual-cards.json`, write `data/cards.json` |
+| `npm run fetch:cards` | Fetch Eevee / Eeveelution cards from TCGdex, merge `included-cards.json` and `manual-cards.json`, write `data/cards.json` |
 | `npm run fetch:prices` | Fetch pricing for cards in `cards.json` via TCGdex, write `data/prices.json` |
+| `npm run cards:pick` | Interactive CLI to search TCGdex and manage `data/included-cards.json` |
 
 ---
 
@@ -131,8 +134,9 @@ npm start
 
 | File | Role |
 |------|------|
-| `cards.json` | Generated catalogue. **Do not hand-edit for durability**; use `manual-cards.json` and re-run `fetch:cards`. |
+| `cards.json` | Generated catalogue. **Do not hand-edit for durability**; use `included-cards.json`, `manual-cards.json`, and re-run `fetch:cards`. |
 | `prices.json` | Generated pricing and `_meta` (e.g. EUR→USD rate). Re-run `fetch:prices` to refresh. |
+| `included-cards.json` | Extra TCGdex card IDs to include beyond Eeveelution name queries (trainers, etc.). |
 | `manual-cards.json` | Manual card definitions that **override** fetched rows with the same `id`. |
 | `manual-prices.json` | Per-card or per-variant price overrides merged at read time with `prices.json` in `lib/cards.ts`. |
 

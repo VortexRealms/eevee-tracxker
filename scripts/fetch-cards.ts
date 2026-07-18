@@ -3,6 +3,7 @@
  * data/cards.json, using Pokémon TCG API-compatible card IDs so that existing
  * collection data stored in Google Sheets is not invalidated.
  *
+ * Also fetches extra TCGdex cards listed in data/included-cards.json.
  * Cards not available in TCGdex (e.g. McDonald's promos) are sourced from the
  * committed data/manual-cards.json fallback file.
  *
@@ -11,11 +12,16 @@
 
 import fs from "node:fs/promises";
 import path from "node:path";
-import TCGdex, { Query } from "@tcgdex/sdk";
+import { Query } from "@tcgdex/sdk";
 import type { PokemonCard, PokemonName } from "../types";
-import { normalizeCardId } from "./set-id-map";
-
-const tcgdex = new TCGdex("en");
+import {
+  chunk,
+  getSetMeta,
+  loadIncludedCardRefs,
+  mapTcgdexCardToPokemon,
+  resolveIncludedToTcgdexId,
+  tcgdex,
+} from "./tcgdex-card-utils";
 
 const NAMES: PokemonName[] = [
   "Eevee",
@@ -29,58 +35,9 @@ const NAMES: PokemonName[] = [
   "Sylveon",
 ];
 
-/** Normalize TCGdex stage strings to title-cased display values. */
-function normalizeStage(stage: string): string {
-  return stage.replace(/^Stage(\d)$/, "Stage $1");
-}
-
-/** Build subtypes array from TCGdex card data. */
-function buildSubtypes(
-  stage: string | undefined,
-  suffix: string | undefined
-): string[] | undefined {
-  const parts: string[] = [];
-  if (stage) parts.push(normalizeStage(stage));
-  if (suffix) parts.push(suffix);
-  return parts.length > 0 ? parts : undefined;
-}
-
-const VARIANT_ORDER = ["normal", "reverse", "holo", "firstEdition", "wPromo"] as const;
-
-/** Build variants array from TCGdex variants object. */
-function buildVariants(variants: Record<string, boolean> | undefined): string[] {
-  if (!variants || typeof variants !== "object") return ["normal"];
-  return VARIANT_ORDER.filter((k) => variants[k] === true);
-}
-
-/** Batch an array into chunks of `size`. */
-function chunk<T>(arr: T[], size: number): T[][] {
-  const out: T[][] = [];
-  for (let i = 0; i < arr.length; i += size) out.push(arr.slice(i, i + size));
-  return out;
-}
-
-/** Cache for set -> { serieName, releaseDate } lookups. */
-const setCache = new Map<string, { serieName: string; releaseDate: string }>();
-
-async function getSetMeta(
-  setId: string
-): Promise<{ serieName: string; releaseDate: string }> {
-  if (setCache.has(setId)) return setCache.get(setId)!;
-
-  const set = await tcgdex.set.get(setId);
-  const meta = {
-    serieName: (set as any)?.serie?.name ?? setId,
-    releaseDate: (set as any)?.releaseDate ?? "",
-  };
-  setCache.set(setId, meta);
-  return meta;
-}
-
 async function main() {
   console.log("Querying TCGdex for Eevee / Eeveelution cards...");
 
-  // Step 1: Collect unique card briefs across all names
   const seenIds = new Set<string>();
   const briefs: Array<{ id: string; name: string }> = [];
 
@@ -104,11 +61,31 @@ async function main() {
     console.log(`${results.length} found, ${added} new`);
   }
 
+  const includedRefs = await loadIncludedCardRefs();
+  let includedAdded = 0;
+  for (const ref of includedRefs) {
+    try {
+      const tcgdexId = resolveIncludedToTcgdexId(ref);
+      if (!seenIds.has(tcgdexId)) {
+        seenIds.add(tcgdexId);
+        briefs.push({
+          id: tcgdexId,
+          name: ref.name ?? tcgdexId,
+        });
+        includedAdded++;
+      }
+    } catch (err) {
+      console.warn(`  Skipping invalid included card ref: ${(err as Error).message}`);
+    }
+  }
+  console.log(
+    `\nLoaded ${includedRefs.length} included card ref(s); ${includedAdded} new brief(s) added.`
+  );
+
   console.log(
     `\nFetching full card data for ${briefs.length} unique cards (batches of 10)...`
   );
 
-  // Step 2: Fetch full card data in batches
   const cards: PokemonCard[] = [];
   const batches = chunk(briefs, 10);
 
@@ -121,65 +98,20 @@ async function main() {
       batch.map((brief) => tcgdex.card.get(brief.id).catch(() => null))
     );
 
-    // Collect unique set IDs for this batch, then fetch set meta concurrently
     const setIds = [...new Set(fullCards.flatMap((c) => (c ? [c.set.id] : [])))];
     await Promise.all(setIds.map(getSetMeta));
 
     for (const card of fullCards) {
       if (!card) continue;
-
-      const normalizedId = normalizeCardId(card.id);
-      const setMeta = await getSetMeta(card.set.id);
-
-      // Skip Pokémon TCG Pocket cards — this app is for the physical TCG only
-      if (setMeta.serieName === "Pokémon TCG Pocket") continue;
-
-      // releaseDate: TCGdex uses "YYYY-MM-DD"; normalise to "YYYY/MM/DD"
-      const releaseDate = setMeta.releaseDate.replace(/-/g, "/");
-
-      const images = card.image
-        ? {
-            small: card.image + "/low.webp",
-            large: card.image + "/high.png",
-          }
-        : {
-            // Fallback to PTCG CDN for cards without images
-            small: `https://images.pokemontcg.io/${normalizedId.split("-")[0]}/${normalizedId.split("-").slice(1).join("-")}.png`,
-            large: `https://images.pokemontcg.io/${normalizedId.split("-")[0]}/${normalizedId.split("-").slice(1).join("-")}_hires.png`,
-          };
-
-      const builtVariants = buildVariants((card as any).variants);
-      cards.push({
-        id: normalizedId,
-        name: card.name,
-        number: normalizedId.substring(normalizedId.lastIndexOf("-") + 1),
-        rarity: card.rarity,
-        supertype: card.category === "Pokemon" ? "Pokémon" : card.category,
-        subtypes: buildSubtypes(
-          (card as any).stage,
-          (card as any).suffix
-        ),
-        types: card.types,
-        hp: card.hp !== undefined && card.hp !== null ? String(card.hp) : undefined,
-        set: {
-          id: normalizedId.substring(0, normalizedId.lastIndexOf("-")),
-          name: card.set.name,
-          series: setMeta.serieName,
-          releaseDate,
-        },
-        images,
-        variants: builtVariants.length > 0 ? builtVariants : ["normal"],
-      });
+      const mapped = await mapTcgdexCardToPokemon(card as Parameters<typeof mapTcgdexCardToPokemon>[0]);
+      if (mapped) cards.push(mapped);
     }
     console.log("done");
   }
 
-  /** TCGdex ids that duplicate a manual canonical id (same physical card). */
   const TCGDEX_IDS_SUPERSEDED_BY_MANUAL = new Set(["2019sm-12"]);
-
   const cardsDeduped = cards.filter((c) => !TCGDEX_IDS_SUPERSEDED_BY_MANUAL.has(c.id));
 
-  // Step 3: Load manual cards (not in TCGdex) and merge
   const manualPath = path.join(process.cwd(), "data", "manual-cards.json");
   let manualCards: PokemonCard[] = [];
   try {
@@ -190,15 +122,12 @@ async function main() {
     console.log("\nNo data/manual-cards.json found — skipping manual cards.");
   }
 
-  // Manual cards override TCGdex cards with the same ID
   const byId = new Map(cardsDeduped.map((c) => [c.id, c]));
   for (const mc of manualCards) {
     byId.set(mc.id, { ...mc, variants: mc.variants ?? ["normal"] });
   }
 
   const merged = Array.from(byId.values());
-
-  // Sort by releaseDate then number
   merged.sort((a, b) => {
     const dateA = a.set.releaseDate ?? "";
     const dateB = b.set.releaseDate ?? "";

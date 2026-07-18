@@ -1857,7 +1857,7 @@
   },
   {
     "id": "ex16-100",
-    "name": "Flareon Star",
+    "name": "Flareon ☆",
     "number": "100",
     "rarity": "Rare",
     "supertype": "Pokémon",
@@ -1879,12 +1879,12 @@
       "large": "https://assets.tcgdex.net/en/ex/ex16/100/high.png"
     },
     "variants": [
-      "normal"
+      "holo"
     ]
   },
   {
     "id": "ex16-101",
-    "name": "Jolteon Star",
+    "name": "Jolteon ☆",
     "number": "101",
     "rarity": "Rare",
     "supertype": "Pokémon",
@@ -1912,7 +1912,7 @@
   },
   {
     "id": "ex16-102",
-    "name": "Vaporeon Star",
+    "name": "Vaporeon ☆",
     "number": "102",
     "rarity": "Rare",
     "supertype": "Pokémon",
@@ -1934,12 +1934,12 @@
       "large": "https://assets.tcgdex.net/en/ex/ex16/102/high.png"
     },
     "variants": [
-      "normal"
+      "holo"
     ]
   },
   {
     "id": "pop5-16",
-    "name": "Espeon ★",
+    "name": "Espeon ☆",
     "number": "16",
     "rarity": "Ultra Rare",
     "supertype": "Pokémon",
@@ -1966,7 +1966,7 @@
   },
   {
     "id": "pop5-17",
-    "name": "Umbreon ★",
+    "name": "Umbreon ☆",
     "number": "17",
     "rarity": "Ultra Rare",
     "supertype": "Pokémon",
@@ -3810,7 +3810,7 @@
     "id": "xyp-XY04",
     "name": "Sylveon",
     "number": "XY04",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Stage 1"
@@ -3837,7 +3837,7 @@
     "id": "xyp-XY96",
     "name": "Umbreon",
     "number": "XY96",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Stage 1"
@@ -4658,6 +4658,9 @@
     "subtypes": [
       "Basic"
     ],
+    "types": [
+      "Colorless"
+    ],
     "hp": "60",
     "set": {
       "id": "2016xy",
@@ -4866,7 +4869,7 @@
     "id": "smp-SM35",
     "name": "Espeon GX",
     "number": "SM35",
-    "rarity": "Rare",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "GX"
@@ -4893,7 +4896,7 @@
     "id": "smp-SM36",
     "name": "Umbreon GX",
     "number": "SM36",
-    "rarity": "Rare",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "GX"
@@ -4920,7 +4923,7 @@
     "id": "smp-SM146",
     "name": "Leafeon GX",
     "number": "SM146",
-    "rarity": "Rare",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "GX"
@@ -4947,7 +4950,7 @@
     "id": "smp-SM147",
     "name": "Glaceon GX",
     "number": "SM147",
-    "rarity": "Rare",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "GX"
@@ -4974,7 +4977,7 @@
     "id": "smp-SM169",
     "name": "Eevee & Snorlax GX",
     "number": "SM169",
-    "rarity": "Ultra Rare",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "TAG TEAM-GX"
@@ -5001,7 +5004,7 @@
     "id": "smp-SM171",
     "name": "Flareon GX",
     "number": "SM171",
-    "rarity": "Rare",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "GX"
@@ -5028,7 +5031,7 @@
     "id": "smp-SM172",
     "name": "Vaporeon GX",
     "number": "SM172",
-    "rarity": "Rare",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "GX"
@@ -5055,7 +5058,7 @@
     "id": "smp-SM173",
     "name": "Jolteon GX",
     "number": "SM173",
-    "rarity": "Rare",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "GX"
@@ -5082,7 +5085,7 @@
     "id": "smp-SM174",
     "name": "Eevee GX",
     "number": "SM174",
-    "rarity": "Rare",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "GX"
@@ -5109,7 +5112,7 @@
     "id": "smp-SM175",
     "name": "Eevee GX",
     "number": "SM175",
-    "rarity": "Rare",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "GX"
@@ -5136,7 +5139,7 @@
     "id": "smp-SM176",
     "name": "Eevee GX",
     "number": "SM176",
-    "rarity": "Rare",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "GX"
@@ -5163,7 +5166,7 @@
     "id": "smp-SM184",
     "name": "Eevee",
     "number": "SM184",
-    "rarity": "Rare",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "types": [
       "Colorless"
@@ -5187,7 +5190,7 @@
     "id": "smp-SM186",
     "name": "Flareon",
     "number": "SM186",
-    "rarity": "Rare",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Stage 1"
@@ -5214,7 +5217,7 @@
     "id": "smp-SM233",
     "name": "Eevee GX",
     "number": "SM233",
-    "rarity": "Rare",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "types": [
       "Colorless"
@@ -5238,7 +5241,7 @@
     "id": "smp-SM235",
     "name": "Eevee",
     "number": "SM235",
-    "rarity": "Rare",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "types": [
       "Colorless"
@@ -5262,7 +5265,7 @@
     "id": "smp-SM237",
     "name": "Leafeon",
     "number": "SM237",
-    "rarity": "Rare",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "types": [
       "Grass"
@@ -5286,7 +5289,7 @@
     "id": "smp-SM238",
     "name": "Glaceon",
     "number": "SM238",
-    "rarity": "Rare",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "types": [
       "Water"
@@ -5310,7 +5313,7 @@
     "id": "smp-SM240",
     "name": "Espeon & Deoxys GX",
     "number": "SM240",
-    "rarity": "Rare",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "types": [
       "Psychic"
@@ -5334,7 +5337,7 @@
     "id": "smp-SM241",
     "name": "Umbreon & Darkrai GX",
     "number": "SM241",
-    "rarity": "Rare",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "types": [
       "Darkness"
@@ -5358,7 +5361,7 @@
     "id": "smp-SM242",
     "name": "Eevee GX",
     "number": "SM242",
-    "rarity": "Rare",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "types": [
       "Colorless"
@@ -6054,6 +6057,46 @@
     ]
   },
   {
+    "id": "sm11-188",
+    "name": "Blue’s Tactics",
+    "number": "188",
+    "rarity": "Uncommon",
+    "supertype": "Trainer",
+    "set": {
+      "id": "sm11",
+      "name": "Unified Minds",
+      "series": "Sun & Moon",
+      "releaseDate": "2019/08/02"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/sm/sm11/188/low.webp",
+      "large": "https://assets.tcgdex.net/en/sm/sm11/188/high.png"
+    },
+    "variants": [
+      "normal"
+    ]
+  },
+  {
+    "id": "sm11-231",
+    "name": "Blue’s Tactics",
+    "number": "231",
+    "rarity": "Ultra Rare",
+    "supertype": "Trainer",
+    "set": {
+      "id": "sm11",
+      "name": "Unified Minds",
+      "series": "Sun & Moon",
+      "releaseDate": "2019/08/02"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/sm/sm11/231/low.webp",
+      "large": "https://assets.tcgdex.net/en/sm/sm11/231/high.png"
+    },
+    "variants": [
+      "normal"
+    ]
+  },
+  {
     "id": "sm115-18",
     "name": "Vaporeon",
     "number": "18",
@@ -6516,7 +6559,7 @@
     "id": "swshp-SWSH041",
     "name": "Flareon",
     "number": "SWSH041",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Stage 1"
@@ -6543,7 +6586,7 @@
     "id": "swshp-SWSH042",
     "name": "Eevee",
     "number": "SWSH042",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Basic"
@@ -6570,7 +6613,7 @@
     "id": "swshp-SWSH065",
     "name": "Eevee V",
     "number": "SWSH065",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Basic",
@@ -6598,7 +6641,7 @@
     "id": "swshp-SWSH072",
     "name": "Vaporeon",
     "number": "SWSH072",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Stage 1"
@@ -6625,7 +6668,7 @@
     "id": "swshp-SWSH087",
     "name": "Eevee VMAX",
     "number": "SWSH087",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "VMAX"
@@ -6652,7 +6695,7 @@
     "id": "swshp-SWSH094",
     "name": "Jolteon",
     "number": "SWSH094",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Stage 1"
@@ -6679,7 +6722,7 @@
     "id": "swshp-SWSH095",
     "name": "Eevee",
     "number": "SWSH095",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Basic"
@@ -6706,7 +6749,7 @@
     "id": "swshp-SWSH118",
     "name": "Eevee",
     "number": "SWSH118",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Basic"
@@ -6733,7 +6776,7 @@
     "id": "swshp-SWSH127",
     "name": "Eevee",
     "number": "SWSH127",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Basic"
@@ -6760,7 +6803,7 @@
     "id": "swshp-SWSH129",
     "name": "Umbreon",
     "number": "SWSH129",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Stage 1"
@@ -6787,7 +6830,7 @@
     "id": "swshp-SWSH134",
     "name": "Dark Sylveon V",
     "number": "SWSH134",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Basic",
@@ -6815,7 +6858,7 @@
     "id": "swshp-SWSH149",
     "name": "Flareon V",
     "number": "SWSH149",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Basic",
@@ -6843,7 +6886,7 @@
     "id": "swshp-SWSH150",
     "name": "Vaporeon V",
     "number": "SWSH150",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Basic",
@@ -6871,7 +6914,7 @@
     "id": "swshp-SWSH151",
     "name": "Jolteon V",
     "number": "SWSH151",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Basic",
@@ -6899,7 +6942,7 @@
     "id": "swshp-SWSH174",
     "name": "Espeon",
     "number": "SWSH174",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Stage 1"
@@ -6926,7 +6969,7 @@
     "id": "swshp-SWSH175",
     "name": "Eevee",
     "number": "SWSH175",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Basic"
@@ -6953,7 +6996,7 @@
     "id": "swshp-SWSH179",
     "name": "Flareon V",
     "number": "SWSH179",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Basic",
@@ -6981,7 +7024,7 @@
     "id": "swshp-SWSH180",
     "name": "Flareon VMAX",
     "number": "SWSH180",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "VMAX"
@@ -7008,7 +7051,7 @@
     "id": "swshp-SWSH181",
     "name": "Vaporeon V",
     "number": "SWSH181",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Basic",
@@ -7036,7 +7079,7 @@
     "id": "swshp-SWSH182",
     "name": "Vaporeon VMAX",
     "number": "SWSH182",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "VMAX"
@@ -7063,7 +7106,7 @@
     "id": "swshp-SWSH183",
     "name": "Jolteon V",
     "number": "SWSH183",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Basic",
@@ -7091,7 +7134,7 @@
     "id": "swshp-SWSH184",
     "name": "Jolteon VMAX",
     "number": "SWSH184",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "VMAX"
@@ -7118,7 +7161,7 @@
     "id": "swshp-SWSH190",
     "name": "Eevee",
     "number": "SWSH190",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Basic"
@@ -7145,7 +7188,7 @@
     "id": "swshp-SWSH191",
     "name": "Leafeon",
     "number": "SWSH191",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Stage 1"
@@ -7172,7 +7215,7 @@
     "id": "swshp-SWSH192",
     "name": "Glaceon",
     "number": "SWSH192",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Stage 1"
@@ -7199,7 +7242,7 @@
     "id": "swshp-SWSH194",
     "name": "Leafeon V",
     "number": "SWSH194",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Basic",
@@ -7227,7 +7270,7 @@
     "id": "swshp-SWSH195",
     "name": "Leafeon VSTAR",
     "number": "SWSH195",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "VSTAR",
@@ -7255,7 +7298,7 @@
     "id": "swshp-SWSH196",
     "name": "Glaceon V",
     "number": "SWSH196",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Basic",
@@ -7283,7 +7326,7 @@
     "id": "swshp-SWSH197",
     "name": "Glaceon VSTAR",
     "number": "SWSH197",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "VSTAR",
@@ -7311,7 +7354,7 @@
     "id": "swshp-SWSH201",
     "name": "Espeon V",
     "number": "SWSH201",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Basic",
@@ -7339,7 +7382,7 @@
     "id": "swshp-SWSH202",
     "name": "Sylveon V",
     "number": "SWSH202",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Basic",
@@ -7367,7 +7410,7 @@
     "id": "swshp-SWSH203",
     "name": "Umbreon V",
     "number": "SWSH203",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Basic",
@@ -7395,7 +7438,7 @@
     "id": "swshp-SWSH211",
     "name": "Sylveon",
     "number": "SWSH211",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Stage 1"
@@ -7422,7 +7465,7 @@
     "id": "swshp-SWSH212",
     "name": "Eevee",
     "number": "SWSH212",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Basic"
@@ -7493,7 +7536,7 @@
       "large": "https://assets.tcgdex.net/en/swsh/fut2020/2/high.png"
     },
     "variants": [
-      "normal"
+      "holo"
     ]
   },
   {
@@ -7989,7 +8032,7 @@
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/95/high.png"
     },
     "variants": [
-      "normal"
+      "holo"
     ]
   },
   {
@@ -8129,7 +8172,7 @@
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/172/high.png"
     },
     "variants": [
-      "normal"
+      "holo"
     ]
   },
   {
@@ -8185,7 +8228,7 @@
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/175/high.png"
     },
     "variants": [
-      "normal"
+      "holo"
     ]
   },
   {
@@ -8241,7 +8284,7 @@
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/179/high.png"
     },
     "variants": [
-      "normal"
+      "holo"
     ]
   },
   {
@@ -8269,7 +8312,7 @@
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/180/high.png"
     },
     "variants": [
-      "normal"
+      "holo"
     ]
   },
   {
@@ -8325,7 +8368,7 @@
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/184/high.png"
     },
     "variants": [
-      "normal"
+      "holo"
     ]
   },
   {
@@ -8353,7 +8396,7 @@
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/188/high.png"
     },
     "variants": [
-      "normal"
+      "holo"
     ]
   },
   {
@@ -8381,7 +8424,7 @@
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/189/high.png"
     },
     "variants": [
-      "normal"
+      "holo"
     ]
   },
   {
@@ -8408,7 +8451,7 @@
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/204/high.png"
     },
     "variants": [
-      "normal"
+      "holo"
     ]
   },
   {
@@ -8462,7 +8505,7 @@
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/208/high.png"
     },
     "variants": [
-      "normal"
+      "holo"
     ]
   },
   {
@@ -8489,7 +8532,7 @@
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/209/high.png"
     },
     "variants": [
-      "normal"
+      "holo"
     ]
   },
   {
@@ -8516,7 +8559,7 @@
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/211/high.png"
     },
     "variants": [
-      "normal"
+      "holo"
     ]
   },
   {
@@ -8543,7 +8586,7 @@
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/212/high.png"
     },
     "variants": [
-      "normal"
+      "holo"
     ]
   },
   {
@@ -8570,7 +8613,7 @@
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/214/high.png"
     },
     "variants": [
-      "normal"
+      "holo"
     ]
   },
   {
@@ -8597,13 +8640,13 @@
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/215/high.png"
     },
     "variants": [
-      "normal"
+      "holo"
     ]
   },
   {
-    "id": "cel25c-17_A",
-    "name": "Umbreon Star",
-    "number": "17_A",
+    "id": "cel25cc-CC015",
+    "name": "Umbreon ☆",
+    "number": "CC015",
     "rarity": "Classic Collection",
     "supertype": "Pokémon",
     "subtypes": [
@@ -8614,17 +8657,17 @@
     ],
     "hp": "70",
     "set": {
-      "id": "cel25c",
-      "name": "Celebrations",
+      "id": "cel25cc",
+      "name": "Celebrations Classic Collection",
       "series": "Sword & Shield",
       "releaseDate": "2021/10/08"
     },
     "images": {
-      "small": "https://images.pokemontcg.io/cel25c/17_A.png",
-      "large": "https://images.pokemontcg.io/cel25c/17_A_hires.png"
+      "small": "https://images.pokemontcg.io/cel25cc/CC015.png",
+      "large": "https://images.pokemontcg.io/cel25cc/CC015_hires.png"
     },
     "variants": [
-      "normal"
+      "holo"
     ]
   },
   {
@@ -8683,7 +8726,7 @@
     ]
   },
   {
-    "id": "swsh9tg-TG01",
+    "id": "swsh9.5tg-TG01",
     "name": "Flareon",
     "number": "TG01",
     "rarity": "Rare",
@@ -8696,21 +8739,21 @@
     ],
     "hp": "110",
     "set": {
-      "id": "swsh9tg",
-      "name": "Brilliant Stars",
+      "id": "swsh9.5tg",
+      "name": "Brilliant Stars Trainer Gallery",
       "series": "Sword & Shield",
       "releaseDate": "2022/02/25"
     },
     "images": {
-      "small": "https://assets.tcgdex.net/en/swsh/swsh9/TG01/low.webp",
-      "large": "https://assets.tcgdex.net/en/swsh/swsh9/TG01/high.png"
+      "small": "https://images.pokemontcg.io/swsh9.5tg/TG01.png",
+      "large": "https://images.pokemontcg.io/swsh9.5tg/TG01_hires.png"
     },
     "variants": [
       "holo"
     ]
   },
   {
-    "id": "swsh9tg-TG02",
+    "id": "swsh9.5tg-TG02",
     "name": "Vaporeon",
     "number": "TG02",
     "rarity": "Rare",
@@ -8723,21 +8766,21 @@
     ],
     "hp": "110",
     "set": {
-      "id": "swsh9tg",
-      "name": "Brilliant Stars",
+      "id": "swsh9.5tg",
+      "name": "Brilliant Stars Trainer Gallery",
       "series": "Sword & Shield",
       "releaseDate": "2022/02/25"
     },
     "images": {
-      "small": "https://assets.tcgdex.net/en/swsh/swsh9/TG02/low.webp",
-      "large": "https://assets.tcgdex.net/en/swsh/swsh9/TG02/high.png"
+      "small": "https://images.pokemontcg.io/swsh9.5tg/TG02.png",
+      "large": "https://images.pokemontcg.io/swsh9.5tg/TG02_hires.png"
     },
     "variants": [
       "holo"
     ]
   },
   {
-    "id": "swsh9tg-TG04",
+    "id": "swsh9.5tg-TG04",
     "name": "Jolteon",
     "number": "TG04",
     "rarity": "Rare",
@@ -8750,21 +8793,21 @@
     ],
     "hp": "100",
     "set": {
-      "id": "swsh9tg",
-      "name": "Brilliant Stars",
+      "id": "swsh9.5tg",
+      "name": "Brilliant Stars Trainer Gallery",
       "series": "Sword & Shield",
       "releaseDate": "2022/02/25"
     },
     "images": {
-      "small": "https://assets.tcgdex.net/en/swsh/swsh9/TG04/low.webp",
-      "large": "https://assets.tcgdex.net/en/swsh/swsh9/TG04/high.png"
+      "small": "https://images.pokemontcg.io/swsh9.5tg/TG04.png",
+      "large": "https://images.pokemontcg.io/swsh9.5tg/TG04_hires.png"
     },
     "variants": [
       "holo"
     ]
   },
   {
-    "id": "swsh9tg-TG11",
+    "id": "swsh9.5tg-TG11",
     "name": "Eevee",
     "number": "TG11",
     "rarity": "Rare",
@@ -8777,21 +8820,21 @@
     ],
     "hp": "70",
     "set": {
-      "id": "swsh9tg",
-      "name": "Brilliant Stars",
+      "id": "swsh9.5tg",
+      "name": "Brilliant Stars Trainer Gallery",
       "series": "Sword & Shield",
       "releaseDate": "2022/02/25"
     },
     "images": {
-      "small": "https://assets.tcgdex.net/en/swsh/swsh9/TG11/low.webp",
-      "large": "https://assets.tcgdex.net/en/swsh/swsh9/TG11/high.png"
+      "small": "https://images.pokemontcg.io/swsh9.5tg/TG11.png",
+      "large": "https://images.pokemontcg.io/swsh9.5tg/TG11_hires.png"
     },
     "variants": [
       "holo"
     ]
   },
   {
-    "id": "swsh9tg-TG14",
+    "id": "swsh9.5tg-TG14",
     "name": "Sylveon V",
     "number": "TG14",
     "rarity": "Ultra Rare",
@@ -8805,21 +8848,21 @@
     ],
     "hp": "200",
     "set": {
-      "id": "swsh9tg",
-      "name": "Brilliant Stars",
+      "id": "swsh9.5tg",
+      "name": "Brilliant Stars Trainer Gallery",
       "series": "Sword & Shield",
       "releaseDate": "2022/02/25"
     },
     "images": {
-      "small": "https://assets.tcgdex.net/en/swsh/swsh9/TG14/low.webp",
-      "large": "https://assets.tcgdex.net/en/swsh/swsh9/TG14/high.png"
+      "small": "https://images.pokemontcg.io/swsh9.5tg/TG14.png",
+      "large": "https://images.pokemontcg.io/swsh9.5tg/TG14_hires.png"
     },
     "variants": [
       "holo"
     ]
   },
   {
-    "id": "swsh9tg-TG15",
+    "id": "swsh9.5tg-TG15",
     "name": "Sylveon VMAX",
     "number": "TG15",
     "rarity": "Ultra Rare",
@@ -8832,21 +8875,21 @@
     ],
     "hp": "310",
     "set": {
-      "id": "swsh9tg",
-      "name": "Brilliant Stars",
+      "id": "swsh9.5tg",
+      "name": "Brilliant Stars Trainer Gallery",
       "series": "Sword & Shield",
       "releaseDate": "2022/02/25"
     },
     "images": {
-      "small": "https://assets.tcgdex.net/en/swsh/swsh9/TG15/low.webp",
-      "large": "https://assets.tcgdex.net/en/swsh/swsh9/TG15/high.png"
+      "small": "https://images.pokemontcg.io/swsh9.5tg/TG15.png",
+      "large": "https://images.pokemontcg.io/swsh9.5tg/TG15_hires.png"
     },
     "variants": [
       "holo"
     ]
   },
   {
-    "id": "swsh9tg-TG22",
+    "id": "swsh9.5tg-TG22",
     "name": "Umbreon V",
     "number": "TG22",
     "rarity": "Ultra Rare",
@@ -8860,21 +8903,21 @@
     ],
     "hp": "200",
     "set": {
-      "id": "swsh9tg",
-      "name": "Brilliant Stars",
+      "id": "swsh9.5tg",
+      "name": "Brilliant Stars Trainer Gallery",
       "series": "Sword & Shield",
       "releaseDate": "2022/02/25"
     },
     "images": {
-      "small": "https://assets.tcgdex.net/en/swsh/swsh9/TG22/low.webp",
-      "large": "https://assets.tcgdex.net/en/swsh/swsh9/TG22/high.png"
+      "small": "https://images.pokemontcg.io/swsh9.5tg/TG22.png",
+      "large": "https://images.pokemontcg.io/swsh9.5tg/TG22_hires.png"
     },
     "variants": [
       "holo"
     ]
   },
   {
-    "id": "swsh9tg-TG23",
+    "id": "swsh9.5tg-TG23",
     "name": "Umbreon VMAX",
     "number": "TG23",
     "rarity": "Ultra Rare",
@@ -8887,14 +8930,14 @@
     ],
     "hp": "310",
     "set": {
-      "id": "swsh9tg",
-      "name": "Brilliant Stars",
+      "id": "swsh9.5tg",
+      "name": "Brilliant Stars Trainer Gallery",
       "series": "Sword & Shield",
       "releaseDate": "2022/02/25"
     },
     "images": {
-      "small": "https://assets.tcgdex.net/en/swsh/swsh9/TG23/low.webp",
-      "large": "https://assets.tcgdex.net/en/swsh/swsh9/TG23/high.png"
+      "small": "https://images.pokemontcg.io/swsh9.5tg/TG23.png",
+      "large": "https://images.pokemontcg.io/swsh9.5tg/TG23_hires.png"
     },
     "variants": [
       "holo"
@@ -9153,7 +9196,7 @@
     ]
   },
   {
-    "id": "swsh12pt5gg-GG35",
+    "id": "swsh12.5gg-GG35",
     "name": "Leafeon VSTAR",
     "number": "GG35",
     "rarity": "Ultra Rare",
@@ -9167,21 +9210,21 @@
     ],
     "hp": "260",
     "set": {
-      "id": "swsh12pt5gg",
-      "name": "Crown Zenith",
+      "id": "swsh12.5gg",
+      "name": "Crown Zenith Galarian Gallery",
       "series": "Sword & Shield",
       "releaseDate": "2023/01/20"
     },
     "images": {
-      "small": "https://assets.tcgdex.net/en/swsh/swsh12.5/GG35/low.webp",
-      "large": "https://assets.tcgdex.net/en/swsh/swsh12.5/GG35/high.png"
+      "small": "https://images.pokemontcg.io/swsh12.5gg/GG35.png",
+      "large": "https://images.pokemontcg.io/swsh12.5gg/GG35_hires.png"
     },
     "variants": [
       "holo"
     ]
   },
   {
-    "id": "swsh12pt5gg-GG40",
+    "id": "swsh12.5gg-GG40",
     "name": "Glaceon VSTAR",
     "number": "GG40",
     "rarity": "Ultra Rare",
@@ -9195,14 +9238,14 @@
     ],
     "hp": "260",
     "set": {
-      "id": "swsh12pt5gg",
-      "name": "Crown Zenith",
+      "id": "swsh12.5gg",
+      "name": "Crown Zenith Galarian Gallery",
       "series": "Sword & Shield",
       "releaseDate": "2023/01/20"
     },
     "images": {
-      "small": "https://assets.tcgdex.net/en/swsh/swsh12.5/GG40/low.webp",
-      "large": "https://assets.tcgdex.net/en/swsh/swsh12.5/GG40/high.png"
+      "small": "https://images.pokemontcg.io/swsh12.5gg/GG40.png",
+      "large": "https://images.pokemontcg.io/swsh12.5gg/GG40_hires.png"
     },
     "variants": [
       "holo"
@@ -9212,7 +9255,7 @@
     "id": "svp-43",
     "name": "Eevee",
     "number": "43",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Basic"
@@ -9232,14 +9275,14 @@
       "large": "https://assets.tcgdex.net/en/sv/svp/043/high.png"
     },
     "variants": [
-      "normal"
+      "holo"
     ]
   },
   {
     "id": "svp-167",
     "name": "Flareon",
     "number": "167",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Stage 1"
@@ -9259,14 +9302,14 @@
       "large": "https://assets.tcgdex.net/en/sv/svp/167/high.png"
     },
     "variants": [
-      "normal"
+      "holo"
     ]
   },
   {
     "id": "svp-168",
     "name": "Vaporeon",
     "number": "168",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Stage 1"
@@ -9286,14 +9329,14 @@
       "large": "https://assets.tcgdex.net/en/sv/svp/168/high.png"
     },
     "variants": [
-      "normal"
+      "holo"
     ]
   },
   {
     "id": "svp-169",
     "name": "Jolteon",
     "number": "169",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Stage 1"
@@ -9313,14 +9356,14 @@
       "large": "https://assets.tcgdex.net/en/sv/svp/169/high.png"
     },
     "variants": [
-      "normal"
+      "holo"
     ]
   },
   {
     "id": "svp-170",
     "name": "Leafeon",
     "number": "170",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Stage 1"
@@ -9340,14 +9383,14 @@
       "large": "https://assets.tcgdex.net/en/sv/svp/170/high.png"
     },
     "variants": [
-      "normal"
+      "holo"
     ]
   },
   {
     "id": "svp-171",
     "name": "Glaceon",
     "number": "171",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Stage 1"
@@ -9367,14 +9410,14 @@
       "large": "https://assets.tcgdex.net/en/sv/svp/171/high.png"
     },
     "variants": [
-      "normal"
+      "holo"
     ]
   },
   {
     "id": "svp-172",
     "name": "Sylveon",
     "number": "172",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Stage 1"
@@ -9394,14 +9437,14 @@
       "large": "https://assets.tcgdex.net/en/sv/svp/172/high.png"
     },
     "variants": [
-      "normal"
+      "holo"
     ]
   },
   {
     "id": "svp-173",
     "name": "Eevee",
     "number": "173",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Basic"
@@ -9421,14 +9464,14 @@
       "large": "https://assets.tcgdex.net/en/sv/svp/173/high.png"
     },
     "variants": [
-      "normal"
+      "holo"
     ]
   },
   {
     "id": "svp-174",
     "name": "Eevee ex",
     "number": "174",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Basic",
@@ -9449,7 +9492,7 @@
       "large": "https://assets.tcgdex.net/en/sv/svp/174/high.png"
     },
     "variants": [
-      "normal"
+      "holo"
     ]
   },
   {
@@ -9512,7 +9555,7 @@
     "id": "svp-200",
     "name": "Eevee",
     "number": "200",
-    "rarity": "None",
+    "rarity": "Promo",
     "supertype": "Pokémon",
     "subtypes": [
       "Basic"
@@ -9921,7 +9964,8 @@
       "large": "https://assets.tcgdex.net/en/sv/sv06.5/022/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse"
     ]
   },
   {
@@ -9948,7 +9992,8 @@
       "large": "https://assets.tcgdex.net/en/sv/sv06.5/050/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse"
     ]
   },
   {

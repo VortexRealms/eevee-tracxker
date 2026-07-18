@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "fetch:cards": "tsx scripts/fetch-cards.ts",
-    "fetch:prices": "tsx scripts/fetch-prices.ts"
+    "fetch:prices": "tsx scripts/fetch-prices.ts",
+    "cards:pick": "tsx scripts/pick-included-cards.ts"
   },
   "dependencies": {
     "@tcgdex/sdk": "^2.7.1",
