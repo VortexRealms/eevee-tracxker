@@ -13,13 +13,17 @@ import type { PokewalletIdCache } from "./pokewallet-price-utils";
 const SET_CODE = "CBB2C";
 const MATCH_SCORE = 100;
 
+type Cbb2cMapMeta = {
+  source?: string;
+  setCode?: string;
+  cardCount?: number;
+  apiCardCount?: number;
+  idFormat?: string;
+};
+
 type Cbb2cMapFile = {
-  _meta?: {
-    source?: string;
-    setCode?: string;
-    cardCount?: number;
-  };
-  [cardId: string]: string | Cbb2cMapFile["_meta"] | undefined;
+  _meta?: Cbb2cMapMeta;
+  [cardId: string]: string | Cbb2cMapMeta | undefined;
 };
 
 function parseArgs(argv: string[]): { force: boolean } {

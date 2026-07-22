@@ -117,10 +117,10 @@ const cases: Case[] = [
 ];
 
 function variantEqual(
-  a: { usd: number | null; eur: number | null },
+  a: { usd?: number | null; eur?: number | null },
   b: { usd: number | null; eur: number | null }
 ): boolean {
-  return a.usd === b.usd && a.eur === b.eur;
+  return (a.usd ?? null) === b.usd && (a.eur ?? null) === b.eur;
 }
 
 let failed = 0;

@@ -71,6 +71,9 @@ async function main() {
 
   console.log(`Fetching live ${SET_CODE} set from Pokewallet...`);
   const { setMeta, cards: apiCards } = await client.fetchAllSetCards(SET_CODE);
+  if (!setMeta) {
+    throw new Error(`No set metadata returned for ${SET_CODE}`);
+  }
   console.log(`  ${setMeta.name}: ${apiCards.length} API cards`);
 
   const byLine = groupApiCardsByLine(apiCards);
