@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { AppHeader } from "../components/AppHeader";
+import { CurrencyProvider } from "../components/CurrencyProvider";
 
 export const metadata: Metadata = {
   title: "Eevee Card Tracker",
@@ -15,10 +16,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="app-body">
-        <div className="app-shell">
-          <AppHeader />
-          <div className="app-frame">{children}</div>
-        </div>
+        <CurrencyProvider>
+          <div className="app-shell">
+            <AppHeader />
+            <div className="app-frame">{children}</div>
+          </div>
+        </CurrencyProvider>
       </body>
     </html>
   );

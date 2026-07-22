@@ -1,27 +1,23 @@
 import { useMemo, useState } from "react";
-import type { CollectionRow, PokemonCard } from "../types";
-import { getEurUsdRate, getPriceForCard, parseCardIdAndVariant } from "../lib/cards";
+import type { CollectionRow, PokemonCard, PricesSnapshot } from "../types";
+import { getPriceForCard, parseCardIdAndVariant } from "../lib/cards";
+import { metaToExchangeRates } from "../lib/exchange-rates";
+import {
+  formatDisplayPrice,
+  resolveDisplayAmount,
+  resolveListingPrice,
+} from "../lib/display-price";
+import { getVariantLabel, variantSortIndex } from "../lib/variant-labels";
+import { useCurrency } from "./CurrencyProvider";
+import { CardPriceLabel } from "./CardPriceLabel";
 import { VariantPickerModal } from "./VariantPickerModal";
-
-const VARIANT_LABELS: Record<string, string> = {
-  normal: "Normal",
-  reverse: "Reverse Holofoil",
-  holo: "Holofoil",
-  firstEdition: "1st Edition",
-  wPromo: "W Promo"
-};
-
-const VARIANT_SORT_ORDER = ["normal", "reverse", "holo", "firstEdition", "wPromo"];
-
-function getVariantLabel(variant: string): string {
-  return VARIANT_LABELS[variant] ?? variant.charAt(0).toUpperCase() + variant.slice(1);
-}
 
 export type CardGridMode = "checklist" | "public";
 
 interface CardGridProps {
   cards: PokemonCard[];
   collection: CollectionRow[];
+  prices: PricesSnapshot | null;
   onCardClick: (cardId: string) => void;
   onSetOwned: (cardId: string, variant: string, owned: boolean) => void;
   isLoading: boolean;
@@ -66,6 +62,7 @@ function getCardmarketSearchUrl(card: PokemonCard): string {
 export function CardGrid({
   cards,
   collection,
+  prices,
   onCardClick,
   onSetOwned,
   isLoading,
@@ -79,7 +76,12 @@ export function CardGrid({
   );
   const [variantPickerCard, setVariantPickerCard] = useState<PokemonCard | null>(null);
 
-  const eurUsdRate = getEurUsdRate();
+  const { currency } = useCurrency();
+  const exchangeRates = useMemo(
+    () => (prices?.meta ? metaToExchangeRates(prices.meta) : null),
+    [prices?.meta]
+  );
+  const showPrices = prices !== null && exchangeRates !== null;
 
   const hasAnyOwnedVariant = useMemo(() => {
     const set = new Set<string>();
@@ -106,9 +108,9 @@ export function CardGrid({
       const idxA = cardIndexMap.get(a.card.id) ?? 9999;
       const idxB = cardIndexMap.get(b.card.id) ?? 9999;
       if (idxA !== idxB) return idxA - idxB;
-      const vA = VARIANT_SORT_ORDER.indexOf(a.variant);
-      const vB = VARIANT_SORT_ORDER.indexOf(b.variant);
-      return (vA >= 0 ? vA : 999) - (vB >= 0 ? vB : 999);
+      const vA = variantSortIndex(a.variant);
+      const vB = variantSortIndex(b.variant);
+      return vA - vB;
     });
   }, [collection, cards]);
 
@@ -120,17 +122,16 @@ export function CardGrid({
       const { cardId, variant } = parseCardIdAndVariant(row.cardId);
       ownedCardIds.add(cardId);
       const card = cards.find((c) => c.id === cardId);
-      if (card) {
-        const price = getPriceForCard(card, variant);
-        const usd =
-          price.usd != null ? price.usd : price.eur != null ? price.eur * eurUsdRate : null;
-        if (usd != null) collectionValue += usd;
+      if (card && exchangeRates) {
+        const price = getPriceForCard(card, variant, prices);
+        const { amount } = resolveDisplayAmount(price, currency, exchangeRates);
+        if (amount != null) collectionValue += amount;
       }
     }
     const owned = ownedCardIds.size;
     const missing = cards.filter((c) => !ownedCardIds.has(c.id)).length;
     return { owned, missing, collectionValue };
-  }, [cards, collection, eurUsdRate]);
+  }, [cards, collection, currency, exchangeRates, prices]);
 
   const searchTokens = useMemo(
     () =>
@@ -200,9 +201,9 @@ export function CardGrid({
               <span>{counts.owned}</span>
               <small>owned</small>
             </div>
-            {!isPublic && (
+            {!isPublic && showPrices && (
               <div className="stat-pill is-value">
-                <span>${counts.collectionValue.toFixed(2)}</span>
+                <span>{formatDisplayPrice(counts.collectionValue, currency)}</span>
                 <small>est. value</small>
               </div>
             )}
@@ -288,7 +289,18 @@ export function CardGrid({
                     <span className="status-pill status-pill-owned">Owned</span>
                   </div>
                   <div className="card-body">
-                    <div className="card-title">{card.name}</div>
+                    <div className="card-title-row">
+                      <div className="card-title">{card.name}</div>
+                      {showPrices && exchangeRates && (
+                        <CardPriceLabel
+                          price={getPriceForCard(card, variant, prices)}
+                          currency={currency}
+                          rates={exchangeRates}
+                          updatedAt={prices?.entries[card.id]?.updatedAt}
+                          priceSource={prices?.entries[card.id]?.source}
+                        />
+                      )}
+                    </div>
                     <div className="card-subtitle-row">
                       <span className="card-setname">{card.set.name}</span>
                       <span className="card-number">#{card.number}</span>
@@ -298,24 +310,6 @@ export function CardGrid({
                       <span className="variant-capsule">{getVariantLabel(variant)}</span>
                       <span className="mini-pill">{card.set.releaseDate}</span>
                     </div>
-                    {(() => {
-                      const price = getPriceForCard(card, variant);
-                      if (price.usd == null && price.eur == null) return null;
-                      return (
-                        <div className="price-pill-row">
-                          {price.usd != null && (
-                            <span className="price-pill price-pill-usd">
-                              ${price.usd.toFixed(2)}
-                            </span>
-                          )}
-                          {price.eur != null && (
-                            <span className="price-pill price-pill-eur">
-                              €{price.eur.toFixed(2)}
-                            </span>
-                          )}
-                        </div>
-                      );
-                    })()}
                   </div>
                 </button>
                 {!isPublic && (
@@ -378,6 +372,11 @@ export function CardGrid({
               }
             };
 
+            const listing =
+              showPrices && exchangeRates
+                ? resolveListingPrice(card, prices, currency, exchangeRates)
+                : null;
+
             return (
               <div
                 key={card.id}
@@ -404,7 +403,23 @@ export function CardGrid({
                     )}
                   </div>
                   <div className="card-body">
-                    <div className="card-title">{card.name}</div>
+                    <div className="card-title-row">
+                      <div className="card-title">{card.name}</div>
+                      {listing != null && exchangeRates != null && (
+                        <CardPriceLabel
+                          price={listing.price}
+                          currency={currency}
+                          rates={exchangeRates}
+                          updatedAt={prices?.entries[card.id]?.updatedAt}
+                          priceSource={prices?.entries[card.id]?.source}
+                          fallbackVariantLabel={
+                            listing.isFallback
+                              ? getVariantLabel(listing.variant)
+                              : undefined
+                          }
+                        />
+                      )}
+                    </div>
                     <div className="card-subtitle-row">
                       <span className="card-setname">{card.set.name}</span>
                       <span className="card-number">#{card.number}</span>
@@ -413,24 +428,6 @@ export function CardGrid({
                       <span className="set-pill">{card.set.series}</span>
                       <span className="mini-pill">{card.set.releaseDate}</span>
                     </div>
-                    {(() => {
-                      const price = getPriceForCard(card);
-                      if (price.usd == null && price.eur == null) return null;
-                      return (
-                        <div className="price-pill-row">
-                          {price.usd != null && (
-                            <span className="price-pill price-pill-usd">
-                              ${price.usd.toFixed(2)}
-                            </span>
-                          )}
-                          {price.eur != null && (
-                            <span className="price-pill price-pill-eur">
-                              €{price.eur.toFixed(2)}
-                            </span>
-                          )}
-                        </div>
-                      );
-                    })()}
                   </div>
                 </button>
                 <div className="card-action-wrap">

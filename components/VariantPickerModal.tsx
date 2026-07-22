@@ -3,18 +3,7 @@
 import { useEffect } from "react";
 import { createPortal } from "react-dom";
 import type { PokemonCard } from "../types";
-
-const VARIANT_LABELS: Record<string, string> = {
-  normal: "Normal",
-  reverse: "Reverse Holofoil",
-  holo: "Holofoil",
-  firstEdition: "1st Edition",
-  wPromo: "W Promo"
-};
-
-function getVariantLabel(variant: string): string {
-  return VARIANT_LABELS[variant] ?? variant.charAt(0).toUpperCase() + variant.slice(1);
-}
+import { getVariantLabel } from "../lib/variant-labels";
 
 interface VariantPickerModalProps {
   card: PokemonCard | null;

@@ -1,16 +1,24 @@
 import { NextResponse } from "next/server";
 import { requireAuth } from "../../../lib/auth/guards";
+import { enrichPricesSnapshot } from "../../../lib/exchange-rates";
 import {
   getAllCollectionRows,
+  getPricesSnapshot,
   upsertCollectionRow,
-  type UpsertCollectionInput
+  type UpsertCollectionInput,
 } from "../../../lib/google-sheets";
+
+export const dynamic = "force-dynamic";
 
 export async function GET() {
   await requireAuth();
   try {
-    const rows = await getAllCollectionRows();
-    return NextResponse.json({ rows });
+    const [rows, rawPrices] = await Promise.all([
+      getAllCollectionRows(),
+      getPricesSnapshot(),
+    ]);
+    const prices = await enrichPricesSnapshot(rawPrices);
+    return NextResponse.json({ rows, prices });
   } catch (err) {
     console.error(err);
     return NextResponse.json(

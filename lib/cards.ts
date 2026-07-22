@@ -1,34 +1,16 @@
 import cardsData from "../data/cards.json";
-import pricesData from "../data/prices.json";
-import manualPricesData from "../data/manual-prices.json";
-import type { CardPricing, CollectionRow, MergedCard, PokemonCard } from "../types";
-
-type VariantPrice = { usd?: number | null; eur?: number | null };
-type PricesMap = Record<
-  string,
-  { usd?: number | null; eur?: number | null; updatedAt?: string; variants?: Record<string, VariantPrice> }
->;
-type ManualVariantPrice = { usd?: number; eur?: number };
-type ManualPricesMap = Record<
-  string,
-  { usd?: number; eur?: number; variants?: Record<string, ManualVariantPrice> }
->;
+import { normalizePriceAmount } from "./parse-price";
+import type {
+  CollectionRow,
+  MergedCard,
+  PokemonCard,
+  PriceEntry,
+  PricesMeta,
+  PricesSnapshot,
+} from "../types";
 
 export function getAllCards(): PokemonCard[] {
-  const prices = pricesData as PricesMap;
-  const manualPrices = manualPricesData as ManualPricesMap;
-
-  return (cardsData as PokemonCard[]).map((card) => {
-    const base = prices[card.id];
-    const manual = manualPrices[card.id];
-    if (!base && !manual) return card;
-    const pricing: CardPricing = {
-      usd: base?.usd ?? manual?.usd ?? null,
-      eur: base?.eur ?? manual?.eur ?? null,
-      updatedAt: (base as any)?.updatedAt,
-    };
-    return { ...card, pricing };
-  });
+  return cardsData as PokemonCard[];
 }
 
 /** Parse composite cardId (e.g. "sv8pt5-74:normal") into base id and variant. */
@@ -39,18 +21,10 @@ export function parseCardIdAndVariant(
   if (colon >= 0) {
     return {
       cardId: composite.slice(0, colon),
-      variant: composite.slice(colon + 1) || "normal"
+      variant: composite.slice(colon + 1) || "normal",
     };
   }
   return { cardId: composite, variant: "normal" };
-}
-
-/** Returns the EUR→USD exchange rate stored in prices.json, with a safe fallback. */
-export function getEurUsdRate(): number {
-  const meta = (pricesData as any)._meta;
-  return typeof meta?.eurUsdRate === "number" && meta.eurUsdRate > 0
-    ? meta.eurUsdRate
-    : 1.08;
 }
 
 export interface ResolvedPrice {
@@ -58,48 +32,89 @@ export interface ResolvedPrice {
   eur: number | null;
 }
 
+type VariantPrices = NonNullable<PriceEntry["variants"]>;
+
+function readVariantPrices(
+  prices: { usd?: number | null; eur?: number | null } | undefined
+): ResolvedPrice {
+  return {
+    usd: normalizePriceAmount(prices?.usd),
+    eur: normalizePriceAmount(prices?.eur),
+  };
+}
+
+function hasPrice(price: ResolvedPrice): boolean {
+  return price.usd != null || price.eur != null;
+}
+
 /**
- * Get price for a card, optionally for a specific variant.
- * All/Missing: use getPriceForCard(card) for normal price.
- * Owned: use getPriceForCard(card, variant) for variant-specific price when available.
- * Merges prices.json (primary) with manual-prices.json (fallback) at field level.
+ * When a card has exactly one catalogue variant but Pokewallet uses another key
+ * (e.g. TCGdex holo-only, API normal-only), map to the available price entry.
+ */
+export function resolveSingleVariantAlias(
+  card: PokemonCard,
+  variants: VariantPrices | undefined
+): ResolvedPrice {
+  if (!variants || card.variants?.length !== 1) {
+    return { usd: null, eur: null };
+  }
+
+  const catalogueVariant = card.variants[0];
+  const pricedEntries = Object.entries(variants).filter(([, p]) =>
+    hasPrice(readVariantPrices(p))
+  );
+
+  if (pricedEntries.length === 1) {
+    return readVariantPrices(pricedEntries[0][1]);
+  }
+
+  if (catalogueVariant === "holo" && hasPrice(readVariantPrices(variants.normal))) {
+    return readVariantPrices(variants.normal);
+  }
+
+  if (catalogueVariant === "normal" && hasPrice(readVariantPrices(variants.holo))) {
+    return readVariantPrices(variants.holo);
+  }
+
+  return { usd: null, eur: null };
+}
+
+const EMPTY_SNAPSHOT: PricesSnapshot = {
+  meta: { ratesUpdatedAt: "" },
+  entries: {},
+};
+
+/**
+ * Default variant for All/Missing price display (first variant on the card).
+ */
+export function defaultPriceVariant(card: PokemonCard): string {
+  const variants = card.variants?.length ? card.variants : ["normal"];
+  return variants[0];
+}
+
+/**
+ * Get price for a card variant. Multi-variant cards use strict key lookup only.
+ * Single-variant cards may alias when Pokewallet uses a different variantsJson key
+ * (e.g. catalogue holo, API normal).
  */
 export function getPriceForCard(
   card: PokemonCard,
-  variant?: string
+  variant: string | undefined,
+  prices: PricesSnapshot | null | undefined
 ): ResolvedPrice {
-  const prices = pricesData as PricesMap;
-  const manualPrices = manualPricesData as ManualPricesMap;
-  const base = prices[card.id];
-  const manual = manualPrices[card.id];
+  const snapshot = prices ?? EMPTY_SNAPSHOT;
+  const base = snapshot.entries[card.id];
 
   const v = variant ?? "normal";
-  let baseVariant = base?.variants?.[v];
-  let manualVariant = manual?.variants?.[v];
+  const strict = readVariantPrices(base?.variants?.[v]);
+  if (hasPrice(strict)) return strict;
 
-  // When reverse has no price, use holo as fallback (before card-level)
-  if (v === "reverse") {
-    if (!baseVariant?.usd && !baseVariant?.eur) baseVariant = base?.variants?.["holo"];
-    if (!manualVariant?.usd && !manualVariant?.eur) manualVariant = manual?.variants?.["holo"];
+  if (card.variants?.length === 1) {
+    const aliased = resolveSingleVariantAlias(card, base?.variants);
+    if (hasPrice(aliased)) return aliased;
   }
 
-  const usd =
-    baseVariant?.usd ??
-    base?.usd ??
-    manualVariant?.usd ??
-    manual?.usd ??
-    null;
-  const eur =
-    baseVariant?.eur ??
-    base?.eur ??
-    manualVariant?.eur ??
-    manual?.eur ??
-    null;
-
-  return {
-    usd: typeof usd === "number" ? usd : null,
-    eur: typeof eur === "number" ? eur : null
-  };
+  return { usd: null, eur: null };
 }
 
 export function mergeCardsWithCollection(
@@ -109,7 +124,8 @@ export function mergeCardsWithCollection(
   const byId = new Map(collection.map((row) => [row.cardId, row]));
   return cards.map((card) => ({
     ...card,
-    collection: byId.get(card.id) ?? null
+    collection: byId.get(card.id) ?? null,
   }));
 }
 
+export type { PriceEntry, PricesSnapshot, PricesMeta };

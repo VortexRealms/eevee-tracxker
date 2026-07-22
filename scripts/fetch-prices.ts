@@ -1,243 +1,162 @@
 /**
- * Fetches current market pricing for every card in data/cards.json from the
- * TCGdex REST API (which provides TCGplayer USD and Cardmarket EUR data for free)
- * and saves the result to data/prices.json.
+ * Phase B: Fetch prices from Pokewallet GET /cards/:id using pokewallet-id-cache.json.
+ * Writes results to the Google Sheet "prices" tab (live — no deploy needed).
  *
- * Pricing is stored separately from card metadata so it can be refreshed
- * independently without re-fetching all card data.
+ * Run fetch:pokewallet-ids first to build the cache.
  *
- * Run with: npm run fetch:prices
+ * Run with: npm run fetch:prices [-- --limit 100 --offset 0] [-- --force]
  */
 
 import fs from "node:fs/promises";
 import path from "node:path";
-import type { PokemonCard } from "../types";
-import { toTcgdexCardId } from "./set-id-map";
+import type { PokemonCard, PriceEntry, PricesMeta } from "../types";
+import {
+  exchangeRatesToMeta,
+  fetchLiveExchangeRates,
+  metaToExchangeRates,
+} from "../lib/exchange-rates";
+import { localTodayIso, shouldSkipPriceFetch } from "../lib/fetch-price-skip";
+import { getPricesSnapshot, syncPricesToSheet } from "../lib/google-sheets";
+import { mergePriceEntries } from "../lib/price-merge";
+import { loadEnvFiles } from "./load-env";
+import { parseBatchCli, sliceBatch } from "./pokewallet-cli";
+import { PokewalletClient } from "./pokewallet-client";
+import {
+  pokewalletResultToPriceEntry,
+  type PokewalletIdCache,
+} from "./pokewallet-price-utils";
 
-/** Canonical PTCG ids whose pricing is fetched under a different TCGdex card id. */
-const PTCG_ID_TO_TCGDEX_PRICING_FETCH: Record<string, string> = {
-  "mcd19-12": "2019sm-12",
-};
+const SYNC_EVERY_N = 50;
 
-const TCGDEX_API = "https://api.tcgdex.net/v2/en/cards";
-const BATCH_SIZE = 10;
-const TODAY = new Date().toISOString().slice(0, 10);
-
-interface TcgdexPricingVariant {
-  marketPrice?: number;
-  lowPrice?: number;
-  midPrice?: number;
-  highPrice?: number;
-}
-
-interface TcgdexCardPricing {
-  tcgplayer?: {
-    unit?: string;
-    normal?: TcgdexPricingVariant;
-    holofoil?: TcgdexPricingVariant;
-    "reverse-holofoil"?: TcgdexPricingVariant;
-    "1st-edition"?: TcgdexPricingVariant;
-    "1st-edition-holofoil"?: TcgdexPricingVariant;
-    unlimited?: TcgdexPricingVariant;
-    "unlimited-holofoil"?: TcgdexPricingVariant;
-  };
-  cardmarket?: {
-    unit?: string;
-    avg?: number;
-    low?: number;
-    trend?: number;
-    "avg-holo"?: number;
-    "low-holo"?: number;
-    "trend-holo"?: number;
-    avg1?: number;
-    avg7?: number;
-    avg30?: number;
-    "avg1-holo"?: number;
-    "avg7-holo"?: number;
-    "avg30-holo"?: number;
-  };
-}
-
-export interface PriceEntry {
-  usd?: number | null;
-  eur?: number | null;
-  updatedAt: string;
-  variants?: Record<string, { usd?: number | null; eur?: number | null }>;
-}
-
-/** Extract per-variant USD from TCGplayer. */
-function extractUsdVariants(tcgplayer: TcgdexCardPricing["tcgplayer"]): Record<string, number | null> {
-  const out: Record<string, number | null> = {};
-  if (!tcgplayer) return out;
-  const map: Array<[string, string]> = [
-    ["normal", "normal"],
-    ["reverse-holofoil", "reverse"],
-    ["holofoil", "holo"],
-    ["1st-edition", "firstEdition"],
-    ["unlimited", "normal"],
-    ["unlimited-holofoil", "holo"],
-  ];
-  for (const [tcgKey, variant] of map) {
-    const v = (tcgplayer as Record<string, TcgdexPricingVariant | undefined>)[tcgKey];
-    const price = v?.marketPrice;
-    if (typeof price === "number" && !(variant in out)) out[variant] = price;
-  }
-  return out;
-}
-
-/** Extract per-variant EUR from Cardmarket. avg=normal, avg-holo=holo. */
-function extractEurVariants(cardmarket: TcgdexCardPricing["cardmarket"]): Record<string, number | null> {
-  const out: Record<string, number | null> = {};
-  if (!cardmarket) return out;
-  if (typeof cardmarket.avg === "number") out["normal"] = cardmarket.avg;
-  if (typeof cardmarket["avg-holo"] === "number") out["holo"] = cardmarket["avg-holo"];
-  return out;
-}
-
-/** Build variants object merging USD and EUR per variant. */
-function buildVariants(
-  tcgplayer: TcgdexCardPricing["tcgplayer"],
-  cardmarket: TcgdexCardPricing["cardmarket"]
-): Record<string, { usd: number | null; eur: number | null }> | undefined {
-  const usdMap = extractUsdVariants(tcgplayer);
-  const eurMap = extractEurVariants(cardmarket);
-  const allVariants = new Set([...Object.keys(usdMap), ...Object.keys(eurMap)]);
-  if (allVariants.size === 0) return undefined;
-  const out: Record<string, { usd: number | null; eur: number | null }> = {};
-  for (const v of allVariants) {
-    const usd = usdMap[v] ?? null;
-    const eur = eurMap[v] ?? null;
-    if (usd !== null || eur !== null) out[v] = { usd, eur };
-  }
-  return Object.keys(out).length > 0 ? out : undefined;
-}
-
-/** Best USD market price: prefer normal > reverse > holofoil variants. */
-function extractUsd(tcgplayer: TcgdexCardPricing["tcgplayer"]): number | null {
-  if (!tcgplayer) return null;
-  const price =
-    tcgplayer.normal?.marketPrice ??
-    tcgplayer["reverse-holofoil"]?.marketPrice ??
-    tcgplayer.holofoil?.marketPrice ??
-    tcgplayer["1st-edition"]?.marketPrice ??
-    tcgplayer["1st-edition-holofoil"]?.marketPrice ??
-    tcgplayer.unlimited?.marketPrice ??
-    tcgplayer["unlimited-holofoil"]?.marketPrice ??
-    null;
-  return typeof price === "number" ? price : null;
-}
-
-/** Best EUR price: prefer normal avg > holo avg, then time windows. */
-function extractEur(cardmarket: TcgdexCardPricing["cardmarket"]): number | null {
-  if (!cardmarket) return null;
-  const price =
-    cardmarket.avg ??
-    cardmarket["avg-holo"] ??
-    cardmarket.avg1 ??
-    cardmarket["avg1-holo"] ??
-    cardmarket.avg7 ??
-    cardmarket["avg7-holo"] ??
-    cardmarket.avg30 ??
-    cardmarket["avg30-holo"] ??
-    null;
-  return typeof price === "number" ? price : null;
-}
-
-async function fetchPricing(tcgdexId: string): Promise<TcgdexCardPricing | null> {
+async function loadJson<T>(filePath: string, fallback: T): Promise<T> {
   try {
-    const res = await fetch(`${TCGDEX_API}/${encodeURIComponent(tcgdexId)}`);
-    if (!res.ok) return null;
-    const data = (await res.json()) as { pricing?: TcgdexCardPricing };
-    return data.pricing ?? null;
+    const raw = await fs.readFile(filePath, "utf8");
+    return JSON.parse(raw) as T;
   } catch {
-    return null;
-  }
-}
-
-/** Chunk an array into sub-arrays of `size`. */
-function chunk<T>(arr: T[], size: number): T[][] {
-  const out: T[][] = [];
-  for (let i = 0; i < arr.length; i += size) out.push(arr.slice(i, i + size));
-  return out;
-}
-
-async function fetchEurUsdRate(): Promise<number> {
-  const FALLBACK = 1.08;
-  try {
-    const res = await fetch("https://api.frankfurter.app/latest?from=EUR&to=USD");
-    if (!res.ok) return FALLBACK;
-    const data = (await res.json()) as { rates?: { USD?: number } };
-    const rate = data.rates?.USD;
-    return typeof rate === "number" && rate > 0 ? rate : FALLBACK;
-  } catch {
-    console.warn("  Could not fetch EUR/USD rate, using fallback 1.08");
-    return FALLBACK;
+    return fallback;
   }
 }
 
 async function main() {
+  await loadEnvFiles();
+  const client = PokewalletClient.fromEnv();
+  const opts = parseBatchCli(process.argv.slice(2));
+
   const cardsPath = path.join(process.cwd(), "data", "cards.json");
-  const raw = await fs.readFile(cardsPath, "utf8");
-  const cards = JSON.parse(raw) as PokemonCard[];
+  const cachePath = path.join(process.cwd(), "data", "pokewallet-id-cache.json");
 
-  console.log(`Fetching prices for ${cards.length} cards from TCGdex...`);
+  const allCards = JSON.parse(await fs.readFile(cardsPath, "utf8")) as PokemonCard[];
+  const cache = await loadJson<PokewalletIdCache>(cachePath, {});
 
-  const prices: Record<string, PriceEntry | { eurUsdRate: number; ratesUpdatedAt: string }> = {};
-  let found = 0;
-  let skipped = 0;
+  console.log("  Loading existing prices from Google Sheet...");
+  const existingSnapshot = await getPricesSnapshot();
+  const fetchedEntries: Record<string, PriceEntry> = { ...existingSnapshot.entries };
 
-  const batches = chunk(cards, BATCH_SIZE);
+  const withCache = allCards.filter((c) => cache[c.id]?.pokewalletId);
+  const batch = sliceBatch(withCache, opts.offset, opts.limit);
 
-  for (let b = 0; b < batches.length; b++) {
-    const batch = batches[b];
-    process.stdout.write(
-      `  Batch ${b + 1}/${batches.length} (cards ${b * BATCH_SIZE + 1}–${Math.min((b + 1) * BATCH_SIZE, cards.length)})... `
+  if (withCache.length === 0) {
+    console.warn(
+      "No cached Pokewallet IDs found. Run: npm run fetch:pokewallet-ids"
     );
-
-    const results = await Promise.all(
-      batch.map(async (card) => {
-        const tcgdexId =
-          PTCG_ID_TO_TCGDEX_PRICING_FETCH[card.id] ?? toTcgdexCardId(card.id);
-        const pricing = await fetchPricing(tcgdexId);
-        return { card, pricing };
-      })
-    );
-
-    for (const { card, pricing } of results) {
-      if (!pricing) {
-        skipped++;
-        continue;
-      }
-      const usd = extractUsd(pricing.tcgplayer);
-      const eur = extractEur(pricing.cardmarket);
-      const variants = buildVariants(pricing.tcgplayer, pricing.cardmarket);
-      if (usd !== null || eur !== null) {
-        const entry: PriceEntry = { usd, eur, updatedAt: TODAY };
-        if (variants) entry.variants = variants;
-        prices[card.id] = entry;
-        found++;
-      } else {
-        skipped++;
-      }
-    }
-    console.log("done");
+    process.exit(1);
   }
 
-  // Fetch EUR→USD rate and store as metadata so the UI can use it
-  process.stdout.write("\nFetching EUR/USD exchange rate... ");
-  const eurUsdRate = await fetchEurUsdRate();
-  console.log(`${eurUsdRate}`);
-
-  const output = {
-    _meta: { eurUsdRate, ratesUpdatedAt: TODAY },
-    ...prices,
-  };
-
-  const outPath = path.join(process.cwd(), "data", "prices.json");
-  await fs.writeFile(outPath, JSON.stringify(output, null, 2), "utf8");
   console.log(
-    `Saved prices for ${found} cards (${skipped} had no data) to ${outPath}`
+    `Fetching prices for ${batch.length} card(s) (${withCache.length} with cached IDs, ${allCards.length} total)...`
   );
+
+  const today = localTodayIso();
+  if (!opts.force) {
+    console.log(
+      `  Skipping cards with updatedAt=${today} and source=manual (use --force to refetch today's pokewallet rows)`
+    );
+  }
+
+  let priced = 0;
+  let noPriceData = 0;
+  let errors = 0;
+  let skippedFresh = 0;
+  let skippedManual = 0;
+  let syncedSinceLast = 0;
+
+  async function maybeSyncPartial(meta: PricesMeta) {
+    syncedSinceLast = 0;
+    const result = await syncPricesToSheet(fetchedEntries, meta);
+    console.log(
+      `\n  Synced to Sheet: ${result.updated} updated, ${result.appended} appended, ${result.skipped} manual skipped`
+    );
+  }
+
+  let meta: PricesMeta = existingSnapshot.meta;
+
+  for (let i = 0; i < batch.length; i++) {
+    const card = batch[i];
+    const cached = cache[card.id];
+    if (!cached?.pokewalletId) continue;
+
+    process.stdout.write(`  [${i + 1}/${batch.length}] ${card.id}... `);
+
+    const prior = fetchedEntries[card.id];
+    const { skip, reason } = shouldSkipPriceFetch(prior, today, opts.force);
+    if (skip) {
+      if (reason === "manual") skippedManual++;
+      else if (reason === "fresh") skippedFresh++;
+      console.log(`skip (${reason})`);
+      continue;
+    }
+
+    try {
+      const result = await client.getCard(
+        cached.pokewalletId,
+        cached.setCode || undefined
+      );
+      const entry = pokewalletResultToPriceEntry(result, today);
+      if (entry) {
+        fetchedEntries[card.id] = mergePriceEntries(entry, prior);
+        priced++;
+        syncedSinceLast++;
+        console.log(`$${entry.usd ?? "—"} / €${entry.eur ?? "—"}`);
+      } else {
+        noPriceData++;
+        console.log("no price data");
+      }
+    } catch (err) {
+      errors++;
+      console.log(`error: ${(err as Error).message}`);
+    }
+
+    if (syncedSinceLast >= SYNC_EVERY_N) {
+      await maybeSyncPartial(meta);
+    }
+  }
+
+  process.stdout.write("\nFetching exchange rates... ");
+  try {
+    const liveRates = await fetchLiveExchangeRates();
+    meta = exchangeRatesToMeta(liveRates);
+    const derived = metaToExchangeRates(meta);
+    console.log(
+      `as of ${meta.ratesUpdatedAt}, EUR/USD=${derived.eurUsdRate.toFixed(4)} (derived)`
+    );
+  } catch (err) {
+    console.warn(`failed (${(err as Error).message}), keeping existing meta`);
+  }
+
+  const syncResult = await syncPricesToSheet(fetchedEntries, meta);
+
+  const noCache = allCards.length - withCache.length;
+  console.log(
+    `\nSynced ${Object.keys(fetchedEntries).length} price entries to Google Sheet (prices tab)`
+  );
+  console.log(
+    `  Sheet write: ${syncResult.updated} updated, ${syncResult.appended} appended, ${syncResult.skipped} manual skipped`
+  );
+  console.log(
+    `  This batch: ${priced} priced, ${skippedFresh + skippedManual} skipped (${skippedFresh} fresh, ${skippedManual} manual), ${noPriceData} no data, ${errors} errors`
+  );
+  console.log(`  ${noCache} card(s) have no cached Pokewallet ID — run fetch:pokewallet-ids`);
+  console.log(client.formatRateLimitStatus());
 }
 
 main().catch((err) => {

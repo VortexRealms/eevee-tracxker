@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 export function AppHeader() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
-  const showMenu = pathname === "/checklist" || pathname === "/admin";
+  const showMenu = pathname === "/checklist" || pathname === "/settings";
 
   useEffect(() => {
     setMenuOpen(false);
@@ -60,7 +60,7 @@ export function AppHeader() {
                 />
                 <div className="menu-panel">
                   <Link
-                    href="/admin"
+                    href="/settings"
                     className="menu-item"
                     onClick={() => setMenuOpen(false)}
                   >

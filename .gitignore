@@ -24,3 +24,5 @@ coverage/
 Thumbs.db
 
 data/pokemon-tcg-data/
+
+logs/

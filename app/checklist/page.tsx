@@ -1,17 +1,19 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import type { CollectionRow, PokemonCard } from "../../types";
+import type { CollectionRow, PokemonCard, PricesSnapshot } from "../../types";
 import { getAllCards, parseCardIdAndVariant } from "../../lib/cards";
 import { CardGrid } from "../../components/CardGrid";
 import { CardModal } from "../../components/CardModal";
 
 interface CollectionResponse {
   rows: CollectionRow[];
+  prices: PricesSnapshot;
 }
 
 export default function ChecklistPage() {
   const [collection, setCollection] = useState<CollectionRow[] | null>(null);
+  const [prices, setPrices] = useState<PricesSnapshot | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [activeCardId, setActiveCardId] = useState<string | null>(null);
   const [toast, setToast] = useState<string | null>(null);
@@ -31,6 +33,7 @@ export default function ChecklistPage() {
         }
         const data = (await res.json()) as CollectionResponse;
         setCollection(data.rows);
+        setPrices(data.prices);
       } catch (err) {
         console.error(err);
         setError("Could not load collection data.");
@@ -127,9 +130,10 @@ export default function ChecklistPage() {
         <CardGrid
           cards={cards}
           collection={collection ?? []}
+          prices={prices}
           onCardClick={setActiveCardId}
           onSetOwned={handleSetOwned}
-          isLoading={collection === null}
+          isLoading={collection === null || prices === null}
           updatingCardId={updatingCardId}
         />
       </section>
