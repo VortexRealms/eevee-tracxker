@@ -20,6 +20,7 @@
     "test:parse-price": "tsx scripts/test-parse-price.ts",
     "test:variant-prices": "tsx scripts/test-variant-prices.ts",
     "test:display-price": "tsx scripts/test-display-price.ts",
+    "test:cardmarket-search": "tsx scripts/test-cardmarket-search.ts",
     "test:fetch-price-skip": "tsx scripts/test-fetch-price-skip.ts",
     "test:price-merge": "tsx scripts/test-price-merge.ts",
     "fetch:rates": "tsx scripts/fetch-rates.ts",

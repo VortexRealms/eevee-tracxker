@@ -26,7 +26,7 @@ try {
   $npm = Get-Command npm -ErrorAction Stop
 } catch {
   throw @"
-npm was not found on PATH. Scheduled tasks use a minimal PATH — ensure Node.js/npm is installed
+npm was not found on PATH. Scheduled tasks use a minimal PATH - ensure Node.js/npm is installed
 and available to your user account (not only in an interactive nvm/fnm shell).
 "@
 }

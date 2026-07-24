@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import type { CollectionRow, PokemonCard, PricesSnapshot } from "../types";
+import { getCardmarketSearchUrl } from "../lib/cardmarket-search";
 import { getPriceForCard, parseCardIdAndVariant } from "../lib/cards";
 import { metaToExchangeRates } from "../lib/exchange-rates";
 import {
@@ -49,14 +50,6 @@ function getEbaySearchUrl(card: PokemonCard): string {
 function getTcgPlayerSearchUrl(card: PokemonCard): string {
   const query = [card.name, card.number, card.set.name].join(" ");
   return `https://www.tcgplayer.com/search/pokemon/product?productLineName=pokemon&q=${encodeURIComponent(query)}`;
-}
-
-function getCardmarketSearchUrl(card: PokemonCard): string {
-  const paddedNumber = /^\d+$/.test(card.number)
-    ? card.number.padStart(3, "0")
-    : card.number;
-  const query = `${card.name} ${paddedNumber}`;
-  return `https://www.cardmarket.com/en/Pokemon/Products/Search?searchMode=v2&idCategory=0&searchString=${encodeURIComponent(query)}&idRarity=0`;
 }
 
 export function CardGrid({

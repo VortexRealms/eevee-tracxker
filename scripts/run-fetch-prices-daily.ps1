@@ -15,7 +15,7 @@ $LogFile = Join-Path $LogsDir "fetch-prices-$Today.log"
 
 function Write-Log([string]$Message) {
   $line = "[$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')] $Message"
-  Add-Content -Path $LogFile -Value $line
+  Add-Content -Path $LogFile -Value $line -Encoding utf8
   Write-Host $line
 }
 
@@ -45,8 +45,13 @@ try {
   $npm = (Get-Command npm -ErrorAction Stop).Source
   Write-Log "Starting fetch:prices from $ProjectRoot using $npm"
 
-  & $npm run fetch:prices *>> $LogFile
+  $prevEap = $ErrorActionPreference
+  $ErrorActionPreference = "Continue"
+  & $npm run fetch:prices 2>&1 | ForEach-Object {
+    Add-Content -Path $LogFile -Value $_.ToString() -Encoding utf8
+  }
   $exitCode = $LASTEXITCODE
+  $ErrorActionPreference = $prevEap
 
   if ($exitCode -ne 0) {
     Write-Log "FAILED with exit code $exitCode (stamp not updated; will retry on next trigger)."
@@ -54,7 +59,7 @@ try {
   }
 
   Set-Content -Path $StampFile -Value $Today
-  Write-Log "SUCCESS — stamped $Today."
+  Write-Log "SUCCESS - stamped $Today."
   exit 0
 }
 finally {
