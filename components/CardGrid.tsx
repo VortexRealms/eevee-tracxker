@@ -1,6 +1,10 @@
 import { useMemo, useState } from "react";
 import type { CollectionRow, PokemonCard, PricesSnapshot } from "../types";
-import { getCardmarketSearchUrl } from "../lib/cardmarket-search";
+import {
+  getCardmarketSearchUrl,
+  getEbaySearchUrl,
+  getTcgPlayerSearchUrl,
+} from "../lib/marketplace-search";
 import { getPriceForCard, parseCardIdAndVariant } from "../lib/cards";
 import { metaToExchangeRates } from "../lib/exchange-rates";
 import {
@@ -40,16 +44,6 @@ function getAccentClass(name: string): string {
   if (lower.includes("glaceon")) return "is-glaceon";
   if (lower.includes("sylveon")) return "is-sylveon";
   return "is-eevee";
-}
-
-function getEbaySearchUrl(card: PokemonCard): string {
-  const query = [card.name, card.set.name, card.set.series, card.number].join(" ");
-  return `https://www.ebay.com/sch/i.html?_nkw=${encodeURIComponent(query)}`;
-}
-
-function getTcgPlayerSearchUrl(card: PokemonCard): string {
-  const query = [card.name, card.number, card.set.name].join(" ");
-  return `https://www.tcgplayer.com/search/pokemon/product?productLineName=pokemon&q=${encodeURIComponent(query)}`;
 }
 
 export function CardGrid({
