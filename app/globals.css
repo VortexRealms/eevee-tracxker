@@ -75,7 +75,6 @@ input {
 .search-shell,
 .card-tile,
 .card-modal-sheet,
-.hero-panel,
 .topbar,
 .toast {
   border: 1px solid var(--panel-border);
@@ -286,24 +285,6 @@ input {
   color: #fecaca;
 }
 
-.hero-panel {
-  position: relative;
-  overflow: hidden;
-  border-radius: 28px;
-  padding: 18px;
-}
-
-.hero-panel::before {
-  content: "";
-  position: absolute;
-  inset: -20% auto auto -10%;
-  width: 220px;
-  height: 220px;
-  border-radius: 999px;
-  background: radial-gradient(circle, rgba(214, 145, 92, 0.24), transparent 70%);
-  pointer-events: none;
-}
-
 .page-title {
   font-size: clamp(1.5rem, 4vw, 2.2rem);
   margin: 6px 0 8px;
@@ -317,52 +298,10 @@ input {
   font-size: 0.95rem;
 }
 
-.stats-row,
 .chip-row {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-}
-
-.stats-row {
-  margin-top: 16px;
-}
-
-.stat-pill {
-  min-width: 88px;
-  border-radius: 20px;
-  padding: 12px 14px;
-  background: linear-gradient(180deg, rgba(58, 39, 31, 0.78), rgba(34, 24, 20, 0.78));
-  border: 1px solid rgba(255, 227, 197, 0.08);
-}
-
-.stat-pill span {
-  display: block;
-  font-size: 1.15rem;
-  font-weight: 700;
-}
-
-.stat-pill small {
-  color: var(--text-2);
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 0.62rem;
-}
-
-.stat-pill.is-owned {
-  background: linear-gradient(135deg, rgba(78, 154, 96, 0.28), rgba(30, 77, 47, 0.14));
-}
-
-.stat-pill.is-missing {
-  background: linear-gradient(135deg, rgba(173, 125, 76, 0.24), rgba(86, 53, 30, 0.14));
-}
-
-.stat-pill.is-value {
-  background: linear-gradient(135deg, rgba(251, 191, 36, 0.18), rgba(120, 83, 10, 0.14));
-}
-
-.stat-pill.is-value span {
-  color: #fbbf24;
 }
 
 .sticky-toolbar {

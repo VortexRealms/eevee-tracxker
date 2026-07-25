@@ -9,13 +9,13 @@ import { getPriceForCard, parseCardIdAndVariant } from "../lib/cards";
 import { MASTER_SET_TARGET } from "../lib/collection-target";
 import { metaToExchangeRates } from "../lib/exchange-rates";
 import {
-  formatDisplayPrice,
   resolveDisplayAmount,
   resolveListingPrice,
 } from "../lib/display-price";
 import { getVariantLabel, variantSortIndex } from "../lib/variant-labels";
 import { useCurrency } from "./CurrencyProvider";
 import { CardPriceLabel } from "./CardPriceLabel";
+import { CollectionStatsPanel } from "./dashboard/CollectionStatsPanel";
 import { VariantPickerModal } from "./VariantPickerModal";
 
 export type CardGridMode = "checklist" | "public";
@@ -105,6 +105,8 @@ export function CardGrid({
   const counts = useMemo(() => {
     let collectionValue = 0;
     const ownedVariantKeys = new Set<string>();
+    const ownedCardIds = new Set<string>();
+    const ownedSetNames = new Set<string>();
 
     for (const row of collection) {
       if (!row.owned) continue;
@@ -114,7 +116,11 @@ export function CardGrid({
       if (ownedVariantKeys.has(key)) continue;
       ownedVariantKeys.add(key);
 
+      ownedCardIds.add(cardId);
       const card = cards.find((c) => c.id === cardId);
+      const setName = card?.set.name ?? row.setName;
+      if (setName.trim()) ownedSetNames.add(setName.trim());
+
       if (card && exchangeRates) {
         const price = getPriceForCard(card, variant, prices);
         const { amount } = resolveDisplayAmount(price, currency, exchangeRates);
@@ -124,7 +130,13 @@ export function CardGrid({
 
     const owned = ownedVariantKeys.size;
     const missing = Math.max(0, MASTER_SET_TARGET - owned);
-    return { owned, missing, collectionValue };
+    return {
+      owned,
+      missing,
+      collectionValue,
+      uniqueCards: ownedCardIds.size,
+      setCount: ownedSetNames.size,
+    };
   }, [cards, collection, currency, exchangeRates, prices]);
 
   const searchTokens = useMemo(
@@ -176,33 +188,15 @@ export function CardGrid({
   return (
     <div className="collection-layout">
       <div className="sticky-toolbar">
-        <div className="hero-panel">
-          <div className="page-kicker">
-            {isPublic ? "Public showcase" : "Checklist"}
-          </div>
-          <div className="stats-row">
-            <div className="stat-pill">
-              <span>{MASTER_SET_TARGET}</span>
-              <small>total</small>
-            </div>
-            {!isPublic && (
-              <div className="stat-pill is-missing">
-                <span>{counts.missing}</span>
-                <small>missing</small>
-              </div>
-            )}
-            <div className="stat-pill is-owned">
-              <span>{counts.owned}</span>
-              <small>owned</small>
-            </div>
-            {!isPublic && showPrices && (
-              <div className="stat-pill is-value">
-                <span>{formatDisplayPrice(counts.collectionValue, currency)}</span>
-                <small>est. value</small>
-              </div>
-            )}
-          </div>
-        </div>
+        <CollectionStatsPanel
+          ownedVariants={counts.owned}
+          totalVariants={MASTER_SET_TARGET}
+          missingVariants={counts.missing}
+          uniqueCards={counts.uniqueCards}
+          setCount={counts.setCount}
+          estimatedValue={counts.collectionValue}
+          currency={currency}
+        />
 
         <div className="search-shell">
           <span className="search-icon">⌕</span>
