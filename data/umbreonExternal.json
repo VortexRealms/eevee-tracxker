@@ -1,0 +1,813 @@
+{
+  "_meta": {
+    "source": "https://getsethunter.com/masterset/umbreon",
+    "fetchedAt": "2026-07-25",
+    "pokemon": "Umbreon",
+    "description": "English Umbreon master set checklist from Set Hunter — every variant, chronologically by set",
+    "variantCount": 82,
+    "setCount": 28,
+    "headerVariantCount": null,
+    "headerSetCount": null,
+    "note": "Scraped from public page HTML; use as external reference, not canonical catalogue"
+  },
+  "sets": [
+    {
+      "setName": "Neo Discovery",
+      "setYear": null,
+      "variantCount": 4
+    },
+    {
+      "setName": "Aquapolis",
+      "setYear": null,
+      "variantCount": 3
+    },
+    {
+      "setName": "Skyridge",
+      "setYear": null,
+      "variantCount": 3
+    },
+    {
+      "setName": "Sandstorm",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Unseen Forces",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Delta Species",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "POP Series 5",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "HS—Undaunted",
+      "setYear": null,
+      "variantCount": 5
+    },
+    {
+      "setName": "Call of Legends",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "BW Black Star Promos",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "variantCount": 6
+    },
+    {
+      "setName": "Plasma Freeze",
+      "setYear": null,
+      "variantCount": 3
+    },
+    {
+      "setName": "XY Black Star Promos",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "Fates Collide",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Sun & Moon",
+      "setYear": null,
+      "variantCount": 3
+    },
+    {
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "variantCount": 4
+    },
+    {
+      "setName": "Lost Thunder",
+      "setYear": null,
+      "variantCount": 3
+    },
+    {
+      "setName": "Unified Minds",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "Hidden Fates Shiny Vault",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "variantCount": 9
+    },
+    {
+      "setName": "Celebrations: Classic Collection",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "Brilliant Stars Trainer Gallery",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Scarlet & Violet Black Star Promos",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "Obsidian Flames",
+      "setYear": null,
+      "variantCount": 6
+    },
+    {
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "variantCount": 9
+    },
+    {
+      "setName": "McDonald's Collection 2024",
+      "setYear": null,
+      "variantCount": 1
+    }
+  ],
+  "entries": [
+    {
+      "name": "Umbreon",
+      "setName": "Neo Discovery",
+      "setYear": null,
+      "number": "13",
+      "variant": "1st Edition",
+      "label": "#13 · 1st Edition"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Neo Discovery",
+      "setYear": null,
+      "number": "13",
+      "variant": "Unlimited",
+      "label": "#13 · Unlimited"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Neo Discovery",
+      "setYear": null,
+      "number": "32",
+      "variant": "1st Edition",
+      "label": "#32 · 1st Edition"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Neo Discovery",
+      "setYear": null,
+      "number": "32",
+      "variant": "Unlimited",
+      "label": "#32 · Unlimited"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Aquapolis",
+      "setYear": null,
+      "number": "41",
+      "variant": "Normal",
+      "label": "#41 · Normal"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Aquapolis",
+      "setYear": null,
+      "number": "41",
+      "variant": "Reverse Holo",
+      "label": "#41 · Reverse Holo"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Aquapolis",
+      "setYear": null,
+      "number": "H29",
+      "variant": null,
+      "label": "#H29"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Skyridge",
+      "setYear": null,
+      "number": "32",
+      "variant": "Normal",
+      "label": "#32 · Normal"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Skyridge",
+      "setYear": null,
+      "number": "32",
+      "variant": "Reverse Holo",
+      "label": "#32 · Reverse Holo"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Skyridge",
+      "setYear": null,
+      "number": "H30",
+      "variant": null,
+      "label": "#H30"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Sandstorm",
+      "setYear": null,
+      "number": "24",
+      "variant": "Normal",
+      "label": "#24 · Normal"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Sandstorm",
+      "setYear": null,
+      "number": "24",
+      "variant": "Reverse Holo",
+      "label": "#24 · Reverse Holo"
+    },
+    {
+      "name": "Umbreon ex",
+      "setName": "Unseen Forces",
+      "setYear": null,
+      "number": "112",
+      "variant": "Holo",
+      "label": "#112 · Holo"
+    },
+    {
+      "name": "Umbreon ex",
+      "setName": "Unseen Forces",
+      "setYear": null,
+      "number": "112",
+      "variant": "World Championship Deck 2006 (Jimmy Ballard)",
+      "label": "#112 · World Championship Deck 2006 (Jimmy Ballard)"
+    },
+    {
+      "name": "Umbreon δ",
+      "setName": "Delta Species",
+      "setYear": null,
+      "number": "17",
+      "variant": "Reverse Holo",
+      "label": "#17 · Reverse Holo"
+    },
+    {
+      "name": "Umbreon δ",
+      "setName": "Delta Species",
+      "setYear": null,
+      "number": "17",
+      "variant": "Holo",
+      "label": "#17 · Holo"
+    },
+    {
+      "name": "Umbreon ☆",
+      "setName": "POP Series 5",
+      "setYear": null,
+      "number": "17",
+      "variant": null,
+      "label": "#17"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "number": "32",
+      "variant": "Normal",
+      "label": "#32 · Normal"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "number": "32",
+      "variant": "Reverse Holo",
+      "label": "#32 · Reverse Holo"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "HS—Undaunted",
+      "setYear": null,
+      "number": "10",
+      "variant": "Normal",
+      "label": "#10 · Normal"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "HS—Undaunted",
+      "setYear": null,
+      "number": "10",
+      "variant": "Reverse Holo",
+      "label": "#10 · Reverse Holo"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "HS—Undaunted",
+      "setYear": null,
+      "number": "10",
+      "variant": "Holo",
+      "label": "#10 · Holo"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "HS—Undaunted",
+      "setYear": null,
+      "number": "10",
+      "variant": "Cracked Ice",
+      "label": "#10 · Cracked Ice"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "HS—Undaunted",
+      "setYear": null,
+      "number": "86",
+      "variant": null,
+      "label": "#86"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Call of Legends",
+      "setYear": null,
+      "number": "22",
+      "variant": "Reverse Holo",
+      "label": "#22 · Reverse Holo"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Call of Legends",
+      "setYear": null,
+      "number": "22",
+      "variant": "Holo",
+      "label": "#22 · Holo"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "BW Black Star Promos",
+      "setYear": null,
+      "number": "BW93",
+      "variant": null,
+      "label": "#BW93"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "number": "60",
+      "variant": "Normal",
+      "label": "#60 · Normal"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "number": "60",
+      "variant": "Reverse Holo",
+      "label": "#60 · Reverse Holo"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "number": "60",
+      "variant": "League",
+      "label": "#60 · League"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "number": "60",
+      "variant": "Staff",
+      "label": "#60 · Staff"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "number": "61",
+      "variant": "Normal",
+      "label": "#61 · Normal"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "number": "61",
+      "variant": "Reverse Holo",
+      "label": "#61 · Reverse Holo"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Plasma Freeze",
+      "setYear": null,
+      "number": "64",
+      "variant": "Normal",
+      "label": "#64 · Normal"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Plasma Freeze",
+      "setYear": null,
+      "number": "64",
+      "variant": "Reverse Holo",
+      "label": "#64 · Reverse Holo"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Plasma Freeze",
+      "setYear": null,
+      "number": "64",
+      "variant": "Holo",
+      "label": "#64 · Holo"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "XY Black Star Promos",
+      "setYear": null,
+      "number": "XY96",
+      "variant": null,
+      "label": "#XY96"
+    },
+    {
+      "name": "Umbreon-EX",
+      "setName": "Fates Collide",
+      "setYear": null,
+      "number": "55",
+      "variant": null,
+      "label": "#55"
+    },
+    {
+      "name": "Umbreon-EX",
+      "setName": "Fates Collide",
+      "setYear": null,
+      "number": "119",
+      "variant": null,
+      "label": "#119"
+    },
+    {
+      "name": "Umbreon-GX",
+      "setName": "Sun & Moon",
+      "setYear": null,
+      "number": "80",
+      "variant": null,
+      "label": "#80"
+    },
+    {
+      "name": "Umbreon-GX",
+      "setName": "Sun & Moon",
+      "setYear": null,
+      "number": "142",
+      "variant": null,
+      "label": "#142"
+    },
+    {
+      "name": "Umbreon-GX",
+      "setName": "Sun & Moon",
+      "setYear": null,
+      "number": "154",
+      "variant": null,
+      "label": "#154"
+    },
+    {
+      "name": "Umbreon & Darkrai-GX",
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "number": "SM241",
+      "variant": "Holo",
+      "label": "#SM241 · Holo"
+    },
+    {
+      "name": "Umbreon & Darkrai-GX",
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "number": "SM241",
+      "variant": "Jumbo",
+      "label": "#SM241 · Jumbo"
+    },
+    {
+      "name": "Umbreon-GX",
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "number": "SM36",
+      "variant": "Holo",
+      "label": "#SM36 · Holo"
+    },
+    {
+      "name": "Umbreon-GX",
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "number": "SM36",
+      "variant": "Jumbo",
+      "label": "#SM36 · Jumbo"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Lost Thunder",
+      "setYear": null,
+      "number": "120",
+      "variant": "Normal",
+      "label": "#120 · Normal"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Lost Thunder",
+      "setYear": null,
+      "number": "120",
+      "variant": "Reverse Holo",
+      "label": "#120 · Reverse Holo"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Lost Thunder",
+      "setYear": null,
+      "number": "120",
+      "variant": "Cosmos",
+      "label": "#120 · Cosmos"
+    },
+    {
+      "name": "Umbreon & Darkrai-GX",
+      "setName": "Unified Minds",
+      "setYear": null,
+      "number": "125",
+      "variant": null,
+      "label": "#125"
+    },
+    {
+      "name": "Umbreon-GX",
+      "setName": "Hidden Fates Shiny Vault",
+      "setYear": null,
+      "number": "SV69",
+      "variant": null,
+      "label": "#SV69"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH129",
+      "variant": null,
+      "label": "#SWSH129"
+    },
+    {
+      "name": "Umbreon V",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH203",
+      "variant": null,
+      "label": "#SWSH203"
+    },
+    {
+      "name": "Umbreon V",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "94",
+      "variant": "Normal",
+      "label": "#94 · Normal"
+    },
+    {
+      "name": "Umbreon V",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "94",
+      "variant": "Holo",
+      "label": "#94 · Holo"
+    },
+    {
+      "name": "Umbreon V",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "94",
+      "variant": "Play Pokemon",
+      "label": "#94 · Play Pokemon"
+    },
+    {
+      "name": "Umbreon VMAX",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "95",
+      "variant": "Holo",
+      "label": "#95 · Holo"
+    },
+    {
+      "name": "Umbreon VMAX",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "95",
+      "variant": "Play Pokemon",
+      "label": "#95 · Play Pokemon"
+    },
+    {
+      "name": "Umbreon V",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "188",
+      "variant": null,
+      "label": "#188"
+    },
+    {
+      "name": "Umbreon V",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "189",
+      "variant": null,
+      "label": "#189"
+    },
+    {
+      "name": "Umbreon VMAX",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "214",
+      "variant": null,
+      "label": "#214"
+    },
+    {
+      "name": "Umbreon VMAX",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "215",
+      "variant": null,
+      "label": "#215"
+    },
+    {
+      "name": "Umbreon ☆",
+      "setName": "Celebrations: Classic Collection",
+      "setYear": null,
+      "number": "17",
+      "variant": null,
+      "label": "#17"
+    },
+    {
+      "name": "Umbreon V",
+      "setName": "Brilliant Stars Trainer Gallery",
+      "setYear": null,
+      "number": "TG22",
+      "variant": null,
+      "label": "#TG22"
+    },
+    {
+      "name": "Umbreon VMAX",
+      "setName": "Brilliant Stars Trainer Gallery",
+      "setYear": null,
+      "number": "TG23",
+      "variant": null,
+      "label": "#TG23"
+    },
+    {
+      "name": "Umbreon ex",
+      "setName": "Scarlet & Violet Black Star Promos",
+      "setYear": null,
+      "number": "176",
+      "variant": null,
+      "label": "#176"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Obsidian Flames",
+      "setYear": null,
+      "number": "130",
+      "variant": "Normal",
+      "label": "#130 · Normal"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Obsidian Flames",
+      "setYear": null,
+      "number": "130",
+      "variant": "Reverse Holo",
+      "label": "#130 · Reverse Holo"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Obsidian Flames",
+      "setYear": null,
+      "number": "130",
+      "variant": "EB Games",
+      "label": "#130 · EB Games"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Obsidian Flames",
+      "setYear": null,
+      "number": "130",
+      "variant": "Expansion",
+      "label": "#130 · Expansion"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Obsidian Flames",
+      "setYear": null,
+      "number": "130",
+      "variant": "GameStop",
+      "label": "#130 · GameStop"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Obsidian Flames",
+      "setYear": null,
+      "number": "130",
+      "variant": "Trick or Trade",
+      "label": "#130 · Trick or Trade"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "59",
+      "variant": "Reverse Holo",
+      "label": "#59 · Reverse Holo"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "59",
+      "variant": "Holo",
+      "label": "#59 · Holo"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "59",
+      "variant": "Cosmos",
+      "label": "#59 · Cosmos"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "59",
+      "variant": "Master Ball",
+      "label": "#59 · Master Ball"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "59",
+      "variant": "Poke Ball",
+      "label": "#59 · Poke Ball"
+    },
+    {
+      "name": "Umbreon ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "60",
+      "variant": "Holo",
+      "label": "#60 · Holo"
+    },
+    {
+      "name": "Umbreon ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "60",
+      "variant": "Expansion",
+      "label": "#60 · Expansion"
+    },
+    {
+      "name": "Umbreon ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "60",
+      "variant": "Play Pokemon",
+      "label": "#60 · Play Pokemon"
+    },
+    {
+      "name": "Umbreon ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "161",
+      "variant": null,
+      "label": "#161"
+    },
+    {
+      "name": "Umbreon",
+      "setName": "McDonald's Collection 2024",
+      "setYear": null,
+      "number": "9",
+      "variant": null,
+      "label": "#9"
+    }
+  ]
+}

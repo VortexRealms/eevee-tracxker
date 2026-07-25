@@ -1,0 +1,1581 @@
+{
+  "_meta": {
+    "source": "https://getsethunter.com/masterset/eevee",
+    "fetchedAt": "2026-07-25",
+    "pokemon": "Eevee",
+    "description": "English Eevee master set checklist from Set Hunter — every variant, chronologically by set",
+    "variantCount": 162,
+    "setCount": 54,
+    "note": "Scraped from public page HTML; use as external reference, not canonical catalogue"
+  },
+  "sets": [
+    {
+      "setName": "Jungle",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Wizards Black Star Promos",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Team Rocket",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Gym Challenge",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Neo Discovery",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Legendary Collection",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Aquapolis",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Skyridge",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Sandstorm",
+      "setYear": null,
+      "variantCount": 3
+    },
+    {
+      "setName": "Unseen Forces",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Delta Species",
+      "setYear": null,
+      "variantCount": 7
+    },
+    {
+      "setName": "POP Series 3",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "variantCount": 5
+    },
+    {
+      "setName": "Rising Rivals",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "HS—Undaunted",
+      "setYear": null,
+      "variantCount": 4
+    },
+    {
+      "setName": "Call of Legends",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "BW Black Star Promos",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "variantCount": 6
+    },
+    {
+      "setName": "Plasma Freeze",
+      "setYear": null,
+      "variantCount": 4
+    },
+    {
+      "setName": "Legendary Treasures",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "XY Trainer Kit Sylveon",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Furious Fists",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Ancient Origins",
+      "setYear": null,
+      "variantCount": 3
+    },
+    {
+      "setName": "XY Trainer Kit Suicune",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "McDonald's Collection 2016",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "Sun & Moon",
+      "setYear": null,
+      "variantCount": 5
+    },
+    {
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "variantCount": 10
+    },
+    {
+      "setName": "Ultra Prism",
+      "setYear": null,
+      "variantCount": 4
+    },
+    {
+      "setName": "McDonald's Collection 2018",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "Lost Thunder",
+      "setYear": null,
+      "variantCount": 3
+    },
+    {
+      "setName": "Team Up",
+      "setYear": null,
+      "variantCount": 3
+    },
+    {
+      "setName": "Hidden Fates",
+      "setYear": null,
+      "variantCount": 7
+    },
+    {
+      "setName": "Hidden Fates Shiny Vault",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "McDonald's Collection 2019",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "Cosmic Eclipse",
+      "setYear": null,
+      "variantCount": 4
+    },
+    {
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "variantCount": 11
+    },
+    {
+      "setName": "Pokémon Futsal Collection",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "Vivid Voltage",
+      "setYear": null,
+      "variantCount": 3
+    },
+    {
+      "setName": "Shining Fates",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Fusion Strike",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Brilliant Stars Trainer Gallery",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "Astral Radiance",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Pokémon GO",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Scarlet & Violet Black Star Promos",
+      "setYear": null,
+      "variantCount": 5
+    },
+    {
+      "setName": "Crown Zenith",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "Obsidian Flames",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "151",
+      "setYear": null,
+      "variantCount": 4
+    },
+    {
+      "setName": "Twilight Masquerade",
+      "setYear": null,
+      "variantCount": 3
+    },
+    {
+      "setName": "Shrouded Fable",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Stellar Crown",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Surging Sparks",
+      "setYear": null,
+      "variantCount": 4
+    },
+    {
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "variantCount": 9
+    },
+    {
+      "setName": "McDonald's Collection 2024",
+      "setYear": null,
+      "variantCount": 1
+    }
+  ],
+  "entries": [
+    {
+      "name": "Eevee",
+      "setName": "Jungle",
+      "setYear": null,
+      "number": "51",
+      "variant": "1st Edition",
+      "label": "#51 · 1st Edition"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Jungle",
+      "setYear": null,
+      "number": "51",
+      "variant": "Unlimited",
+      "label": "#51 · Unlimited"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Wizards Black Star Promos",
+      "setYear": null,
+      "number": "11",
+      "variant": "Holo",
+      "label": "#11 · Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Wizards Black Star Promos",
+      "setYear": null,
+      "number": "11",
+      "variant": "Jr Stamp Rally",
+      "label": "#11 · Jr Stamp Rally"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Team Rocket",
+      "setYear": null,
+      "number": "55",
+      "variant": "1st Edition",
+      "label": "#55 · 1st Edition"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Team Rocket",
+      "setYear": null,
+      "number": "55",
+      "variant": "Unlimited",
+      "label": "#55 · Unlimited"
+    },
+    {
+      "name": "Lt. Surge's Eevee",
+      "setName": "Gym Challenge",
+      "setYear": null,
+      "number": "51",
+      "variant": "1st Edition",
+      "label": "#51 · 1st Edition"
+    },
+    {
+      "name": "Lt. Surge's Eevee",
+      "setName": "Gym Challenge",
+      "setYear": null,
+      "number": "51",
+      "variant": "Unlimited",
+      "label": "#51 · Unlimited"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Neo Discovery",
+      "setYear": null,
+      "number": "38",
+      "variant": "1st Edition",
+      "label": "#38 · 1st Edition"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Neo Discovery",
+      "setYear": null,
+      "number": "38",
+      "variant": "Unlimited",
+      "label": "#38 · Unlimited"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Legendary Collection",
+      "setYear": null,
+      "number": "74",
+      "variant": "Normal",
+      "label": "#74 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Legendary Collection",
+      "setYear": null,
+      "number": "74",
+      "variant": "Reverse Holo",
+      "label": "#74 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Aquapolis",
+      "setYear": null,
+      "number": "75",
+      "variant": "Normal",
+      "label": "#75 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Aquapolis",
+      "setYear": null,
+      "number": "75",
+      "variant": "Reverse Holo",
+      "label": "#75 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Skyridge",
+      "setYear": null,
+      "number": "54",
+      "variant": "Normal",
+      "label": "#54 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Skyridge",
+      "setYear": null,
+      "number": "54",
+      "variant": "Reverse Holo",
+      "label": "#54 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Sandstorm",
+      "setYear": null,
+      "number": "63",
+      "variant": "Normal",
+      "label": "#63 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Sandstorm",
+      "setYear": null,
+      "number": "63",
+      "variant": "Reverse Holo",
+      "label": "#63 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Sandstorm",
+      "setYear": null,
+      "number": "63",
+      "variant": "EX Battle Stadium Deck Exclusive",
+      "label": "#63 · EX Battle Stadium Deck Exclusive"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Unseen Forces",
+      "setYear": null,
+      "number": "55",
+      "variant": "Normal",
+      "label": "#55 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Unseen Forces",
+      "setYear": null,
+      "number": "55",
+      "variant": "Reverse Holo",
+      "label": "#55 · Reverse Holo"
+    },
+    {
+      "name": "Eevee δ",
+      "setName": "Delta Species",
+      "setYear": null,
+      "number": "68",
+      "variant": "Normal",
+      "label": "#68 · Normal"
+    },
+    {
+      "name": "Eevee δ",
+      "setName": "Delta Species",
+      "setYear": null,
+      "number": "68",
+      "variant": "Reverse Holo",
+      "label": "#68 · Reverse Holo"
+    },
+    {
+      "name": "Eevee δ",
+      "setName": "Delta Species",
+      "setYear": null,
+      "number": "68",
+      "variant": "World Championship Deck 2007 (Jun Hasebe)",
+      "label": "#68 · World Championship Deck 2007 (Jun Hasebe)"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Delta Species",
+      "setYear": null,
+      "number": "69",
+      "variant": "Normal",
+      "label": "#69 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Delta Species",
+      "setYear": null,
+      "number": "69",
+      "variant": "Reverse Holo",
+      "label": "#69 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Delta Species",
+      "setYear": null,
+      "number": "69",
+      "variant": "World Championship Deck 2006 (Jimmy Ballard)",
+      "label": "#69 · World Championship Deck 2006 (Jimmy Ballard)"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Delta Species",
+      "setYear": null,
+      "number": "69",
+      "variant": "World Championship Deck 2007 (Tom Roos)",
+      "label": "#69 · World Championship Deck 2007 (Tom Roos)"
+    },
+    {
+      "name": "Eevee",
+      "setName": "POP Series 3",
+      "setYear": null,
+      "number": "13",
+      "variant": null,
+      "label": "#13"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "number": "62",
+      "variant": "Normal",
+      "label": "#62 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "number": "62",
+      "variant": "Reverse Holo",
+      "label": "#62 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "number": "62",
+      "variant": "Burger King",
+      "label": "#62 · Burger King"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "number": "63",
+      "variant": "Normal",
+      "label": "#63 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "number": "63",
+      "variant": "Reverse Holo",
+      "label": "#63 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Rising Rivals",
+      "setYear": null,
+      "number": "59",
+      "variant": "Normal",
+      "label": "#59 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Rising Rivals",
+      "setYear": null,
+      "number": "59",
+      "variant": "Reverse Holo",
+      "label": "#59 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "HS—Undaunted",
+      "setYear": null,
+      "number": "47",
+      "variant": "Normal",
+      "label": "#47 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "HS—Undaunted",
+      "setYear": null,
+      "number": "47",
+      "variant": "Reverse Holo",
+      "label": "#47 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "HS—Undaunted",
+      "setYear": null,
+      "number": "48",
+      "variant": "Normal",
+      "label": "#48 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "HS—Undaunted",
+      "setYear": null,
+      "number": "48",
+      "variant": "Reverse Holo",
+      "label": "#48 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Call of Legends",
+      "setYear": null,
+      "number": "56",
+      "variant": "Normal",
+      "label": "#56 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Call of Legends",
+      "setYear": null,
+      "number": "56",
+      "variant": "Reverse Holo",
+      "label": "#56 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "BW Black Star Promos",
+      "setYear": null,
+      "number": "BW94",
+      "variant": null,
+      "label": "#BW94"
+    },
+    {
+      "name": "Eevee",
+      "setName": "BW Black Star Promos",
+      "setYear": null,
+      "number": "BW97",
+      "variant": null,
+      "label": "#BW97"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "number": "83",
+      "variant": "Normal",
+      "label": "#83 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "number": "83",
+      "variant": "Reverse Holo",
+      "label": "#83 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "number": "84",
+      "variant": "Normal",
+      "label": "#84 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "number": "84",
+      "variant": "Reverse Holo",
+      "label": "#84 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "number": "84",
+      "variant": "League",
+      "label": "#84 · League"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "number": "84",
+      "variant": "Staff",
+      "label": "#84 · Staff"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Plasma Freeze",
+      "setYear": null,
+      "number": "89",
+      "variant": "Normal",
+      "label": "#89 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Plasma Freeze",
+      "setYear": null,
+      "number": "89",
+      "variant": "Reverse Holo",
+      "label": "#89 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Plasma Freeze",
+      "setYear": null,
+      "number": "90",
+      "variant": "Normal",
+      "label": "#90 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Plasma Freeze",
+      "setYear": null,
+      "number": "90",
+      "variant": "Reverse Holo",
+      "label": "#90 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Legendary Treasures",
+      "setYear": null,
+      "number": "RC14",
+      "variant": null,
+      "label": "#RC14"
+    },
+    {
+      "name": "Eevee",
+      "setName": "XY Trainer Kit Sylveon",
+      "setYear": null,
+      "number": "13",
+      "variant": null,
+      "label": "#13"
+    },
+    {
+      "name": "Eevee",
+      "setName": "XY Trainer Kit Sylveon",
+      "setYear": null,
+      "number": "21",
+      "variant": null,
+      "label": "#21"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Furious Fists",
+      "setYear": null,
+      "number": "80",
+      "variant": "Normal",
+      "label": "#80 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Furious Fists",
+      "setYear": null,
+      "number": "80",
+      "variant": "Reverse Holo",
+      "label": "#80 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Ancient Origins",
+      "setYear": null,
+      "number": "63",
+      "variant": "Normal",
+      "label": "#63 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Ancient Origins",
+      "setYear": null,
+      "number": "63",
+      "variant": "Reverse Holo",
+      "label": "#63 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Ancient Origins",
+      "setYear": null,
+      "number": "63",
+      "variant": "Build Abear",
+      "label": "#63 · Build Abear"
+    },
+    {
+      "name": "Eevee",
+      "setName": "XY Trainer Kit Suicune",
+      "setYear": null,
+      "number": "4",
+      "variant": null,
+      "label": "#4"
+    },
+    {
+      "name": "Eevee",
+      "setName": "McDonald's Collection 2016",
+      "setYear": null,
+      "number": "12",
+      "variant": null,
+      "label": "#12"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Sun & Moon",
+      "setYear": null,
+      "number": "101",
+      "variant": "Normal",
+      "label": "#101 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Sun & Moon",
+      "setYear": null,
+      "number": "101",
+      "variant": "Reverse Holo",
+      "label": "#101 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Sun & Moon",
+      "setYear": null,
+      "number": "101",
+      "variant": "Cosmos",
+      "label": "#101 · Cosmos"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Sun & Moon",
+      "setYear": null,
+      "number": "101",
+      "variant": "Sequin",
+      "label": "#101 · Sequin"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Sun & Moon",
+      "setYear": null,
+      "number": "101a",
+      "variant": null,
+      "label": "#101a"
+    },
+    {
+      "name": "Eevee & Snorlax-GX",
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "number": "SM169",
+      "variant": null,
+      "label": "#SM169"
+    },
+    {
+      "name": "Eevee-GX",
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "number": "SM174",
+      "variant": "Holo",
+      "label": "#SM174 · Holo"
+    },
+    {
+      "name": "Eevee-GX",
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "number": "SM174",
+      "variant": "Jumbo",
+      "label": "#SM174 · Jumbo"
+    },
+    {
+      "name": "Eevee-GX",
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "number": "SM175",
+      "variant": "Holo",
+      "label": "#SM175 · Holo"
+    },
+    {
+      "name": "Eevee-GX",
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "number": "SM175",
+      "variant": "Jumbo",
+      "label": "#SM175 · Jumbo"
+    },
+    {
+      "name": "Eevee-GX",
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "number": "SM176",
+      "variant": null,
+      "label": "#SM176"
+    },
+    {
+      "name": "Eevee",
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "number": "SM184",
+      "variant": null,
+      "label": "#SM184"
+    },
+    {
+      "name": "Eevee-GX",
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "number": "SM233",
+      "variant": null,
+      "label": "#SM233"
+    },
+    {
+      "name": "Eevee",
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "number": "SM235",
+      "variant": null,
+      "label": "#SM235"
+    },
+    {
+      "name": "Eevee-GX",
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "number": "SM242",
+      "variant": null,
+      "label": "#SM242"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Ultra Prism",
+      "setYear": null,
+      "number": "104",
+      "variant": "Normal",
+      "label": "#104 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Ultra Prism",
+      "setYear": null,
+      "number": "104",
+      "variant": "Reverse Holo",
+      "label": "#104 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Ultra Prism",
+      "setYear": null,
+      "number": "105",
+      "variant": "Normal",
+      "label": "#105 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Ultra Prism",
+      "setYear": null,
+      "number": "105",
+      "variant": "Reverse Holo",
+      "label": "#105 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "McDonald's Collection 2018",
+      "setYear": null,
+      "number": "11",
+      "variant": null,
+      "label": "#11"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Lost Thunder",
+      "setYear": null,
+      "number": "155",
+      "variant": "Normal",
+      "label": "#155 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Lost Thunder",
+      "setYear": null,
+      "number": "155",
+      "variant": "Reverse Holo",
+      "label": "#155 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Lost Thunder",
+      "setYear": null,
+      "number": "155",
+      "variant": "Cracked Ice",
+      "label": "#155 · Cracked Ice"
+    },
+    {
+      "name": "Eevee & Snorlax-GX",
+      "setName": "Team Up",
+      "setYear": null,
+      "number": "120",
+      "variant": null,
+      "label": "#120"
+    },
+    {
+      "name": "Eevee & Snorlax-GX",
+      "setName": "Team Up",
+      "setYear": null,
+      "number": "171",
+      "variant": null,
+      "label": "#171"
+    },
+    {
+      "name": "Eevee & Snorlax-GX",
+      "setName": "Team Up",
+      "setYear": null,
+      "number": "191",
+      "variant": null,
+      "label": "#191"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Hidden Fates",
+      "setYear": null,
+      "number": "48",
+      "variant": "Reverse Holo",
+      "label": "#48 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Hidden Fates",
+      "setYear": null,
+      "number": "48",
+      "variant": "Holo",
+      "label": "#48 · Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Hidden Fates",
+      "setYear": null,
+      "number": "49",
+      "variant": "Normal",
+      "label": "#49 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Hidden Fates",
+      "setYear": null,
+      "number": "49",
+      "variant": "Reverse Holo",
+      "label": "#49 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Hidden Fates",
+      "setYear": null,
+      "number": "49",
+      "variant": "Mewtwo",
+      "label": "#49 · Mewtwo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Hidden Fates",
+      "setYear": null,
+      "number": "49",
+      "variant": "Battle Academy (Charizard Stamp 26)",
+      "label": "#49 · Battle Academy (Charizard Stamp 26)"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Hidden Fates",
+      "setYear": null,
+      "number": "49",
+      "variant": "Battle Academy (Charizard Stamp 36)",
+      "label": "#49 · Battle Academy (Charizard Stamp 36)"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Hidden Fates Shiny Vault",
+      "setYear": null,
+      "number": "SV41",
+      "variant": null,
+      "label": "#SV41"
+    },
+    {
+      "name": "Eevee",
+      "setName": "McDonald's Collection 2019",
+      "setYear": null,
+      "number": "12",
+      "variant": null,
+      "label": "#12"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Cosmic Eclipse",
+      "setYear": null,
+      "number": "166",
+      "variant": "Normal",
+      "label": "#166 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Cosmic Eclipse",
+      "setYear": null,
+      "number": "166",
+      "variant": "Reverse Holo",
+      "label": "#166 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Cosmic Eclipse",
+      "setYear": null,
+      "number": "167",
+      "variant": "Normal",
+      "label": "#167 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Cosmic Eclipse",
+      "setYear": null,
+      "number": "167",
+      "variant": "Reverse Holo",
+      "label": "#167 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH042",
+      "variant": null,
+      "label": "#SWSH042"
+    },
+    {
+      "name": "Eevee V",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH065",
+      "variant": "Holo",
+      "label": "#SWSH065 · Holo"
+    },
+    {
+      "name": "Eevee V",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH065",
+      "variant": "Eevee",
+      "label": "#SWSH065 · Eevee"
+    },
+    {
+      "name": "Eevee VMAX",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH087",
+      "variant": null,
+      "label": "#SWSH087"
+    },
+    {
+      "name": "Eevee",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH095",
+      "variant": null,
+      "label": "#SWSH095"
+    },
+    {
+      "name": "Eevee",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH118",
+      "variant": null,
+      "label": "#SWSH118"
+    },
+    {
+      "name": "Eevee",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH127",
+      "variant": null,
+      "label": "#SWSH127"
+    },
+    {
+      "name": "Eevee",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH175",
+      "variant": null,
+      "label": "#SWSH175"
+    },
+    {
+      "name": "Eevee",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH190",
+      "variant": null,
+      "label": "#SWSH190"
+    },
+    {
+      "name": "Eevee",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH212",
+      "variant": null,
+      "label": "#SWSH212"
+    },
+    {
+      "name": "Radiant Eevee",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH230",
+      "variant": null,
+      "label": "#SWSH230"
+    },
+    {
+      "name": "Eevee on the Ball",
+      "setName": "Pokémon Futsal Collection",
+      "setYear": null,
+      "number": "2",
+      "variant": null,
+      "label": "#2"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Vivid Voltage",
+      "setYear": null,
+      "number": "130",
+      "variant": "Normal",
+      "label": "#130 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Vivid Voltage",
+      "setYear": null,
+      "number": "130",
+      "variant": "Reverse Holo",
+      "label": "#130 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Vivid Voltage",
+      "setYear": null,
+      "number": "130",
+      "variant": "Cosmos",
+      "label": "#130 · Cosmos"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Shining Fates",
+      "setYear": null,
+      "number": "52",
+      "variant": "Normal",
+      "label": "#52 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Shining Fates",
+      "setYear": null,
+      "number": "52",
+      "variant": "Reverse Holo",
+      "label": "#52 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "125",
+      "variant": "Normal",
+      "label": "#125 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "125",
+      "variant": "Reverse Holo",
+      "label": "#125 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Fusion Strike",
+      "setYear": null,
+      "number": "205",
+      "variant": "Normal",
+      "label": "#205 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Fusion Strike",
+      "setYear": null,
+      "number": "205",
+      "variant": "Reverse Holo",
+      "label": "#205 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Brilliant Stars Trainer Gallery",
+      "setYear": null,
+      "number": "TG11",
+      "variant": null,
+      "label": "#TG11"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Astral Radiance",
+      "setYear": null,
+      "number": "119",
+      "variant": "Normal",
+      "label": "#119 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Astral Radiance",
+      "setYear": null,
+      "number": "119",
+      "variant": "Reverse Holo",
+      "label": "#119 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Pokémon GO",
+      "setYear": null,
+      "number": "54",
+      "variant": "Normal",
+      "label": "#54 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Pokémon GO",
+      "setYear": null,
+      "number": "54",
+      "variant": "Reverse Holo",
+      "label": "#54 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Scarlet & Violet Black Star Promos",
+      "setYear": null,
+      "number": "43",
+      "variant": null,
+      "label": "#43"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Scarlet & Violet Black Star Promos",
+      "setYear": null,
+      "number": "173",
+      "variant": "Holo",
+      "label": "#173 · Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Scarlet & Violet Black Star Promos",
+      "setYear": null,
+      "number": "173",
+      "variant": "Pokémon Center",
+      "label": "#173 · Pokémon Center"
+    },
+    {
+      "name": "Eevee ex",
+      "setName": "Scarlet & Violet Black Star Promos",
+      "setYear": null,
+      "number": "174",
+      "variant": null,
+      "label": "#174"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Scarlet & Violet Black Star Promos",
+      "setYear": null,
+      "number": "200",
+      "variant": null,
+      "label": "#200"
+    },
+    {
+      "name": "Eevee V",
+      "setName": "Crown Zenith",
+      "setYear": null,
+      "number": "108",
+      "variant": null,
+      "label": "#108"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Obsidian Flames",
+      "setYear": null,
+      "number": "166",
+      "variant": "Normal",
+      "label": "#166 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Obsidian Flames",
+      "setYear": null,
+      "number": "166",
+      "variant": "Reverse Holo",
+      "label": "#166 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "151",
+      "setYear": null,
+      "number": "133",
+      "variant": "Normal",
+      "label": "#133 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "151",
+      "setYear": null,
+      "number": "133",
+      "variant": "Reverse Holo",
+      "label": "#133 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "151",
+      "setYear": null,
+      "number": "133",
+      "variant": "Pokemon Together",
+      "label": "#133 · Pokemon Together"
+    },
+    {
+      "name": "Eevee",
+      "setName": "151",
+      "setYear": null,
+      "number": "133",
+      "variant": "Snowflake",
+      "label": "#133 · Snowflake"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Twilight Masquerade",
+      "setYear": null,
+      "number": "135",
+      "variant": "Normal",
+      "label": "#135 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Twilight Masquerade",
+      "setYear": null,
+      "number": "135",
+      "variant": "Reverse Holo",
+      "label": "#135 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Twilight Masquerade",
+      "setYear": null,
+      "number": "188",
+      "variant": null,
+      "label": "#188"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Shrouded Fable",
+      "setYear": null,
+      "number": "50",
+      "variant": "Normal",
+      "label": "#50 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Shrouded Fable",
+      "setYear": null,
+      "number": "50",
+      "variant": "Reverse Holo",
+      "label": "#50 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Stellar Crown",
+      "setYear": null,
+      "number": "113",
+      "variant": "Normal",
+      "label": "#113 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Stellar Crown",
+      "setYear": null,
+      "number": "113",
+      "variant": "Reverse Holo",
+      "label": "#113 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Surging Sparks",
+      "setYear": null,
+      "number": "143",
+      "variant": "Normal",
+      "label": "#143 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Surging Sparks",
+      "setYear": null,
+      "number": "143",
+      "variant": "Reverse Holo",
+      "label": "#143 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Surging Sparks",
+      "setYear": null,
+      "number": "143",
+      "variant": "Play Pokemon",
+      "label": "#143 · Play Pokemon"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Surging Sparks",
+      "setYear": null,
+      "number": "143",
+      "variant": "Pokemon Gym",
+      "label": "#143 · Pokemon Gym"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "74",
+      "variant": "Normal",
+      "label": "#74 · Normal"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "74",
+      "variant": "Reverse Holo",
+      "label": "#74 · Reverse Holo"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "74",
+      "variant": "Master Ball",
+      "label": "#74 · Master Ball"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "74",
+      "variant": "Poke Ball",
+      "label": "#74 · Poke Ball"
+    },
+    {
+      "name": "Eevee",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "74",
+      "variant": "Pokemon Day",
+      "label": "#74 · Pokemon Day"
+    },
+    {
+      "name": "Eevee ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "75",
+      "variant": "Holo",
+      "label": "#75 · Holo"
+    },
+    {
+      "name": "Eevee ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "75",
+      "variant": "Expansion",
+      "label": "#75 · Expansion"
+    },
+    {
+      "name": "Eevee ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "75",
+      "variant": "Play Pokemon",
+      "label": "#75 · Play Pokemon"
+    },
+    {
+      "name": "Eevee ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "167",
+      "variant": null,
+      "label": "#167"
+    },
+    {
+      "name": "Eevee",
+      "setName": "McDonald's Collection 2024",
+      "setYear": null,
+      "number": "13",
+      "variant": null,
+      "label": "#13"
+    }
+  ]
+}

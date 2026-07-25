@@ -109,7 +109,10 @@ async function main() {
     console.log("done");
   }
 
-  const TCGDEX_IDS_SUPERSEDED_BY_MANUAL = new Set(["2019sm-12"]);
+  const TCGDEX_IDS_SUPERSEDED_BY_MANUAL = new Set([
+    "2019sm-12",
+    "xya-28a", // duplicate of g1-28a (Generations Jolteon-EX 28a Yellow A alternate)
+  ]);
   const cardsDeduped = cards.filter((c) => !TCGDEX_IDS_SUPERSEDED_BY_MANUAL.has(c.id));
 
   const manualPath = path.join(process.cwd(), "data", "manual-cards.json");

@@ -1,0 +1,815 @@
+{
+  "_meta": {
+    "source": "https://getsethunter.com/masterset/jolteon",
+    "fetchedAt": "2026-07-25",
+    "pokemon": "Jolteon",
+    "description": "English Jolteon master set checklist from Set Hunter — every variant, chronologically by set",
+    "variantCount": 81,
+    "setCount": 30,
+    "headerVariantCount": null,
+    "headerSetCount": null,
+    "note": "Scraped from public page HTML; use as external reference, not canonical catalogue"
+  },
+  "sets": [
+    {
+      "setName": "Jungle",
+      "setYear": null,
+      "variantCount": 4
+    },
+    {
+      "setName": "Team Rocket",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Gym Challenge",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Neo Destiny",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Legendary Collection",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Skyridge",
+      "setYear": null,
+      "variantCount": 3
+    },
+    {
+      "setName": "Sandstorm",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Unseen Forces",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Delta Species",
+      "setYear": null,
+      "variantCount": 6
+    },
+    {
+      "setName": "POP Series 3",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Power Keepers",
+      "setYear": null,
+      "variantCount": 3
+    },
+    {
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Rising Rivals",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "HS—Undaunted",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Call of Legends",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "BW Black Star Promos",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "variantCount": 4
+    },
+    {
+      "setName": "Plasma Freeze",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Ancient Origins",
+      "setYear": null,
+      "variantCount": 3
+    },
+    {
+      "setName": "Generations",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Hidden Fates",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Cosmic Eclipse",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "variantCount": 6
+    },
+    {
+      "setName": "Vivid Voltage",
+      "setYear": null,
+      "variantCount": 3
+    },
+    {
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "variantCount": 3
+    },
+    {
+      "setName": "Brilliant Stars Trainer Gallery",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "Scarlet & Violet Black Star Promos",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "151",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "variantCount": 9
+    }
+  ],
+  "entries": [
+    {
+      "name": "Jolteon",
+      "setName": "Jungle",
+      "setYear": null,
+      "number": "4",
+      "variant": "1st Edition",
+      "label": "#4 · 1st Edition"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Jungle",
+      "setYear": null,
+      "number": "4",
+      "variant": "Unlimited",
+      "label": "#4 · Unlimited"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Jungle",
+      "setYear": null,
+      "number": "20",
+      "variant": "1st Edition",
+      "label": "#20 · 1st Edition"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Jungle",
+      "setYear": null,
+      "number": "20",
+      "variant": "Unlimited",
+      "label": "#20 · Unlimited"
+    },
+    {
+      "name": "Dark Jolteon",
+      "setName": "Team Rocket",
+      "setYear": null,
+      "number": "38",
+      "variant": "1st Edition",
+      "label": "#38 · 1st Edition"
+    },
+    {
+      "name": "Dark Jolteon",
+      "setName": "Team Rocket",
+      "setYear": null,
+      "number": "38",
+      "variant": "Unlimited",
+      "label": "#38 · Unlimited"
+    },
+    {
+      "name": "Lt. Surge's Jolteon",
+      "setName": "Gym Challenge",
+      "setYear": null,
+      "number": "28",
+      "variant": "1st Edition",
+      "label": "#28 · 1st Edition"
+    },
+    {
+      "name": "Lt. Surge's Jolteon",
+      "setName": "Gym Challenge",
+      "setYear": null,
+      "number": "28",
+      "variant": "Unlimited",
+      "label": "#28 · Unlimited"
+    },
+    {
+      "name": "Light Jolteon",
+      "setName": "Neo Destiny",
+      "setYear": null,
+      "number": "48",
+      "variant": "1st Edition",
+      "label": "#48 · 1st Edition"
+    },
+    {
+      "name": "Light Jolteon",
+      "setName": "Neo Destiny",
+      "setYear": null,
+      "number": "48",
+      "variant": "Unlimited",
+      "label": "#48 · Unlimited"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Legendary Collection",
+      "setYear": null,
+      "number": "14",
+      "variant": "Reverse Holo",
+      "label": "#14 · Reverse Holo"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Legendary Collection",
+      "setYear": null,
+      "number": "14",
+      "variant": "Holo",
+      "label": "#14 · Holo"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Skyridge",
+      "setYear": null,
+      "number": "13",
+      "variant": "Normal",
+      "label": "#13 · Normal"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Skyridge",
+      "setYear": null,
+      "number": "13",
+      "variant": "Reverse Holo",
+      "label": "#13 · Reverse Holo"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Skyridge",
+      "setYear": null,
+      "number": "H12",
+      "variant": null,
+      "label": "#H12"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Sandstorm",
+      "setYear": null,
+      "number": "6",
+      "variant": "Reverse Holo",
+      "label": "#6 · Reverse Holo"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Sandstorm",
+      "setYear": null,
+      "number": "6",
+      "variant": "Holo",
+      "label": "#6 · Holo"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Unseen Forces",
+      "setYear": null,
+      "number": "8",
+      "variant": "Reverse Holo",
+      "label": "#8 · Reverse Holo"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Unseen Forces",
+      "setYear": null,
+      "number": "8",
+      "variant": "Holo",
+      "label": "#8 · Holo"
+    },
+    {
+      "name": "Jolteon δ",
+      "setName": "Delta Species",
+      "setYear": null,
+      "number": "7",
+      "variant": "Reverse Holo",
+      "label": "#7 · Reverse Holo"
+    },
+    {
+      "name": "Jolteon δ",
+      "setName": "Delta Species",
+      "setYear": null,
+      "number": "7",
+      "variant": "Holo",
+      "label": "#7 · Holo"
+    },
+    {
+      "name": "Jolteon ex",
+      "setName": "Delta Species",
+      "setYear": null,
+      "number": "109",
+      "variant": "Holo",
+      "label": "#109 · Holo"
+    },
+    {
+      "name": "Jolteon ex",
+      "setName": "Delta Species",
+      "setYear": null,
+      "number": "109",
+      "variant": "World Championship Deck 2006 (Jimmy Ballard)",
+      "label": "#109 · World Championship Deck 2006 (Jimmy Ballard)"
+    },
+    {
+      "name": "Jolteon ex",
+      "setName": "Delta Species",
+      "setYear": null,
+      "number": "109",
+      "variant": "World Championship Deck 2007 (Jun Hasebe)",
+      "label": "#109 · World Championship Deck 2007 (Jun Hasebe)"
+    },
+    {
+      "name": "Jolteon ex",
+      "setName": "Delta Species",
+      "setYear": null,
+      "number": "109",
+      "variant": "World Championship Deck 2007 (Tom Roos)",
+      "label": "#109 · World Championship Deck 2007 (Tom Roos)"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "POP Series 3",
+      "setYear": null,
+      "number": "3",
+      "variant": "Normal",
+      "label": "#3 · Normal"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "POP Series 3",
+      "setYear": null,
+      "number": "3",
+      "variant": "Holo",
+      "label": "#3 · Holo"
+    },
+    {
+      "name": "Jolteon ☆",
+      "setName": "Power Keepers",
+      "setYear": null,
+      "number": "101",
+      "variant": "Holo",
+      "label": "#101 · Holo"
+    },
+    {
+      "name": "Jolteon ☆",
+      "setName": "Power Keepers",
+      "setYear": null,
+      "number": "101",
+      "variant": "World Championship Deck 2008 (Jason Klaczynski)",
+      "label": "#101 · World Championship Deck 2008 (Jason Klaczynski)"
+    },
+    {
+      "name": "Jolteon ☆",
+      "setName": "Power Keepers",
+      "setYear": null,
+      "number": "101",
+      "variant": "World Championship Deck 2007 (Tom Roos)",
+      "label": "#101 · World Championship Deck 2007 (Tom Roos)"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "number": "23",
+      "variant": "Normal",
+      "label": "#23 · Normal"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "number": "23",
+      "variant": "Reverse Holo",
+      "label": "#23 · Reverse Holo"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Rising Rivals",
+      "setYear": null,
+      "number": "26",
+      "variant": "Normal",
+      "label": "#26 · Normal"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Rising Rivals",
+      "setYear": null,
+      "number": "26",
+      "variant": "Reverse Holo",
+      "label": "#26 · Reverse Holo"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "HS—Undaunted",
+      "setYear": null,
+      "number": "28",
+      "variant": "Normal",
+      "label": "#28 · Normal"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "HS—Undaunted",
+      "setYear": null,
+      "number": "28",
+      "variant": "Reverse Holo",
+      "label": "#28 · Reverse Holo"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Call of Legends",
+      "setYear": null,
+      "number": "45",
+      "variant": "Normal",
+      "label": "#45 · Normal"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Call of Legends",
+      "setYear": null,
+      "number": "45",
+      "variant": "Reverse Holo",
+      "label": "#45 · Reverse Holo"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "BW Black Star Promos",
+      "setYear": null,
+      "number": "BW91",
+      "variant": null,
+      "label": "#BW91"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "number": "37",
+      "variant": "Normal",
+      "label": "#37 · Normal"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "number": "37",
+      "variant": "Reverse Holo",
+      "label": "#37 · Reverse Holo"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "number": "37",
+      "variant": "League",
+      "label": "#37 · League"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "number": "37",
+      "variant": "Staff",
+      "label": "#37 · Staff"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Plasma Freeze",
+      "setYear": null,
+      "number": "34",
+      "variant": "Normal",
+      "label": "#34 · Normal"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Plasma Freeze",
+      "setYear": null,
+      "number": "34",
+      "variant": "Reverse Holo",
+      "label": "#34 · Reverse Holo"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Ancient Origins",
+      "setYear": null,
+      "number": "26",
+      "variant": "Reverse Holo",
+      "label": "#26 · Reverse Holo"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Ancient Origins",
+      "setYear": null,
+      "number": "26",
+      "variant": "Holo",
+      "label": "#26 · Holo"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Ancient Origins",
+      "setYear": null,
+      "number": "26",
+      "variant": "Cosmos",
+      "label": "#26 · Cosmos"
+    },
+    {
+      "name": "Jolteon-EX",
+      "setName": "Generations",
+      "setYear": null,
+      "number": "28",
+      "variant": null,
+      "label": "#28"
+    },
+    {
+      "name": "Jolteon-EX",
+      "setName": "Generations",
+      "setYear": null,
+      "number": "28a",
+      "variant": null,
+      "label": "#28a"
+    },
+    {
+      "name": "Jolteon-GX",
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "number": "SM173",
+      "variant": "Holo",
+      "label": "#SM173 · Holo"
+    },
+    {
+      "name": "Jolteon-GX",
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "number": "SM173",
+      "variant": "Jumbo",
+      "label": "#SM173 · Jumbo"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Hidden Fates",
+      "setYear": null,
+      "number": "23",
+      "variant": "Normal",
+      "label": "#23 · Normal"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Hidden Fates",
+      "setYear": null,
+      "number": "23",
+      "variant": "Reverse Holo",
+      "label": "#23 · Reverse Holo"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Cosmic Eclipse",
+      "setYear": null,
+      "number": "70",
+      "variant": "Normal",
+      "label": "#70 · Normal"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Cosmic Eclipse",
+      "setYear": null,
+      "number": "70",
+      "variant": "Reverse Holo",
+      "label": "#70 · Reverse Holo"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH094",
+      "variant": null,
+      "label": "#SWSH094"
+    },
+    {
+      "name": "Jolteon V",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH151",
+      "variant": "Holo",
+      "label": "#SWSH151 · Holo"
+    },
+    {
+      "name": "Jolteon V",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH151",
+      "variant": "Play Pokemon",
+      "label": "#SWSH151 · Play Pokemon"
+    },
+    {
+      "name": "Jolteon V",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH183",
+      "variant": null,
+      "label": "#SWSH183"
+    },
+    {
+      "name": "Jolteon VMAX",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH184",
+      "variant": "Holo",
+      "label": "#SWSH184 · Holo"
+    },
+    {
+      "name": "Jolteon VMAX",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH184",
+      "variant": "Jumbo",
+      "label": "#SWSH184 · Jumbo"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Vivid Voltage",
+      "setYear": null,
+      "number": "47",
+      "variant": "Normal",
+      "label": "#47 · Normal"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Vivid Voltage",
+      "setYear": null,
+      "number": "47",
+      "variant": "Reverse Holo",
+      "label": "#47 · Reverse Holo"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Vivid Voltage",
+      "setYear": null,
+      "number": "47",
+      "variant": "Cosmos",
+      "label": "#47 · Cosmos"
+    },
+    {
+      "name": "Jolteon VMAX",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "51",
+      "variant": "Holo",
+      "label": "#51 · Holo"
+    },
+    {
+      "name": "Jolteon VMAX",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "51",
+      "variant": "Play Pokemon",
+      "label": "#51 · Play Pokemon"
+    },
+    {
+      "name": "Jolteon V",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "177",
+      "variant": null,
+      "label": "#177"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Brilliant Stars Trainer Gallery",
+      "setYear": null,
+      "number": "TG04",
+      "variant": null,
+      "label": "#TG04"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Scarlet & Violet Black Star Promos",
+      "setYear": null,
+      "number": "169",
+      "variant": null,
+      "label": "#169"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "151",
+      "setYear": null,
+      "number": "135",
+      "variant": "Reverse Holo",
+      "label": "#135 · Reverse Holo"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "151",
+      "setYear": null,
+      "number": "135",
+      "variant": "Holo",
+      "label": "#135 · Holo"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "29",
+      "variant": "Reverse Holo",
+      "label": "#29 · Reverse Holo"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "29",
+      "variant": "Holo",
+      "label": "#29 · Holo"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "29",
+      "variant": "Cosmos",
+      "label": "#29 · Cosmos"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "29",
+      "variant": "Master Ball",
+      "label": "#29 · Master Ball"
+    },
+    {
+      "name": "Jolteon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "29",
+      "variant": "Poke Ball",
+      "label": "#29 · Poke Ball"
+    },
+    {
+      "name": "Jolteon ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "30",
+      "variant": "Holo",
+      "label": "#30 · Holo"
+    },
+    {
+      "name": "Jolteon ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "30",
+      "variant": "Expansion",
+      "label": "#30 · Expansion"
+    },
+    {
+      "name": "Jolteon ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "30",
+      "variant": "Play Pokemon",
+      "label": "#30 · Play Pokemon"
+    },
+    {
+      "name": "Jolteon ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "153",
+      "variant": null,
+      "label": "#153"
+    }
+  ]
+}

@@ -1,29 +1,5 @@
 [
   {
-    "id": "mcd24-9",
-    "name": "Umbreon",
-    "number": "9",
-    "rarity": "None",
-    "supertype": "Pokémon",
-    "subtypes": [
-      "Basic"
-    ],
-    "types": [
-      "Darkness"
-    ],
-    "hp": "110",
-    "set": {
-      "id": "mcd24",
-      "name": "McDonald's Collection 2024",
-      "series": "Other",
-      "releaseDate": "2024/01/01"
-    },
-    "images": {
-      "small": "https://images.scrydex.com/pokemon/mcd24-9/medium",
-      "large": "https://images.scrydex.com/pokemon/mcd24-9/medium"
-    }
-  },
-  {
     "id": "svp-175",
     "name": "Espeon ex",
     "number": "175",
@@ -71,30 +47,6 @@
     "images": {
       "small": "https://images.scrydex.com/pokemon/svp-176/medium",
       "large": "https://images.scrydex.com/pokemon/svp-176/medium"
-    }
-  },
-  {
-    "id": "mcd24-13",
-    "name": "Eevee",
-    "number": "13",
-    "rarity": "None",
-    "supertype": "Pokémon",
-    "subtypes": [
-      "Basic"
-    ],
-    "types": [
-      "Colorless"
-    ],
-    "hp": "50",
-    "set": {
-      "id": "mcd24",
-      "name": "McDonald's Collection 2024",
-      "series": "Other",
-      "releaseDate": "2024/01/01"
-    },
-    "images": {
-      "small": "https://images.scrydex.com/pokemon/mcd24-13/medium",
-      "large": "https://images.scrydex.com/pokemon/mcd24-13/medium"
     }
   },
   {
@@ -2902,10 +2854,10 @@
     }
   },
   {
-    "id": "sv3-130-tot2024",
+    "id": "sv3-130",
     "name": "Umbreon",
-    "number": "130/197 (Trick or Trade 2024)",
-    "rarity": "Uncommon — Halloween Stamp",
+    "number": "130",
+    "rarity": "Uncommon",
     "supertype": "Pokémon",
     "subtypes": [
       "Stage 1"
@@ -2915,17 +2867,370 @@
     ],
     "hp": "110",
     "set": {
-      "id": "sv3-tot2024",
-      "name": "Obsidian Flames — Trick or Trade 2024",
+      "id": "sv3",
+      "name": "Obsidian Flames",
       "series": "Scarlet & Violet",
-      "releaseDate": "2024/08/30"
+      "releaseDate": "2023/08/11"
     },
     "images": {
-      "small": "https://cdn.collectory.cc/cards/us/trick-or-trade-2024/umbreon-130.jpg",
-      "large": "https://cdn.collectory.cc/cards/us/trick-or-trade-2024/umbreon-130.jpg"
+      "small": "https://assets.tcgdex.net/en/sv/sv03/130/low.webp",
+      "large": "https://assets.tcgdex.net/en/sv/sv03/130/high.png"
+    },
+    "variants": [
+      "normal",
+      "reverse",
+      "halloween"
+    ]
+  },
+  {
+    "id": "2024sv-9",
+    "name": "Umbreon",
+    "number": "9",
+    "rarity": "None",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "types": [
+      "Darkness"
+    ],
+    "hp": "110",
+    "set": {
+      "id": "2024sv",
+      "name": "McDonald's Collection 2024",
+      "series": "McDonald's Collection",
+      "releaseDate": "2024/12/04"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/mcd24-9/small",
+      "large": "https://images.scrydex.com/pokemon/mcd24-9/large"
     },
     "variants": [
       "normal"
+    ]
+  },
+  {
+    "id": "2024sv-13",
+    "name": "Eevee",
+    "number": "13",
+    "rarity": "None",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "hp": "60",
+    "set": {
+      "id": "2024sv",
+      "name": "McDonald's Collection 2024",
+      "series": "McDonald's Collection",
+      "releaseDate": "2024/12/04"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/mcd24-13/small",
+      "large": "https://images.scrydex.com/pokemon/mcd24-13/large"
+    },
+    "variants": [
+      "normal"
+    ]
+  },
+  {
+    "id": "2016xy-12",
+    "name": "Eevee",
+    "number": "12",
+    "rarity": "None",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "hp": "60",
+    "set": {
+      "id": "2016xy",
+      "name": "McDonald's Collection 2016",
+      "series": "McDonald's Collection",
+      "releaseDate": "2016/08/20"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/mcd16-12/small",
+      "large": "https://images.scrydex.com/pokemon/mcd16-12/large"
+    },
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "2018sm-11",
+    "name": "Eevee",
+    "number": "11",
+    "rarity": "None",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "hp": "60",
+    "set": {
+      "id": "2018sm",
+      "name": "McDonald's Collection 2018",
+      "series": "McDonald's Collection",
+      "releaseDate": "2018/10/19"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w=640,q=75,f=auto/https://static.dextcg.com/cards/mcd18/11.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w=640,q=75,f=auto/https://static.dextcg.com/cards/mcd18/11.png"
+    },
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "g1-28",
+    "name": "Jolteon EX",
+    "number": "28",
+    "rarity": "Ultra Rare",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "EX"
+    ],
+    "types": [
+      "Lightning"
+    ],
+    "hp": "160",
+    "set": {
+      "id": "g1",
+      "name": "Generations",
+      "series": "XY",
+      "releaseDate": "2016/02/22"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/g1-28/small",
+      "large": "https://images.scrydex.com/pokemon/g1-28/large"
+    },
+    "variants": [
+      "normal"
+    ]
+  },
+  {
+    "id": "ecard2-H09",
+    "name": "Espeon",
+    "number": "H09",
+    "rarity": "Rare",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "types": [
+      "Psychic"
+    ],
+    "hp": "80",
+    "set": {
+      "id": "ecard2",
+      "name": "Aquapolis",
+      "series": "E-Card",
+      "releaseDate": "2003/01/15"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/ecard2-H9/small",
+      "large": "https://images.scrydex.com/pokemon/ecard2-H9/large"
+    },
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "ecard3-H07",
+    "name": "Flareon",
+    "number": "H07",
+    "rarity": "Rare",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "types": [
+      "Fire"
+    ],
+    "hp": "70",
+    "set": {
+      "id": "ecard3",
+      "name": "Skyridge",
+      "series": "E-Card",
+      "releaseDate": "2003/05/12"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/ecard3-H7/small",
+      "large": "https://images.scrydex.com/pokemon/ecard3-H7/large"
+    },
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "tk-xy-sy-13",
+    "name": "Eevee",
+    "number": "13",
+    "rarity": "Common",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "hp": "60",
+    "set": {
+      "id": "tk-xy-sy",
+      "name": "XY trainer Kit (Sylveon)",
+      "series": "Trainer kits",
+      "releaseDate": "2014/03/12"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/tk6a-13/small",
+      "large": "https://images.scrydex.com/pokemon/tk6a-13/large"
+    },
+    "variants": [
+      "normal"
+    ]
+  },
+  {
+    "id": "tk-xy-sy-15",
+    "name": "Sylveon",
+    "number": "15",
+    "rarity": "None",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "types": [
+      "Fairy"
+    ],
+    "hp": "90",
+    "set": {
+      "id": "tk-xy-sy",
+      "name": "XY trainer Kit (Sylveon)",
+      "series": "Trainer kits",
+      "releaseDate": "2014/03/12"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/tk6a-15/small",
+      "large": "https://images.scrydex.com/pokemon/tk6a-15/large"
+    },
+    "variants": [
+      "normal"
+    ]
+  },
+  {
+    "id": "tk-xy-sy-21",
+    "name": "Eevee",
+    "number": "21",
+    "rarity": "Common",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "hp": "60",
+    "set": {
+      "id": "tk-xy-sy",
+      "name": "XY trainer Kit (Sylveon)",
+      "series": "Trainer kits",
+      "releaseDate": "2014/03/12"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/tk6a-21/small",
+      "large": "https://images.scrydex.com/pokemon/tk6a-21/large"
+    },
+    "variants": [
+      "normal"
+    ]
+  },
+  {
+    "id": "tk-xy-sy-30",
+    "name": "Sylveon",
+    "number": "30",
+    "rarity": "None",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "types": [
+      "Fairy"
+    ],
+    "hp": "90",
+    "set": {
+      "id": "tk-xy-sy",
+      "name": "XY trainer Kit (Sylveon)",
+      "series": "Trainer kits",
+      "releaseDate": "2014/03/12"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/tk6a-30/small",
+      "large": "https://images.scrydex.com/pokemon/tk6a-30/large"
+    },
+    "variants": [
+      "normal"
+    ]
+  },
+  {
+    "id": "tk-xy-su-4",
+    "name": "Eevee",
+    "number": "4",
+    "rarity": "None",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "hp": "60",
+    "set": {
+      "id": "tk-xy-su",
+      "name": "XY trainer Kit (Suicune)",
+      "series": "Trainer kits",
+      "releaseDate": "2016/04/27"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/tk9a-4/small",
+      "large": "https://images.scrydex.com/pokemon/tk9a-4/large"
+    },
+    "variants": [
+      "normal"
+    ]
+  },
+  {
+    "id": "cel25cc-CC015",
+    "name": "Umbreon ☆",
+    "number": "CC015",
+    "rarity": "Classic Collection",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Darkness"
+    ],
+    "hp": "70",
+    "set": {
+      "id": "cel25cc",
+      "name": "Celebrations Classic Collection",
+      "series": "Sword & Shield",
+      "releaseDate": "2021/10/08"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/cel25c-17_A/small",
+      "large": "https://images.scrydex.com/pokemon/cel25c-17_A/large"
+    },
+    "variants": [
+      "holo"
     ]
   }
 ]

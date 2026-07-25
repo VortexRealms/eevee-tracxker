@@ -6,6 +6,7 @@ export const VARIANT_LABELS: Record<string, string> = {
   masterball: "Master Ball",
   firstEdition: "1st Edition",
   wPromo: "W Promo",
+  halloween: "Halloween Stamp",
 };
 
 export const VARIANT_SORT_ORDER = [
@@ -16,6 +17,7 @@ export const VARIANT_SORT_ORDER = [
   "masterball",
   "firstEdition",
   "wPromo",
+  "halloween",
 ] as const;
 
 export function getVariantLabel(variant: string): string {

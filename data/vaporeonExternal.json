@@ -1,0 +1,770 @@
+{
+  "_meta": {
+    "source": "https://getsethunter.com/masterset/vaporeon",
+    "fetchedAt": "2026-07-25",
+    "pokemon": "Vaporeon",
+    "description": "English Vaporeon master set checklist from Set Hunter — every variant, chronologically by set",
+    "variantCount": 76,
+    "setCount": 29,
+    "headerVariantCount": null,
+    "headerSetCount": null,
+    "note": "Scraped from public page HTML; use as external reference, not canonical catalogue"
+  },
+  "sets": [
+    {
+      "setName": "Jungle",
+      "setYear": null,
+      "variantCount": 4
+    },
+    {
+      "setName": "Team Rocket",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Neo Destiny",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Legendary Collection",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Skyridge",
+      "setYear": null,
+      "variantCount": 3
+    },
+    {
+      "setName": "Sandstorm",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Unseen Forces",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Delta Species",
+      "setYear": null,
+      "variantCount": 6
+    },
+    {
+      "setName": "POP Series 3",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Power Keepers",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Rising Rivals",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "HS—Undaunted",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Call of Legends",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "BW Black Star Promos",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "variantCount": 4
+    },
+    {
+      "setName": "Plasma Freeze",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Ancient Origins",
+      "setYear": null,
+      "variantCount": 3
+    },
+    {
+      "setName": "Generations",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Hidden Fates",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Cosmic Eclipse",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "variantCount": 6
+    },
+    {
+      "setName": "Vivid Voltage",
+      "setYear": null,
+      "variantCount": 3
+    },
+    {
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "variantCount": 3
+    },
+    {
+      "setName": "Brilliant Stars Trainer Gallery",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "Scarlet & Violet Black Star Promos",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "151",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "variantCount": 9
+    }
+  ],
+  "entries": [
+    {
+      "name": "Vaporeon",
+      "setName": "Jungle",
+      "setYear": null,
+      "number": "12",
+      "variant": "1st Edition",
+      "label": "#12 · 1st Edition"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Jungle",
+      "setYear": null,
+      "number": "12",
+      "variant": "Unlimited",
+      "label": "#12 · Unlimited"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Jungle",
+      "setYear": null,
+      "number": "28",
+      "variant": "1st Edition",
+      "label": "#28 · 1st Edition"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Jungle",
+      "setYear": null,
+      "number": "28",
+      "variant": "Unlimited",
+      "label": "#28 · Unlimited"
+    },
+    {
+      "name": "Dark Vaporeon",
+      "setName": "Team Rocket",
+      "setYear": null,
+      "number": "45",
+      "variant": "1st Edition",
+      "label": "#45 · 1st Edition"
+    },
+    {
+      "name": "Dark Vaporeon",
+      "setName": "Team Rocket",
+      "setYear": null,
+      "number": "45",
+      "variant": "Unlimited",
+      "label": "#45 · Unlimited"
+    },
+    {
+      "name": "Light Vaporeon",
+      "setName": "Neo Destiny",
+      "setYear": null,
+      "number": "52",
+      "variant": "1st Edition",
+      "label": "#52 · 1st Edition"
+    },
+    {
+      "name": "Light Vaporeon",
+      "setName": "Neo Destiny",
+      "setYear": null,
+      "number": "52",
+      "variant": "Unlimited",
+      "label": "#52 · Unlimited"
+    },
+    {
+      "name": "Dark Vaporeon",
+      "setName": "Legendary Collection",
+      "setYear": null,
+      "number": "9",
+      "variant": "Reverse Holo",
+      "label": "#9 · Reverse Holo"
+    },
+    {
+      "name": "Dark Vaporeon",
+      "setName": "Legendary Collection",
+      "setYear": null,
+      "number": "9",
+      "variant": "Holo",
+      "label": "#9 · Holo"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Skyridge",
+      "setYear": null,
+      "number": "33",
+      "variant": "Normal",
+      "label": "#33 · Normal"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Skyridge",
+      "setYear": null,
+      "number": "33",
+      "variant": "Reverse Holo",
+      "label": "#33 · Reverse Holo"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Skyridge",
+      "setYear": null,
+      "number": "H31",
+      "variant": null,
+      "label": "#H31"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Sandstorm",
+      "setYear": null,
+      "number": "25",
+      "variant": "Normal",
+      "label": "#25 · Normal"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Sandstorm",
+      "setYear": null,
+      "number": "25",
+      "variant": "Reverse Holo",
+      "label": "#25 · Reverse Holo"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Unseen Forces",
+      "setYear": null,
+      "number": "19",
+      "variant": "Reverse Holo",
+      "label": "#19 · Reverse Holo"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Unseen Forces",
+      "setYear": null,
+      "number": "19",
+      "variant": "Holo",
+      "label": "#19 · Holo"
+    },
+    {
+      "name": "Vaporeon δ",
+      "setName": "Delta Species",
+      "setYear": null,
+      "number": "18",
+      "variant": "Reverse Holo",
+      "label": "#18 · Reverse Holo"
+    },
+    {
+      "name": "Vaporeon δ",
+      "setName": "Delta Species",
+      "setYear": null,
+      "number": "18",
+      "variant": "Holo",
+      "label": "#18 · Holo"
+    },
+    {
+      "name": "Vaporeon ex",
+      "setName": "Delta Species",
+      "setYear": null,
+      "number": "110",
+      "variant": "Holo",
+      "label": "#110 · Holo"
+    },
+    {
+      "name": "Vaporeon ex",
+      "setName": "Delta Species",
+      "setYear": null,
+      "number": "110",
+      "variant": "World Championship Deck 2006 (Jimmy Ballard)",
+      "label": "#110 · World Championship Deck 2006 (Jimmy Ballard)"
+    },
+    {
+      "name": "Vaporeon ex",
+      "setName": "Delta Species",
+      "setYear": null,
+      "number": "110",
+      "variant": "World Championship Deck 2007 (Jun Hasebe)",
+      "label": "#110 · World Championship Deck 2007 (Jun Hasebe)"
+    },
+    {
+      "name": "Vaporeon ex",
+      "setName": "Delta Species",
+      "setYear": null,
+      "number": "110",
+      "variant": "World Championship Deck 2007 (Tom Roos)",
+      "label": "#110 · World Championship Deck 2007 (Tom Roos)"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "POP Series 3",
+      "setYear": null,
+      "number": "6",
+      "variant": "Normal",
+      "label": "#6 · Normal"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "POP Series 3",
+      "setYear": null,
+      "number": "6",
+      "variant": "Holo",
+      "label": "#6 · Holo"
+    },
+    {
+      "name": "Vaporeon ☆",
+      "setName": "Power Keepers",
+      "setYear": null,
+      "number": "102",
+      "variant": null,
+      "label": "#102"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "number": "34",
+      "variant": "Normal",
+      "label": "#34 · Normal"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "number": "34",
+      "variant": "Reverse Holo",
+      "label": "#34 · Reverse Holo"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Rising Rivals",
+      "setYear": null,
+      "number": "34",
+      "variant": "Normal",
+      "label": "#34 · Normal"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Rising Rivals",
+      "setYear": null,
+      "number": "34",
+      "variant": "Reverse Holo",
+      "label": "#34 · Reverse Holo"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "HS—Undaunted",
+      "setYear": null,
+      "number": "41",
+      "variant": "Normal",
+      "label": "#41 · Normal"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "HS—Undaunted",
+      "setYear": null,
+      "number": "41",
+      "variant": "Reverse Holo",
+      "label": "#41 · Reverse Holo"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Call of Legends",
+      "setYear": null,
+      "number": "52",
+      "variant": "Normal",
+      "label": "#52 · Normal"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Call of Legends",
+      "setYear": null,
+      "number": "52",
+      "variant": "Reverse Holo",
+      "label": "#52 · Reverse Holo"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "BW Black Star Promos",
+      "setYear": null,
+      "number": "BW89",
+      "variant": null,
+      "label": "#BW89"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "number": "25",
+      "variant": "Normal",
+      "label": "#25 · Normal"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "number": "25",
+      "variant": "Reverse Holo",
+      "label": "#25 · Reverse Holo"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "number": "25",
+      "variant": "League",
+      "label": "#25 · League"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "number": "25",
+      "variant": "Staff",
+      "label": "#25 · Staff"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Plasma Freeze",
+      "setYear": null,
+      "number": "20",
+      "variant": "Normal",
+      "label": "#20 · Normal"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Plasma Freeze",
+      "setYear": null,
+      "number": "20",
+      "variant": "Reverse Holo",
+      "label": "#20 · Reverse Holo"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Ancient Origins",
+      "setYear": null,
+      "number": "22",
+      "variant": "Normal",
+      "label": "#22 · Normal"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Ancient Origins",
+      "setYear": null,
+      "number": "22",
+      "variant": "Reverse Holo",
+      "label": "#22 · Reverse Holo"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Ancient Origins",
+      "setYear": null,
+      "number": "22",
+      "variant": "Cosmos",
+      "label": "#22 · Cosmos"
+    },
+    {
+      "name": "Vaporeon-EX",
+      "setName": "Generations",
+      "setYear": null,
+      "number": "24",
+      "variant": null,
+      "label": "#24"
+    },
+    {
+      "name": "Vaporeon-GX",
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "number": "SM172",
+      "variant": "Holo",
+      "label": "#SM172 · Holo"
+    },
+    {
+      "name": "Vaporeon-GX",
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "number": "SM172",
+      "variant": "Jumbo",
+      "label": "#SM172 · Jumbo"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Hidden Fates",
+      "setYear": null,
+      "number": "18",
+      "variant": "Reverse Holo",
+      "label": "#18 · Reverse Holo"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Hidden Fates",
+      "setYear": null,
+      "number": "18",
+      "variant": "Holo",
+      "label": "#18 · Holo"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Cosmic Eclipse",
+      "setYear": null,
+      "number": "42",
+      "variant": "Normal",
+      "label": "#42 · Normal"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Cosmic Eclipse",
+      "setYear": null,
+      "number": "42",
+      "variant": "Reverse Holo",
+      "label": "#42 · Reverse Holo"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH072",
+      "variant": null,
+      "label": "#SWSH072"
+    },
+    {
+      "name": "Vaporeon V",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH150",
+      "variant": "Holo",
+      "label": "#SWSH150 · Holo"
+    },
+    {
+      "name": "Vaporeon V",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH150",
+      "variant": "Play Pokemon",
+      "label": "#SWSH150 · Play Pokemon"
+    },
+    {
+      "name": "Vaporeon V",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH181",
+      "variant": null,
+      "label": "#SWSH181"
+    },
+    {
+      "name": "Vaporeon VMAX",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH182",
+      "variant": "Holo",
+      "label": "#SWSH182 · Holo"
+    },
+    {
+      "name": "Vaporeon VMAX",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH182",
+      "variant": "Jumbo",
+      "label": "#SWSH182 · Jumbo"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Vivid Voltage",
+      "setYear": null,
+      "number": "30",
+      "variant": "Normal",
+      "label": "#30 · Normal"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Vivid Voltage",
+      "setYear": null,
+      "number": "30",
+      "variant": "Reverse Holo",
+      "label": "#30 · Reverse Holo"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Vivid Voltage",
+      "setYear": null,
+      "number": "30",
+      "variant": "Cosmos",
+      "label": "#30 · Cosmos"
+    },
+    {
+      "name": "Vaporeon VMAX",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "30",
+      "variant": "Holo",
+      "label": "#30 · Holo"
+    },
+    {
+      "name": "Vaporeon VMAX",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "30",
+      "variant": "Play Pokemon",
+      "label": "#30 · Play Pokemon"
+    },
+    {
+      "name": "Vaporeon V",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "172",
+      "variant": null,
+      "label": "#172"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Brilliant Stars Trainer Gallery",
+      "setYear": null,
+      "number": "TG02",
+      "variant": null,
+      "label": "#TG02"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Scarlet & Violet Black Star Promos",
+      "setYear": null,
+      "number": "168",
+      "variant": null,
+      "label": "#168"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "151",
+      "setYear": null,
+      "number": "134",
+      "variant": "Reverse Holo",
+      "label": "#134 · Reverse Holo"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "151",
+      "setYear": null,
+      "number": "134",
+      "variant": "Holo",
+      "label": "#134 · Holo"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "22",
+      "variant": "Reverse Holo",
+      "label": "#22 · Reverse Holo"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "22",
+      "variant": "Holo",
+      "label": "#22 · Holo"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "22",
+      "variant": "Cosmos",
+      "label": "#22 · Cosmos"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "22",
+      "variant": "Master Ball",
+      "label": "#22 · Master Ball"
+    },
+    {
+      "name": "Vaporeon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "22",
+      "variant": "Poke Ball",
+      "label": "#22 · Poke Ball"
+    },
+    {
+      "name": "Vaporeon ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "23",
+      "variant": "Holo",
+      "label": "#23 · Holo"
+    },
+    {
+      "name": "Vaporeon ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "23",
+      "variant": "Expansion",
+      "label": "#23 · Expansion"
+    },
+    {
+      "name": "Vaporeon ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "23",
+      "variant": "Play Pokemon",
+      "label": "#23 · Play Pokemon"
+    },
+    {
+      "name": "Vaporeon ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "149",
+      "variant": null,
+      "label": "#149"
+    }
+  ]
+}

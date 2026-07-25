@@ -468,19 +468,26 @@
     "matchScore": 175,
     "searchQuery": "Eevee POP Series 3 13"
   },
+  "ex16-100": {
+    "pokewalletId": "pk_173c2a6f62f69b53a083529f3b298ec78eb8163dc7a36b2a7abf3ed627a5b8df090c3c5d1cdf9b773743cce276c0",
+    "setCode": "PK",
+    "resolvedAt": "2026-07-22",
+    "matchScore": 100,
+    "searchQuery": "manual: Power Keepers Flareon Star 100"
+  },
   "ex16-101": {
-    "pokewalletId": "pk_3b5d0da41ccf881e5b9a511337dbb510bd4cb330a761070985c8ec9e2ac8765e5e8249faf436945d576b1b05e026eb23",
-    "setCode": "SSP",
-    "resolvedAt": "2026-07-18",
-    "matchScore": 70,
-    "searchQuery": "-91 101"
+    "pokewalletId": "pk_b22618e94974bab416b060a0e08c841c9e030f7a5d5753e021ae888f9298b34d9ef4126498d19fb97049536e7c6a",
+    "setCode": "PK",
+    "resolvedAt": "2026-07-22",
+    "matchScore": 100,
+    "searchQuery": "manual: Power Keepers Jolteon Star 101"
   },
   "ex16-102": {
-    "pokewalletId": "pk_dd4011722190a140c1380e96e0828b41d3960957101c7051520066ba9963ecfb00c7bb35087a0253041eb23d3c0c0da2",
-    "setCode": "SSP",
-    "resolvedAt": "2026-07-18",
-    "matchScore": 60,
-    "searchQuery": "-91 102"
+    "pokewalletId": "pk_6d7fc8f337939481371b20731c3dff0ec463a2441aae744afa2ff3cec9fd7ba4d8ae9ed82ccff7f91e969cf4f292",
+    "setCode": "PK",
+    "resolvedAt": "2026-07-22",
+    "matchScore": 100,
+    "searchQuery": "manual: Power Keepers Vaporeon Star 102"
   },
   "pop5-16": {
     "pokewalletId": "pk_5a28982ed8bf870344dc68e7e5b7e27aba40775176f177e56bd6b8e0c7750d94e7ba6404dae7a2a2f14e9c2b51",
@@ -1098,6 +1105,13 @@
     "matchScore": 175,
     "searchQuery": "Jolteon EX Generations 28"
   },
+  "g1-28a": {
+    "pokewalletId": "pk_2c714ea53c558734c7bfde6946c4ebb34b024582907574e32f921ce7122c6f4b7e258c15f0624ea5908f4e20072209",
+    "setCode": "GEN",
+    "resolvedAt": "2026-07-25",
+    "matchScore": 100,
+    "searchQuery": "manual: Generations Jolteon EX 28a (same pk as g1-28; AAP pk 404s on GET /cards)"
+  },
   "g1-RC6": {
     "pokewalletId": "pk_3575f22b039fe39ae74b1aa336e634cfac266fb211b8e4d29aceb209c30a21985aa1b39ee942e9bbad55a96460fbdc14",
     "setCode": "GEN",
@@ -1155,8 +1169,8 @@
     "searchQuery": "Umbreon EX Fates Collide 119"
   },
   "2016xy-12": {
-    "pokewalletId": "pk_1ceacdd4f28cb87758ce736eddeef9d6f6b2a3b7ca4ae1949db5aa0601f831f0d33ffb7e4ab088478840af565581",
-    "setCode": "MCD19",
+    "pokewalletId": "pk_35d2ad7fce42759783a98e220f7c3f1e8df8548e2d213770532a84b6d602c5b763a945b5925320b244d22c5e9975",
+    "setCode": "MCD16",
     "resolvedAt": "2026-07-19",
     "matchScore": 140,
     "searchQuery": "Eevee 12"
@@ -1574,13 +1588,48 @@
     "matchScore": 150,
     "searchQuery": "Eevee Hidden Fates Shiny Vault SV41"
   },
-  "mcd19-12": {
-    "pokewalletId": "pk_35d2ad7fce42759783a98e220f7c3f1e8df8548e2d213770532a84b6d602c5b763a945b5925320b244d22c5e9975",
-    "setCode": "MCD16",
-    "resolvedAt": "2026-07-20",
-    "matchScore": 140,
-    "searchQuery": "Eevee 12"
+  "sma-SV46": {
+    "pokewalletId": "pk_6fb0cc1e7599582e04befd7871a8cfd203d04156bffb2c5369a0b6930e79f01d2b7b45984a93f16b6d418d726dfdbaf5da",
+    "setCode": "HIF:SV",
+    "resolvedAt": "2026-07-22",
+    "matchScore": 100,
+    "searchQuery": "manual: Hidden Fates Shiny Vault Leafeon GX SV46"
   },
+  "sma-SV55": {
+    "pokewalletId": "pk_1f6df2779e8791d0f7dfa16bc9b35531845541eb9cb063058c94917e13baf6f4d9622612cf38347da7ccb5c492ba6c53ac",
+    "setCode": "HIF:SV",
+    "resolvedAt": "2026-07-22",
+    "matchScore": 100,
+    "searchQuery": "manual: Hidden Fates Shiny Vault Glaceon GX SV55"
+  },
+  "sma-SV60": {
+    "pokewalletId": "pk_78001daa588593d64a790039a5a907ba4b1868dbc066f1fdf2f30d6fa08de397404ea9ef75f6d9e76f4dad48667b478d38",
+    "setCode": "HIF:SV",
+    "resolvedAt": "2026-07-22",
+    "matchScore": 100,
+    "searchQuery": "manual: Hidden Fates Shiny Vault Espeon GX SV60"
+  },
+  "sma-SV69": {
+    "pokewalletId": "pk_4c1147529fe65227e2c4add55d9c17d59dc6046eecaa0e1bdbed85f494681b0e9b441f09ed15fd0ca4d13f9e2d55f6f2c7",
+    "setCode": "HIF:SV",
+    "resolvedAt": "2026-07-22",
+    "matchScore": 100,
+    "searchQuery": "manual: Hidden Fates Shiny Vault Umbreon GX SV69"
+  },
+  "sma-SV76": {
+    "pokewalletId": "pk_585cc980a437414f1867854ca50e5e78e3aa62905be571b30098dd0eac3fee3bab117a45b72c76b35151519196b975bbb8",
+    "setCode": "HIF:SV",
+    "resolvedAt": "2026-07-22",
+    "matchScore": 100,
+    "searchQuery": "manual: Hidden Fates Shiny Vault Sylveon GX SV76"
+  },
+  "mcd19-12": {
+    "pokewalletId": "pk_1ceacdd4f28cb87758ce736eddeef9d6f6b2a3b7ca4ae1949db5aa0601f831f0d33ffb7e4ab088478840af565581",
+    "setCode": "MCD19",
+    "resolvedAt": "2026-07-25",
+    "matchScore": 100,
+    "searchQuery": "manual: McDonald's Promos 2019 Eevee 12/12"
+},
   "sm12-25": {
     "pokewalletId": "pk_679a6881e317444c4169eccb2f153589b9fd951f25fc4e182bc11d1d3b8eeda01403139aeb0d59d426fe267c7366",
     "setCode": "SM12",
@@ -2512,6 +2561,13 @@
     "matchScore": 185,
     "searchQuery": "Eevee Surging Sparks 143"
   },
+  "2024sv-9": {
+    "pokewalletId": "pk_ecb4a2bb43a4145364cf36e55fe3165234a331c53c4c178e364336f37541f8e27aca37f83e98352f68d53cbd619e",
+    "setCode": "M24",
+    "resolvedAt": "2026-07-25",
+    "matchScore": 100,
+    "searchQuery": "manual: McDonald's Collection 2024 Umbreon 9"
+  },
   "2024sv-13": {
     "pokewalletId": "pk_153f2eb572bb7f3f6c91929c904cc16b7b11bc32349793c6b17f58cc33e1be3ee3db21b779f085e29fd36b5a",
     "setCode": "PR",
@@ -2707,6 +2763,13 @@
     "resolvedAt": "2026-07-20",
     "matchScore": 155,
     "searchQuery": "Eevee ex Prismatic Evolutions 167"
+  },
+  "cel25cc-CC015": {
+    "pokewalletId": "pk_d56f49105bc81d9b0761fec959fbb0eb27bdb02cd3e8e52691b5c449a734519d131f790a51a819171644dc1e16",
+    "setCode": "CCC",
+    "resolvedAt": "2026-07-22",
+    "matchScore": 100,
+    "searchQuery": "manual: Celebrations Classic Collection Umbreon Star CC015"
   },
   "cbb2c-101": {
     "pokewalletId": "f98c114c1cfc6a8f8789c4cd960cbfe776c2a73639b771529e097e056e614687",

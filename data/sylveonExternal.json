@@ -1,0 +1,510 @@
+{
+  "_meta": {
+    "source": "https://getsethunter.com/masterset/sylveon",
+    "fetchedAt": "2026-07-25",
+    "pokemon": "Sylveon",
+    "description": "English Sylveon master set checklist from Set Hunter — every variant, chronologically by set",
+    "variantCount": 51,
+    "setCount": 17,
+    "headerVariantCount": null,
+    "headerSetCount": null,
+    "note": "Scraped from public page HTML; use as external reference, not canonical catalogue"
+  },
+  "sets": [
+    {
+      "setName": "XY Black Star Promos",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "XY Trainer Kit Sylveon",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Furious Fists",
+      "setYear": null,
+      "variantCount": 3
+    },
+    {
+      "setName": "Generations",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Guardians Rising",
+      "setYear": null,
+      "variantCount": 4
+    },
+    {
+      "setName": "Forbidden Light",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Unbroken Bonds",
+      "setYear": null,
+      "variantCount": 4
+    },
+    {
+      "setName": "Hidden Fates Shiny Vault",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "Cosmic Eclipse",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "variantCount": 4
+    },
+    {
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "variantCount": 8
+    },
+    {
+      "setName": "Brilliant Stars Trainer Gallery",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Pokémon GO",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Scarlet & Violet Black Star Promos",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "Shrouded Fable",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Surging Sparks",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "variantCount": 9
+    }
+  ],
+  "entries": [
+    {
+      "name": "Sylveon",
+      "setName": "XY Black Star Promos",
+      "setYear": null,
+      "number": "XY04",
+      "variant": null,
+      "label": "#XY04"
+    },
+    {
+      "name": "Sylveon",
+      "setName": "XY Trainer Kit Sylveon",
+      "setYear": null,
+      "number": "15",
+      "variant": null,
+      "label": "#15"
+    },
+    {
+      "name": "Sylveon",
+      "setName": "XY Trainer Kit Sylveon",
+      "setYear": null,
+      "number": "30",
+      "variant": null,
+      "label": "#30"
+    },
+    {
+      "name": "Sylveon",
+      "setName": "Furious Fists",
+      "setYear": null,
+      "number": "72",
+      "variant": "Normal",
+      "label": "#72 · Normal"
+    },
+    {
+      "name": "Sylveon",
+      "setName": "Furious Fists",
+      "setYear": null,
+      "number": "72",
+      "variant": "Reverse Holo",
+      "label": "#72 · Reverse Holo"
+    },
+    {
+      "name": "Sylveon",
+      "setName": "Furious Fists",
+      "setYear": null,
+      "number": "72",
+      "variant": "Cracked Ice",
+      "label": "#72 · Cracked Ice"
+    },
+    {
+      "name": "Sylveon-EX",
+      "setName": "Generations",
+      "setYear": null,
+      "number": "RC21",
+      "variant": null,
+      "label": "#RC21"
+    },
+    {
+      "name": "Sylveon-EX",
+      "setName": "Generations",
+      "setYear": null,
+      "number": "RC32",
+      "variant": null,
+      "label": "#RC32"
+    },
+    {
+      "name": "Sylveon-GX",
+      "setName": "Guardians Rising",
+      "setYear": null,
+      "number": "92",
+      "variant": null,
+      "label": "#92"
+    },
+    {
+      "name": "Sylveon-GX",
+      "setName": "Guardians Rising",
+      "setYear": null,
+      "number": "92a",
+      "variant": null,
+      "label": "#92a"
+    },
+    {
+      "name": "Sylveon-GX",
+      "setName": "Guardians Rising",
+      "setYear": null,
+      "number": "140",
+      "variant": null,
+      "label": "#140"
+    },
+    {
+      "name": "Sylveon-GX",
+      "setName": "Guardians Rising",
+      "setYear": null,
+      "number": "158",
+      "variant": null,
+      "label": "#158"
+    },
+    {
+      "name": "Sylveon",
+      "setName": "Forbidden Light",
+      "setYear": null,
+      "number": "87",
+      "variant": "Normal",
+      "label": "#87 · Normal"
+    },
+    {
+      "name": "Sylveon",
+      "setName": "Forbidden Light",
+      "setYear": null,
+      "number": "87",
+      "variant": "Reverse Holo",
+      "label": "#87 · Reverse Holo"
+    },
+    {
+      "name": "Gardevoir & Sylveon-GX",
+      "setName": "Unbroken Bonds",
+      "setYear": null,
+      "number": "130",
+      "variant": null,
+      "label": "#130"
+    },
+    {
+      "name": "Gardevoir & Sylveon-GX",
+      "setName": "Unbroken Bonds",
+      "setYear": null,
+      "number": "204",
+      "variant": null,
+      "label": "#204"
+    },
+    {
+      "name": "Gardevoir & Sylveon-GX",
+      "setName": "Unbroken Bonds",
+      "setYear": null,
+      "number": "205",
+      "variant": null,
+      "label": "#205"
+    },
+    {
+      "name": "Gardevoir & Sylveon-GX",
+      "setName": "Unbroken Bonds",
+      "setYear": null,
+      "number": "225",
+      "variant": null,
+      "label": "#225"
+    },
+    {
+      "name": "Sylveon-GX",
+      "setName": "Hidden Fates Shiny Vault",
+      "setYear": null,
+      "number": "SV76",
+      "variant": null,
+      "label": "#SV76"
+    },
+    {
+      "name": "Sylveon",
+      "setName": "Cosmic Eclipse",
+      "setYear": null,
+      "number": "155",
+      "variant": "Normal",
+      "label": "#155 · Normal"
+    },
+    {
+      "name": "Sylveon",
+      "setName": "Cosmic Eclipse",
+      "setYear": null,
+      "number": "155",
+      "variant": "Reverse Holo",
+      "label": "#155 · Reverse Holo"
+    },
+    {
+      "name": "Dark Sylveon V",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH134",
+      "variant": "Holo",
+      "label": "#SWSH134 · Holo"
+    },
+    {
+      "name": "Dark Sylveon V",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH134",
+      "variant": "Jumbo",
+      "label": "#SWSH134 · Jumbo"
+    },
+    {
+      "name": "Sylveon V",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH202",
+      "variant": null,
+      "label": "#SWSH202"
+    },
+    {
+      "name": "Sylveon",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH211",
+      "variant": null,
+      "label": "#SWSH211"
+    },
+    {
+      "name": "Sylveon V",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "74",
+      "variant": "Holo",
+      "label": "#74 · Holo"
+    },
+    {
+      "name": "Sylveon V",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "74",
+      "variant": "Play Pokemon",
+      "label": "#74 · Play Pokemon"
+    },
+    {
+      "name": "Sylveon VMAX",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "75",
+      "variant": "Holo",
+      "label": "#75 · Holo"
+    },
+    {
+      "name": "Sylveon VMAX",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "75",
+      "variant": "Play Pokemon",
+      "label": "#75 · Play Pokemon"
+    },
+    {
+      "name": "Sylveon V",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "183",
+      "variant": null,
+      "label": "#183"
+    },
+    {
+      "name": "Sylveon V",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "184",
+      "variant": null,
+      "label": "#184"
+    },
+    {
+      "name": "Sylveon VMAX",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "211",
+      "variant": null,
+      "label": "#211"
+    },
+    {
+      "name": "Sylveon VMAX",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "212",
+      "variant": null,
+      "label": "#212"
+    },
+    {
+      "name": "Sylveon V",
+      "setName": "Brilliant Stars Trainer Gallery",
+      "setYear": null,
+      "number": "TG14",
+      "variant": null,
+      "label": "#TG14"
+    },
+    {
+      "name": "Sylveon VMAX",
+      "setName": "Brilliant Stars Trainer Gallery",
+      "setYear": null,
+      "number": "TG15",
+      "variant": null,
+      "label": "#TG15"
+    },
+    {
+      "name": "Sylveon",
+      "setName": "Pokémon GO",
+      "setYear": null,
+      "number": "35",
+      "variant": "Reverse Holo",
+      "label": "#35 · Reverse Holo"
+    },
+    {
+      "name": "Sylveon",
+      "setName": "Pokémon GO",
+      "setYear": null,
+      "number": "35",
+      "variant": "Holo",
+      "label": "#35 · Holo"
+    },
+    {
+      "name": "Sylveon",
+      "setName": "Scarlet & Violet Black Star Promos",
+      "setYear": null,
+      "number": "172",
+      "variant": null,
+      "label": "#172"
+    },
+    {
+      "name": "Sylveon",
+      "setName": "Shrouded Fable",
+      "setYear": null,
+      "number": "22",
+      "variant": "Normal",
+      "label": "#22 · Normal"
+    },
+    {
+      "name": "Sylveon",
+      "setName": "Shrouded Fable",
+      "setYear": null,
+      "number": "22",
+      "variant": "Reverse Holo",
+      "label": "#22 · Reverse Holo"
+    },
+    {
+      "name": "Sylveon ex",
+      "setName": "Surging Sparks",
+      "setYear": null,
+      "number": "86",
+      "variant": "Holo",
+      "label": "#86 · Holo"
+    },
+    {
+      "name": "Sylveon ex",
+      "setName": "Surging Sparks",
+      "setYear": null,
+      "number": "86",
+      "variant": "Play Pokemon",
+      "label": "#86 · Play Pokemon"
+    },
+    {
+      "name": "Sylveon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "40",
+      "variant": "Reverse Holo",
+      "label": "#40 · Reverse Holo"
+    },
+    {
+      "name": "Sylveon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "40",
+      "variant": "Holo",
+      "label": "#40 · Holo"
+    },
+    {
+      "name": "Sylveon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "40",
+      "variant": "Cosmos",
+      "label": "#40 · Cosmos"
+    },
+    {
+      "name": "Sylveon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "40",
+      "variant": "Master Ball",
+      "label": "#40 · Master Ball"
+    },
+    {
+      "name": "Sylveon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "40",
+      "variant": "Poke Ball",
+      "label": "#40 · Poke Ball"
+    },
+    {
+      "name": "Sylveon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "40",
+      "variant": "Pokemon Day",
+      "label": "#40 · Pokemon Day"
+    },
+    {
+      "name": "Sylveon ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "41",
+      "variant": "Holo",
+      "label": "#41 · Holo"
+    },
+    {
+      "name": "Sylveon ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "41",
+      "variant": "Expansion",
+      "label": "#41 · Expansion"
+    },
+    {
+      "name": "Sylveon ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "156",
+      "variant": null,
+      "label": "#156"
+    }
+  ]
+}

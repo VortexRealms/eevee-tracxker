@@ -1,0 +1,755 @@
+{
+  "_meta": {
+    "source": "https://getsethunter.com/masterset/espeon",
+    "fetchedAt": "2026-07-25",
+    "pokemon": "Espeon",
+    "description": "English Espeon master set checklist from Set Hunter — every variant, chronologically by set",
+    "variantCount": 76,
+    "setCount": 26,
+    "headerVariantCount": null,
+    "headerSetCount": null,
+    "note": "Scraped from public page HTML; use as external reference, not canonical catalogue"
+  },
+  "sets": [
+    {
+      "setName": "Neo Discovery",
+      "setYear": null,
+      "variantCount": 4
+    },
+    {
+      "setName": "Neo Destiny",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Aquapolis",
+      "setYear": null,
+      "variantCount": 4
+    },
+    {
+      "setName": "Sandstorm",
+      "setYear": null,
+      "variantCount": 3
+    },
+    {
+      "setName": "Unseen Forces",
+      "setYear": null,
+      "variantCount": 3
+    },
+    {
+      "setName": "Delta Species",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "POP Series 5",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Rising Rivals",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "HS—Undaunted",
+      "setYear": null,
+      "variantCount": 5
+    },
+    {
+      "setName": "Call of Legends",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "BW Black Star Promos",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "variantCount": 4
+    },
+    {
+      "setName": "Plasma Freeze",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "BREAKpoint",
+      "setYear": null,
+      "variantCount": 3
+    },
+    {
+      "setName": "Sun & Moon",
+      "setYear": null,
+      "variantCount": 3
+    },
+    {
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "variantCount": 4
+    },
+    {
+      "setName": "Lost Thunder",
+      "setYear": null,
+      "variantCount": 4
+    },
+    {
+      "setName": "Unified Minds",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Hidden Fates Shiny Vault",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "variantCount": 6
+    },
+    {
+      "setName": "Fusion Strike",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "Scarlet & Violet Black Star Promos",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "Obsidian Flames",
+      "setYear": null,
+      "variantCount": 3
+    },
+    {
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "variantCount": 9
+    }
+  ],
+  "entries": [
+    {
+      "name": "Espeon",
+      "setName": "Neo Discovery",
+      "setYear": null,
+      "number": "1",
+      "variant": "1st Edition",
+      "label": "#1 · 1st Edition"
+    },
+    {
+      "name": "Espeon",
+      "setName": "Neo Discovery",
+      "setYear": null,
+      "number": "1",
+      "variant": "Unlimited",
+      "label": "#1 · Unlimited"
+    },
+    {
+      "name": "Espeon",
+      "setName": "Neo Discovery",
+      "setYear": null,
+      "number": "20",
+      "variant": "1st Edition",
+      "label": "#20 · 1st Edition"
+    },
+    {
+      "name": "Espeon",
+      "setName": "Neo Discovery",
+      "setYear": null,
+      "number": "20",
+      "variant": "Unlimited",
+      "label": "#20 · Unlimited"
+    },
+    {
+      "name": "Dark Espeon",
+      "setName": "Neo Destiny",
+      "setYear": null,
+      "number": "4",
+      "variant": "1st Edition",
+      "label": "#4 · 1st Edition"
+    },
+    {
+      "name": "Dark Espeon",
+      "setName": "Neo Destiny",
+      "setYear": null,
+      "number": "4",
+      "variant": "Unlimited",
+      "label": "#4 · Unlimited"
+    },
+    {
+      "name": "Espeon",
+      "setName": "Aquapolis",
+      "setYear": null,
+      "number": "11",
+      "variant": "Normal",
+      "label": "#11 · Normal"
+    },
+    {
+      "name": "Espeon",
+      "setName": "Aquapolis",
+      "setYear": null,
+      "number": "11",
+      "variant": "Reverse Holo",
+      "label": "#11 · Reverse Holo"
+    },
+    {
+      "name": "Espeon",
+      "setName": "Aquapolis",
+      "setYear": null,
+      "number": "11",
+      "variant": "Jumbo",
+      "label": "#11 · Jumbo"
+    },
+    {
+      "name": "Espeon",
+      "setName": "Aquapolis",
+      "setYear": null,
+      "number": "H9",
+      "variant": null,
+      "label": "#H9"
+    },
+    {
+      "name": "Espeon",
+      "setName": "Sandstorm",
+      "setYear": null,
+      "number": "16",
+      "variant": "Normal",
+      "label": "#16 · Normal"
+    },
+    {
+      "name": "Espeon",
+      "setName": "Sandstorm",
+      "setYear": null,
+      "number": "16",
+      "variant": "Reverse Holo",
+      "label": "#16 · Reverse Holo"
+    },
+    {
+      "name": "Espeon",
+      "setName": "Sandstorm",
+      "setYear": null,
+      "number": "16",
+      "variant": "EX Battle Stadium Deck exclusive",
+      "label": "#16 · EX Battle Stadium Deck exclusive"
+    },
+    {
+      "name": "Espeon ex",
+      "setName": "Unseen Forces",
+      "setYear": null,
+      "number": "102",
+      "variant": "Holo",
+      "label": "#102 · Holo"
+    },
+    {
+      "name": "Espeon ex",
+      "setName": "Unseen Forces",
+      "setYear": null,
+      "number": "102",
+      "variant": "World Championship Deck 2006 (Jimmy Ballard)",
+      "label": "#102 · World Championship Deck 2006 (Jimmy Ballard)"
+    },
+    {
+      "name": "Espeon ex",
+      "setName": "Unseen Forces",
+      "setYear": null,
+      "number": "102",
+      "variant": "World Championship Deck 2007 (Tom Roos)",
+      "label": "#102 · World Championship Deck 2007 (Tom Roos)"
+    },
+    {
+      "name": "Espeon δ",
+      "setName": "Delta Species",
+      "setYear": null,
+      "number": "4",
+      "variant": "Reverse Holo",
+      "label": "#4 · Reverse Holo"
+    },
+    {
+      "name": "Espeon δ",
+      "setName": "Delta Species",
+      "setYear": null,
+      "number": "4",
+      "variant": "Holo",
+      "label": "#4 · Holo"
+    },
+    {
+      "name": "Espeon ☆",
+      "setName": "POP Series 5",
+      "setYear": null,
+      "number": "16",
+      "variant": null,
+      "label": "#16"
+    },
+    {
+      "name": "Espeon",
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "number": "18",
+      "variant": "Normal",
+      "label": "#18 · Normal"
+    },
+    {
+      "name": "Espeon",
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "number": "18",
+      "variant": "Reverse Holo",
+      "label": "#18 · Reverse Holo"
+    },
+    {
+      "name": "Espeon E4",
+      "setName": "Rising Rivals",
+      "setYear": null,
+      "number": "18",
+      "variant": "Normal",
+      "label": "#18 · Normal"
+    },
+    {
+      "name": "Espeon E4",
+      "setName": "Rising Rivals",
+      "setYear": null,
+      "number": "18",
+      "variant": "Reverse Holo",
+      "label": "#18 · Reverse Holo"
+    },
+    {
+      "name": "Espeon",
+      "setName": "HS—Undaunted",
+      "setYear": null,
+      "number": "2",
+      "variant": "Normal",
+      "label": "#2 · Normal"
+    },
+    {
+      "name": "Espeon",
+      "setName": "HS—Undaunted",
+      "setYear": null,
+      "number": "2",
+      "variant": "Reverse Holo",
+      "label": "#2 · Reverse Holo"
+    },
+    {
+      "name": "Espeon",
+      "setName": "HS—Undaunted",
+      "setYear": null,
+      "number": "2",
+      "variant": "Holo",
+      "label": "#2 · Holo"
+    },
+    {
+      "name": "Espeon",
+      "setName": "HS—Undaunted",
+      "setYear": null,
+      "number": "2",
+      "variant": "Cracked Ice",
+      "label": "#2 · Cracked Ice"
+    },
+    {
+      "name": "Espeon",
+      "setName": "HS—Undaunted",
+      "setYear": null,
+      "number": "81",
+      "variant": null,
+      "label": "#81"
+    },
+    {
+      "name": "Espeon",
+      "setName": "Call of Legends",
+      "setYear": null,
+      "number": "4",
+      "variant": "Reverse Holo",
+      "label": "#4 · Reverse Holo"
+    },
+    {
+      "name": "Espeon",
+      "setName": "Call of Legends",
+      "setYear": null,
+      "number": "4",
+      "variant": "Holo",
+      "label": "#4 · Holo"
+    },
+    {
+      "name": "Espeon",
+      "setName": "BW Black Star Promos",
+      "setYear": null,
+      "number": "BW92",
+      "variant": null,
+      "label": "#BW92"
+    },
+    {
+      "name": "Espeon",
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "number": "48",
+      "variant": "Normal",
+      "label": "#48 · Normal"
+    },
+    {
+      "name": "Espeon",
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "number": "48",
+      "variant": "Reverse Holo",
+      "label": "#48 · Reverse Holo"
+    },
+    {
+      "name": "Espeon",
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "number": "48",
+      "variant": "League",
+      "label": "#48 · League"
+    },
+    {
+      "name": "Espeon",
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "number": "48",
+      "variant": "Staff",
+      "label": "#48 · Staff"
+    },
+    {
+      "name": "Espeon",
+      "setName": "Plasma Freeze",
+      "setYear": null,
+      "number": "48",
+      "variant": "Normal",
+      "label": "#48 · Normal"
+    },
+    {
+      "name": "Espeon",
+      "setName": "Plasma Freeze",
+      "setYear": null,
+      "number": "48",
+      "variant": "Reverse Holo",
+      "label": "#48 · Reverse Holo"
+    },
+    {
+      "name": "Espeon-EX",
+      "setName": "BREAKpoint",
+      "setYear": null,
+      "number": "52",
+      "variant": "Holo",
+      "label": "#52 · Holo"
+    },
+    {
+      "name": "Espeon-EX",
+      "setName": "BREAKpoint",
+      "setYear": null,
+      "number": "52",
+      "variant": "World Championship Deck 2017 (Kabu Fukase)",
+      "label": "#52 · World Championship Deck 2017 (Kabu Fukase)"
+    },
+    {
+      "name": "Espeon-EX",
+      "setName": "BREAKpoint",
+      "setYear": null,
+      "number": "117",
+      "variant": null,
+      "label": "#117"
+    },
+    {
+      "name": "Espeon-GX",
+      "setName": "Sun & Moon",
+      "setYear": null,
+      "number": "61",
+      "variant": null,
+      "label": "#61"
+    },
+    {
+      "name": "Espeon-GX",
+      "setName": "Sun & Moon",
+      "setYear": null,
+      "number": "140",
+      "variant": null,
+      "label": "#140"
+    },
+    {
+      "name": "Espeon-GX",
+      "setName": "Sun & Moon",
+      "setYear": null,
+      "number": "152",
+      "variant": null,
+      "label": "#152"
+    },
+    {
+      "name": "Espeon & Deoxys-GX",
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "number": "SM240",
+      "variant": "Holo",
+      "label": "#SM240 · Holo"
+    },
+    {
+      "name": "Espeon & Deoxys-GX",
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "number": "SM240",
+      "variant": "Jumbo",
+      "label": "#SM240 · Jumbo"
+    },
+    {
+      "name": "Espeon-GX",
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "number": "SM35",
+      "variant": "Holo",
+      "label": "#SM35 · Holo"
+    },
+    {
+      "name": "Espeon-GX",
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "number": "SM35",
+      "variant": "Jumbo",
+      "label": "#SM35 · Jumbo"
+    },
+    {
+      "name": "Espeon",
+      "setName": "Lost Thunder",
+      "setYear": null,
+      "number": "89",
+      "variant": "Normal",
+      "label": "#89 · Normal"
+    },
+    {
+      "name": "Espeon",
+      "setName": "Lost Thunder",
+      "setYear": null,
+      "number": "89",
+      "variant": "Reverse Holo",
+      "label": "#89 · Reverse Holo"
+    },
+    {
+      "name": "Espeon",
+      "setName": "Lost Thunder",
+      "setYear": null,
+      "number": "89",
+      "variant": "Cosmos",
+      "label": "#89 · Cosmos"
+    },
+    {
+      "name": "Espeon",
+      "setName": "Lost Thunder",
+      "setYear": null,
+      "number": "89",
+      "variant": "Mewtwo",
+      "label": "#89 · Mewtwo"
+    },
+    {
+      "name": "Espeon & Deoxys-GX",
+      "setName": "Unified Minds",
+      "setYear": null,
+      "number": "72",
+      "variant": "Holo",
+      "label": "#72 · Holo"
+    },
+    {
+      "name": "Espeon & Deoxys-GX",
+      "setName": "Unified Minds",
+      "setYear": null,
+      "number": "72",
+      "variant": "World Championship Deck 2019 (Henry Brand)",
+      "label": "#72 · World Championship Deck 2019 (Henry Brand)"
+    },
+    {
+      "name": "Espeon-GX",
+      "setName": "Hidden Fates Shiny Vault",
+      "setYear": null,
+      "number": "SV60",
+      "variant": null,
+      "label": "#SV60"
+    },
+    {
+      "name": "Espeon",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH174",
+      "variant": null,
+      "label": "#SWSH174"
+    },
+    {
+      "name": "Espeon V",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH201",
+      "variant": null,
+      "label": "#SWSH201"
+    },
+    {
+      "name": "Espeon V",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "64",
+      "variant": "Holo",
+      "label": "#64 · Holo"
+    },
+    {
+      "name": "Espeon V",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "64",
+      "variant": "Play Pokemon",
+      "label": "#64 · Play Pokemon"
+    },
+    {
+      "name": "Espeon VMAX",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "65",
+      "variant": "Holo",
+      "label": "#65 · Holo"
+    },
+    {
+      "name": "Espeon VMAX",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "65",
+      "variant": "Play Pokemon",
+      "label": "#65 · Play Pokemon"
+    },
+    {
+      "name": "Espeon V",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "179",
+      "variant": null,
+      "label": "#179"
+    },
+    {
+      "name": "Espeon V",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "180",
+      "variant": null,
+      "label": "#180"
+    },
+    {
+      "name": "Espeon VMAX",
+      "setName": "Fusion Strike",
+      "setYear": null,
+      "number": "270",
+      "variant": null,
+      "label": "#270"
+    },
+    {
+      "name": "Espeon ex",
+      "setName": "Scarlet & Violet Black Star Promos",
+      "setYear": null,
+      "number": "175",
+      "variant": null,
+      "label": "#175"
+    },
+    {
+      "name": "Espeon",
+      "setName": "Obsidian Flames",
+      "setYear": null,
+      "number": "86",
+      "variant": "Normal",
+      "label": "#86 · Normal"
+    },
+    {
+      "name": "Espeon",
+      "setName": "Obsidian Flames",
+      "setYear": null,
+      "number": "86",
+      "variant": "Reverse Holo",
+      "label": "#86 · Reverse Holo"
+    },
+    {
+      "name": "Espeon",
+      "setName": "Obsidian Flames",
+      "setYear": null,
+      "number": "86",
+      "variant": "Expansion",
+      "label": "#86 · Expansion"
+    },
+    {
+      "name": "Espeon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "33",
+      "variant": "Reverse Holo",
+      "label": "#33 · Reverse Holo"
+    },
+    {
+      "name": "Espeon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "33",
+      "variant": "Holo",
+      "label": "#33 · Holo"
+    },
+    {
+      "name": "Espeon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "33",
+      "variant": "Cosmos",
+      "label": "#33 · Cosmos"
+    },
+    {
+      "name": "Espeon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "33",
+      "variant": "Master Ball",
+      "label": "#33 · Master Ball"
+    },
+    {
+      "name": "Espeon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "33",
+      "variant": "Poke Ball",
+      "label": "#33 · Poke Ball"
+    },
+    {
+      "name": "Espeon ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "34",
+      "variant": "Holo",
+      "label": "#34 · Holo"
+    },
+    {
+      "name": "Espeon ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "34",
+      "variant": "Expansion",
+      "label": "#34 · Expansion"
+    },
+    {
+      "name": "Espeon ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "34",
+      "variant": "Play Pokemon",
+      "label": "#34 · Play Pokemon"
+    },
+    {
+      "name": "Espeon ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "155",
+      "variant": null,
+      "label": "#155"
+    }
+  ]
+}

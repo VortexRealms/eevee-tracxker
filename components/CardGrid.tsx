@@ -6,6 +6,7 @@ import {
   getTcgPlayerSearchUrl,
 } from "../lib/marketplace-search";
 import { getPriceForCard, parseCardIdAndVariant } from "../lib/cards";
+import { MASTER_SET_TARGET } from "../lib/collection-target";
 import { metaToExchangeRates } from "../lib/exchange-rates";
 import {
   formatDisplayPrice,
@@ -103,11 +104,16 @@ export function CardGrid({
 
   const counts = useMemo(() => {
     let collectionValue = 0;
-    const ownedCardIds = new Set<string>();
+    const ownedVariantKeys = new Set<string>();
+
     for (const row of collection) {
       if (!row.owned) continue;
       const { cardId, variant } = parseCardIdAndVariant(row.cardId);
-      ownedCardIds.add(cardId);
+
+      const key = `${cardId}:${variant}`;
+      if (ownedVariantKeys.has(key)) continue;
+      ownedVariantKeys.add(key);
+
       const card = cards.find((c) => c.id === cardId);
       if (card && exchangeRates) {
         const price = getPriceForCard(card, variant, prices);
@@ -115,8 +121,9 @@ export function CardGrid({
         if (amount != null) collectionValue += amount;
       }
     }
-    const owned = ownedCardIds.size;
-    const missing = cards.filter((c) => !ownedCardIds.has(c.id)).length;
+
+    const owned = ownedVariantKeys.size;
+    const missing = Math.max(0, MASTER_SET_TARGET - owned);
     return { owned, missing, collectionValue };
   }, [cards, collection, currency, exchangeRates, prices]);
 
@@ -175,7 +182,7 @@ export function CardGrid({
           </div>
           <div className="stats-row">
             <div className="stat-pill">
-              <span>{cards.length}</span>
+              <span>{MASTER_SET_TARGET}</span>
               <small>total</small>
             </div>
             {!isPublic && (

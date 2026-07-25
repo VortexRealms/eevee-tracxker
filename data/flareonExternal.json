@@ -1,0 +1,789 @@
+{
+  "_meta": {
+    "source": "https://getsethunter.com/masterset/flareon",
+    "fetchedAt": "2026-07-25",
+    "pokemon": "Flareon",
+    "description": "English Flareon master set checklist from Set Hunter — every variant, chronologically by set",
+    "variantCount": 79,
+    "setCount": 28,
+    "headerVariantCount": null,
+    "headerSetCount": null,
+    "note": "Scraped from public page HTML; use as external reference, not canonical catalogue"
+  },
+  "sets": [
+    {
+      "setName": "Jungle",
+      "setYear": null,
+      "variantCount": 4
+    },
+    {
+      "setName": "Team Rocket",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Neo Destiny",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Legendary Collection",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Skyridge",
+      "setYear": null,
+      "variantCount": 3
+    },
+    {
+      "setName": "Sandstorm",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Unseen Forces",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Delta Species",
+      "setYear": null,
+      "variantCount": 4
+    },
+    {
+      "setName": "POP Series 3",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Power Keepers",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Rising Rivals",
+      "setYear": null,
+      "variantCount": 5
+    },
+    {
+      "setName": "HS—Undaunted",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Call of Legends",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "BW Black Star Promos",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "variantCount": 4
+    },
+    {
+      "setName": "Plasma Freeze",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Ancient Origins",
+      "setYear": null,
+      "variantCount": 3
+    },
+    {
+      "setName": "Generations",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "variantCount": 5
+    },
+    {
+      "setName": "Cosmic Eclipse",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "variantCount": 6
+    },
+    {
+      "setName": "Vivid Voltage",
+      "setYear": null,
+      "variantCount": 3
+    },
+    {
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "variantCount": 3
+    },
+    {
+      "setName": "Brilliant Stars Trainer Gallery",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "Scarlet & Violet Black Star Promos",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "151",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "variantCount": 9
+    }
+  ],
+  "entries": [
+    {
+      "name": "Flareon",
+      "setName": "Jungle",
+      "setYear": null,
+      "number": "3",
+      "variant": "1st Edition",
+      "label": "#3 · 1st Edition"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Jungle",
+      "setYear": null,
+      "number": "3",
+      "variant": "Unlimited",
+      "label": "#3 · Unlimited"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Jungle",
+      "setYear": null,
+      "number": "19",
+      "variant": "1st Edition",
+      "label": "#19 · 1st Edition"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Jungle",
+      "setYear": null,
+      "number": "19",
+      "variant": "Unlimited",
+      "label": "#19 · Unlimited"
+    },
+    {
+      "name": "Dark Flareon",
+      "setName": "Team Rocket",
+      "setYear": null,
+      "number": "35",
+      "variant": "1st Edition",
+      "label": "#35 · 1st Edition"
+    },
+    {
+      "name": "Dark Flareon",
+      "setName": "Team Rocket",
+      "setYear": null,
+      "number": "35",
+      "variant": "Unlimited",
+      "label": "#35 · Unlimited"
+    },
+    {
+      "name": "Light Flareon",
+      "setName": "Neo Destiny",
+      "setYear": null,
+      "number": "46",
+      "variant": "1st Edition",
+      "label": "#46 · 1st Edition"
+    },
+    {
+      "name": "Light Flareon",
+      "setName": "Neo Destiny",
+      "setYear": null,
+      "number": "46",
+      "variant": "Unlimited",
+      "label": "#46 · Unlimited"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Legendary Collection",
+      "setYear": null,
+      "number": "10",
+      "variant": "Reverse Holo",
+      "label": "#10 · Reverse Holo"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Legendary Collection",
+      "setYear": null,
+      "number": "10",
+      "variant": "Holo",
+      "label": "#10 · Holo"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Skyridge",
+      "setYear": null,
+      "number": "8",
+      "variant": "Normal",
+      "label": "#8 · Normal"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Skyridge",
+      "setYear": null,
+      "number": "8",
+      "variant": "Reverse Holo",
+      "label": "#8 · Reverse Holo"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Skyridge",
+      "setYear": null,
+      "number": "H7",
+      "variant": null,
+      "label": "#H7"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Sandstorm",
+      "setYear": null,
+      "number": "5",
+      "variant": "Reverse Holo",
+      "label": "#5 · Reverse Holo"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Sandstorm",
+      "setYear": null,
+      "number": "5",
+      "variant": "Holo",
+      "label": "#5 · Holo"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Unseen Forces",
+      "setYear": null,
+      "number": "5",
+      "variant": "Reverse Holo",
+      "label": "#5 · Reverse Holo"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Unseen Forces",
+      "setYear": null,
+      "number": "5",
+      "variant": "Holo",
+      "label": "#5 · Holo"
+    },
+    {
+      "name": "Flareon δ",
+      "setName": "Delta Species",
+      "setYear": null,
+      "number": "5",
+      "variant": "Reverse Holo",
+      "label": "#5 · Reverse Holo"
+    },
+    {
+      "name": "Flareon δ",
+      "setName": "Delta Species",
+      "setYear": null,
+      "number": "5",
+      "variant": "Holo",
+      "label": "#5 · Holo"
+    },
+    {
+      "name": "Flareon ex",
+      "setName": "Delta Species",
+      "setYear": null,
+      "number": "108",
+      "variant": "Holo",
+      "label": "#108 · Holo"
+    },
+    {
+      "name": "Flareon ex",
+      "setName": "Delta Species",
+      "setYear": null,
+      "number": "108",
+      "variant": "World Championship Deck 2006 (Jimmy Ballard)",
+      "label": "#108 · World Championship Deck 2006 (Jimmy Ballard)"
+    },
+    {
+      "name": "Flareon",
+      "setName": "POP Series 3",
+      "setYear": null,
+      "number": "2",
+      "variant": "Normal",
+      "label": "#2 · Normal"
+    },
+    {
+      "name": "Flareon",
+      "setName": "POP Series 3",
+      "setYear": null,
+      "number": "2",
+      "variant": "Holo",
+      "label": "#2 · Holo"
+    },
+    {
+      "name": "Flareon ☆",
+      "setName": "Power Keepers",
+      "setYear": null,
+      "number": "100",
+      "variant": null,
+      "label": "#100"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "number": "19",
+      "variant": "Normal",
+      "label": "#19 · Normal"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "number": "19",
+      "variant": "Reverse Holo",
+      "label": "#19 · Reverse Holo"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Rising Rivals",
+      "setYear": null,
+      "number": "19",
+      "variant": "Normal",
+      "label": "#19 · Normal"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Rising Rivals",
+      "setYear": null,
+      "number": "19",
+      "variant": "Reverse Holo",
+      "label": "#19 · Reverse Holo"
+    },
+    {
+      "name": "Flareon E4",
+      "setName": "Rising Rivals",
+      "setYear": null,
+      "number": "60",
+      "variant": "Normal",
+      "label": "#60 · Normal"
+    },
+    {
+      "name": "Flareon E4",
+      "setName": "Rising Rivals",
+      "setYear": null,
+      "number": "60",
+      "variant": "Reverse Holo",
+      "label": "#60 · Reverse Holo"
+    },
+    {
+      "name": "Flareon E4",
+      "setName": "Rising Rivals",
+      "setYear": null,
+      "number": "60",
+      "variant": "Cracked Ice",
+      "label": "#60 · Cracked Ice"
+    },
+    {
+      "name": "Flareon",
+      "setName": "HS—Undaunted",
+      "setYear": null,
+      "number": "26",
+      "variant": "Normal",
+      "label": "#26 · Normal"
+    },
+    {
+      "name": "Flareon",
+      "setName": "HS—Undaunted",
+      "setYear": null,
+      "number": "26",
+      "variant": "Reverse Holo",
+      "label": "#26 · Reverse Holo"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Call of Legends",
+      "setYear": null,
+      "number": "44",
+      "variant": "Normal",
+      "label": "#44 · Normal"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Call of Legends",
+      "setYear": null,
+      "number": "44",
+      "variant": "Reverse Holo",
+      "label": "#44 · Reverse Holo"
+    },
+    {
+      "name": "Flareon",
+      "setName": "BW Black Star Promos",
+      "setYear": null,
+      "number": "BW88",
+      "variant": null,
+      "label": "#BW88"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "number": "12",
+      "variant": "Normal",
+      "label": "#12 · Normal"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "number": "12",
+      "variant": "Reverse Holo",
+      "label": "#12 · Reverse Holo"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "number": "12",
+      "variant": "League",
+      "label": "#12 · League"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "number": "12",
+      "variant": "Staff",
+      "label": "#12 · Staff"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Plasma Freeze",
+      "setYear": null,
+      "number": "12",
+      "variant": "Normal",
+      "label": "#12 · Normal"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Plasma Freeze",
+      "setYear": null,
+      "number": "12",
+      "variant": "Reverse Holo",
+      "label": "#12 · Reverse Holo"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Ancient Origins",
+      "setYear": null,
+      "number": "13",
+      "variant": "Normal",
+      "label": "#13 · Normal"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Ancient Origins",
+      "setYear": null,
+      "number": "13",
+      "variant": "Reverse Holo",
+      "label": "#13 · Reverse Holo"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Ancient Origins",
+      "setYear": null,
+      "number": "13",
+      "variant": "Cosmos",
+      "label": "#13 · Cosmos"
+    },
+    {
+      "name": "Flareon-EX",
+      "setName": "Generations",
+      "setYear": null,
+      "number": "RC28",
+      "variant": null,
+      "label": "#RC28"
+    },
+    {
+      "name": "Flareon-EX",
+      "setName": "Generations",
+      "setYear": null,
+      "number": "RC6",
+      "variant": null,
+      "label": "#RC6"
+    },
+    {
+      "name": "Flareon-GX",
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "number": "SM171",
+      "variant": "Holo",
+      "label": "#SM171 · Holo"
+    },
+    {
+      "name": "Flareon-GX",
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "number": "SM171",
+      "variant": "Jumbo",
+      "label": "#SM171 · Jumbo"
+    },
+    {
+      "name": "Flareon",
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "number": "SM186",
+      "variant": "Normal",
+      "label": "#SM186 · Normal"
+    },
+    {
+      "name": "Flareon",
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "number": "SM186",
+      "variant": "Battle Academy (Charizard Stamp 27)",
+      "label": "#SM186 · Battle Academy (Charizard Stamp 27)"
+    },
+    {
+      "name": "Flareon",
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "number": "SM186",
+      "variant": "Battle Academy (Charizard Stamp 44)",
+      "label": "#SM186 · Battle Academy (Charizard Stamp 44)"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Cosmic Eclipse",
+      "setYear": null,
+      "number": "25",
+      "variant": "Normal",
+      "label": "#25 · Normal"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Cosmic Eclipse",
+      "setYear": null,
+      "number": "25",
+      "variant": "Reverse Holo",
+      "label": "#25 · Reverse Holo"
+    },
+    {
+      "name": "Flareon",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH041",
+      "variant": null,
+      "label": "#SWSH041"
+    },
+    {
+      "name": "Flareon V",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH149",
+      "variant": "Holo",
+      "label": "#SWSH149 · Holo"
+    },
+    {
+      "name": "Flareon V",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH149",
+      "variant": "Play Pokemon",
+      "label": "#SWSH149 · Play Pokemon"
+    },
+    {
+      "name": "Flareon V",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH179",
+      "variant": null,
+      "label": "#SWSH179"
+    },
+    {
+      "name": "Flareon VMAX",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH180",
+      "variant": "Holo",
+      "label": "#SWSH180 · Holo"
+    },
+    {
+      "name": "Flareon VMAX",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH180",
+      "variant": "Jumbo",
+      "label": "#SWSH180 · Jumbo"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Vivid Voltage",
+      "setYear": null,
+      "number": "26",
+      "variant": "Normal",
+      "label": "#26 · Normal"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Vivid Voltage",
+      "setYear": null,
+      "number": "26",
+      "variant": "Reverse Holo",
+      "label": "#26 · Reverse Holo"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Vivid Voltage",
+      "setYear": null,
+      "number": "26",
+      "variant": "Cosmos",
+      "label": "#26 · Cosmos"
+    },
+    {
+      "name": "Flareon VMAX",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "18",
+      "variant": "Holo",
+      "label": "#18 · Holo"
+    },
+    {
+      "name": "Flareon VMAX",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "18",
+      "variant": "Play Pokemon",
+      "label": "#18 · Play Pokemon"
+    },
+    {
+      "name": "Flareon V",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "169",
+      "variant": null,
+      "label": "#169"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Brilliant Stars Trainer Gallery",
+      "setYear": null,
+      "number": "TG01",
+      "variant": null,
+      "label": "#TG01"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Scarlet & Violet Black Star Promos",
+      "setYear": null,
+      "number": "167",
+      "variant": null,
+      "label": "#167"
+    },
+    {
+      "name": "Flareon",
+      "setName": "151",
+      "setYear": null,
+      "number": "136",
+      "variant": "Reverse Holo",
+      "label": "#136 · Reverse Holo"
+    },
+    {
+      "name": "Flareon",
+      "setName": "151",
+      "setYear": null,
+      "number": "136",
+      "variant": "Holo",
+      "label": "#136 · Holo"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "13",
+      "variant": "Reverse Holo",
+      "label": "#13 · Reverse Holo"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "13",
+      "variant": "Holo",
+      "label": "#13 · Holo"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "13",
+      "variant": "Cosmos",
+      "label": "#13 · Cosmos"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "13",
+      "variant": "Master Ball",
+      "label": "#13 · Master Ball"
+    },
+    {
+      "name": "Flareon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "13",
+      "variant": "Poke Ball",
+      "label": "#13 · Poke Ball"
+    },
+    {
+      "name": "Flareon ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "14",
+      "variant": "Holo",
+      "label": "#14 · Holo"
+    },
+    {
+      "name": "Flareon ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "14",
+      "variant": "Expansion",
+      "label": "#14 · Expansion"
+    },
+    {
+      "name": "Flareon ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "14",
+      "variant": "Play Pokemon",
+      "label": "#14 · Play Pokemon"
+    },
+    {
+      "name": "Flareon ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "146",
+      "variant": null,
+      "label": "#146"
+    }
+  ]
+}

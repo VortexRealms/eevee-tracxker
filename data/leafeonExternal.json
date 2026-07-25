@@ -1,0 +1,613 @@
+{
+  "_meta": {
+    "source": "https://getsethunter.com/masterset/leafeon",
+    "fetchedAt": "2026-07-25",
+    "pokemon": "Leafeon",
+    "description": "English Leafeon master set checklist from Set Hunter — every variant, chronologically by set",
+    "variantCount": 62,
+    "setCount": 20,
+    "headerVariantCount": null,
+    "headerSetCount": null,
+    "note": "Scraped from public page HTML; use as external reference, not canonical catalogue"
+  },
+  "sets": [
+    {
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "variantCount": 7
+    },
+    {
+      "setName": "Rising Rivals",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "HS—Undaunted",
+      "setYear": null,
+      "variantCount": 4
+    },
+    {
+      "setName": "Call of Legends",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "BW Black Star Promos",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Plasma Freeze",
+      "setYear": null,
+      "variantCount": 5
+    },
+    {
+      "setName": "Furious Fists",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Generations",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Ultra Prism",
+      "setYear": null,
+      "variantCount": 3
+    },
+    {
+      "setName": "Hidden Fates Shiny Vault",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "variantCount": 5
+    },
+    {
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "variantCount": 8
+    },
+    {
+      "setName": "Astral Radiance",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Scarlet & Violet Black Star Promos",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "Crown Zenith",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Crown Zenith Galarian Gallery",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "Twilight Masquerade",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "variantCount": 9
+    }
+  ],
+  "entries": [
+    {
+      "name": "Leafeon",
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "number": "7",
+      "variant": "Reverse Holo",
+      "label": "#7 · Reverse Holo"
+    },
+    {
+      "name": "Leafeon",
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "number": "7",
+      "variant": "Holo",
+      "label": "#7 · Holo"
+    },
+    {
+      "name": "Leafeon",
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "number": "24",
+      "variant": "Normal",
+      "label": "#24 · Normal"
+    },
+    {
+      "name": "Leafeon",
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "number": "24",
+      "variant": "Reverse Holo",
+      "label": "#24 · Reverse Holo"
+    },
+    {
+      "name": "Leafeon",
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "number": "24",
+      "variant": "Holo",
+      "label": "#24 · Holo"
+    },
+    {
+      "name": "Leafeon",
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "number": "24",
+      "variant": "Burger King",
+      "label": "#24 · Burger King"
+    },
+    {
+      "name": "Leafeon LV.X",
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "number": "99",
+      "variant": null,
+      "label": "#99"
+    },
+    {
+      "name": "Leafeon",
+      "setName": "Rising Rivals",
+      "setYear": null,
+      "number": "45",
+      "variant": "Normal",
+      "label": "#45 · Normal"
+    },
+    {
+      "name": "Leafeon",
+      "setName": "Rising Rivals",
+      "setYear": null,
+      "number": "45",
+      "variant": "Reverse Holo",
+      "label": "#45 · Reverse Holo"
+    },
+    {
+      "name": "Leafeon",
+      "setName": "HS—Undaunted",
+      "setYear": null,
+      "number": "17",
+      "variant": "Normal",
+      "label": "#17 · Normal"
+    },
+    {
+      "name": "Leafeon",
+      "setName": "HS—Undaunted",
+      "setYear": null,
+      "number": "17",
+      "variant": "Reverse Holo",
+      "label": "#17 · Reverse Holo"
+    },
+    {
+      "name": "Leafeon",
+      "setName": "HS—Undaunted",
+      "setYear": null,
+      "number": "17",
+      "variant": "Expansion Staff",
+      "label": "#17 · Expansion Staff"
+    },
+    {
+      "name": "Leafeon",
+      "setName": "HS—Undaunted",
+      "setYear": null,
+      "number": "17",
+      "variant": "Expansion",
+      "label": "#17 · Expansion"
+    },
+    {
+      "name": "Leafeon",
+      "setName": "Call of Legends",
+      "setYear": null,
+      "number": "13",
+      "variant": "Reverse Holo",
+      "label": "#13 · Reverse Holo"
+    },
+    {
+      "name": "Leafeon",
+      "setName": "Call of Legends",
+      "setYear": null,
+      "number": "13",
+      "variant": "Holo",
+      "label": "#13 · Holo"
+    },
+    {
+      "name": "Leafeon",
+      "setName": "BW Black Star Promos",
+      "setYear": null,
+      "number": "BW87",
+      "variant": null,
+      "label": "#BW87"
+    },
+    {
+      "name": "Leafeon",
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "number": "6",
+      "variant": "Normal",
+      "label": "#6 · Normal"
+    },
+    {
+      "name": "Leafeon",
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "number": "6",
+      "variant": "Reverse Holo",
+      "label": "#6 · Reverse Holo"
+    },
+    {
+      "name": "Leafeon",
+      "setName": "Plasma Freeze",
+      "setYear": null,
+      "number": "11",
+      "variant": "Normal",
+      "label": "#11 · Normal"
+    },
+    {
+      "name": "Leafeon",
+      "setName": "Plasma Freeze",
+      "setYear": null,
+      "number": "11",
+      "variant": "Reverse Holo",
+      "label": "#11 · Reverse Holo"
+    },
+    {
+      "name": "Leafeon",
+      "setName": "Plasma Freeze",
+      "setYear": null,
+      "number": "11",
+      "variant": "Cracked Ice",
+      "label": "#11 · Cracked Ice"
+    },
+    {
+      "name": "Leafeon",
+      "setName": "Plasma Freeze",
+      "setYear": null,
+      "number": "11",
+      "variant": "League",
+      "label": "#11 · League"
+    },
+    {
+      "name": "Leafeon",
+      "setName": "Plasma Freeze",
+      "setYear": null,
+      "number": "11",
+      "variant": "Staff",
+      "label": "#11 · Staff"
+    },
+    {
+      "name": "Leafeon",
+      "setName": "Furious Fists",
+      "setYear": null,
+      "number": "7",
+      "variant": "Normal",
+      "label": "#7 · Normal"
+    },
+    {
+      "name": "Leafeon",
+      "setName": "Furious Fists",
+      "setYear": null,
+      "number": "7",
+      "variant": "Reverse Holo",
+      "label": "#7 · Reverse Holo"
+    },
+    {
+      "name": "Leafeon-EX",
+      "setName": "Generations",
+      "setYear": null,
+      "number": "10",
+      "variant": null,
+      "label": "#10"
+    },
+    {
+      "name": "Leafeon-GX",
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "number": "SM146",
+      "variant": null,
+      "label": "#SM146"
+    },
+    {
+      "name": "Leafeon",
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "number": "SM237",
+      "variant": null,
+      "label": "#SM237"
+    },
+    {
+      "name": "Leafeon-GX",
+      "setName": "Ultra Prism",
+      "setYear": null,
+      "number": "13",
+      "variant": null,
+      "label": "#13"
+    },
+    {
+      "name": "Leafeon-GX",
+      "setName": "Ultra Prism",
+      "setYear": null,
+      "number": "139",
+      "variant": null,
+      "label": "#139"
+    },
+    {
+      "name": "Leafeon-GX",
+      "setName": "Ultra Prism",
+      "setYear": null,
+      "number": "157",
+      "variant": null,
+      "label": "#157"
+    },
+    {
+      "name": "Leafeon-GX",
+      "setName": "Hidden Fates Shiny Vault",
+      "setYear": null,
+      "number": "SV46",
+      "variant": null,
+      "label": "#SV46"
+    },
+    {
+      "name": "Leafeon",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH191",
+      "variant": null,
+      "label": "#SWSH191"
+    },
+    {
+      "name": "Leafeon V",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH194",
+      "variant": null,
+      "label": "#SWSH194"
+    },
+    {
+      "name": "Leafeon VSTAR",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH195",
+      "variant": "Holo",
+      "label": "#SWSH195 · Holo"
+    },
+    {
+      "name": "Leafeon VSTAR",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH195",
+      "variant": "Play Pokemon",
+      "label": "#SWSH195 · Play Pokemon"
+    },
+    {
+      "name": "Leafeon VSTAR",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH195",
+      "variant": "Jumbo",
+      "label": "#SWSH195 · Jumbo"
+    },
+    {
+      "name": "Leafeon V",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "7",
+      "variant": "Holo",
+      "label": "#7 · Holo"
+    },
+    {
+      "name": "Leafeon V",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "7",
+      "variant": "Play Pokemon",
+      "label": "#7 · Play Pokemon"
+    },
+    {
+      "name": "Leafeon VMAX",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "8",
+      "variant": "Holo",
+      "label": "#8 · Holo"
+    },
+    {
+      "name": "Leafeon VMAX",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "8",
+      "variant": "Play Pokemon",
+      "label": "#8 · Play Pokemon"
+    },
+    {
+      "name": "Leafeon V",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "166",
+      "variant": null,
+      "label": "#166"
+    },
+    {
+      "name": "Leafeon V",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "167",
+      "variant": null,
+      "label": "#167"
+    },
+    {
+      "name": "Leafeon VMAX",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "204",
+      "variant": null,
+      "label": "#204"
+    },
+    {
+      "name": "Leafeon VMAX",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "205",
+      "variant": null,
+      "label": "#205"
+    },
+    {
+      "name": "Leafeon",
+      "setName": "Astral Radiance",
+      "setYear": null,
+      "number": "13",
+      "variant": "Normal",
+      "label": "#13 · Normal"
+    },
+    {
+      "name": "Leafeon",
+      "setName": "Astral Radiance",
+      "setYear": null,
+      "number": "13",
+      "variant": "Reverse Holo",
+      "label": "#13 · Reverse Holo"
+    },
+    {
+      "name": "Leafeon",
+      "setName": "Scarlet & Violet Black Star Promos",
+      "setYear": null,
+      "number": "170",
+      "variant": null,
+      "label": "#170"
+    },
+    {
+      "name": "Leafeon V",
+      "setName": "Crown Zenith",
+      "setYear": null,
+      "number": "13",
+      "variant": null,
+      "label": "#13"
+    },
+    {
+      "name": "Leafeon VSTAR",
+      "setName": "Crown Zenith",
+      "setYear": null,
+      "number": "14",
+      "variant": null,
+      "label": "#14"
+    },
+    {
+      "name": "Leafeon VSTAR",
+      "setName": "Crown Zenith Galarian Gallery",
+      "setYear": null,
+      "number": "GG35",
+      "variant": null,
+      "label": "#GG35"
+    },
+    {
+      "name": "Leafeon",
+      "setName": "Twilight Masquerade",
+      "setYear": null,
+      "number": "11",
+      "variant": "Normal",
+      "label": "#11 · Normal"
+    },
+    {
+      "name": "Leafeon",
+      "setName": "Twilight Masquerade",
+      "setYear": null,
+      "number": "11",
+      "variant": "Reverse Holo",
+      "label": "#11 · Reverse Holo"
+    },
+    {
+      "name": "Leafeon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "5",
+      "variant": "Reverse Holo",
+      "label": "#5 · Reverse Holo"
+    },
+    {
+      "name": "Leafeon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "5",
+      "variant": "Holo",
+      "label": "#5 · Holo"
+    },
+    {
+      "name": "Leafeon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "5",
+      "variant": "Cosmos",
+      "label": "#5 · Cosmos"
+    },
+    {
+      "name": "Leafeon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "5",
+      "variant": "Master Ball",
+      "label": "#5 · Master Ball"
+    },
+    {
+      "name": "Leafeon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "5",
+      "variant": "Poke Ball",
+      "label": "#5 · Poke Ball"
+    },
+    {
+      "name": "Leafeon ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "6",
+      "variant": "Holo",
+      "label": "#6 · Holo"
+    },
+    {
+      "name": "Leafeon ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "6",
+      "variant": "Expansion",
+      "label": "#6 · Expansion"
+    },
+    {
+      "name": "Leafeon ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "6",
+      "variant": "Play Pokemon",
+      "label": "#6 · Play Pokemon"
+    },
+    {
+      "name": "Leafeon ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "144",
+      "variant": null,
+      "label": "#144"
+    }
+  ]
+}

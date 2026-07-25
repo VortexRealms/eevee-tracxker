@@ -1,0 +1,587 @@
+{
+  "_meta": {
+    "source": "https://getsethunter.com/masterset/glaceon",
+    "fetchedAt": "2026-07-25",
+    "pokemon": "Glaceon",
+    "description": "English Glaceon master set checklist from Set Hunter — every variant, chronologically by set",
+    "variantCount": 60,
+    "setCount": 18,
+    "headerVariantCount": null,
+    "headerSetCount": null,
+    "note": "Scraped from public page HTML; use as external reference, not canonical catalogue"
+  },
+  "sets": [
+    {
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "variantCount": 8
+    },
+    {
+      "setName": "Rising Rivals",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "BW Black Star Promos",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Plasma Freeze",
+      "setYear": null,
+      "variantCount": 5
+    },
+    {
+      "setName": "Furious Fists",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Fates Collide",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Ultra Prism",
+      "setYear": null,
+      "variantCount": 3
+    },
+    {
+      "setName": "Hidden Fates Shiny Vault",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "variantCount": 5
+    },
+    {
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "variantCount": 10
+    },
+    {
+      "setName": "Astral Radiance",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Scarlet & Violet Black Star Promos",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "Crown Zenith",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "Crown Zenith Galarian Gallery",
+      "setYear": null,
+      "variantCount": 1
+    },
+    {
+      "setName": "Twilight Masquerade",
+      "setYear": null,
+      "variantCount": 2
+    },
+    {
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "variantCount": 10
+    }
+  ],
+  "entries": [
+    {
+      "name": "Glaceon",
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "number": "5",
+      "variant": "Reverse Holo",
+      "label": "#5 · Reverse Holo"
+    },
+    {
+      "name": "Glaceon",
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "number": "5",
+      "variant": "Holo",
+      "label": "#5 · Holo"
+    },
+    {
+      "name": "Glaceon",
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "number": "20",
+      "variant": "Normal",
+      "label": "#20 · Normal"
+    },
+    {
+      "name": "Glaceon",
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "number": "20",
+      "variant": "Reverse Holo",
+      "label": "#20 · Reverse Holo"
+    },
+    {
+      "name": "Glaceon",
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "number": "20",
+      "variant": "Holo",
+      "label": "#20 · Holo"
+    },
+    {
+      "name": "Glaceon",
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "number": "20",
+      "variant": "Burger King",
+      "label": "#20 · Burger King"
+    },
+    {
+      "name": "Glaceon",
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "number": "20",
+      "variant": "Snowflake",
+      "label": "#20 · Snowflake"
+    },
+    {
+      "name": "Glaceon LV.X",
+      "setName": "Majestic Dawn",
+      "setYear": null,
+      "number": "98",
+      "variant": null,
+      "label": "#98"
+    },
+    {
+      "name": "Glaceon",
+      "setName": "Rising Rivals",
+      "setYear": null,
+      "number": "41",
+      "variant": "Normal",
+      "label": "#41 · Normal"
+    },
+    {
+      "name": "Glaceon",
+      "setName": "Rising Rivals",
+      "setYear": null,
+      "number": "41",
+      "variant": "Reverse Holo",
+      "label": "#41 · Reverse Holo"
+    },
+    {
+      "name": "Glaceon",
+      "setName": "BW Black Star Promos",
+      "setYear": null,
+      "number": "BW90",
+      "variant": null,
+      "label": "#BW90"
+    },
+    {
+      "name": "Glaceon",
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "number": "30",
+      "variant": "Normal",
+      "label": "#30 · Normal"
+    },
+    {
+      "name": "Glaceon",
+      "setName": "Dark Explorers",
+      "setYear": null,
+      "number": "30",
+      "variant": "Reverse Holo",
+      "label": "#30 · Reverse Holo"
+    },
+    {
+      "name": "Glaceon",
+      "setName": "Plasma Freeze",
+      "setYear": null,
+      "number": "23",
+      "variant": "Normal",
+      "label": "#23 · Normal"
+    },
+    {
+      "name": "Glaceon",
+      "setName": "Plasma Freeze",
+      "setYear": null,
+      "number": "23",
+      "variant": "Reverse Holo",
+      "label": "#23 · Reverse Holo"
+    },
+    {
+      "name": "Glaceon",
+      "setName": "Plasma Freeze",
+      "setYear": null,
+      "number": "23",
+      "variant": "Holo",
+      "label": "#23 · Holo"
+    },
+    {
+      "name": "Glaceon",
+      "setName": "Plasma Freeze",
+      "setYear": null,
+      "number": "23",
+      "variant": "League",
+      "label": "#23 · League"
+    },
+    {
+      "name": "Glaceon",
+      "setName": "Plasma Freeze",
+      "setYear": null,
+      "number": "23",
+      "variant": "Staff",
+      "label": "#23 · Staff"
+    },
+    {
+      "name": "Glaceon",
+      "setName": "Furious Fists",
+      "setYear": null,
+      "number": "19",
+      "variant": "Normal",
+      "label": "#19 · Normal"
+    },
+    {
+      "name": "Glaceon",
+      "setName": "Furious Fists",
+      "setYear": null,
+      "number": "19",
+      "variant": "Reverse Holo",
+      "label": "#19 · Reverse Holo"
+    },
+    {
+      "name": "Glaceon-EX",
+      "setName": "Fates Collide",
+      "setYear": null,
+      "number": "20",
+      "variant": null,
+      "label": "#20"
+    },
+    {
+      "name": "Glaceon-EX",
+      "setName": "Fates Collide",
+      "setYear": null,
+      "number": "116",
+      "variant": null,
+      "label": "#116"
+    },
+    {
+      "name": "Glaceon-GX",
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "number": "SM147",
+      "variant": null,
+      "label": "#SM147"
+    },
+    {
+      "name": "Glaceon",
+      "setName": "SM Black Star Promos",
+      "setYear": null,
+      "number": "SM238",
+      "variant": null,
+      "label": "#SM238"
+    },
+    {
+      "name": "Glaceon-GX",
+      "setName": "Ultra Prism",
+      "setYear": null,
+      "number": "39",
+      "variant": null,
+      "label": "#39"
+    },
+    {
+      "name": "Glaceon-GX",
+      "setName": "Ultra Prism",
+      "setYear": null,
+      "number": "141",
+      "variant": null,
+      "label": "#141"
+    },
+    {
+      "name": "Glaceon-GX",
+      "setName": "Ultra Prism",
+      "setYear": null,
+      "number": "159",
+      "variant": null,
+      "label": "#159"
+    },
+    {
+      "name": "Glaceon-GX",
+      "setName": "Hidden Fates Shiny Vault",
+      "setYear": null,
+      "number": "SV55",
+      "variant": null,
+      "label": "#SV55"
+    },
+    {
+      "name": "Glaceon",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH192",
+      "variant": null,
+      "label": "#SWSH192"
+    },
+    {
+      "name": "Glaceon V",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH196",
+      "variant": null,
+      "label": "#SWSH196"
+    },
+    {
+      "name": "Glaceon VSTAR",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH197",
+      "variant": "Holo",
+      "label": "#SWSH197 · Holo"
+    },
+    {
+      "name": "Glaceon VSTAR",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH197",
+      "variant": "Play Pokemon",
+      "label": "#SWSH197 · Play Pokemon"
+    },
+    {
+      "name": "Glaceon VSTAR",
+      "setName": "SWSH Black Star Promos",
+      "setYear": null,
+      "number": "SWSH197",
+      "variant": "Jumbo",
+      "label": "#SWSH197 · Jumbo"
+    },
+    {
+      "name": "Glaceon V",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "40",
+      "variant": "Holo",
+      "label": "#40 · Holo"
+    },
+    {
+      "name": "Glaceon V",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "40",
+      "variant": "Play Pokemon",
+      "label": "#40 · Play Pokemon"
+    },
+    {
+      "name": "Glaceon V",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "40",
+      "variant": "Snowflake",
+      "label": "#40 · Snowflake"
+    },
+    {
+      "name": "Glaceon VMAX",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "41",
+      "variant": "Holo",
+      "label": "#41 · Holo"
+    },
+    {
+      "name": "Glaceon VMAX",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "41",
+      "variant": "Play Pokemon",
+      "label": "#41 · Play Pokemon"
+    },
+    {
+      "name": "Glaceon VMAX",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "41",
+      "variant": "Snowflake",
+      "label": "#41 · Snowflake"
+    },
+    {
+      "name": "Glaceon V",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "174",
+      "variant": null,
+      "label": "#174"
+    },
+    {
+      "name": "Glaceon V",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "175",
+      "variant": null,
+      "label": "#175"
+    },
+    {
+      "name": "Glaceon VMAX",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "208",
+      "variant": null,
+      "label": "#208"
+    },
+    {
+      "name": "Glaceon VMAX",
+      "setName": "Evolving Skies",
+      "setYear": null,
+      "number": "209",
+      "variant": null,
+      "label": "#209"
+    },
+    {
+      "name": "Glaceon",
+      "setName": "Astral Radiance",
+      "setYear": null,
+      "number": "38",
+      "variant": "Normal",
+      "label": "#38 · Normal"
+    },
+    {
+      "name": "Glaceon",
+      "setName": "Astral Radiance",
+      "setYear": null,
+      "number": "38",
+      "variant": "Reverse Holo",
+      "label": "#38 · Reverse Holo"
+    },
+    {
+      "name": "Glaceon",
+      "setName": "Scarlet & Violet Black Star Promos",
+      "setYear": null,
+      "number": "171",
+      "variant": null,
+      "label": "#171"
+    },
+    {
+      "name": "Glaceon V",
+      "setName": "Crown Zenith",
+      "setYear": null,
+      "number": "38",
+      "variant": null,
+      "label": "#38"
+    },
+    {
+      "name": "Glaceon VSTAR",
+      "setName": "Crown Zenith Galarian Gallery",
+      "setYear": null,
+      "number": "GG40",
+      "variant": null,
+      "label": "#GG40"
+    },
+    {
+      "name": "Glaceon",
+      "setName": "Twilight Masquerade",
+      "setYear": null,
+      "number": "54",
+      "variant": "Normal",
+      "label": "#54 · Normal"
+    },
+    {
+      "name": "Glaceon",
+      "setName": "Twilight Masquerade",
+      "setYear": null,
+      "number": "54",
+      "variant": "Reverse Holo",
+      "label": "#54 · Reverse Holo"
+    },
+    {
+      "name": "Glaceon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "25",
+      "variant": "Reverse Holo",
+      "label": "#25 · Reverse Holo"
+    },
+    {
+      "name": "Glaceon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "25",
+      "variant": "Holo",
+      "label": "#25 · Holo"
+    },
+    {
+      "name": "Glaceon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "25",
+      "variant": "Cosmos",
+      "label": "#25 · Cosmos"
+    },
+    {
+      "name": "Glaceon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "25",
+      "variant": "Master Ball",
+      "label": "#25 · Master Ball"
+    },
+    {
+      "name": "Glaceon",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "25",
+      "variant": "Poke Ball",
+      "label": "#25 · Poke Ball"
+    },
+    {
+      "name": "Glaceon ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "26",
+      "variant": "Holo",
+      "label": "#26 · Holo"
+    },
+    {
+      "name": "Glaceon ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "26",
+      "variant": "Expansion",
+      "label": "#26 · Expansion"
+    },
+    {
+      "name": "Glaceon ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "26",
+      "variant": "Play Pokemon",
+      "label": "#26 · Play Pokemon"
+    },
+    {
+      "name": "Glaceon ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "26",
+      "variant": "Snowflake",
+      "label": "#26 · Snowflake"
+    },
+    {
+      "name": "Glaceon ex",
+      "setName": "Prismatic Evolutions",
+      "setYear": null,
+      "number": "150",
+      "variant": null,
+      "label": "#150"
+    }
+  ]
+}
