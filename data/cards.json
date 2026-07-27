@@ -10473,7 +10473,9 @@
     },
     "variants": [
       "reverse",
-      "holo"
+      "holo",
+      "pokeball",
+      "masterball"
     ]
   },
   {

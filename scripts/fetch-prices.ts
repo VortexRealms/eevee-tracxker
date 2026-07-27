@@ -25,6 +25,7 @@ import {
   pokewalletResultToPriceEntry,
   type PokewalletIdCache,
 } from "./pokewallet-price-utils";
+import { writePriceHistorySnapshot } from "./price-history-sqlite";
 
 const SYNC_EVERY_N = 50;
 
@@ -144,6 +145,17 @@ async function main() {
   }
 
   const syncResult = await syncPricesToSheet(fetchedEntries, meta);
+
+  const finalSnapshot = { meta, entries: fetchedEntries };
+  const historyResult = writePriceHistorySnapshot({
+    allCards,
+    snapshot: finalSnapshot,
+    observedDate: today,
+  });
+  console.log(
+    `\nPrice history snapshot (${historyResult.observedDate}): ${historyResult.pointCount} point(s) ` +
+      `(${historyResult.inserted} inserted, ${historyResult.updated} updated) -> ${historyResult.dbPath}`
+  );
 
   const noCache = allCards.length - withCache.length;
   console.log(

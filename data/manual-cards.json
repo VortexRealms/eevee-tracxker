@@ -3232,5 +3232,35 @@
     "variants": [
       "holo"
     ]
+  },
+  {
+    "id": "sv8pt5-59",
+    "name": "Umbreon",
+    "number": "59",
+    "rarity": "Rare",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "types": [
+      "Darkness"
+    ],
+    "hp": "110",
+    "set": {
+      "id": "sv8pt5",
+      "name": "Prismatic Evolutions",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2025/01/17"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/sv/sv08.5/059/low.webp",
+      "large": "https://assets.tcgdex.net/en/sv/sv08.5/059/high.png"
+    },
+    "variants": [
+      "reverse",
+      "holo",
+      "pokeball",
+      "masterball"
+    ]
   }
 ]

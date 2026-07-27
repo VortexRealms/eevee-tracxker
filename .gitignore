@@ -25,4 +25,8 @@ Thumbs.db
 
 data/pokemon-tcg-data/
 
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite-journal
+
 logs/
