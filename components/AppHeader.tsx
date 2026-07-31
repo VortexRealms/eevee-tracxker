@@ -3,11 +3,17 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { formatDisplayPrice } from "../lib/display-price";
+import { useHeaderStats } from "./HeaderStatsProvider";
 
 export function AppHeader() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
+  const { stats } = useHeaderStats();
   const showMenu = pathname === "/checklist" || pathname === "/settings";
+  const showCompactStats = stats != null && !stats.panelVisible;
+  const showPublicCaption =
+    pathname === "/public" && (stats == null || stats.panelVisible);
 
   useEffect(() => {
     setMenuOpen(false);
@@ -32,11 +38,25 @@ export function AppHeader() {
         <div className="brand-title">Eevee &amp; Friends Tracker</div>
       </div>
       <div className="brand-right">
-        <div className="brand-caption">
-          {pathname === "/public"
-            ? "Public showcase • read-only"
-            : "Local card snapshot • Sheets sync"}
-        </div>
+        {showCompactStats ? (
+          <div
+            className="brand-compact-stats"
+            aria-live="polite"
+            aria-label={`${stats.percent.toFixed(1)} percent owned, estimated value ${formatDisplayPrice(stats.estimatedValue, stats.currency)}`}
+          >
+            <span className="brand-compact-percent">
+              {stats.percent.toFixed(1)}% owned
+            </span>
+            <span className="brand-compact-sep" aria-hidden="true">
+              ·
+            </span>
+            <span className="brand-compact-value">
+              {formatDisplayPrice(stats.estimatedValue, stats.currency)}
+            </span>
+          </div>
+        ) : showPublicCaption ? (
+          <div className="brand-caption">Public showcase • read-only</div>
+        ) : null}
         {showMenu && (
           <div className="menu-anchor">
             <button
@@ -80,4 +100,3 @@ export function AppHeader() {
     </div>
   );
 }
-

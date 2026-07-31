@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import type { CollectionRow, PokemonCard, PricesSnapshot } from "../../types";
 import { getAllCards, parseCardIdAndVariant } from "../../lib/cards";
 import { CardGrid } from "../../components/CardGrid";
-import { CardModal } from "../../components/CardModal";
+import { CardDetailModal } from "../../components/CardDetailModal";
 
 interface CollectionResponse {
   rows: CollectionRow[];
@@ -140,8 +140,10 @@ export default function ChecklistPage() {
 
       {toast && <div className="toast toast-success">{toast}</div>}
 
-      <CardModal
+      <CardDetailModal
         card={activeCard}
+        prices={prices}
+        collection={collection ?? []}
         onClose={() => setActiveCardId(null)}
       />
     </main>

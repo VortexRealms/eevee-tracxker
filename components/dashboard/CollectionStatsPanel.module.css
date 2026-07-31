@@ -23,39 +23,6 @@
   background: linear-gradient(115deg, rgba(255, 255, 255, 0.025), transparent 35%);
 }
 
-.header {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  min-height: 54px;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 0 28px;
-  border-bottom: 1px solid rgba(255, 236, 214, 0.08);
-}
-
-.eyebrow,
-.valueLabel,
-.ringLabel {
-  margin: 0;
-  font-size: 0.64rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-}
-
-.eyebrow,
-.ringLabel {
-  color: #e7c29f;
-}
-
-.updated {
-  margin: 0;
-  color: #bfa696;
-  font-size: 0.72rem;
-}
-
 .content {
   position: relative;
   z-index: 1;
@@ -64,7 +31,7 @@
   align-items: center;
   gap: 26px;
   min-height: 202px;
-  padding: 20px 28px 24px;
+  padding: 22px 28px 24px;
 }
 
 .ringColumn {
@@ -109,7 +76,13 @@
 }
 
 .ringLabel {
+  margin: 0;
   margin-top: 7px;
+  font-size: 0.64rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #e7c29f;
 }
 
 .middle {
@@ -195,6 +168,11 @@
 }
 
 .valueLabel {
+  margin: 0;
+  font-size: 0.64rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
   color: #f3c454;
 }
 
@@ -231,11 +209,6 @@
 }
 
 @media (max-width: 599px) {
-  .header {
-    min-height: 50px;
-    padding: 0 18px;
-  }
-
   .content {
     grid-template-columns: 1fr;
     gap: 18px;

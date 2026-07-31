@@ -11,6 +11,7 @@ import { getPriceForCard } from "../lib/cards";
 import type { PokemonCard, PricesSnapshot } from "../types";
 import {
   countPriceHistoryForDate,
+  prunePriceHistory,
   readPriceHistoryRow,
   writePriceHistorySnapshot,
 } from "./price-history-sqlite";
@@ -289,6 +290,108 @@ try {
   check("snapshot_runs records point count", runRow?.point_count === day2Result.pointCount);
 
   assertNoSidecars(dbPath);
+
+  // --- Retention pruning (retentionDays = 3) ---
+  const retentionDb = tempDbPath();
+  const retentionDays = 3;
+  const oldDay = "2026-07-24";
+  const midDay = "2026-07-26";
+  const recentDay = "2026-07-27";
+  const refDay = "2026-07-28";
+  const seedRetention = 100;
+
+  for (const d of [oldDay, "2026-07-25", midDay, recentDay]) {
+    writePriceHistorySnapshot({
+      allCards,
+      snapshot: baseSnapshot,
+      observedDate: d,
+      dbPath: retentionDb,
+      retentionDays: seedRetention,
+    });
+  }
+
+  check(
+    "pre-prune old date exists",
+    readPriceHistoryRow(retentionDb, "multi-1", "holo", oldDay) !== null
+  );
+  check(
+    "pre-prune mid date exists",
+    readPriceHistoryRow(retentionDb, "multi-1", "holo", midDay) !== null
+  );
+
+  const prunedWrite = writePriceHistorySnapshot({
+    allCards,
+    snapshot: nextDaySnapshot,
+    observedDate: refDay,
+    dbPath: retentionDb,
+    retentionDays,
+  });
+
+  check(
+    "prune reports deleted old points",
+    (prunedWrite.prune?.deletedPoints ?? 0) > 0
+  );
+  check(
+    "prune cutoff is 2026-07-26 for ref 2026-07-28 with 3-day window",
+    prunedWrite.prune?.cutoffDate === "2026-07-26"
+  );
+  check(
+    "oldest dates removed",
+    readPriceHistoryRow(retentionDb, "multi-1", "holo", oldDay) === null &&
+      readPriceHistoryRow(retentionDb, "multi-1", "holo", "2026-07-25") === null
+  );
+  check(
+    "in-window dates preserved",
+    readPriceHistoryRow(retentionDb, "multi-1", "holo", midDay)?.usd === 1.0 &&
+      readPriceHistoryRow(retentionDb, "multi-1", "holo", refDay)?.usd === 1.1
+  );
+
+  const retentionDbConn = new Database(retentionDb, { readonly: true });
+  const runDates = retentionDbConn
+    .prepare(`SELECT observed_date FROM snapshot_runs ORDER BY observed_date`)
+    .all() as Array<{ observed_date: string }>;
+  retentionDbConn.close();
+  check(
+    "snapshot_runs pruned to same cutoff",
+    runDates.length === 3 &&
+      runDates[0].observed_date === midDay &&
+      runDates[2].observed_date === refDay
+  );
+
+  const noOpPrune = prunePriceHistory({
+    dbPath: retentionDb,
+    referenceDate: refDay,
+    retentionDays,
+  });
+  check("no-op prune deletes nothing", noOpPrune.deletedPoints === 0);
+  check("no-op prune does not vacuum", noOpPrune.vacuumed === false);
+
+  const dryRunDb = tempDbPath();
+  writePriceHistorySnapshot({
+    allCards,
+    snapshot: baseSnapshot,
+    observedDate: oldDay,
+    dbPath: dryRunDb,
+    retentionDays: 100,
+  });
+  const pointsBeforeDry = countPriceHistoryForDate(dryRunDb, oldDay);
+  const dryRun = prunePriceHistory({
+    dbPath: dryRunDb,
+    referenceDate: refDay,
+    retentionDays: 3,
+    dryRun: true,
+  });
+  check("dry-run reports would-delete count", dryRun.deletedPoints === pointsBeforeDry);
+  check(
+    "dry-run leaves rows intact",
+    countPriceHistoryForDate(dryRunDb, oldDay) === pointsBeforeDry
+  );
+
+  assertNoSidecars(retentionDb);
+  assertNoSidecars(dryRunDb);
+
+  fs.unlinkSync(retentionDb);
+  fs.unlinkSync(dryRunDb);
 
   fs.unlinkSync(dbPath);
 } catch (err) {

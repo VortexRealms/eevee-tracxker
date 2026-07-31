@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { CollectionRow, PokemonCard, PricesSnapshot } from "../types";
 import {
   getCardmarketSearchUrl,
@@ -16,6 +16,7 @@ import { getVariantLabel, variantSortIndex } from "../lib/variant-labels";
 import { useCurrency } from "./CurrencyProvider";
 import { CardPriceLabel } from "./CardPriceLabel";
 import { CollectionStatsPanel } from "./dashboard/CollectionStatsPanel";
+import { useHeaderStats } from "./HeaderStatsProvider";
 import { VariantPickerModal } from "./VariantPickerModal";
 
 export type CardGridMode = "checklist" | "public";
@@ -63,6 +64,9 @@ export function CardGrid({
     isPublic ? "owned" : "all"
   );
   const [variantPickerCard, setVariantPickerCard] = useState<PokemonCard | null>(null);
+  const panelRef = useRef<HTMLElement>(null);
+  const [panelVisible, setPanelVisible] = useState(true);
+  const { publish, clear } = useHeaderStats();
 
   const { currency } = useCurrency();
   const exchangeRates = useMemo(
@@ -139,6 +143,37 @@ export function CardGrid({
     };
   }, [cards, collection, currency, exchangeRates, prices]);
 
+  useEffect(() => {
+    const el = panelRef.current;
+    if (!el || typeof IntersectionObserver === "undefined") {
+      setPanelVisible(true);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setPanelVisible(entry.isIntersecting),
+      { root: null, rootMargin: "-88px 0px 0px 0px", threshold: 0 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  const ownedPercent = useMemo(() => {
+    if (MASTER_SET_TARGET <= 0) return 0;
+    return Math.min(100, Math.max(0, (counts.owned / MASTER_SET_TARGET) * 100));
+  }, [counts.owned]);
+
+  useEffect(() => {
+    publish({
+      percent: ownedPercent,
+      estimatedValue: counts.collectionValue,
+      currency,
+      panelVisible,
+    });
+  }, [ownedPercent, counts.collectionValue, currency, panelVisible, publish]);
+
+  useEffect(() => () => clear(), [clear]);
+
   const searchTokens = useMemo(
     () =>
       search
@@ -189,6 +224,7 @@ export function CardGrid({
     <div className="collection-layout">
       <div className="sticky-toolbar">
         <CollectionStatsPanel
+          ref={panelRef}
           ownedVariants={counts.owned}
           totalVariants={MASTER_SET_TARGET}
           missingVariants={counts.missing}

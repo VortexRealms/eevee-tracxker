@@ -7,6 +7,7 @@ import fs from "node:fs";
 import path from "node:path";
 import Database from "better-sqlite3";
 import { getPriceForCard } from "../lib/cards";
+import { PRICE_HISTORY_RETENTION_DAYS } from "../lib/price-history-retention";
 import type { PokemonCard, PricesSnapshot } from "../types";
 
 export const DEFAULT_PRICE_HISTORY_DB_PATH = path.join(
@@ -15,6 +16,13 @@ export const DEFAULT_PRICE_HISTORY_DB_PATH = path.join(
   "price-history.sqlite"
 );
 
+export interface PriceHistoryPruneResult {
+  cutoffDate: string;
+  deletedPoints: number;
+  deletedRuns: number;
+  vacuumed: boolean;
+}
+
 export interface PriceHistorySnapshotResult {
   dbPath: string;
   observedDate: string;
@@ -22,6 +30,7 @@ export interface PriceHistorySnapshotResult {
   pointCount: number;
   inserted: number;
   updated: number;
+  prune?: PriceHistoryPruneResult;
 }
 
 const SCHEMA_SQL = `
@@ -70,6 +79,119 @@ function hasNativePrice(usd: number | null, eur: number | null): boolean {
   return usd != null || eur != null;
 }
 
+function computeCutoffDate(
+  db: Database.Database,
+  referenceDate: string,
+  retentionDays: number
+): string {
+  const row = db
+    .prepare(`SELECT date(?, ?) AS cutoff`)
+    .get(referenceDate, `-${retentionDays - 1} days`) as { cutoff: string };
+  return row.cutoff;
+}
+
+export interface PrunePriceHistoryInput {
+  referenceDate: string;
+  retentionDays?: number;
+  dryRun?: boolean;
+}
+
+/**
+ * Delete price_history and snapshot_runs rows older than the retention window.
+ * When dryRun is true, reports counts without deleting or vacuuming.
+ */
+export function prunePriceHistoryOnDb(
+  db: Database.Database,
+  input: PrunePriceHistoryInput
+): PriceHistoryPruneResult {
+  const retentionDays = input.retentionDays ?? PRICE_HISTORY_RETENTION_DAYS;
+  const cutoffDate = computeCutoffDate(db, input.referenceDate, retentionDays);
+
+  const countPoints = db
+    .prepare(`SELECT COUNT(*) AS c FROM price_history WHERE observed_date < ?`)
+    .get(cutoffDate) as { c: number };
+  const countRuns = db
+    .prepare(`SELECT COUNT(*) AS c FROM snapshot_runs WHERE observed_date < ?`)
+    .get(cutoffDate) as { c: number };
+
+  if (input.dryRun) {
+    return {
+      cutoffDate,
+      deletedPoints: countPoints.c,
+      deletedRuns: countRuns.c,
+      vacuumed: false,
+    };
+  }
+
+  const deletePoints = db.prepare(
+    `DELETE FROM price_history WHERE observed_date < @cutoff`
+  );
+  const deleteRuns = db.prepare(
+    `DELETE FROM snapshot_runs WHERE observed_date < @cutoff`
+  );
+
+  let deletedPoints = 0;
+  let deletedRuns = 0;
+
+  const prune = db.transaction(() => {
+    deletedPoints = deletePoints.run({ cutoff: cutoffDate }).changes;
+    deletedRuns = deleteRuns.run({ cutoff: cutoffDate }).changes;
+  });
+  prune();
+
+  const vacuumed = deletedPoints + deletedRuns > 0;
+  if (vacuumed) {
+    db.exec("VACUUM");
+  }
+
+  return {
+    cutoffDate,
+    deletedPoints,
+    deletedRuns,
+    vacuumed,
+  };
+}
+
+/** Open DB, prune, close. Used by standalone script and when not reusing a connection. */
+export function prunePriceHistory(input: {
+  dbPath?: string;
+  referenceDate: string;
+  retentionDays?: number;
+  dryRun?: boolean;
+}): PriceHistoryPruneResult {
+  const dbPath = input.dbPath ?? DEFAULT_PRICE_HISTORY_DB_PATH;
+  const retentionDays = input.retentionDays ?? PRICE_HISTORY_RETENTION_DAYS;
+
+  if (!fs.existsSync(dbPath)) {
+    const mem = new Database(":memory:");
+    try {
+      const cutoffDate = computeCutoffDate(mem, input.referenceDate, retentionDays);
+      return {
+        cutoffDate,
+        deletedPoints: 0,
+        deletedRuns: 0,
+        vacuumed: false,
+      };
+    } finally {
+      mem.close();
+    }
+  }
+
+  const db = input.dryRun
+    ? new Database(dbPath, { readonly: true })
+    : openHistoryDb(dbPath);
+
+  try {
+    return prunePriceHistoryOnDb(db, {
+      referenceDate: input.referenceDate,
+      retentionDays: input.retentionDays,
+      dryRun: input.dryRun,
+    });
+  } finally {
+    db.close();
+  }
+}
+
 /**
  * Snapshot resolved USD/EUR prices for every catalogue variant into SQLite.
  * Same-day reruns upsert rows (idempotent). Missing currencies stay NULL.
@@ -79,6 +201,7 @@ export function writePriceHistorySnapshot(input: {
   snapshot: PricesSnapshot;
   observedDate: string;
   dbPath?: string;
+  retentionDays?: number;
 }): PriceHistorySnapshotResult {
   const dbPath = input.dbPath ?? DEFAULT_PRICE_HISTORY_DB_PATH;
   const recordedAt = new Date().toISOString();
@@ -120,6 +243,7 @@ export function writePriceHistorySnapshot(input: {
   let inserted = 0;
   let updated = 0;
   let pointCount = 0;
+  let prune: PriceHistoryPruneResult | undefined;
 
   const writeSnapshot = db.transaction(() => {
     for (const card of input.allCards) {
@@ -156,6 +280,10 @@ export function writePriceHistorySnapshot(input: {
 
   try {
     writeSnapshot();
+    prune = prunePriceHistoryOnDb(db, {
+      referenceDate: input.observedDate,
+      retentionDays: input.retentionDays,
+    });
   } finally {
     db.close();
   }
@@ -167,6 +295,7 @@ export function writePriceHistorySnapshot(input: {
     pointCount,
     inserted,
     updated,
+    prune,
   };
 }
 

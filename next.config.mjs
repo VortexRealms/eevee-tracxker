@@ -2,7 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
   experimental: {
-    typedRoutes: true
+    typedRoutes: true,
+    serverComponentsExternalPackages: ["better-sqlite3"],
+    outputFileTracingIncludes: {
+      "/api/price-history": ["./data/price-history.sqlite"]
+    }
   }
 };
 

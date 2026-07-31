@@ -14,6 +14,7 @@
     "test:cbb2c-ids": "tsx scripts/test-cbb2c-pokewallet-ids.ts",
     "fetch:prices": "tsx scripts/fetch-prices.ts",
     "fetch:prices:daily": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/run-fetch-prices-daily.ps1",
+    "fetch:prices:daily:dry-run": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/run-fetch-prices-daily.ps1 -DryRun",
     "setup:fetch-prices-task": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/setup-fetch-prices-scheduled-task.ps1",
     "migrate:prices-to-sheet": "tsx scripts/migrate-prices-to-sheet.ts",
     "test:pokewallet-prices": "tsx scripts/test-pokewallet-prices.ts",
@@ -24,6 +25,7 @@
     "test:fetch-price-skip": "tsx scripts/test-fetch-price-skip.ts",
     "test:price-merge": "tsx scripts/test-price-merge.ts",
     "test:price-history": "tsx scripts/test-price-history-sqlite.ts",
+    "prune:price-history": "tsx scripts/prune-price-history.ts",
     "fetch:rates": "tsx scripts/fetch-rates.ts",
     "cards:pick": "tsx scripts/pick-included-cards.ts"
   },
@@ -33,7 +35,8 @@
     "googleapis": "^133.0.0",
     "next": "14.1.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "recharts": "^3.10.1"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.13",

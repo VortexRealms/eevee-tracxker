@@ -156,6 +156,15 @@ async function main() {
     `\nPrice history snapshot (${historyResult.observedDate}): ${historyResult.pointCount} point(s) ` +
       `(${historyResult.inserted} inserted, ${historyResult.updated} updated) -> ${historyResult.dbPath}`
   );
+  if (historyResult.prune) {
+    const p = historyResult.prune;
+    if (p.deletedPoints + p.deletedRuns > 0) {
+      console.log(
+        `  Pruned ${p.deletedPoints} point(s) and ${p.deletedRuns} run(s) older than ${p.cutoffDate}` +
+          (p.vacuumed ? " (vacuumed)" : "")
+      );
+    }
+  }
 
   const noCache = allCards.length - withCache.length;
   console.log(
