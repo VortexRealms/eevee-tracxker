@@ -1629,7 +1629,7 @@
     "resolvedAt": "2026-07-25",
     "matchScore": 100,
     "searchQuery": "manual: McDonald's Promos 2019 Eevee 12/12"
-},
+  },
   "sm12-25": {
     "pokewalletId": "pk_679a6881e317444c4169eccb2f153589b9fd951f25fc4e182bc11d1d3b8eeda01403139aeb0d59d426fe267c7366",
     "setCode": "SM12",
@@ -3687,5 +3687,12 @@
     "resolvedAt": "2026-07-22",
     "matchScore": 100,
     "searchQuery": "CBB2C line:10 slot:04/04"
+  },
+  "sv4pt5-236": {
+    "pokewalletId": "pk_40cf68de1dc3774a4f1e88948be920ce45f38c4fb86440820481b4747327cac6222b59fb0dc9a2af25176a8fa095a488",
+    "setCode": "PAF",
+    "resolvedAt": "2026-08-05",
+    "matchScore": 155,
+    "searchQuery": "Clive Paldean Fates 236"
   }
 }

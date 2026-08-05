@@ -9750,6 +9750,26 @@
     ]
   },
   {
+    "id": "sv4pt5-236",
+    "name": "Clive",
+    "number": "236",
+    "rarity": "Special illustration rare",
+    "supertype": "Trainer",
+    "set": {
+      "id": "sv4pt5",
+      "name": "Paldean Fates",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2024/01/26"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/sv/sv04.5/236/low.webp",
+      "large": "https://assets.tcgdex.net/en/sv/sv04.5/236/high.png"
+    },
+    "variants": [
+      "holo"
+    ]
+  },
+  {
     "id": "sv6-11",
     "name": "Leafeon",
     "number": "11",
