@@ -156,6 +156,16 @@ input {
   margin-top: 3px;
 }
 
+.brand-title-short,
+.brand-compact-percent-value-short,
+.brand-compact-value-short {
+  display: none;
+}
+
+.brand-compact-percent-label {
+  color: inherit;
+}
+
 .brand-caption {
   color: var(--text-2);
   font-size: 0.78rem;
@@ -1155,7 +1165,7 @@ input {
   }
 }
 
-@media (max-width: 699px) {
+@media (min-width: 600px) and (max-width: 699px) {
   .brand-caption {
     display: none;
   }
@@ -1170,7 +1180,9 @@ input {
   .brand-compact-sep {
     display: none;
   }
+}
 
+@media (max-width: 699px) {
   .app-frame {
     min-height: calc(100vh - 104px);
     overflow-x: clip;
@@ -1184,6 +1196,84 @@ input {
 }
 
 @media (max-width: 599px) {
+  .sticky-toolbar {
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+
+  .app-brandbar {
+    gap: 8px;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    border-radius: 18px;
+    top: 6px;
+  }
+
+  .app-brandbar::before {
+    top: -10px;
+    bottom: -8px;
+  }
+
+  .brand-badge {
+    width: 32px;
+    height: 32px;
+    border-radius: 12px;
+    flex-shrink: 0;
+  }
+
+  .brand-kicker {
+    display: none;
+  }
+
+  .brand-title {
+    margin-top: 0;
+  }
+
+  .brand-title-full,
+  .brand-compact-percent-value-full,
+  .brand-compact-value-full {
+    display: none;
+  }
+
+  .brand-title-short {
+    display: block;
+    font-size: 0.88rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .brand-compact-percent-value-short,
+  .brand-compact-value-short {
+    display: inline;
+  }
+
+  .brand-compact-percent-label {
+    display: none;
+  }
+
+  .brand-right {
+    gap: 8px;
+    flex-shrink: 0;
+  }
+
+  .brand-compact-stats {
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.65rem;
+  }
+
+  .brand-compact-sep {
+    display: inline;
+  }
+
+  .menu-button {
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+  }
+
   .app-frame {
     padding: 12px;
     padding-bottom: max(12px, env(safe-area-inset-bottom));

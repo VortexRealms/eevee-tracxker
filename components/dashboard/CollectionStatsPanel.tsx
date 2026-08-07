@@ -1,7 +1,10 @@
 "use client";
 
 import { forwardRef, useId, useMemo } from "react";
-import { formatDisplayPrice } from "../../lib/display-price";
+import {
+  formatCompactDisplayPrice,
+  formatDisplayPrice,
+} from "../../lib/display-price";
 import type { DisplayCurrency } from "../../types";
 import styles from "./CollectionStatsPanel.module.css";
 
@@ -155,7 +158,12 @@ export const CollectionStatsPanel = forwardRef<HTMLElement, CollectionStatsPanel
 
           <div className={styles.valueColumn}>
             <p className={styles.valueLabel}>Est. value</p>
-            <p className={styles.value}>{formattedValue}</p>
+            <p className={styles.value}>
+              <span className={styles.valueFull}>{formattedValue}</span>
+              <span className={styles.valueShort}>
+                {formatCompactDisplayPrice(estimatedValue, currency)}
+              </span>
+            </p>
           </div>
         </div>
       </section>

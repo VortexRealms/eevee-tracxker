@@ -187,6 +187,10 @@
   text-shadow: 0 0 30px rgba(251, 191, 36, 0.3);
 }
 
+.valueShort {
+  display: none;
+}
+
 @media (max-width: 899px) {
   .content {
     grid-template-columns: 140px minmax(0, 1fr);
@@ -209,40 +213,98 @@
 }
 
 @media (max-width: 599px) {
+  .panel {
+    border-radius: 18px;
+  }
+
   .content {
-    grid-template-columns: 1fr;
-    gap: 18px;
-    padding: 18px 18px 22px;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "ring middle"
+      "value value";
+    gap: 10px 12px;
+    padding: 12px 14px;
+    min-height: 0;
+  }
+
+  .ringColumn {
+    grid-area: ring;
+    align-self: center;
   }
 
   .ringWrap {
-    width: 122px;
-    height: 122px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .ringPercent {
+    font-size: 1rem;
+  }
+
+  .ringLabel {
+    margin-top: 4px;
+    font-size: 0.52rem;
+    letter-spacing: 0.14em;
   }
 
   .middle {
-    text-align: center;
+    grid-area: middle;
+    text-align: left;
+    min-width: 0;
   }
 
   .headline {
-    margin-bottom: 20px;
+    margin-bottom: 8px;
+    font-size: clamp(0.95rem, 4.2vw, 1rem);
+    line-height: 1.2;
+  }
+
+  .barTrack {
+    height: 8px;
+  }
+
+  .ticks {
+    display: none;
   }
 
   .missing {
-    margin-top: 8px;
+    margin-top: 6px;
+    font-size: 0.75rem;
+  }
+
+  .details {
+    display: none;
   }
 
   .valueColumn {
+    grid-area: value;
     grid-column: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+    min-height: 0;
+    padding: 8px 0 0;
+    border-top: 1px solid rgba(255, 236, 214, 0.1);
+    border-left: 0;
+    text-align: left;
   }
 
   .value {
-    margin-top: 10px;
-    white-space: normal;
-    word-break: break-word;
-    max-width: 100%;
-    font-size: clamp(1.4rem, 8vw, 2rem);
-    line-height: 1.1;
+    margin-top: 0;
+    font-size: clamp(1rem, 5vw, 1.25rem);
+    white-space: nowrap;
+    word-break: normal;
+    max-width: none;
+    line-height: 1;
+  }
+
+  .valueFull {
+    display: none;
+  }
+
+  .valueShort {
+    display: inline;
   }
 }
 

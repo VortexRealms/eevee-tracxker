@@ -3,8 +3,13 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { formatDisplayPrice } from "../lib/display-price";
+import {
+  formatCompactDisplayPrice,
+  formatDisplayPrice,
+} from "../lib/display-price";
 import { useHeaderStats } from "./HeaderStatsProvider";
+
+const APP_TITLE = "Eevee & Friends Tracker";
 
 export function AppHeader() {
   const pathname = usePathname();
@@ -32,10 +37,13 @@ export function AppHeader() {
 
   return (
     <div className="app-brandbar">
-      <div className="brand-badge" />
-      <div className="brand-copy">
+      <div className="brand-badge" aria-hidden="true" />
+      <div className="brand-copy" aria-label={APP_TITLE}>
         <div className="brand-kicker">Personal Collection</div>
-        <div className="brand-title">Eevee &amp; Friends Tracker</div>
+        <div className="brand-title">
+          <span className="brand-title-full">{APP_TITLE}</span>
+          <span className="brand-title-short">Eevee Tracker</span>
+        </div>
       </div>
       <div className="brand-right">
         {showCompactStats ? (
@@ -45,13 +53,22 @@ export function AppHeader() {
             aria-label={`${stats.percent.toFixed(1)} percent owned, estimated value ${formatDisplayPrice(stats.estimatedValue, stats.currency)}`}
           >
             <span className="brand-compact-percent">
-              {stats.percent.toFixed(1)}% owned
+              <span className="brand-compact-percent-value brand-compact-percent-value-full">
+                {stats.percent.toFixed(1)}%
+              </span>
+              <span className="brand-compact-percent-value brand-compact-percent-value-short">
+                {Math.round(stats.percent)}%
+              </span>
+              <span className="brand-compact-percent-label"> owned</span>
             </span>
             <span className="brand-compact-sep" aria-hidden="true">
               ·
             </span>
-            <span className="brand-compact-value">
+            <span className="brand-compact-value brand-compact-value-full">
               {formatDisplayPrice(stats.estimatedValue, stats.currency)}
+            </span>
+            <span className="brand-compact-value brand-compact-value-short">
+              {formatCompactDisplayPrice(stats.estimatedValue, stats.currency)}
             </span>
           </div>
         ) : showPublicCaption ? (

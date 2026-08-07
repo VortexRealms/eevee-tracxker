@@ -85,6 +85,39 @@ const LOCALE_BY_CURRENCY: Record<DisplayCurrency, string> = {
   GBP: "en-GB",
 };
 
+/** Abbreviated header value (e.g. `377k Ft`, `$1.2M`). */
+export function formatCompactDisplayPrice(
+  amount: number | null,
+  currency: DisplayCurrency
+): string {
+  if (amount == null) return formatDisplayPrice(null, currency);
+
+  const abs = Math.abs(amount);
+  const sign = amount < 0 ? "-" : "";
+
+  if (abs >= 1_000_000) {
+    const scaled = abs / 1_000_000;
+    const text =
+      scaled >= 10 ? scaled.toFixed(0) : scaled.toFixed(1).replace(/\.0$/, "");
+    if (currency === "HUF") return `${sign}${text}M Ft`;
+    if (currency === "USD") return `${sign}$${text}M`;
+    if (currency === "EUR") return `${sign}${text}M €`;
+    if (currency === "GBP") return `${sign}£${text}M`;
+    return `${sign}${text}M ${currency}`;
+  }
+
+  if (abs >= 1000) {
+    const text = Math.round(abs / 1000);
+    if (currency === "HUF") return `${sign}${text}k Ft`;
+    if (currency === "USD") return `${sign}$${text}k`;
+    if (currency === "EUR") return `${sign}${text}k €`;
+    if (currency === "GBP") return `${sign}£${text}k`;
+    return `${sign}${text}k ${currency}`;
+  }
+
+  return formatDisplayPrice(amount, currency);
+}
+
 export function formatDisplayPrice(
   amount: number | null,
   currency: DisplayCurrency
