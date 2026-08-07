@@ -3262,5 +3262,34 @@
       "pokeball",
       "masterball"
     ]
+  },
+  {
+    "id": "bw9-64",
+    "name": "Umbreon",
+    "number": "64",
+    "rarity": "Rare",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "types": [
+      "Darkness"
+    ],
+    "hp": "100",
+    "set": {
+      "id": "bw9",
+      "name": "Plasma Freeze",
+      "series": "Black & White",
+      "releaseDate": "2013/05/08"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/bw/bw9/64/low.webp",
+      "large": "https://assets.tcgdex.net/en/bw/bw9/64/high.png"
+    },
+    "variants": [
+      "normal",
+      "holo",
+      "reverse"
+    ]
   }
 ]

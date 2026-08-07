@@ -8,7 +8,7 @@ export async function POST(req: Request) {
 
   if (!validateCredentials(username, password)) {
     // Very simple error handling: redirect back to login.
-    return NextResponse.redirect(new URL("/login", req.url), 303);
+    return NextResponse.redirect(new URL("/login?error=invalid", req.url), 303);
   }
 
   await createSession(username);

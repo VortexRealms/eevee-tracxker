@@ -1,0 +1,606 @@
+.pageRoot {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background:
+    radial-gradient(circle at 8% 20%, rgba(214, 145, 92, 0.18), transparent 28%),
+    radial-gradient(circle at 80% 55%, rgba(214, 145, 92, 0.08), transparent 30%),
+    linear-gradient(135deg, #1a1210 0%, #0d0908 100%);
+}
+
+.pageInner {
+  width: 100%;
+  margin: 0 auto;
+  padding:
+    max(16px, env(safe-area-inset-top))
+    max(16px, env(safe-area-inset-right))
+    max(24px, env(safe-area-inset-bottom))
+    max(16px, env(safe-area-inset-left));
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.brandBar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  border-radius: 20px;
+  background: rgba(20, 13, 11, 0.82);
+  border: 1px solid rgba(255, 236, 214, 0.08);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+  flex-shrink: 0;
+}
+
+.brandBadge {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: var(--gradient-brand);
+  box-shadow:
+    0 8px 20px rgba(209, 145, 92, 0.32),
+    inset 0 1px 1px rgba(255, 255, 255, 0.35);
+}
+
+.brandCopy {
+  min-width: 0;
+}
+
+.brandKicker {
+  margin: 0;
+  color: #f0c18a;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.62rem;
+  font-weight: 700;
+}
+
+.brandTitle {
+  margin: 4px 0 0;
+  color: #fff5ea;
+  font-size: clamp(1rem, 2.8vw, 1.25rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+.mainStage {
+  flex: 1;
+  width: 100%;
+}
+
+.mainGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+/* Hero — desktop only */
+.loginHero {
+  display: none;
+}
+
+.heroKicker {
+  margin: 0 0 12px;
+  color: #f0c18a;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.heroHeadline {
+  margin: 0 0 16px;
+  color: #fff5ea;
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.08;
+}
+
+.heroBody {
+  margin: 0;
+  color: #bfa696;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 42ch;
+}
+
+.loginCard {
+  width: 100%;
+  padding: 28px 22px;
+  border-radius: 24px;
+  background: rgba(31, 21, 18, 0.92);
+  border: 1px solid rgba(255, 236, 214, 0.12);
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.38),
+    0 0 40px rgba(214, 145, 92, 0.08);
+}
+
+.loginCardHeader {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.loginKicker {
+  margin: 0;
+  color: #f0c18a;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.loginHeading {
+  margin: 8px 0 10px;
+  color: #fff5ea;
+  font-size: clamp(1.35rem, 4.5vw, 1.75rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+.loginDescription {
+  margin: 0 auto;
+  color: #bfa696;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  max-width: 34ch;
+}
+
+.loginError {
+  margin-bottom: 16px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  color: #fca5a5;
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.inputWrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.inputIcon {
+  position: absolute;
+  left: 14px;
+  color: #8f7a6e;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+}
+
+.fieldInput {
+  min-height: 52px !important;
+  padding-left: 44px !important;
+  font-size: 16px !important;
+}
+
+.fieldInput::placeholder {
+  color: #8f7a6e;
+}
+
+.fieldInputWithToggle {
+  padding-right: 48px !important;
+}
+
+.passwordToggle {
+  position: absolute;
+  right: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: none;
+  border-radius: 12px;
+  background: transparent;
+  color: #8f7a6e;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.passwordToggle:hover {
+  color: #bfa696;
+  background: rgba(255, 236, 214, 0.06);
+}
+
+.passwordToggle:focus-visible {
+  outline: 2px solid rgba(214, 145, 92, 0.68);
+  outline-offset: 2px;
+}
+
+.loginOptionsRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 2px;
+}
+
+.rememberLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #bfa696;
+  font-size: 0.84rem;
+  cursor: not-allowed;
+  user-select: none;
+}
+
+.rememberCheckbox {
+  width: 18px;
+  height: 18px;
+  accent-color: #43c66b;
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.forgotDisabled {
+  color: #8f7a6e;
+  font-size: 0.84rem;
+  cursor: not-allowed;
+  user-select: none;
+}
+
+.loginButton {
+  width: 100%;
+  min-height: 54px;
+  margin-top: 4px;
+  border: none;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #102212;
+  background: linear-gradient(135deg, #93ec82 0%, #22c267 100%);
+  box-shadow:
+    0 14px 32px rgba(67, 198, 107, 0.28),
+    0 0 20px rgba(67, 198, 107, 0.14);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    filter 0.15s ease;
+}
+
+.loginButton:hover {
+  filter: brightness(1.06);
+  transform: translateY(-1px);
+}
+
+.loginButton:active {
+  transform: translateY(0) scale(0.99);
+}
+
+.loginButton:focus-visible {
+  outline: 2px solid rgba(147, 236, 130, 0.8);
+  outline-offset: 3px;
+}
+
+.publicLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 52px;
+  margin-top: 12px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #fff5ea;
+  background: rgba(255, 236, 214, 0.04);
+  border: 1px solid rgba(255, 236, 214, 0.12);
+  transition: background 0.15s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.publicLink:hover {
+  background: rgba(255, 236, 214, 0.08);
+}
+
+.publicLink:focus-visible {
+  outline: 2px solid rgba(214, 145, 92, 0.68);
+  outline-offset: 3px;
+}
+
+/* Feature cards — mobile compact */
+.featureColumn {
+  width: 100%;
+}
+
+.featureSectionLabel {
+  margin: 0 0 10px;
+  padding: 0 4px;
+  color: #8f7a6e;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.featureGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.featureCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px;
+  border-radius: 18px;
+  background: rgba(31, 21, 18, 0.65);
+  border: 1px solid rgba(255, 236, 214, 0.08);
+}
+
+.featureIconBubble {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  color: #f0c18a;
+  background: radial-gradient(circle at 30% 30%, rgba(251, 191, 36, 0.35), rgba(123, 92, 79, 0.45));
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+.featureCopy {
+  min-width: 0;
+  flex: 1;
+}
+
+.featureLabel {
+  margin: 0 0 2px;
+  color: #f0c18a;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.6rem;
+  font-weight: 700;
+}
+
+.featureTitle {
+  margin: 0 0 2px;
+  color: #fff5ea;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+.featureDescription {
+  margin: 0;
+  color: #bfa696;
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+/* Tablet / iPad */
+@media (min-width: 768px) {
+  .pageInner {
+    max-width: 900px;
+    padding:
+      max(24px, env(safe-area-inset-top))
+      max(28px, env(safe-area-inset-right))
+      max(32px, env(safe-area-inset-bottom))
+      max(28px, env(safe-area-inset-left));
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .brandBar {
+    padding: 16px 22px;
+    border-radius: 22px;
+  }
+
+  .brandBadge {
+    width: 48px;
+    height: 48px;
+  }
+
+  .mainStage {
+    display: flex;
+    align-items: center;
+    padding: 28px 28px;
+    border-radius: 28px;
+    background: rgba(31, 21, 18, 0.72);
+    border: 1px solid rgba(255, 236, 214, 0.08);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.42);
+  }
+
+  .mainGrid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 340px);
+    gap: 24px;
+    align-items: start;
+  }
+
+  .loginHero {
+    display: none;
+  }
+
+  .loginCard {
+    padding: 36px 32px;
+    border-radius: 26px;
+    box-shadow:
+      0 24px 60px rgba(0, 0, 0, 0.4),
+      0 0 40px rgba(214, 145, 92, 0.08);
+  }
+
+  .fieldInput {
+    min-height: 56px !important;
+  }
+
+  .loginButton {
+    min-height: 58px;
+  }
+
+  .publicLink {
+    min-height: 56px;
+  }
+
+  .featureSectionLabel {
+    text-align: left;
+    margin-bottom: 14px;
+  }
+
+  .featureGrid {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .featureCard {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 18px;
+    border-radius: 20px;
+  }
+
+  .featureIconBubble {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 4px;
+  }
+
+  .featureTitle {
+    font-size: 1.15rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .pageInner {
+    max-width: 1280px;
+    padding:
+      max(28px, env(safe-area-inset-top))
+      max(32px, env(safe-area-inset-right))
+      max(40px, env(safe-area-inset-bottom))
+      max(32px, env(safe-area-inset-left));
+    gap: 24px;
+  }
+
+  .brandBar {
+    min-height: 88px;
+    padding: 18px 28px;
+    border-radius: 28px;
+  }
+
+  .brandBadge {
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+  }
+
+  .brandTitle {
+    font-size: 1.3rem;
+  }
+
+  .mainStage {
+    padding: 36px 40px;
+    min-height: 520px;
+  }
+
+  .mainGrid {
+    grid-template-columns: minmax(280px, 1fr) 480px 320px;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .loginHero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 16px;
+  }
+
+  .loginCard {
+    width: 480px;
+    padding: 40px;
+    border-radius: 28px;
+    box-shadow:
+      0 24px 80px rgba(0, 0, 0, 0.45),
+      0 0 50px rgba(214, 145, 92, 0.1);
+  }
+
+  .loginCardHeader {
+    text-align: left;
+    margin-bottom: 28px;
+  }
+
+  .loginDescription {
+    display: none;
+  }
+
+  .featureColumn {
+    width: 320px;
+  }
+
+  .featureSectionLabel {
+    font-size: 0.66rem;
+    letter-spacing: 0.14em;
+    margin-bottom: 16px;
+  }
+
+  .featureGrid {
+    gap: 16px;
+  }
+
+  .featureCard {
+    padding: 24px;
+    border-radius: 22px;
+  }
+
+  .featureIconBubble {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 8px;
+  }
+
+  .featureTitle {
+    font-size: 1.25rem;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 380px) {
+  .brandKicker {
+    letter-spacing: 0.12em;
+    font-size: 0.58rem;
+  }
+
+  .loginCard {
+    padding: 24px 16px;
+  }
+
+  .loginOptionsRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

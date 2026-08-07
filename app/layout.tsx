@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { AppHeader } from "../components/AppHeader";
+import { AppShell } from "../components/AppShell";
 import { CurrencyProvider } from "../components/CurrencyProvider";
 import { HeaderStatsProvider } from "../components/HeaderStatsProvider";
 
@@ -19,10 +19,7 @@ export default function RootLayout({
       <body className="app-body">
         <CurrencyProvider>
           <HeaderStatsProvider>
-            <div className="app-shell">
-              <AppHeader />
-              <div className="app-frame">{children}</div>
-            </div>
+            <AppShell>{children}</AppShell>
           </HeaderStatsProvider>
         </CurrencyProvider>
       </body>

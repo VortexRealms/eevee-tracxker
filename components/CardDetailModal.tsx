@@ -11,7 +11,7 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import type { CollectionRow, PokemonCard, PricesSnapshot } from "../types";
+import type { CollectionRow, DisplayCurrency, PokemonCard, PricesSnapshot } from "../types";
 import { defaultPriceVariant, parseCardIdAndVariant } from "../lib/cards";
 import { getVariantLabel, variantSortIndex } from "../lib/variant-labels";
 import { metaToExchangeRates } from "../lib/exchange-rates";
@@ -59,6 +59,43 @@ function formatAxisDate(iso: string): string {
   return new Intl.DateTimeFormat(undefined, { day: "numeric", month: "short" }).format(date);
 }
 
+function formatCompactChartPrice(value: number, currency: DisplayCurrency): string {
+  const abs = Math.abs(value);
+  if (currency === "HUF") {
+    if (abs >= 1000) {
+      const k = value / 1000;
+      return `${k >= 10 ? Math.round(k) : k.toFixed(1)}k`;
+    }
+    return String(Math.round(value));
+  }
+  const symbols: Record<Exclude<DisplayCurrency, "HUF">, string> = {
+    USD: "$",
+    EUR: "€",
+    GBP: "£",
+  };
+  const sym = symbols[currency as Exclude<DisplayCurrency, "HUF">];
+  if (abs >= 1000) {
+    const k = value / 1000;
+    return `${sym}${k >= 10 ? Math.round(k) : k.toFixed(1)}k`;
+  }
+  if (abs >= 100) return `${sym}${Math.round(value)}`;
+  return `${sym}${Math.round(value)}`;
+}
+
+function useIsMobileLayout(): boolean {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 599px)");
+    const update = () => setIsMobile(mq.matches);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
+
+  return isMobile;
+}
+
 function CustomTooltip({
   active,
   payload,
@@ -81,11 +118,18 @@ function CustomTooltip({
 
 export function CardDetailModal({ card, prices, collection, onClose }: CardDetailModalProps) {
   const { currency } = useCurrency();
+  const isMobileLayout = useIsMobileLayout();
   const [mounted, setMounted] = useState(false);
   const [selectedVariant, setSelectedVariant] = useState<string | null>(null);
   const [points, setPoints] = useState<HistoryPoint[]>([]);
   const [loading, setLoading] = useState(false);
+  const [imageExpanded, setImageExpanded] = useState(false);
+  const imageExpandedRef = useRef(false);
   const cacheRef = useRef<Map<string, HistoryPoint[]>>(new Map());
+
+  useEffect(() => {
+    imageExpandedRef.current = imageExpanded;
+  }, [imageExpanded]);
 
   useEffect(() => {
     setMounted(true);
@@ -104,6 +148,7 @@ export function CardDetailModal({ card, prices, collection, onClose }: CardDetai
   useEffect(() => {
     if (!card) {
       setSelectedVariant(null);
+      setImageExpanded(false);
       return;
     }
     cacheRef.current = new Map();
@@ -120,7 +165,12 @@ export function CardDetailModal({ card, prices, collection, onClose }: CardDetai
     document.body.style.overflow = "hidden";
 
     function handleEscape(event: KeyboardEvent) {
-      if (event.key === "Escape") onClose();
+      if (event.key !== "Escape") return;
+      if (imageExpandedRef.current) {
+        setImageExpanded(false);
+        return;
+      }
+      onClose();
     }
     window.addEventListener("keydown", handleEscape);
 
@@ -200,6 +250,9 @@ export function CardDetailModal({ card, prices, collection, onClose }: CardDetai
           ? styles.changeNegative
           : "";
 
+  const selectedVariantLabel =
+    selectedVariant != null ? getVariantLabel(selectedVariant) : "";
+
   return createPortal(
     <div className={styles.backdrop} role="dialog" aria-modal="true">
       <button
@@ -216,128 +269,203 @@ export function CardDetailModal({ card, prices, collection, onClose }: CardDetai
           </button>
         </div>
 
-        <div className={styles.body}>
-          <div className={styles.media}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={card.images.large || card.images.small}
-              alt={card.name}
-              className={styles.image}
-            />
-          </div>
-
-          <div className={styles.rightColumn}>
-            <h3 className={styles.name}>{card.name}</h3>
-            <p className={styles.meta}>
-              {card.set.name} · #{card.number}
-              {card.rarity ? ` · ${card.rarity}` : ""}
-            </p>
-
-            <div className={styles.statsRow}>
-              <div className={styles.statBox}>
-                <span className={styles.statLabel}>Current Price</span>
-                <span className={styles.statValue}>
-                  {formatDisplayPrice(currentAmount, currency)}
-                </span>
-              </div>
-              <div className={styles.statBox}>
-                <span className={styles.statLabel}>30D Low</span>
-                <span className={styles.statValue}>
-                  {formatDisplayPrice(lowAmount, currency)}
-                </span>
-              </div>
-              <div className={styles.statBox}>
-                <span className={styles.statLabel}>30D Change</span>
-                <span className={`${styles.statValue} ${changeClass}`}>{changeLabel}</span>
-              </div>
+        <div className={styles.scrollBody}>
+          <div className={styles.body}>
+            <div className={styles.media}>
+              <button
+                type="button"
+                className={styles.mediaButton}
+                onClick={() => setImageExpanded(true)}
+                aria-label={`View ${card.name} full size`}
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={card.images.large || card.images.small}
+                  alt={card.name}
+                  className={styles.image}
+                />
+              </button>
             </div>
 
-            <div className={styles.variantTabs}>
-              {variants.map((variant) => (
-                <button
-                  key={variant}
-                  type="button"
-                  className={`${styles.variantTab} ${
-                    variant === selectedVariant ? styles.variantTabActive : ""
-                  }`}
-                  onClick={() => setSelectedVariant(variant)}
+            <div className={styles.rightColumn}>
+              <div className={styles.identityBlock}>
+                <h3 className={styles.name}>{card.name}</h3>
+                <p className={styles.meta}>
+                  {card.set.name} · #{card.number}
+                  {card.rarity ? ` · ${card.rarity}` : ""}
+                </p>
+              </div>
+
+              <div className={styles.statsRow}>
+                <div className={styles.statBox}>
+                  <span className={styles.statLabel}>Current Price</span>
+                  <span className={styles.statValue}>
+                    {formatDisplayPrice(currentAmount, currency)}
+                  </span>
+                </div>
+                <div className={styles.statBox}>
+                  <span className={styles.statLabel}>30D Low</span>
+                  <span className={styles.statValue}>
+                    {formatDisplayPrice(lowAmount, currency)}
+                  </span>
+                </div>
+                <div className={styles.statBox}>
+                  <span className={styles.statLabel}>30D Change</span>
+                  <span className={`${styles.statValue} ${changeClass}`}>{changeLabel}</span>
+                </div>
+              </div>
+
+              <div className={styles.priceSummary}>
+                <div className={styles.priceSummaryMain}>
+                  <span className={styles.priceSummaryVariant}>{selectedVariantLabel}</span>
+                  <span className={styles.priceSummaryValue}>
+                    {formatDisplayPrice(currentAmount, currency)}
+                  </span>
+                  <span className={`${styles.priceSummaryChange} ${changeClass}`}>
+                    {changeLabel}
+                  </span>
+                </div>
+                <p className={styles.priceSummarySecondary}>
+                  30D low: {formatDisplayPrice(lowAmount, currency)}
+                </p>
+              </div>
+
+              <div className={styles.variantTabs}>
+                {variants.map((variant) => (
+                  <button
+                    key={variant}
+                    type="button"
+                    className={`${styles.variantTab} ${
+                      variant === selectedVariant ? styles.variantTabActive : ""
+                    }`}
+                    onClick={() => setSelectedVariant(variant)}
+                  >
+                    {getVariantLabel(variant)}
+                  </button>
+                ))}
+              </div>
+
+              <div className={styles.chartBlock}>
+                <div className={styles.chartHeader}>
+                  <h4 className={styles.chartTitle}>Price history</h4>
+                  <span className={styles.chartSeriesLabel}>{selectedVariantLabel}</span>
+                </div>
+                <div className={styles.chartSection}>
+                  {loading ? (
+                    <div className={styles.chartEmpty}>Loading price history…</div>
+                  ) : points.length === 0 ? (
+                    <div className={styles.chartEmpty}>No price history yet</div>
+                  ) : (
+                    <ResponsiveContainer width="100%" height="100%">
+                      <LineChart
+                        data={chartData}
+                        margin={
+                          isMobileLayout
+                            ? { top: 8, right: 8, bottom: 8, left: 4 }
+                            : { top: 8, right: 16, bottom: 0, left: 0 }
+                        }
+                      >
+                        <CartesianGrid stroke="rgba(255, 236, 214, 0.08)" vertical={false} />
+                        <XAxis
+                          dataKey="date"
+                          tickFormatter={formatAxisDate}
+                          stroke="rgba(255, 236, 214, 0.35)"
+                          tick={{ fill: "#9f8677", fontSize: isMobileLayout ? 10 : 11 }}
+                          tickLine={false}
+                          axisLine={false}
+                          minTickGap={isMobileLayout ? 20 : 24}
+                        />
+                        <YAxis
+                          tickFormatter={(value: number) =>
+                            isMobileLayout
+                              ? formatCompactChartPrice(value, currency)
+                              : formatDisplayPrice(value, currency)
+                          }
+                          stroke="rgba(255, 236, 214, 0.35)"
+                          tick={{ fill: "#9f8677", fontSize: isMobileLayout ? 10 : 11 }}
+                          tickLine={false}
+                          axisLine={false}
+                          width={isMobileLayout ? 48 : 72}
+                          domain={[0, "auto"]}
+                          allowDecimals={false}
+                          tickCount={5}
+                        />
+                        <Tooltip content={<CustomTooltip currency={currency} />} />
+                        <Line
+                          type="monotone"
+                          dataKey="amount"
+                          stroke="#fbbf24"
+                          strokeWidth={isMobileLayout ? 2 : 2.5}
+                          dot={false}
+                          connectNulls={false}
+                          activeDot={{ r: 4, fill: "#fbbf24" }}
+                        />
+                      </LineChart>
+                    </ResponsiveContainer>
+                  )}
+                </div>
+              </div>
+
+              <div className={styles.marketplaceRow}>
+                <a
+                  href={getEbaySearchUrl(card)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`secondary-button ${styles.marketplaceButton}`}
                 >
-                  {getVariantLabel(variant)}
-                </button>
-              ))}
-            </div>
-
-            <div className={styles.chartSection}>
-              {loading ? (
-                <div className={styles.chartEmpty}>Loading price history…</div>
-              ) : points.length === 0 ? (
-                <div className={styles.chartEmpty}>No price history yet</div>
-              ) : (
-                <ResponsiveContainer width="100%" height="100%">
-                  <LineChart data={chartData} margin={{ top: 8, right: 16, bottom: 0, left: 0 }}>
-                    <CartesianGrid stroke="rgba(255, 236, 214, 0.08)" vertical={false} />
-                    <XAxis
-                      dataKey="date"
-                      tickFormatter={formatAxisDate}
-                      stroke="rgba(255, 236, 214, 0.35)"
-                      tick={{ fill: "#9f8677", fontSize: 11 }}
-                      tickLine={false}
-                      axisLine={false}
-                      minTickGap={24}
-                    />
-                    <YAxis
-                      tickFormatter={(value: number) => formatDisplayPrice(value, currency)}
-                      stroke="rgba(255, 236, 214, 0.35)"
-                      tick={{ fill: "#9f8677", fontSize: 11 }}
-                      tickLine={false}
-                      axisLine={false}
-                      width={72}
-                      domain={["auto", "auto"]}
-                    />
-                    <Tooltip content={<CustomTooltip currency={currency} />} />
-                    <Line
-                      type="monotone"
-                      dataKey="amount"
-                      stroke="#fbbf24"
-                      strokeWidth={2.5}
-                      dot={false}
-                      connectNulls={false}
-                      activeDot={{ r: 4, fill: "#fbbf24" }}
-                    />
-                  </LineChart>
-                </ResponsiveContainer>
-              )}
+                  eBay
+                </a>
+                <a
+                  href={getTcgPlayerSearchUrl(card)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`secondary-button ${styles.marketplaceButton}`}
+                >
+                  TCGplayer
+                </a>
+                <a
+                  href={getCardmarketSearchUrl(card)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`secondary-button ${styles.marketplaceButton}`}
+                >
+                  Cardmarket
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div className={styles.marketplaceRow}>
-          <a
-            href={getEbaySearchUrl(card)}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`secondary-button ${styles.marketplaceButton}`}
-          >
-            eBay
-          </a>
-          <a
-            href={getTcgPlayerSearchUrl(card)}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`secondary-button ${styles.marketplaceButton}`}
-          >
-            TCGplayer
-          </a>
-          <a
-            href={getCardmarketSearchUrl(card)}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`secondary-button ${styles.marketplaceButton}`}
-          >
-            Cardmarket
-          </a>
         </div>
       </div>
+
+      {imageExpanded ? (
+        <div
+          className={styles.imageLightbox}
+          role="dialog"
+          aria-modal="true"
+          aria-label={`${card.name} full size`}
+        >
+          <button
+            type="button"
+            className={styles.imageLightboxDismiss}
+            aria-label="Close image"
+            onClick={() => setImageExpanded(false)}
+          />
+          <button
+            type="button"
+            className={styles.imageLightboxClose}
+            aria-label="Close image"
+            onClick={() => setImageExpanded(false)}
+          >
+            ×
+          </button>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={card.images.large || card.images.small}
+            alt={card.name}
+            className={styles.imageLightboxImg}
+          />
+        </div>
+      ) : null}
     </div>,
     document.body
   );

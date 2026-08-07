@@ -72,8 +72,14 @@
   background: rgba(255, 236, 214, 0.14);
 }
 
-.body {
+.scrollBody {
   flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.body {
   display: grid;
   grid-template-columns: minmax(240px, 42%) minmax(0, 1fr);
   gap: 24px;
@@ -89,6 +95,24 @@
   min-height: 0;
 }
 
+.mediaButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.mediaButton:focus-visible {
+  outline: 2px solid rgba(251, 191, 36, 0.65);
+  outline-offset: 4px;
+  border-radius: 14px;
+}
+
 .image {
   display: block;
   width: auto;
@@ -102,8 +126,12 @@
 .rightColumn {
   display: flex;
   flex-direction: column;
+  gap: 0;
   min-width: 0;
-  min-height: 0;
+}
+
+.identityBlock {
+  min-width: 0;
 }
 
 .name {
@@ -127,6 +155,10 @@
   margin-bottom: 16px;
 }
 
+.priceSummary {
+  display: none;
+}
+
 .statBox {
   display: flex;
   flex-direction: column;
@@ -135,6 +167,7 @@
   border-radius: 14px;
   border: 1px solid rgba(255, 236, 214, 0.1);
   background: rgba(255, 236, 214, 0.05);
+  min-width: 0;
 }
 
 .statLabel {
@@ -190,11 +223,44 @@
   color: #fbbf24;
 }
 
+.chartBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.chartHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.chartTitle {
+  margin: 0;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #e7c29f;
+}
+
+.chartSeriesLabel {
+  font-size: 0.78rem;
+  font-weight: 650;
+  color: #b8a091;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .chartSection {
-  flex: 1;
+  flex: none;
   display: flex;
   flex-direction: column;
   min-height: 180px;
+  height: 180px;
 }
 
 .chartEmpty {
@@ -234,44 +300,248 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 10px;
-  padding: 16px 24px 24px;
+  padding-top: 16px;
+  margin-top: 4px;
   border-top: 1px solid rgba(255, 236, 214, 0.08);
 }
 
 .marketplaceButton {
   width: 100%;
+  min-height: 44px;
   text-align: center;
+  text-decoration: none;
 }
 
-@media (max-width: 720px) {
+.imageLightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(4, 3, 2, 0.92);
+  backdrop-filter: blur(8px);
+}
+
+.imageLightboxDismiss {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-out;
+}
+
+.imageLightboxClose {
+  position: absolute;
+  top: max(16px, env(safe-area-inset-top));
+  right: max(16px, env(safe-area-inset-right));
+  z-index: 401;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 236, 214, 0.18);
+  background: rgba(255, 236, 214, 0.08);
+  color: #fff5ea;
+  font-size: 1.35rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.imageLightboxClose:hover {
+  background: rgba(255, 236, 214, 0.16);
+}
+
+.imageLightboxImg {
+  position: relative;
+  z-index: 401;
+  display: block;
+  max-width: min(96vw, 720px);
+  max-height: min(92dvh, 960px);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 16px;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.55);
+  pointer-events: none;
+}
+
+@media (max-width: 599px) {
+  .backdrop {
+    padding: 0;
+    align-items: flex-end;
+  }
+
   .sheet {
-    max-height: 94vh;
-    overflow-y: auto;
+    max-height: 96dvh;
+    max-width: none;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .header {
+    padding: 14px 16px;
+  }
+
+  .scrollBody {
+    padding-bottom: max(16px, env(safe-area-inset-bottom));
   }
 
   .body {
     grid-template-columns: 1fr;
+    gap: 0;
+    padding: 0 0 16px;
   }
 
   .media {
-    min-height: 280px;
-    max-height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
+    max-height: min(48vh, 320px);
+    padding: 12px 16px 0;
+    margin: 0;
+  }
+
+  .mediaButton {
+    max-height: min(48vh, 300px);
   }
 
   .image {
-    max-height: 380px;
+    width: auto;
+    height: auto;
+    max-width: min(100%, 260px);
+    max-height: min(48vh, 300px);
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.42);
+  }
+
+  .rightColumn {
+    position: relative;
+    z-index: 1;
+    margin-top: 0;
+    padding: 14px 16px 0;
+    border-radius: 18px 18px 0 0;
+    background:
+      linear-gradient(180deg, rgba(36, 24, 20, 0.98) 0%, rgba(17, 12, 11, 0.98) 100%);
+    border-top: 1px solid rgba(255, 236, 214, 0.08);
+  }
+
+  .identityBlock {
+    margin-bottom: 12px;
+  }
+
+  .name {
+    font-size: 1.15rem;
+    line-height: 1.25;
+  }
+
+  .meta {
+    margin: 4px 0 0;
+    font-size: 0.8rem;
+  }
+
+  .statsRow {
+    display: none;
+  }
+
+  .priceSummary {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 14px;
+    padding: 12px 14px;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 236, 214, 0.1);
+    background: rgba(255, 236, 214, 0.05);
+  }
+
+  .priceSummaryMain {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 8px 10px;
+  }
+
+  .priceSummaryVariant {
+    flex: 1 1 100%;
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #b8a091;
+  }
+
+  .priceSummaryValue {
+    font-size: 1.35rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: #fff5ea;
+  }
+
+  .priceSummaryChange {
+    font-size: 0.82rem;
+    font-weight: 700;
+  }
+
+  .priceSummarySecondary {
+    margin: 0;
+    font-size: 0.78rem;
+    color: #9f8677;
+  }
+
+  .variantTabs {
+    margin-bottom: 12px;
+    gap: 6px;
+  }
+
+  .variantTab {
+    min-height: 36px;
+    padding: 6px 12px;
+    font-size: 0.74rem;
+  }
+
+  .chartBlock {
+    margin-bottom: 12px;
   }
 
   .chartSection {
-    min-height: 200px;
-    height: 200px;
-    flex: none;
+    aspect-ratio: 16 / 10;
+    width: 100%;
+    height: auto;
+    min-height: 0;
   }
-}
 
-@media (max-width: 460px) {
-  .statsRow,
+  .chartEmpty {
+    aspect-ratio: 16 / 10;
+    width: 100%;
+    min-height: 0;
+    height: auto;
+  }
+
   .marketplaceRow {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+    padding-top: 12px;
+    margin-top: 0;
+  }
+
+  .marketplaceButton {
+    min-height: 44px;
+    padding-inline: 8px;
+    font-size: 0.74rem;
+  }
+
+  .imageLightbox {
+    padding: 16px;
+  }
+
+  .imageLightboxImg {
+    max-width: 100%;
+    max-height: 88dvh;
   }
 }

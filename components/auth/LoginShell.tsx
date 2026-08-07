@@ -1,0 +1,32 @@
+import { LoginCard } from "./LoginCard";
+import { LoginFeatureCards } from "./LoginFeatureCards";
+import { LoginHero } from "./LoginHero";
+import styles from "./LoginShell.module.css";
+
+type LoginShellProps = {
+  showError?: boolean;
+};
+
+export function LoginShell({ showError = false }: LoginShellProps) {
+  return (
+    <main className={styles.pageRoot}>
+      <div className={styles.pageInner}>
+        <header className={styles.brandBar}>
+          <div className={styles.brandBadge} aria-hidden="true" />
+          <div className={styles.brandCopy}>
+            <p className={styles.brandKicker}>PERSONAL COLLECTION</p>
+            <h1 className={styles.brandTitle}>Eevee &amp; Friends Tracker</h1>
+          </div>
+        </header>
+
+        <section className={styles.mainStage}>
+          <div className={styles.mainGrid}>
+            <LoginHero />
+            <LoginCard showError={showError} />
+            <LoginFeatureCards />
+          </div>
+        </section>
+      </div>
+    </main>
+  );
+}

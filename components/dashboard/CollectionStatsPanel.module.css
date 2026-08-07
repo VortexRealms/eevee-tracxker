@@ -238,6 +238,17 @@
 
   .value {
     margin-top: 10px;
+    white-space: normal;
+    word-break: break-word;
+    max-width: 100%;
+    font-size: clamp(1.4rem, 8vw, 2rem);
+    line-height: 1.1;
+  }
+}
+
+@media (max-width: 479px) {
+  .ticks {
+    font-size: 0.62rem;
   }
 }
 

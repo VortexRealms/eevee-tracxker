@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import type { CollectionRow, PokemonCard, PricesSnapshot } from "../types";
 import {
   getCardmarketSearchUrl,
@@ -16,6 +16,7 @@ import { getVariantLabel, variantSortIndex } from "../lib/variant-labels";
 import { useCurrency } from "./CurrencyProvider";
 import { CardPriceLabel } from "./CardPriceLabel";
 import { CollectionStatsPanel } from "./dashboard/CollectionStatsPanel";
+import { DisplayCurrencyPicker } from "./DisplayCurrencyPicker";
 import { useHeaderStats } from "./HeaderStatsProvider";
 import { VariantPickerModal } from "./VariantPickerModal";
 
@@ -48,6 +49,122 @@ function getAccentClass(name: string): string {
   return "is-eevee";
 }
 
+interface CardTileProps {
+  card: PokemonCard;
+  variantLabel?: string;
+  status: "owned" | "missing" | null;
+  priceNode?: ReactNode;
+  onOpen: () => void;
+  isPublic: boolean;
+  marketplaceLinks: ReactNode;
+  actionNode?: ReactNode;
+  showDesktopMeta?: boolean;
+  desktopMeta?: ReactNode;
+}
+
+function CardTile({
+  card,
+  variantLabel,
+  status,
+  priceNode,
+  onOpen,
+  isPublic,
+  marketplaceLinks,
+  actionNode,
+  showDesktopMeta = true,
+  desktopMeta,
+}: CardTileProps) {
+  const detailLineThree = variantLabel
+    ? variantLabel
+    : card.rarity
+      ? card.rarity
+      : null;
+
+  return (
+    <div className={`card-tile ${getAccentClass(card.name)}`}>
+      <button type="button" className="card-open-region" onClick={onOpen}>
+        <div className="card-media-button">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={card.images.small}
+            alt={card.name}
+            className="card-image"
+            loading="lazy"
+          />
+          {status === "owned" ? (
+            <span className="status-pill status-pill-owned">Owned</span>
+          ) : null}
+          {status === "missing" ? (
+            <span className="status-pill status-pill-missing">Missing</span>
+          ) : null}
+        </div>
+        <div className="card-body">
+          <div className="card-header-row">
+            <div className="card-info-block">
+              <div className="card-title">{card.name}</div>
+            </div>
+            {priceNode ? <div className="card-price-desktop">{priceNode}</div> : null}
+          </div>
+          <div className="card-detail-lines">
+            <span className="card-detail-line">{card.set.name}</span>
+            <span className="card-detail-line">
+              {card.set.series} · #{card.number}
+            </span>
+            {detailLineThree ? (
+              <span className="card-detail-line">{detailLineThree}</span>
+            ) : null}
+          </div>
+          <div className="card-subtitle-row card-subtitle-desktop">
+            <span className="card-setname">{card.set.name}</span>
+            <span className="card-number">#{card.number}</span>
+          </div>
+          {showDesktopMeta && desktopMeta ? (
+            <div className="card-meta-row card-meta-desktop">{desktopMeta}</div>
+          ) : null}
+          {priceNode ? <div className="card-footer-row">{priceNode}</div> : null}
+        </div>
+      </button>
+      {!isPublic && actionNode ? (
+        <div className="card-action-wrap">
+          <div className="search-buttons-row card-marketplace-links">{marketplaceLinks}</div>
+          {actionNode}
+        </div>
+      ) : null}
+    </div>
+  );
+}
+
+function MarketplaceLinks({ card }: { card: PokemonCard }) {
+  return (
+    <>
+      <a
+        href={getEbaySearchUrl(card)}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="secondary-button search-button"
+      >
+        eBay
+      </a>
+      <a
+        href={getTcgPlayerSearchUrl(card)}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="secondary-button search-button"
+      >
+        TCGplayer
+      </a>
+      <a
+        href={getCardmarketSearchUrl(card)}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="secondary-button search-button"
+      >
+        Cardmarket
+      </a>
+    </>
+  );
+}
+
 export function CardGrid({
   cards,
   collection,
@@ -56,7 +173,7 @@ export function CardGrid({
   onSetOwned,
   isLoading,
   updatingCardId,
-  mode = "checklist"
+  mode = "checklist",
 }: CardGridProps) {
   const isPublic = mode === "public";
   const [search, setSearch] = useState("");
@@ -192,12 +309,7 @@ export function CardGrid({
       if (filter === "missing" && owned) return false;
       if (searchTokens.length === 0) return true;
 
-      const haystack = [
-        card.name,
-        card.set.name,
-        card.set.series,
-        card.number
-      ]
+      const haystack = [card.name, card.set.name, card.set.series, card.number]
         .join(" ")
         .toLowerCase();
 
@@ -208,12 +320,7 @@ export function CardGrid({
   const filteredOwned = useMemo(() => {
     return ownedEntries.filter(({ card }) => {
       if (searchTokens.length === 0) return true;
-      const haystack = [
-        card.name,
-        card.set.name,
-        card.set.series,
-        card.number
-      ]
+      const haystack = [card.name, card.set.name, card.set.series, card.number]
         .join(" ")
         .toLowerCase();
       return searchTokens.every((token) => haystack.includes(token));
@@ -245,13 +352,15 @@ export function CardGrid({
           />
         </div>
 
+        {isPublic && <DisplayCurrencyPicker variant="chips" />}
+
         {!isPublic && (
           <div className="chip-row chip-row-scroll">
             {(
               [
                 ["all", "All"],
                 ["owned", "Owned"],
-                ["missing", "Missing"]
+                ["missing", "Missing"],
               ] as const
             ).map(([value, label]) => (
               <button
@@ -293,88 +402,43 @@ export function CardGrid({
             const isUpdating = updatingCardId === compositeKey;
 
             return (
-              <div
+              <CardTile
                 key={compositeKey}
-                className={`card-tile ${getAccentClass(card.name)}`}
-              >
-                <button
-                  type="button"
-                  className="card-open-region"
-                  onClick={() => onCardClick(card.id)}
-                >
-                  <div className="card-media-button">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={card.images.small}
-                      alt={card.name}
-                      className="card-image"
-                      loading="lazy"
+                card={card}
+                variantLabel={getVariantLabel(variant)}
+                status="owned"
+                onOpen={() => onCardClick(card.id)}
+                isPublic={isPublic}
+                marketplaceLinks={<MarketplaceLinks card={card} />}
+                priceNode={
+                  showPrices && exchangeRates ? (
+                    <CardPriceLabel
+                      price={getPriceForCard(card, variant, prices)}
+                      currency={currency}
+                      rates={exchangeRates}
+                      updatedAt={prices?.entries[card.id]?.updatedAt}
+                      priceSource={prices?.entries[card.id]?.source}
                     />
-                    <span className="status-pill status-pill-owned">Owned</span>
-                  </div>
-                  <div className="card-body">
-                    <div className="card-title-row">
-                      <div className="card-title">{card.name}</div>
-                      {showPrices && exchangeRates && (
-                        <CardPriceLabel
-                          price={getPriceForCard(card, variant, prices)}
-                          currency={currency}
-                          rates={exchangeRates}
-                          updatedAt={prices?.entries[card.id]?.updatedAt}
-                          priceSource={prices?.entries[card.id]?.source}
-                        />
-                      )}
-                    </div>
-                    <div className="card-subtitle-row">
-                      <span className="card-setname">{card.set.name}</span>
-                      <span className="card-number">#{card.number}</span>
-                    </div>
-                    <div className="card-meta-row">
-                      <span className="set-pill">{card.set.series}</span>
-                      <span className="variant-capsule">{getVariantLabel(variant)}</span>
-                      <span className="mini-pill">{card.set.releaseDate}</span>
-                    </div>
-                  </div>
-                </button>
-                {!isPublic && (
-                  <div className="card-action-wrap">
-                    <div className="search-buttons-row">
-                      <a
-                        href={getEbaySearchUrl(card)}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="secondary-button search-button"
-                      >
-                        eBay
-                      </a>
-                      <a
-                        href={getTcgPlayerSearchUrl(card)}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="secondary-button search-button"
-                      >
-                        TCGplayer
-                      </a>
-                      <a
-                        href={getCardmarketSearchUrl(card)}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="secondary-button search-button"
-                      >
-                        Cardmarket
-                      </a>
-                    </div>
-                    <button
-                      type="button"
-                      onClick={() => onSetOwned(card.id, variant, false)}
-                      className="card-action secondary-button danger-button"
-                      disabled={isUpdating}
-                    >
-                      {isUpdating ? "Saving..." : "Remove from collection"}
-                    </button>
-                  </div>
-                )}
-              </div>
+                  ) : null
+                }
+                desktopMeta={
+                  <>
+                    <span className="set-pill">{card.set.series}</span>
+                    <span className="variant-capsule">{getVariantLabel(variant)}</span>
+                    <span className="mini-pill">{card.set.releaseDate}</span>
+                  </>
+                }
+                actionNode={
+                  <button
+                    type="button"
+                    onClick={() => onSetOwned(card.id, variant, false)}
+                    className="card-action secondary-button danger-button"
+                    disabled={isUpdating}
+                  >
+                    {isUpdating ? "Saving..." : "Remove from collection"}
+                  </button>
+                }
+              />
             );
           })}
         </div>
@@ -402,85 +466,34 @@ export function CardGrid({
                 : null;
 
             return (
-              <div
+              <CardTile
                 key={card.id}
-                className={`card-tile ${getAccentClass(card.name)}`}
-              >
-                <button
-                  type="button"
-                  className="card-open-region"
-                  onClick={() => onCardClick(card.id)}
-                >
-                  <div className="card-media-button">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={card.images.small}
-                      alt={card.name}
-                      className="card-image"
-                      loading="lazy"
+                card={card}
+                status={owned ? "owned" : "missing"}
+                onOpen={() => onCardClick(card.id)}
+                isPublic={false}
+                marketplaceLinks={<MarketplaceLinks card={card} />}
+                priceNode={
+                  listing != null && exchangeRates != null ? (
+                    <CardPriceLabel
+                      price={listing.price}
+                      currency={currency}
+                      rates={exchangeRates}
+                      updatedAt={prices?.entries[card.id]?.updatedAt}
+                      priceSource={prices?.entries[card.id]?.source}
+                      fallbackVariantLabel={
+                        listing.isFallback ? getVariantLabel(listing.variant) : undefined
+                      }
                     />
-                    {owned && (
-                      <span className="status-pill status-pill-owned">Owned</span>
-                    )}
-                    {!owned && (
-                      <span className="status-pill status-pill-missing">Missing</span>
-                    )}
-                  </div>
-                  <div className="card-body">
-                    <div className="card-title-row">
-                      <div className="card-title">{card.name}</div>
-                      {listing != null && exchangeRates != null && (
-                        <CardPriceLabel
-                          price={listing.price}
-                          currency={currency}
-                          rates={exchangeRates}
-                          updatedAt={prices?.entries[card.id]?.updatedAt}
-                          priceSource={prices?.entries[card.id]?.source}
-                          fallbackVariantLabel={
-                            listing.isFallback
-                              ? getVariantLabel(listing.variant)
-                              : undefined
-                          }
-                        />
-                      )}
-                    </div>
-                    <div className="card-subtitle-row">
-                      <span className="card-setname">{card.set.name}</span>
-                      <span className="card-number">#{card.number}</span>
-                    </div>
-                    <div className="card-meta-row">
-                      <span className="set-pill">{card.set.series}</span>
-                      <span className="mini-pill">{card.set.releaseDate}</span>
-                    </div>
-                  </div>
-                </button>
-                <div className="card-action-wrap">
-                  <div className="search-buttons-row">
-                    <a
-                      href={getEbaySearchUrl(card)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="secondary-button search-button"
-                    >
-                      eBay
-                    </a>
-                    <a
-                      href={getTcgPlayerSearchUrl(card)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="secondary-button search-button"
-                    >
-                      TCGplayer
-                    </a>
-                    <a
-                      href={getCardmarketSearchUrl(card)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="secondary-button search-button"
-                    >
-                      Cardmarket
-                    </a>
-                  </div>
+                  ) : null
+                }
+                desktopMeta={
+                  <>
+                    <span className="set-pill">{card.set.series}</span>
+                    <span className="mini-pill">{card.set.releaseDate}</span>
+                  </>
+                }
+                actionNode={
                   <button
                     type="button"
                     onClick={handleAdd}
@@ -489,8 +502,8 @@ export function CardGrid({
                   >
                     {isUpdating ? "Saving..." : "Add to collection"}
                   </button>
-                </div>
-              </div>
+                }
+              />
             );
           })}
         </div>
@@ -510,5 +523,3 @@ export function CardGrid({
     </div>
   );
 }
-
-

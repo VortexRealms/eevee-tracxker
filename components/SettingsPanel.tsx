@@ -3,18 +3,10 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import type { PricesMeta } from "../types";
-import { useCurrency, DISPLAY_CURRENCIES } from "./CurrencyProvider";
+import { DisplayCurrencyPicker } from "./DisplayCurrencyPicker";
 import { metaToExchangeRates } from "../lib/exchange-rates";
 
-const CURRENCY_LABELS: Record<(typeof DISPLAY_CURRENCIES)[number], string> = {
-  USD: "US Dollar (USD)",
-  EUR: "Euro (EUR)",
-  HUF: "Hungarian Forint (HUF)",
-  GBP: "British Pound (GBP)",
-};
-
 export function SettingsPanel() {
-  const { currency, setCurrency } = useCurrency();
   const [meta, setMeta] = useState<PricesMeta | null>(null);
   const [metaError, setMetaError] = useState<string | null>(null);
 
@@ -53,21 +45,7 @@ export function SettingsPanel() {
         Cardmarket); otherwise values are converted using current exchange rates.
       </p>
 
-      <fieldset className="currency-fieldset">
-        <legend className="sr-only">Display currency</legend>
-        {DISPLAY_CURRENCIES.map((code) => (
-          <label key={code} className="currency-option">
-            <input
-              type="radio"
-              name="display-currency"
-              value={code}
-              checked={currency === code}
-              onChange={() => setCurrency(code)}
-            />
-            <span>{CURRENCY_LABELS[code]}</span>
-          </label>
-        ))}
-      </fieldset>
+      <DisplayCurrencyPicker variant="fieldset" />
 
       {metaError && <p className="page-copy is-error">{metaError}</p>}
       {rates && (

@@ -3749,7 +3749,9 @@
       "large": "https://assets.tcgdex.net/en/bw/bw9/64/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "holo",
+      "reverse"
     ]
   },
   {
