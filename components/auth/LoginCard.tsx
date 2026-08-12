@@ -1,15 +1,56 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, type FormEvent } from "react";
 import styles from "./LoginShell.module.css";
 
 type LoginCardProps = {
   showError?: boolean;
+  showSessionError?: boolean;
 };
 
-export function LoginCard({ showError = false }: LoginCardProps) {
+export function LoginCard({ showError = false, showSessionError = false }: LoginCardProps) {
   const [showPassword, setShowPassword] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [clientError, setClientError] = useState<string | null>(null);
+
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setSubmitting(true);
+    setClientError(null);
+
+    const formData = new FormData(event.currentTarget);
+
+    try {
+      const res = await fetch("/api/auth/login", {
+        method: "POST",
+        body: formData,
+        credentials: "include",
+        headers: { Accept: "application/json" },
+      });
+
+      const data = (await res.json().catch(() => ({}))) as { error?: string };
+
+      if (!res.ok) {
+        if (data.error === "invalid") {
+          setClientError("Invalid username or password. Please try again.");
+        } else if (data.error === "session") {
+          setClientError(
+            "Could not start your session. Check your database connection and try again."
+          );
+        } else {
+          setClientError("Could not sign in. Please try again.");
+        }
+        return;
+      }
+
+      window.location.assign("/checklist");
+    } catch {
+      setClientError("Could not sign in. Please try again.");
+    } finally {
+      setSubmitting(false);
+    }
+  }
 
   return (
     <section className={styles.loginCard}>
@@ -27,7 +68,19 @@ export function LoginCard({ showError = false }: LoginCardProps) {
         </div>
       ) : null}
 
-      <form className={styles.loginForm} method="POST" action="/api/auth/login">
+      {showSessionError ? (
+        <div className={styles.loginError} role="alert">
+          Could not start your session. Check your database connection and try again.
+        </div>
+      ) : null}
+
+      {clientError ? (
+        <div className={styles.loginError} role="alert">
+          {clientError}
+        </div>
+      ) : null}
+
+      <form className={styles.loginForm} onSubmit={handleSubmit}>
         <div className={styles.fieldGroup}>
           <label className="field-label" htmlFor="username">
             Username
@@ -124,8 +177,8 @@ export function LoginCard({ showError = false }: LoginCardProps) {
           </span>
         </div>
 
-        <button type="submit" className={styles.loginButton}>
-          Login
+        <button type="submit" className={styles.loginButton} disabled={submitting}>
+          {submitting ? "Signing in..." : "Login"}
         </button>
       </form>
 

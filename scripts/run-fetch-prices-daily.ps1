@@ -323,9 +323,21 @@ try {
   $exitCode = $LASTEXITCODE
   $ErrorActionPreference = $prevEap
 
-  if ($exitCode -ne 0) {
+  if (result.status -ne 0) {
     Write-Log "FAILED fetch:prices with exit code $exitCode (stamp not updated; will retry on next trigger)."
     exit $exitCode
+  }
+
+  Write-Log "Verifying SQLite integrity..."
+  & $npm run verify:price-db -- $Today 2>&1 | ForEach-Object {
+    $text = $_.ToString()
+    if ($text.Length -gt 0) {
+      Append-LogLine -Line $text
+    }
+  }
+  if ($LASTEXITCODE -ne 0) {
+    Write-Log "FAILED verify:price-db (stamp not updated)."
+    exit $LASTEXITCODE
   }
 
   Publish-PriceHistorySnapshot -DateStamp $Today -DryRunPush:$DryRun

@@ -1,6 +1,6 @@
 /**
  * Phase B: Fetch prices from Pokewallet GET /cards/:id using pokewallet-id-cache.json.
- * Writes results to the Google Sheet "prices" tab (live — no deploy needed).
+ * Writes results to the git-tracked SQLite price database (current prices + daily history).
  *
  * Run fetch:pokewallet-ids first to build the cache.
  *
@@ -16,8 +16,8 @@ import {
   metaToExchangeRates,
 } from "../lib/exchange-rates";
 import { localTodayIso, shouldSkipPriceFetch } from "../lib/fetch-price-skip";
-import { getPricesSnapshot, syncPricesToSheet } from "../lib/google-sheets";
 import { mergePriceEntries } from "../lib/price-merge";
+import { getPricesSnapshotFromDb, syncPricesToDb } from "../lib/price-db";
 import { loadEnvFiles } from "./load-env";
 import { parseBatchCli, sliceBatch } from "./pokewallet-cli";
 import { PokewalletClient } from "./pokewallet-client";
@@ -49,8 +49,8 @@ async function main() {
   const allCards = JSON.parse(await fs.readFile(cardsPath, "utf8")) as PokemonCard[];
   const cache = await loadJson<PokewalletIdCache>(cachePath, {});
 
-  console.log("  Loading existing prices from Google Sheet...");
-  const existingSnapshot = await getPricesSnapshot();
+  console.log("  Loading existing prices from SQLite...");
+  const existingSnapshot = getPricesSnapshotFromDb();
   const fetchedEntries: Record<string, PriceEntry> = { ...existingSnapshot.entries };
 
   const withCache = allCards.filter((c) => cache[c.id]?.pokewalletId);
@@ -83,9 +83,9 @@ async function main() {
 
   async function maybeSyncPartial(meta: PricesMeta) {
     syncedSinceLast = 0;
-    const result = await syncPricesToSheet(fetchedEntries, meta);
+    const result = syncPricesToDb(fetchedEntries, meta);
     console.log(
-      `\n  Synced to Sheet: ${result.updated} updated, ${result.appended} appended, ${result.skipped} manual skipped`
+      `\n  Synced to SQLite: ${result.updated} updated, ${result.appended} appended, ${result.skipped} manual skipped`
     );
   }
 
@@ -144,7 +144,7 @@ async function main() {
     console.warn(`failed (${(err as Error).message}), keeping existing meta`);
   }
 
-  const syncResult = await syncPricesToSheet(fetchedEntries, meta);
+  const syncResult = syncPricesToDb(fetchedEntries, meta);
 
   const finalSnapshot = { meta, entries: fetchedEntries };
   const historyResult = writePriceHistorySnapshot({
@@ -168,10 +168,10 @@ async function main() {
 
   const noCache = allCards.length - withCache.length;
   console.log(
-    `\nSynced ${Object.keys(fetchedEntries).length} price entries to Google Sheet (prices tab)`
+    `\nSynced ${Object.keys(fetchedEntries).length} price entries to SQLite (current_prices)`
   );
   console.log(
-    `  Sheet write: ${syncResult.updated} updated, ${syncResult.appended} appended, ${syncResult.skipped} manual skipped`
+    `  SQLite write: ${syncResult.updated} updated, ${syncResult.appended} appended, ${syncResult.skipped} manual skipped`
   );
   console.log(
     `  This batch: ${priced} priced, ${skippedFresh + skippedManual} skipped (${skippedFresh} fresh, ${skippedManual} manual), ${noPriceData} no data, ${errors} errors`

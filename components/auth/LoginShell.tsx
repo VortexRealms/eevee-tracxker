@@ -5,9 +5,10 @@ import styles from "./LoginShell.module.css";
 
 type LoginShellProps = {
   showError?: boolean;
+  showSessionError?: boolean;
 };
 
-export function LoginShell({ showError = false }: LoginShellProps) {
+export function LoginShell({ showError = false, showSessionError = false }: LoginShellProps) {
   return (
     <main className={styles.pageRoot}>
       <div className={styles.pageInner}>
@@ -22,7 +23,7 @@ export function LoginShell({ showError = false }: LoginShellProps) {
         <section className={styles.mainStage}>
           <div className={styles.mainGrid}>
             <LoginHero />
-            <LoginCard showError={showError} />
+            <LoginCard showError={showError} showSessionError={showSessionError} />
             <LoginFeatureCards />
           </div>
         </section>

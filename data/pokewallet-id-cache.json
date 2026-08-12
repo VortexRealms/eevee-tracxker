@@ -3694,5 +3694,19 @@
     "resolvedAt": "2026-08-05",
     "matchScore": 155,
     "searchQuery": "Clive Paldean Fates 236"
+  },
+  "sm1-101a": {
+    "pokewalletId": "864b813a442b39673907644ebc76ef6b6fad644b12aad9e008829f97b42e143c",
+    "setCode": "SM01",
+    "resolvedAt": "2026-08-12",
+    "matchScore": 160,
+    "searchQuery": "Eevee 101a"
+  },
+  "sv1-252": {
+    "pokewalletId": "pk_8df91b1534cf133312f405d36d5a6bab0f42ac0f7f102b4b3816c19f924de0457625e9b432af754d1c566114ad96b790",
+    "setCode": "SVI",
+    "resolvedAt": "2026-08-12",
+    "matchScore": 145,
+    "searchQuery": "Penny 252"
   }
 }

@@ -30,3 +30,8 @@ data/pokemon-tcg-data/
 *.sqlite-journal
 
 logs/
+backups/
+
+# Personal printable checklists (generated, not committed)
+VARIANT_MAPPING_CHECKLIST.md
+VARIANT_MAPPING_CHECKLIST.html

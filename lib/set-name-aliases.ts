@@ -1,0 +1,23 @@
+/** External Set Hunter setName → catalogue PokemonCard.set.name */
+export const EXTERNAL_SET_NAME_ALIASES: Record<string, string> = {
+  "hs undaunted": "Undaunted",
+  "scarlet violet black star promos": "SVP Black Star Promos",
+  "svp black star promos": "SVP Black Star Promos",
+  "swsh black star promos": "SWSH Black Star Promos",
+  "sm black star promos": "SM Black Star Promos",
+  "xy black star promos": "XY Black Star Promos",
+  "bw black star promos": "BW Black Star Promos",
+  "wizards black star promos": "Wizards Black Star Promos",
+  "pokemon go": "Pokémon GO",
+  "hidden fates shiny vault": "Hidden Fates Shiny Vault",
+  "shining fates shiny vault": "Shining Fates Shiny Vault",
+  "crown zenith galarian gallery": "Crown Zenith Galarian Gallery",
+  "brilliant stars trainer gallery": "Brilliant Stars Trainer Gallery",
+  "astral radiance trainer gallery": "Astral Radiance Trainer Gallery",
+  "lost origin trainer gallery": "Lost Origin Trainer Gallery",
+  "silver tempest trainer gallery": "Silver Tempest Trainer Gallery",
+  "pokemon futsal collection": "Pokémon Futsal 2020",
+  "pokemon futsal 2020": "Pokémon Futsal 2020",
+  "celebrations classic collection": "Celebrations Classic Collection",
+  "celebrations: classic collection": "Celebrations Classic Collection",
+};

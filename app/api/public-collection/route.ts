@@ -1,13 +1,17 @@
 import { NextResponse } from "next/server";
+import { getCollectionRowsForUser } from "../../../lib/db/collection";
+import { requirePublicCollectionUserId } from "../../../lib/db/config";
 import { enrichPricesSnapshot } from "../../../lib/exchange-rates";
-import { getAllCollectionRows, getPricesSnapshot } from "../../../lib/google-sheets";
+import { getPricesSnapshot } from "../../../lib/prices-provider";
 
 export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
 
 export async function GET() {
   try {
+    const publicUserId = requirePublicCollectionUserId();
     const [rows, rawPrices] = await Promise.all([
-      getAllCollectionRows(),
+      getCollectionRowsForUser(publicUserId),
       getPricesSnapshot(),
     ]);
     const prices = await enrichPricesSnapshot(rawPrices);

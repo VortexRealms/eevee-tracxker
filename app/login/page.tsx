@@ -8,5 +8,6 @@ export default function LoginPage({
   searchParams?: { error?: string };
 }) {
   const showError = searchParams?.error === "invalid";
-  return <LoginShell showError={showError} />;
+  const showSessionError = searchParams?.error === "session";
+  return <LoginShell showError={showError} showSessionError={showSessionError} />;
 }

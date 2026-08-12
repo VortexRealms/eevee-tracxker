@@ -219,8 +219,8 @@
       "large": "https://assets.tcgdex.net/en/base/basep/11/high.png"
     },
     "variants": [
-      "normal",
-      "holo"
+      "holo",
+      "wPromo"
     ]
   },
   {
@@ -780,7 +780,8 @@
     },
     "variants": [
       "normal",
-      "reverse"
+      "reverse",
+      "jumbo"
     ]
   },
   {
@@ -1222,7 +1223,8 @@
     },
     "variants": [
       "normal",
-      "reverse"
+      "reverse",
+      "exBattleStadiumDeckExclusive"
     ]
   },
   {
@@ -1306,7 +1308,8 @@
     },
     "variants": [
       "normal",
-      "reverse"
+      "reverse",
+      "exBattleStadiumDeckExclusive"
     ]
   },
   {
@@ -1333,6 +1336,7 @@
       "large": "https://assets.tcgdex.net/en/ex/ex10/5/high.png"
     },
     "variants": [
+      "reverse",
       "holo"
     ]
   },
@@ -1360,6 +1364,7 @@
       "large": "https://assets.tcgdex.net/en/ex/ex10/8/high.png"
     },
     "variants": [
+      "reverse",
       "holo"
     ]
   },
@@ -1387,6 +1392,7 @@
       "large": "https://assets.tcgdex.net/en/ex/ex10/19/high.png"
     },
     "variants": [
+      "reverse",
       "holo"
     ]
   },
@@ -1414,7 +1420,8 @@
       "large": "https://assets.tcgdex.net/en/ex/ex10/55/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse"
     ]
   },
   {
@@ -1441,7 +1448,9 @@
       "large": "https://assets.tcgdex.net/en/ex/ex10/102/high.png"
     },
     "variants": [
-      "holo"
+      "holo",
+      "worldChampionshipDeck2006JimmyBallard",
+      "worldChampionshipDeck2007TomRoos"
     ]
   },
   {
@@ -1468,7 +1477,8 @@
       "large": "https://assets.tcgdex.net/en/ex/ex10/112/high.png"
     },
     "variants": [
-      "holo"
+      "holo",
+      "worldChampionshipDeck2006JimmyBallard"
     ]
   },
   {
@@ -1496,6 +1506,7 @@
       "large": "https://assets.tcgdex.net/en/ex/ex11/4/high.png"
     },
     "variants": [
+      "reverse",
       "holo"
     ]
   },
@@ -1524,6 +1535,7 @@
       "large": "https://assets.tcgdex.net/en/ex/ex11/5/high.png"
     },
     "variants": [
+      "reverse",
       "holo"
     ]
   },
@@ -1552,6 +1564,7 @@
       "large": "https://assets.tcgdex.net/en/ex/ex11/7/high.png"
     },
     "variants": [
+      "reverse",
       "holo"
     ]
   },
@@ -1580,6 +1593,7 @@
       "large": "https://assets.tcgdex.net/en/ex/ex11/17/high.png"
     },
     "variants": [
+      "reverse",
       "holo"
     ]
   },
@@ -1608,6 +1622,7 @@
       "large": "https://assets.tcgdex.net/en/ex/ex11/18/high.png"
     },
     "variants": [
+      "reverse",
       "holo"
     ]
   },
@@ -1635,7 +1650,9 @@
       "large": "https://assets.tcgdex.net/en/ex/ex11/68/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse",
+      "worldChampionshipDeck2007JunHasebe"
     ]
   },
   {
@@ -1662,7 +1679,10 @@
       "large": "https://assets.tcgdex.net/en/ex/ex11/69/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse",
+      "worldChampionshipDeck2006JimmyBallard",
+      "worldChampionshipDeck2007TomRoos"
     ]
   },
   {
@@ -1689,7 +1709,8 @@
       "large": "https://assets.tcgdex.net/en/ex/ex11/108/high.png"
     },
     "variants": [
-      "holo"
+      "holo",
+      "worldChampionshipDeck2006JimmyBallard"
     ]
   },
   {
@@ -1716,7 +1737,10 @@
       "large": "https://assets.tcgdex.net/en/ex/ex11/109/high.png"
     },
     "variants": [
-      "holo"
+      "holo",
+      "worldChampionshipDeck2006JimmyBallard",
+      "worldChampionshipDeck2007JunHasebe",
+      "worldChampionshipDeck2007TomRoos"
     ]
   },
   {
@@ -1743,7 +1767,10 @@
       "large": "https://assets.tcgdex.net/en/ex/ex11/110/high.png"
     },
     "variants": [
-      "holo"
+      "holo",
+      "worldChampionshipDeck2006JimmyBallard",
+      "worldChampionshipDeck2007JunHasebe",
+      "worldChampionshipDeck2007TomRoos"
     ]
   },
   {
@@ -1770,6 +1797,7 @@
       "large": "https://assets.tcgdex.net/en/pop/pop3/2/high.png"
     },
     "variants": [
+      "normal",
       "holo"
     ]
   },
@@ -1797,6 +1825,7 @@
       "large": "https://assets.tcgdex.net/en/pop/pop3/3/high.png"
     },
     "variants": [
+      "normal",
       "holo"
     ]
   },
@@ -1907,7 +1936,9 @@
     },
     "variants": [
       "normal",
-      "holo"
+      "holo",
+      "worldChampionshipDeck2007TomRoos",
+      "worldChampionshipDeck2008JasonKlaczynski"
     ]
   },
   {
@@ -2129,7 +2160,9 @@
     "variants": [
       "normal",
       "reverse",
-      "holo"
+      "holo",
+      "snowflake",
+      "burgerKing"
     ]
   },
   {
@@ -2186,7 +2219,8 @@
     "variants": [
       "normal",
       "reverse",
-      "holo"
+      "holo",
+      "burgerKing"
     ]
   },
   {
@@ -2270,7 +2304,8 @@
     },
     "variants": [
       "normal",
-      "reverse"
+      "reverse",
+      "burgerKing"
     ]
   },
   {
@@ -2576,7 +2611,8 @@
     },
     "variants": [
       "normal",
-      "reverse"
+      "reverse",
+      "crackedIce"
     ]
   },
   {
@@ -2605,7 +2641,8 @@
     "variants": [
       "normal",
       "reverse",
-      "holo"
+      "holo",
+      "crackedIce"
     ]
   },
   {
@@ -2634,7 +2671,8 @@
     "variants": [
       "normal",
       "reverse",
-      "holo"
+      "holo",
+      "crackedIce"
     ]
   },
   {
@@ -2662,7 +2700,9 @@
     },
     "variants": [
       "normal",
-      "reverse"
+      "reverse",
+      "expansion",
+      "expansionStaff"
     ]
   },
   {
@@ -2885,7 +2925,9 @@
       "large": "https://assets.tcgdex.net/en/col/col1/4/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse",
+      "holo"
     ]
   },
   {
@@ -2912,7 +2954,9 @@
       "large": "https://assets.tcgdex.net/en/col/col1/13/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse",
+      "holo"
     ]
   },
   {
@@ -2939,7 +2983,9 @@
       "large": "https://assets.tcgdex.net/en/col/col1/22/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse",
+      "holo"
     ]
   },
   {
@@ -2966,7 +3012,8 @@
       "large": "https://assets.tcgdex.net/en/col/col1/44/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse"
     ]
   },
   {
@@ -2993,7 +3040,8 @@
       "large": "https://assets.tcgdex.net/en/col/col1/45/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse"
     ]
   },
   {
@@ -3020,7 +3068,8 @@
       "large": "https://assets.tcgdex.net/en/col/col1/52/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse"
     ]
   },
   {
@@ -3047,7 +3096,8 @@
       "large": "https://assets.tcgdex.net/en/col/col1/56/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse"
     ]
   },
   {
@@ -3317,7 +3367,8 @@
       "large": "https://assets.tcgdex.net/en/bw/bw5/6/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse"
     ]
   },
   {
@@ -3344,7 +3395,10 @@
       "large": "https://assets.tcgdex.net/en/bw/bw5/12/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse",
+      "staff",
+      "league"
     ]
   },
   {
@@ -3371,7 +3425,10 @@
       "large": "https://assets.tcgdex.net/en/bw/bw5/25/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse",
+      "staff",
+      "league"
     ]
   },
   {
@@ -3398,7 +3455,8 @@
       "large": "https://assets.tcgdex.net/en/bw/bw5/30/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse"
     ]
   },
   {
@@ -3425,7 +3483,10 @@
       "large": "https://assets.tcgdex.net/en/bw/bw5/37/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse",
+      "staff",
+      "league"
     ]
   },
   {
@@ -3452,7 +3513,10 @@
       "large": "https://assets.tcgdex.net/en/bw/bw5/48/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse",
+      "staff",
+      "league"
     ]
   },
   {
@@ -3479,7 +3543,10 @@
       "large": "https://assets.tcgdex.net/en/bw/bw5/60/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse",
+      "staff",
+      "league"
     ]
   },
   {
@@ -3506,7 +3573,8 @@
       "large": "https://assets.tcgdex.net/en/bw/bw5/61/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse"
     ]
   },
   {
@@ -3533,7 +3601,8 @@
       "large": "https://assets.tcgdex.net/en/bw/bw5/83/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse"
     ]
   },
   {
@@ -3560,7 +3629,10 @@
       "large": "https://assets.tcgdex.net/en/bw/bw5/84/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse",
+      "staff",
+      "league"
     ]
   },
   {
@@ -3587,7 +3659,11 @@
       "large": "https://assets.tcgdex.net/en/bw/bw9/11/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse",
+      "crackedIce",
+      "staff",
+      "league"
     ]
   },
   {
@@ -3614,7 +3690,8 @@
       "large": "https://assets.tcgdex.net/en/bw/bw9/12/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse"
     ]
   },
   {
@@ -3641,7 +3718,8 @@
       "large": "https://assets.tcgdex.net/en/bw/bw9/20/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse"
     ]
   },
   {
@@ -3668,7 +3746,11 @@
       "large": "https://assets.tcgdex.net/en/bw/bw9/23/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse",
+      "holo",
+      "staff",
+      "league"
     ]
   },
   {
@@ -3695,7 +3777,8 @@
       "large": "https://assets.tcgdex.net/en/bw/bw9/34/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse"
     ]
   },
   {
@@ -3722,7 +3805,8 @@
       "large": "https://assets.tcgdex.net/en/bw/bw9/48/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse"
     ]
   },
   {
@@ -3750,8 +3834,8 @@
     },
     "variants": [
       "normal",
-      "holo",
-      "reverse"
+      "reverse",
+      "holo"
     ]
   },
   {
@@ -3778,7 +3862,8 @@
       "large": "https://assets.tcgdex.net/en/bw/bw9/89/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse"
     ]
   },
   {
@@ -3805,7 +3890,8 @@
       "large": "https://assets.tcgdex.net/en/bw/bw9/90/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse"
     ]
   },
   {
@@ -4021,7 +4107,8 @@
       "large": "https://assets.tcgdex.net/en/xy/xy3/7/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse"
     ]
   },
   {
@@ -4048,7 +4135,8 @@
       "large": "https://assets.tcgdex.net/en/xy/xy3/19/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse"
     ]
   },
   {
@@ -4075,7 +4163,9 @@
       "large": "https://assets.tcgdex.net/en/xy/xy3/72/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse",
+      "crackedIce"
     ]
   },
   {
@@ -4102,7 +4192,8 @@
       "large": "https://assets.tcgdex.net/en/xy/xy3/80/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse"
     ]
   },
   {
@@ -4129,7 +4220,9 @@
       "large": "https://assets.tcgdex.net/en/xy/xy7/13/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse",
+      "cosmos"
     ]
   },
   {
@@ -4156,7 +4249,9 @@
       "large": "https://assets.tcgdex.net/en/xy/xy7/22/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse",
+      "cosmos"
     ]
   },
   {
@@ -4183,7 +4278,10 @@
       "large": "https://assets.tcgdex.net/en/xy/xy7/26/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse",
+      "holo",
+      "cosmos"
     ]
   },
   {
@@ -4210,7 +4308,9 @@
       "large": "https://assets.tcgdex.net/en/xy/xy7/63/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse",
+      "buildABear"
     ]
   },
   {
@@ -4238,7 +4338,9 @@
       "large": "https://assets.tcgdex.net/en/xy/xy9/52/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "holo",
+      "worldChampionshipDeck2017KabuFukase"
     ]
   },
   {
@@ -4729,6 +4831,36 @@
       "large": "https://assets.tcgdex.net/en/sm/sm1/101/high.png"
     },
     "variants": [
+      "normal",
+      "reverse",
+      "cosmos",
+      "sequin"
+    ]
+  },
+  {
+    "id": "sm1-101a",
+    "name": "Eevee",
+    "number": "101a",
+    "rarity": "Common",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "hp": "60",
+    "set": {
+      "id": "sm1",
+      "name": "Sun & Moon",
+      "series": "Sun & Moon",
+      "releaseDate": "2017/02/03"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/sm/sm1/101a/low.webp",
+      "large": "https://assets.tcgdex.net/en/sm/sm1/101a/high.png"
+    },
+    "variants": [
       "normal"
     ]
   },
@@ -4864,7 +4996,9 @@
       "large": "https://assets.tcgdex.net/en/sm/smp/SM35/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "holo",
+      "jumbo"
     ]
   },
   {
@@ -4891,7 +5025,9 @@
       "large": "https://assets.tcgdex.net/en/sm/smp/SM36/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "holo",
+      "jumbo"
     ]
   },
   {
@@ -4999,7 +5135,9 @@
       "large": "https://assets.tcgdex.net/en/sm/smp/SM171/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "holo",
+      "jumbo"
     ]
   },
   {
@@ -5026,7 +5164,9 @@
       "large": "https://assets.tcgdex.net/en/sm/smp/SM172/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "holo",
+      "jumbo"
     ]
   },
   {
@@ -5053,7 +5193,9 @@
       "large": "https://assets.tcgdex.net/en/sm/smp/SM173/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "holo",
+      "jumbo"
     ]
   },
   {
@@ -5080,7 +5222,9 @@
       "large": "https://assets.tcgdex.net/en/sm/smp/SM174/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "holo",
+      "jumbo"
     ]
   },
   {
@@ -5107,7 +5251,9 @@
       "large": "https://assets.tcgdex.net/en/sm/smp/SM175/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "holo",
+      "jumbo"
     ]
   },
   {
@@ -5185,7 +5331,9 @@
       "large": "https://images.pokemontcg.io/smp/SM186_hires.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "battleAcademyCharizardStamp27",
+      "battleAcademyCharizardStamp44"
     ]
   },
   {
@@ -5305,7 +5453,9 @@
       "large": "https://images.pokemontcg.io/smp/SM240_hires.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "holo",
+      "jumbo"
     ]
   },
   {
@@ -5329,7 +5479,9 @@
       "large": "https://images.pokemontcg.io/smp/SM241_hires.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "holo",
+      "jumbo"
     ]
   },
   {
@@ -5515,7 +5667,8 @@
       "large": "https://assets.tcgdex.net/en/sm/sm5/104/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse"
     ]
   },
   {
@@ -5542,7 +5695,8 @@
       "large": "https://assets.tcgdex.net/en/sm/sm5/105/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse"
     ]
   },
   {
@@ -5677,7 +5831,8 @@
       "large": "https://assets.tcgdex.net/en/sm/sm6/87/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse"
     ]
   },
   {
@@ -5731,7 +5886,10 @@
       "large": "https://assets.tcgdex.net/en/sm/sm8/89/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse",
+      "cosmos",
+      "mewtwoStamp"
     ]
   },
   {
@@ -5758,7 +5916,9 @@
       "large": "https://assets.tcgdex.net/en/sm/sm8/120/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse",
+      "cosmos"
     ]
   },
   {
@@ -5785,7 +5945,9 @@
       "large": "https://assets.tcgdex.net/en/sm/sm8/155/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse",
+      "crackedIce"
     ]
   },
   {
@@ -6001,7 +6163,9 @@
       "large": "https://assets.tcgdex.net/en/sm/sm11/72/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "holo",
+      "worldChampionshipDeck2019HenryBrand"
     ]
   },
   {
@@ -6095,7 +6259,9 @@
       "large": "https://assets.tcgdex.net/en/sm/sm115/18/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse",
+      "holo"
     ]
   },
   {
@@ -6122,7 +6288,8 @@
       "large": "https://assets.tcgdex.net/en/sm/sm115/23/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse"
     ]
   },
   {
@@ -6149,7 +6316,9 @@
       "large": "https://assets.tcgdex.net/en/sm/sm115/48/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse",
+      "holo"
     ]
   },
   {
@@ -6176,7 +6345,11 @@
       "large": "https://assets.tcgdex.net/en/sm/sm115/49/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse",
+      "mewtwoStamp",
+      "battleAcademyCharizardStamp26",
+      "battleAcademyCharizardStamp36"
     ]
   },
   {
@@ -6392,7 +6565,8 @@
       "large": "https://assets.tcgdex.net/en/sm/sm12/25/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse"
     ]
   },
   {
@@ -6419,7 +6593,8 @@
       "large": "https://assets.tcgdex.net/en/sm/sm12/42/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse"
     ]
   },
   {
@@ -6446,7 +6621,8 @@
       "large": "https://assets.tcgdex.net/en/sm/sm12/70/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse"
     ]
   },
   {
@@ -6473,7 +6649,8 @@
       "large": "https://assets.tcgdex.net/en/sm/sm12/155/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse"
     ]
   },
   {
@@ -6500,7 +6677,8 @@
       "large": "https://assets.tcgdex.net/en/sm/sm12/166/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse"
     ]
   },
   {
@@ -6527,7 +6705,8 @@
       "large": "https://assets.tcgdex.net/en/sm/sm12/167/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse"
     ]
   },
   {
@@ -6609,7 +6788,8 @@
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH065/high.png"
     },
     "variants": [
-      "holo"
+      "holo",
+      "eeveeStamp"
     ]
   },
   {
@@ -6826,7 +7006,8 @@
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH134/high.png"
     },
     "variants": [
-      "holo"
+      "holo",
+      "jumbo"
     ]
   },
   {
@@ -6854,7 +7035,8 @@
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH149/high.png"
     },
     "variants": [
-      "holo"
+      "holo",
+      "playPokemon"
     ]
   },
   {
@@ -6882,7 +7064,8 @@
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH150/high.png"
     },
     "variants": [
-      "holo"
+      "holo",
+      "playPokemon"
     ]
   },
   {
@@ -6910,7 +7093,8 @@
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH151/high.png"
     },
     "variants": [
-      "holo"
+      "holo",
+      "playPokemon"
     ]
   },
   {
@@ -7019,7 +7203,9 @@
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH180/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "holo",
+      "jumbo"
     ]
   },
   {
@@ -7074,7 +7260,9 @@
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH182/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "holo",
+      "jumbo"
     ]
   },
   {
@@ -7129,7 +7317,9 @@
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH184/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "holo",
+      "jumbo"
     ]
   },
   {
@@ -7266,7 +7456,9 @@
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH195/high.png"
     },
     "variants": [
-      "normal"
+      "holo",
+      "playPokemon",
+      "jumbo"
     ]
   },
   {
@@ -7322,7 +7514,10 @@
       "large": "https://assets.tcgdex.net/en/swsh/swshp/SWSH197/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "holo",
+      "playPokemon",
+      "jumbo"
     ]
   },
   {
@@ -7539,7 +7734,8 @@
     },
     "variants": [
       "normal",
-      "reverse"
+      "reverse",
+      "cosmos"
     ]
   },
   {
@@ -7567,7 +7763,8 @@
     },
     "variants": [
       "normal",
-      "reverse"
+      "reverse",
+      "cosmos"
     ]
   },
   {
@@ -7595,7 +7792,8 @@
     },
     "variants": [
       "normal",
-      "reverse"
+      "reverse",
+      "cosmos"
     ]
   },
   {
@@ -7623,7 +7821,8 @@
     },
     "variants": [
       "normal",
-      "reverse"
+      "reverse",
+      "cosmos"
     ]
   },
   {
@@ -7679,7 +7878,8 @@
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/7/high.png"
     },
     "variants": [
-      "holo"
+      "holo",
+      "playPokemon"
     ]
   },
   {
@@ -7706,7 +7906,8 @@
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/8/high.png"
     },
     "variants": [
-      "holo"
+      "holo",
+      "playPokemon"
     ]
   },
   {
@@ -7733,7 +7934,8 @@
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/18/high.png"
     },
     "variants": [
-      "holo"
+      "holo",
+      "playPokemon"
     ]
   },
   {
@@ -7760,7 +7962,8 @@
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/30/high.png"
     },
     "variants": [
-      "holo"
+      "holo",
+      "playPokemon"
     ]
   },
   {
@@ -7788,7 +7991,9 @@
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/40/high.png"
     },
     "variants": [
-      "holo"
+      "holo",
+      "playPokemon",
+      "snowflake"
     ]
   },
   {
@@ -7815,7 +8020,9 @@
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/41/high.png"
     },
     "variants": [
-      "holo"
+      "holo",
+      "playPokemon",
+      "snowflake"
     ]
   },
   {
@@ -7842,7 +8049,8 @@
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/51/high.png"
     },
     "variants": [
-      "holo"
+      "holo",
+      "playPokemon"
     ]
   },
   {
@@ -7870,7 +8078,8 @@
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/64/high.png"
     },
     "variants": [
-      "holo"
+      "holo",
+      "playPokemon"
     ]
   },
   {
@@ -7897,7 +8106,8 @@
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/65/high.png"
     },
     "variants": [
-      "holo"
+      "holo",
+      "playPokemon"
     ]
   },
   {
@@ -7925,7 +8135,8 @@
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/74/high.png"
     },
     "variants": [
-      "holo"
+      "holo",
+      "playPokemon"
     ]
   },
   {
@@ -7952,7 +8163,8 @@
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/75/high.png"
     },
     "variants": [
-      "holo"
+      "holo",
+      "playPokemon"
     ]
   },
   {
@@ -7980,7 +8192,9 @@
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/94/high.png"
     },
     "variants": [
-      "holo"
+      "normal",
+      "holo",
+      "playPokemon"
     ]
   },
   {
@@ -8007,7 +8221,8 @@
       "large": "https://assets.tcgdex.net/en/swsh/swsh7/95/high.png"
     },
     "variants": [
-      "holo"
+      "holo",
+      "playPokemon"
     ]
   },
   {
@@ -8621,7 +8836,7 @@
   {
     "id": "cel25cc-CC015",
     "name": "Umbreon ☆",
-    "number": "CC015",
+    "number": "17",
     "rarity": "Classic Collection",
     "supertype": "Pokémon",
     "subtypes": [
@@ -9439,7 +9654,8 @@
       "large": "https://assets.tcgdex.net/en/sv/svp/173/high.png"
     },
     "variants": [
-      "holo"
+      "holo",
+      "pokemonCenter"
     ]
   },
   {
@@ -9495,7 +9711,7 @@
       "large": "https://images.scrydex.com/pokemon/svp-175/medium"
     },
     "variants": [
-      "normal"
+      "holo"
     ]
   },
   {
@@ -9523,7 +9739,7 @@
       "large": "https://images.scrydex.com/pokemon/svp-176/medium"
     },
     "variants": [
-      "normal"
+      "holo"
     ]
   },
   {
@@ -9548,6 +9764,26 @@
     "images": {
       "small": "https://images.pokemontcg.io/svp/200.png",
       "large": "https://images.pokemontcg.io/svp/200_hires.png"
+    },
+    "variants": [
+      "holo"
+    ]
+  },
+  {
+    "id": "sv1-252",
+    "name": "Penny",
+    "number": "252",
+    "rarity": "Special illustration rare",
+    "supertype": "Trainer",
+    "set": {
+      "id": "sv1",
+      "name": "Scarlet & Violet",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023/03/31"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/sv/sv01/252/low.webp",
+      "large": "https://assets.tcgdex.net/en/sv/sv01/252/high.png"
     },
     "variants": [
       "holo"
@@ -9579,7 +9815,8 @@
     "variants": [
       "normal",
       "reverse",
-      "holo"
+      "holo",
+      "expansion"
     ]
   },
   {
@@ -9608,7 +9845,10 @@
     "variants": [
       "normal",
       "reverse",
-      "halloween"
+      "expansion",
+      "gameStop",
+      "ebGames",
+      "trickOrTrade"
     ]
   },
   {
@@ -9664,7 +9904,9 @@
     },
     "variants": [
       "normal",
-      "reverse"
+      "reverse",
+      "snowflake",
+      "pokemonTogether"
     ]
   },
   {
@@ -9991,7 +10233,8 @@
       "large": "https://assets.tcgdex.net/en/sv/sv08/086/high.png"
     },
     "variants": [
-      "holo"
+      "holo",
+      "playPokemon"
     ]
   },
   {
@@ -10019,7 +10262,9 @@
     },
     "variants": [
       "normal",
-      "reverse"
+      "reverse",
+      "playPokemon",
+      "pokemonGym"
     ]
   },
   {
@@ -10100,9 +10345,11 @@
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/005/high.png"
     },
     "variants": [
-      "holo",
       "reverse",
-      "pokeball"
+      "holo",
+      "pokeball",
+      "masterball",
+      "cosmos"
     ]
   },
   {
@@ -10130,7 +10377,9 @@
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/006/high.png"
     },
     "variants": [
-      "holo"
+      "holo",
+      "playPokemon",
+      "expansion"
     ]
   },
   {
@@ -10158,7 +10407,10 @@
     },
     "variants": [
       "reverse",
-      "holo"
+      "holo",
+      "pokeball",
+      "masterball",
+      "cosmos"
     ]
   },
   {
@@ -10186,7 +10438,9 @@
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/014/high.png"
     },
     "variants": [
-      "holo"
+      "holo",
+      "playPokemon",
+      "expansion"
     ]
   },
   {
@@ -10214,7 +10468,10 @@
     },
     "variants": [
       "reverse",
-      "holo"
+      "holo",
+      "pokeball",
+      "masterball",
+      "cosmos"
     ]
   },
   {
@@ -10242,7 +10499,9 @@
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/023/high.png"
     },
     "variants": [
-      "holo"
+      "holo",
+      "playPokemon",
+      "expansion"
     ]
   },
   {
@@ -10270,7 +10529,10 @@
     },
     "variants": [
       "reverse",
-      "holo"
+      "holo",
+      "pokeball",
+      "masterball",
+      "cosmos"
     ]
   },
   {
@@ -10298,7 +10560,10 @@
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/026/high.png"
     },
     "variants": [
-      "holo"
+      "holo",
+      "playPokemon",
+      "expansion",
+      "snowflake"
     ]
   },
   {
@@ -10326,7 +10591,10 @@
     },
     "variants": [
       "reverse",
-      "holo"
+      "holo",
+      "pokeball",
+      "masterball",
+      "cosmos"
     ]
   },
   {
@@ -10354,7 +10622,9 @@
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/030/high.png"
     },
     "variants": [
-      "holo"
+      "holo",
+      "playPokemon",
+      "expansion"
     ]
   },
   {
@@ -10382,7 +10652,10 @@
     },
     "variants": [
       "reverse",
-      "holo"
+      "holo",
+      "pokeball",
+      "masterball",
+      "cosmos"
     ]
   },
   {
@@ -10410,7 +10683,9 @@
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/034/high.png"
     },
     "variants": [
-      "holo"
+      "holo",
+      "playPokemon",
+      "expansion"
     ]
   },
   {
@@ -10437,9 +10712,12 @@
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/040/high.png"
     },
     "variants": [
-      "holo",
       "reverse",
-      "pokeball"
+      "holo",
+      "pokeball",
+      "masterball",
+      "cosmos",
+      "pokemonDay"
     ]
   },
   {
@@ -10467,7 +10745,8 @@
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/041/high.png"
     },
     "variants": [
-      "holo"
+      "holo",
+      "expansion"
     ]
   },
   {
@@ -10497,7 +10776,8 @@
       "reverse",
       "holo",
       "pokeball",
-      "masterball"
+      "masterball",
+      "cosmos"
     ]
   },
   {
@@ -10525,7 +10805,9 @@
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/060/high.png"
     },
     "variants": [
-      "holo"
+      "holo",
+      "playPokemon",
+      "expansion"
     ]
   },
   {
@@ -10553,7 +10835,10 @@
     },
     "variants": [
       "normal",
-      "reverse"
+      "reverse",
+      "pokeball",
+      "masterball",
+      "pokemonDay"
     ]
   },
   {
@@ -10581,7 +10866,9 @@
       "large": "https://assets.tcgdex.net/en/sv/sv08.5/075/high.png"
     },
     "variants": [
-      "holo"
+      "holo",
+      "playPokemon",
+      "expansion"
     ]
   },
   {

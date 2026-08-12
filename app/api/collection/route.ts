@@ -1,20 +1,18 @@
 import { NextResponse } from "next/server";
-import { requireAuth } from "../../../lib/auth/guards";
+import { requireAuthApi } from "../../../lib/auth/guards";
+import { getCollectionRowsForUser, upsertCollectionItem } from "../../../lib/db/collection";
 import { enrichPricesSnapshot } from "../../../lib/exchange-rates";
-import {
-  getAllCollectionRows,
-  getPricesSnapshot,
-  upsertCollectionRow,
-  type UpsertCollectionInput,
-} from "../../../lib/google-sheets";
+import { getPricesSnapshot } from "../../../lib/prices-provider";
 
 export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
 
 export async function GET() {
-  await requireAuth();
+  const auth = await requireAuthApi();
+  if (auth instanceof NextResponse) return auth;
   try {
     const [rows, rawPrices] = await Promise.all([
-      getAllCollectionRows(),
+      getCollectionRowsForUser(auth.userId),
       getPricesSnapshot(),
     ]);
     const prices = await enrichPricesSnapshot(rawPrices);
@@ -29,7 +27,8 @@ export async function GET() {
 }
 
 export async function POST(req: Request) {
-  await requireAuth();
+  const auth = await requireAuthApi();
+  if (auth instanceof NextResponse) return auth;
 
   let body: unknown;
   try {
@@ -60,20 +59,16 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "cardId is required" }, { status: 400 });
   }
 
-  const input: UpsertCollectionInput = {
-    cardId: cardId.trim()
-  };
-
-  if (typeof variant === "string" && variant.trim()) input.variant = variant.trim();
-  if (typeof name === "string") input.name = name;
-  if (typeof setName === "string") input.setName = setName;
-  if (typeof number === "string") input.number = number;
-  if (typeof imageUrl === "string") input.imageUrl = imageUrl;
-
-  if (typeof owned === "boolean") input.owned = owned;
-
   try {
-    const row = await upsertCollectionRow(input);
+    const row = await upsertCollectionItem(auth.userId, {
+      cardId: cardId.trim(),
+      variant: typeof variant === "string" ? variant.trim() : undefined,
+      name: typeof name === "string" ? name : undefined,
+      setName: typeof setName === "string" ? setName : undefined,
+      number: typeof number === "string" ? number : undefined,
+      imageUrl: typeof imageUrl === "string" ? imageUrl : undefined,
+      owned: typeof owned === "boolean" ? owned : undefined,
+    });
     return NextResponse.json({ row });
   } catch (err) {
     console.error(err);
@@ -83,4 +78,3 @@ export async function POST(req: Request) {
     );
   }
 }
-

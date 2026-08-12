@@ -14,6 +14,10 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { Query } from "@tcgdex/sdk";
 import type { PokemonCard, PokemonName } from "../types";
+import { buildCatalogueSlots } from "../lib/catalogue-slots";
+import { countVariantSlots } from "../lib/merge-variants";
+import { mergeCatalogueCards } from "../lib/merge-catalogue";
+import { getCatalogueSlotTarget } from "../lib/collection-target";
 import {
   chunk,
   getSetMeta,
@@ -34,6 +38,52 @@ const NAMES: PokemonName[] = [
   "Glaceon",
   "Sylveon",
 ];
+
+async function reportVariantMappingDrift(cards: PokemonCard[]): Promise<void> {
+  const mappingPath = path.join(process.cwd(), "data", "variant-price-mappings.json");
+  let mappingKeys = new Set<string>();
+  try {
+    const raw = await fs.readFile(mappingPath, "utf8");
+    const parsed = JSON.parse(raw) as { cards?: Record<string, unknown> };
+    mappingKeys = new Set(Object.keys(parsed.cards ?? {}));
+  } catch {
+    console.log("\nvariant-price-mappings.json not found — skipping mapping drift report.");
+    return;
+  }
+
+  const catalogueKeys = new Set(
+    buildCatalogueSlots(cards).map(({ card, variant }) => `${card.id}.${variant}`)
+  );
+
+  const staleKeys = [...mappingKeys].filter((key) => !catalogueKeys.has(key)).sort();
+  const missingKeys = [...catalogueKeys].filter((key) => !mappingKeys.has(key)).sort();
+
+  console.log("\nVariant mapping drift report (read-only; mappings file not modified):");
+  console.log(`  Catalogue slots: ${catalogueKeys.size}`);
+  console.log(`  Mapping entries: ${mappingKeys.size}`);
+  console.log(`  Stale mapping keys (not in catalogue): ${staleKeys.length}`);
+  console.log(`  Missing mapping keys (new catalogue slots): ${missingKeys.length}`);
+
+  if (staleKeys.length > 0) {
+    console.log("\n  Stale keys (first 20):");
+    for (const key of staleKeys.slice(0, 20)) {
+      console.log(`    - ${key}`);
+    }
+    if (staleKeys.length > 20) {
+      console.log(`    ... and ${staleKeys.length - 20} more`);
+    }
+  }
+
+  if (missingKeys.length > 0) {
+    console.log("\n  Missing keys (first 20):");
+    for (const key of missingKeys.slice(0, 20)) {
+      console.log(`    - ${key}`);
+    }
+    if (missingKeys.length > 20) {
+      console.log(`    ... and ${missingKeys.length - 20} more`);
+    }
+  }
+}
 
 async function main() {
   console.log("Querying TCGdex for Eevee / Eeveelution cards...");
@@ -125,12 +175,8 @@ async function main() {
     console.log("\nNo data/manual-cards.json found — skipping manual cards.");
   }
 
-  const byId = new Map(cardsDeduped.map((c) => [c.id, c]));
-  for (const mc of manualCards) {
-    byId.set(mc.id, { ...mc, variants: mc.variants ?? ["normal"] });
-  }
+  const { cards: merged, report } = mergeCatalogueCards(cardsDeduped, manualCards);
 
-  const merged = Array.from(byId.values());
   merged.sort((a, b) => {
     const dateA = a.set.releaseDate ?? "";
     const dateB = b.set.releaseDate ?? "";
@@ -138,10 +184,31 @@ async function main() {
     return a.number.localeCompare(b.number, "en", { numeric: true });
   });
 
+  const totalVariantSlots = countVariantSlots(merged);
+
   const outPath = path.join(process.cwd(), "data", "cards.json");
   await fs.mkdir(path.dirname(outPath), { recursive: true });
   await fs.writeFile(outPath, JSON.stringify(merged, null, 2), "utf8");
   console.log(`\nSaved ${merged.length} cards to ${outPath}`);
+  console.log(
+    `Variant slots in catalogue: ${totalVariantSlots} (catalogue target ${getCatalogueSlotTarget(merged)})`
+  );
+  console.log(
+    `External merge: ${report.variantsByCardId.size} cards enriched, ${report.unmatched.length} unmatched entries, ${report.duplicateSkips} duplicate skips`
+  );
+  if (report.unmatched.length > 0) {
+    console.log("\nUnmatched external entries (first 20):");
+    for (const entry of report.unmatched.slice(0, 20)) {
+      console.log(
+        `  - ${entry.name} · ${entry.setName} #${entry.number} · ${entry.variantLabel ?? "normal"} (${entry.sourceFile})`
+      );
+    }
+    if (report.unmatched.length > 20) {
+      console.log(`  ... and ${report.unmatched.length - 20} more`);
+    }
+  }
+
+  await reportVariantMappingDrift(merged);
 }
 
 main().catch((err) => {

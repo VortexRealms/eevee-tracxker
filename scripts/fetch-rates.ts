@@ -1,5 +1,5 @@
 /**
- * Update Sheet _meta row with current Frankfurter exchange rates only.
+ * Update SQLite price_meta with current Frankfurter exchange rates only.
  * Run with: npm run fetch:rates
  */
 
@@ -8,7 +8,7 @@ import {
   fetchLiveExchangeRates,
   metaToExchangeRates,
 } from "../lib/exchange-rates";
-import { writePricesMeta } from "../lib/google-sheets";
+import { getPricesSnapshotFromDb, writePricesMetaToDb } from "../lib/price-db";
 import { loadEnvFiles } from "./load-env";
 
 async function main() {
@@ -16,9 +16,10 @@ async function main() {
   console.log("Fetching live exchange rates from Frankfurter...");
   const rates = await fetchLiveExchangeRates();
   const meta = exchangeRatesToMeta(rates);
-  await writePricesMeta(meta);
+  const existing = getPricesSnapshotFromDb();
+  writePricesMetaToDb({ ...existing.meta, ...meta });
   const derived = metaToExchangeRates(meta);
-  console.log(`Updated Sheet meta as of ${meta.ratesUpdatedAt}`);
+  console.log(`Updated SQLite price_meta as of ${meta.ratesUpdatedAt}`);
   console.log(`  usdRates: ${JSON.stringify(meta.usdRates)}`);
   console.log(`  derived EUR/USD: ${derived.eurUsdRate.toFixed(4)}`);
 }

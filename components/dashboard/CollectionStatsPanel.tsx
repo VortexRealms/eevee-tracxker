@@ -11,11 +11,10 @@ import styles from "./CollectionStatsPanel.module.css";
 export interface CollectionStatsPanelProps {
   ownedVariants: number;
   totalVariants: number;
-  missingVariants: number;
-  uniqueCards: number;
-  setCount: number;
   estimatedValue: number;
   currency?: DisplayCurrency;
+  /** When false, ring/bar render at final size without a 0→N transition. */
+  animate?: boolean;
 }
 
 const TICK_MARKS = [25, 50, 75, 100] as const;
@@ -39,11 +38,9 @@ export const CollectionStatsPanel = forwardRef<HTMLElement, CollectionStatsPanel
     {
       ownedVariants,
       totalVariants,
-      missingVariants,
-      uniqueCards,
-      setCount,
       estimatedValue,
       currency = "USD",
+      animate = true,
     },
     ref
   ) {
@@ -56,7 +53,7 @@ export const CollectionStatsPanel = forwardRef<HTMLElement, CollectionStatsPanel
     );
 
     const ringOffset = useMemo(
-      () => RING_CIRCUMFERENCE * (1 - percent / 100),
+      () => Math.round(RING_CIRCUMFERENCE * (1 - percent / 100) * 100) / 100,
       [percent]
     );
 
@@ -65,7 +62,7 @@ export const CollectionStatsPanel = forwardRef<HTMLElement, CollectionStatsPanel
     return (
       <section
         ref={ref}
-        className={styles.panel}
+        className={`${styles.panel}${animate ? "" : ` ${styles.panelInstant}`}`}
         aria-label="Collection statistics"
       >
         <div className={styles.content}>
@@ -147,13 +144,6 @@ export const CollectionStatsPanel = forwardRef<HTMLElement, CollectionStatsPanel
                 ))}
               </div>
             </div>
-
-            <p className={styles.missing}>
-              {missingVariants.toLocaleString()} still to find
-            </p>
-            <p className={styles.details}>
-              {uniqueCards.toLocaleString()} unique cards · {setCount.toLocaleString()} sets
-            </p>
           </div>
 
           <div className={styles.valueColumn}>

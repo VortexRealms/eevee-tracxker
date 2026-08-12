@@ -320,3 +320,8 @@
     transition: none;
   }
 }
+
+.panelInstant .ringProgress,
+.panelInstant .barFill {
+  transition: none;
+}

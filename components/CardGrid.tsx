@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import type { CollectionRow, PokemonCard, PricesSnapshot } from "../types";
 import {
@@ -6,19 +8,19 @@ import {
   getTcgPlayerSearchUrl,
 } from "../lib/marketplace-search";
 import { getPriceForCard, parseCardIdAndVariant } from "../lib/cards";
-import { MASTER_SET_TARGET } from "../lib/collection-target";
-import { metaToExchangeRates } from "../lib/exchange-rates";
 import {
-  resolveDisplayAmount,
-  resolveListingPrice,
-} from "../lib/display-price";
-import { getVariantLabel, variantSortIndex } from "../lib/variant-labels";
+  buildSortedCatalogueSlots,
+  isSlotOwned,
+  type VariantSlot,
+} from "../lib/catalogue-slots";
+import { metaToExchangeRates } from "../lib/exchange-rates";
+import { resolveDisplayAmount } from "../lib/display-price";
+import { getVariantLabel } from "../lib/variant-labels";
 import { useCurrency } from "./CurrencyProvider";
 import { CardPriceLabel } from "./CardPriceLabel";
 import { CollectionStatsPanel } from "./dashboard/CollectionStatsPanel";
 import { DisplayCurrencyPicker } from "./DisplayCurrencyPicker";
 import { useHeaderStats } from "./HeaderStatsProvider";
-import { VariantPickerModal } from "./VariantPickerModal";
 
 export type CardGridMode = "checklist" | "public";
 
@@ -26,9 +28,10 @@ interface CardGridProps {
   cards: PokemonCard[];
   collection: CollectionRow[];
   prices: PricesSnapshot | null;
-  onCardClick: (cardId: string) => void;
+  onCardClick: (cardId: string, variant: string) => void;
   onSetOwned: (cardId: string, variant: string, owned: boolean) => void;
   isLoading: boolean;
+  animateStats?: boolean;
   updatingCardId: string | null;
   /** Public showcase: owned-only grid, no marketplace links, no add/remove. */
   mode?: CardGridMode;
@@ -90,6 +93,7 @@ function CardTile({
             alt={card.name}
             className="card-image"
             loading="lazy"
+            decoding="async"
           />
           {status === "owned" ? (
             <span className="status-pill status-pill-owned">Owned</span>
@@ -165,6 +169,20 @@ function MarketplaceLinks({ card }: { card: PokemonCard }) {
   );
 }
 
+function slotHaystack(slot: VariantSlot): string {
+  const { card, variant } = slot;
+  return [
+    card.name,
+    card.set.name,
+    card.set.series,
+    card.number,
+    variant,
+    getVariantLabel(variant),
+  ]
+    .join(" ")
+    .toLowerCase();
+}
+
 export function CardGrid({
   cards,
   collection,
@@ -172,6 +190,7 @@ export function CardGrid({
   onCardClick,
   onSetOwned,
   isLoading,
+  animateStats = true,
   updatingCardId,
   mode = "checklist",
 }: CardGridProps) {
@@ -180,68 +199,48 @@ export function CardGrid({
   const [filter, setFilter] = useState<FilterValue>(() =>
     isPublic ? "owned" : "all"
   );
-  const [variantPickerCard, setVariantPickerCard] = useState<PokemonCard | null>(null);
   const panelRef = useRef<HTMLElement>(null);
   const [panelVisible, setPanelVisible] = useState(true);
   const { publish, clear } = useHeaderStats();
 
-  const { currency } = useCurrency();
+  const { currency, hydrated: currencyHydrated } = useCurrency();
   const exchangeRates = useMemo(
     () => (prices?.meta ? metaToExchangeRates(prices.meta) : null),
     [prices?.meta]
   );
-  const showPrices = prices !== null && exchangeRates !== null;
+  const showPrices = exchangeRates !== null;
 
-  const hasAnyOwnedVariant = useMemo(() => {
-    const set = new Set<string>();
+  const catalogueSlots = useMemo(() => buildSortedCatalogueSlots(cards), [cards]);
+  const totalVariants = catalogueSlots.length;
+  const validSlotKeys = useMemo(
+    () => new Set(catalogueSlots.map((slot) => slot.slotKey)),
+    [catalogueSlots]
+  );
+
+  const ownedKeys = useMemo(() => {
+    const keys = new Set<string>();
     for (const row of collection) {
       if (!row.owned) continue;
-      const { cardId } = parseCardIdAndVariant(row.cardId);
-      set.add(cardId);
+      const { cardId, variant } = parseCardIdAndVariant(row.cardId);
+      keys.add(`${cardId}:${variant}`);
     }
-    return (cardId: string) => set.has(cardId);
+    return keys;
   }, [collection]);
-
-  const ownedEntries = useMemo(() => {
-    const entries = collection
-      .filter((row) => row.owned)
-      .map((row) => {
-        const { cardId, variant } = parseCardIdAndVariant(row.cardId);
-        const card = cards.find((c) => c.id === cardId);
-        return card ? { card, variant, row } : null;
-      })
-      .filter((x): x is { card: PokemonCard; variant: string; row: CollectionRow } => x != null);
-
-    const cardIndexMap = new Map(cards.map((c, i) => [c.id, i]));
-    return [...entries].sort((a, b) => {
-      const idxA = cardIndexMap.get(a.card.id) ?? 9999;
-      const idxB = cardIndexMap.get(b.card.id) ?? 9999;
-      if (idxA !== idxB) return idxA - idxB;
-      const vA = variantSortIndex(a.variant);
-      const vB = variantSortIndex(b.variant);
-      return vA - vB;
-    });
-  }, [collection, cards]);
 
   const counts = useMemo(() => {
     let collectionValue = 0;
     const ownedVariantKeys = new Set<string>();
-    const ownedCardIds = new Set<string>();
-    const ownedSetNames = new Set<string>();
 
     for (const row of collection) {
       if (!row.owned) continue;
       const { cardId, variant } = parseCardIdAndVariant(row.cardId);
 
       const key = `${cardId}:${variant}`;
+      if (!validSlotKeys.has(key)) continue;
       if (ownedVariantKeys.has(key)) continue;
       ownedVariantKeys.add(key);
 
-      ownedCardIds.add(cardId);
       const card = cards.find((c) => c.id === cardId);
-      const setName = card?.set.name ?? row.setName;
-      if (setName.trim()) ownedSetNames.add(setName.trim());
-
       if (card && exchangeRates) {
         const price = getPriceForCard(card, variant, prices);
         const { amount } = resolveDisplayAmount(price, currency, exchangeRates);
@@ -249,16 +248,11 @@ export function CardGrid({
       }
     }
 
-    const owned = ownedVariantKeys.size;
-    const missing = Math.max(0, MASTER_SET_TARGET - owned);
     return {
-      owned,
-      missing,
+      owned: ownedVariantKeys.size,
       collectionValue,
-      uniqueCards: ownedCardIds.size,
-      setCount: ownedSetNames.size,
     };
-  }, [cards, collection, currency, exchangeRates, prices]);
+  }, [cards, collection, currency, exchangeRates, prices, validSlotKeys]);
 
   useEffect(() => {
     const el = panelRef.current;
@@ -276,9 +270,9 @@ export function CardGrid({
   }, []);
 
   const ownedPercent = useMemo(() => {
-    if (MASTER_SET_TARGET <= 0) return 0;
-    return Math.min(100, Math.max(0, (counts.owned / MASTER_SET_TARGET) * 100));
-  }, [counts.owned]);
+    if (totalVariants <= 0) return 0;
+    return Math.min(100, Math.max(0, (counts.owned / totalVariants) * 100));
+  }, [counts.owned, totalVariants]);
 
   useEffect(() => {
     publish({
@@ -301,31 +295,75 @@ export function CardGrid({
     [search]
   );
 
-  const filteredCards = useMemo(() => {
-    return cards.filter((card) => {
-      const owned = hasAnyOwnedVariant(card.id);
+  const filteredSlots = useMemo(() => {
+    return catalogueSlots.filter((slot) => {
+      const owned = isSlotOwned(slot.slotKey, ownedKeys);
 
-      if (filter === "owned" && !owned) return false;
-      if (filter === "missing" && owned) return false;
+      if (isPublic && !owned) return false;
+      if (!isPublic && filter === "owned" && !owned) return false;
+      if (!isPublic && filter === "missing" && owned) return false;
+
       if (searchTokens.length === 0) return true;
-
-      const haystack = [card.name, card.set.name, card.set.series, card.number]
-        .join(" ")
-        .toLowerCase();
-
+      const haystack = slotHaystack(slot);
       return searchTokens.every((token) => haystack.includes(token));
     });
-  }, [cards, hasAnyOwnedVariant, filter, searchTokens]);
+  }, [catalogueSlots, ownedKeys, filter, isPublic, searchTokens]);
 
-  const filteredOwned = useMemo(() => {
-    return ownedEntries.filter(({ card }) => {
-      if (searchTokens.length === 0) return true;
-      const haystack = [card.name, card.set.name, card.set.series, card.number]
-        .join(" ")
-        .toLowerCase();
-      return searchTokens.every((token) => haystack.includes(token));
-    });
-  }, [ownedEntries, searchTokens]);
+  function renderSlotTile(slot: VariantSlot) {
+    const { card, variant, slotKey } = slot;
+    const owned = isSlotOwned(slotKey, ownedKeys);
+    const isUpdating = updatingCardId === slotKey;
+
+    return (
+      <CardTile
+        card={card}
+        variantLabel={getVariantLabel(variant)}
+        status={owned ? "owned" : "missing"}
+        onOpen={() => onCardClick(card.id, variant)}
+        isPublic={isPublic}
+        marketplaceLinks={<MarketplaceLinks card={card} />}
+        priceNode={
+          showPrices && exchangeRates ? (
+            <CardPriceLabel
+              price={getPriceForCard(card, variant, prices)}
+              currency={currency}
+              rates={exchangeRates}
+              updatedAt={prices?.entries[card.id]?.updatedAt}
+              priceSource={prices?.entries[card.id]?.source}
+            />
+          ) : null
+        }
+        desktopMeta={
+          <>
+            <span className="set-pill">{card.set.series}</span>
+            <span className="variant-capsule">{getVariantLabel(variant)}</span>
+            <span className="mini-pill">{card.set.releaseDate}</span>
+          </>
+        }
+        actionNode={
+          isPublic ? undefined : owned ? (
+            <button
+              type="button"
+              onClick={() => onSetOwned(card.id, variant, false)}
+              className="card-action secondary-button danger-button"
+              disabled={isUpdating}
+            >
+              {isUpdating ? "Saving..." : "Remove from collection"}
+            </button>
+          ) : (
+            <button
+              type="button"
+              onClick={() => onSetOwned(card.id, variant, true)}
+              className="card-action primary-button"
+              disabled={isUpdating}
+            >
+              {isUpdating ? "Saving..." : "Add to collection"}
+            </button>
+          )
+        }
+      />
+    );
+  }
 
   return (
     <div className="collection-layout">
@@ -333,12 +371,10 @@ export function CardGrid({
         <CollectionStatsPanel
           ref={panelRef}
           ownedVariants={counts.owned}
-          totalVariants={MASTER_SET_TARGET}
-          missingVariants={counts.missing}
-          uniqueCards={counts.uniqueCards}
-          setCount={counts.setCount}
+          totalVariants={totalVariants}
           estimatedValue={counts.collectionValue}
-          currency={currency}
+          currency={currencyHydrated ? currency : "USD"}
+          animate={animateStats}
         />
 
         <div className="search-shell">
@@ -388,137 +424,18 @@ export function CardGrid({
             </div>
           ))}
         </div>
-      ) : (isPublic ? filteredOwned : filter === "owned" ? filteredOwned : filteredCards)
-          .length === 0 ? (
+      ) : filteredSlots.length === 0 ? (
         <div className="empty-state">
           <div className="empty-state-orb" />
           <h2>No matching cards</h2>
           <p>Try a different search, or switch back to the full collection view.</p>
         </div>
-      ) : isPublic || filter === "owned" ? (
-        <div className="collection-grid">
-          {filteredOwned.map(({ card, variant, row }) => {
-            const compositeKey = row.cardId;
-            const isUpdating = updatingCardId === compositeKey;
-
-            return (
-              <CardTile
-                key={compositeKey}
-                card={card}
-                variantLabel={getVariantLabel(variant)}
-                status="owned"
-                onOpen={() => onCardClick(card.id)}
-                isPublic={isPublic}
-                marketplaceLinks={<MarketplaceLinks card={card} />}
-                priceNode={
-                  showPrices && exchangeRates ? (
-                    <CardPriceLabel
-                      price={getPriceForCard(card, variant, prices)}
-                      currency={currency}
-                      rates={exchangeRates}
-                      updatedAt={prices?.entries[card.id]?.updatedAt}
-                      priceSource={prices?.entries[card.id]?.source}
-                    />
-                  ) : null
-                }
-                desktopMeta={
-                  <>
-                    <span className="set-pill">{card.set.series}</span>
-                    <span className="variant-capsule">{getVariantLabel(variant)}</span>
-                    <span className="mini-pill">{card.set.releaseDate}</span>
-                  </>
-                }
-                actionNode={
-                  <button
-                    type="button"
-                    onClick={() => onSetOwned(card.id, variant, false)}
-                    className="card-action secondary-button danger-button"
-                    disabled={isUpdating}
-                  >
-                    {isUpdating ? "Saving..." : "Remove from collection"}
-                  </button>
-                }
-              />
-            );
-          })}
-        </div>
       ) : (
         <div className="collection-grid">
-          {filteredCards.map((card) => {
-            const owned = hasAnyOwnedVariant(card.id);
-            const variants = card.variants ?? ["normal"];
-            const hasMultipleVariants = variants.length > 1;
-            const isUpdating = hasMultipleVariants
-              ? variants.some((v) => updatingCardId === `${card.id}:${v}`)
-              : updatingCardId === card.id;
-
-            const handleAdd = () => {
-              if (hasMultipleVariants) {
-                setVariantPickerCard(card);
-              } else {
-                onSetOwned(card.id, variants[0], true);
-              }
-            };
-
-            const listing =
-              showPrices && exchangeRates
-                ? resolveListingPrice(card, prices, currency, exchangeRates)
-                : null;
-
-            return (
-              <CardTile
-                key={card.id}
-                card={card}
-                status={owned ? "owned" : "missing"}
-                onOpen={() => onCardClick(card.id)}
-                isPublic={false}
-                marketplaceLinks={<MarketplaceLinks card={card} />}
-                priceNode={
-                  listing != null && exchangeRates != null ? (
-                    <CardPriceLabel
-                      price={listing.price}
-                      currency={currency}
-                      rates={exchangeRates}
-                      updatedAt={prices?.entries[card.id]?.updatedAt}
-                      priceSource={prices?.entries[card.id]?.source}
-                      fallbackVariantLabel={
-                        listing.isFallback ? getVariantLabel(listing.variant) : undefined
-                      }
-                    />
-                  ) : null
-                }
-                desktopMeta={
-                  <>
-                    <span className="set-pill">{card.set.series}</span>
-                    <span className="mini-pill">{card.set.releaseDate}</span>
-                  </>
-                }
-                actionNode={
-                  <button
-                    type="button"
-                    onClick={handleAdd}
-                    className="card-action primary-button"
-                    disabled={isUpdating}
-                  >
-                    {isUpdating ? "Saving..." : "Add to collection"}
-                  </button>
-                }
-              />
-            );
-          })}
+          {filteredSlots.map((slot) => (
+            <div key={slot.slotKey}>{renderSlotTile(slot)}</div>
+          ))}
         </div>
-      )}
-
-      {!isPublic && variantPickerCard && (
-        <VariantPickerModal
-          card={variantPickerCard}
-          variants={variantPickerCard.variants ?? ["normal"]}
-          onSelect={(variant) => {
-            onSetOwned(variantPickerCard.id, variant, true);
-            setVariantPickerCard(null);
-          }}
-          onClose={() => setVariantPickerCard(null)}
-        />
       )}
     </div>
   );

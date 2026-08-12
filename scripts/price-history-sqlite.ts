@@ -8,13 +8,11 @@ import path from "node:path";
 import Database from "better-sqlite3";
 import { getPriceForCard } from "../lib/cards";
 import { PRICE_HISTORY_RETENTION_DAYS } from "../lib/price-history-retention";
+import { PRICE_DB_SCHEMA_SQL } from "../lib/price-db-schema";
+import { PRICE_DB_PATH } from "../lib/price-db-path";
 import type { PokemonCard, PricesSnapshot } from "../types";
 
-export const DEFAULT_PRICE_HISTORY_DB_PATH = path.join(
-  process.cwd(),
-  "data",
-  "price-history.sqlite"
-);
+export const DEFAULT_PRICE_HISTORY_DB_PATH = PRICE_DB_PATH;
 
 export interface PriceHistoryPruneResult {
   cutoffDate: string;
@@ -33,28 +31,7 @@ export interface PriceHistorySnapshotResult {
   prune?: PriceHistoryPruneResult;
 }
 
-const SCHEMA_SQL = `
-CREATE TABLE IF NOT EXISTS price_history (
-  card_id TEXT NOT NULL,
-  variant TEXT NOT NULL,
-  observed_date TEXT NOT NULL,
-  usd REAL,
-  eur REAL,
-  source TEXT,
-  source_updated_at TEXT,
-  recorded_at TEXT NOT NULL,
-  PRIMARY KEY (card_id, variant, observed_date)
-);
-
-CREATE INDEX IF NOT EXISTS idx_price_history_card_variant_date
-  ON price_history (card_id, variant, observed_date);
-
-CREATE TABLE IF NOT EXISTS snapshot_runs (
-  observed_date TEXT PRIMARY KEY,
-  recorded_at TEXT NOT NULL,
-  point_count INTEGER NOT NULL
-);
-`;
+const SCHEMA_SQL = PRICE_DB_SCHEMA_SQL;
 
 function ensureDataDir(dbPath: string): void {
   const dir = path.dirname(dbPath);

@@ -5,7 +5,9 @@ const nextConfig = {
     typedRoutes: true,
     serverComponentsExternalPackages: ["better-sqlite3"],
     outputFileTracingIncludes: {
-      "/api/price-history": ["./data/price-history.sqlite"]
+      "/api/price-history": ["./data/price-history.sqlite"],
+      "/api/collection": ["./data/price-history.sqlite"],
+      "/api/public-collection": ["./data/price-history.sqlite"]
     }
   }
 };

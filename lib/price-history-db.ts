@@ -5,14 +5,10 @@
  */
 
 import fs from "node:fs";
-import path from "node:path";
 import Database from "better-sqlite3";
+import { PRICE_DB_PATH } from "./price-db-path";
 
-export const PRICE_HISTORY_DB_PATH = path.join(
-  process.cwd(),
-  "data",
-  "price-history.sqlite"
-);
+export const PRICE_HISTORY_DB_PATH = PRICE_DB_PATH;
 
 export interface PriceHistoryPoint {
   date: string;

@@ -11,11 +11,10 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import type { CollectionRow, DisplayCurrency, PokemonCard, PricesSnapshot } from "../types";
-import { defaultPriceVariant, parseCardIdAndVariant } from "../lib/cards";
-import { getVariantLabel, variantSortIndex } from "../lib/variant-labels";
+import type { DisplayCurrency, PokemonCard, PricesSnapshot } from "../types";
 import { metaToExchangeRates } from "../lib/exchange-rates";
 import { formatDisplayPrice, resolveDisplayAmount } from "../lib/display-price";
+import { getVariantLabel } from "../lib/variant-labels";
 import {
   getCardmarketSearchUrl,
   getEbaySearchUrl,
@@ -26,8 +25,8 @@ import styles from "./CardDetailModal.module.css";
 
 interface CardDetailModalProps {
   card: PokemonCard | null;
+  variant: string | null;
   prices: PricesSnapshot | null;
-  collection: CollectionRow[];
   onClose: () => void;
 }
 
@@ -40,15 +39,6 @@ interface HistoryPoint {
 interface ChartPoint {
   date: string;
   amount: number | null;
-}
-
-function findOwnedVariant(card: PokemonCard, collection: CollectionRow[]): string | null {
-  for (const row of collection) {
-    if (!row.owned) continue;
-    const { cardId, variant } = parseCardIdAndVariant(row.cardId);
-    if (cardId === card.id) return row.variant ?? variant;
-  }
-  return null;
 }
 
 function formatAxisDate(iso: string): string {
@@ -116,11 +106,10 @@ function CustomTooltip({
   );
 }
 
-export function CardDetailModal({ card, prices, collection, onClose }: CardDetailModalProps) {
+export function CardDetailModal({ card, variant, prices, onClose }: CardDetailModalProps) {
   const { currency } = useCurrency();
   const isMobileLayout = useIsMobileLayout();
   const [mounted, setMounted] = useState(false);
-  const [selectedVariant, setSelectedVariant] = useState<string | null>(null);
   const [points, setPoints] = useState<HistoryPoint[]>([]);
   const [loading, setLoading] = useState(false);
   const [imageExpanded, setImageExpanded] = useState(false);
@@ -140,23 +129,14 @@ export function CardDetailModal({ card, prices, collection, onClose }: CardDetai
     [prices]
   );
 
-  const variants = useMemo(() => {
-    const list = card?.variants?.length ? card.variants : ["normal"];
-    return list.slice().sort((a, b) => variantSortIndex(a) - variantSortIndex(b));
-  }, [card]);
-
   useEffect(() => {
     if (!card) {
-      setSelectedVariant(null);
       setImageExpanded(false);
+      setPoints([]);
       return;
     }
     cacheRef.current = new Map();
-    const owned = findOwnedVariant(card, collection);
-    const initial = owned && variants.includes(owned) ? owned : defaultPriceVariant(card);
-    setSelectedVariant(initial);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [card]);
+  }, [card, variant]);
 
   useEffect(() => {
     if (!card) return;
@@ -181,9 +161,9 @@ export function CardDetailModal({ card, prices, collection, onClose }: CardDetai
   }, [card, onClose]);
 
   useEffect(() => {
-    if (!card || !selectedVariant) return;
+    if (!card || !variant) return;
 
-    const cacheKey = `${card.id}:${selectedVariant}`;
+    const cacheKey = `${card.id}:${variant}`;
     const cached = cacheRef.current.get(cacheKey);
     if (cached) {
       setPoints(cached);
@@ -194,7 +174,7 @@ export function CardDetailModal({ card, prices, collection, onClose }: CardDetai
     let cancelled = false;
     setLoading(true);
     fetch(
-      `/api/price-history?cardId=${encodeURIComponent(card.id)}&variant=${encodeURIComponent(selectedVariant)}&days=30`,
+      `/api/price-history?cardId=${encodeURIComponent(card.id)}&variant=${encodeURIComponent(variant)}&days=30`,
       { credentials: "include" }
     )
       .then((res) => {
@@ -218,9 +198,9 @@ export function CardDetailModal({ card, prices, collection, onClose }: CardDetai
     return () => {
       cancelled = true;
     };
-  }, [card, selectedVariant]);
+  }, [card, variant]);
 
-  if (!mounted || !card) return null;
+  if (!mounted || !card || !variant) return null;
 
   const chartData: ChartPoint[] = points.map((p) => ({
     date: p.date,
@@ -250,8 +230,7 @@ export function CardDetailModal({ card, prices, collection, onClose }: CardDetai
           ? styles.changeNegative
           : "";
 
-  const selectedVariantLabel =
-    selectedVariant != null ? getVariantLabel(selectedVariant) : "";
+  const variantLabel = getVariantLabel(variant);
 
   return createPortal(
     <div className={styles.backdrop} role="dialog" aria-modal="true">
@@ -317,7 +296,7 @@ export function CardDetailModal({ card, prices, collection, onClose }: CardDetai
 
               <div className={styles.priceSummary}>
                 <div className={styles.priceSummaryMain}>
-                  <span className={styles.priceSummaryVariant}>{selectedVariantLabel}</span>
+                  <span className={styles.priceSummaryVariant}>{variantLabel}</span>
                   <span className={styles.priceSummaryValue}>
                     {formatDisplayPrice(currentAmount, currency)}
                   </span>
@@ -330,25 +309,10 @@ export function CardDetailModal({ card, prices, collection, onClose }: CardDetai
                 </p>
               </div>
 
-              <div className={styles.variantTabs}>
-                {variants.map((variant) => (
-                  <button
-                    key={variant}
-                    type="button"
-                    className={`${styles.variantTab} ${
-                      variant === selectedVariant ? styles.variantTabActive : ""
-                    }`}
-                    onClick={() => setSelectedVariant(variant)}
-                  >
-                    {getVariantLabel(variant)}
-                  </button>
-                ))}
-              </div>
-
               <div className={styles.chartBlock}>
                 <div className={styles.chartHeader}>
                   <h4 className={styles.chartTitle}>Price history</h4>
-                  <span className={styles.chartSeriesLabel}>{selectedVariantLabel}</span>
+                  <span className={styles.chartSeriesLabel}>{variantLabel}</span>
                 </div>
                 <div className={styles.chartSection}>
                   {loading ? (

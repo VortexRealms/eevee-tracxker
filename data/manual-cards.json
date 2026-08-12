@@ -2879,7 +2879,7 @@
     "variants": [
       "normal",
       "reverse",
-      "halloween"
+      "trickOrTrade"
     ]
   },
   {
@@ -3207,9 +3207,36 @@
     ]
   },
   {
+    "id": "sm1-101a",
+    "name": "Eevee",
+    "number": "101a",
+    "rarity": "Common",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "hp": "60",
+    "set": {
+      "id": "sm1",
+      "name": "Sun & Moon",
+      "series": "Sun & Moon",
+      "releaseDate": "2017/02/03"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/sm/sm1/101a/low.webp",
+      "large": "https://assets.tcgdex.net/en/sm/sm1/101a/high.png"
+    },
+    "variants": [
+      "normal"
+    ]
+  },
+  {
     "id": "cel25cc-CC015",
     "name": "Umbreon ☆",
-    "number": "CC015",
+    "number": "17",
     "rarity": "Classic Collection",
     "supertype": "Pokémon",
     "subtypes": [

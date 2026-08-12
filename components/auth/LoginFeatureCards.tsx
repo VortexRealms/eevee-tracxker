@@ -1,10 +1,13 @@
-import { MASTER_SET_TARGET } from "../../lib/collection-target";
+import { getCatalogueSlotTarget } from "../../lib/collection-target";
+import { getAllCards } from "../../lib/cards";
 import styles from "./LoginShell.module.css";
+
+const TRACKED_VARIANTS = getCatalogueSlotTarget(getAllCards());
 
 const FEATURES = [
   {
     label: "TRACKED VARIANTS",
-    title: String(MASTER_SET_TARGET),
+    title: String(TRACKED_VARIANTS),
     description: "Across the full target list",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
