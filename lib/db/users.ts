@@ -1,4 +1,4 @@
-import { queryOne, queryRows, withDbClient } from "./postgres";
+import { queryOne, withDbClient } from "./postgres";
 
 export interface AppUser {
   id: string;

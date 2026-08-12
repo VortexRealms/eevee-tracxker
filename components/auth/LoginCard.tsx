@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState, type FormEvent } from "react";
+import { useEffect, useState, type FormEvent } from "react";
 import styles from "./LoginShell.module.css";
 
 type LoginCardProps = {
@@ -13,6 +13,23 @@ export function LoginCard({ showError = false, showSessionError = false }: Login
   const [showPassword, setShowPassword] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [clientError, setClientError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const url = new URL(window.location.href);
+    const hadCredentials =
+      url.searchParams.has("username") || url.searchParams.has("password");
+    if (!hadCredentials) return;
+
+    url.searchParams.delete("username");
+    url.searchParams.delete("password");
+    const nextSearch = url.searchParams.toString();
+    window.history.replaceState(
+      {},
+      "",
+      `${url.pathname}${nextSearch ? `?${nextSearch}` : ""}`
+    );
+    setClientError("Sign in failed to load correctly. Please try again.");
+  }, []);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -80,7 +97,12 @@ export function LoginCard({ showError = false, showSessionError = false }: Login
         </div>
       ) : null}
 
-      <form className={styles.loginForm} onSubmit={handleSubmit}>
+      <form
+        className={styles.loginForm}
+        method="post"
+        action="/api/auth/login"
+        onSubmit={handleSubmit}
+      >
         <div className={styles.fieldGroup}>
           <label className="field-label" htmlFor="username">
             Username

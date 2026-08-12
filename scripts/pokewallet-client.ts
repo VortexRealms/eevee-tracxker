@@ -244,7 +244,7 @@ export class PokewalletClient {
     windowMs: number,
     label: string
   ): Promise<void> {
-    let waitMs = limiter.msUntilSlot(maxPerWindow, windowMs);
+    const waitMs = limiter.msUntilSlot(maxPerWindow, windowMs);
     if (waitMs <= 0) return;
 
     const hourUsed = this.hourWindow.count(HOUR_MS);

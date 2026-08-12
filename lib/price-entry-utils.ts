@@ -42,7 +42,7 @@ export function bestEntryLevelPrices(entry: Pick<PriceEntry, "variants">): {
  * Parse EUR/USD rate from Sheet meta. Recovers comma-stripped values like 11435 → 1.1435.
  */
 export function parseEurUsdRate(value: unknown): number {
-  let rate = parsePriceCell(value);
+  const rate = parsePriceCell(value);
   if (rate === null || rate < MIN_EUR_USD_RATE || rate > MAX_EUR_USD_RATE) {
     if (rate !== null && rate > MAX_EUR_USD_RATE) {
       for (const divisor of [10_000, 1_000, 100]) {

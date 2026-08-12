@@ -2,12 +2,13 @@ import { LoginShell } from "../../components/auth/LoginShell";
 
 export const dynamic = "force-dynamic";
 
-export default function LoginPage({
+export default async function LoginPage({
   searchParams,
 }: {
-  searchParams?: { error?: string };
+  searchParams?: Promise<{ error?: string }>;
 }) {
-  const showError = searchParams?.error === "invalid";
-  const showSessionError = searchParams?.error === "session";
+  const params = (await searchParams) ?? {};
+  const showError = params.error === "invalid";
+  const showSessionError = params.error === "session";
   return <LoginShell showError={showError} showSessionError={showSessionError} />;
 }
