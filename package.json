@@ -46,7 +46,10 @@
     "fetch:rates": "tsx scripts/fetch-rates.ts",
     "cards:pick": "tsx scripts/pick-included-cards.ts",
     "build:variant-price-mappings": "tsx scripts/build-variant-price-mappings.ts",
-    "build:variant-mapping-checklist": "tsx scripts/build-variant-mapping-checklist.ts"
+    "build:variant-mapping-checklist": "tsx scripts/build-variant-mapping-checklist.ts",
+    "build:cameo-cards": "tsx scripts/build-cameo-cards-json.ts",
+    "sync:cameo-catalogue": "tsx scripts/sync-cameo-catalogue.ts",
+    "test:cameo-catalogue": "tsx scripts/test-cameo-catalogue.ts"
   },
   "dependencies": {
     "@tcgdex/sdk": "^2.7.1",

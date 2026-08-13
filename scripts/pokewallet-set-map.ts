@@ -13,6 +13,14 @@ export interface SetLookupHint {
 /** Our set.id -> Pokewallet set code or numeric set_id */
 export const OUR_SET_TO_POKEWALLET: Record<string, SetLookupHint> = {
   cbb2c: { pokewalletSetCode: "CBB2C" },
+  cs6bc: { pokewalletSetCode: "CBB5C", language: "chn" },
+  mep: { pokewalletSetCode: "MEP", language: "eng" },
+  smp: { pokewalletSetCode: "SMP", language: "eng" },
+  svp: { pokewalletSetCode: "SVP", language: "eng" },
+  basep: { pokewalletSetCode: "BASEP", language: "eng" },
+  swsh45: { pokewalletSetCode: "swsh45", language: "eng" },
+  swshp: { pokewalletSetCode: "swshp", language: "eng" },
+  xyp: { pokewalletSetCode: "xyp", language: "eng" },
   swsh12pt5gg: { pokewalletSetCode: "swsh12.5gg", language: "eng" },
   swsh9tg: { pokewalletSetCode: "swsh9.5tg", language: "eng" },
   swsh12pt5: { pokewalletSetCode: "CZ", language: "eng" },

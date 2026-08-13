@@ -3754,5 +3754,369 @@
     "resolvedAt": "2026-08-12",
     "matchScore": 145,
     "searchQuery": "Penny 252"
+  },
+  "basep-49": {
+    "pokewalletId": "pk_737dbbed190271b64790d2363dcda6512c799b9d7a98c0b7138474ca8bd66107cafbfce452d8e06bb8895131",
+    "setCode": "PR",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 160,
+    "searchQuery": "Snorlax 49"
+  },
+  "gym1-97": {
+    "pokewalletId": "pk_61e277041f85cd4404dc074f6973bc344a6b7b0c8a08fd70fbcec26cdbb92e507595c84c07860fe3b5408ae5e1",
+    "setCode": "G1",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 185,
+    "searchQuery": "Blaine's Quiz #1 Gym Heroes 97"
+  },
+  "ecard3-138": {
+    "pokewalletId": "pk_4a01f4d974a33af26bfdda00b20ec873c9003a0b4d4e9d75b9fcd016d35d7085d60a1b8158f825471951c3863b0a",
+    "setCode": "SK",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 185,
+    "searchQuery": "Oracle Skyridge 138"
+  },
+  "dp5-79": {
+    "pokewalletId": "pk_a154dd7cfd71b9948b4dd602f1110b65077295cfd27aeba27c4b270fc5b32c7ea63c172e999cd395cf9ffa6f46",
+    "setCode": "MD",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 185,
+    "searchQuery": "Dawn Stadium Majestic Dawn 79"
+  },
+  "hgss1-119": {
+    "pokewalletId": "pk_f1198eb6e662a6f60c970ee97ba13bace56daee697a114a825c528ffd382a453f99a90f0e77709d5dcb2733e38ee",
+    "setCode": "HS",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 175,
+    "searchQuery": "Psychic Energy HeartGold SoulSilver 119"
+  },
+  "hgss1-121": {
+    "pokewalletId": "pk_98d86ee82c70bb733b325d08a868702196523122f5eee2cdbe5c89883e3d264912ec900e9a10fdf26773fc106b72",
+    "setCode": "HS",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 175,
+    "searchQuery": "Darkness Energy HeartGold SoulSilver 121"
+  },
+  "hgss2-8": {
+    "pokewalletId": "pk_6deff9cae0a3058637f2908c2c90a914db939886227772e5fbc0f84d8a636cf7316900d88f90902f4f0cb6",
+    "setCode": "UL",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 185,
+    "searchQuery": "Shaymin Unleashed 8"
+  },
+  "hgss2-77": {
+    "pokewalletId": "pk_6551f617c30b28392488a3041de42d27ba8352755a8079ecb195c37455d66b521bfaa32d0b786d872a37ce5f",
+    "setCode": "UL",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 85,
+    "searchQuery": "1399 77"
+  },
+  "col1-79": {
+    "pokewalletId": "pk_3a99ce327bfadf99b0f1fd3bf6568a411c88142695a5496308c96b43d0fb9bb0352b1044ec6257ebcc9716ac",
+    "setCode": "CL",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 175,
+    "searchQuery": "Interviewer's Questions Call of Legends 79"
+  },
+  "col1-92": {
+    "pokewalletId": "pk_0f24db1dd5eab1afd69514926fcc90c13484dae699095cee2a86b00477d608a8b3e03bedbb174bc6f657f219",
+    "setCode": "CL",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 175,
+    "searchQuery": "Psychic Energy Call of Legends 92"
+  },
+  "col1-94": {
+    "pokewalletId": "pk_19a0283040eb826390171c302774a71940156785c68f95f6505c727d588074f5c1f2e62319407cbca8c619f3",
+    "setCode": "CL",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 175,
+    "searchQuery": "Darkness Energy Call of Legends 94"
+  },
+  "xyp-XY95": {
+    "pokewalletId": "pk_1983e89ee4e61283eb350e6d11452655c54a6d6cacb22e146ecc4954fa28e70962bfa2e8055b5e2be6dad293",
+    "setCode": "PR",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 150,
+    "searchQuery": "Pikachu XY95"
+  },
+  "xyp-XY121": {
+    "pokewalletId": "pk_b7f2e1c161d96104b97170787e16f709f5bbea7bde71b6f4a156829199f5f8679a2343212a3e69a1a0602315c7",
+    "setCode": "PR",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 130,
+    "searchQuery": "Charizard EX XY Black Star Promos XY121"
+  },
+  "xyp-XY122": {
+    "pokewalletId": "pk_7465a73987418beea000c64c8a5a01a0c5463de879f639926c16e2dedc17012da797e14fd135a48917f9c122ea",
+    "setCode": "PR",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 135,
+    "searchQuery": "Blastoise EX XY122"
+  },
+  "xyp-XY124": {
+    "pokewalletId": "pk_3a84d69bd1362a74eaa64a8ff475cf3c005b2be87ec180e912401f762ae0eb032abd1dd8195338d9c6ae5ddc6f",
+    "setCode": "PR",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 135,
+    "searchQuery": "Pikachu EX XY124"
+  },
+  "xyp-XY177": {
+    "pokewalletId": "pk_e0da2172b91e9545623f54d79eca9c204e0d40122e104429444073bbce0aec0c5ad82ac3fc879eba6aba3cd84d",
+    "setCode": "PR",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 160,
+    "searchQuery": "Karen XY177"
+  },
+  "xy9-54": {
+    "pokewalletId": "pk_14838ddd12bd363bf1cfd089716b61b58655124eae9dbaf035e98acfdf6c0c49f53276a5d879695a361418fcfd76",
+    "setCode": "BKP",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 175,
+    "searchQuery": "Drapion BREAKpoint 54"
+  },
+  "xy9-96": {
+    "pokewalletId": "pk_e869260377acd1498da8f4c9ebe92f7d38ffb14e36ecfc79d54c6ffa2eeddab6e85d75b5e3744233542105624a76",
+    "setCode": "BKP",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 175,
+    "searchQuery": "All-Night Party BREAKpoint 96"
+  },
+  "g1-RC24": {
+    "pokewalletId": "pk_6b0429576c6539cc26a26a732a043bd16502788f2a6d0ddc871ec12451dc1be8b4e8c1d963cd713b4a65220607284995ec",
+    "setCode": "GEN",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 165,
+    "searchQuery": "Altaria Generations RC24"
+  },
+  "xy10-125": {
+    "pokewalletId": "pk_2b31ea4543caa58962f254e6eb5ac512049440f9ecc22da1ddd37aa7f3f4e97b21a3911ed670dc8df713af0fa3bd9f",
+    "setCode": "FCO",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 175,
+    "searchQuery": "Alakazam EX Fates Collide 125"
+  },
+  "smp-SM231": {
+    "pokewalletId": "pk_a81811ddb487cdf9d813f3c0a94ac3083056b97799d8577966001f24cf0b05e4685bceafca7b3d856dd43a2bbb",
+    "setCode": "SMP",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 140,
+    "searchQuery": "Champions Festival SM231"
+  },
+  "sm11-88": {
+    "pokewalletId": "pk_aeee7ad2519d3a5d89968fb80a23e6dfce4bf062950515231a6d10b41d709ae39c5c2dfb42674d06c09f6e6132a3",
+    "setCode": "SM11",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 175,
+    "searchQuery": "Munna Unified Minds 88"
+  },
+  "swsh3-142": {
+    "pokewalletId": "pk_1db4b4fc96215648580c79cb4bd31ac7e0164063bd6c3cfe2ba2e81926767796619b1d2a8cca949e53cf7ad22e43d0",
+    "setCode": "SWSH03",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 185,
+    "searchQuery": "Delcatty Darkness Ablaze 142"
+  },
+  "swsh45-70": {
+    "pokewalletId": "38e0ca90df2fbbf4f2b32c532682de390ecf61f823988c0aee18d735e40d637e",
+    "setCode": "SHF",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 160,
+    "searchQuery": "Poké Kid 70"
+  },
+  "mep-052": {
+    "pokewalletId": "pk_2a7e9ab9b69d857c6bc560dd5a750eeabe6c5be004a69e66ba2b1875b7c2462ac16d8f76a97de629bb5f43",
+    "setCode": "MEP",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 140,
+    "searchQuery": "Grookey 52"
+  },
+  "mep-061": {
+    "pokewalletId": "7c692c4588ca843a9065d0a436aea15acfb5e6bd1ab9eb9c7c7f7e9d2850d507",
+    "setCode": "MEP",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 160,
+    "searchQuery": "Sprigatito 61"
+  },
+  "sv1-183": {
+    "pokewalletId": "pk_4296e0e16a866d035147539231db69e06c0e932ea8e6471324732dde405368793ea0c6927fe365f905bb96c999695d6b",
+    "setCode": "SVI",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 165,
+    "searchQuery": "Penny 183"
+  },
+  "svp-224": {
+    "pokewalletId": "pk_f124a88aa3f5f2201072469b6c54a3daa460a8eed520f8a1e0e6e9353c316e41184379825aacceefe87673b3",
+    "setCode": "SVP",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 140,
+    "searchQuery": "Paradise Resort 224"
+  },
+  "sv1-239": {
+    "pokewalletId": "pk_95c5875d7f064df86f0147065afaf2baacf05761de06d07eeb65e8670426b4de63ae1e3d762ab8ee3589638f4f6119c7",
+    "setCode": "PAF",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 160,
+    "searchQuery": "Penny 239"
+  },
+  "sv2-268": {
+    "pokewalletId": "pk_28aee53f53e2a95367908abaacc891d21d6ec83646c9a37cb5643a6b175cd5d1c54bd0933be441977f7af074d9f54f14",
+    "setCode": "PAL",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 155,
+    "searchQuery": "Grusha Paldea Evolved 268"
+  },
+  "sv2-269": {
+    "pokewalletId": "pk_28794eae94050f2d0fc43d216ede21c35ce9ce2f6a7f2fc1751782366924de650969ecff77b40321c2344f4038df3b1d",
+    "setCode": "PAL",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 155,
+    "searchQuery": "Iono Paldea Evolved 269"
+  },
+  "sv4-206": {
+    "pokewalletId": "pk_f3c72418bad23930c624b568bfe4b75917e2080a439bc77128bc72c0ca21c71f785e7ecc53e2fae0b256e4b44b334d71",
+    "setCode": "PAR",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 155,
+    "searchQuery": "Morpeko Paradox Rift 206"
+  },
+  "sv4pt5-239": {
+    "pokewalletId": "pk_95c5875d7f064df86f0147065afaf2baacf05761de06d07eeb65e8670426b4de63ae1e3d762ab8ee3589638f4f6119c7",
+    "setCode": "PAF",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 175,
+    "searchQuery": "Penny Paldean Fates 239"
+  },
+  "sv6-151": {
+    "pokewalletId": "pk_23e5466a84ac83bb044b3816002584110ec339366b3cf6ceef3277752e6bba85b707f83e448212004158f1a4cad16e5b",
+    "setCode": "TWM",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 165,
+    "searchQuery": "Hassel Twilight Masquerade 151"
+  },
+  "sv6pt5-56": {
+    "pokewalletId": "pk_b86284a282ecc798ab24bda41135942d5a1899de3fccf406489d76734ee737eba578a525ce9ea0e57b844ed67e55b4",
+    "setCode": "SFA",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 165,
+    "searchQuery": "Cassiopeia Shrouded Fable 56"
+  },
+  "sv6pt5-86": {
+    "pokewalletId": "pk_06a6dd99d59244ab5f82d7827ca3ea0936e0f7dfacce06ded8182d788f0c1b700d38246d66b96be16406cf17dc9649",
+    "setCode": "SFA",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 155,
+    "searchQuery": "Cassiopeia Shrouded Fable 86"
+  },
+  "sv6pt5-94": {
+    "pokewalletId": "pk_8ee00ed3fdfb7333ff8321d848d233448c5801c5164b05c1b48e687ecd060f7969d64072d8b5689b908bcd446bb165",
+    "setCode": "SFA",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 155,
+    "searchQuery": "Cassiopeia Shrouded Fable 94"
+  },
+  "sv8pt5-109": {
+    "pokewalletId": "pk_30ba25722a78e7008e4798931712d36beae66f5e6841bb8f9112b052f10784277fec0866fa78c21c2de5b0a17a31808e",
+    "setCode": "PRE",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 165,
+    "searchQuery": "Friends in Paldea Prismatic Evolutions 109"
+  },
+  "sv8pt5-137": {
+    "pokewalletId": "pk_3e1f3bcbc4bc09a5a077406b77d44dd86ff915ccee13a89019f266ff982828e8e59f6c5b9569a4fb73473d25b58c1f9b",
+    "setCode": "PRE",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 155,
+    "searchQuery": "Friends in Paldea Prismatic Evolutions 137"
+  },
+  "me03-122": {
+    "pokewalletId": "pk_57badeebfc92bd2f3add00a247c2f5705bfdecceeb54387b0a790f26f6843ac02acabc25eed4ae23f7be3213cbee6a79",
+    "setCode": "POR",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 155,
+    "searchQuery": "Jacinthe Perfect Order 122"
+  },
+  "tpp-jp-1": {
+    "pokewalletId": "pk_d6b047e67d717207740c7ef28f1e4d59f60638561594805eca4f83dedc62b20020668ff6393ce93bd21deeaad985",
+    "setCode": "smI",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 140,
+    "searchQuery": "Flareon 1"
+  },
+  "bwp-190": {
+    "pokewalletId": "dca79b1f6442680998a6df4aeb35707bf3f8d3f7925ce795bf98dfac9e1bf1fd",
+    "setCode": "BW-P",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 160,
+    "searchQuery": "Pokémon Center 190"
+  },
+  "smp-jp-005": {
+    "pokewalletId": "pk_dbe7c9d34a20492cad4957c5f909016b0f8068a9ca548cb6a8ff909d044c3d8937cf8e5436b1087d611bfc3ff40230",
+    "setCode": "SM-P",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 140,
+    "searchQuery": "Sapporo's Pikachu SM-P Promos 5"
+  },
+  "smp-jp-poncho-137": {
+    "pokewalletId": "pk_2d946af66efb6e4119e3e6b34a1be3b38f5b2656209a88f660997f67f4d3cdf0c226a8b797e0c1a7990df3748425022159",
+    "setCode": "SM-P",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 140,
+    "searchQuery": "Poncho-wearing Eevee SM-P Promos 137"
+  },
+  "smp-jp-poncho-138": {
+    "pokewalletId": "pk_e29040c2a91b1d8066d122b70990bb1fb0e40a16af70a513c247f7547e8b70dad3887e1d3ce83551fec0b3969f6c30383e",
+    "setCode": "SM-P",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 140,
+    "searchQuery": "Poncho-wearing Eevee SM-P Promos 138"
+  },
+  "smp-jp-poncho-139": {
+    "pokewalletId": "pk_fd397f23d90945d72124b50864709e2179e882d7aaac4ff513f738eb4364f5e1c9c16ad3ea40e358628578ef45aabea7e7",
+    "setCode": "SM-P",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 140,
+    "searchQuery": "Poncho-wearing Eevee SM-P Promos 139"
+  },
+  "smp-jp-poncho-140": {
+    "pokewalletId": "pk_5a553dc31f433b61050903cc0995641b4130fbdcb382a9f871404766b3ab67fa3f6afc08b2e8c75a978e0544dc5782590a",
+    "setCode": "SM-P",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 140,
+    "searchQuery": "Poncho-wearing Eevee SM-P Promos 140"
+  },
+  "smp-jp-poncho-141": {
+    "pokewalletId": "pk_2ff4e53d684b26c28773056eadd147c719bdc33677fe49a3f071d9c96bcd1ba536eb642692ef584b717c7704b9e84fec11",
+    "setCode": "SM-P",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 140,
+    "searchQuery": "Poncho-wearing Eevee SM-P Promos 141"
+  },
+  "smp-jp-poncho-142": {
+    "pokewalletId": "pk_84d95b4a1436093dcf37f4db8e2e7622c1c6d6b4e4386ecc125f9bf717e0ea9f0dc799919c997babc0464ea5ab894299e1",
+    "setCode": "SM-P",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 140,
+    "searchQuery": "Poncho-wearing Eevee SM-P Promos 142"
+  },
+  "smp-jp-poncho-143": {
+    "pokewalletId": "pk_5ad0335d4c5d4e5e136400c397e7249b6f12b8b47ecc21e1d8b49728351b6f7290670dccc41b0c1e57b8bdd07b69fdc0f1",
+    "setCode": "SM-P",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 140,
+    "searchQuery": "Poncho-wearing Eevee SM-P Promos 143"
+  },
+  "smp-jp-poncho-144": {
+    "pokewalletId": "pk_43c77e3c8c26b84776b03113868030e4676ef29d743959d952198cd62cd588db66b0873a951c2a89ecb32b685b9d1c1414",
+    "setCode": "SM-P",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 140,
+    "searchQuery": "Poncho-wearing Eevee SM-P Promos 144"
+  },
+  "smp-jp-288": {
+    "pokewalletId": "pk_4126e5d2af954a9374862508fde2e20e8060af7d91b8593c540185b16facdd383e822be02cb2bf48a487cfa51d2cd97101",
+    "setCode": "SM-P",
+    "resolvedAt": "2026-08-13",
+    "matchScore": 135,
+    "searchQuery": "Pikachu SM-P Promos 288"
   }
 }

@@ -1,0 +1,614 @@
+{
+  "updatedAt": "2026-08-13",
+  "totalEntries": 70,
+  "entries": [
+    {
+      "catalogueId": "basep-49",
+      "status": "included-existing",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "bwp-190",
+      "status": "manual-updated",
+      "cameoOf": [
+        "Eevee",
+        "Espeon",
+        "Flareon",
+        "Glaceon",
+        "Jolteon",
+        "Leafeon",
+        "Umbreon",
+        "Vaporeon"
+      ],
+      "language": "ja",
+      "notes": "Jumbo; 8 Eeveelution cameos share this printing"
+    },
+    {
+      "catalogueId": "bwp-2012",
+      "status": "manual-updated",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "language": "ja",
+      "notes": "Jumbo"
+    },
+    {
+      "catalogueId": "cdc2010-jp-zorua",
+      "status": "manual-updated",
+      "cameoOf": [
+        "Umbreon"
+      ],
+      "language": "ja"
+    },
+    {
+      "catalogueId": "col1-79",
+      "status": "included-existing",
+      "cameoOf": [
+        "Leafeon"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "col1-92",
+      "status": "included-existing",
+      "cameoOf": [
+        "Espeon"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "col1-94",
+      "status": "included-existing",
+      "cameoOf": [
+        "Umbreon"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "cs6bc-2207",
+      "status": "manual-updated",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "language": "zh-cn",
+      "notes": "Vee-Vee Pick; Simplified Chinese only"
+    },
+    {
+      "catalogueId": "dp5-79",
+      "status": "included-existing",
+      "cameoOf": [
+        "Glaceon",
+        "Leafeon"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "ecard3-138",
+      "status": "included-existing",
+      "cameoOf": [
+        "Umbreon"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "g1-RC21",
+      "status": "catalogue-existing",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "g1-RC24",
+      "status": "included-existing",
+      "cameoOf": [
+        "Sylveon"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "g1-RC28",
+      "status": "catalogue-existing",
+      "cameoOf": [
+        "Jolteon",
+        "Vaporeon"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "g1-RC32",
+      "status": "catalogue-existing",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "gym1-97",
+      "status": "included-existing",
+      "cameoOf": [
+        "Vaporeon"
+      ],
+      "language": "en",
+      "notes": "silhouette"
+    },
+    {
+      "catalogueId": "hgss1-119",
+      "status": "included-existing",
+      "cameoOf": [
+        "Espeon"
+      ],
+      "language": "en",
+      "notes": "silhouette"
+    },
+    {
+      "catalogueId": "hgss1-121",
+      "status": "included-existing",
+      "cameoOf": [
+        "Umbreon"
+      ],
+      "language": "en",
+      "notes": "silhouette"
+    },
+    {
+      "catalogueId": "hgss2-77",
+      "status": "included-existing",
+      "cameoOf": [
+        "Leafeon"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "hgss2-8",
+      "status": "included-existing",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "me03-122",
+      "status": "included-existing",
+      "cameoOf": [
+        "Sylveon"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "mep-052",
+      "status": "manual-updated",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "language": "en",
+      "notes": "Decorative Curry"
+    },
+    {
+      "catalogueId": "mep-061",
+      "status": "manual-updated",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "language": "en",
+      "notes": "Vee-Vee Pick"
+    },
+    {
+      "catalogueId": "mep-092",
+      "status": "manual-updated",
+      "cameoOf": [
+        "Sylveon"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "sm11-88",
+      "status": "included-existing",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "smp-jp-005",
+      "status": "manual-updated",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "language": "ja"
+    },
+    {
+      "catalogueId": "smp-jp-288",
+      "status": "manual-updated",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "language": "ja",
+      "notes": "silhouette"
+    },
+    {
+      "catalogueId": "smp-jp-poncho-137",
+      "status": "manual-updated",
+      "cameoOf": [
+        "Vaporeon"
+      ],
+      "language": "ja",
+      "notes": "costume"
+    },
+    {
+      "catalogueId": "smp-jp-poncho-138",
+      "status": "manual-updated",
+      "cameoOf": [
+        "Jolteon"
+      ],
+      "language": "ja",
+      "notes": "costume"
+    },
+    {
+      "catalogueId": "smp-jp-poncho-139",
+      "status": "manual-updated",
+      "cameoOf": [
+        "Flareon"
+      ],
+      "language": "ja",
+      "notes": "costume"
+    },
+    {
+      "catalogueId": "smp-jp-poncho-140",
+      "status": "manual-updated",
+      "cameoOf": [
+        "Espeon"
+      ],
+      "language": "ja",
+      "notes": "costume"
+    },
+    {
+      "catalogueId": "smp-jp-poncho-141",
+      "status": "manual-updated",
+      "cameoOf": [
+        "Umbreon"
+      ],
+      "language": "ja",
+      "notes": "costume"
+    },
+    {
+      "catalogueId": "smp-jp-poncho-142",
+      "status": "manual-updated",
+      "cameoOf": [
+        "Leafeon"
+      ],
+      "language": "ja",
+      "notes": "costume"
+    },
+    {
+      "catalogueId": "smp-jp-poncho-143",
+      "status": "manual-updated",
+      "cameoOf": [
+        "Glaceon"
+      ],
+      "language": "ja",
+      "notes": "costume"
+    },
+    {
+      "catalogueId": "smp-jp-poncho-144",
+      "status": "manual-updated",
+      "cameoOf": [
+        "Sylveon"
+      ],
+      "language": "ja",
+      "notes": "costume"
+    },
+    {
+      "catalogueId": "smp-jp-zeraora-jumbo",
+      "status": "manual-updated",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "language": "ja",
+      "notes": "Jumbo"
+    },
+    {
+      "catalogueId": "smp-SM231",
+      "status": "included-existing",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "sv1-183",
+      "status": "included-existing",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "language": "en",
+      "notes": "backpack"
+    },
+    {
+      "catalogueId": "sv1-239",
+      "status": "included-existing",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "sv1-252",
+      "status": "catalogue-existing",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "sv2-268",
+      "status": "included-existing",
+      "cameoOf": [
+        "Glaceon"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "sv2-269",
+      "status": "included-existing",
+      "cameoOf": [
+        "Eevee",
+        "Sylveon"
+      ],
+      "language": "en",
+      "notes": "sweets"
+    },
+    {
+      "catalogueId": "sv4-206",
+      "status": "included-existing",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "sv4pt5-236",
+      "status": "catalogue-existing",
+      "cameoOf": [
+        "Eevee",
+        "Sylveon"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "sv4pt5-239",
+      "status": "included-existing",
+      "cameoOf": [
+        "Eevee",
+        "Umbreon"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "sv6-151",
+      "status": "included-existing",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "sv6pt5-56",
+      "status": "included-existing",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "sv6pt5-86",
+      "status": "included-existing",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "sv6pt5-94",
+      "status": "included-existing",
+      "cameoOf": [
+        "Eevee",
+        "Sylveon"
+      ],
+      "language": "en",
+      "notes": "phone case"
+    },
+    {
+      "catalogueId": "sv8pt5-109",
+      "status": "included-existing",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "sv8pt5-137",
+      "status": "included-existing",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "svp-224",
+      "status": "included-existing",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "swsh3-142",
+      "status": "included-existing",
+      "cameoOf": [
+        "Sylveon"
+      ],
+      "language": "en",
+      "notes": "hairbrush"
+    },
+    {
+      "catalogueId": "swsh45-70",
+      "status": "included-existing",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "language": "en",
+      "notes": "costume"
+    },
+    {
+      "catalogueId": "swsh7-180",
+      "status": "catalogue-existing",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "language": "en",
+      "notes": "drawing"
+    },
+    {
+      "catalogueId": "swsh7-189",
+      "status": "catalogue-existing",
+      "cameoOf": [
+        "Flareon"
+      ],
+      "language": "en",
+      "notes": "silhouette"
+    },
+    {
+      "catalogueId": "swsh7-209",
+      "status": "catalogue-existing",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "swsh7-212",
+      "status": "catalogue-existing",
+      "cameoOf": [
+        "Eevee",
+        "Vaporeon"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "swshp-SWSH179",
+      "status": "included-existing",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "language": "en",
+      "notes": "picture"
+    },
+    {
+      "catalogueId": "tpp-jp-1",
+      "status": "manual-updated",
+      "cameoOf": [
+        "Jolteon"
+      ],
+      "language": "ja",
+      "notes": "only partially visible"
+    },
+    {
+      "catalogueId": "tpp-jp-2",
+      "status": "manual-updated",
+      "cameoOf": [
+        "Flareon",
+        "Jolteon"
+      ],
+      "language": "ja"
+    },
+    {
+      "catalogueId": "wcd2010-espeon",
+      "status": "manual-updated",
+      "cameoOf": [
+        "Espeon"
+      ],
+      "language": "en",
+      "notes": "Unnumbered deck promo Psychic Energy"
+    },
+    {
+      "catalogueId": "xy10-125",
+      "status": "included-existing",
+      "cameoOf": [
+        "Umbreon"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "xy9-54",
+      "status": "included-existing",
+      "cameoOf": [
+        "Espeon"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "xy9-96",
+      "status": "included-existing",
+      "cameoOf": [
+        "Umbreon"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "xyp-jp-90",
+      "status": "manual-updated",
+      "cameoOf": [
+        "Sylveon"
+      ],
+      "language": "ja"
+    },
+    {
+      "catalogueId": "xyp-XY121",
+      "status": "included-existing",
+      "cameoOf": [
+        "Flareon"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "xyp-XY122",
+      "status": "included-existing",
+      "cameoOf": [
+        "Vaporeon"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "xyp-XY124",
+      "status": "included-existing",
+      "cameoOf": [
+        "Jolteon"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "xyp-XY177",
+      "status": "included-existing",
+      "cameoOf": [
+        "Umbreon"
+      ],
+      "language": "en"
+    },
+    {
+      "catalogueId": "xyp-XY95",
+      "status": "included-existing",
+      "cameoOf": [
+        "Sylveon"
+      ],
+      "language": "en"
+    }
+  ],
+  "summary": {
+    "included-existing": 39,
+    "manual-updated": 22,
+    "catalogue-existing": 9
+  }
+}

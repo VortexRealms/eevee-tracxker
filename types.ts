@@ -70,6 +70,10 @@ export interface PokemonCard {
   images: PokemonCardImages;
   pricing?: CardPricing;
   variants?: string[];
+  /** Eeveelution(s) featured as a cameo on this card (non-Eeveelution printings). */
+  cameoOf?: PokemonName[];
+  /** Catalogue language for regional-only printings (Pokewallet disambiguation). */
+  catalogueLanguage?: "en" | "ja" | "zh-cn";
 }
 
 export interface CollectionRow {

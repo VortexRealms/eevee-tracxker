@@ -15,6 +15,7 @@ import type { DisplayCurrency, PokemonCard, PricesSnapshot } from "../types";
 import { metaToExchangeRates } from "../lib/exchange-rates";
 import { formatDisplayPrice, resolveDisplayAmount } from "../lib/display-price";
 import { getVariantLabel } from "../lib/variant-labels";
+import { formatCameoLabel } from "../lib/cameo-catalogue";
 import {
   getCardmarketSearchUrl,
   getEbaySearchUrl,
@@ -231,6 +232,7 @@ export function CardDetailModal({ card, variant, prices, onClose }: CardDetailMo
           : "";
 
   const variantLabel = getVariantLabel(variant);
+  const cameoLabel = formatCameoLabel(card.cameoOf);
 
   return createPortal(
     <div className={styles.backdrop} role="dialog" aria-modal="true">
@@ -273,6 +275,9 @@ export function CardDetailModal({ card, variant, prices, onClose }: CardDetailMo
                   {card.set.name} · #{card.number}
                   {card.rarity ? ` · ${card.rarity}` : ""}
                 </p>
+                {cameoLabel ? (
+                  <p className={styles.meta}>Cameo: {cameoLabel}</p>
+                ) : null}
               </div>
 
               <div className={styles.statsRow}>

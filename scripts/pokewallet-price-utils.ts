@@ -367,24 +367,38 @@ export function findBestPokewalletMatch(
 export function resolveSetHint(
   ourSetId: string,
   ourSetName: string,
-  allSets: PokewalletSetSummary[]
+  allSets: PokewalletSetSummary[],
+  catalogueLanguage?: PokemonCard["catalogueLanguage"]
 ): SetLookupHint | null {
   const curated = OUR_SET_TO_POKEWALLET[ourSetId];
   if (curated) return curated;
 
+  const desiredLang =
+    catalogueLanguage === "ja"
+      ? "jpn"
+      : catalogueLanguage === "zh-cn"
+        ? "chn"
+        : catalogueLanguage === "en"
+          ? "eng"
+          : undefined;
+
   const idUpper = ourSetId.toUpperCase();
-  const byCode = allSets.find(
+  const byCode = allSets.filter(
     (s) => s.set_code?.toUpperCase() === idUpper || s.set_id === ourSetId
   );
-  if (byCode) {
+  const byCodePick =
+    (desiredLang ? byCode.find((s) => s.language === desiredLang) : undefined) ??
+    byCode.find((s) => s.language === "eng") ??
+    byCode[0];
+  if (byCodePick) {
     return {
-      pokewalletSetCode: byCode.set_id,
-      language: byCode.language === "eng" ? "eng" : undefined,
+      pokewalletSetCode: byCodePick.set_id,
+      language: byCodePick.language === "eng" ? "eng" : byCodePick.language ?? undefined,
     };
   }
 
   const target = normalizeSetName(ourSetName);
-  const engMatches = allSets.filter(
+  const nameMatches = allSets.filter(
     (s) =>
       normalizeSetName(s.name) === target ||
       normalizeSetName(s.name).includes(target) ||
@@ -392,13 +406,14 @@ export function resolveSetHint(
   );
 
   const pick =
-    engMatches.find((s) => s.language === "eng") ??
-    engMatches.sort((a, b) => b.card_count - a.card_count)[0];
+    (desiredLang ? nameMatches.find((s) => s.language === desiredLang) : undefined) ??
+    nameMatches.find((s) => s.language === "eng") ??
+    nameMatches.sort((a, b) => b.card_count - a.card_count)[0];
 
   if (pick) {
     return {
       pokewalletSetCode: pick.set_id,
-      language: pick.language === "eng" ? "eng" : undefined,
+      language: pick.language === "eng" ? "eng" : pick.language ?? undefined,
     };
   }
 
@@ -429,7 +444,12 @@ export function lookupSetForCard(
   card: PokemonCard,
   allSets: PokewalletSetSummary[]
 ): SetIndexEntry | null {
-  const hint = resolveSetHint(card.set.id, card.set.name, allSets);
+  const hint = resolveSetHint(
+    card.set.id,
+    card.set.name,
+    allSets,
+    card.catalogueLanguage
+  );
   if (!hint) return null;
 
   const byId = allSets.find((s) => s.set_id === hint.pokewalletSetCode);
@@ -466,6 +486,9 @@ export function searchNumberForCard(card: PokemonCard): string {
   if (card.id.startsWith("cbb2c-")) {
     return card.id.slice("cbb2c-".length);
   }
+  if (card.id.startsWith("cs6bc-")) {
+    return card.id.slice("cs6bc-".length);
+  }
   const raw = card.number.trim();
   if (raw.includes(" ") && /^\d+\s+\d+\/\d+$/.test(raw)) {
     return raw.split(/\s+/)[0].replace(/^0+/, "") || raw;
@@ -500,6 +523,14 @@ export function buildSearchQueries(
       : num;
     add(`${card.name} CBB2C ${cbbNum}`);
     add(`CBB2C ${cbbNum}`);
+  }
+
+  if (card.set.id === "cs6bc" || card.id.startsWith("cs6bc-")) {
+    const csNum = card.id.startsWith("cs6bc-")
+      ? card.id.slice("cs6bc-".length)
+      : num;
+    add(`${card.name} CBB5C ${csNum}`);
+    add(`CBB5C ${csNum}`);
   }
 
   if (setEntry) {

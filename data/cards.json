@@ -1,5 +1,52 @@
 [
   {
+    "id": "tpp-jp-1",
+    "name": "Flareon",
+    "number": "1",
+    "supertype": "Pokémon",
+    "set": {
+      "id": "tpp-jp",
+      "name": "T Promos",
+      "series": "Other",
+      "releaseDate": "1998/01/01"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/back/medium",
+      "large": "https://images.scrydex.com/pokemon/back/medium"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "ja",
+    "cameoOf": [
+      "Jolteon"
+    ]
+  },
+  {
+    "id": "tpp-jp-2",
+    "name": "Vaporeon",
+    "number": "2",
+    "supertype": "Pokémon",
+    "set": {
+      "id": "tpp-jp",
+      "name": "T Promos",
+      "series": "Other",
+      "releaseDate": "1998/01/01"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/back/medium",
+      "large": "https://images.scrydex.com/pokemon/back/medium"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "ja",
+    "cameoOf": [
+      "Flareon",
+      "Jolteon"
+    ]
+  },
+  {
     "id": "base2-3",
     "name": "Flareon",
     "number": "3",
@@ -224,6 +271,36 @@
     ]
   },
   {
+    "id": "basep-49",
+    "name": "Snorlax",
+    "number": "49",
+    "rarity": "Common",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "hp": "90",
+    "set": {
+      "id": "basep",
+      "name": "Wizards Black Star Promos",
+      "series": "Base",
+      "releaseDate": "1999/07/01"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/base/basep/49/low.webp",
+      "large": "https://assets.tcgdex.net/en/base/basep/49/high.png"
+    },
+    "variants": [
+      "normal"
+    ],
+    "cameoOf": [
+      "Eevee"
+    ]
+  },
+  {
     "id": "base5-35",
     "name": "Dark Flareon",
     "number": "35",
@@ -333,6 +410,30 @@
     "variants": [
       "normal",
       "firstEdition"
+    ]
+  },
+  {
+    "id": "gym1-97",
+    "name": "Blaine's Quiz #1",
+    "number": "97",
+    "rarity": "Rare",
+    "supertype": "Trainer",
+    "set": {
+      "id": "gym1",
+      "name": "Gym Heroes",
+      "series": "Gym",
+      "releaseDate": "2000/08/14"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/gym/gym1/97/low.webp",
+      "large": "https://assets.tcgdex.net/en/gym/gym1/97/high.png"
+    },
+    "variants": [
+      "normal",
+      "firstEdition"
+    ],
+    "cameoOf": [
+      "Vaporeon"
     ]
   },
   {
@@ -1032,6 +1133,30 @@
     "variants": [
       "normal",
       "reverse"
+    ]
+  },
+  {
+    "id": "ecard3-138",
+    "name": "Oracle",
+    "number": "138",
+    "rarity": "Uncommon",
+    "supertype": "Trainer",
+    "set": {
+      "id": "ecard3",
+      "name": "Skyridge",
+      "series": "E-Card",
+      "releaseDate": "2003/05/12"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/ecard/ecard3/138/low.webp",
+      "large": "https://assets.tcgdex.net/en/ecard/ecard3/138/high.png"
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ],
+    "cameoOf": [
+      "Umbreon"
     ]
   },
   {
@@ -2337,6 +2462,31 @@
     ]
   },
   {
+    "id": "dp5-79",
+    "name": "Dawn Stadium",
+    "number": "79",
+    "rarity": "Uncommon",
+    "supertype": "Trainer",
+    "set": {
+      "id": "dp5",
+      "name": "Majestic Dawn",
+      "series": "Diamond & Pearl",
+      "releaseDate": "2008/05/01"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/dp/dp5/79/low.webp",
+      "large": "https://assets.tcgdex.net/en/dp/dp5/79/high.png"
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ],
+    "cameoOf": [
+      "Glaceon",
+      "Leafeon"
+    ]
+  },
+  {
     "id": "dp5-98",
     "name": "Glaceon",
     "number": "98",
@@ -2613,6 +2763,156 @@
       "normal",
       "reverse",
       "crackedIce"
+    ]
+  },
+  {
+    "id": "cdc2010-jp-zorua",
+    "name": "Illusion's Zorua",
+    "number": "Pucchigumi",
+    "supertype": "Pokémon",
+    "set": {
+      "id": "cdc2010-jp",
+      "name": "2010 Card Design Contest",
+      "series": "Other",
+      "releaseDate": "2010/01/01"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/back/medium",
+      "large": "https://images.scrydex.com/pokemon/back/medium"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "ja",
+    "cameoOf": [
+      "Umbreon"
+    ]
+  },
+  {
+    "id": "hgss1-119",
+    "name": "Psychic Energy",
+    "number": "119",
+    "rarity": "Common",
+    "supertype": "Energy",
+    "hp": "0",
+    "set": {
+      "id": "hgss1",
+      "name": "HeartGold SoulSilver",
+      "series": "HeartGold & SoulSilver",
+      "releaseDate": "2010/02/10"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/hgss/hgss1/119/low.webp",
+      "large": "https://assets.tcgdex.net/en/hgss/hgss1/119/high.png"
+    },
+    "variants": [
+      "normal"
+    ],
+    "cameoOf": [
+      "Espeon"
+    ]
+  },
+  {
+    "id": "hgss1-121",
+    "name": "Darkness Energy",
+    "number": "121",
+    "rarity": "Common",
+    "supertype": "Energy",
+    "hp": "0",
+    "set": {
+      "id": "hgss1",
+      "name": "HeartGold SoulSilver",
+      "series": "HeartGold & SoulSilver",
+      "releaseDate": "2010/02/10"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/hgss/hgss1/121/low.webp",
+      "large": "https://assets.tcgdex.net/en/hgss/hgss1/121/high.png"
+    },
+    "variants": [
+      "normal"
+    ],
+    "cameoOf": [
+      "Umbreon"
+    ]
+  },
+  {
+    "id": "hgss2-8",
+    "name": "Shaymin",
+    "number": "8",
+    "rarity": "Rare Holo",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Grass"
+    ],
+    "hp": "70",
+    "set": {
+      "id": "hgss2",
+      "name": "Unleashed",
+      "series": "HeartGold & SoulSilver",
+      "releaseDate": "2010/05/12"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/hgss/hgss2/8/low.webp",
+      "large": "https://assets.tcgdex.net/en/hgss/hgss2/8/high.png"
+    },
+    "variants": [
+      "reverse",
+      "holo"
+    ],
+    "cameoOf": [
+      "Eevee"
+    ]
+  },
+  {
+    "id": "hgss2-77",
+    "name": "Interviewer’s Questions",
+    "number": "77",
+    "rarity": "Uncommon",
+    "supertype": "Trainer",
+    "hp": "0",
+    "set": {
+      "id": "hgss2",
+      "name": "Unleashed",
+      "series": "HeartGold & SoulSilver",
+      "releaseDate": "2010/05/12"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/hgss/hgss2/77/low.webp",
+      "large": "https://assets.tcgdex.net/en/hgss/hgss2/77/high.png"
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ],
+    "cameoOf": [
+      "Leafeon"
+    ]
+  },
+  {
+    "id": "wcd2010-espeon",
+    "name": "Psychic Energy",
+    "number": "-",
+    "supertype": "Energy",
+    "set": {
+      "id": "wcd2010",
+      "name": "2010 World Championships Decks",
+      "series": "Other",
+      "releaseDate": "2010/08/01"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/back/medium",
+      "large": "https://images.scrydex.com/pokemon/back/medium"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "en",
+    "cameoOf": [
+      "Espeon"
     ]
   },
   {
@@ -3101,6 +3401,81 @@
     ]
   },
   {
+    "id": "col1-79",
+    "name": "Interviewer's Questions",
+    "number": "79",
+    "rarity": "Uncommon",
+    "supertype": "Trainer",
+    "set": {
+      "id": "col1",
+      "name": "Call of Legends",
+      "series": "Call of Legends",
+      "releaseDate": "2011/02/09"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/col/col1/79/low.webp",
+      "large": "https://assets.tcgdex.net/en/col/col1/79/high.png"
+    },
+    "variants": [
+      "normal"
+    ],
+    "cameoOf": [
+      "Leafeon"
+    ]
+  },
+  {
+    "id": "col1-92",
+    "name": "Psychic Energy",
+    "number": "92",
+    "rarity": "Common",
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "set": {
+      "id": "col1",
+      "name": "Call of Legends",
+      "series": "Call of Legends",
+      "releaseDate": "2011/02/09"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/col/col1/92/low.webp",
+      "large": "https://assets.tcgdex.net/en/col/col1/92/high.png"
+    },
+    "variants": [
+      "normal"
+    ],
+    "cameoOf": [
+      "Espeon"
+    ]
+  },
+  {
+    "id": "col1-94",
+    "name": "Darkness Energy",
+    "number": "94",
+    "rarity": "Common",
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "set": {
+      "id": "col1",
+      "name": "Call of Legends",
+      "series": "Call of Legends",
+      "releaseDate": "2011/02/09"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/col/col1/94/low.webp",
+      "large": "https://assets.tcgdex.net/en/col/col1/94/high.png"
+    },
+    "variants": [
+      "normal"
+    ],
+    "cameoOf": [
+      "Umbreon"
+    ]
+  },
+  {
     "id": "bwp-BW87",
     "name": "Leafeon",
     "number": "BW87",
@@ -3341,6 +3716,59 @@
     },
     "variants": [
       "normal"
+    ]
+  },
+  {
+    "id": "bwp-2012",
+    "name": "_____'s Pikachu",
+    "number": "©2012",
+    "supertype": "Pokémon",
+    "set": {
+      "id": "bwp",
+      "name": "BW-P Promos",
+      "series": "Black & White",
+      "releaseDate": "2011/07/01"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/back/medium",
+      "large": "https://images.scrydex.com/pokemon/back/medium"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "ja",
+    "cameoOf": [
+      "Eevee"
+    ]
+  },
+  {
+    "id": "bwp-190",
+    "name": "Pokémon Center",
+    "number": "190",
+    "supertype": "Pokémon",
+    "set": {
+      "id": "bwp",
+      "name": "BW-P Promos",
+      "series": "Black & White",
+      "releaseDate": "2011/07/01"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/back/medium",
+      "large": "https://images.scrydex.com/pokemon/back/medium"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "ja",
+    "cameoOf": [
+      "Eevee",
+      "Espeon",
+      "Flareon",
+      "Glaceon",
+      "Jolteon",
+      "Leafeon",
+      "Umbreon",
+      "Vaporeon"
     ]
   },
   {
@@ -3922,6 +4350,36 @@
     ]
   },
   {
+    "id": "xyp-XY95",
+    "name": "Pikachu",
+    "number": "XY95",
+    "rarity": "Promo",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Lightning"
+    ],
+    "hp": "60",
+    "set": {
+      "id": "xyp",
+      "name": "XY Black Star Promos",
+      "series": "XY",
+      "releaseDate": "2013/10/12"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/xy/xyp/XY95/low.webp",
+      "large": "https://assets.tcgdex.net/en/xy/xyp/XY95/high.png"
+    },
+    "variants": [
+      "normal"
+    ],
+    "cameoOf": [
+      "Sylveon"
+    ]
+  },
+  {
     "id": "xyp-XY96",
     "name": "Umbreon",
     "number": "XY96",
@@ -3949,6 +4407,119 @@
     ]
   },
   {
+    "id": "xyp-XY121",
+    "name": "Charizard EX",
+    "number": "XY121",
+    "rarity": "Promo",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "EX"
+    ],
+    "types": [
+      "Fire"
+    ],
+    "hp": "180",
+    "set": {
+      "id": "xyp",
+      "name": "XY Black Star Promos",
+      "series": "XY",
+      "releaseDate": "2013/10/12"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/xy/xyp/XY121/low.webp",
+      "large": "https://assets.tcgdex.net/en/xy/xyp/XY121/high.png"
+    },
+    "variants": [
+      "normal"
+    ],
+    "cameoOf": [
+      "Flareon"
+    ]
+  },
+  {
+    "id": "xyp-XY122",
+    "name": "Blastoise EX",
+    "number": "XY122",
+    "rarity": "Promo",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "EX"
+    ],
+    "types": [
+      "Water"
+    ],
+    "hp": "180",
+    "set": {
+      "id": "xyp",
+      "name": "XY Black Star Promos",
+      "series": "XY",
+      "releaseDate": "2013/10/12"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/xy/xyp/XY122/low.webp",
+      "large": "https://assets.tcgdex.net/en/xy/xyp/XY122/high.png"
+    },
+    "variants": [
+      "normal"
+    ],
+    "cameoOf": [
+      "Vaporeon"
+    ]
+  },
+  {
+    "id": "xyp-XY124",
+    "name": "Pikachu EX",
+    "number": "XY124",
+    "rarity": "Promo",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "EX"
+    ],
+    "types": [
+      "Lightning"
+    ],
+    "hp": "130",
+    "set": {
+      "id": "xyp",
+      "name": "XY Black Star Promos",
+      "series": "XY",
+      "releaseDate": "2013/10/12"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/xy/xyp/XY124/low.webp",
+      "large": "https://assets.tcgdex.net/en/xy/xyp/XY124/high.png"
+    },
+    "variants": [
+      "normal"
+    ],
+    "cameoOf": [
+      "Jolteon"
+    ]
+  },
+  {
+    "id": "xyp-XY177",
+    "name": "Karen",
+    "number": "XY177",
+    "rarity": "Promo",
+    "supertype": "Trainer",
+    "set": {
+      "id": "xyp",
+      "name": "XY Black Star Promos",
+      "series": "XY",
+      "releaseDate": "2013/10/12"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/xy/xyp/XY177/low.webp",
+      "large": "https://assets.tcgdex.net/en/xy/xyp/XY177/high.png"
+    },
+    "variants": [
+      "normal"
+    ],
+    "cameoOf": [
+      "Umbreon"
+    ]
+  },
+  {
     "id": "bw11-RC14",
     "name": "Eevee",
     "number": "RC14",
@@ -3973,6 +4544,29 @@
     },
     "variants": [
       "normal"
+    ]
+  },
+  {
+    "id": "xyp-jp-90",
+    "name": "Pikachu",
+    "number": "90",
+    "supertype": "Pokémon",
+    "set": {
+      "id": "xyp-jp",
+      "name": "XY-P Promos",
+      "series": "XY",
+      "releaseDate": "2014/01/01"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/back/medium",
+      "large": "https://images.scrydex.com/pokemon/back/medium"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "ja",
+    "cameoOf": [
+      "Sylveon"
     ]
   },
   {
@@ -4344,6 +4938,59 @@
     ]
   },
   {
+    "id": "xy9-54",
+    "name": "Drapion",
+    "number": "54",
+    "rarity": "Rare",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "types": [
+      "Psychic"
+    ],
+    "hp": "130",
+    "set": {
+      "id": "xy9",
+      "name": "BREAKpoint",
+      "series": "XY",
+      "releaseDate": "2016/02/03"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/xy/xy9/54/low.webp",
+      "large": "https://assets.tcgdex.net/en/xy/xy9/54/high.png"
+    },
+    "variants": [
+      "normal"
+    ],
+    "cameoOf": [
+      "Espeon"
+    ]
+  },
+  {
+    "id": "xy9-96",
+    "name": "All-Night Party",
+    "number": "96",
+    "rarity": "Uncommon",
+    "supertype": "Trainer",
+    "set": {
+      "id": "xy9",
+      "name": "BREAKpoint",
+      "series": "XY",
+      "releaseDate": "2016/02/03"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/xy/xy9/96/low.webp",
+      "large": "https://assets.tcgdex.net/en/xy/xy9/96/high.png"
+    },
+    "variants": [
+      "normal"
+    ],
+    "cameoOf": [
+      "Umbreon"
+    ]
+  },
+  {
     "id": "xy9-117",
     "name": "Espeon EX",
     "number": "117",
@@ -4531,6 +5178,39 @@
     },
     "variants": [
       "normal"
+    ],
+    "cameoOf": [
+      "Eevee"
+    ]
+  },
+  {
+    "id": "g1-RC24",
+    "name": "Altaria",
+    "number": "RC24",
+    "rarity": "Uncommon",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "hp": "90",
+    "set": {
+      "id": "g1",
+      "name": "Generations",
+      "series": "XY",
+      "releaseDate": "2016/02/22"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/xy/g1/RC24/low.webp",
+      "large": "https://assets.tcgdex.net/en/xy/g1/RC24/high.png"
+    },
+    "variants": [
+      "normal"
+    ],
+    "cameoOf": [
+      "Sylveon"
     ]
   },
   {
@@ -4558,6 +5238,10 @@
     },
     "variants": [
       "normal"
+    ],
+    "cameoOf": [
+      "Jolteon",
+      "Vaporeon"
     ]
   },
   {
@@ -4585,6 +5269,9 @@
     },
     "variants": [
       "normal"
+    ],
+    "cameoOf": [
+      "Eevee"
     ]
   },
   {
@@ -4724,6 +5411,37 @@
     },
     "variants": [
       "normal"
+    ]
+  },
+  {
+    "id": "xy10-125",
+    "name": "Alakazam EX",
+    "number": "125",
+    "rarity": "Secret Rare",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic",
+      "EX"
+    ],
+    "types": [
+      "Psychic"
+    ],
+    "hp": "160",
+    "set": {
+      "id": "xy10",
+      "name": "Fates Collide",
+      "series": "XY",
+      "releaseDate": "2016/05/02"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/xy/xy10/125/low.webp",
+      "large": "https://assets.tcgdex.net/en/xy/xy10/125/high.png"
+    },
+    "variants": [
+      "normal"
+    ],
+    "cameoOf": [
+      "Umbreon"
     ]
   },
   {
@@ -5337,6 +6055,29 @@
     ]
   },
   {
+    "id": "smp-SM231",
+    "name": "Champions Festival",
+    "number": "SM231",
+    "rarity": "Promo",
+    "supertype": "Trainer",
+    "set": {
+      "id": "smp",
+      "name": "SM Black Star Promos",
+      "series": "Sun & Moon",
+      "releaseDate": "2017/02/03"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/smp/SM231.png",
+      "large": "https://images.pokemontcg.io/smp/SM231_hires.png"
+    },
+    "variants": [
+      "normal"
+    ],
+    "cameoOf": [
+      "Eevee"
+    ]
+  },
+  {
     "id": "smp-SM233",
     "name": "Eevee GX",
     "number": "SM233",
@@ -5506,6 +6247,259 @@
     },
     "variants": [
       "normal"
+    ]
+  },
+  {
+    "id": "smp-jp-zeraora-jumbo",
+    "name": "Zeraora and Friends",
+    "number": "-",
+    "supertype": "Pokémon",
+    "set": {
+      "id": "smp-jp",
+      "name": "SM-P Promos",
+      "series": "Sun & Moon",
+      "releaseDate": "2017/03/01"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/back/medium",
+      "large": "https://images.scrydex.com/pokemon/back/medium"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "ja",
+    "cameoOf": [
+      "Eevee"
+    ]
+  },
+  {
+    "id": "smp-jp-005",
+    "name": "Sapporo's Pikachu",
+    "number": "5",
+    "supertype": "Pokémon",
+    "set": {
+      "id": "smp-jp",
+      "name": "SM-P Promos",
+      "series": "Sun & Moon",
+      "releaseDate": "2017/03/01"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/back/medium",
+      "large": "https://images.scrydex.com/pokemon/back/medium"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "ja",
+    "cameoOf": [
+      "Eevee"
+    ]
+  },
+  {
+    "id": "smp-jp-poncho-137",
+    "name": "Poncho-wearing Eevee",
+    "number": "137",
+    "supertype": "Pokémon",
+    "set": {
+      "id": "smp-jp",
+      "name": "SM-P Promos",
+      "series": "Sun & Moon",
+      "releaseDate": "2017/03/01"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/back/medium",
+      "large": "https://images.scrydex.com/pokemon/back/medium"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "ja",
+    "cameoOf": [
+      "Vaporeon"
+    ]
+  },
+  {
+    "id": "smp-jp-poncho-138",
+    "name": "Poncho-wearing Eevee",
+    "number": "138",
+    "supertype": "Pokémon",
+    "set": {
+      "id": "smp-jp",
+      "name": "SM-P Promos",
+      "series": "Sun & Moon",
+      "releaseDate": "2017/03/01"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/back/medium",
+      "large": "https://images.scrydex.com/pokemon/back/medium"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "ja",
+    "cameoOf": [
+      "Jolteon"
+    ]
+  },
+  {
+    "id": "smp-jp-poncho-139",
+    "name": "Poncho-wearing Eevee",
+    "number": "139",
+    "supertype": "Pokémon",
+    "set": {
+      "id": "smp-jp",
+      "name": "SM-P Promos",
+      "series": "Sun & Moon",
+      "releaseDate": "2017/03/01"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/back/medium",
+      "large": "https://images.scrydex.com/pokemon/back/medium"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "ja",
+    "cameoOf": [
+      "Flareon"
+    ]
+  },
+  {
+    "id": "smp-jp-poncho-140",
+    "name": "Poncho-wearing Eevee",
+    "number": "140",
+    "supertype": "Pokémon",
+    "set": {
+      "id": "smp-jp",
+      "name": "SM-P Promos",
+      "series": "Sun & Moon",
+      "releaseDate": "2017/03/01"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/back/medium",
+      "large": "https://images.scrydex.com/pokemon/back/medium"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "ja",
+    "cameoOf": [
+      "Espeon"
+    ]
+  },
+  {
+    "id": "smp-jp-poncho-141",
+    "name": "Poncho-wearing Eevee",
+    "number": "141",
+    "supertype": "Pokémon",
+    "set": {
+      "id": "smp-jp",
+      "name": "SM-P Promos",
+      "series": "Sun & Moon",
+      "releaseDate": "2017/03/01"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/back/medium",
+      "large": "https://images.scrydex.com/pokemon/back/medium"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "ja",
+    "cameoOf": [
+      "Umbreon"
+    ]
+  },
+  {
+    "id": "smp-jp-poncho-142",
+    "name": "Poncho-wearing Eevee",
+    "number": "142",
+    "supertype": "Pokémon",
+    "set": {
+      "id": "smp-jp",
+      "name": "SM-P Promos",
+      "series": "Sun & Moon",
+      "releaseDate": "2017/03/01"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/back/medium",
+      "large": "https://images.scrydex.com/pokemon/back/medium"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "ja",
+    "cameoOf": [
+      "Leafeon"
+    ]
+  },
+  {
+    "id": "smp-jp-poncho-143",
+    "name": "Poncho-wearing Eevee",
+    "number": "143",
+    "supertype": "Pokémon",
+    "set": {
+      "id": "smp-jp",
+      "name": "SM-P Promos",
+      "series": "Sun & Moon",
+      "releaseDate": "2017/03/01"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/back/medium",
+      "large": "https://images.scrydex.com/pokemon/back/medium"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "ja",
+    "cameoOf": [
+      "Glaceon"
+    ]
+  },
+  {
+    "id": "smp-jp-poncho-144",
+    "name": "Poncho-wearing Eevee",
+    "number": "144",
+    "supertype": "Pokémon",
+    "set": {
+      "id": "smp-jp",
+      "name": "SM-P Promos",
+      "series": "Sun & Moon",
+      "releaseDate": "2017/03/01"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/back/medium",
+      "large": "https://images.scrydex.com/pokemon/back/medium"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "ja",
+    "cameoOf": [
+      "Sylveon"
+    ]
+  },
+  {
+    "id": "smp-jp-288",
+    "name": "Pikachu",
+    "number": "288",
+    "supertype": "Pokémon",
+    "set": {
+      "id": "smp-jp",
+      "name": "SM-P Promos",
+      "series": "Sun & Moon",
+      "releaseDate": "2017/03/01"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/back/medium",
+      "large": "https://images.scrydex.com/pokemon/back/medium"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "ja",
+    "cameoOf": [
+      "Eevee"
     ]
   },
   {
@@ -6166,6 +7160,36 @@
       "normal",
       "holo",
       "worldChampionshipDeck2019HenryBrand"
+    ]
+  },
+  {
+    "id": "sm11-88",
+    "name": "Munna",
+    "number": "88",
+    "rarity": "Common",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Psychic"
+    ],
+    "hp": "60",
+    "set": {
+      "id": "sm11",
+      "name": "Unified Minds",
+      "series": "Sun & Moon",
+      "releaseDate": "2019/08/02"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/sm/sm11/88/low.webp",
+      "large": "https://assets.tcgdex.net/en/sm/sm11/88/high.png"
+    },
+    "variants": [
+      "normal"
+    ],
+    "cameoOf": [
+      "Eevee"
     ]
   },
   {
@@ -7177,6 +8201,9 @@
     },
     "variants": [
       "normal"
+    ],
+    "cameoOf": [
+      "Eevee"
     ]
   },
   {
@@ -7685,6 +8712,37 @@
     ]
   },
   {
+    "id": "swsh3-142",
+    "name": "Delcatty",
+    "number": "142",
+    "rarity": "Rare",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "hp": "100",
+    "set": {
+      "id": "swsh3",
+      "name": "Darkness Ablaze",
+      "series": "Sword & Shield",
+      "releaseDate": "2020/08/14"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/swsh/swsh3/142/low.webp",
+      "large": "https://assets.tcgdex.net/en/swsh/swsh3/142/high.png"
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ],
+    "cameoOf": [
+      "Sylveon"
+    ]
+  },
+  {
     "id": "fut20-2",
     "name": "Eevee on the Ball",
     "number": "2",
@@ -7850,6 +8908,29 @@
     "variants": [
       "normal",
       "reverse"
+    ]
+  },
+  {
+    "id": "swsh45-70",
+    "name": "Poké Kid",
+    "number": "70",
+    "rarity": "Ultra Rare",
+    "supertype": "Trainer",
+    "set": {
+      "id": "swsh45",
+      "name": "Shining Fates",
+      "series": "Sword & Shield",
+      "releaseDate": "2021/02/19"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/swsh/swsh4.5/70/low.webp",
+      "large": "https://assets.tcgdex.net/en/swsh/swsh4.5/70/high.png"
+    },
+    "variants": [
+      "holo"
+    ],
+    "cameoOf": [
+      "Eevee"
     ]
   },
   {
@@ -8502,6 +9583,9 @@
     },
     "variants": [
       "holo"
+    ],
+    "cameoOf": [
+      "Eevee"
     ]
   },
   {
@@ -8614,6 +9698,9 @@
     },
     "variants": [
       "holo"
+    ],
+    "cameoOf": [
+      "Flareon"
     ]
   },
   {
@@ -8722,6 +9809,9 @@
     },
     "variants": [
       "holo"
+    ],
+    "cameoOf": [
+      "Eevee"
     ]
   },
   {
@@ -8776,6 +9866,10 @@
     },
     "variants": [
       "holo"
+    ],
+    "cameoOf": [
+      "Eevee",
+      "Vaporeon"
     ]
   },
   {
@@ -9468,6 +10562,75 @@
     ]
   },
   {
+    "id": "mep-052",
+    "name": "Grookey",
+    "number": "52",
+    "supertype": "Pokémon",
+    "set": {
+      "id": "mep",
+      "name": "MEP Promos",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023/03/31"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/back/medium",
+      "large": "https://images.scrydex.com/pokemon/back/medium"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "en",
+    "cameoOf": [
+      "Eevee"
+    ]
+  },
+  {
+    "id": "mep-061",
+    "name": "Sprigatito",
+    "number": "61",
+    "supertype": "Pokémon",
+    "set": {
+      "id": "mep",
+      "name": "MEP Promos",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023/03/31"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/back/medium",
+      "large": "https://images.scrydex.com/pokemon/back/medium"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "en",
+    "cameoOf": [
+      "Eevee"
+    ]
+  },
+  {
+    "id": "mep-092",
+    "name": "Paradise Resort",
+    "number": "92",
+    "supertype": "Trainer",
+    "set": {
+      "id": "mep",
+      "name": "MEP Promos",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023/03/31"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/back/medium",
+      "large": "https://images.scrydex.com/pokemon/back/medium"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "en",
+    "cameoOf": [
+      "Sylveon"
+    ]
+  },
+  {
     "id": "svp-167",
     "name": "Flareon",
     "number": "167",
@@ -9742,6 +10905,30 @@
     ]
   },
   {
+    "id": "sv1-183",
+    "name": "Penny",
+    "number": "183",
+    "rarity": "Uncommon",
+    "supertype": "Trainer",
+    "set": {
+      "id": "sv1",
+      "name": "Scarlet & Violet",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023/03/31"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/sv/sv01/183/low.webp",
+      "large": "https://assets.tcgdex.net/en/sv/sv01/183/high.png"
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ],
+    "cameoOf": [
+      "Eevee"
+    ]
+  },
+  {
     "id": "svp-200",
     "name": "Eevee",
     "number": "200",
@@ -9769,6 +10956,52 @@
     ]
   },
   {
+    "id": "svp-224",
+    "name": "Paradise Resort",
+    "number": "224",
+    "rarity": "Promo",
+    "supertype": "Trainer",
+    "set": {
+      "id": "svp",
+      "name": "SVP Black Star Promos",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023/03/31"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/svp/224.png",
+      "large": "https://images.pokemontcg.io/svp/224_hires.png"
+    },
+    "variants": [
+      "normal"
+    ],
+    "cameoOf": [
+      "Eevee"
+    ]
+  },
+  {
+    "id": "sv1-239",
+    "name": "Penny",
+    "number": "239",
+    "rarity": "Ultra Rare",
+    "supertype": "Trainer",
+    "set": {
+      "id": "sv1",
+      "name": "Scarlet & Violet",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023/03/31"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/sv/sv01/239/low.webp",
+      "large": "https://assets.tcgdex.net/en/sv/sv01/239/high.png"
+    },
+    "variants": [
+      "holo"
+    ],
+    "cameoOf": [
+      "Eevee"
+    ]
+  },
+  {
     "id": "sv1-252",
     "name": "Penny",
     "number": "252",
@@ -9786,6 +11019,56 @@
     },
     "variants": [
       "holo"
+    ],
+    "cameoOf": [
+      "Eevee"
+    ]
+  },
+  {
+    "id": "sv2-268",
+    "name": "Grusha",
+    "number": "268",
+    "rarity": "Special illustration rare",
+    "supertype": "Trainer",
+    "set": {
+      "id": "sv2",
+      "name": "Paldea Evolved",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023/06/09"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/sv/sv02/268/low.webp",
+      "large": "https://assets.tcgdex.net/en/sv/sv02/268/high.png"
+    },
+    "variants": [
+      "holo"
+    ],
+    "cameoOf": [
+      "Glaceon"
+    ]
+  },
+  {
+    "id": "sv2-269",
+    "name": "Iono",
+    "number": "269",
+    "rarity": "Special illustration rare",
+    "supertype": "Trainer",
+    "set": {
+      "id": "sv2",
+      "name": "Paldea Evolved",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023/06/09"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/sv/sv02/269/low.webp",
+      "large": "https://assets.tcgdex.net/en/sv/sv02/269/high.png"
+    },
+    "variants": [
+      "holo"
+    ],
+    "cameoOf": [
+      "Eevee",
+      "Sylveon"
     ]
   },
   {
@@ -9993,6 +11276,36 @@
     ]
   },
   {
+    "id": "sv4-206",
+    "name": "Morpeko",
+    "number": "206",
+    "rarity": "Illustration rare",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Darkness"
+    ],
+    "hp": "70",
+    "set": {
+      "id": "sv4",
+      "name": "Paradox Rift",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023/11/03"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/sv/sv04/206/low.webp",
+      "large": "https://assets.tcgdex.net/en/sv/sv04/206/high.png"
+    },
+    "variants": [
+      "holo"
+    ],
+    "cameoOf": [
+      "Eevee"
+    ]
+  },
+  {
     "id": "sv4pt5-236",
     "name": "Clive",
     "number": "236",
@@ -10010,6 +11323,34 @@
     },
     "variants": [
       "holo"
+    ],
+    "cameoOf": [
+      "Eevee",
+      "Sylveon"
+    ]
+  },
+  {
+    "id": "sv4pt5-239",
+    "name": "Penny",
+    "number": "239",
+    "rarity": "Special illustration rare",
+    "supertype": "Trainer",
+    "set": {
+      "id": "sv4pt5",
+      "name": "Paldean Fates",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2024/01/26"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/sv/sv04.5/239/low.webp",
+      "large": "https://assets.tcgdex.net/en/sv/sv04.5/239/high.png"
+    },
+    "variants": [
+      "holo"
+    ],
+    "cameoOf": [
+      "Eevee",
+      "Umbreon"
     ]
   },
   {
@@ -10097,6 +11438,30 @@
     ]
   },
   {
+    "id": "sv6-151",
+    "name": "Hassel",
+    "number": "151",
+    "rarity": "Uncommon",
+    "supertype": "Trainer",
+    "set": {
+      "id": "sv6",
+      "name": "Twilight Masquerade",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2024/05/24"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/sv/sv06/151/low.webp",
+      "large": "https://assets.tcgdex.net/en/sv/sv06/151/high.png"
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ],
+    "cameoOf": [
+      "Eevee"
+    ]
+  },
+  {
     "id": "sv6-188",
     "name": "Eevee",
     "number": "188",
@@ -10177,6 +11542,77 @@
     "variants": [
       "normal",
       "reverse"
+    ]
+  },
+  {
+    "id": "sv6pt5-56",
+    "name": "Cassiopeia",
+    "number": "56",
+    "rarity": "Uncommon",
+    "supertype": "Trainer",
+    "set": {
+      "id": "sv6pt5",
+      "name": "Shrouded Fable",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2024/08/02"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/sv/sv06.5/056/low.webp",
+      "large": "https://assets.tcgdex.net/en/sv/sv06.5/056/high.png"
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ],
+    "cameoOf": [
+      "Eevee"
+    ]
+  },
+  {
+    "id": "sv6pt5-86",
+    "name": "Cassiopeia",
+    "number": "86",
+    "rarity": "Ultra Rare",
+    "supertype": "Trainer",
+    "set": {
+      "id": "sv6pt5",
+      "name": "Shrouded Fable",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2024/08/02"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/sv/sv06.5/086/low.webp",
+      "large": "https://assets.tcgdex.net/en/sv/sv06.5/086/high.png"
+    },
+    "variants": [
+      "holo"
+    ],
+    "cameoOf": [
+      "Eevee"
+    ]
+  },
+  {
+    "id": "sv6pt5-94",
+    "name": "Cassiopeia",
+    "number": "94",
+    "rarity": "Special illustration rare",
+    "supertype": "Trainer",
+    "set": {
+      "id": "sv6pt5",
+      "name": "Shrouded Fable",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2024/08/02"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/sv/sv06.5/094/low.webp",
+      "large": "https://assets.tcgdex.net/en/sv/sv06.5/094/high.png"
+    },
+    "variants": [
+      "holo"
+    ],
+    "cameoOf": [
+      "Eevee",
+      "Sylveon"
     ]
   },
   {
@@ -10318,6 +11754,29 @@
     },
     "variants": [
       "normal"
+    ]
+  },
+  {
+    "id": "cs6bc-2207",
+    "name": "Floragato",
+    "number": "22 07",
+    "supertype": "Pokémon",
+    "set": {
+      "id": "cs6bc",
+      "name": "Gem Pack Vol. 5",
+      "series": "Other",
+      "releaseDate": "2025/01/01"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/back/medium",
+      "large": "https://images.scrydex.com/pokemon/back/medium"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "zh-cn",
+    "cameoOf": [
+      "Eevee"
     ]
   },
   {
@@ -10868,6 +12327,53 @@
       "holo",
       "playPokemon",
       "expansion"
+    ]
+  },
+  {
+    "id": "sv8pt5-109",
+    "name": "Friends in Paldea",
+    "number": "109",
+    "rarity": "Common",
+    "supertype": "Trainer",
+    "set": {
+      "id": "sv8pt5",
+      "name": "Prismatic Evolutions",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2025/01/17"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/sv/sv08.5/109/low.webp",
+      "large": "https://assets.tcgdex.net/en/sv/sv08.5/109/high.png"
+    },
+    "variants": [
+      "normal",
+      "reverse"
+    ],
+    "cameoOf": [
+      "Eevee"
+    ]
+  },
+  {
+    "id": "sv8pt5-137",
+    "name": "Friends in Paldea",
+    "number": "137",
+    "rarity": "Ultra Rare",
+    "supertype": "Trainer",
+    "set": {
+      "id": "sv8pt5",
+      "name": "Prismatic Evolutions",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2025/01/17"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/sv/sv08.5/137/low.webp",
+      "large": "https://assets.tcgdex.net/en/sv/sv08.5/137/high.png"
+    },
+    "variants": [
+      "holo"
+    ],
+    "cameoOf": [
+      "Eevee"
     ]
   },
   {
@@ -14232,6 +15738,29 @@
     },
     "variants": [
       "normal"
+    ]
+  },
+  {
+    "id": "me03-122",
+    "name": "Jacinthe",
+    "number": "122",
+    "rarity": "Special illustration rare",
+    "supertype": "Trainer",
+    "set": {
+      "id": "me03",
+      "name": "Perfect Order",
+      "series": "Mega Evolution",
+      "releaseDate": "2026/03/27"
+    },
+    "images": {
+      "small": "https://assets.tcgdex.net/en/me/me03/122/low.webp",
+      "large": "https://assets.tcgdex.net/en/me/me03/122/high.png"
+    },
+    "variants": [
+      "holo"
+    ],
+    "cameoOf": [
+      "Sylveon"
     ]
   }
 ]

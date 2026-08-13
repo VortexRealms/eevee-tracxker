@@ -1,9 +1,81 @@
 [
   {
-    "id": "sm11-231",
-    "name": "Blue’s Tactics",
-    "setId": "sm11",
-    "number": "231"
+    "id": "basep-49",
+    "name": "Snorlax",
+    "setId": "basep",
+    "number": "49"
+  },
+  {
+    "id": "col1-79",
+    "name": "Interviewer's Questions",
+    "setId": "col1",
+    "number": "79"
+  },
+  {
+    "id": "col1-92",
+    "name": "Psychic Energy",
+    "setId": "col1",
+    "number": "92"
+  },
+  {
+    "id": "col1-94",
+    "name": "Darkness Energy",
+    "setId": "col1",
+    "number": "94"
+  },
+  {
+    "id": "dp5-79",
+    "name": "Dawn Stadium",
+    "setId": "dp5",
+    "number": "79"
+  },
+  {
+    "id": "ecard3-138",
+    "name": "Oracle",
+    "setId": "ecard3",
+    "number": "138"
+  },
+  {
+    "id": "g1-RC24",
+    "name": "Altaria",
+    "setId": "g1",
+    "number": "RC24"
+  },
+  {
+    "id": "gym1-97",
+    "name": "Blaine's Quiz #1",
+    "setId": "gym1",
+    "number": "97"
+  },
+  {
+    "id": "hgss1-119",
+    "name": "Psychic Energy",
+    "setId": "hgss1",
+    "number": "119"
+  },
+  {
+    "id": "hgss1-121",
+    "name": "Darkness Energy",
+    "setId": "hgss1",
+    "number": "121"
+  },
+  {
+    "id": "hgss2-77",
+    "name": "Interviewer's Questions",
+    "setId": "hgss2",
+    "number": "77"
+  },
+  {
+    "id": "hgss2-8",
+    "name": "Shaymin",
+    "setId": "hgss2",
+    "number": "8"
+  },
+  {
+    "id": "me03-122",
+    "name": "Jacinthe",
+    "setId": "me03",
+    "number": "122"
   },
   {
     "id": "sm11-188",
@@ -12,15 +84,177 @@
     "number": "188"
   },
   {
-    "id": "sv4pt5-236",
-    "name": "Clive",
-    "setId": "sv4pt5",
-    "number": "236"
+    "id": "sm11-231",
+    "name": "Blue’s Tactics",
+    "setId": "sm11",
+    "number": "231"
+  },
+  {
+    "id": "sm11-88",
+    "name": "Munna",
+    "setId": "sm11",
+    "number": "88"
+  },
+  {
+    "id": "smp-SM231",
+    "name": "Champions Festival",
+    "setId": "smp",
+    "number": "SM231"
+  },
+  {
+    "id": "sv1-183",
+    "name": "Penny",
+    "setId": "sv1",
+    "number": "183"
+  },
+  {
+    "id": "sv1-239",
+    "name": "Penny",
+    "setId": "sv1",
+    "number": "239"
   },
   {
     "id": "sv1-252",
     "name": "Penny",
     "setId": "sv1",
     "number": "252"
+  },
+  {
+    "id": "sv2-268",
+    "name": "Grusha",
+    "setId": "sv2",
+    "number": "268"
+  },
+  {
+    "id": "sv2-269",
+    "name": "Iono",
+    "setId": "sv2",
+    "number": "269"
+  },
+  {
+    "id": "sv4-206",
+    "name": "Morpeko",
+    "setId": "sv4",
+    "number": "206"
+  },
+  {
+    "id": "sv4pt5-236",
+    "name": "Clive",
+    "setId": "sv4pt5",
+    "number": "236"
+  },
+  {
+    "id": "sv4pt5-239",
+    "name": "Penny",
+    "setId": "sv4pt5",
+    "number": "239"
+  },
+  {
+    "id": "sv6-151",
+    "name": "Hassel",
+    "setId": "sv6",
+    "number": "151"
+  },
+  {
+    "id": "sv6pt5-56",
+    "name": "Cassiopeia",
+    "setId": "sv6pt5",
+    "number": "56"
+  },
+  {
+    "id": "sv6pt5-86",
+    "name": "Cassiopeia",
+    "setId": "sv6pt5",
+    "number": "86"
+  },
+  {
+    "id": "sv6pt5-94",
+    "name": "Cassiopeia",
+    "setId": "sv6pt5",
+    "number": "94"
+  },
+  {
+    "id": "sv8pt5-109",
+    "name": "Friends in Paldea",
+    "setId": "sv8pt5",
+    "number": "109"
+  },
+  {
+    "id": "sv8pt5-137",
+    "name": "Friends in Paldea",
+    "setId": "sv8pt5",
+    "number": "137"
+  },
+  {
+    "id": "svp-224",
+    "name": "Paradise Resort",
+    "setId": "svp",
+    "number": "224"
+  },
+  {
+    "id": "swsh3-142",
+    "name": "Delcatty",
+    "setId": "swsh3",
+    "number": "142"
+  },
+  {
+    "id": "swsh45-70",
+    "name": "Poké Kid",
+    "setId": "swsh45",
+    "number": "70"
+  },
+  {
+    "id": "swshp-SWSH179",
+    "name": "Flareon V",
+    "setId": "swshp",
+    "number": "SWSH179"
+  },
+  {
+    "id": "xy10-125",
+    "name": "Alakazam-EX",
+    "setId": "xy10",
+    "number": "125"
+  },
+  {
+    "id": "xy9-54",
+    "name": "Drapion",
+    "setId": "xy9",
+    "number": "54"
+  },
+  {
+    "id": "xy9-96",
+    "name": "All-Night Party",
+    "setId": "xy9",
+    "number": "96"
+  },
+  {
+    "id": "xyp-XY121",
+    "name": "Charizard-EX",
+    "setId": "xyp",
+    "number": "XY121"
+  },
+  {
+    "id": "xyp-XY122",
+    "name": "Blastoise-EX",
+    "setId": "xyp",
+    "number": "XY122"
+  },
+  {
+    "id": "xyp-XY124",
+    "name": "Pikachu-EX",
+    "setId": "xyp",
+    "number": "XY124"
+  },
+  {
+    "id": "xyp-XY177",
+    "name": "Karen",
+    "setId": "xyp",
+    "number": "XY177"
+  },
+  {
+    "id": "xyp-XY95",
+    "name": "Pikachu",
+    "setId": "xyp",
+    "number": "XY95"
   }
 ]

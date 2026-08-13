@@ -40,8 +40,12 @@ async function main() {
   const cache = await loadJson<PokewalletIdCache>(cachePath, {});
 
   let candidates = allCards;
+  if (opts.cards?.length) {
+    const allow = new Set(opts.cards);
+    candidates = candidates.filter((c) => allow.has(c.id));
+  }
   if (opts.onlyMissing) {
-    candidates = allCards.filter((c) => !cache[c.id]?.pokewalletId);
+    candidates = candidates.filter((c) => !cache[c.id]?.pokewalletId);
   }
   const batch = sliceBatch(candidates, opts.offset, opts.limit);
 

@@ -8,6 +8,7 @@ import {
   buildExternalVariantsByCardId,
   finalizeMasterSetCatalog,
 } from "./external-variant-catalog";
+import { applyCameoMetadata } from "./cameo-catalogue";
 import { mergeVariantLists } from "./merge-variants";
 
 /** Authoritative variant lists for cards where TCGdex/external merge is wrong. */
@@ -69,7 +70,9 @@ export function mergeCatalogueCards(
   const report = buildExternalVariantsByCardId(merged);
   const manualCatalogueIds = new Set(manualCards.map((c) => c.id));
   return {
-    cards: finalizeMasterSetCatalog(merged, report, manualCatalogueIds),
+    cards: applyCameoMetadata(
+      finalizeMasterSetCatalog(merged, report, manualCatalogueIds)
+    ),
     report,
   };
 }

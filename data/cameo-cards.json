@@ -1,0 +1,950 @@
+{
+  "version": 1,
+  "updatedAt": "2026-08-13",
+  "entries": [
+    {
+      "key": "en|wizards promos|49|snorlax",
+      "cardName": "Snorlax",
+      "setName": "Wizards Promos",
+      "number": "49",
+      "language": "en",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "catalogueId": "basep-49",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "ja|bw-p promos|190|pokémon center",
+      "cardName": "Pokémon Center",
+      "setName": "BW-P Promos",
+      "number": "190",
+      "language": "ja",
+      "cameoOf": [
+        "Eevee",
+        "Espeon",
+        "Flareon",
+        "Glaceon",
+        "Jolteon",
+        "Leafeon",
+        "Umbreon",
+        "Vaporeon"
+      ],
+      "notes": "Jumbo; 8 Eeveelution cameos share this printing",
+      "catalogueId": "bwp-190",
+      "resolution": "manual",
+      "ingest": "manual-only"
+    },
+    {
+      "key": "ja|bw-p promos|©2012|_____'s pikachu",
+      "cardName": "_____'s Pikachu",
+      "setName": "BW-P Promos",
+      "number": "©2012",
+      "language": "ja",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "notes": "Jumbo",
+      "catalogueId": "bwp-2012",
+      "resolution": "manual",
+      "ingest": "manual-only"
+    },
+    {
+      "key": "ja|2010 card design contest|pucchigumi|illusion's zorua",
+      "cardName": "Illusion's Zorua",
+      "setName": "2010 Card Design Contest",
+      "number": "Pucchigumi",
+      "language": "ja",
+      "cameoOf": [
+        "Umbreon"
+      ],
+      "catalogueId": "cdc2010-jp-zorua",
+      "resolution": "manual",
+      "ingest": "manual-only"
+    },
+    {
+      "key": "en|call of legends|79|interviewer's questions",
+      "cardName": "Interviewer's Questions",
+      "setName": "Call of Legends",
+      "number": "79",
+      "language": "en",
+      "cameoOf": [
+        "Leafeon"
+      ],
+      "catalogueId": "col1-79",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "en|call of legends|92|psychic energy",
+      "cardName": "Psychic Energy",
+      "setName": "Call of Legends",
+      "number": "92",
+      "language": "en",
+      "cameoOf": [
+        "Espeon"
+      ],
+      "catalogueId": "col1-92",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "en|call of legends|94|darkness energy",
+      "cardName": "Darkness Energy",
+      "setName": "Call of Legends",
+      "number": "94",
+      "language": "en",
+      "cameoOf": [
+        "Umbreon"
+      ],
+      "catalogueId": "col1-94",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "zh-cn|gem pack vol. 5|22 07|floragato",
+      "cardName": "Floragato",
+      "setName": "Gem Pack Vol. 5",
+      "number": "22 07",
+      "language": "zh-cn",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "notes": "Vee-Vee Pick; Simplified Chinese only",
+      "catalogueId": "cs6bc-2207",
+      "resolution": "manual",
+      "ingest": "manual-only"
+    },
+    {
+      "key": "en|majestic dawn|79|dawn stadium",
+      "cardName": "Dawn Stadium",
+      "setName": "Majestic Dawn",
+      "number": "79",
+      "language": "en",
+      "cameoOf": [
+        "Glaceon",
+        "Leafeon"
+      ],
+      "catalogueId": "dp5-79",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "en|skyridge|138|oracle",
+      "cardName": "Oracle",
+      "setName": "Skyridge",
+      "number": "138",
+      "language": "en",
+      "cameoOf": [
+        "Umbreon"
+      ],
+      "catalogueId": "ecard3-138",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "en|generations|rc21|sylveon-ex",
+      "cardName": "Sylveon-EX",
+      "setName": "Generations",
+      "number": "RC21",
+      "language": "en",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "catalogueId": "g1-RC21",
+      "resolution": "catalogue-existing"
+    },
+    {
+      "key": "en|generations|rc24|altaria",
+      "cardName": "Altaria",
+      "setName": "Generations",
+      "number": "RC24",
+      "language": "en",
+      "cameoOf": [
+        "Sylveon"
+      ],
+      "catalogueId": "g1-RC24",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "en|generations|rc28|flareon-ex",
+      "cardName": "Flareon-EX",
+      "setName": "Generations",
+      "number": "RC28",
+      "language": "en",
+      "cameoOf": [
+        "Jolteon",
+        "Vaporeon"
+      ],
+      "catalogueId": "g1-RC28",
+      "resolution": "catalogue-existing"
+    },
+    {
+      "key": "en|generations|rc32|sylveon-ex",
+      "cardName": "Sylveon-EX",
+      "setName": "Generations",
+      "number": "RC32",
+      "language": "en",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "catalogueId": "g1-RC32",
+      "resolution": "catalogue-existing"
+    },
+    {
+      "key": "en|gym heroes|97|blaine's quiz #1",
+      "cardName": "Blaine's Quiz #1",
+      "setName": "Gym Heroes",
+      "number": "97",
+      "language": "en",
+      "cameoOf": [
+        "Vaporeon"
+      ],
+      "notes": "silhouette",
+      "catalogueId": "gym1-97",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "en|heartgold & soulsilver|119|psychic energy",
+      "cardName": "Psychic Energy",
+      "setName": "HeartGold & SoulSilver",
+      "number": "119",
+      "language": "en",
+      "cameoOf": [
+        "Espeon"
+      ],
+      "notes": "silhouette",
+      "catalogueId": "hgss1-119",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "en|heartgold & soulsilver|121|darkness energy",
+      "cardName": "Darkness Energy",
+      "setName": "HeartGold & SoulSilver",
+      "number": "121",
+      "language": "en",
+      "cameoOf": [
+        "Umbreon"
+      ],
+      "notes": "silhouette",
+      "catalogueId": "hgss1-121",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "en|unleashed|77|interviewer's questions",
+      "cardName": "Interviewer's Questions",
+      "setName": "Unleashed",
+      "number": "77",
+      "language": "en",
+      "cameoOf": [
+        "Leafeon"
+      ],
+      "catalogueId": "hgss2-77",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "en|unleashed|8|shaymin",
+      "cardName": "Shaymin",
+      "setName": "Unleashed",
+      "number": "8",
+      "language": "en",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "catalogueId": "hgss2-8",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "en|perfect order|122|jacinthe",
+      "cardName": "Jacinthe",
+      "setName": "Perfect Order",
+      "number": "122",
+      "language": "en",
+      "cameoOf": [
+        "Sylveon"
+      ],
+      "catalogueId": "me03-122",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "en|mep promos|52|grookey",
+      "cardName": "Grookey",
+      "setName": "MEP Promos",
+      "number": "52",
+      "language": "en",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "notes": "Decorative Curry",
+      "catalogueId": "mep-052",
+      "resolution": "manual",
+      "ingest": "manual-only"
+    },
+    {
+      "key": "en|mep promos|61|sprigatito",
+      "cardName": "Sprigatito",
+      "setName": "MEP Promos",
+      "number": "61",
+      "language": "en",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "notes": "Vee-Vee Pick",
+      "catalogueId": "mep-061",
+      "resolution": "manual",
+      "ingest": "manual-only"
+    },
+    {
+      "key": "en|mep promos|92|paradise resort",
+      "cardName": "Paradise Resort",
+      "setName": "MEP Promos",
+      "number": "92",
+      "language": "en",
+      "cameoOf": [
+        "Sylveon"
+      ],
+      "catalogueId": "mep-092",
+      "resolution": "manual",
+      "ingest": "manual-only"
+    },
+    {
+      "key": "en|unified minds|88|munna",
+      "cardName": "Munna",
+      "setName": "Unified Minds",
+      "number": "88",
+      "language": "en",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "catalogueId": "sm11-88",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "ja|sm-p promos|5|sapporo's pikachu",
+      "cardName": "Sapporo's Pikachu",
+      "setName": "SM-P Promos",
+      "number": "5",
+      "language": "ja",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "catalogueId": "smp-jp-005",
+      "resolution": "manual",
+      "ingest": "manual-only"
+    },
+    {
+      "key": "ja|sm-p promos|288|pikachu",
+      "cardName": "Pikachu",
+      "setName": "SM-P Promos",
+      "number": "288",
+      "language": "ja",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "notes": "silhouette",
+      "catalogueId": "smp-jp-288",
+      "resolution": "manual",
+      "ingest": "manual-only"
+    },
+    {
+      "key": "ja|sm-p promos|137|poncho-wearing eevee",
+      "cardName": "Poncho-wearing Eevee",
+      "setName": "SM-P Promos",
+      "number": "137",
+      "language": "ja",
+      "cameoOf": [
+        "Vaporeon"
+      ],
+      "notes": "costume",
+      "catalogueId": "smp-jp-poncho-137",
+      "resolution": "manual",
+      "ingest": "manual-only"
+    },
+    {
+      "key": "ja|sm-p promos|138|poncho-wearing eevee",
+      "cardName": "Poncho-wearing Eevee",
+      "setName": "SM-P Promos",
+      "number": "138",
+      "language": "ja",
+      "cameoOf": [
+        "Jolteon"
+      ],
+      "notes": "costume",
+      "catalogueId": "smp-jp-poncho-138",
+      "resolution": "manual",
+      "ingest": "manual-only"
+    },
+    {
+      "key": "ja|sm-p promos|139|poncho-wearing eevee",
+      "cardName": "Poncho-wearing Eevee",
+      "setName": "SM-P Promos",
+      "number": "139",
+      "language": "ja",
+      "cameoOf": [
+        "Flareon"
+      ],
+      "notes": "costume",
+      "catalogueId": "smp-jp-poncho-139",
+      "resolution": "manual",
+      "ingest": "manual-only"
+    },
+    {
+      "key": "ja|sm-p promos|140|poncho-wearing eevee",
+      "cardName": "Poncho-wearing Eevee",
+      "setName": "SM-P Promos",
+      "number": "140",
+      "language": "ja",
+      "cameoOf": [
+        "Espeon"
+      ],
+      "notes": "costume",
+      "catalogueId": "smp-jp-poncho-140",
+      "resolution": "manual",
+      "ingest": "manual-only"
+    },
+    {
+      "key": "ja|sm-p promos|141|poncho-wearing eevee",
+      "cardName": "Poncho-wearing Eevee",
+      "setName": "SM-P Promos",
+      "number": "141",
+      "language": "ja",
+      "cameoOf": [
+        "Umbreon"
+      ],
+      "notes": "costume",
+      "catalogueId": "smp-jp-poncho-141",
+      "resolution": "manual",
+      "ingest": "manual-only"
+    },
+    {
+      "key": "ja|sm-p promos|142|poncho-wearing eevee",
+      "cardName": "Poncho-wearing Eevee",
+      "setName": "SM-P Promos",
+      "number": "142",
+      "language": "ja",
+      "cameoOf": [
+        "Leafeon"
+      ],
+      "notes": "costume",
+      "catalogueId": "smp-jp-poncho-142",
+      "resolution": "manual",
+      "ingest": "manual-only"
+    },
+    {
+      "key": "ja|sm-p promos|143|poncho-wearing eevee",
+      "cardName": "Poncho-wearing Eevee",
+      "setName": "SM-P Promos",
+      "number": "143",
+      "language": "ja",
+      "cameoOf": [
+        "Glaceon"
+      ],
+      "notes": "costume",
+      "catalogueId": "smp-jp-poncho-143",
+      "resolution": "manual",
+      "ingest": "manual-only"
+    },
+    {
+      "key": "ja|sm-p promos|144|poncho-wearing eevee",
+      "cardName": "Poncho-wearing Eevee",
+      "setName": "SM-P Promos",
+      "number": "144",
+      "language": "ja",
+      "cameoOf": [
+        "Sylveon"
+      ],
+      "notes": "costume",
+      "catalogueId": "smp-jp-poncho-144",
+      "resolution": "manual",
+      "ingest": "manual-only"
+    },
+    {
+      "key": "ja|sm-p promos|-|zeraora and friends",
+      "cardName": "Zeraora and Friends",
+      "setName": "SM-P Promos",
+      "number": "-",
+      "language": "ja",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "notes": "Jumbo",
+      "catalogueId": "smp-jp-zeraora-jumbo",
+      "resolution": "manual",
+      "ingest": "manual-only"
+    },
+    {
+      "key": "en|sm promos|231|champions festival",
+      "cardName": "Champions Festival",
+      "setName": "SM Promos",
+      "number": "231",
+      "language": "en",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "catalogueId": "smp-SM231",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "en|scarlet & violet|183|penny",
+      "cardName": "Penny",
+      "setName": "Scarlet & Violet",
+      "number": "183",
+      "language": "en",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "notes": "backpack",
+      "catalogueId": "sv1-183",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "en|scarlet & violet|239|penny",
+      "cardName": "Penny",
+      "setName": "Scarlet & Violet",
+      "number": "239",
+      "language": "en",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "catalogueId": "sv1-239",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "en|scarlet & violet|252|penny",
+      "cardName": "Penny",
+      "setName": "Scarlet & Violet",
+      "number": "252",
+      "language": "en",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "catalogueId": "sv1-252",
+      "resolution": "catalogue-existing"
+    },
+    {
+      "key": "en|paldea evolved|268|grusha",
+      "cardName": "Grusha",
+      "setName": "Paldea Evolved",
+      "number": "268",
+      "language": "en",
+      "cameoOf": [
+        "Glaceon"
+      ],
+      "catalogueId": "sv2-268",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "en|paldea evolved|269|iono",
+      "cardName": "Iono",
+      "setName": "Paldea Evolved",
+      "number": "269",
+      "language": "en",
+      "cameoOf": [
+        "Eevee",
+        "Sylveon"
+      ],
+      "notes": "sweets",
+      "catalogueId": "sv2-269",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "en|paradox rift|206|morpeko",
+      "cardName": "Morpeko",
+      "setName": "Paradox Rift",
+      "number": "206",
+      "language": "en",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "catalogueId": "sv4-206",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "en|paldean fates|236|clive",
+      "cardName": "Clive",
+      "setName": "Paldean Fates",
+      "number": "236",
+      "language": "en",
+      "cameoOf": [
+        "Eevee",
+        "Sylveon"
+      ],
+      "catalogueId": "sv4pt5-236",
+      "resolution": "catalogue-existing"
+    },
+    {
+      "key": "en|paldean fates|239|penny",
+      "cardName": "Penny",
+      "setName": "Paldean Fates",
+      "number": "239",
+      "language": "en",
+      "cameoOf": [
+        "Eevee",
+        "Umbreon"
+      ],
+      "catalogueId": "sv4pt5-239",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "en|twilight masquerade|151|hassel",
+      "cardName": "Hassel",
+      "setName": "Twilight Masquerade",
+      "number": "151",
+      "language": "en",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "catalogueId": "sv6-151",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "en|shrouded fable|56|cassiopeia",
+      "cardName": "Cassiopeia",
+      "setName": "Shrouded Fable",
+      "number": "56",
+      "language": "en",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "catalogueId": "sv6pt5-56",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "en|shrouded fable|86|cassiopeia",
+      "cardName": "Cassiopeia",
+      "setName": "Shrouded Fable",
+      "number": "86",
+      "language": "en",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "catalogueId": "sv6pt5-86",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "en|shrouded fable|94|cassiopeia",
+      "cardName": "Cassiopeia",
+      "setName": "Shrouded Fable",
+      "number": "94",
+      "language": "en",
+      "cameoOf": [
+        "Eevee",
+        "Sylveon"
+      ],
+      "notes": "phone case",
+      "catalogueId": "sv6pt5-94",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "en|prismatic evolutions|109|friends in paldea",
+      "cardName": "Friends in Paldea",
+      "setName": "Prismatic Evolutions",
+      "number": "109",
+      "language": "en",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "catalogueId": "sv8pt5-109",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "en|prismatic evolutions|137|friends in paldea",
+      "cardName": "Friends in Paldea",
+      "setName": "Prismatic Evolutions",
+      "number": "137",
+      "language": "en",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "catalogueId": "sv8pt5-137",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "en|sv promos|224|paradise resort",
+      "cardName": "Paradise Resort",
+      "setName": "SV Promos",
+      "number": "224",
+      "language": "en",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "catalogueId": "svp-224",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "en|darkness ablaze|142|delcatty",
+      "cardName": "Delcatty",
+      "setName": "Darkness Ablaze",
+      "number": "142",
+      "language": "en",
+      "cameoOf": [
+        "Sylveon"
+      ],
+      "notes": "hairbrush",
+      "catalogueId": "swsh3-142",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "en|shining fates|70|poké kid",
+      "cardName": "Poké Kid",
+      "setName": "Shining Fates",
+      "number": "70",
+      "language": "en",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "notes": "costume",
+      "catalogueId": "swsh45-70",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "en|evolving skies|180|espeon v",
+      "cardName": "Espeon V",
+      "setName": "Evolving Skies",
+      "number": "180",
+      "language": "en",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "notes": "drawing",
+      "catalogueId": "swsh7-180",
+      "resolution": "catalogue-existing"
+    },
+    {
+      "key": "en|evolving skies|189|umbreon v",
+      "cardName": "Umbreon V",
+      "setName": "Evolving Skies",
+      "number": "189",
+      "language": "en",
+      "cameoOf": [
+        "Flareon"
+      ],
+      "notes": "silhouette",
+      "catalogueId": "swsh7-189",
+      "resolution": "catalogue-existing"
+    },
+    {
+      "key": "en|evolving skies|209|glaceon vmax",
+      "cardName": "Glaceon VMAX",
+      "setName": "Evolving Skies",
+      "number": "209",
+      "language": "en",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "catalogueId": "swsh7-209",
+      "resolution": "catalogue-existing"
+    },
+    {
+      "key": "en|evolving skies|212|sylveon vmax",
+      "cardName": "Sylveon VMAX",
+      "setName": "Evolving Skies",
+      "number": "212",
+      "language": "en",
+      "cameoOf": [
+        "Eevee",
+        "Vaporeon"
+      ],
+      "catalogueId": "swsh7-212",
+      "resolution": "catalogue-existing"
+    },
+    {
+      "key": "en|swsh promos|179|flareon v",
+      "cardName": "Flareon V",
+      "setName": "SWSH Promos",
+      "number": "179",
+      "language": "en",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "notes": "picture",
+      "catalogueId": "swshp-SWSH179",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "ja|t promos|1|flareon",
+      "cardName": "Flareon",
+      "setName": "T Promos",
+      "number": "1",
+      "language": "ja",
+      "cameoOf": [
+        "Jolteon"
+      ],
+      "notes": "only partially visible",
+      "catalogueId": "tpp-jp-1",
+      "resolution": "manual",
+      "ingest": "manual-only"
+    },
+    {
+      "key": "ja|t promos|2|vaporeon",
+      "cardName": "Vaporeon",
+      "setName": "T Promos",
+      "number": "2",
+      "language": "ja",
+      "cameoOf": [
+        "Flareon",
+        "Jolteon"
+      ],
+      "catalogueId": "tpp-jp-2",
+      "resolution": "manual",
+      "ingest": "manual-only"
+    },
+    {
+      "key": "en|2010 world championships decks|-|psychic energy",
+      "cardName": "Psychic Energy",
+      "setName": "2010 World Championships Decks",
+      "number": "-",
+      "language": "en",
+      "cameoOf": [
+        "Espeon"
+      ],
+      "notes": "Unnumbered deck promo Psychic Energy",
+      "catalogueId": "wcd2010-espeon",
+      "resolution": "manual",
+      "ingest": "manual-only"
+    },
+    {
+      "key": "en|fates collide|125|alakazam-ex",
+      "cardName": "Alakazam-EX",
+      "setName": "Fates Collide",
+      "number": "125",
+      "language": "en",
+      "cameoOf": [
+        "Umbreon"
+      ],
+      "catalogueId": "xy10-125",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "en|breakpoint|54|drapion",
+      "cardName": "Drapion",
+      "setName": "BREAKpoint",
+      "number": "54",
+      "language": "en",
+      "cameoOf": [
+        "Espeon"
+      ],
+      "catalogueId": "xy9-54",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "en|breakpoint|96|all-night party",
+      "cardName": "All-Night Party",
+      "setName": "BREAKpoint",
+      "number": "96",
+      "language": "en",
+      "cameoOf": [
+        "Umbreon"
+      ],
+      "catalogueId": "xy9-96",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "ja|xy-p promos|90|pikachu",
+      "cardName": "Pikachu",
+      "setName": "XY-P Promos",
+      "number": "90",
+      "language": "ja",
+      "cameoOf": [
+        "Sylveon"
+      ],
+      "catalogueId": "xyp-jp-90",
+      "resolution": "manual",
+      "ingest": "manual-only"
+    },
+    {
+      "key": "en|xy promos|xy121|charizard-ex",
+      "cardName": "Charizard-EX",
+      "setName": "XY Promos",
+      "number": "XY121",
+      "language": "en",
+      "cameoOf": [
+        "Flareon"
+      ],
+      "catalogueId": "xyp-XY121",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "en|xy promos|xy122|blastoise-ex",
+      "cardName": "Blastoise-EX",
+      "setName": "XY Promos",
+      "number": "XY122",
+      "language": "en",
+      "cameoOf": [
+        "Vaporeon"
+      ],
+      "catalogueId": "xyp-XY122",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "en|xy promos|xy124|pikachu-ex",
+      "cardName": "Pikachu-EX",
+      "setName": "XY Promos",
+      "number": "XY124",
+      "language": "en",
+      "cameoOf": [
+        "Jolteon"
+      ],
+      "catalogueId": "xyp-XY124",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "en|xy promos|xy177|karen",
+      "cardName": "Karen",
+      "setName": "XY Promos",
+      "number": "XY177",
+      "language": "en",
+      "cameoOf": [
+        "Umbreon"
+      ],
+      "catalogueId": "xyp-XY177",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "en|xy promos|xy95|pikachu",
+      "cardName": "Pikachu",
+      "setName": "XY Promos",
+      "number": "XY95",
+      "language": "en",
+      "cameoOf": [
+        "Sylveon"
+      ],
+      "catalogueId": "xyp-XY95",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    }
+  ]
+}

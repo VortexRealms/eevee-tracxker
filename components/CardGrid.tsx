@@ -16,6 +16,7 @@ import {
 import { metaToExchangeRates } from "../lib/exchange-rates";
 import { resolveDisplayAmount } from "../lib/display-price";
 import { getVariantLabel } from "../lib/variant-labels";
+import { formatCameoLabel } from "../lib/cameo-catalogue";
 import { useCurrency } from "./CurrencyProvider";
 import { CardPriceLabel } from "./CardPriceLabel";
 import { CollectionStatsPanel } from "./dashboard/CollectionStatsPanel";
@@ -82,6 +83,9 @@ function CardTile({
     : card.rarity
       ? card.rarity
       : null;
+  const cameoLine = card.cameoOf?.length
+    ? `Cameo: ${formatCameoLabel(card.cameoOf)}`
+    : null;
 
   return (
     <div className={`card-tile ${getAccentClass(card.name)}`}>
@@ -116,6 +120,9 @@ function CardTile({
             </span>
             {detailLineThree ? (
               <span className="card-detail-line">{detailLineThree}</span>
+            ) : null}
+            {cameoLine ? (
+              <span className="card-detail-line">{cameoLine}</span>
             ) : null}
           </div>
           <div className="card-subtitle-row card-subtitle-desktop">
@@ -171,6 +178,7 @@ function MarketplaceLinks({ card }: { card: PokemonCard }) {
 
 function slotHaystack(slot: VariantSlot): string {
   const { card, variant } = slot;
+  const cameo = card.cameoOf?.join(" ") ?? "";
   return [
     card.name,
     card.set.name,
@@ -178,6 +186,7 @@ function slotHaystack(slot: VariantSlot): string {
     card.number,
     variant,
     getVariantLabel(variant),
+    cameo,
   ]
     .join(" ")
     .toLowerCase();
