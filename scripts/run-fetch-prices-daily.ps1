@@ -323,7 +323,7 @@ try {
   $exitCode = $LASTEXITCODE
   $ErrorActionPreference = $prevEap
 
-  if (result.status -ne 0) {
+  if ($exitCode -ne 0) {
     Write-Log "FAILED fetch:prices with exit code $exitCode (stamp not updated; will retry on next trigger)."
     exit $exitCode
   }
