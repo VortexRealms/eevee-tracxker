@@ -16,6 +16,8 @@ const CATALOGUE_VARIANT_OVERRIDES: Record<string, string[]> = {
   "basep-11": ["holo", "wPromo"],
   // SWSH195 is a holo promo; TCGdex also emits a spurious "normal" slot with no price.
   "swshp-SWSH195": ["holo", "playPokemon", "jumbo"],
+  // SWSH197 is the same pattern as SWSH195 (holo promo + Prize Pack + jumbo).
+  "swshp-SWSH197": ["holo", "playPokemon", "jumbo"],
   // SIR trainer; Pokewallet TCGPlayer sub_type is Holofoil only.
   "sv1-252": ["holo"],
 };

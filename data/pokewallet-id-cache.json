@@ -1855,11 +1855,34 @@
     "searchQuery": "Leafeon V SWSH194"
   },
   "swshp-SWSH195": {
-    "pokewalletId": "pk_38e1f70a56c0b7b0937821daf7d8392e0ad61fedf957d1a10e79fd0d54e332bc71fc414367a3728c39aa2446f61838c0",
-    "setCode": "22880",
+    "pokewalletId": "pk_e1501567a4d800dd63279f5a2a7c6c888151a24eb186c4b638194ba003294bddea10fa203c158be9ce503a63a2abb3",
+    "setCode": "SWSD",
     "resolvedAt": "2026-07-20",
-    "matchScore": 150,
-    "searchQuery": "Leafeon VSTAR SWSH195"
+    "matchScore": 140,
+    "searchQuery": "Leafeon VSTAR SWSH195",
+    "variants": {
+      "holo": {
+        "pokewalletId": "pk_e1501567a4d800dd63279f5a2a7c6c888151a24eb186c4b638194ba003294bddea10fa203c158be9ce503a63a2abb3",
+        "setCode": "SWSD",
+        "resolvedAt": "2026-07-20",
+        "matchScore": 140,
+        "searchQuery": "Leafeon VSTAR SWSH195 SWSD promo"
+      },
+      "playPokemon": {
+        "pokewalletId": "pk_38e1f70a56c0b7b0937821daf7d8392e0ad61fedf957d1a10e79fd0d54e332bc71fc414367a3728c39aa2446f61838c0",
+        "setCode": "22880",
+        "resolvedAt": "2026-07-20",
+        "matchScore": 150,
+        "searchQuery": "Leafeon VSTAR SWSH195 Prize Pack"
+      },
+      "jumbo": {
+        "pokewalletId": "pk_132ebd3a8982859b4624ae7e4a291fdcf3c10e13f9fd6dc44350c326631a922358c32f0fb570179309cd6e48a4c8fe",
+        "setCode": "PR",
+        "resolvedAt": "2026-07-20",
+        "matchScore": 140,
+        "searchQuery": "Leafeon VSTAR SWSH195 Jumbo"
+      }
+    }
   },
   "swshp-SWSH196": {
     "pokewalletId": "pk_f3cbb211a53cd275c38f6d426b1bf23c7acf4ca10cebf7ce710688bef102db8ecf52fb902534d45323476ac855ef41",
@@ -1869,11 +1892,34 @@
     "searchQuery": "Glaceon V SWSH196"
   },
   "swshp-SWSH197": {
-    "pokewalletId": "pk_49f03975953cf61b8a6d17344305ad04d8a65441a990af3c9657ad73c70f209f2a512471b602018bbeead955d44442bf",
-    "setCode": "22880",
+    "pokewalletId": "pk_8570e73d9cf11638354094e51b5f0327a1018bef8e326e6eb698f30f94475d0ecf390a775152bd5e9a54d79bb685b7",
+    "setCode": "SWSD",
     "resolvedAt": "2026-07-20",
-    "matchScore": 150,
-    "searchQuery": "Glaceon VSTAR SWSH197"
+    "matchScore": 140,
+    "searchQuery": "Glaceon VSTAR SWSH197",
+    "variants": {
+      "holo": {
+        "pokewalletId": "pk_8570e73d9cf11638354094e51b5f0327a1018bef8e326e6eb698f30f94475d0ecf390a775152bd5e9a54d79bb685b7",
+        "setCode": "SWSD",
+        "resolvedAt": "2026-07-20",
+        "matchScore": 140,
+        "searchQuery": "Glaceon VSTAR SWSH197 SWSD promo"
+      },
+      "playPokemon": {
+        "pokewalletId": "pk_49f03975953cf61b8a6d17344305ad04d8a65441a990af3c9657ad73c70f209f2a512471b602018bbeead955d44442bf",
+        "setCode": "22880",
+        "resolvedAt": "2026-07-20",
+        "matchScore": 150,
+        "searchQuery": "Glaceon VSTAR SWSH197 Prize Pack"
+      },
+      "jumbo": {
+        "pokewalletId": "pk_cb0682ea91f9587dafbfe0c74a466f39fcdd38bc666d94b98eeb09ac402b969acad42b4ec39fb161d2429c2aa44b71",
+        "setCode": "PR",
+        "resolvedAt": "2026-07-20",
+        "matchScore": 140,
+        "searchQuery": "Glaceon VSTAR SWSH197 Jumbo"
+      }
+    }
   },
   "swshp-SWSH201": {
     "pokewalletId": "pk_f7131c14cff73a5c356b0e6aaa98db7acea2f846f1cd886431a52c50f29d50b35ffd71a5f276a10033f919d4841ebf",

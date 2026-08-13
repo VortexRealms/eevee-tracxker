@@ -26,7 +26,15 @@ export interface PokewalletIdCacheEntry {
   resolvedAt: string;
   matchScore?: number;
   searchQuery?: string;
+  /** Curated per-catalogue-variant Pokewallet IDs (separate card records). */
+  variants?: Record<string, PokewalletVariantIdCacheEntry>;
 }
+
+/** Variant slot entry — no nested `variants` map. */
+export type PokewalletVariantIdCacheEntry = Omit<
+  PokewalletIdCacheEntry,
+  "variants"
+>;
 
 export type PokewalletIdCache = Record<string, PokewalletIdCacheEntry>;
 
@@ -183,6 +191,103 @@ export function pokewalletResultToPriceEntry(
     entry.variants = variantMap;
   }
   return entry;
+}
+
+/** Map one Pokewallet card response onto an explicit catalogue variant key. */
+export function pokewalletResultToCatalogueVariantPrice(
+  result: PokewalletCardResult,
+  catalogueVariant: string,
+  updatedAt: string
+): PriceEntry | null {
+  const variantMap = extractVariantPrices(result);
+  const usd = bestCardLevelUsd(variantMap);
+  const eur = bestCardLevelEur(variantMap);
+  if (usd === null && eur === null) return null;
+
+  return {
+    usd,
+    eur,
+    updatedAt,
+    variants: {
+      [catalogueVariant]: { usd, eur },
+    },
+  };
+}
+
+export function mergeCatalogueVariantPriceEntries(
+  parts: Array<PriceEntry | null>,
+  updatedAt: string
+): PriceEntry | null {
+  const variants: Record<string, { usd: number | null; eur: number | null }> =
+    {};
+
+  for (const part of parts) {
+    if (!part?.variants) continue;
+    for (const [key, prices] of Object.entries(part.variants)) {
+      variants[key] = {
+        usd: prices.usd ?? null,
+        eur: prices.eur ?? null,
+      };
+    }
+  }
+
+  if (Object.keys(variants).length === 0) return null;
+
+  return {
+    usd: bestCardLevelUsd(variants),
+    eur: bestCardLevelEur(variants),
+    updatedAt,
+    variants,
+  };
+}
+
+export function hasCachedPokewalletId(
+  entry: PokewalletIdCacheEntry | undefined
+): boolean {
+  if (!entry) return false;
+  if (entry.pokewalletId) return true;
+  return Boolean(entry.variants && Object.keys(entry.variants).length > 0);
+}
+
+export interface VariantFetchTarget {
+  catalogueVariant: string;
+  entry: PokewalletVariantIdCacheEntry;
+}
+
+/** When `variants` is set, fetch one Pokewallet card per catalogue variant. */
+export function listVariantFetchTargets(
+  cacheEntry: PokewalletIdCacheEntry
+): VariantFetchTarget[] {
+  const variantEntries = cacheEntry.variants;
+  if (variantEntries && Object.keys(variantEntries).length > 0) {
+    return Object.entries(variantEntries).map(([catalogueVariant, entry]) => ({
+      catalogueVariant,
+      entry,
+    }));
+  }
+
+  return [
+    {
+      catalogueVariant: "__default__",
+      entry: {
+        pokewalletId: cacheEntry.pokewalletId,
+        setCode: cacheEntry.setCode,
+        resolvedAt: cacheEntry.resolvedAt,
+        matchScore: cacheEntry.matchScore,
+        searchQuery: cacheEntry.searchQuery,
+      },
+    },
+  ];
+}
+
+export function preserveCuratedVariantIds(
+  incoming: PokewalletIdCacheEntry,
+  existing: PokewalletIdCacheEntry | undefined
+): PokewalletIdCacheEntry {
+  if (!existing?.variants || Object.keys(existing.variants).length === 0) {
+    return incoming;
+  }
+  return { ...incoming, variants: existing.variants };
 }
 
 export function peekPrices(result: PokewalletCardResult): {

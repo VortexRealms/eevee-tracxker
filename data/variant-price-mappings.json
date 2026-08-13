@@ -6256,17 +6256,19 @@
       "cardName": "Leafeon VSTAR",
       "setName": "SWSH Black Star Promos",
       "cardNumber": "SWSH195",
-      "priceSheetVariant": null,
-      "sqliteVariants": [],
-      "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
+      "priceSheetVariant": "jumbo",
+      "sqliteVariants": [
+        "jumbo"
+      ]
     },
     "swshp-SWSH195.playPokemon": {
       "cardName": "Leafeon VSTAR",
       "setName": "SWSH Black Star Promos",
       "cardNumber": "SWSH195",
-      "priceSheetVariant": null,
-      "sqliteVariants": [],
-      "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
+      "priceSheetVariant": "playPokemon",
+      "sqliteVariants": [
+        "playPokemon"
+      ]
     },
     "swshp-SWSH196.normal": {
       "cardName": "Glaceon V",
@@ -6281,25 +6283,26 @@
       "cardNumber": "SWSH197",
       "priceSheetVariant": "holo",
       "sqliteVariants": [
-        "normal"
-      ],
-      "note": "Move sqliteVariants to the slot that should read history stored as \"normal\"."
+        "holo"
+      ]
     },
     "swshp-SWSH197.jumbo": {
       "cardName": "Glaceon VSTAR",
       "setName": "SWSH Black Star Promos",
       "cardNumber": "SWSH197",
-      "priceSheetVariant": null,
-      "sqliteVariants": [],
-      "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
+      "priceSheetVariant": "jumbo",
+      "sqliteVariants": [
+        "jumbo"
+      ]
     },
     "swshp-SWSH197.playPokemon": {
       "cardName": "Glaceon VSTAR",
       "setName": "SWSH Black Star Promos",
       "cardNumber": "SWSH197",
-      "priceSheetVariant": null,
-      "sqliteVariants": [],
-      "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
+      "priceSheetVariant": "playPokemon",
+      "sqliteVariants": [
+        "playPokemon"
+      ]
     },
     "swshp-SWSH201.normal": {
       "cardName": "Espeon V",

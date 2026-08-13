@@ -4,7 +4,7 @@
  *
  * Run fetch:pokewallet-ids first to build the cache.
  *
- * Run with: npm run fetch:prices [-- --limit 100 --offset 0] [-- --force]
+ * Run with: npm run fetch:prices [-- --limit 100 --offset 0] [-- --force] [-- --cards id1,id2]
  */
 
 import fs from "node:fs/promises";
@@ -22,6 +22,10 @@ import { loadEnvFiles } from "./load-env";
 import { parseBatchCli, sliceBatch } from "./pokewallet-cli";
 import { PokewalletClient } from "./pokewallet-client";
 import {
+  hasCachedPokewalletId,
+  listVariantFetchTargets,
+  mergeCatalogueVariantPriceEntries,
+  pokewalletResultToCatalogueVariantPrice,
   pokewalletResultToPriceEntry,
   type PokewalletIdCache,
 } from "./pokewallet-price-utils";
@@ -53,7 +57,11 @@ async function main() {
   const existingSnapshot = getPricesSnapshotFromDb();
   const fetchedEntries: Record<string, PriceEntry> = { ...existingSnapshot.entries };
 
-  const withCache = allCards.filter((c) => cache[c.id]?.pokewalletId);
+  let withCache = allCards.filter((c) => hasCachedPokewalletId(cache[c.id]));
+  if (opts.cards?.length) {
+    const allow = new Set(opts.cards);
+    withCache = withCache.filter((c) => allow.has(c.id));
+  }
   const batch = sliceBatch(withCache, opts.offset, opts.limit);
 
   if (withCache.length === 0) {
@@ -80,6 +88,35 @@ async function main() {
   let skippedFresh = 0;
   let skippedManual = 0;
   let syncedSinceLast = 0;
+  let apiCalls = 0;
+
+  async function fetchCachedCardPrice(
+    cached: NonNullable<(typeof cache)[string]>
+  ): Promise<PriceEntry | null> {
+    const targets = listVariantFetchTargets(cached);
+    const parts: Array<PriceEntry | null> = [];
+
+    for (const target of targets) {
+      const result = await client.getCard(
+        target.entry.pokewalletId,
+        target.entry.setCode || undefined
+      );
+      apiCalls++;
+      if (target.catalogueVariant === "__default__") {
+        parts.push(pokewalletResultToPriceEntry(result, today));
+      } else {
+        parts.push(
+          pokewalletResultToCatalogueVariantPrice(
+            result,
+            target.catalogueVariant,
+            today
+          )
+        );
+      }
+    }
+
+    return mergeCatalogueVariantPriceEntries(parts, today);
+  }
 
   async function maybeSyncPartial(meta: PricesMeta) {
     syncedSinceLast = 0;
@@ -94,9 +131,17 @@ async function main() {
   for (let i = 0; i < batch.length; i++) {
     const card = batch[i];
     const cached = cache[card.id];
-    if (!cached?.pokewalletId) continue;
+    if (!hasCachedPokewalletId(cached)) continue;
 
-    process.stdout.write(`  [${i + 1}/${batch.length}] ${card.id}... `);
+    const variantCount = cached?.variants
+      ? Object.keys(cached.variants).length
+      : 0;
+    const fetchLabel =
+      variantCount > 0 ? `${variantCount} variant ID(s)` : "1 ID";
+
+    process.stdout.write(
+      `  [${i + 1}/${batch.length}] ${card.id} (${fetchLabel})... `
+    );
 
     const prior = fetchedEntries[card.id];
     const { skip, reason } = shouldSkipPriceFetch(prior, today, opts.force);
@@ -108,16 +153,17 @@ async function main() {
     }
 
     try {
-      const result = await client.getCard(
-        cached.pokewalletId,
-        cached.setCode || undefined
-      );
-      const entry = pokewalletResultToPriceEntry(result, today);
+      const entry = await fetchCachedCardPrice(cached!);
       if (entry) {
         fetchedEntries[card.id] = mergePriceEntries(entry, prior);
         priced++;
         syncedSinceLast++;
-        console.log(`$${entry.usd ?? "—"} / €${entry.eur ?? "—"}`);
+        const variantKeys = entry.variants
+          ? Object.keys(entry.variants).join(", ")
+          : "—";
+        console.log(
+          `$${entry.usd ?? "—"} / €${entry.eur ?? "—"} [${variantKeys}]`
+        );
       } else {
         noPriceData++;
         console.log("no price data");
@@ -174,7 +220,7 @@ async function main() {
     `  SQLite write: ${syncResult.updated} updated, ${syncResult.appended} appended, ${syncResult.skipped} manual skipped`
   );
   console.log(
-    `  This batch: ${priced} priced, ${skippedFresh + skippedManual} skipped (${skippedFresh} fresh, ${skippedManual} manual), ${noPriceData} no data, ${errors} errors`
+    `  This batch: ${priced} priced, ${skippedFresh + skippedManual} skipped (${skippedFresh} fresh, ${skippedManual} manual), ${noPriceData} no data, ${errors} errors, ${apiCalls} API call(s)`
   );
   console.log(`  ${noCache} card(s) have no cached Pokewallet ID — run fetch:pokewallet-ids`);
   console.log(client.formatRateLimitStatus());

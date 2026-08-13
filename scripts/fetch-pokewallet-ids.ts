@@ -12,6 +12,7 @@ import { loadEnvFiles } from "./load-env";
 import { parseBatchCli, sliceBatch } from "./pokewallet-cli";
 import { PokewalletClient } from "./pokewallet-client";
 import {
+  preserveCuratedVariantIds,
   resolvePokewalletIdViaSearch,
   type PokewalletIdCache,
 } from "./pokewallet-price-utils";
@@ -86,7 +87,7 @@ async function main() {
       );
 
       if (match) {
-        cache[card.id] = match.entry;
+        cache[card.id] = preserveCuratedVariantIds(match.entry, cache[card.id]);
         resolved++;
         console.log(`ok → ${match.entry.pokewalletId.slice(0, 20)}… (score ${match.score}, q="${match.query}")`);
       } else {
