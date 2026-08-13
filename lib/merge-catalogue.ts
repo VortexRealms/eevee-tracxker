@@ -21,6 +21,8 @@ const CATALOGUE_VARIANT_OVERRIDES: Record<string, string[]> = {
   "swshp-SWSH197": ["holo", "playPokemon", "jumbo"],
   // SIR trainer; Pokewallet TCGPlayer sub_type is Holofoil only.
   "sv1-252": ["holo"],
+  // BREAKpoint Rare; TCGdex omits reverse but Pokewallet lists Reverse Holofoil.
+  "xy9-54": ["normal", "reverse"],
 };
 
 function applyCatalogueVariantOverrides(cards: PokemonCard[]): PokemonCard[] {

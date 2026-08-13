@@ -4961,7 +4961,8 @@
       "large": "https://assets.tcgdex.net/en/xy/xy9/54/high.png"
     },
     "variants": [
-      "normal"
+      "normal",
+      "reverse"
     ],
     "cameoOf": [
       "Espeon"

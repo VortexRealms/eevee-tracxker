@@ -66,6 +66,8 @@ const TCG_SUBTYPE_TO_VARIANT: Record<string, string> = {
 const CM_VARIANT_TO_OUR: Record<string, string> = {
   normal: "normal",
   holo: "holo",
+  reverse: "reverse",
+  "reverse holo": "reverse",
 };
 
 function normalizeName(name: string): string {
