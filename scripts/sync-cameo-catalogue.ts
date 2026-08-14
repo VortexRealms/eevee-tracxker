@@ -14,6 +14,7 @@ import {
   type CameoCardEntry,
 } from "../lib/cameo-catalogue";
 import { buildCameoManualStub, isCameoManualEntry } from "../lib/cameo-manual-stubs";
+import { hasCustomCardImages } from "../lib/card-image-placeholder";
 import {
   includedRefToEntry,
   loadIncludedCardRefs,
@@ -121,7 +122,7 @@ async function main() {
       number: stub.number,
       supertype: stub.supertype,
       set: stub.set,
-      images: stub.images,
+      images: hasCustomCardImages(existing.images) ? existing.images : stub.images,
       catalogueLanguage: stub.catalogueLanguage,
       variants: existing.variants ?? stub.variants,
     };

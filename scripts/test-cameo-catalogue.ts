@@ -16,6 +16,7 @@ import {
   validateCameoCatalogue,
 } from "../lib/cameo-catalogue";
 import { buildCameoManualStub, isCameoManualEntry } from "../lib/cameo-manual-stubs";
+import { CARD_BACK_IMAGE, hasCustomCardImages } from "../lib/card-image-placeholder";
 import { isMasterSetCatalogueCard } from "../lib/master-set-extras";
 import type { PokemonCard } from "../types";
 import { searchNumberForCard } from "./pokewallet-price-utils";
@@ -31,6 +32,18 @@ const catalogue = loadCameoCatalogue();
   assert.ok(catalogue.entries.length >= 69, `expected >=69 entries, got ${catalogue.entries.length}`);
   const keys = new Set(catalogue.entries.map((e) => e.key));
   assert.equal(keys.size, catalogue.entries.length, "duplicate physical keys");
+}
+
+{
+  assert.equal(hasCustomCardImages(undefined), false);
+  assert.equal(hasCustomCardImages(CARD_BACK_IMAGE), false);
+  assert.equal(
+    hasCustomCardImages({
+      small: "https://sleevee.de/media/example.jpg",
+      large: "https://sleevee.de/media/example.jpg",
+    }),
+    true
+  );
 }
 
 {

@@ -4052,11 +4052,25 @@
     "searchQuery": "Jacinthe Perfect Order 122"
   },
   "tpp-jp-1": {
-    "pokewalletId": "pk_d6b047e67d717207740c7ef28f1e4d59f60638561594805eca4f83dedc62b20020668ff6393ce93bd21deeaad985",
-    "setCode": "smI",
-    "resolvedAt": "2026-08-13",
-    "matchScore": 140,
-    "searchQuery": "Flareon 1"
+    "pokewalletId": "pk_4175e5946f5c72e4fd3f13e6bb29cb07b0bf879638c1b502463c09318c435b85d94dbd636d855ffcf3063f74",
+    "setCode": "24157",
+    "resolvedAt": "2026-08-14",
+    "matchScore": 160,
+    "searchQuery": "Flareon T Promo 001"
+  },
+  "tpp-jp-2": {
+    "pokewalletId": "pk_526c45bcb117b3c3a766040e3b72ce1109be5db9e28fa6204052e7254f9c40874d473e2d471e3620b696a566",
+    "setCode": "24157",
+    "resolvedAt": "2026-08-14",
+    "matchScore": 160,
+    "searchQuery": "Vaporeon T Promo 002"
+  },
+  "tpp-jp-3": {
+    "pokewalletId": "pk_ea712bfa06283ddbeb9e7d1277315b91401d0dbe3367bff3439f8e9d07849948cfb849cefbb561e1de5a257a",
+    "setCode": "24157",
+    "resolvedAt": "2026-08-14",
+    "matchScore": 160,
+    "searchQuery": "Jolteon T Promo 003"
   },
   "bwp-190": {
     "pokewalletId": "dca79b1f6442680998a6df4aeb35707bf3f8d3f7925ce795bf98dfac9e1bf1fd",

@@ -6605,6 +6605,30 @@
       "priceSheetVariant": "holo",
       "sqliteVariants": [],
       "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+    },
+    "tpp-jp-1.normal": {
+      "cardName": "Flareon",
+      "setName": "T Promos",
+      "cardNumber": "1",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": [],
+      "note": "JP T Promo 001/T; Pokewallet pk_4175e594… (TCG only, no CM link)."
+    },
+    "tpp-jp-2.normal": {
+      "cardName": "Vaporeon",
+      "setName": "T Promos",
+      "cardNumber": "2",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": [],
+      "note": "JP T Promo 002/T; Pokewallet pk_526c45bc… (TCG only, no CM link)."
+    },
+    "tpp-jp-3.normal": {
+      "cardName": "Jolteon",
+      "setName": "T Promos",
+      "cardNumber": "3",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": [],
+      "note": "JP T Promo 003/T; Pokewallet pk_ea712bfa… (TCG only, no CM link)."
     }
   }
 }

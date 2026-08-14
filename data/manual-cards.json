@@ -3691,8 +3691,8 @@
       "releaseDate": "1998/01/01"
     },
     "images": {
-      "small": "https://images.scrydex.com/pokemon/back/medium",
-      "large": "https://images.scrydex.com/pokemon/back/medium"
+      "small": "https://sleevee.de/media/4a/a2/70/1755526564/571131.jpg?ts=1755526564",
+      "large": "https://sleevee.de/media/4a/a2/70/1755526564/571131.jpg?ts=1755526564"
     },
     "variants": [
       "normal"
@@ -3711,8 +3711,28 @@
       "releaseDate": "1998/01/01"
     },
     "images": {
-      "small": "https://images.scrydex.com/pokemon/back/medium",
-      "large": "https://images.scrydex.com/pokemon/back/medium"
+      "small": "https://sleevee.de/media/ab/2e/4a/1755526564/571132.jpg?ts=1755526564",
+      "large": "https://sleevee.de/media/ab/2e/4a/1755526564/571132.jpg?ts=1755526564"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "ja"
+  },
+  {
+    "id": "tpp-jp-3",
+    "name": "Jolteon",
+    "number": "3",
+    "supertype": "Pokémon",
+    "set": {
+      "id": "tpp-jp",
+      "name": "T Promos",
+      "series": "Other",
+      "releaseDate": "1998/01/01"
+    },
+    "images": {
+      "small": "https://sleevee.de/media/4c/91/2b/1755526564/571133.jpg?ts=1755526564",
+      "large": "https://sleevee.de/media/4c/91/2b/1755526564/571133.jpg?ts=1755526564"
     },
     "variants": [
       "normal"
