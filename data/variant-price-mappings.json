@@ -231,9 +231,9 @@
       "cardName": "Eevee",
       "setName": "Wizards Black Star Promos",
       "cardNumber": "11",
-      "priceSheetVariant": null,
+      "priceSheetVariant": "wPromo",
       "sqliteVariants": [],
-      "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
+      "note": "JR East Stamp Rally / W Promo; Pokewallet listing pk_c494ec… (separate from holo promo)."
     },
     "bw11-RC14.normal": {
       "cardName": "Eevee",

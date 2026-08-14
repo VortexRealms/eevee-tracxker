@@ -53,7 +53,23 @@
     "setCode": "PR",
     "resolvedAt": "2026-07-18",
     "matchScore": 160,
-    "searchQuery": "Eevee 11"
+    "searchQuery": "Eevee 11",
+    "variants": {
+      "holo": {
+        "pokewalletId": "pk_b59f83c1d4f309928c9278150bd84fb9a683e7dbb2c03fa09d957afd75717eccc0df4a7528cd1a1d41a3012f",
+        "setCode": "PR",
+        "resolvedAt": "2026-07-18",
+        "matchScore": 160,
+        "searchQuery": "Eevee 11 Wizards Black Star Promo holo"
+      },
+      "wPromo": {
+        "pokewalletId": "pk_c494ec444969e2534c08dc54673421e46b26646eec62bf58069c06b3110c4a0678288d25a35c623e7de6c3bcd7",
+        "setCode": "PR",
+        "resolvedAt": "2026-08-14",
+        "matchScore": 150,
+        "searchQuery": "Eevee JR East Stamp Rally"
+      }
+    }
   },
   "base5-35": {
     "pokewalletId": "pk_3a65cc4d928934e62380cee19c7011e6778c5a067d0ecbc9b1311a47434653319bd2902412c614305058ee09",

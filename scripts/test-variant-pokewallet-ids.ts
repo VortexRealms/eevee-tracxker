@@ -343,6 +343,58 @@ function testSwsh197MigrationIdempotency() {
   db.close();
 }
 
+function testBasep11JrRallyAssembly() {
+  const entry: PokewalletIdCacheEntry = {
+    pokewalletId:
+      "pk_b59f83c1d4f309928c9278150bd84fb9a683e7dbb2c03fa09d957afd75717eccc0df4a7528cd1a1d41a3012f",
+    setCode: "PR",
+    resolvedAt: TODAY,
+    variants: {
+      holo: {
+        pokewalletId:
+          "pk_b59f83c1d4f309928c9278150bd84fb9a683e7dbb2c03fa09d957afd75717eccc0df4a7528cd1a1d41a3012f",
+        setCode: "PR",
+        resolvedAt: TODAY,
+      },
+      wPromo: {
+        pokewalletId:
+          "pk_c494ec444969e2534c08dc54673421e46b26646eec62bf58069c06b3110c4a0678288d25a35c623e7de6c3bcd7",
+        setCode: "PR",
+        resolvedAt: TODAY,
+      },
+    },
+  };
+
+  const targets = listVariantFetchTargets(entry);
+  assert(targets.length === 2, "basep-11 has two fetch targets");
+  assert(
+    targets.map((t) => t.catalogueVariant).sort().join(",") === "holo,wPromo",
+    "holo + wPromo keys"
+  );
+
+  const jrRallyResult: PokewalletCardResult = {
+    id: "pk_c494ec444969e2534c08dc54673421e46b26646eec62bf58069c06b3110c4a0678288d25a35c623e7de6c3bcd7",
+    card_info: {
+      name: "Eevee (JR East Stamp Rally)",
+      card_number: "11/53",
+      set_name: "WoTC Promo",
+    },
+    tcgplayer: { prices: [], url: "https://www.tcgplayer.com/product/618732" },
+    cardmarket: null,
+  };
+
+  const merged = mergeCatalogueVariantPriceEntries(
+    [
+      pokewalletResultToCatalogueVariantPrice(mockResult(50.56), "holo", TODAY),
+      pokewalletResultToCatalogueVariantPrice(jrRallyResult, "wPromo", TODAY),
+    ],
+    TODAY
+  );
+
+  assert(merged?.variants?.holo?.usd === 50.56, "basep-11 holo USD");
+  assert(merged?.variants?.wPromo == null || merged?.variants?.wPromo?.eur == null, "JR Rally pk has no CM prices yet");
+}
+
 function main() {
   testLegacySingleIdCache();
   testThreeIdRequestAssembly();
@@ -351,6 +403,7 @@ function main() {
   testMigrationIdempotency();
   testSwsh197ThreeIdAssembly();
   testSwsh197MigrationIdempotency();
+  testBasep11JrRallyAssembly();
   console.log("All variant-specific Pokewallet ID tests passed.");
 }
 
