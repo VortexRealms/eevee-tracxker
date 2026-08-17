@@ -81,10 +81,16 @@ async function main() {
     sources[row.cardId] = row.source === "manual" ? "manual" : "pokewallet";
   }
 
+  const catalogueVariantsByCard: Record<string, string[]> = {};
+  for (const card of getAllCards()) {
+    catalogueVariantsByCard[card.id] = card.variants?.length ? card.variants : ["normal"];
+  }
+
   const importedPrices = importAllPricesToDb(
     sheetSnapshot.entries,
     sources,
-    sheetSnapshot.meta
+    sheetSnapshot.meta,
+    catalogueVariantsByCard
   );
 
   const today = localTodayIso();

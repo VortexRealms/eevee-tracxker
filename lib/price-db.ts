@@ -6,7 +6,13 @@
 import fs from "node:fs";
 import path from "node:path";
 import Database from "better-sqlite3";
-import type { PriceEntry, PricesMeta, PricesSnapshot } from "../types";
+import type {
+  PriceEntry,
+  PriceKind,
+  PriceSource,
+  PricesMeta,
+  PricesSnapshot,
+} from "../types";
 import {
   metaToExchangeRates,
   parseUsdRatesJson,
@@ -14,8 +20,18 @@ import {
 } from "./exchange-rates";
 import { mergePriceEntries } from "./price-merge";
 import { normalizePriceEntry } from "./price-entry-utils";
-import { PRICE_DB_SCHEMA_SQL } from "./price-db-schema";
+import {
+  CURRENT_PRICES_V1_SQL,
+  PRICE_DB_SCHEMA_SQL,
+  PRICE_DB_USER_VERSION,
+} from "./price-db-schema";
 import { PRICE_DB_PATH } from "./price-db-path";
+import {
+  expandEntryToVariantRows,
+  groupVariantRowsToEntries,
+  mergeVariantRecords,
+  type VariantPriceRow,
+} from "./variant-price-contract";
 
 export { PRICE_DB_PATH };
 
@@ -31,22 +47,47 @@ export interface PriceDbIntegrityResult {
   hasMeta: boolean;
   currentPriceCount: number;
   latestSnapshotDate: string | null;
+  schemaVersion: number;
   errors: string[];
 }
 
-function sanitizeVariantPrices(
-  variants: PriceEntry["variants"]
-): PriceEntry["variants"] | undefined {
-  if (!variants) return undefined;
-  const out: NonNullable<PriceEntry["variants"]> = {};
-  for (const [key, prices] of Object.entries(variants)) {
-    if (!prices || typeof prices !== "object") continue;
-    out[key] = { usd: prices.usd ?? null, eur: prices.eur ?? null };
+function parseMetadataJson(raw: string | null): Record<string, unknown> | undefined {
+  if (!raw) return undefined;
+  try {
+    return JSON.parse(raw) as Record<string, unknown>;
+  } catch {
+    return undefined;
   }
-  return Object.keys(out).length > 0 ? out : undefined;
 }
 
-function rowToEntry(row: {
+function rowToVariantRow(row: {
+  card_id: string;
+  variant: string;
+  usd: number | null;
+  eur: number | null;
+  updated_at: string;
+  source: string;
+  price_kind: string;
+  sample_count: number | null;
+  metadata_json: string | null;
+  orphan: number;
+}): VariantPriceRow {
+  const source = row.source as PriceSource;
+  return {
+    cardId: row.card_id,
+    variant: row.variant,
+    usd: row.usd,
+    eur: row.eur,
+    updatedAt: row.updated_at,
+    source,
+    priceKind: row.price_kind as PriceKind,
+    sampleCount: row.sample_count,
+    metadata: parseMetadataJson(row.metadata_json),
+    orphan: row.orphan === 1,
+  };
+}
+
+function legacyRowToEntry(row: {
   usd: number | null;
   eur: number | null;
   updated_at: string;
@@ -56,9 +97,7 @@ function rowToEntry(row: {
   let variants: PriceEntry["variants"];
   if (row.variants_json) {
     try {
-      variants = sanitizeVariantPrices(
-        JSON.parse(row.variants_json) as PriceEntry["variants"]
-      );
+      variants = JSON.parse(row.variants_json) as PriceEntry["variants"];
     } catch {
       variants = undefined;
     }
@@ -72,19 +111,47 @@ function rowToEntry(row: {
   });
 }
 
-function entryToDbRow(cardId: string, entry: PriceEntry, source: "pokewallet" | "manual") {
-  const variantsJson =
-    entry.variants && Object.keys(entry.variants).length > 0
-      ? JSON.stringify(entry.variants)
-      : null;
+function variantRowToDbParams(row: VariantPriceRow) {
   return {
-    card_id: cardId,
-    usd: entry.usd ?? null,
-    eur: entry.eur ?? null,
-    updated_at: entry.updatedAt,
-    variants_json: variantsJson,
-    source,
+    card_id: row.cardId,
+    variant: row.variant,
+    usd: row.usd,
+    eur: row.eur,
+    updated_at: row.updatedAt,
+    source: row.source,
+    price_kind: row.priceKind,
+    sample_count: row.sampleCount ?? null,
+    metadata_json: row.metadata ? JSON.stringify(row.metadata) : null,
+    orphan: row.orphan ? 1 : 0,
   };
+}
+
+export function readVariantPriceRows(db: Database.Database): VariantPriceRow[] {
+  const rows = db
+    .prepare(
+      `SELECT card_id, variant, usd, eur, updated_at, source, price_kind,
+              sample_count, metadata_json, orphan
+       FROM current_prices`
+    )
+    .all() as Array<Parameters<typeof rowToVariantRow>[0]>;
+  return rows.map(rowToVariantRow);
+}
+
+export function getSchemaVersion(db: Database.Database): number {
+  return (db.pragma("user_version", { simple: true }) as number) ?? 0;
+}
+
+function tableExists(db: Database.Database, name: string): boolean {
+  const row = db
+    .prepare(`SELECT 1 AS ok FROM sqlite_master WHERE type = 'table' AND name = ?`)
+    .get(name) as { ok: number } | undefined;
+  return Boolean(row);
+}
+
+function isLegacyCurrentPrices(db: Database.Database): boolean {
+  if (!tableExists(db, "current_prices")) return false;
+  const cols = db.prepare(`PRAGMA table_info(current_prices)`).all() as Array<{ name: string }>;
+  return cols.some((c) => c.name === "variants_json");
 }
 
 export function openPriceDb(
@@ -99,6 +166,10 @@ export function openPriceDb(
   if (!options.readonly) {
     db.pragma("journal_mode = DELETE");
     db.exec(PRICE_DB_SCHEMA_SQL);
+    const version = getSchemaVersion(db);
+    if (version === 0 && !isLegacyCurrentPrices(db)) {
+      db.pragma(`user_version = ${PRICE_DB_USER_VERSION}`);
+    }
   }
   return db;
 }
@@ -123,7 +194,13 @@ export function getPricesSnapshotFromDb(dbPath = PRICE_DB_PATH): PricesSnapshot 
         }
       : { ratesUpdatedAt: new Date().toISOString().slice(0, 10) };
 
-    const rows = db
+    const version = getSchemaVersion(db);
+    if (version >= PRICE_DB_USER_VERSION && !isLegacyCurrentPrices(db)) {
+      const rows = readVariantPriceRows(db);
+      return { meta, entries: groupVariantRowsToEntries(rows) };
+    }
+
+    const legacyRows = db
       .prepare(
         `SELECT card_id, usd, eur, updated_at, variants_json, source FROM current_prices`
       )
@@ -137,8 +214,8 @@ export function getPricesSnapshotFromDb(dbPath = PRICE_DB_PATH): PricesSnapshot 
     }>;
 
     const entries: Record<string, PriceEntry> = {};
-    for (const row of rows) {
-      entries[row.card_id] = rowToEntry(row);
+    for (const row of legacyRows) {
+      entries[row.card_id] = legacyRowToEntry(row);
     }
     return { meta, entries };
   } finally {
@@ -174,44 +251,38 @@ export function writePricesMetaToDb(
   dbOrPath.prepare(sql).run(params);
 }
 
-/**
- * Sync fetched prices into SQLite. Skips rows with source=manual (same as Sheet sync).
- */
-export function syncPricesToDb(
-  entries: Record<string, PriceEntry>,
+export function syncVariantRowsToDb(
+  rows: VariantPriceRow[],
   meta: PricesMeta,
-  dbPath = PRICE_DB_PATH
+  dbOrPath: Database.Database | string = PRICE_DB_PATH
 ): SyncPricesResult {
-  const db = openPriceDb(dbPath);
+  const ownsDb = typeof dbOrPath === "string";
+  const db = ownsDb ? openPriceDb(dbOrPath) : dbOrPath;
   try {
     writePricesMetaToDb(meta, db);
 
-    const existingRows = db
-      .prepare(
-        `SELECT card_id, usd, eur, updated_at, variants_json, source FROM current_prices`
-      )
-      .all() as Array<{
-      card_id: string;
-      usd: number | null;
-      eur: number | null;
-      updated_at: string;
-      variants_json: string | null;
-      source: string;
-    }>;
-    const existingEntries: Record<string, PriceEntry> = {};
-    for (const row of existingRows) {
-      existingEntries[row.card_id] = rowToEntry(row);
-    }
+    const existing = readVariantPriceRows(db);
+    const existingByKey = new Map(
+      existing.map((row) => [`${row.cardId}\0${row.variant}`, row])
+    );
 
     const upsert = db.prepare(`
-      INSERT INTO current_prices (card_id, usd, eur, updated_at, variants_json, source)
-      VALUES (@card_id, @usd, @eur, @updated_at, @variants_json, @source)
-      ON CONFLICT (card_id) DO UPDATE SET
+      INSERT INTO current_prices (
+        card_id, variant, usd, eur, updated_at, source, price_kind,
+        sample_count, metadata_json, orphan
+      ) VALUES (
+        @card_id, @variant, @usd, @eur, @updated_at, @source, @price_kind,
+        @sample_count, @metadata_json, @orphan
+      )
+      ON CONFLICT (card_id, variant) DO UPDATE SET
         usd = excluded.usd,
         eur = excluded.eur,
         updated_at = excluded.updated_at,
-        variants_json = excluded.variants_json,
-        source = excluded.source
+        source = excluded.source,
+        price_kind = excluded.price_kind,
+        sample_count = excluded.sample_count,
+        metadata_json = excluded.metadata_json,
+        orphan = excluded.orphan
     `);
 
     let updated = 0;
@@ -219,14 +290,15 @@ export function syncPricesToDb(
     let skipped = 0;
 
     const syncAll = db.transaction(() => {
-      for (const [cardId, entry] of Object.entries(entries)) {
-        if (existingEntries[cardId]?.source === "manual") {
+      for (const row of rows) {
+        const key = `${row.cardId}\0${row.variant}`;
+        const prior = existingByKey.get(key);
+        if (prior?.source === "manual") {
           skipped++;
           continue;
         }
-        const merged = mergePriceEntries(entry, existingEntries[cardId]);
-        const hadRow = cardId in existingEntries;
-        upsert.run(entryToDbRow(cardId, merged, "pokewallet"));
+        const hadRow = Boolean(prior);
+        upsert.run(variantRowToDbParams(row));
         if (hadRow) updated++;
         else appended++;
       }
@@ -235,34 +307,112 @@ export function syncPricesToDb(
     syncAll();
     return { updated, skipped, appended };
   } finally {
-    db.close();
+    if (ownsDb) db.close();
   }
+}
+
+/**
+ * Sync fetched prices into SQLite. Skips variant rows with source=manual.
+ * Accepts card-level PriceEntry snapshot and expands to variant rows.
+ */
+export function syncPricesToDb(
+  entries: Record<string, PriceEntry>,
+  meta: PricesMeta,
+  catalogueVariantsByCard: Record<string, string[]> = {},
+  dbPath = PRICE_DB_PATH
+): SyncPricesResult {
+  const existingSnapshot = getPricesSnapshotFromDb(dbPath);
+  const existingEntries = existingSnapshot.entries;
+
+  const mergedRows: VariantPriceRow[] = [];
+  let manualSkipped = 0;
+
+  for (const [cardId, entry] of Object.entries(entries)) {
+    const prior = existingEntries[cardId];
+    const merged = mergePriceEntries(entry, prior);
+    const catalogueVariants = catalogueVariantsByCard[cardId] ?? [];
+    const expanded = expandEntryToVariantRows(cardId, merged, catalogueVariants, {
+      includeOrphans: true,
+    });
+
+    for (const row of expanded) {
+      const priorVariant = prior?.variants?.[row.variant];
+      if (priorVariant?.source === "manual") {
+        manualSkipped++;
+        continue;
+      }
+      const mergedRecord = mergeVariantRecords(
+        {
+          usd: row.usd,
+          eur: row.eur,
+          updatedAt: row.updatedAt,
+          source: row.source,
+          priceKind: row.priceKind,
+          sampleCount: row.sampleCount ?? undefined,
+          metadata: row.metadata,
+        },
+        priorVariant
+      );
+      mergedRows.push({
+        ...row,
+        usd: mergedRecord.usd ?? null,
+        eur: mergedRecord.eur ?? null,
+        updatedAt: mergedRecord.updatedAt ?? row.updatedAt,
+        source: mergedRecord.source ?? row.source,
+        priceKind: mergedRecord.priceKind ?? row.priceKind,
+        sampleCount: mergedRecord.sampleCount ?? row.sampleCount ?? null,
+        metadata: mergedRecord.metadata ?? row.metadata,
+      });
+    }
+  }
+
+  const result = syncVariantRowsToDb(mergedRows, meta, dbPath);
+  return { ...result, skipped: result.skipped + manualSkipped };
 }
 
 /** Full replace for migration from Google Sheets. */
 export function importAllPricesToDb(
   entries: Record<string, PriceEntry>,
-  sources: Record<string, "pokewallet" | "manual">,
+  sources: Record<string, PriceSource>,
   meta: PricesMeta,
+  catalogueVariantsByCard: Record<string, string[]> = {},
   dbPath = PRICE_DB_PATH
 ): number {
   const db = openPriceDb(dbPath);
   try {
-    writePricesMetaToDb(meta, dbPath);
+    writePricesMetaToDb(meta, db);
     db.prepare(`DELETE FROM current_prices`).run();
 
     const insert = db.prepare(`
-      INSERT INTO current_prices (card_id, usd, eur, updated_at, variants_json, source)
-      VALUES (@card_id, @usd, @eur, @updated_at, @variants_json, @source)
+      INSERT INTO current_prices (
+        card_id, variant, usd, eur, updated_at, source, price_kind,
+        sample_count, metadata_json, orphan
+      ) VALUES (
+        @card_id, @variant, @usd, @eur, @updated_at, @source, @price_kind,
+        @sample_count, @metadata_json, @orphan
+      )
     `);
 
+    let count = 0;
     const importAll = db.transaction(() => {
       for (const [cardId, entry] of Object.entries(entries)) {
-        insert.run(entryToDbRow(cardId, entry, sources[cardId] ?? "pokewallet"));
+        const cardSource = sources[cardId] ?? entry.source ?? "pokewallet";
+        const catalogueVariants = catalogueVariantsByCard[cardId] ?? [];
+        const rows = expandEntryToVariantRows(
+          cardId,
+          { ...entry, source: cardSource },
+          catalogueVariants,
+          { includeOrphans: true }
+        );
+        for (const row of rows) {
+          insert.run(variantRowToDbParams(row));
+          count++;
+        }
       }
     });
     importAll();
-    return Object.keys(entries).length;
+    db.pragma(`user_version = ${PRICE_DB_USER_VERSION}`);
+    return count;
   } finally {
     db.close();
   }
@@ -280,6 +430,7 @@ export function verifyPriceDbIntegrity(
       hasMeta: false,
       currentPriceCount: 0,
       latestSnapshotDate: null,
+      schemaVersion: 0,
       errors: ["Price database file is missing"],
     };
   }
@@ -291,6 +442,13 @@ export function verifyPriceDbIntegrity(
       errors.push(`integrity_check failed: ${integrity}`);
     }
 
+    const schemaVersion = getSchemaVersion(db);
+    if (schemaVersion < PRICE_DB_USER_VERSION && isLegacyCurrentPrices(db)) {
+      errors.push(
+        `Schema user_version=${schemaVersion}; expected ${PRICE_DB_USER_VERSION} (run migrate:current-prices)`
+      );
+    }
+
     const metaRow = db
       .prepare(`SELECT 1 AS ok FROM price_meta WHERE id = 1`)
       .get() as { ok: number } | undefined;
@@ -299,6 +457,28 @@ export function verifyPriceDbIntegrity(
     const countRow = db
       .prepare(`SELECT COUNT(*) AS c FROM current_prices`)
       .get() as { c: number };
+
+    const duplicateRows = db
+      .prepare(
+        `SELECT card_id, variant, COUNT(*) AS c
+         FROM current_prices
+         GROUP BY card_id, variant
+         HAVING c > 1`
+      )
+      .all() as Array<{ card_id: string; variant: string; c: number }>;
+    if (duplicateRows.length > 0) {
+      errors.push(`Duplicate current_prices keys: ${duplicateRows.length}`);
+    }
+
+    const invalidSource = db
+      .prepare(
+        `SELECT COUNT(*) AS c FROM current_prices
+         WHERE source NOT IN ('pokewallet', 'ebay', 'manual')`
+      )
+      .get() as { c: number };
+    if (invalidSource.c > 0) {
+      errors.push(`Invalid current_prices source values: ${invalidSource.c}`);
+    }
 
     const latestRun = db
       .prepare(`SELECT observed_date FROM snapshot_runs ORDER BY observed_date DESC LIMIT 1`)
@@ -319,9 +499,12 @@ export function verifyPriceDbIntegrity(
       hasMeta,
       currentPriceCount: countRow.c,
       latestSnapshotDate: latestRun?.observed_date ?? null,
+      schemaVersion,
       errors,
     };
   } finally {
     db.close();
   }
 }
+
+export { CURRENT_PRICES_V1_SQL, PRICE_DB_USER_VERSION };

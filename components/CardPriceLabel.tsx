@@ -5,14 +5,16 @@ import {
   resolveDisplayAmount,
 } from "../lib/display-price";
 import type { ExchangeRates } from "../lib/exchange-rates";
-import type { DisplayCurrency } from "../types";
+import type { DisplayCurrency, PriceSource } from "../types";
 
 interface CardPriceLabelProps {
   price: ResolvedPrice;
   currency: DisplayCurrency;
   rates: ExchangeRates;
   updatedAt?: string;
-  priceSource?: "pokewallet" | "manual";
+  priceSource?: PriceSource;
+  priceKind?: ResolvedPrice["priceKind"];
+  sampleCount?: number;
   /** Variant label when listing shows a fallback price, e.g. "Holofoil". */
   fallbackVariantLabel?: string;
 }
@@ -23,6 +25,8 @@ export function CardPriceLabel({
   rates,
   updatedAt,
   priceSource,
+  priceKind,
+  sampleCount,
   fallbackVariantLabel,
 }: CardPriceLabelProps) {
   const { amount, source } = resolveDisplayAmount(price, currency, rates);
@@ -30,8 +34,10 @@ export function CardPriceLabel({
   const isEmpty = formattedAmount == null;
   const isConverted = source === "converted";
   const title = formatPriceChipTooltip({
-    updatedAt,
-    source: priceSource,
+    updatedAt: updatedAt ?? price.updatedAt,
+    source: priceSource ?? price.source,
+    priceKind: priceKind ?? price.priceKind,
+    sampleCount: sampleCount ?? price.sampleCount,
     fallbackVariantLabel,
     isEmpty,
     currency,
@@ -41,6 +47,7 @@ export function CardPriceLabel({
     "card-price-chip",
     isEmpty ? "is-empty" : "",
     isConverted ? "is-converted" : "",
+    (priceSource ?? price.source) === "ebay" ? "is-ebay" : "",
   ]
     .filter(Boolean)
     .join(" ");

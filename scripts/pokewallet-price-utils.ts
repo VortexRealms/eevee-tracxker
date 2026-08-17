@@ -2,7 +2,7 @@
  * Map Pokewallet card payloads to our prices.json PriceEntry format.
  */
 
-import type { PokemonCard } from "../types";
+import type { PokemonCard, PriceEntry, VariantPriceRecord } from "../types";
 import type {
   PokewalletCardResult,
   PokewalletCmPrice,
@@ -13,12 +13,7 @@ import { normalizePriceAmount } from "../lib/parse-price";
 import type { SetLookupHint } from "./pokewallet-set-map";
 import { OUR_SET_TO_POKEWALLET } from "./pokewallet-set-map";
 
-export interface PriceEntry {
-  usd?: number | null;
-  eur?: number | null;
-  updatedAt: string;
-  variants?: Record<string, { usd?: number | null; eur?: number | null }>;
-}
+export type { PriceEntry };
 
 export interface PokewalletIdCacheEntry {
   pokewalletId: string;
@@ -122,6 +117,14 @@ function mapCmVariant(variantType: string | undefined): string {
   return CM_VARIANT_TO_OUR[variantType.toLowerCase()] ?? "normal";
 }
 
+function variantRecord(
+  usd: number | null,
+  eur: number | null,
+  updatedAt: string
+): VariantPriceRecord {
+  return { usd, eur, updatedAt, source: "pokewallet", priceKind: "market" };
+}
+
 function extractVariantPrices(result: PokewalletCardResult): Record<
   string,
   { usd: number | null; eur: number | null }
@@ -188,9 +191,14 @@ export function pokewalletResultToPriceEntry(
   const eur = bestCardLevelEur(variantMap);
   if (usd === null && eur === null) return null;
 
-  const entry: PriceEntry = { usd, eur, updatedAt };
+  const entry: PriceEntry = { usd, eur, updatedAt, source: "pokewallet" };
   if (Object.keys(variantMap).length > 0) {
-    entry.variants = variantMap;
+    entry.variants = Object.fromEntries(
+      Object.entries(variantMap).map(([key, prices]) => [
+        key,
+        variantRecord(prices.usd, prices.eur, updatedAt),
+      ])
+    );
   }
   return entry;
 }
@@ -210,8 +218,9 @@ export function pokewalletResultToCatalogueVariantPrice(
     usd,
     eur,
     updatedAt,
+    source: "pokewallet",
     variants: {
-      [catalogueVariant]: { usd, eur },
+      [catalogueVariant]: variantRecord(usd, eur, updatedAt),
     },
   };
 }
@@ -220,8 +229,7 @@ export function mergeCatalogueVariantPriceEntries(
   parts: Array<PriceEntry | null>,
   updatedAt: string
 ): PriceEntry | null {
-  const variants: Record<string, { usd: number | null; eur: number | null }> =
-    {};
+  const variants: Record<string, ReturnType<typeof variantRecord>> = {};
 
   for (const part of parts) {
     if (!part?.variants) continue;
@@ -229,6 +237,9 @@ export function mergeCatalogueVariantPriceEntries(
       variants[key] = {
         usd: prices.usd ?? null,
         eur: prices.eur ?? null,
+        updatedAt: prices.updatedAt ?? updatedAt,
+        source: prices.source ?? "pokewallet",
+        priceKind: prices.priceKind ?? "market",
       };
     }
   }
@@ -236,9 +247,24 @@ export function mergeCatalogueVariantPriceEntries(
   if (Object.keys(variants).length === 0) return null;
 
   return {
-    usd: bestCardLevelUsd(variants),
-    eur: bestCardLevelEur(variants),
+    usd: bestCardLevelUsd(
+      Object.fromEntries(
+        Object.entries(variants).map(([k, v]) => [
+          k,
+          { usd: v.usd ?? null, eur: v.eur ?? null },
+        ])
+      )
+    ),
+    eur: bestCardLevelEur(
+      Object.fromEntries(
+        Object.entries(variants).map(([k, v]) => [
+          k,
+          { usd: v.usd ?? null, eur: v.eur ?? null },
+        ])
+      )
+    ),
     updatedAt,
+    source: "pokewallet",
     variants,
   };
 }

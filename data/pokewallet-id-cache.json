@@ -1245,7 +1245,16 @@
     "setCode": "PR",
     "resolvedAt": "2026-07-19",
     "matchScore": 130,
-    "searchQuery": "Espeon GX SM Black Star Promos SM35"
+    "searchQuery": "Espeon GX SM Black Star Promos SM35",
+    "variants": {
+      "jumbo": {
+        "pokewalletId": "pk_0985bddfdb32ddb533d7e993468dff4b5f9e01a98d406c11a2dfca0f3c0b8b1662d3775f8fdb6046c3d0d1cb",
+        "setCode": "PR",
+        "resolvedAt": "2026-08-17",
+        "matchScore": 160,
+        "searchQuery": "Espeon GX SM35 jumbo"
+      }
+    }
   },
   "smp-SM36": {
     "pokewalletId": "pk_cbaa35f22f7b1d2c299ad1b403f19690517d8adfe0d6005fa53b455e860dd56f345cafcb1b15bc9d4c7b30e5",
@@ -1280,21 +1289,48 @@
     "setCode": "SMP",
     "resolvedAt": "2026-07-19",
     "matchScore": 140,
-    "searchQuery": "Flareon GX SM171"
+    "searchQuery": "Flareon GX SM171",
+    "variants": {
+      "jumbo": {
+        "pokewalletId": "pk_69d772ab03eaef0a3331248433295aee5f21ada12329bf4f6f2839427b7fbc234d5c736dc79d7d365105008fe6",
+        "setCode": "",
+        "resolvedAt": "2026-08-17",
+        "matchScore": 160,
+        "searchQuery": "Flareon GX SM171 jumbo"
+      }
+    }
   },
   "smp-SM172": {
     "pokewalletId": "pk_f527384be424b1cdecf3275deec5890e5075667aa76d3e473b5a87387a92cfa091d7d700665b302df80ba634e4",
     "setCode": "SMP",
     "resolvedAt": "2026-07-19",
     "matchScore": 140,
-    "searchQuery": "Vaporeon GX SM172"
+    "searchQuery": "Vaporeon GX SM172",
+    "variants": {
+      "jumbo": {
+        "pokewalletId": "pk_7ab472691ac6e54d91ad7ed57f7a34b3c2d45561d12cec941b6e82ad9340c3c69584c37e945a2e424eb3fd14b4",
+        "setCode": "",
+        "resolvedAt": "2026-08-17",
+        "matchScore": 160,
+        "searchQuery": "Vaporeon GX SM172 jumbo"
+      }
+    }
   },
   "smp-SM173": {
     "pokewalletId": "pk_b4b3fd2d413b618bc2b2c04809d2c2b11a924a66626ad5f7a4fdc321f720ece2e850302871e423299d7583f2c6",
     "setCode": "SMP",
     "resolvedAt": "2026-07-19",
     "matchScore": 140,
-    "searchQuery": "Jolteon GX SM173"
+    "searchQuery": "Jolteon GX SM173",
+    "variants": {
+      "jumbo": {
+        "pokewalletId": "pk_7f33a5e2d6dd49ebe86842c6ccdda4ccd6ca751eccbb7fabd027d8959d3d390f09936ba703a9dab214b5491033",
+        "setCode": "",
+        "resolvedAt": "2026-08-17",
+        "matchScore": 160,
+        "searchQuery": "Jolteon GX SM173 jumbo"
+      }
+    }
   },
   "smp-SM174": {
     "pokewalletId": "pk_e05f589d77da2c89d045af440c2275118715169374911cdc8de7c7caf2f38f728a211580a6b84a272500335376",
@@ -1364,14 +1400,32 @@
     "setCode": "SMP",
     "resolvedAt": "2026-07-19",
     "matchScore": 140,
-    "searchQuery": "Espeon & Deoxys GX SM240"
+    "searchQuery": "Espeon & Deoxys GX SM240",
+    "variants": {
+      "jumbo": {
+        "pokewalletId": "pk_cbdeefd4e58a783c8e3f75a74e613206b8f988ca01ac580f53c9c6c2d75a0c995cbd2f62d6c7f2421c56fafee1",
+        "setCode": "",
+        "resolvedAt": "2026-08-17",
+        "matchScore": 160,
+        "searchQuery": "Espeon & Deoxys GX SM240 jumbo"
+      }
+    }
   },
   "smp-SM241": {
     "pokewalletId": "pk_f4c4bf320c8a84476453c810d80900062a6e46a50ff2e38bc480d6723d954190205de20067cd7e8f874e89ea8a",
     "setCode": "SMP",
     "resolvedAt": "2026-07-19",
     "matchScore": 140,
-    "searchQuery": "Umbreon & Darkrai GX SM241"
+    "searchQuery": "Umbreon & Darkrai GX SM241",
+    "variants": {
+      "jumbo": {
+        "pokewalletId": "pk_fae06290a6fc31d1879036650cea3ff8f72c7380271c9de0fef50ae3f93924c1436dcd33c921826f1c4234b3d5",
+        "setCode": "",
+        "resolvedAt": "2026-08-17",
+        "matchScore": 160,
+        "searchQuery": "Umbreon & Darkrai GX SM241 jumbo"
+      }
+    }
   },
   "smp-SM242": {
     "pokewalletId": "pk_0a059f3e7ab816288e5f09f01899a43b191b4361ad2adb5dd899df72a37edd6199edbd3f6b58d20aa1ef50da73",
@@ -1763,7 +1817,16 @@
     "setCode": "SWSD",
     "resolvedAt": "2026-07-20",
     "matchScore": 140,
-    "searchQuery": "Dark Sylveon V SWSH134"
+    "searchQuery": "Dark Sylveon V SWSH134",
+    "variants": {
+      "jumbo": {
+        "pokewalletId": "pk_760fe6f388c13b9333965f730b39b741b921d6b00af76a086524181f6016480c0a92f5500c2c4b46fc58fbcf5a59cf",
+        "setCode": "",
+        "resolvedAt": "2026-08-17",
+        "matchScore": 160,
+        "searchQuery": "Dark Sylveon V SWSH134 jumbo"
+      }
+    }
   },
   "swshp-SWSH149": {
     "pokewalletId": "pk_ccfd0f2755b16ec3bd6e51efadfe6116734772de4073d075e535c51fb83a21746eafa6881ddc2b14966902fe62179282",
@@ -1812,7 +1875,16 @@
     "setCode": "SWSD",
     "resolvedAt": "2026-07-20",
     "matchScore": 140,
-    "searchQuery": "Flareon VMAX SWSH180"
+    "searchQuery": "Flareon VMAX SWSH180",
+    "variants": {
+      "jumbo": {
+        "pokewalletId": "pk_37c01b6223b6bdaa6465ec577ad00749409ea82431d6a5ca39087673c544cef0af0138320eaa60ecc06ebf9a995217",
+        "setCode": "",
+        "resolvedAt": "2026-08-17",
+        "matchScore": 160,
+        "searchQuery": "Flareon VMAX SWSH180 jumbo"
+      }
+    }
   },
   "swshp-SWSH181": {
     "pokewalletId": "pk_6d72379bd278dc41af6ff47574dfd3a4b5b10dbca7921ebb043fc88c1b4e7000704b9919f66d8cdc52c87074b9f782",
@@ -1826,7 +1898,16 @@
     "setCode": "SWSD",
     "resolvedAt": "2026-07-20",
     "matchScore": 140,
-    "searchQuery": "Vaporeon VMAX SWSH182"
+    "searchQuery": "Vaporeon VMAX SWSH182",
+    "variants": {
+      "jumbo": {
+        "pokewalletId": "pk_83d0f1c8c4eccc8d23677c006814a98b43e0fed33f1e1174caadbd127f1ef9e2c890e82a5013e3bcd8c254b6f146ef",
+        "setCode": "",
+        "resolvedAt": "2026-08-17",
+        "matchScore": 160,
+        "searchQuery": "Vaporeon VMAX SWSH182 jumbo"
+      }
+    }
   },
   "swshp-SWSH183": {
     "pokewalletId": "pk_54206ba5277c485543b3ec624b0b804ffc5743b5ad7f17af3cd6ac1463e255933633cb8cf9df79d54f30ecaab9d896",
@@ -1840,7 +1921,16 @@
     "setCode": "SWSD",
     "resolvedAt": "2026-07-20",
     "matchScore": 140,
-    "searchQuery": "Jolteon VMAX SWSH184"
+    "searchQuery": "Jolteon VMAX SWSH184",
+    "variants": {
+      "jumbo": {
+        "pokewalletId": "pk_e645ef98ceaac365d2516bc22b97e76d53e5ca3b58415b8f8534d7f2dfd0c080cb71fc36a888a62e07763edf7cd893",
+        "setCode": "",
+        "resolvedAt": "2026-08-17",
+        "matchScore": 160,
+        "searchQuery": "Jolteon VMAX SWSH184 jumbo"
+      }
+    }
   },
   "swshp-SWSH190": {
     "pokewalletId": "pk_9dc16880d9ddead889ee08901bffcdac062955a6cd393bc983121132482afc7bc8a62d71e68cd938797a5c45b627ba",

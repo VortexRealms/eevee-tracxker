@@ -1,11 +1,11 @@
-import type { PriceEntry } from "../types";
+import type { PriceEntry, VariantPriceRecord } from "../types";
 import { normalizePriceAmount, parsePriceCell } from "./parse-price";
 
 const DEFAULT_EUR_USD_RATE = 1.08;
 const MIN_EUR_USD_RATE = 0.5;
 const MAX_EUR_USD_RATE = 2;
 
-type VariantPrices = Record<string, { usd?: number | null; eur?: number | null }>;
+type VariantPrices = Record<string, VariantPriceRecord>;
 
 function firstVariantPrice(
   variants: VariantPrices,

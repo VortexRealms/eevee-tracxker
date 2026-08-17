@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "mappings": {
+    "ecard2-11.jumbo": {
+      "cardId": "ecard2-11",
+      "variant": "jumbo",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Espeon Aquapolis 11 jumbo",
+        "Espeon Aquapolis oversized 11",
+        "Pokemon Espeon AQ11 jumbo"
+      ],
+      "requiredTerms": ["espeon", "aquapolis"],
+      "preferredTerms": ["jumbo", "oversized", "11"],
+      "excludedTerms": [
+        "h9",
+        "reverse",
+        "normal",
+        "lot",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-17",
+      "note": "Aquapolis Espeon #11 oversized/jumbo — active fixed-price asking median only."
+    },
+    "smp-SM36.jumbo": {
+      "cardId": "smp-SM36",
+      "variant": "jumbo",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Umbreon GX SM36 jumbo",
+        "Umbreon GX SM36 oversized",
+        "Pokemon SM36 jumbo promo",
+        "Umbreon GX SM36 oversize"
+      ],
+      "requiredTerms": ["umbreon", "gx", "sm36"],
+      "preferredTerms": ["jumbo", "oversized", "oversize"],
+      "excludedTerms": [
+        "regular",
+        "standard",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-17",
+      "note": "SM36 Umbreon GX oversized/jumbo promo — active fixed-price asking median only."
+    },
+    "smp-SM174.jumbo": {
+      "cardId": "smp-SM174",
+      "variant": "jumbo",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Eevee GX SM174 jumbo",
+        "Eevee GX SM174 oversized",
+        "Pokemon SM174 jumbo promo"
+      ],
+      "requiredTerms": ["eevee", "gx", "sm174"],
+      "preferredTerms": ["jumbo", "oversized", "oversize"],
+      "excludedTerms": [
+        "regular",
+        "standard",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-17",
+      "note": "SM174 Eevee GX jumbo has a Pokewallet product but no Pokewallet price data; use active eBay asking median."
+    },
+    "smp-SM175.jumbo": {
+      "cardId": "smp-SM175",
+      "variant": "jumbo",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Eevee GX SM175 jumbo",
+        "Eevee GX SM175 oversized",
+        "Pokemon SM175 jumbo promo"
+      ],
+      "requiredTerms": ["eevee", "gx", "sm175"],
+      "preferredTerms": ["jumbo", "oversized", "oversize"],
+      "excludedTerms": [
+        "regular",
+        "standard",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-17",
+      "note": "SM175 Eevee GX jumbo has a Pokewallet product but no Pokewallet price data; use active eBay asking median."
+    }
+  }
+}

@@ -27,21 +27,39 @@ export interface CardPricing {
   updatedAt?: string;
 }
 
+export type PriceSource = "pokewallet" | "ebay" | "manual";
+export type PriceKind = "market" | "active_listing_median" | "manual";
+
+export interface VariantPriceRecord {
+  usd?: number | null;
+  eur?: number | null;
+  updatedAt?: string;
+  source?: PriceSource;
+  priceKind?: PriceKind;
+  sampleCount?: number;
+  metadata?: Record<string, unknown>;
+}
+
 export interface PriceEntry {
   usd?: number | null;
   eur?: number | null;
   updatedAt: string;
-  source?: "pokewallet" | "manual";
-  variants?: Record<string, { usd?: number | null; eur?: number | null }>;
+  source?: PriceSource;
+  variants?: Record<string, VariantPriceRecord>;
 }
 
 export interface PriceRow {
   cardId: string;
+  variant?: string;
   usd?: number | null;
   eur?: number | null;
   updatedAt?: string;
+  source?: PriceSource;
+  priceKind?: PriceKind;
+  sampleCount?: number | null;
+  metadataJson?: string;
+  /** Legacy Google Sheet column — card-level variants JSON blob. */
   variantsJson?: string;
-  source?: "pokewallet" | "manual";
 }
 
 export type DisplayCurrency = "USD" | "EUR" | "HUF" | "GBP";

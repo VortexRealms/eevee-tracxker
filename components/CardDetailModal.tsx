@@ -14,6 +14,7 @@ import {
 import type { DisplayCurrency, PokemonCard, PricesSnapshot } from "../types";
 import { metaToExchangeRates } from "../lib/exchange-rates";
 import { formatDisplayPrice, resolveDisplayAmount } from "../lib/display-price";
+import { getPriceForCard } from "../lib/cards";
 import { getVariantLabel } from "../lib/variant-labels";
 import { formatCameoLabel } from "../lib/cameo-catalogue";
 import {
@@ -211,7 +212,15 @@ export function CardDetailModal({ card, variant, prices, onClose }: CardDetailMo
     (p): p is { date: string; amount: number } => p.amount != null
   );
 
-  const currentAmount = usable.length ? usable[usable.length - 1].amount : null;
+  const livePrice = card && variant ? getPriceForCard(card, variant, prices) : null;
+  const liveDisplay =
+    livePrice != null
+      ? resolveDisplayAmount(livePrice, currency, rates)
+      : { amount: null as number | null, source: null };
+
+  const currentAmount =
+    liveDisplay.amount ??
+    (usable.length ? usable[usable.length - 1].amount : null);
   const lowAmount = usable.length ? Math.min(...usable.map((p) => p.amount)) : null;
   const changePercent =
     usable.length >= 2 && usable[0].amount !== 0

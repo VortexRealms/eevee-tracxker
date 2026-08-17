@@ -4,7 +4,7 @@ A personal **Next.js 14** app for tracking a **Pokémon TCG** collection focused
 
 - **Deployed web app** — login, checklist, card detail with price charts, public showcase, display-currency settings. No admin tools or fetch scripts in the UI.
 - **Your machine** — catalogue rebuilds, Pokewallet price fetches, and Sheet seeding run locally via npm scripts.
-- **Google Sheets** — live source of truth for **collection ownership** and **current market prices** at runtime.
+- **Google Sheets** — legacy migration source for collection ownership; live prices are stored in SQLite (`data/price-history.sqlite`).
 - **`data/cards.json`** — bundled at build time; redeploy when the catalogue changes.
 - **`data/price-history.sqlite`** — git-tracked daily price snapshots (31-day retention) for charts and historical stats in the card detail modal.
 
@@ -53,7 +53,7 @@ Collection and **live** price updates from local scripts appear after a **browse
 - **Card detail modal** (checklist only) — Click a card to open an overlay with large art, **Current Price**, **30D Low**, **30D Change**, pressable **variant tabs**, a **30-day price chart** (Recharts), and marketplace buttons. All modal price metrics and the chart come from **`price-history.sqlite`**, not the live Sheet.
 - **Sticky header stats** — When you scroll past the statistics panel, **% owned** and **estimated value** appear compactly in the top bar.
 - **Public showcase** — [`/public`](#app-routes--api) shows **owned cards only**, read-only, with a simple full-art image modal (no price chart).
-- **Live pricing** — Current prices on card tiles from the [Pokewallet API](https://www.pokewallet.io/api-docs), stored in the Sheet **`prices`** tab. Run [`fetch:prices`](#pricing-pipeline) on a schedule locally; refresh the app to see updates. Rows with `source=manual` are never overwritten by the fetch script.
+- **Live pricing** — Current prices on card tiles from the [Pokewallet API](https://www.pokewallet.io/api-docs) and optional explicit [eBay Browse](https://developer.ebay.com/api-docs/buy/browse/overview.html) mappings, stored in **`data/price-history.sqlite`**. Run [`fetch:prices`](#pricing-pipeline) on a schedule locally; refresh the app to see updates. Manual variant rows are never overwritten by fetch.
 - **Display currency** — [`/settings`](#app-routes--api): USD, EUR, HUF, or GBP (browser preference). FX from [Frankfurter](https://www.frankfurter.app/) at runtime.
 - **Manual card overrides** — [`data/manual-cards.json`](#data-files-data) replaces fetched rows by card ID (promos, custom images, sets not in TCGdex).
 - **Included extras** — [`data/included-cards.json`](#data-files-data) adds TCGdex cards beyond Eeveelution name queries. Use [`cards:pick`](#cardspick-commands) to search and add interactively.
@@ -67,7 +67,7 @@ Collection and **live** price updates from local scripts appear after a **browse
 The built app on Vercel (or `npm start`) does **only** this:
 
 1. Serves the static catalogue from **`data/cards.json`** (committed / built into the bundle).
-2. Reads **collection** and **current prices** from **Google Sheets** on each API request.
+2. Reads **collection** from **Supabase Postgres** and **current prices** from **`data/price-history.sqlite`** on each API request.
 3. Reads **price history** from **`data/price-history.sqlite`** for the card detail modal chart and stats (`GET /api/price-history`).
 4. Fetches **live exchange rates** from Frankfurter when serving collection data (1-hour server cache; Sheet meta as fallback).
 5. Converts stored USD/EUR variant prices into your chosen **display currency** in the UI.

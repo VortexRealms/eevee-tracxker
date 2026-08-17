@@ -333,13 +333,20 @@ export function CardGrid({
         marketplaceLinks={<MarketplaceLinks card={card} />}
         priceNode={
           showPrices && exchangeRates ? (
-            <CardPriceLabel
-              price={getPriceForCard(card, variant, prices)}
-              currency={currency}
-              rates={exchangeRates}
-              updatedAt={prices?.entries[card.id]?.updatedAt}
-              priceSource={prices?.entries[card.id]?.source}
-            />
+            (() => {
+              const resolved = getPriceForCard(card, variant, prices);
+              return (
+                <CardPriceLabel
+                  price={resolved}
+                  currency={currency}
+                  rates={exchangeRates}
+                  updatedAt={resolved.updatedAt}
+                  priceSource={resolved.source}
+                  priceKind={resolved.priceKind}
+                  sampleCount={resolved.sampleCount}
+                />
+              );
+            })()
           ) : null
         }
         desktopMeta={

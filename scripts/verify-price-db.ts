@@ -10,6 +10,7 @@ const expectedDate = process.argv[2] ?? localTodayIso();
 const result = verifyPriceDbIntegrity(undefined, expectedDate);
 
 console.log(`integrity_check: ${result.integrityCheck}`);
+console.log(`schema_version: ${result.schemaVersion}`);
 console.log(`has_meta: ${result.hasMeta}`);
 console.log(`current_prices: ${result.currentPriceCount}`);
 console.log(`latest_snapshot: ${result.latestSnapshotDate ?? "none"}`);

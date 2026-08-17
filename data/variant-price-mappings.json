@@ -2072,7 +2072,7 @@
       "cardNumber": "11",
       "priceSheetVariant": null,
       "sqliteVariants": [],
-      "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
+      "note": "eBay asking median via data/ebay-price-mappings.json (ecard2-11.jumbo)."
     },
     "ecard2-11.normal": {
       "cardName": "Espeon",
@@ -3971,7 +3971,7 @@
       "cardNumber": "SM171",
       "priceSheetVariant": null,
       "sqliteVariants": [],
-      "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
+      "note": "Pokewallet jumbo product pk_69d772ab… (TCGPlayer Jumbo Cards pricing)."
     },
     "smp-SM172.holo": {
       "cardName": "Vaporeon GX",
@@ -3989,7 +3989,7 @@
       "cardNumber": "SM172",
       "priceSheetVariant": null,
       "sqliteVariants": [],
-      "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
+      "note": "Pokewallet jumbo product pk_7ab47269… (TCGPlayer Jumbo Cards pricing)."
     },
     "smp-SM173.holo": {
       "cardName": "Jolteon GX",
@@ -4007,7 +4007,7 @@
       "cardNumber": "SM173",
       "priceSheetVariant": null,
       "sqliteVariants": [],
-      "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
+      "note": "Pokewallet jumbo product pk_7f33a5e2… (TCGPlayer Jumbo Cards pricing)."
     },
     "smp-SM174.holo": {
       "cardName": "Eevee GX",
@@ -4025,7 +4025,7 @@
       "cardNumber": "SM174",
       "priceSheetVariant": null,
       "sqliteVariants": [],
-      "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
+      "note": "eBay asking median; Pokewallet jumbo product pk_0e086c01… currently has no price rows."
     },
     "smp-SM175.holo": {
       "cardName": "Eevee GX",
@@ -4043,7 +4043,7 @@
       "cardNumber": "SM175",
       "priceSheetVariant": null,
       "sqliteVariants": [],
-      "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
+      "note": "eBay asking median; Pokewallet jumbo product pk_7fe029db… currently has no price rows."
     },
     "smp-SM176.normal": {
       "cardName": "Eevee GX",
@@ -4126,7 +4126,7 @@
       "cardNumber": "SM240",
       "priceSheetVariant": null,
       "sqliteVariants": [],
-      "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
+      "note": "Pokewallet jumbo product pk_cbdeefd4… (TCGPlayer Jumbo Cards pricing)."
     },
     "smp-SM241.holo": {
       "cardName": "Umbreon & Darkrai GX",
@@ -4144,7 +4144,7 @@
       "cardNumber": "SM241",
       "priceSheetVariant": null,
       "sqliteVariants": [],
-      "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
+      "note": "Pokewallet jumbo product pk_fae06290… (TCGPlayer Jumbo Cards pricing)."
     },
     "smp-SM242.normal": {
       "cardName": "Eevee GX",
@@ -4169,7 +4169,7 @@
       "cardNumber": "SM35",
       "priceSheetVariant": null,
       "sqliteVariants": [],
-      "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
+      "note": "Pokewallet product pk_0985bddf… is the TCGPlayer Jumbo Cards SM35 product."
     },
     "smp-SM36.holo": {
       "cardName": "Umbreon GX",
@@ -6079,7 +6079,7 @@
       "cardNumber": "SWSH134",
       "priceSheetVariant": null,
       "sqliteVariants": [],
-      "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
+      "note": "Pokewallet jumbo product pk_760fe6f3… (TCGPlayer Jumbo Cards pricing)."
     },
     "swshp-SWSH149.holo": {
       "cardName": "Flareon V",
@@ -6163,7 +6163,7 @@
       "cardNumber": "SWSH180",
       "priceSheetVariant": null,
       "sqliteVariants": [],
-      "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
+      "note": "Pokewallet jumbo product pk_37c01b62… (TCGPlayer Jumbo Cards pricing)."
     },
     "swshp-SWSH181.normal": {
       "cardName": "Vaporeon V",
@@ -6188,7 +6188,7 @@
       "cardNumber": "SWSH182",
       "priceSheetVariant": null,
       "sqliteVariants": [],
-      "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
+      "note": "Pokewallet jumbo product pk_83d0f1c8… (TCGPlayer Jumbo Cards pricing)."
     },
     "swshp-SWSH183.normal": {
       "cardName": "Jolteon V",
@@ -6213,7 +6213,7 @@
       "cardNumber": "SWSH184",
       "priceSheetVariant": null,
       "sqliteVariants": [],
-      "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
+      "note": "Pokewallet jumbo product pk_e645ef98… (TCGPlayer Jumbo Cards pricing)."
     },
     "swshp-SWSH190.normal": {
       "cardName": "Eevee",

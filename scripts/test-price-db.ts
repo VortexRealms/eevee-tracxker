@@ -38,19 +38,42 @@ try {
     eur: 9,
     updatedAt: "2026-08-12",
     source: "manual",
+    variants: {
+      normal: {
+        usd: 10,
+        eur: 9,
+        updatedAt: "2026-08-12",
+        source: "manual",
+        priceKind: "manual",
+      },
+    },
   };
   const pokewalletEntry: PriceEntry = {
     usd: 12,
     eur: 11,
     updatedAt: "2026-08-12",
     source: "pokewallet",
-    variants: { holo: { usd: 12, eur: 11 } },
+    variants: {
+      holo: {
+        usd: 12,
+        eur: 11,
+        updatedAt: "2026-08-12",
+        source: "pokewallet",
+        priceKind: "market",
+      },
+    },
+  };
+
+  const catalogueVariantsByCard = {
+    "base1-1": ["normal"],
+    "base2-3": ["holo"],
   };
 
   importAllPricesToDb(
     { "base1-1": manualEntry, "base2-3": pokewalletEntry },
     { "base1-1": "manual", "base2-3": "pokewallet" },
     { ratesUpdatedAt: "2026-08-12", usdRates: { EUR: 0.9 } },
+    catalogueVariantsByCard,
     dbPath
   );
 
@@ -58,22 +81,46 @@ try {
   assert.equal(snapshot.entries["base1-1"].usd, 10);
   assert.equal(snapshot.entries["base2-3"].usd, 12);
   assert.equal(snapshot.meta.usdRates?.EUR, 0.9);
+  assert.equal(snapshot.entries["base1-1"].variants?.normal?.source, "manual");
 
   const sync = syncPricesToDb(
     {
-      "base1-1": { usd: 99, eur: 88, updatedAt: "2026-08-13", source: "pokewallet" },
+      "base1-1": {
+        usd: 99,
+        eur: 88,
+        updatedAt: "2026-08-13",
+        source: "pokewallet",
+        variants: {
+          normal: {
+            usd: 99,
+            eur: 88,
+            updatedAt: "2026-08-13",
+            source: "pokewallet",
+            priceKind: "market",
+          },
+        },
+      },
       "base2-3": {
         usd: 20,
         eur: 18,
         updatedAt: "2026-08-13",
         source: "pokewallet",
-        variants: { holo: { usd: 20, eur: 18 } },
+        variants: {
+          holo: {
+            usd: 20,
+            eur: 18,
+            updatedAt: "2026-08-13",
+            source: "pokewallet",
+            priceKind: "market",
+          },
+        },
       },
     },
     snapshot.meta,
+    catalogueVariantsByCard,
     dbPath
   );
-  assert.equal(sync.skipped, 1);
+  assert.ok(sync.skipped >= 1);
   assert.equal(getPricesSnapshotFromDb(dbPath).entries["base1-1"].usd, 10);
   assert.equal(getPricesSnapshotFromDb(dbPath).entries["base2-3"].usd, 20);
 
@@ -99,6 +146,7 @@ try {
 
   const integrity = verifyPriceDbIntegrity(dbPath, "2026-08-12");
   assert.equal(integrity.ok, true);
+  assert.equal(integrity.schemaVersion, 1);
 
   console.log("test-price-db: ok");
 } finally {

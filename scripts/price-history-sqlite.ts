@@ -224,10 +224,9 @@ export function writePriceHistorySnapshot(input: {
 
   const writeSnapshot = db.transaction(() => {
     for (const card of input.allCards) {
-      const entry = input.snapshot.entries[card.id];
-
       for (const variant of catalogueVariants(card)) {
-        const { usd, eur } = getPriceForCard(card, variant, input.snapshot);
+        const resolved = getPriceForCard(card, variant, input.snapshot);
+        const { usd, eur } = resolved;
         if (!hasNativePrice(usd, eur)) continue;
 
         const key = `${card.id}\0${variant}`;
@@ -240,8 +239,8 @@ export function writePriceHistorySnapshot(input: {
           observed_date: input.observedDate,
           usd,
           eur,
-          source: entry?.source ?? null,
-          source_updated_at: entry?.updatedAt ?? null,
+          source: resolved.source ?? null,
+          source_updated_at: resolved.updatedAt ?? null,
           recorded_at: recordedAt,
         });
         pointCount++;

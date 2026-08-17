@@ -7,6 +7,7 @@ import type {
   PriceEntry,
   PricesMeta,
   PricesSnapshot,
+  VariantPriceRecord,
 } from "../types";
 
 export function getAllCards(): PokemonCard[] {
@@ -30,17 +31,31 @@ export function parseCardIdAndVariant(
 export interface ResolvedPrice {
   usd: number | null;
   eur: number | null;
+  updatedAt?: string;
+  source?: import("../types").PriceSource;
+  priceKind?: import("../types").PriceKind;
+  sampleCount?: number;
 }
 
 type VariantPrices = NonNullable<PriceEntry["variants"]>;
 
-function readVariantPrices(
-  prices: { usd?: number | null; eur?: number | null } | undefined
+function recordToResolved(
+  record: VariantPrices[string] | undefined
 ): ResolvedPrice {
   return {
-    usd: normalizePriceAmount(prices?.usd),
-    eur: normalizePriceAmount(prices?.eur),
+    usd: normalizePriceAmount(record?.usd),
+    eur: normalizePriceAmount(record?.eur),
+    updatedAt: record?.updatedAt,
+    source: record?.source,
+    priceKind: record?.priceKind,
+    sampleCount: record?.sampleCount,
   };
+}
+
+function readVariantPrices(
+  prices: VariantPrices[string] | undefined
+): ResolvedPrice {
+  return recordToResolved(prices);
 }
 
 function hasPrice(price: ResolvedPrice): boolean {
@@ -106,15 +121,79 @@ export function getPriceForCard(
   const base = snapshot.entries[card.id];
 
   const v = variant ?? "normal";
-  const strict = readVariantPrices(base?.variants?.[v]);
-  if (hasPrice(strict)) return strict;
+  const strictRecord = base?.variants?.[v];
+  const strict = readVariantPrices(strictRecord);
+  if (hasPrice(strict)) {
+    return {
+      ...strict,
+      source: strict.source ?? base?.source,
+      priceKind:
+        strict.priceKind ??
+        (base?.source === "manual" ? "manual" : strict.priceKind),
+    };
+  }
 
   if (card.variants?.length === 1) {
     const aliased = resolveSingleVariantAlias(card, base?.variants);
-    if (hasPrice(aliased)) return aliased;
+    if (hasPrice(aliased)) {
+      const record = getVariantPriceRecord(card, v, base);
+      return {
+        ...aliased,
+        updatedAt: record?.updatedAt ?? base?.updatedAt,
+        source: record?.source ?? base?.source,
+        priceKind: record?.priceKind,
+        sampleCount: record?.sampleCount,
+      };
+    }
   }
 
   return { usd: null, eur: null };
+}
+
+/**
+ * Resolve the effective variant price record for a catalogue slot, including
+ * single-variant alias behavior when Pokewallet uses a different variantsJson key.
+ */
+export function getVariantPriceRecord(
+  card: PokemonCard,
+  variant: string | undefined,
+  entry: PriceEntry | undefined
+): VariantPriceRecord | null {
+  if (!entry) return null;
+
+  const v = variant ?? "normal";
+  const strict = entry.variants?.[v];
+  if (strict && hasPrice(readVariantPrices(strict))) {
+    return {
+      ...strict,
+      usd: normalizePriceAmount(strict.usd),
+      eur: normalizePriceAmount(strict.eur),
+      updatedAt: strict.updatedAt ?? entry.updatedAt,
+      source: strict.source ?? entry.source,
+      priceKind: strict.priceKind,
+    };
+  }
+
+  if (card.variants?.length === 1 && entry.variants) {
+    const aliased = resolveSingleVariantAlias(card, entry.variants);
+    if (hasPrice(aliased)) {
+      const pricedEntry = Object.entries(entry.variants).find(([, p]) =>
+        hasPrice(readVariantPrices(p))
+      );
+      const record = pricedEntry?.[1];
+      return {
+        usd: aliased.usd,
+        eur: aliased.eur,
+        updatedAt: record?.updatedAt ?? entry.updatedAt,
+        source: record?.source ?? entry.source,
+        priceKind: record?.priceKind,
+        sampleCount: record?.sampleCount,
+        metadata: record?.metadata,
+      };
+    }
+  }
+
+  return null;
 }
 
 export function mergeCardsWithCollection(

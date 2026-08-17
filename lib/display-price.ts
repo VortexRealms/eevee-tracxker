@@ -6,7 +6,7 @@ import {
 import type { ExchangeRates } from "./exchange-rates";
 import { normalizePriceAmount } from "./parse-price";
 import { variantSortIndex } from "./variant-labels";
-import type { DisplayCurrency, PokemonCard, PricesSnapshot } from "../types";
+import type { DisplayCurrency, PokemonCard, PriceKind, PriceSource, PricesSnapshot } from "../types";
 
 export type DisplayPriceSource = "native-usd" | "native-eur" | "converted" | null;
 
@@ -165,14 +165,29 @@ export function formatCardPriceLabel(
   return `${formatted} ${currency}`;
 }
 
-export function displayPriceTitle(source: DisplayPriceSource): string | undefined {
+export function displayPriceTitle(
+  source: DisplayPriceSource,
+  priceKind?: PriceKind,
+  dataSource?: PriceSource
+): string | undefined {
   if (source === "converted") {
+    if (dataSource === "ebay") {
+      return "Converted from eBay asking median (USD)";
+    }
     return "Converted using current exchange rates";
   }
   if (source === "native-usd") {
+    if (dataSource === "ebay" || priceKind === "active_listing_median") {
+      return "eBay asking median (USD)";
+    }
+    if (dataSource === "manual") return "Manual price (USD)";
     return "TCGPlayer (USD)";
   }
   if (source === "native-eur") {
+    if (dataSource === "ebay" || priceKind === "active_listing_median") {
+      return "eBay asking median (EUR, converted)";
+    }
+    if (dataSource === "manual") return "Manual price (EUR)";
     return "Cardmarket (EUR)";
   }
   return undefined;
@@ -180,7 +195,9 @@ export function displayPriceTitle(source: DisplayPriceSource): string | undefine
 
 export interface PriceChipTooltipInput {
   updatedAt?: string;
-  source?: "pokewallet" | "manual";
+  source?: PriceSource;
+  priceKind?: PriceKind;
+  sampleCount?: number;
   fallbackVariantLabel?: string;
   isEmpty?: boolean;
   currency?: DisplayCurrency;
@@ -205,14 +222,27 @@ function formatTooltipDate(updatedAt: string): string | null {
 }
 
 function priceUpdateLabel(
-  source: "pokewallet" | "manual" | undefined,
-  updatedAt?: string
+  source: PriceSource | undefined,
+  updatedAt?: string,
+  priceKind?: PriceKind,
+  sampleCount?: number
 ): string {
-  const verb = source === "manual" ? "Entered manually" : "Fetched";
+  if (source === "manual") {
+    const formatted = updatedAt ? formatTooltipDate(updatedAt) : null;
+    return formatted ? `Entered manually ${formatted}` : "Entered manually";
+  }
+  if (source === "ebay" || priceKind === "active_listing_median") {
+    const formatted = updatedAt ? formatTooltipDate(updatedAt) : null;
+    const sample =
+      sampleCount != null ? ` from ${sampleCount} active listing${sampleCount === 1 ? "" : "s"}` : "";
+    return formatted
+      ? `eBay asking median${sample} · ${formatted}`
+      : `eBay asking median${sample}`;
+  }
   const formatted = updatedAt ? formatTooltipDate(updatedAt) : null;
-  if (formatted) return `${verb} ${formatted}`;
-  if (updatedAt?.trim()) return `${verb} (${updatedAt.trim()})`;
-  return source === "manual" ? "Entered manually" : "Fetched";
+  if (formatted) return `Fetched ${formatted}`;
+  if (updatedAt?.trim()) return `Fetched (${updatedAt.trim()})`;
+  return "Fetched";
 }
 
 /** Native title tooltip for card price chips (Sheet updatedAt + source). */
@@ -223,7 +253,12 @@ export function formatPriceChipTooltip(input: PriceChipTooltipInput): string | u
       : "No price available";
   }
 
-  const updateLine = priceUpdateLabel(input.source, input.updatedAt);
+  const updateLine = priceUpdateLabel(
+    input.source,
+    input.updatedAt,
+    input.priceKind,
+    input.sampleCount
+  );
   if (input.fallbackVariantLabel) {
     return `${input.fallbackVariantLabel} · ${updateLine}`;
   }
