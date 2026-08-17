@@ -12,6 +12,7 @@ import type {
   PriceSource,
   PricesMeta,
   PricesSnapshot,
+  PokemonCard,
 } from "../types";
 import {
   metaToExchangeRates,
@@ -319,6 +320,7 @@ export function syncPricesToDb(
   entries: Record<string, PriceEntry>,
   meta: PricesMeta,
   catalogueVariantsByCard: Record<string, string[]> = {},
+  cardsById: Record<string, PokemonCard> = {},
   dbPath = PRICE_DB_PATH
 ): SyncPricesResult {
   const existingSnapshot = getPricesSnapshotFromDb(dbPath);
@@ -333,6 +335,7 @@ export function syncPricesToDb(
     const catalogueVariants = catalogueVariantsByCard[cardId] ?? [];
     const expanded = expandEntryToVariantRows(cardId, merged, catalogueVariants, {
       includeOrphans: true,
+      card: cardsById[cardId],
     });
 
     for (const row of expanded) {
@@ -367,6 +370,21 @@ export function syncPricesToDb(
   }
 
   const result = syncVariantRowsToDb(mergedRows, meta, dbPath);
+
+  const db = openPriceDb(dbPath);
+  try {
+    for (const [cardId, card] of Object.entries(cardsById)) {
+      if (!card.variants?.includes("holo") || card.variants.includes("normal")) {
+        continue;
+      }
+      db.prepare(`DELETE FROM current_prices WHERE card_id = ? AND variant = 'normal'`).run(
+        cardId
+      );
+    }
+  } finally {
+    db.close();
+  }
+
   return { ...result, skipped: result.skipped + manualSkipped };
 }
 

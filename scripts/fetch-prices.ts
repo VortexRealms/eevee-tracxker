@@ -19,6 +19,7 @@ import {
 import { localTodayIso, shouldSkipVariantPriceFetch } from "../lib/fetch-price-skip";
 import { loadEbayPriceMappings, slotKey } from "../lib/ebay-price-mappings";
 import { mergePriceEntries } from "../lib/price-merge";
+import { mergeHoloOnlyPromoPriceEntry } from "../lib/cards";
 import { applyVariantRecordToEntry, buildProviderPlan } from "../lib/price-provider-planner";
 import { getPricesSnapshotFromDb, syncPricesToDb } from "../lib/price-db";
 import { loadEnvFiles } from "./load-env";
@@ -66,6 +67,10 @@ function buildCatalogueVariantsByCard(cards: PokemonCard[]): Record<string, stri
   return out;
 }
 
+function buildCardsById(cards: PokemonCard[]): Record<string, PokemonCard> {
+  return Object.fromEntries(cards.map((card) => [card.id, card]));
+}
+
 async function main() {
   await loadEnvFiles();
   const argv = process.argv.slice(2);
@@ -79,6 +84,7 @@ async function main() {
   const cache = await loadJson<PokewalletIdCache>(cachePath, {});
   const ebayMappings = loadEbayPriceMappings();
   const catalogueVariantsByCard = buildCatalogueVariantsByCard(allCards);
+  const cardsById = buildCardsById(allCards);
 
   console.log("  Loading existing prices from SQLite...");
   const existingSnapshot = getPricesSnapshotFromDb();
@@ -136,7 +142,8 @@ async function main() {
     const result = syncPricesToDb(
       fetchedEntries,
       meta,
-      catalogueVariantsByCard
+      catalogueVariantsByCard,
+      cardsById
     );
     console.log(
       `\n  Synced to SQLite: ${result.updated} updated, ${result.appended} appended, ${result.skipped} manual skipped`
@@ -196,7 +203,11 @@ async function main() {
           }
 
           const prior = fetchedEntries[job.cardId];
-          fetchedEntries[job.cardId] = mergePriceEntries(part, prior);
+          const card = cardsById[job.cardId];
+          const mergedPart = card
+            ? mergeHoloOnlyPromoPriceEntry(card, part)
+            : part;
+          fetchedEntries[job.cardId] = mergePriceEntries(mergedPart, prior);
           priced++;
           syncedSinceLast++;
         }
@@ -315,7 +326,8 @@ async function main() {
   const syncResult = syncPricesToDb(
     fetchedEntries,
     meta,
-    catalogueVariantsByCard
+    catalogueVariantsByCard,
+    cardsById
   );
 
   const finalSnapshot = { meta, entries: fetchedEntries };

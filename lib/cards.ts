@@ -94,6 +94,52 @@ export function resolveSingleVariantAlias(
   return { usd: null, eur: null };
 }
 
+/** Promo cards that are holofoil-only in print but Pokewallet splits TCG (holo) vs CM (normal). */
+export function isHoloOnlyPromoCard(card: PokemonCard): boolean {
+  const variants = card.variants ?? [];
+  return variants.includes("holo") && !variants.includes("normal");
+}
+
+function mergeHoloOnlyPromoVariantRecords(
+  holo: VariantPrices[string] | undefined,
+  normal: VariantPrices[string] | undefined,
+  entry: PriceEntry
+): VariantPriceRecord | null {
+  const usd =
+    normalizePriceAmount(holo?.usd) ?? normalizePriceAmount(normal?.usd);
+  const eur =
+    normalizePriceAmount(normal?.eur) ?? normalizePriceAmount(holo?.eur);
+  if (usd == null && eur == null) return null;
+
+  return {
+    usd,
+    eur,
+    updatedAt: holo?.updatedAt ?? normal?.updatedAt ?? entry.updatedAt,
+    source: holo?.source ?? normal?.source ?? entry.source ?? "pokewallet",
+    priceKind: holo?.priceKind ?? normal?.priceKind,
+    sampleCount: holo?.sampleCount ?? normal?.sampleCount,
+    metadata: holo?.metadata ?? normal?.metadata,
+  };
+}
+
+/** Collapse Pokewallet normal+holo keys onto catalogue holo for holo-only promos. */
+export function mergeHoloOnlyPromoPriceEntry(
+  card: PokemonCard,
+  entry: PriceEntry
+): PriceEntry {
+  if (!isHoloOnlyPromoCard(card) || !entry.variants) return entry;
+
+  const mergedHolo = mergeHoloOnlyPromoVariantRecords(
+    entry.variants.holo,
+    entry.variants.normal,
+    entry
+  );
+  if (!mergedHolo) return entry;
+
+  const { normal: _removed, ...rest } = entry.variants;
+  return { ...entry, variants: { ...rest, holo: mergedHolo } };
+}
+
 const EMPTY_SNAPSHOT: PricesSnapshot = {
   meta: { ratesUpdatedAt: "" },
   entries: {},
@@ -124,6 +170,21 @@ export function getPriceForCard(
   const strictRecord = base?.variants?.[v];
   const strict = readVariantPrices(strictRecord);
   if (hasPrice(strict)) {
+    if (v === "holo" && isHoloOnlyPromoCard(card) && base?.variants?.normal) {
+      const merged = mergeHoloOnlyPromoVariantRecords(
+        base.variants.holo,
+        base.variants.normal,
+        base
+      );
+      if (merged && hasPrice(recordToResolved(merged))) {
+        return {
+          ...recordToResolved(merged),
+          source: merged.source ?? base?.source,
+          priceKind: merged.priceKind,
+          sampleCount: merged.sampleCount,
+        };
+      }
+    }
     return {
       ...strict,
       source: strict.source ?? base?.source,
@@ -162,6 +223,16 @@ export function getVariantPriceRecord(
   if (!entry) return null;
 
   const v = variant ?? "normal";
+
+  if (v === "holo" && isHoloOnlyPromoCard(card) && entry.variants) {
+    const merged = mergeHoloOnlyPromoVariantRecords(
+      entry.variants.holo,
+      entry.variants.normal,
+      entry
+    );
+    if (merged) return merged;
+  }
+
   const strict = entry.variants?.[v];
   if (strict && hasPrice(readVariantPrices(strict))) {
     return {

@@ -6215,7 +6215,6 @@
       "large": "https://images.pokemontcg.io/smp/SM240_hires.png"
     },
     "variants": [
-      "normal",
       "holo",
       "jumbo"
     ]
@@ -7178,7 +7177,6 @@
       "large": "https://assets.tcgdex.net/en/sm/sm11/72/high.png"
     },
     "variants": [
-      "normal",
       "holo",
       "worldChampionshipDeck2019HenryBrand"
     ]

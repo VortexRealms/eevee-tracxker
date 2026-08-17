@@ -118,6 +118,7 @@ try {
     },
     snapshot.meta,
     catalogueVariantsByCard,
+    {},
     dbPath
   );
   assert.ok(sync.skipped >= 1);

@@ -9,39 +9,31 @@
         "cardNumber": "string — identification only",
         "priceSheetVariant": "string | null — key inside prices.variantsJson; null = manual price only or no API price",
         "sqliteVariants": "string[] — price_history variant values to read for this slot; empty = use catalogue variant as-is",
-        "note": "string (optional) — hints when orphan price or SQLite data needs manual review"
+        "note": "string (optional) — hints when legacy data was parked on the first variant pending manual move"
       }
     },
     "generatedBy": "scripts/build-variant-price-mappings.ts",
-    "updatedAt": "2026-08-10",
+    "updatedAt": "2026-08-17",
     "notes": "Every catalogue slot is listed. priceSheetVariant uses the normalized key stored in prices.variantsJson (normal, holo, reverse, or firstEdition), or null for manual-only/no API pricing. sqliteVariants contains only legacy price-history aliases; empty means use the catalogue variant key as-is.",
     "unresolvedCardIds": {
       "description": "Legacy references whose base cardId no longer exists in data/cards.json.",
-      "ids": [
-        "2019sm-12:holo"
-      ]
+      "ids": []
     }
   },
   "cards": {
-    "2016xy-12.normal": {
+    "2016xy-12.holo": {
       "cardName": "Eevee",
       "setName": "McDonald's Collection 2016",
       "cardNumber": "12",
       "priceSheetVariant": "holo",
-      "sqliteVariants": [
-        "holo"
-      ],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "sqliteVariants": []
     },
-    "2018sm-11.normal": {
+    "2018sm-11.holo": {
       "cardName": "Eevee",
       "setName": "McDonald's Collection 2018",
       "cardNumber": "11",
       "priceSheetVariant": "holo",
-      "sqliteVariants": [
-        "holo"
-      ],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "sqliteVariants": []
     },
     "2024sv-13.normal": {
       "cardName": "Eevee",
@@ -64,15 +56,12 @@
       "priceSheetVariant": "firstEdition",
       "sqliteVariants": []
     },
-    "base2-12.normal": {
+    "base2-12.holo": {
       "cardName": "Vaporeon",
       "setName": "Jungle",
       "cardNumber": "12",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ],
-      "note": "Move sqliteVariants to the slot that should read history stored as \"holo\"."
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
     "base2-19.firstEdition": {
       "cardName": "Flareon",
@@ -120,18 +109,16 @@
       "cardName": "Flareon",
       "setName": "Jungle",
       "cardNumber": "3",
-      "priceSheetVariant": "firstEdition",
-      "sqliteVariants": []
+      "priceSheetVariant": null,
+      "sqliteVariants": [],
+      "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
     },
-    "base2-3.normal": {
+    "base2-3.holo": {
       "cardName": "Flareon",
       "setName": "Jungle",
       "cardNumber": "3",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ],
-      "note": "Move sqliteVariants to the slot that should read history stored as \"holo\"."
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
     "base2-4.firstEdition": {
       "cardName": "Jolteon",
@@ -140,15 +127,12 @@
       "priceSheetVariant": "firstEdition",
       "sqliteVariants": []
     },
-    "base2-4.normal": {
+    "base2-4.holo": {
       "cardName": "Jolteon",
       "setName": "Jungle",
       "cardNumber": "4",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ],
-      "note": "Move sqliteVariants to the slot that should read history stored as \"holo\"."
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
     "base2-51.firstEdition": {
       "cardName": "Eevee",
@@ -232,16 +216,21 @@
       "setName": "Wizards Black Star Promos",
       "cardNumber": "11",
       "priceSheetVariant": "wPromo",
-      "sqliteVariants": [],
-      "note": "JR East Stamp Rally / W Promo; Pokewallet listing pk_c494ec… (separate from holo promo)."
+      "sqliteVariants": []
+    },
+    "basep-49.normal": {
+      "cardName": "Snorlax",
+      "setName": "Wizards Black Star Promos",
+      "cardNumber": "49",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "bw11-RC14.normal": {
       "cardName": "Eevee",
       "setName": "Legendary Treasures",
       "cardNumber": "RC14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "bw5-12.league": {
       "cardName": "Flareon",
@@ -659,77 +648,82 @@
       "priceSheetVariant": "reverse",
       "sqliteVariants": []
     },
+    "bwp-190.normal": {
+      "cardName": "Pokémon Center",
+      "setName": "BW-P Promos",
+      "cardNumber": "190",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "bwp-2012.normal": {
+      "cardName": "_____'s Pikachu",
+      "setName": "BW-P Promos",
+      "cardNumber": "©2012",
+      "priceSheetVariant": null,
+      "sqliteVariants": []
+    },
     "bwp-BW87.normal": {
       "cardName": "Leafeon",
       "setName": "BW Black Star Promos",
       "cardNumber": "BW87",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "bwp-BW88.normal": {
       "cardName": "Flareon",
       "setName": "BW Black Star Promos",
       "cardNumber": "BW88",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "bwp-BW89.normal": {
       "cardName": "Vaporeon",
       "setName": "BW Black Star Promos",
       "cardNumber": "BW89",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "bwp-BW90.normal": {
       "cardName": "Glaceon",
       "setName": "BW Black Star Promos",
       "cardNumber": "BW90",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "bwp-BW91.normal": {
       "cardName": "Jolteon",
       "setName": "BW Black Star Promos",
       "cardNumber": "BW91",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "bwp-BW92.normal": {
       "cardName": "Espeon",
       "setName": "BW Black Star Promos",
       "cardNumber": "BW92",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "bwp-BW93.normal": {
       "cardName": "Umbreon",
       "setName": "BW Black Star Promos",
       "cardNumber": "BW93",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "bwp-BW94.normal": {
       "cardName": "Eevee",
       "setName": "BW Black Star Promos",
       "cardNumber": "BW94",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "bwp-BW97.normal": {
       "cardName": "Eevee",
       "setName": "BW Black Star Promos",
       "cardNumber": "BW97",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-1004.normal": {
       "cardName": "Penny",
@@ -742,41 +736,36 @@
       "cardName": "Eevee",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "01 01/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-102.normal": {
       "cardName": "Eevee",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "01 02/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-103.normal": {
       "cardName": "Eevee",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "01 03/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-104.normal": {
       "cardName": "Eevee",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "01 04/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-105.normal": {
       "cardName": "Eevee",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "01 05/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-106.normal": {
       "cardName": "Eevee",
@@ -789,41 +778,36 @@
       "cardName": "Eevee",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "01 07/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-108.normal": {
       "cardName": "Eevee",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "01 08/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-109.normal": {
       "cardName": "Eevee",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "01 09/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-110.normal": {
       "cardName": "Eevee",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "01 10/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-111.normal": {
       "cardName": "Eevee",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "01 11/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-112.normal": {
       "cardName": "Eevee",
@@ -857,41 +841,36 @@
       "cardName": "Vaporeon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "02 01/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-202.normal": {
       "cardName": "Vaporeon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "02 02/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-203.normal": {
       "cardName": "Vaporeon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "02 03/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-204.normal": {
       "cardName": "Vaporeon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "02 04/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-205.normal": {
       "cardName": "Vaporeon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "02 05/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-206.normal": {
       "cardName": "Vaporeon",
@@ -904,41 +883,36 @@
       "cardName": "Vaporeon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "02 07/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-208.normal": {
       "cardName": "Vaporeon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "02 08/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-209.normal": {
       "cardName": "Vaporeon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "02 09/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-210.normal": {
       "cardName": "Vaporeon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "02 10/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-211.normal": {
       "cardName": "Vaporeon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "02 11/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-212.normal": {
       "cardName": "Vaporeon",
@@ -965,41 +939,36 @@
       "cardName": "Jolteon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "03 01/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-302.normal": {
       "cardName": "Jolteon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "03 02/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-303.normal": {
       "cardName": "Jolteon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "03 03/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-304.normal": {
       "cardName": "Jolteon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "03 04/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-305.normal": {
       "cardName": "Jolteon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "03 05/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-306.normal": {
       "cardName": "Jolteon",
@@ -1012,9 +981,8 @@
       "cardName": "Jolteon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "03 07/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-308.normal": {
       "cardName": "Jolteon",
@@ -1027,25 +995,22 @@
       "cardName": "Jolteon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "03 09/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-310.normal": {
       "cardName": "Jolteon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "03 10/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-311.normal": {
       "cardName": "Jolteon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "03 11/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-312.normal": {
       "cardName": "Jolteon",
@@ -1072,33 +1037,29 @@
       "cardName": "Flareon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "04 01/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-402.normal": {
       "cardName": "Flareon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "04 02/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-403.normal": {
       "cardName": "Flareon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "04 03/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-404.normal": {
       "cardName": "Flareon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "04 04/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-405.normal": {
       "cardName": "Flareon",
@@ -1118,17 +1079,15 @@
       "cardName": "Flareon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "04 07/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-408.normal": {
       "cardName": "Flareon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "04 08/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-409.normal": {
       "cardName": "Flareon",
@@ -1141,9 +1100,8 @@
       "cardName": "Flareon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "04 10/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-411.normal": {
       "cardName": "Flareon",
@@ -1177,41 +1135,36 @@
       "cardName": "Espeon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "05 01/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-502.normal": {
       "cardName": "Espeon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "05 02/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-503.normal": {
       "cardName": "Espeon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "05 03/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-504.normal": {
       "cardName": "Espeon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "05 04/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-505.normal": {
       "cardName": "Espeon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "05 05/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-506.normal": {
       "cardName": "Espeon",
@@ -1224,33 +1177,29 @@
       "cardName": "Espeon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "05 07/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-508.normal": {
       "cardName": "Espeon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "05 08/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-509.normal": {
       "cardName": "Espeon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "05 09/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-510.normal": {
       "cardName": "Espeon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "05 10/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-511.normal": {
       "cardName": "Espeon",
@@ -1284,33 +1233,29 @@
       "cardName": "Umbreon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "06 01/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-602.normal": {
       "cardName": "Umbreon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "06 02/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-603.normal": {
       "cardName": "Umbreon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "06 03/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-604.normal": {
       "cardName": "Umbreon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "06 04/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-605.normal": {
       "cardName": "Umbreon",
@@ -1330,9 +1275,8 @@
       "cardName": "Umbreon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "06 07/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-608.normal": {
       "cardName": "Umbreon",
@@ -1345,25 +1289,22 @@
       "cardName": "Umbreon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "06 09/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-610.normal": {
       "cardName": "Umbreon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "06 10/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-611.normal": {
       "cardName": "Umbreon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "06 11/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-612.normal": {
       "cardName": "Umbreon",
@@ -1397,41 +1338,36 @@
       "cardName": "Leafeon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "07 01/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-702.normal": {
       "cardName": "Leafeon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "07 02/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-703.normal": {
       "cardName": "Leafeon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "07 03/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-704.normal": {
       "cardName": "Leafeon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "07 04/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-705.normal": {
       "cardName": "Leafeon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "07 05/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-706.normal": {
       "cardName": "Leafeon",
@@ -1444,49 +1380,43 @@
       "cardName": "Leafeon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "07 07/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-708.normal": {
       "cardName": "Leafeon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "07 08/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-709.normal": {
       "cardName": "Leafeon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "07 09/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-710.normal": {
       "cardName": "Leafeon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "07 10/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-711.normal": {
       "cardName": "Leafeon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "07 11/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-712.normal": {
       "cardName": "Leafeon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "07 12/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-713.normal": {
       "cardName": "Leafeon V",
@@ -1513,41 +1443,36 @@
       "cardName": "Glaceon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "08 01/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-802.normal": {
       "cardName": "Glaceon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "08 02/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-803.normal": {
       "cardName": "Glaceon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "08 03/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-804.normal": {
       "cardName": "Glaceon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "08 04/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-805.normal": {
       "cardName": "Glaceon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "08 05/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-806.normal": {
       "cardName": "Glaceon",
@@ -1560,49 +1485,43 @@
       "cardName": "Glaceon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "08 07/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-808.normal": {
       "cardName": "Glaceon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "08 08/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-809.normal": {
       "cardName": "Glaceon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "08 09/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-810.normal": {
       "cardName": "Glaceon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "08 10/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-811.normal": {
       "cardName": "Glaceon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "08 11/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-812.normal": {
       "cardName": "Glaceon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "08 12/14",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-813.normal": {
       "cardName": "Glaceon V",
@@ -1622,9 +1541,8 @@
       "cardName": "Sylveon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "09 01/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-902.normal": {
       "cardName": "Sylveon",
@@ -1637,25 +1555,22 @@
       "cardName": "Sylveon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "09 03/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-904.normal": {
       "cardName": "Sylveon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "09 04/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-905.normal": {
       "cardName": "Sylveon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "09 05/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-906.normal": {
       "cardName": "Sylveon",
@@ -1668,41 +1583,36 @@
       "cardName": "Sylveon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "09 07/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-908.normal": {
       "cardName": "Sylveon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "09 08/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-909.normal": {
       "cardName": "Sylveon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "09 09/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-910.normal": {
       "cardName": "Sylveon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "09 10/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-911.normal": {
       "cardName": "Sylveon",
       "setName": "Gem Pack Vol. 2",
       "cardNumber": "09 11/15",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "cbb2c-912.normal": {
       "cardName": "Sylveon",
@@ -1732,14 +1642,19 @@
       "priceSheetVariant": "normal",
       "sqliteVariants": []
     },
-    "cel25cc-CC015.normal": {
+    "cdc2010-jp-zorua.normal": {
+      "cardName": "Illusion's Zorua",
+      "setName": "2010 Card Design Contest",
+      "cardNumber": "Pucchigumi",
+      "priceSheetVariant": null,
+      "sqliteVariants": []
+    },
+    "cel25cc-CC015.holo": {
       "cardName": "Umbreon ☆",
       "setName": "Celebrations Classic Collection",
       "cardNumber": "17",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
     "col1-13.holo": {
       "cardName": "Leafeon",
@@ -1748,15 +1663,19 @@
       "priceSheetVariant": "holo",
       "sqliteVariants": []
     },
+    "col1-13.normal": {
+      "cardName": "Leafeon",
+      "setName": "Call of Legends",
+      "cardNumber": "13",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
     "col1-13.reverse": {
       "cardName": "Leafeon",
       "setName": "Call of Legends",
       "cardNumber": "13",
       "priceSheetVariant": "reverse",
-      "sqliteVariants": [
-        "normal"
-      ],
-      "note": "Move sqliteVariants to the slot that should read history stored as \"normal\"."
+      "sqliteVariants": []
     },
     "col1-22.holo": {
       "cardName": "Umbreon",
@@ -1765,15 +1684,19 @@
       "priceSheetVariant": "holo",
       "sqliteVariants": []
     },
+    "col1-22.normal": {
+      "cardName": "Umbreon",
+      "setName": "Call of Legends",
+      "cardNumber": "22",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
     "col1-22.reverse": {
       "cardName": "Umbreon",
       "setName": "Call of Legends",
       "cardNumber": "22",
       "priceSheetVariant": "reverse",
-      "sqliteVariants": [
-        "normal"
-      ],
-      "note": "Move sqliteVariants to the slot that should read history stored as \"normal\"."
+      "sqliteVariants": []
     },
     "col1-4.holo": {
       "cardName": "Espeon",
@@ -1782,15 +1705,19 @@
       "priceSheetVariant": "holo",
       "sqliteVariants": []
     },
+    "col1-4.normal": {
+      "cardName": "Espeon",
+      "setName": "Call of Legends",
+      "cardNumber": "4",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
     "col1-4.reverse": {
       "cardName": "Espeon",
       "setName": "Call of Legends",
       "cardNumber": "4",
       "priceSheetVariant": "reverse",
-      "sqliteVariants": [
-        "normal"
-      ],
-      "note": "Move sqliteVariants to the slot that should read history stored as \"normal\"."
+      "sqliteVariants": []
     },
     "col1-44.normal": {
       "cardName": "Flareon",
@@ -1846,6 +1773,34 @@
       "setName": "Call of Legends",
       "cardNumber": "56",
       "priceSheetVariant": "reverse",
+      "sqliteVariants": []
+    },
+    "col1-79.normal": {
+      "cardName": "Interviewer's Questions",
+      "setName": "Call of Legends",
+      "cardNumber": "79",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "col1-92.normal": {
+      "cardName": "Psychic Energy",
+      "setName": "Call of Legends",
+      "cardNumber": "92",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "col1-94.normal": {
+      "cardName": "Darkness Energy",
+      "setName": "Call of Legends",
+      "cardNumber": "94",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "cs6bc-2207.normal": {
+      "cardName": "Floragato",
+      "setName": "Gem Pack Vol. 5",
+      "cardNumber": "22 07",
+      "priceSheetVariant": null,
       "sqliteVariants": []
     },
     "dp5-18.normal": {
@@ -2048,31 +2003,40 @@
       "priceSheetVariant": "reverse",
       "sqliteVariants": []
     },
-    "dp5-98.normal": {
+    "dp5-79.normal": {
+      "cardName": "Dawn Stadium",
+      "setName": "Majestic Dawn",
+      "cardNumber": "79",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "dp5-79.reverse": {
+      "cardName": "Dawn Stadium",
+      "setName": "Majestic Dawn",
+      "cardNumber": "79",
+      "priceSheetVariant": "reverse",
+      "sqliteVariants": []
+    },
+    "dp5-98.holo": {
       "cardName": "Glaceon",
       "setName": "Majestic Dawn",
       "cardNumber": "98",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "dp5-99.normal": {
+    "dp5-99.holo": {
       "cardName": "Leafeon",
       "setName": "Majestic Dawn",
       "cardNumber": "99",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
     "ecard2-11.jumbo": {
       "cardName": "Espeon",
       "setName": "Aquapolis",
       "cardNumber": "11",
-      "priceSheetVariant": null,
-      "sqliteVariants": [],
-      "note": "eBay asking median via data/ebay-price-mappings.json (ecard2-11.jumbo)."
+      "priceSheetVariant": "jumbo",
+      "sqliteVariants": []
     },
     "ecard2-11.normal": {
       "cardName": "Espeon",
@@ -2116,23 +2080,19 @@
       "priceSheetVariant": "reverse",
       "sqliteVariants": []
     },
-    "ecard2-H09.normal": {
+    "ecard2-H09.holo": {
       "cardName": "Espeon",
       "setName": "Aquapolis",
       "cardNumber": "H09",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "ecard2-H29.normal": {
+    "ecard2-H29.holo": {
       "cardName": "Umbreon",
       "setName": "Aquapolis",
       "cardNumber": "H29",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
     "ecard3-13.normal": {
       "cardName": "Jolteon",
@@ -2145,6 +2105,20 @@
       "cardName": "Jolteon",
       "setName": "Skyridge",
       "cardNumber": "13",
+      "priceSheetVariant": "reverse",
+      "sqliteVariants": []
+    },
+    "ecard3-138.normal": {
+      "cardName": "Oracle",
+      "setName": "Skyridge",
+      "cardNumber": "138",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "ecard3-138.reverse": {
+      "cardName": "Oracle",
+      "setName": "Skyridge",
+      "cardNumber": "138",
       "priceSheetVariant": "reverse",
       "sqliteVariants": []
     },
@@ -2204,41 +2178,33 @@
       "priceSheetVariant": "reverse",
       "sqliteVariants": []
     },
-    "ecard3-H07.normal": {
+    "ecard3-H07.holo": {
       "cardName": "Flareon",
       "setName": "Skyridge",
       "cardNumber": "H07",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "ecard3-H12.normal": {
+    "ecard3-H12.holo": {
       "cardName": "Jolteon",
       "setName": "Skyridge",
       "cardNumber": "H12",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "ecard3-H30.normal": {
+    "ecard3-H30.holo": {
       "cardName": "Umbreon",
       "setName": "Skyridge",
       "cardNumber": "H30",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "ecard3-H31.normal": {
+    "ecard3-H31.holo": {
       "cardName": "Vaporeon",
       "setName": "Skyridge",
       "cardNumber": "H31",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
     "ex10-102.holo": {
       "cardName": "Espeon ex",
@@ -2533,24 +2499,26 @@
       "priceSheetVariant": "reverse",
       "sqliteVariants": []
     },
-    "ex16-100.normal": {
+    "ex16-100.holo": {
       "cardName": "Flareon ☆",
       "setName": "Power Keepers",
       "cardNumber": "100",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
     "ex16-101.holo": {
       "cardName": "Jolteon ☆",
       "setName": "Power Keepers",
       "cardNumber": "101",
       "priceSheetVariant": "holo",
-      "sqliteVariants": [
-        "normal"
-      ],
-      "note": "Move sqliteVariants to the slot that should read history stored as \"normal\"."
+      "sqliteVariants": []
+    },
+    "ex16-101.normal": {
+      "cardName": "Jolteon ☆",
+      "setName": "Power Keepers",
+      "cardNumber": "101",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "ex16-101.worldChampionshipDeck2007TomRoos": {
       "cardName": "Jolteon ☆",
@@ -2568,14 +2536,12 @@
       "sqliteVariants": [],
       "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
     },
-    "ex16-102.normal": {
+    "ex16-102.holo": {
       "cardName": "Vaporeon ☆",
       "setName": "Power Keepers",
       "cardNumber": "102",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
     "ex2-16.exBattleStadiumDeckExclusive": {
       "cardName": "Espeon",
@@ -2677,14 +2643,12 @@
       "priceSheetVariant": "reverse",
       "sqliteVariants": []
     },
-    "fut20-2.normal": {
+    "fut20-2.holo": {
       "cardName": "Eevee on the Ball",
       "setName": "Pokémon Futsal 2020",
       "cardNumber": "2",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
     "g1-10.normal": {
       "cardName": "Leafeon EX",
@@ -2718,33 +2682,50 @@
       "cardName": "Sylveon EX",
       "setName": "Generations",
       "cardNumber": "RC21",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "g1-RC24.normal": {
+      "cardName": "Altaria",
+      "setName": "Generations",
+      "cardNumber": "RC24",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "g1-RC28.normal": {
       "cardName": "Flareon EX",
       "setName": "Generations",
       "cardNumber": "RC28",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "g1-RC32.normal": {
       "cardName": "Sylveon EX",
       "setName": "Generations",
       "cardNumber": "RC32",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "g1-RC6.normal": {
       "cardName": "Flareon EX",
       "setName": "Generations",
       "cardNumber": "RC6",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "gym1-97.firstEdition": {
+      "cardName": "Blaine's Quiz #1",
+      "setName": "Gym Heroes",
+      "cardNumber": "97",
+      "priceSheetVariant": "firstEdition",
+      "sqliteVariants": []
+    },
+    "gym1-97.normal": {
+      "cardName": "Blaine's Quiz #1",
+      "setName": "Gym Heroes",
+      "cardNumber": "97",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "gym2-28.firstEdition": {
       "cardName": "Lt. Surge's Jolteon",
@@ -2772,6 +2753,48 @@
       "setName": "Gym Challenge",
       "cardNumber": "51",
       "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "hgss1-119.normal": {
+      "cardName": "Psychic Energy",
+      "setName": "HeartGold SoulSilver",
+      "cardNumber": "119",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "hgss1-121.normal": {
+      "cardName": "Darkness Energy",
+      "setName": "HeartGold SoulSilver",
+      "cardNumber": "121",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "hgss2-77.normal": {
+      "cardName": "Interviewer’s Questions",
+      "setName": "Unleashed",
+      "cardNumber": "77",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "hgss2-77.reverse": {
+      "cardName": "Interviewer’s Questions",
+      "setName": "Unleashed",
+      "cardNumber": "77",
+      "priceSheetVariant": "reverse",
+      "sqliteVariants": []
+    },
+    "hgss2-8.holo": {
+      "cardName": "Shaymin",
+      "setName": "Unleashed",
+      "cardNumber": "8",
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
+    },
+    "hgss2-8.reverse": {
+      "cardName": "Shaymin",
+      "setName": "Unleashed",
+      "cardNumber": "8",
+      "priceSheetVariant": "reverse",
       "sqliteVariants": []
     },
     "hgss3-10.crackedIce": {
@@ -2932,23 +2955,19 @@
       "priceSheetVariant": "reverse",
       "sqliteVariants": []
     },
-    "hgss3-81.normal": {
+    "hgss3-81.holo": {
       "cardName": "Espeon",
       "setName": "Undaunted",
       "cardNumber": "81",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "hgss3-86.normal": {
+    "hgss3-86.holo": {
       "cardName": "Umbreon",
       "setName": "Undaunted",
       "cardNumber": "86",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
     "lc-10.holo": {
       "cardName": "Flareon",
@@ -3006,14 +3025,40 @@
       "priceSheetVariant": "reverse",
       "sqliteVariants": []
     },
-    "mcd19-12.normal": {
+    "mcd19-12.holo": {
       "cardName": "Eevee",
       "setName": "McDonald's Collection 2019",
       "cardNumber": "12",
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
+    },
+    "me03-122.holo": {
+      "cardName": "Jacinthe",
+      "setName": "Perfect Order",
+      "cardNumber": "122",
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
+    },
+    "mep-052.normal": {
+      "cardName": "Grookey",
+      "setName": "MEP Promos",
+      "cardNumber": "52",
       "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "sqliteVariants": []
+    },
+    "mep-061.normal": {
+      "cardName": "Sprigatito",
+      "setName": "MEP Promos",
+      "cardNumber": "61",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "mep-092.normal": {
+      "cardName": "Paradise Resort",
+      "setName": "MEP Promos",
+      "cardNumber": "92",
+      "priceSheetVariant": null,
+      "sqliteVariants": []
     },
     "neo2-1.firstEdition": {
       "cardName": "Espeon",
@@ -3022,15 +3067,12 @@
       "priceSheetVariant": "firstEdition",
       "sqliteVariants": []
     },
-    "neo2-1.normal": {
+    "neo2-1.holo": {
       "cardName": "Espeon",
       "setName": "Neo Discovery",
       "cardNumber": "1",
-      "priceSheetVariant": null,
-      "sqliteVariants": [
-        "holo"
-      ],
-      "note": "Move sqliteVariants to the slot that should read history stored as \"holo\". Orphan price keys in Sheet (holo) — map to the right slot or ignore."
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
     "neo2-13.firstEdition": {
       "cardName": "Umbreon",
@@ -3039,15 +3081,12 @@
       "priceSheetVariant": "firstEdition",
       "sqliteVariants": []
     },
-    "neo2-13.normal": {
+    "neo2-13.holo": {
       "cardName": "Umbreon",
       "setName": "Neo Discovery",
       "cardNumber": "13",
-      "priceSheetVariant": null,
-      "sqliteVariants": [
-        "holo"
-      ],
-      "note": "Move sqliteVariants to the slot that should read history stored as \"holo\". Orphan price keys in Sheet (holo) — map to the right slot or ignore."
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
     "neo2-20.firstEdition": {
       "cardName": "Espeon",
@@ -3098,15 +3137,12 @@
       "priceSheetVariant": "firstEdition",
       "sqliteVariants": []
     },
-    "neo4-4.normal": {
+    "neo4-4.holo": {
       "cardName": "Dark Espeon",
       "setName": "Neo Destiny",
       "cardNumber": "4",
-      "priceSheetVariant": null,
-      "sqliteVariants": [
-        "holo"
-      ],
-      "note": "Move sqliteVariants to the slot that should read history stored as \"holo\". Orphan price keys in Sheet (holo) — map to the right slot or ignore."
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
     "neo4-46.firstEdition": {
       "cardName": "Light Flareon",
@@ -3395,7 +3431,7 @@
       "cardName": "Eevee",
       "setName": "Sun & Moon",
       "cardNumber": "101a",
-      "priceSheetVariant": null,
+      "priceSheetVariant": "normal",
       "sqliteVariants": []
     },
     "sm1-140.normal": {
@@ -3444,41 +3480,36 @@
       "cardName": "Gardevoir & Sylveon GX",
       "setName": "Unbroken Bonds",
       "cardNumber": "130",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "sm10-204.normal": {
       "cardName": "Gardevoir & Sylveon GX",
       "setName": "Unbroken Bonds",
       "cardNumber": "204",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "sm10-205.normal": {
       "cardName": "Gardevoir & Sylveon GX",
       "setName": "Unbroken Bonds",
       "cardNumber": "205",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "sm10-225.normal": {
       "cardName": "Gardevoir & Sylveon GX",
       "setName": "Unbroken Bonds",
       "cardNumber": "225",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "sm11-125.normal": {
       "cardName": "Umbreon & Darkrai GX",
       "setName": "Unified Minds",
       "cardNumber": "125",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "sm11-188.normal": {
       "cardName": "Blue’s Tactics",
@@ -3491,19 +3522,15 @@
       "cardName": "Blue’s Tactics",
       "setName": "Unified Minds",
       "cardNumber": "231",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "sm11-72.holo": {
       "cardName": "Espeon & Deoxys GX",
       "setName": "Unified Minds",
       "cardNumber": "72",
       "priceSheetVariant": "holo",
-      "sqliteVariants": [
-        "normal"
-      ],
-      "note": "Move sqliteVariants to the slot that should read history stored as \"normal\"."
+      "sqliteVariants": []
     },
     "sm11-72.worldChampionshipDeck2019HenryBrand": {
       "cardName": "Espeon & Deoxys GX",
@@ -3513,6 +3540,13 @@
       "sqliteVariants": [],
       "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
     },
+    "sm11-88.normal": {
+      "cardName": "Munna",
+      "setName": "Unified Minds",
+      "cardNumber": "88",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
     "sm115-18.holo": {
       "cardName": "Vaporeon",
       "setName": "Hidden Fates",
@@ -3520,15 +3554,19 @@
       "priceSheetVariant": "holo",
       "sqliteVariants": []
     },
+    "sm115-18.normal": {
+      "cardName": "Vaporeon",
+      "setName": "Hidden Fates",
+      "cardNumber": "18",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
     "sm115-18.reverse": {
       "cardName": "Vaporeon",
       "setName": "Hidden Fates",
       "cardNumber": "18",
       "priceSheetVariant": "reverse",
-      "sqliteVariants": [
-        "normal"
-      ],
-      "note": "Move sqliteVariants to the slot that should read history stored as \"normal\"."
+      "sqliteVariants": []
     },
     "sm115-23.normal": {
       "cardName": "Jolteon",
@@ -3551,15 +3589,19 @@
       "priceSheetVariant": "holo",
       "sqliteVariants": []
     },
+    "sm115-48.normal": {
+      "cardName": "Eevee",
+      "setName": "Hidden Fates",
+      "cardNumber": "48",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
     "sm115-48.reverse": {
       "cardName": "Eevee",
       "setName": "Hidden Fates",
       "cardNumber": "48",
       "priceSheetVariant": "reverse",
-      "sqliteVariants": [
-        "normal"
-      ],
-      "note": "Move sqliteVariants to the slot that should read history stored as \"normal\"."
+      "sqliteVariants": []
     },
     "sm115-49.battleAcademyCharizardStamp26": {
       "cardName": "Eevee",
@@ -3866,73 +3908,64 @@
       "cardName": "Eevee & Snorlax GX",
       "setName": "Team Up",
       "cardNumber": "120",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "sm9-171.normal": {
       "cardName": "Eevee & Snorlax GX",
       "setName": "Team Up",
       "cardNumber": "171",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "sm9-191.normal": {
       "cardName": "Eevee & Snorlax GX",
       "setName": "Team Up",
       "cardNumber": "191",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "sma-SV41.normal": {
       "cardName": "Eevee",
       "setName": "Hidden Fates Shiny Vault",
       "cardNumber": "SV41",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "sma-SV46.normal": {
       "cardName": "Leafeon-GX",
       "setName": "Hidden Fates Shiny Vault",
       "cardNumber": "SV46",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "sma-SV55.normal": {
       "cardName": "Glaceon-GX",
       "setName": "Hidden Fates Shiny Vault",
       "cardNumber": "SV55",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "sma-SV60.normal": {
       "cardName": "Espeon-GX",
       "setName": "Hidden Fates Shiny Vault",
       "cardNumber": "SV60",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "sma-SV69.normal": {
       "cardName": "Umbreon-GX",
       "setName": "Hidden Fates Shiny Vault",
       "cardNumber": "SV69",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "sma-SV76.normal": {
       "cardName": "Sylveon-GX",
       "setName": "Hidden Fates Shiny Vault",
       "cardNumber": "SV76",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "smp-SM146.normal": {
       "cardName": "Leafeon GX",
@@ -3960,64 +3993,70 @@
       "setName": "SM Black Star Promos",
       "cardNumber": "SM171",
       "priceSheetVariant": "holo",
-      "sqliteVariants": [
-        "normal"
-      ],
-      "note": "Move sqliteVariants to the slot that should read history stored as \"normal\"."
+      "sqliteVariants": []
     },
     "smp-SM171.jumbo": {
       "cardName": "Flareon GX",
       "setName": "SM Black Star Promos",
       "cardNumber": "SM171",
-      "priceSheetVariant": null,
-      "sqliteVariants": [],
-      "note": "Pokewallet jumbo product pk_69d772ab… (TCGPlayer Jumbo Cards pricing)."
+      "priceSheetVariant": "jumbo",
+      "sqliteVariants": []
+    },
+    "smp-SM171.normal": {
+      "cardName": "Flareon GX",
+      "setName": "SM Black Star Promos",
+      "cardNumber": "SM171",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "smp-SM172.holo": {
       "cardName": "Vaporeon GX",
       "setName": "SM Black Star Promos",
       "cardNumber": "SM172",
       "priceSheetVariant": "holo",
-      "sqliteVariants": [
-        "normal"
-      ],
-      "note": "Move sqliteVariants to the slot that should read history stored as \"normal\"."
+      "sqliteVariants": []
     },
     "smp-SM172.jumbo": {
       "cardName": "Vaporeon GX",
       "setName": "SM Black Star Promos",
       "cardNumber": "SM172",
-      "priceSheetVariant": null,
-      "sqliteVariants": [],
-      "note": "Pokewallet jumbo product pk_7ab47269… (TCGPlayer Jumbo Cards pricing)."
+      "priceSheetVariant": "jumbo",
+      "sqliteVariants": []
+    },
+    "smp-SM172.normal": {
+      "cardName": "Vaporeon GX",
+      "setName": "SM Black Star Promos",
+      "cardNumber": "SM172",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "smp-SM173.holo": {
       "cardName": "Jolteon GX",
       "setName": "SM Black Star Promos",
       "cardNumber": "SM173",
       "priceSheetVariant": "holo",
-      "sqliteVariants": [
-        "normal"
-      ],
-      "note": "Move sqliteVariants to the slot that should read history stored as \"normal\"."
+      "sqliteVariants": []
     },
     "smp-SM173.jumbo": {
       "cardName": "Jolteon GX",
       "setName": "SM Black Star Promos",
       "cardNumber": "SM173",
-      "priceSheetVariant": null,
-      "sqliteVariants": [],
-      "note": "Pokewallet jumbo product pk_7f33a5e2… (TCGPlayer Jumbo Cards pricing)."
+      "priceSheetVariant": "jumbo",
+      "sqliteVariants": []
+    },
+    "smp-SM173.normal": {
+      "cardName": "Jolteon GX",
+      "setName": "SM Black Star Promos",
+      "cardNumber": "SM173",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "smp-SM174.holo": {
       "cardName": "Eevee GX",
       "setName": "SM Black Star Promos",
       "cardNumber": "SM174",
       "priceSheetVariant": "holo",
-      "sqliteVariants": [
-        "normal"
-      ],
-      "note": "Move sqliteVariants to the slot that should read history stored as \"normal\"."
+      "sqliteVariants": []
     },
     "smp-SM174.jumbo": {
       "cardName": "Eevee GX",
@@ -4025,17 +4064,21 @@
       "cardNumber": "SM174",
       "priceSheetVariant": null,
       "sqliteVariants": [],
-      "note": "eBay asking median; Pokewallet jumbo product pk_0e086c01… currently has no price rows."
+      "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
+    },
+    "smp-SM174.normal": {
+      "cardName": "Eevee GX",
+      "setName": "SM Black Star Promos",
+      "cardNumber": "SM174",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "smp-SM175.holo": {
       "cardName": "Eevee GX",
       "setName": "SM Black Star Promos",
       "cardNumber": "SM175",
       "priceSheetVariant": "holo",
-      "sqliteVariants": [
-        "normal"
-      ],
-      "note": "Move sqliteVariants to the slot that should read history stored as \"normal\"."
+      "sqliteVariants": []
     },
     "smp-SM175.jumbo": {
       "cardName": "Eevee GX",
@@ -4043,7 +4086,14 @@
       "cardNumber": "SM175",
       "priceSheetVariant": null,
       "sqliteVariants": [],
-      "note": "eBay asking median; Pokewallet jumbo product pk_7fe029db… currently has no price rows."
+      "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
+    },
+    "smp-SM175.normal": {
+      "cardName": "Eevee GX",
+      "setName": "SM Black Star Promos",
+      "cardNumber": "SM175",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "smp-SM176.normal": {
       "cardName": "Eevee GX",
@@ -4082,6 +4132,13 @@
       "priceSheetVariant": "normal",
       "sqliteVariants": []
     },
+    "smp-SM231.normal": {
+      "cardName": "Champions Festival",
+      "setName": "SM Black Star Promos",
+      "cardNumber": "SM231",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
     "smp-SM233.normal": {
       "cardName": "Eevee GX",
       "setName": "SM Black Star Promos",
@@ -4115,36 +4172,35 @@
       "setName": "SM Black Star Promos",
       "cardNumber": "SM240",
       "priceSheetVariant": "holo",
-      "sqliteVariants": [
-        "normal"
-      ],
-      "note": "Move sqliteVariants to the slot that should read history stored as \"normal\"."
+      "sqliteVariants": []
     },
     "smp-SM240.jumbo": {
       "cardName": "Espeon & Deoxys GX",
       "setName": "SM Black Star Promos",
       "cardNumber": "SM240",
-      "priceSheetVariant": null,
-      "sqliteVariants": [],
-      "note": "Pokewallet jumbo product pk_cbdeefd4… (TCGPlayer Jumbo Cards pricing)."
+      "priceSheetVariant": "jumbo",
+      "sqliteVariants": []
     },
     "smp-SM241.holo": {
       "cardName": "Umbreon & Darkrai GX",
       "setName": "SM Black Star Promos",
       "cardNumber": "SM241",
       "priceSheetVariant": "holo",
-      "sqliteVariants": [
-        "normal"
-      ],
-      "note": "Move sqliteVariants to the slot that should read history stored as \"normal\"."
+      "sqliteVariants": []
     },
     "smp-SM241.jumbo": {
       "cardName": "Umbreon & Darkrai GX",
       "setName": "SM Black Star Promos",
       "cardNumber": "SM241",
-      "priceSheetVariant": null,
-      "sqliteVariants": [],
-      "note": "Pokewallet jumbo product pk_fae06290… (TCGPlayer Jumbo Cards pricing)."
+      "priceSheetVariant": "jumbo",
+      "sqliteVariants": []
+    },
+    "smp-SM241.normal": {
+      "cardName": "Umbreon & Darkrai GX",
+      "setName": "SM Black Star Promos",
+      "cardNumber": "SM241",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "smp-SM242.normal": {
       "cardName": "Eevee GX",
@@ -4158,41 +4214,159 @@
       "setName": "SM Black Star Promos",
       "cardNumber": "SM35",
       "priceSheetVariant": "holo",
-      "sqliteVariants": [
-        "normal"
-      ],
-      "note": "Move sqliteVariants to the slot that should read history stored as \"normal\"."
+      "sqliteVariants": []
     },
     "smp-SM35.jumbo": {
       "cardName": "Espeon GX",
       "setName": "SM Black Star Promos",
       "cardNumber": "SM35",
-      "priceSheetVariant": null,
-      "sqliteVariants": [],
-      "note": "Pokewallet product pk_0985bddf… is the TCGPlayer Jumbo Cards SM35 product."
+      "priceSheetVariant": "jumbo",
+      "sqliteVariants": []
+    },
+    "smp-SM35.normal": {
+      "cardName": "Espeon GX",
+      "setName": "SM Black Star Promos",
+      "cardNumber": "SM35",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "smp-SM36.holo": {
       "cardName": "Umbreon GX",
       "setName": "SM Black Star Promos",
       "cardNumber": "SM36",
       "priceSheetVariant": "holo",
-      "sqliteVariants": [
-        "normal"
-      ],
-      "note": "Move sqliteVariants to the slot that should read history stored as \"normal\"."
+      "sqliteVariants": []
     },
     "smp-SM36.jumbo": {
       "cardName": "Umbreon GX",
       "setName": "SM Black Star Promos",
       "cardNumber": "SM36",
+      "priceSheetVariant": "jumbo",
+      "sqliteVariants": []
+    },
+    "smp-SM36.normal": {
+      "cardName": "Umbreon GX",
+      "setName": "SM Black Star Promos",
+      "cardNumber": "SM36",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "smp-jp-005.normal": {
+      "cardName": "Sapporo's Pikachu",
+      "setName": "SM-P Promos",
+      "cardNumber": "5",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "smp-jp-288.normal": {
+      "cardName": "Pikachu",
+      "setName": "SM-P Promos",
+      "cardNumber": "288",
       "priceSheetVariant": null,
-      "sqliteVariants": [],
-      "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
+      "sqliteVariants": []
+    },
+    "smp-jp-poncho-137.normal": {
+      "cardName": "Poncho-wearing Eevee",
+      "setName": "SM-P Promos",
+      "cardNumber": "137",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "smp-jp-poncho-138.normal": {
+      "cardName": "Poncho-wearing Eevee",
+      "setName": "SM-P Promos",
+      "cardNumber": "138",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "smp-jp-poncho-139.normal": {
+      "cardName": "Poncho-wearing Eevee",
+      "setName": "SM-P Promos",
+      "cardNumber": "139",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "smp-jp-poncho-140.normal": {
+      "cardName": "Poncho-wearing Eevee",
+      "setName": "SM-P Promos",
+      "cardNumber": "140",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "smp-jp-poncho-141.normal": {
+      "cardName": "Poncho-wearing Eevee",
+      "setName": "SM-P Promos",
+      "cardNumber": "141",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "smp-jp-poncho-142.normal": {
+      "cardName": "Poncho-wearing Eevee",
+      "setName": "SM-P Promos",
+      "cardNumber": "142",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "smp-jp-poncho-143.normal": {
+      "cardName": "Poncho-wearing Eevee",
+      "setName": "SM-P Promos",
+      "cardNumber": "143",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "smp-jp-poncho-144.normal": {
+      "cardName": "Poncho-wearing Eevee",
+      "setName": "SM-P Promos",
+      "cardNumber": "144",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "smp-jp-zeraora-jumbo.normal": {
+      "cardName": "Zeraora and Friends",
+      "setName": "SM-P Promos",
+      "cardNumber": "-",
+      "priceSheetVariant": null,
+      "sqliteVariants": []
+    },
+    "sv1-183.normal": {
+      "cardName": "Penny",
+      "setName": "Scarlet & Violet",
+      "cardNumber": "183",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "sv1-183.reverse": {
+      "cardName": "Penny",
+      "setName": "Scarlet & Violet",
+      "cardNumber": "183",
+      "priceSheetVariant": "reverse",
+      "sqliteVariants": []
+    },
+    "sv1-239.holo": {
+      "cardName": "Penny",
+      "setName": "Scarlet & Violet",
+      "cardNumber": "239",
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
     "sv1-252.holo": {
       "cardName": "Penny",
       "setName": "Scarlet & Violet",
       "cardNumber": "252",
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
+    },
+    "sv2-268.holo": {
+      "cardName": "Grusha",
+      "setName": "Paldea Evolved",
+      "cardNumber": "268",
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
+    },
+    "sv2-269.holo": {
+      "cardName": "Iono",
+      "setName": "Paldea Evolved",
+      "cardNumber": "269",
       "priceSheetVariant": "holo",
       "sqliteVariants": []
     },
@@ -4239,9 +4413,7 @@
       "setName": "Obsidian Flames",
       "cardNumber": "130",
       "priceSheetVariant": "trickOrTrade",
-      "sqliteVariants": [
-        "trickOrTrade"
-      ]
+      "sqliteVariants": []
     },
     "sv3-166.normal": {
       "cardName": "Eevee",
@@ -4265,15 +4437,19 @@
       "sqliteVariants": [],
       "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
     },
+    "sv3-86.holo": {
+      "cardName": "Espeon",
+      "setName": "Obsidian Flames",
+      "cardNumber": "86",
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
+    },
     "sv3-86.normal": {
       "cardName": "Espeon",
       "setName": "Obsidian Flames",
       "cardNumber": "86",
       "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ],
-      "note": "Move sqliteVariants to the slot that should read history stored as \"holo\"."
+      "sqliteVariants": []
     },
     "sv3-86.reverse": {
       "cardName": "Espeon",
@@ -4293,7 +4469,7 @@
       "cardName": "Eevee",
       "setName": "151",
       "cardNumber": "133",
-      "priceSheetVariant": "pokemonTogether",
+      "priceSheetVariant": null,
       "sqliteVariants": [],
       "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
     },
@@ -4308,7 +4484,7 @@
       "cardName": "Eevee",
       "setName": "151",
       "cardNumber": "133",
-      "priceSheetVariant": "snowflake",
+      "priceSheetVariant": null,
       "sqliteVariants": [],
       "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
     },
@@ -4354,10 +4530,24 @@
       "priceSheetVariant": "reverse",
       "sqliteVariants": []
     },
+    "sv4-206.holo": {
+      "cardName": "Morpeko",
+      "setName": "Paradox Rift",
+      "cardNumber": "206",
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
+    },
     "sv4pt5-236.holo": {
       "cardName": "Clive",
       "setName": "Paldean Fates",
       "cardNumber": "236",
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
+    },
+    "sv4pt5-239.holo": {
+      "cardName": "Penny",
+      "setName": "Paldean Fates",
+      "cardNumber": "239",
       "priceSheetVariant": "holo",
       "sqliteVariants": []
     },
@@ -4389,14 +4579,26 @@
       "priceSheetVariant": "reverse",
       "sqliteVariants": []
     },
-    "sv6-188.normal": {
+    "sv6-151.normal": {
+      "cardName": "Hassel",
+      "setName": "Twilight Masquerade",
+      "cardNumber": "151",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "sv6-151.reverse": {
+      "cardName": "Hassel",
+      "setName": "Twilight Masquerade",
+      "cardNumber": "151",
+      "priceSheetVariant": "reverse",
+      "sqliteVariants": []
+    },
+    "sv6-188.holo": {
       "cardName": "Eevee",
       "setName": "Twilight Masquerade",
       "cardNumber": "188",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
     "sv6-54.normal": {
       "cardName": "Glaceon",
@@ -4438,6 +4640,34 @@
       "setName": "Shrouded Fable",
       "cardNumber": "50",
       "priceSheetVariant": "reverse",
+      "sqliteVariants": []
+    },
+    "sv6pt5-56.normal": {
+      "cardName": "Cassiopeia",
+      "setName": "Shrouded Fable",
+      "cardNumber": "56",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "sv6pt5-56.reverse": {
+      "cardName": "Cassiopeia",
+      "setName": "Shrouded Fable",
+      "cardNumber": "56",
+      "priceSheetVariant": "reverse",
+      "sqliteVariants": []
+    },
+    "sv6pt5-86.holo": {
+      "cardName": "Cassiopeia",
+      "setName": "Shrouded Fable",
+      "cardNumber": "86",
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
+    },
+    "sv6pt5-94.holo": {
+      "cardName": "Cassiopeia",
+      "setName": "Shrouded Fable",
+      "cardNumber": "94",
+      "priceSheetVariant": "holo",
       "sqliteVariants": []
     },
     "sv7-113.normal": {
@@ -4499,6 +4729,20 @@
       "sqliteVariants": [],
       "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
     },
+    "sv8pt5-109.normal": {
+      "cardName": "Friends in Paldea",
+      "setName": "Prismatic Evolutions",
+      "cardNumber": "109",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "sv8pt5-109.reverse": {
+      "cardName": "Friends in Paldea",
+      "setName": "Prismatic Evolutions",
+      "cardNumber": "109",
+      "priceSheetVariant": "reverse",
+      "sqliteVariants": []
+    },
     "sv8pt5-13.cosmos": {
       "cardName": "Flareon",
       "setName": "Prismatic Evolutions",
@@ -4537,6 +4781,13 @@
       "priceSheetVariant": "reverse",
       "sqliteVariants": []
     },
+    "sv8pt5-137.holo": {
+      "cardName": "Friends in Paldea",
+      "setName": "Prismatic Evolutions",
+      "cardNumber": "137",
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
+    },
     "sv8pt5-14.expansion": {
       "cardName": "Flareon ex",
       "setName": "Prismatic Evolutions",
@@ -4560,86 +4811,68 @@
       "sqliteVariants": [],
       "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
     },
-    "sv8pt5-144.normal": {
+    "sv8pt5-144.holo": {
       "cardName": "Leafeon ex",
       "setName": "Prismatic Evolutions",
       "cardNumber": "144",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "sv8pt5-146.normal": {
+    "sv8pt5-146.holo": {
       "cardName": "Flareon ex",
       "setName": "Prismatic Evolutions",
       "cardNumber": "146",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "sv8pt5-149.normal": {
+    "sv8pt5-149.holo": {
       "cardName": "Vaporeon ex",
       "setName": "Prismatic Evolutions",
       "cardNumber": "149",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "sv8pt5-150.normal": {
+    "sv8pt5-150.holo": {
       "cardName": "Glaceon ex",
       "setName": "Prismatic Evolutions",
       "cardNumber": "150",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "sv8pt5-153.normal": {
+    "sv8pt5-153.holo": {
       "cardName": "Jolteon ex",
       "setName": "Prismatic Evolutions",
       "cardNumber": "153",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "sv8pt5-155.normal": {
+    "sv8pt5-155.holo": {
       "cardName": "Espeon ex",
       "setName": "Prismatic Evolutions",
       "cardNumber": "155",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "sv8pt5-156.normal": {
+    "sv8pt5-156.holo": {
       "cardName": "Sylveon ex",
       "setName": "Prismatic Evolutions",
       "cardNumber": "156",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "sv8pt5-161.normal": {
+    "sv8pt5-161.holo": {
       "cardName": "Umbreon ex",
       "setName": "Prismatic Evolutions",
       "cardNumber": "161",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "sv8pt5-167.normal": {
+    "sv8pt5-167.holo": {
       "cardName": "Eevee ex",
       "setName": "Prismatic Evolutions",
       "cardNumber": "167",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
     "sv8pt5-22.cosmos": {
       "cardName": "Vaporeon",
@@ -5135,67 +5368,54 @@
       "sqliteVariants": [],
       "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
     },
-    "svp-167.normal": {
+    "svp-167.holo": {
       "cardName": "Flareon",
       "setName": "SVP Black Star Promos",
       "cardNumber": "167",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "svp-168.normal": {
+    "svp-168.holo": {
       "cardName": "Vaporeon",
       "setName": "SVP Black Star Promos",
       "cardNumber": "168",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "svp-169.normal": {
+    "svp-169.holo": {
       "cardName": "Jolteon",
       "setName": "SVP Black Star Promos",
       "cardNumber": "169",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "svp-170.normal": {
+    "svp-170.holo": {
       "cardName": "Leafeon",
       "setName": "SVP Black Star Promos",
       "cardNumber": "170",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "svp-171.normal": {
+    "svp-171.holo": {
       "cardName": "Glaceon",
       "setName": "SVP Black Star Promos",
       "cardNumber": "171",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "svp-172.normal": {
+    "svp-172.holo": {
       "cardName": "Sylveon",
       "setName": "SVP Black Star Promos",
       "cardNumber": "172",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
     "svp-173.holo": {
       "cardName": "Eevee",
       "setName": "SVP Black Star Promos",
       "cardNumber": "173",
-      "priceSheetVariant": null,
-      "sqliteVariants": [],
-      "note": "Orphan price keys in Sheet (normal) — map to the right slot or ignore."
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
     "svp-173.pokemonCenter": {
       "cardName": "Eevee",
@@ -5205,46 +5425,47 @@
       "sqliteVariants": [],
       "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
     },
-    "svp-174.normal": {
+    "svp-174.holo": {
       "cardName": "Eevee ex",
       "setName": "SVP Black Star Promos",
       "cardNumber": "174",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "svp-175.normal": {
+    "svp-175.holo": {
       "cardName": "Espeon ex",
       "setName": "SVP Black Star Promos",
       "cardNumber": "175",
-      "priceSheetVariant": "normal",
+      "priceSheetVariant": "holo",
       "sqliteVariants": []
     },
-    "svp-176.normal": {
+    "svp-176.holo": {
       "cardName": "Umbreon ex",
       "setName": "SVP Black Star Promos",
       "cardNumber": "176",
-      "priceSheetVariant": "normal",
+      "priceSheetVariant": "holo",
       "sqliteVariants": []
     },
-    "svp-200.normal": {
+    "svp-200.holo": {
       "cardName": "Eevee",
       "setName": "SVP Black Star Promos",
       "cardNumber": "200",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "svp-43.normal": {
+    "svp-224.normal": {
+      "cardName": "Paradise Resort",
+      "setName": "SVP Black Star Promos",
+      "cardNumber": "224",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "svp-43.holo": {
       "cardName": "Eevee",
       "setName": "SVP Black Star Promos",
       "cardNumber": "43",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
     "swsh10-119.normal": {
       "cardName": "Eevee",
@@ -5288,61 +5509,61 @@
       "priceSheetVariant": "reverse",
       "sqliteVariants": []
     },
-    "swsh12pt5-108.normal": {
+    "swsh12pt5-108.holo": {
       "cardName": "Eevee V",
       "setName": "Crown Zenith",
       "cardNumber": "108",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "swsh12pt5-13.normal": {
+    "swsh12pt5-13.holo": {
       "cardName": "Leafeon V",
       "setName": "Crown Zenith",
       "cardNumber": "13",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "swsh12pt5-14.normal": {
+    "swsh12pt5-14.holo": {
       "cardName": "Leafeon VSTAR",
       "setName": "Crown Zenith",
       "cardNumber": "14",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "swsh12pt5-38.normal": {
+    "swsh12pt5-38.holo": {
       "cardName": "Glaceon V",
       "setName": "Crown Zenith",
       "cardNumber": "38",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "swsh12pt5gg-GG35.normal": {
+    "swsh12pt5gg-GG35.holo": {
       "cardName": "Leafeon VSTAR",
       "setName": "Crown Zenith Galarian Gallery",
       "cardNumber": "GG35",
       "priceSheetVariant": "holo",
-      "sqliteVariants": [
-        "holo"
-      ],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "sqliteVariants": []
     },
-    "swsh12pt5gg-GG40.normal": {
+    "swsh12pt5gg-GG40.holo": {
       "cardName": "Glaceon VSTAR",
       "setName": "Crown Zenith Galarian Gallery",
       "cardNumber": "GG40",
       "priceSheetVariant": "holo",
-      "sqliteVariants": [
-        "holo"
-      ],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "sqliteVariants": []
+    },
+    "swsh3-142.normal": {
+      "cardName": "Delcatty",
+      "setName": "Darkness Ablaze",
+      "cardNumber": "142",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "swsh3-142.reverse": {
+      "cardName": "Delcatty",
+      "setName": "Darkness Ablaze",
+      "cardNumber": "142",
+      "priceSheetVariant": "reverse",
+      "sqliteVariants": []
     },
     "swsh4-130.cosmos": {
       "cardName": "Eevee",
@@ -5446,6 +5667,13 @@
       "priceSheetVariant": "reverse",
       "sqliteVariants": []
     },
+    "swsh45-70.holo": {
+      "cardName": "Poké Kid",
+      "setName": "Shining Fates",
+      "cardNumber": "70",
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
+    },
     "swsh7-125.normal": {
       "cardName": "Eevee",
       "setName": "Evolving Skies",
@@ -5460,77 +5688,61 @@
       "priceSheetVariant": "reverse",
       "sqliteVariants": []
     },
-    "swsh7-166.normal": {
+    "swsh7-166.holo": {
       "cardName": "Leafeon V",
       "setName": "Evolving Skies",
       "cardNumber": "166",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "swsh7-167.normal": {
+    "swsh7-167.holo": {
       "cardName": "Leafeon V",
       "setName": "Evolving Skies",
       "cardNumber": "167",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "swsh7-169.normal": {
+    "swsh7-169.holo": {
       "cardName": "Flareon V",
       "setName": "Evolving Skies",
       "cardNumber": "169",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "swsh7-172.normal": {
+    "swsh7-172.holo": {
       "cardName": "Vaporeon V",
       "setName": "Evolving Skies",
       "cardNumber": "172",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "swsh7-174.normal": {
+    "swsh7-174.holo": {
       "cardName": "Glaceon V",
       "setName": "Evolving Skies",
       "cardNumber": "174",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "swsh7-175.normal": {
+    "swsh7-175.holo": {
       "cardName": "Glaceon V",
       "setName": "Evolving Skies",
       "cardNumber": "175",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "swsh7-177.normal": {
+    "swsh7-177.holo": {
       "cardName": "Jolteon V",
       "setName": "Evolving Skies",
       "cardNumber": "177",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "swsh7-179.normal": {
+    "swsh7-179.holo": {
       "cardName": "Espeon V",
       "setName": "Evolving Skies",
       "cardNumber": "179",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
     "swsh7-18.holo": {
       "cardName": "Flareon VMAX",
@@ -5547,122 +5759,96 @@
       "sqliteVariants": [],
       "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
     },
-    "swsh7-180.normal": {
+    "swsh7-180.holo": {
       "cardName": "Espeon V",
       "setName": "Evolving Skies",
       "cardNumber": "180",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "swsh7-183.normal": {
+    "swsh7-183.holo": {
       "cardName": "Sylveon V",
       "setName": "Evolving Skies",
       "cardNumber": "183",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "swsh7-184.normal": {
+    "swsh7-184.holo": {
       "cardName": "Sylveon V",
       "setName": "Evolving Skies",
       "cardNumber": "184",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "swsh7-188.normal": {
+    "swsh7-188.holo": {
       "cardName": "Umbreon V",
       "setName": "Evolving Skies",
       "cardNumber": "188",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "swsh7-189.normal": {
+    "swsh7-189.holo": {
       "cardName": "Umbreon V",
       "setName": "Evolving Skies",
       "cardNumber": "189",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "swsh7-204.normal": {
+    "swsh7-204.holo": {
       "cardName": "Leafeon VMAX",
       "setName": "Evolving Skies",
       "cardNumber": "204",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "swsh7-205.normal": {
+    "swsh7-205.holo": {
       "cardName": "Leafeon VMAX",
       "setName": "Evolving Skies",
       "cardNumber": "205",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "swsh7-208.normal": {
+    "swsh7-208.holo": {
       "cardName": "Glaceon VMAX",
       "setName": "Evolving Skies",
       "cardNumber": "208",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "swsh7-209.normal": {
+    "swsh7-209.holo": {
       "cardName": "Glaceon VMAX",
       "setName": "Evolving Skies",
       "cardNumber": "209",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "swsh7-211.normal": {
+    "swsh7-211.holo": {
       "cardName": "Sylveon VMAX",
       "setName": "Evolving Skies",
       "cardNumber": "211",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "swsh7-212.normal": {
+    "swsh7-212.holo": {
       "cardName": "Sylveon VMAX",
       "setName": "Evolving Skies",
       "cardNumber": "212",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "swsh7-214.normal": {
+    "swsh7-214.holo": {
       "cardName": "Umbreon VMAX",
       "setName": "Evolving Skies",
       "cardNumber": "214",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "swsh7-215.normal": {
+    "swsh7-215.holo": {
       "cardName": "Umbreon VMAX",
       "setName": "Evolving Skies",
       "cardNumber": "215",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
     "swsh7-30.holo": {
       "cardName": "Vaporeon VMAX",
@@ -5881,112 +6067,82 @@
       "priceSheetVariant": "reverse",
       "sqliteVariants": []
     },
-    "swsh8-270.normal": {
+    "swsh8-270.holo": {
       "cardName": "Espeon VMAX",
       "setName": "Fusion Strike",
       "cardNumber": "270",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "swsh9tg-TG01.normal": {
+    "swsh9tg-TG01.holo": {
       "cardName": "Flareon",
       "setName": "Brilliant Stars Trainer Gallery",
       "cardNumber": "TG01",
       "priceSheetVariant": "holo",
-      "sqliteVariants": [
-        "holo"
-      ],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "sqliteVariants": []
     },
-    "swsh9tg-TG02.normal": {
+    "swsh9tg-TG02.holo": {
       "cardName": "Vaporeon",
       "setName": "Brilliant Stars Trainer Gallery",
       "cardNumber": "TG02",
       "priceSheetVariant": "holo",
-      "sqliteVariants": [
-        "holo"
-      ],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "sqliteVariants": []
     },
-    "swsh9tg-TG04.normal": {
+    "swsh9tg-TG04.holo": {
       "cardName": "Jolteon",
       "setName": "Brilliant Stars Trainer Gallery",
       "cardNumber": "TG04",
       "priceSheetVariant": "holo",
-      "sqliteVariants": [
-        "holo"
-      ],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "sqliteVariants": []
     },
-    "swsh9tg-TG11.normal": {
+    "swsh9tg-TG11.holo": {
       "cardName": "Eevee",
       "setName": "Brilliant Stars Trainer Gallery",
       "cardNumber": "TG11",
       "priceSheetVariant": "holo",
-      "sqliteVariants": [
-        "holo"
-      ],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "sqliteVariants": []
     },
-    "swsh9tg-TG14.normal": {
+    "swsh9tg-TG14.holo": {
       "cardName": "Sylveon V",
       "setName": "Brilliant Stars Trainer Gallery",
       "cardNumber": "TG14",
       "priceSheetVariant": "holo",
-      "sqliteVariants": [
-        "holo"
-      ],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "sqliteVariants": []
     },
-    "swsh9tg-TG15.normal": {
+    "swsh9tg-TG15.holo": {
       "cardName": "Sylveon VMAX",
       "setName": "Brilliant Stars Trainer Gallery",
       "cardNumber": "TG15",
       "priceSheetVariant": "holo",
-      "sqliteVariants": [
-        "holo"
-      ],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "sqliteVariants": []
     },
-    "swsh9tg-TG22.normal": {
+    "swsh9tg-TG22.holo": {
       "cardName": "Umbreon V",
       "setName": "Brilliant Stars Trainer Gallery",
       "cardNumber": "TG22",
       "priceSheetVariant": "holo",
-      "sqliteVariants": [
-        "holo"
-      ],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "sqliteVariants": []
     },
-    "swsh9tg-TG23.normal": {
+    "swsh9tg-TG23.holo": {
       "cardName": "Umbreon VMAX",
       "setName": "Brilliant Stars Trainer Gallery",
       "cardNumber": "TG23",
       "priceSheetVariant": "holo",
-      "sqliteVariants": [
-        "holo"
-      ],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "sqliteVariants": []
     },
-    "swshp-SWSH041.normal": {
+    "swshp-SWSH041.holo": {
       "cardName": "Flareon",
       "setName": "SWSH Black Star Promos",
       "cardNumber": "SWSH041",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "swshp-SWSH042.normal": {
+    "swshp-SWSH042.holo": {
       "cardName": "Eevee",
       "setName": "SWSH Black Star Promos",
       "cardNumber": "SWSH042",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
     "swshp-SWSH065.eeveeStamp": {
       "cardName": "Eevee V",
@@ -6003,68 +6159,54 @@
       "priceSheetVariant": "holo",
       "sqliteVariants": []
     },
-    "swshp-SWSH072.normal": {
+    "swshp-SWSH072.holo": {
       "cardName": "Vaporeon",
       "setName": "SWSH Black Star Promos",
       "cardNumber": "SWSH072",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "swshp-SWSH087.normal": {
+    "swshp-SWSH087.holo": {
       "cardName": "Eevee VMAX",
       "setName": "SWSH Black Star Promos",
       "cardNumber": "SWSH087",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "swshp-SWSH094.normal": {
+    "swshp-SWSH094.holo": {
       "cardName": "Jolteon",
       "setName": "SWSH Black Star Promos",
       "cardNumber": "SWSH094",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "swshp-SWSH095.normal": {
+    "swshp-SWSH095.holo": {
       "cardName": "Eevee",
       "setName": "SWSH Black Star Promos",
       "cardNumber": "SWSH095",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "swshp-SWSH118.normal": {
+    "swshp-SWSH118.holo": {
       "cardName": "Eevee",
       "setName": "SWSH Black Star Promos",
       "cardNumber": "SWSH118",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "swshp-SWSH127.normal": {
+    "swshp-SWSH127.holo": {
       "cardName": "Eevee",
       "setName": "SWSH Black Star Promos",
       "cardNumber": "SWSH127",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
-    "swshp-SWSH129.normal": {
+    "swshp-SWSH129.holo": {
       "cardName": "Umbreon",
       "setName": "SWSH Black Star Promos",
       "cardNumber": "SWSH129",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "priceSheetVariant": "holo",
+      "sqliteVariants": []
     },
     "swshp-SWSH134.holo": {
       "cardName": "Dark Sylveon V",
@@ -6077,9 +6219,8 @@
       "cardName": "Dark Sylveon V",
       "setName": "SWSH Black Star Promos",
       "cardNumber": "SWSH134",
-      "priceSheetVariant": null,
-      "sqliteVariants": [],
-      "note": "Pokewallet jumbo product pk_760fe6f3… (TCGPlayer Jumbo Cards pricing)."
+      "priceSheetVariant": "jumbo",
+      "sqliteVariants": []
     },
     "swshp-SWSH149.holo": {
       "cardName": "Flareon V",
@@ -6152,18 +6293,21 @@
       "setName": "SWSH Black Star Promos",
       "cardNumber": "SWSH180",
       "priceSheetVariant": "holo",
-      "sqliteVariants": [
-        "normal"
-      ],
-      "note": "Move sqliteVariants to the slot that should read history stored as \"normal\"."
+      "sqliteVariants": []
     },
     "swshp-SWSH180.jumbo": {
       "cardName": "Flareon VMAX",
       "setName": "SWSH Black Star Promos",
       "cardNumber": "SWSH180",
-      "priceSheetVariant": null,
-      "sqliteVariants": [],
-      "note": "Pokewallet jumbo product pk_37c01b62… (TCGPlayer Jumbo Cards pricing)."
+      "priceSheetVariant": "jumbo",
+      "sqliteVariants": []
+    },
+    "swshp-SWSH180.normal": {
+      "cardName": "Flareon VMAX",
+      "setName": "SWSH Black Star Promos",
+      "cardNumber": "SWSH180",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "swshp-SWSH181.normal": {
       "cardName": "Vaporeon V",
@@ -6177,18 +6321,21 @@
       "setName": "SWSH Black Star Promos",
       "cardNumber": "SWSH182",
       "priceSheetVariant": "holo",
-      "sqliteVariants": [
-        "normal"
-      ],
-      "note": "Move sqliteVariants to the slot that should read history stored as \"normal\"."
+      "sqliteVariants": []
     },
     "swshp-SWSH182.jumbo": {
       "cardName": "Vaporeon VMAX",
       "setName": "SWSH Black Star Promos",
       "cardNumber": "SWSH182",
-      "priceSheetVariant": null,
-      "sqliteVariants": [],
-      "note": "Pokewallet jumbo product pk_83d0f1c8… (TCGPlayer Jumbo Cards pricing)."
+      "priceSheetVariant": "jumbo",
+      "sqliteVariants": []
+    },
+    "swshp-SWSH182.normal": {
+      "cardName": "Vaporeon VMAX",
+      "setName": "SWSH Black Star Promos",
+      "cardNumber": "SWSH182",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "swshp-SWSH183.normal": {
       "cardName": "Jolteon V",
@@ -6202,18 +6349,21 @@
       "setName": "SWSH Black Star Promos",
       "cardNumber": "SWSH184",
       "priceSheetVariant": "holo",
-      "sqliteVariants": [
-        "normal"
-      ],
-      "note": "Move sqliteVariants to the slot that should read history stored as \"normal\"."
+      "sqliteVariants": []
     },
     "swshp-SWSH184.jumbo": {
       "cardName": "Jolteon VMAX",
       "setName": "SWSH Black Star Promos",
       "cardNumber": "SWSH184",
-      "priceSheetVariant": null,
-      "sqliteVariants": [],
-      "note": "Pokewallet jumbo product pk_e645ef98… (TCGPlayer Jumbo Cards pricing)."
+      "priceSheetVariant": "jumbo",
+      "sqliteVariants": []
+    },
+    "swshp-SWSH184.normal": {
+      "cardName": "Jolteon VMAX",
+      "setName": "SWSH Black Star Promos",
+      "cardNumber": "SWSH184",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "swshp-SWSH190.normal": {
       "cardName": "Eevee",
@@ -6248,27 +6398,21 @@
       "setName": "SWSH Black Star Promos",
       "cardNumber": "SWSH195",
       "priceSheetVariant": "holo",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "sqliteVariants": []
     },
     "swshp-SWSH195.jumbo": {
       "cardName": "Leafeon VSTAR",
       "setName": "SWSH Black Star Promos",
       "cardNumber": "SWSH195",
       "priceSheetVariant": "jumbo",
-      "sqliteVariants": [
-        "jumbo"
-      ]
+      "sqliteVariants": []
     },
     "swshp-SWSH195.playPokemon": {
       "cardName": "Leafeon VSTAR",
       "setName": "SWSH Black Star Promos",
       "cardNumber": "SWSH195",
       "priceSheetVariant": "playPokemon",
-      "sqliteVariants": [
-        "playPokemon"
-      ]
+      "sqliteVariants": []
     },
     "swshp-SWSH196.normal": {
       "cardName": "Glaceon V",
@@ -6282,27 +6426,21 @@
       "setName": "SWSH Black Star Promos",
       "cardNumber": "SWSH197",
       "priceSheetVariant": "holo",
-      "sqliteVariants": [
-        "holo"
-      ]
+      "sqliteVariants": []
     },
     "swshp-SWSH197.jumbo": {
       "cardName": "Glaceon VSTAR",
       "setName": "SWSH Black Star Promos",
       "cardNumber": "SWSH197",
       "priceSheetVariant": "jumbo",
-      "sqliteVariants": [
-        "jumbo"
-      ]
+      "sqliteVariants": []
     },
     "swshp-SWSH197.playPokemon": {
       "cardName": "Glaceon VSTAR",
       "setName": "SWSH Black Star Promos",
       "cardNumber": "SWSH197",
       "priceSheetVariant": "playPokemon",
-      "sqliteVariants": [
-        "playPokemon"
-      ]
+      "sqliteVariants": []
     },
     "swshp-SWSH201.normal": {
       "cardName": "Espeon V",
@@ -6378,9 +6516,36 @@
       "cardName": "Sylveon",
       "setName": "XY trainer Kit (Sylveon)",
       "cardNumber": "30",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "tpp-jp-1.normal": {
+      "cardName": "Flareon",
+      "setName": "T Promos",
+      "cardNumber": "1",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "tpp-jp-2.normal": {
+      "cardName": "Vaporeon",
+      "setName": "T Promos",
+      "cardNumber": "2",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "tpp-jp-3.normal": {
+      "cardName": "Jolteon",
+      "setName": "T Promos",
+      "cardNumber": "3",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "wcd2010-espeon.normal": {
+      "cardName": "Psychic Energy",
+      "setName": "2010 World Championships Decks",
+      "cardNumber": "-",
+      "priceSheetVariant": null,
+      "sqliteVariants": []
     },
     "xy10-116.normal": {
       "cardName": "Glaceon EX",
@@ -6393,6 +6558,13 @@
       "cardName": "Umbreon EX",
       "setName": "Fates Collide",
       "cardNumber": "119",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "xy10-125.normal": {
+      "cardName": "Alakazam EX",
+      "setName": "Fates Collide",
+      "cardNumber": "125",
       "priceSheetVariant": "normal",
       "sqliteVariants": []
     },
@@ -6533,15 +6705,19 @@
       "priceSheetVariant": "holo",
       "sqliteVariants": []
     },
+    "xy7-26.normal": {
+      "cardName": "Jolteon",
+      "setName": "Ancient Origins",
+      "cardNumber": "26",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
     "xy7-26.reverse": {
       "cardName": "Jolteon",
       "setName": "Ancient Origins",
       "cardNumber": "26",
       "priceSheetVariant": "reverse",
-      "sqliteVariants": [
-        "normal"
-      ],
-      "note": "Move sqliteVariants to the slot that should read history stored as \"normal\"."
+      "sqliteVariants": []
     },
     "xy7-63.buildABear": {
       "cardName": "Eevee",
@@ -6577,10 +6753,14 @@
       "setName": "BREAKpoint",
       "cardNumber": "52",
       "priceSheetVariant": "holo",
-      "sqliteVariants": [
-        "normal"
-      ],
-      "note": "Move sqliteVariants to the slot that should read history stored as \"normal\"."
+      "sqliteVariants": []
+    },
+    "xy9-52.normal": {
+      "cardName": "Espeon EX",
+      "setName": "BREAKpoint",
+      "cardNumber": "52",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "xy9-52.worldChampionshipDeck2017KabuFukase": {
       "cardName": "Espeon EX",
@@ -6590,45 +6770,82 @@
       "sqliteVariants": [],
       "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
     },
+    "xy9-54.normal": {
+      "cardName": "Drapion",
+      "setName": "BREAKpoint",
+      "cardNumber": "54",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "xy9-54.reverse": {
+      "cardName": "Drapion",
+      "setName": "BREAKpoint",
+      "cardNumber": "54",
+      "priceSheetVariant": "reverse",
+      "sqliteVariants": []
+    },
+    "xy9-96.normal": {
+      "cardName": "All-Night Party",
+      "setName": "BREAKpoint",
+      "cardNumber": "96",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
     "xyp-XY04.normal": {
       "cardName": "Sylveon",
       "setName": "XY Black Star Promos",
       "cardNumber": "XY04",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "xyp-XY121.normal": {
+      "cardName": "Charizard EX",
+      "setName": "XY Black Star Promos",
+      "cardNumber": "XY121",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "xyp-XY122.normal": {
+      "cardName": "Blastoise EX",
+      "setName": "XY Black Star Promos",
+      "cardNumber": "XY122",
+      "priceSheetVariant": null,
+      "sqliteVariants": []
+    },
+    "xyp-XY124.normal": {
+      "cardName": "Pikachu EX",
+      "setName": "XY Black Star Promos",
+      "cardNumber": "XY124",
+      "priceSheetVariant": null,
+      "sqliteVariants": []
+    },
+    "xyp-XY177.normal": {
+      "cardName": "Karen",
+      "setName": "XY Black Star Promos",
+      "cardNumber": "XY177",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "xyp-XY95.normal": {
+      "cardName": "Pikachu",
+      "setName": "XY Black Star Promos",
+      "cardNumber": "XY95",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": []
     },
     "xyp-XY96.normal": {
       "cardName": "Umbreon",
       "setName": "XY Black Star Promos",
       "cardNumber": "XY96",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": [],
-      "note": "priceSheetVariant \"holo\" differs from catalogue \"normal\" (single-variant alias)."
-    },
-    "tpp-jp-1.normal": {
-      "cardName": "Flareon",
-      "setName": "T Promos",
-      "cardNumber": "1",
       "priceSheetVariant": "normal",
-      "sqliteVariants": [],
-      "note": "JP T Promo 001/T; Pokewallet pk_4175e594… (TCG only, no CM link)."
+      "sqliteVariants": []
     },
-    "tpp-jp-2.normal": {
-      "cardName": "Vaporeon",
-      "setName": "T Promos",
-      "cardNumber": "2",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [],
-      "note": "JP T Promo 002/T; Pokewallet pk_526c45bc… (TCG only, no CM link)."
-    },
-    "tpp-jp-3.normal": {
-      "cardName": "Jolteon",
-      "setName": "T Promos",
-      "cardNumber": "3",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": [],
-      "note": "JP T Promo 003/T; Pokewallet pk_ea712bfa… (TCG only, no CM link)."
+    "xyp-jp-90.normal": {
+      "cardName": "Pikachu",
+      "setName": "XY-P Promos",
+      "cardNumber": "90",
+      "priceSheetVariant": null,
+      "sqliteVariants": []
     }
   }
 }
