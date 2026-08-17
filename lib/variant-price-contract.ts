@@ -156,7 +156,10 @@ export function expandEntryToVariantRows(
 
   if (options.card) {
     for (const variant of catalogueVariants) {
-      const record = getVariantPriceRecord(options.card, variant, entry);
+      let record = getVariantPriceRecord(options.card, variant, entry);
+      if (!record && entry.variants?.[variant] && variantHasAmount(entry.variants[variant])) {
+        record = entry.variants[variant];
+      }
       if (!record || !variantHasAmount(record)) continue;
       seen.add(variant);
       rows.push(

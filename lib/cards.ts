@@ -94,10 +94,16 @@ export function resolveSingleVariantAlias(
   return { usd: null, eur: null };
 }
 
-/** Promo cards that are holofoil-only in print but Pokewallet splits TCG (holo) vs CM (normal). */
+/** Cards where Pokewallet splits TCG holo USD and CM normal EUR onto separate keys. */
+const NORMAL_ONTO_HOLO_MERGE_IDS = new Set(["smp-SM240", "sm11-72"]);
+
+export function shouldMergeNormalOntoHolo(card: PokemonCard): boolean {
+  return NORMAL_ONTO_HOLO_MERGE_IDS.has(card.id);
+}
+
+/** @deprecated Use shouldMergeNormalOntoHolo */
 export function isHoloOnlyPromoCard(card: PokemonCard): boolean {
-  const variants = card.variants ?? [];
-  return variants.includes("holo") && !variants.includes("normal");
+  return shouldMergeNormalOntoHolo(card);
 }
 
 function mergeHoloOnlyPromoVariantRecords(
@@ -127,7 +133,7 @@ export function mergeHoloOnlyPromoPriceEntry(
   card: PokemonCard,
   entry: PriceEntry
 ): PriceEntry {
-  if (!isHoloOnlyPromoCard(card) || !entry.variants) return entry;
+  if (!shouldMergeNormalOntoHolo(card) || !entry.variants) return entry;
 
   const mergedHolo = mergeHoloOnlyPromoVariantRecords(
     entry.variants.holo,
@@ -170,7 +176,7 @@ export function getPriceForCard(
   const strictRecord = base?.variants?.[v];
   const strict = readVariantPrices(strictRecord);
   if (hasPrice(strict)) {
-    if (v === "holo" && isHoloOnlyPromoCard(card) && base?.variants?.normal) {
+    if (v === "holo" && shouldMergeNormalOntoHolo(card) && base?.variants?.normal) {
       const merged = mergeHoloOnlyPromoVariantRecords(
         base.variants.holo,
         base.variants.normal,
@@ -224,7 +230,7 @@ export function getVariantPriceRecord(
 
   const v = variant ?? "normal";
 
-  if (v === "holo" && isHoloOnlyPromoCard(card) && entry.variants) {
+  if (v === "holo" && shouldMergeNormalOntoHolo(card) && entry.variants) {
     const merged = mergeHoloOnlyPromoVariantRecords(
       entry.variants.holo,
       entry.variants.normal,

@@ -14,6 +14,7 @@ import type {
   PricesSnapshot,
   PokemonCard,
 } from "../types";
+import { shouldMergeNormalOntoHolo } from "./cards";
 import {
   metaToExchangeRates,
   parseUsdRatesJson,
@@ -374,9 +375,7 @@ export function syncPricesToDb(
   const db = openPriceDb(dbPath);
   try {
     for (const [cardId, card] of Object.entries(cardsById)) {
-      if (!card.variants?.includes("holo") || card.variants.includes("normal")) {
-        continue;
-      }
+      if (!shouldMergeNormalOntoHolo(card)) continue;
       db.prepare(`DELETE FROM current_prices WHERE card_id = ? AND variant = 'normal'`).run(
         cardId
       );

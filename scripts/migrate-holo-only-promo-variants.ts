@@ -1,27 +1,28 @@
 /**
- * One-off: remove false "normal" variant rows for holo-only promos and merge CM EUR onto holo.
+ * One-off: remove false "normal" variant rows for explicit holo merge cards
+ * and merge CM EUR onto holo.
  *
  * Run with: npx tsx scripts/migrate-holo-only-promo-variants.ts
  */
 
 import Database from "better-sqlite3";
+import { shouldMergeNormalOntoHolo } from "../lib/cards";
 import cardsData from "../data/cards.json";
-import { isHoloOnlyPromoCard } from "../lib/cards";
 import type { PokemonCard } from "../types";
 import { PRICE_DB_PATH } from "../lib/price-db-path";
 
 const cards = cardsData as PokemonCard[];
-const holoOnlyPromoIds = cards.filter(isHoloOnlyPromoCard).map((c) => c.id);
+const mergeIds = cards.filter(shouldMergeNormalOntoHolo).map((c) => c.id);
 
-if (holoOnlyPromoIds.length === 0) {
-  console.log("No holo-only promo cards found.");
+if (mergeIds.length === 0) {
+  console.log("No holo merge cards configured.");
   process.exit(0);
 }
 
 const db = new Database(PRICE_DB_PATH);
 try {
   const migrate = db.transaction(() => {
-    for (const cardId of holoOnlyPromoIds) {
+    for (const cardId of mergeIds) {
       const holo = db
         .prepare(
           `SELECT usd, eur, updated_at, source, price_kind, sample_count, metadata_json
@@ -163,9 +164,7 @@ try {
   });
 
   migrate();
-  console.log(
-    `Migrated ${holoOnlyPromoIds.length} holo-only promo card(s): ${holoOnlyPromoIds.join(", ")}`
-  );
+  console.log(`Migrated ${mergeIds.length} holo merge card(s): ${mergeIds.join(", ")}`);
 } finally {
   db.close();
 }
