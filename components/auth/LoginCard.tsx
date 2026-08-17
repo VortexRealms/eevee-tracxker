@@ -9,10 +9,15 @@ type LoginCardProps = {
   showSessionError?: boolean;
 };
 
+type LoginPhase = "idle" | "signing-in" | "navigating";
+
 export function LoginCard({ showError = false, showSessionError = false }: LoginCardProps) {
   const [showPassword, setShowPassword] = useState(false);
-  const [submitting, setSubmitting] = useState(false);
+  const [phase, setPhase] = useState<LoginPhase>("idle");
   const [clientError, setClientError] = useState<string | null>(null);
+  const pending = phase !== "idle";
+  const statusText =
+    phase === "navigating" ? "Loading your collection…" : phase === "signing-in" ? "Signing in…" : "";
 
   useEffect(() => {
     const url = new URL(window.location.href);
@@ -33,7 +38,7 @@ export function LoginCard({ showError = false, showSessionError = false }: Login
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    setSubmitting(true);
+    setPhase("signing-in");
     setClientError(null);
 
     const formData = new FormData(event.currentTarget);
@@ -58,19 +63,30 @@ export function LoginCard({ showError = false, showSessionError = false }: Login
         } else {
           setClientError("Could not sign in. Please try again.");
         }
+        setPhase("idle");
         return;
       }
 
+      setPhase("navigating");
       window.location.assign("/checklist");
     } catch {
       setClientError("Could not sign in. Please try again.");
-    } finally {
-      setSubmitting(false);
+      setPhase("idle");
     }
   }
 
   return (
-    <section className={styles.loginCard}>
+    <section className={`${styles.loginCard}${pending ? ` ${styles.loginCardBusy}` : ""}`}>
+      {pending ? (
+        <div className={styles.loginProgress} aria-hidden="true">
+          <span className={styles.loginProgressBar} />
+        </div>
+      ) : null}
+
+      <p className="sr-only" aria-live="polite">
+        {statusText}
+      </p>
+
       <header className={styles.loginCardHeader}>
         <p className={styles.loginKicker}>WELCOME BACK</p>
         <h2 className={styles.loginHeading}>Sign in to your tracker</h2>
@@ -102,6 +118,7 @@ export function LoginCard({ showError = false, showSessionError = false }: Login
         method="post"
         action="/api/auth/login"
         onSubmit={handleSubmit}
+        aria-busy={pending}
       >
         <div className={styles.fieldGroup}>
           <label className="field-label" htmlFor="username">
@@ -126,6 +143,7 @@ export function LoginCard({ showError = false, showSessionError = false }: Login
               className={`field-input ${styles.fieldInput}`}
               placeholder="Enter username"
               required
+              disabled={pending}
             />
           </div>
         </div>
@@ -154,12 +172,14 @@ export function LoginCard({ showError = false, showSessionError = false }: Login
               className={`field-input ${styles.fieldInput} ${styles.fieldInputWithToggle}`}
               placeholder="Enter password"
               required
+              disabled={pending}
             />
             <button
               type="button"
               className={styles.passwordToggle}
               onClick={() => setShowPassword((prev) => !prev)}
               aria-label={showPassword ? "Hide password" : "Show password"}
+              disabled={pending}
             >
               {showPassword ? (
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -199,12 +219,24 @@ export function LoginCard({ showError = false, showSessionError = false }: Login
           </span>
         </div>
 
-        <button type="submit" className={styles.loginButton} disabled={submitting}>
-          {submitting ? "Signing in..." : "Login"}
+        <button type="submit" className={styles.loginButton} disabled={pending}>
+          {pending ? (
+            <span className={styles.loginButtonContent}>
+              <span className={styles.loginSpinner} aria-hidden="true" />
+              {statusText}
+            </span>
+          ) : (
+            "Login"
+          )}
         </button>
       </form>
 
-      <Link href="/public" className={styles.publicLink}>
+      <Link
+        href="/public"
+        className={styles.publicLink}
+        tabIndex={pending ? -1 : undefined}
+        aria-disabled={pending}
+      >
         View public collection
       </Link>
     </section>

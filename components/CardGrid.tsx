@@ -22,6 +22,7 @@ import { CardPriceLabel } from "./CardPriceLabel";
 import { CollectionStatsPanel } from "./dashboard/CollectionStatsPanel";
 import { DisplayCurrencyPicker } from "./DisplayCurrencyPicker";
 import { useHeaderStats } from "./HeaderStatsProvider";
+import { CardGridSkeletons } from "./ChecklistLoading";
 
 export type CardGridMode = "checklist" | "public";
 
@@ -429,16 +430,11 @@ export function CardGrid({
       </div>
 
       {isLoading ? (
-        <div className="collection-grid">
-          {Array.from({ length: 6 }).map((_, index) => (
-            <div key={index} className="card-tile card-skeleton">
-              <div className="card-skeleton-media shimmer" />
-              <div className="card-skeleton-lines">
-                <div className="shimmer" />
-                <div className="shimmer short" />
-              </div>
-            </div>
-          ))}
+        <div aria-busy="true" aria-labelledby="card-grid-loading-status">
+          <p id="card-grid-loading-status" className="sr-only" aria-live="polite">
+            Loading collection
+          </p>
+          <CardGridSkeletons />
         </div>
       ) : filteredSlots.length === 0 ? (
         <div className="empty-state">
