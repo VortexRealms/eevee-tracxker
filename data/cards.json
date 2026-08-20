@@ -42,8 +42,8 @@
     ],
     "catalogueLanguage": "ja",
     "cameoOf": [
-      "Flareon",
-      "Jolteon"
+      "Jolteon",
+      "Flareon"
     ]
   },
   {
@@ -2502,8 +2502,8 @@
       "reverse"
     ],
     "cameoOf": [
-      "Glaceon",
-      "Leafeon"
+      "Leafeon",
+      "Glaceon"
     ]
   },
   {
@@ -3781,13 +3781,13 @@
     "catalogueLanguage": "ja",
     "cameoOf": [
       "Eevee",
-      "Espeon",
-      "Flareon",
-      "Glaceon",
+      "Vaporeon",
       "Jolteon",
-      "Leafeon",
+      "Flareon",
+      "Espeon",
       "Umbreon",
-      "Vaporeon"
+      "Leafeon",
+      "Glaceon"
     ]
   },
   {
@@ -5260,8 +5260,8 @@
       "normal"
     ],
     "cameoOf": [
-      "Jolteon",
-      "Vaporeon"
+      "Vaporeon",
+      "Jolteon"
     ]
   },
   {
@@ -6214,6 +6214,7 @@
       "large": "https://images.pokemontcg.io/smp/SM240_hires.png"
     },
     "variants": [
+      "normal",
       "holo",
       "jumbo"
     ]
@@ -7176,6 +7177,7 @@
       "large": "https://assets.tcgdex.net/en/sm/sm11/72/high.png"
     },
     "variants": [
+      "normal",
       "holo",
       "worldChampionshipDeck2019HenryBrand"
     ]
@@ -15780,5 +15782,33 @@
     "cameoOf": [
       "Sylveon"
     ]
+  },
+  {
+    "id": "MEE-20",
+    "name": "Eevee",
+    "number": "020",
+    "rarity": "Art Rare",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "hp": "70",
+    "set": {
+      "id": "MEE",
+      "name": "Starter Set ex Eevee ex",
+      "series": "Mega Evolution",
+      "releaseDate": "2026/07/31"
+    },
+    "images": {
+      "small": "/media/mee20jpg.webp",
+      "large": "/media/mee20jpg.webp"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "ja"
   }
 ]

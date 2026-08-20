@@ -131,6 +131,42 @@
       "mappingVersion": "2026-08-20",
       "note": "SM-P Zeraora and Friends jumbo — active eBay asking median from the two-result search."
     },
+    "MEE-20.normal": {
+      "cardId": "MEE-20",
+      "variant": "normal",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "MEGA Starter Set Eevee ex 020 AR japanese pokemon card",
+        "Eevee mEEv020 AR japanese pokemon card",
+        "MEE Eevee 020 art rare japanese"
+      ],
+      "requiredTerms": ["eevee", "020"],
+      "preferredTerms": ["ar", "art", "mee", "starter", "japanese", "mega"],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc",
+        "deck",
+        "sealed",
+        "playmat",
+        "guide",
+        "coin"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-20",
+      "note": "MEE 020/019 Eevee AR — Pokewallet pending; active eBay asking median."
+    },
     "smp-SM175.jumbo": {
       "cardId": "smp-SM175",
       "variant": "jumbo",

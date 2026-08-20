@@ -217,6 +217,14 @@ const catalogue = loadCameoCatalogue();
       "/media/Sapporos-Pikachu.webp",
       "SM-P #5 Sapporo's Pikachu should use the local scan"
     );
+
+    const meeEeveeAr = cards.find((c) => c.id === "MEE-20");
+    assert.ok(meeEeveeAr, "MEE-20 missing from cards.json");
+    assert.equal(
+      meeEeveeAr!.images.small,
+      "/media/mee20jpg.webp",
+      "MEE 020/019 Eevee AR should use the local scan"
+    );
   }
 }
 

@@ -3035,6 +3035,14 @@
       "priceSheetVariant": "holo",
       "sqliteVariants": []
     },
+    "MEE-20.normal": {
+      "cardName": "Eevee",
+      "setName": "Starter Set ex Eevee ex",
+      "cardNumber": "020",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": [],
+      "note": "MEE 020/019 Art Rare (JP starter deck). Priced from eBay until Pokewallet lists the product."
+    },
     "mep-052.normal": {
       "cardName": "Grookey",
       "setName": "MEP Promos",
