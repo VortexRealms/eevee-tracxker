@@ -173,30 +173,14 @@ export function getPriceForCard(
   const base = snapshot.entries[card.id];
 
   const v = variant ?? "normal";
-  const strictRecord = base?.variants?.[v];
-  const strict = readVariantPrices(strictRecord);
-  if (hasPrice(strict)) {
-    if (v === "holo" && shouldMergeNormalOntoHolo(card) && base?.variants?.normal) {
-      const merged = mergeHoloOnlyPromoVariantRecords(
-        base.variants.holo,
-        base.variants.normal,
-        base
-      );
-      if (merged && hasPrice(recordToResolved(merged))) {
-        return {
-          ...recordToResolved(merged),
-          source: merged.source ?? base?.source,
-          priceKind: merged.priceKind,
-          sampleCount: merged.sampleCount,
-        };
-      }
-    }
+  const record = getVariantPriceRecord(card, v, base);
+  if (record && hasPrice(recordToResolved(record))) {
     return {
-      ...strict,
-      source: strict.source ?? base?.source,
+      ...recordToResolved(record),
+      source: record.source ?? base?.source,
       priceKind:
-        strict.priceKind ??
-        (base?.source === "manual" ? "manual" : strict.priceKind),
+        record.priceKind ??
+        (base?.source === "manual" ? "manual" : record.priceKind),
     };
   }
 
@@ -252,15 +236,15 @@ export function getVariantPriceRecord(
   }
 
   if (card.variants?.length === 1 && entry.variants) {
-    const aliased = resolveSingleVariantAlias(card, entry.variants);
-    if (hasPrice(aliased)) {
+    const singleAlias = resolveSingleVariantAlias(card, entry.variants);
+    if (hasPrice(singleAlias)) {
       const pricedEntry = Object.entries(entry.variants).find(([, p]) =>
         hasPrice(readVariantPrices(p))
       );
       const record = pricedEntry?.[1];
       return {
-        usd: aliased.usd,
-        eur: aliased.eur,
+        usd: singleAlias.usd,
+        eur: singleAlias.eur,
         updatedAt: record?.updatedAt ?? entry.updatedAt,
         source: record?.source ?? entry.source,
         priceKind: record?.priceKind,

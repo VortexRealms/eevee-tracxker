@@ -20,6 +20,7 @@ import { localTodayIso, shouldSkipVariantPriceFetch } from "../lib/fetch-price-s
 import { loadEbayPriceMappings, slotKey } from "../lib/ebay-price-mappings";
 import { mergePriceEntries } from "../lib/price-merge";
 import { mergeHoloOnlyPromoPriceEntry } from "../lib/cards";
+import { remapPriceEntryVariantsToCatalogue } from "../lib/variant-catalogue-fixes";
 import { applyVariantRecordToEntry, buildProviderPlan } from "../lib/price-provider-planner";
 import { getPricesSnapshotFromDb, syncPricesToDb } from "../lib/price-db";
 import { loadEnvFiles } from "./load-env";
@@ -205,7 +206,10 @@ async function main() {
           const prior = fetchedEntries[job.cardId];
           const card = cardsById[job.cardId];
           const mergedPart = card
-            ? mergeHoloOnlyPromoPriceEntry(card, part)
+            ? remapPriceEntryVariantsToCatalogue(
+                job.cardId,
+                mergeHoloOnlyPromoPriceEntry(card, part)
+              )
             : part;
           fetchedEntries[job.cardId] = mergePriceEntries(mergedPart, prior);
           priced++;

@@ -3303,9 +3303,8 @@
       "large": "https://assets.tcgdex.net/en/col/col1/22/high.png"
     },
     "variants": [
-      "normal",
-      "reverse",
-      "holo"
+      "holo",
+      "reverse"
     ]
   },
   {

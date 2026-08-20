@@ -1,5 +1,6 @@
 import { getAllCards, parseCardIdAndVariant } from "../cards";
 import type { CollectionRow } from "../../types";
+import { migrateOwnershipVariant } from "../variant-catalogue-fixes";
 import { queryRows, withDbClient } from "./postgres";
 
 export interface CollectionItemRecord {
@@ -49,18 +50,23 @@ export function enrichCollectionItems(items: CollectionItemRecord[]): Collection
   const cards = getAllCards();
   const byId = new Map(cards.map((c) => [c.id, c]));
 
-  return items.map((item) => {
+  return items.flatMap((item) => {
+    const migratedVariant = migrateOwnershipVariant(item.cardId, item.variant);
+    if (migratedVariant == null) return [];
+
     const card = byId.get(item.cardId);
-    const composite = toCompositeCardId(item.cardId, item.variant);
-    return {
-      cardId: composite,
-      variant: item.variant,
-      name: card?.name ?? "",
-      setName: card?.set.name ?? "",
-      number: card?.number ?? "",
-      imageUrl: card?.images.small ?? "",
-      owned: true,
-    };
+    const composite = toCompositeCardId(item.cardId, migratedVariant);
+    return [
+      {
+        cardId: composite,
+        variant: migratedVariant,
+        name: card?.name ?? "",
+        setName: card?.set.name ?? "",
+        number: card?.number ?? "",
+        imageUrl: card?.images.small ?? "",
+        owned: true,
+      },
+    ];
   });
 }
 

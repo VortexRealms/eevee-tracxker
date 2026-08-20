@@ -20,6 +20,7 @@ coverage/
 *.tsbuildinfo
 
 .vercel/
+.cursor/plans/
 .DS_Store
 Thumbs.db
 

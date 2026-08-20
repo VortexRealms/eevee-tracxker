@@ -10,9 +10,10 @@ import {
 } from "./external-variant-catalog";
 import { applyCameoMetadata } from "./cameo-catalogue";
 import { mergeVariantLists } from "./merge-variants";
+import { CATALOGUE_VARIANT_OVERRIDES } from "./variant-catalogue-fixes";
 
-/** Authoritative variant lists for cards where TCGdex/external merge is wrong. */
-const CATALOGUE_VARIANT_OVERRIDES: Record<string, string[]> = {
+/** Additional overrides kept here for discoverability (see variant-catalogue-fixes.ts). */
+const LOCAL_CATALOGUE_VARIANT_OVERRIDES: Record<string, string[]> = {
   // Wizards promo #11 is holofoil-only plus the Jr Stamp Rally printing.
   "basep-11": ["holo", "wPromo"],
   // SWSH195 is a holo promo; TCGdex also emits a spurious "normal" slot with no price.
@@ -25,9 +26,14 @@ const CATALOGUE_VARIANT_OVERRIDES: Record<string, string[]> = {
   "xy9-54": ["normal", "reverse"],
 };
 
+const MERGED_CATALOGUE_VARIANT_OVERRIDES: Record<string, string[]> = {
+  ...LOCAL_CATALOGUE_VARIANT_OVERRIDES,
+  ...CATALOGUE_VARIANT_OVERRIDES,
+};
+
 function applyCatalogueVariantOverrides(cards: PokemonCard[]): PokemonCard[] {
   return cards.map((card) => {
-    const override = CATALOGUE_VARIANT_OVERRIDES[card.id];
+    const override = MERGED_CATALOGUE_VARIANT_OVERRIDES[card.id];
     if (!override) return card;
     return { ...card, variants: override };
   });

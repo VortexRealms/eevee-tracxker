@@ -17,10 +17,19 @@ import { metaToExchangeRates } from "../lib/exchange-rates";
 import { resolveDisplayAmount } from "../lib/display-price";
 import { getVariantLabel } from "../lib/variant-labels";
 import { formatCameoLabel } from "../lib/cameo-catalogue";
+import {
+  EEVEELUTIONS,
+  matchesEeveelutionFilter,
+  matchesSetFilter,
+  uniqueSetsFromCards,
+  type EeveelutionFilter,
+} from "../lib/collection-filters";
 import { useCurrency } from "./CurrencyProvider";
 import { CardPriceLabel } from "./CardPriceLabel";
 import { CollectionStatsPanel } from "./dashboard/CollectionStatsPanel";
 import { DisplayCurrencyPicker } from "./DisplayCurrencyPicker";
+import { EeveelutionIcon } from "./EeveelutionIcon";
+import { FilterDropdown } from "./FilterDropdown";
 import { useHeaderStats } from "./HeaderStatsProvider";
 import { CardGridSkeletons } from "./ChecklistLoading";
 
@@ -209,6 +218,9 @@ export function CardGrid({
   const [filter, setFilter] = useState<FilterValue>(() =>
     isPublic ? "owned" : "all"
   );
+  const [eeveelution, setEeveelution] = useState<EeveelutionFilter>("all");
+  const [setName, setSetName] = useState<string | "all">("all");
+  const [includeCameos, setIncludeCameos] = useState(true);
   const panelRef = useRef<HTMLElement>(null);
   const [panelVisible, setPanelVisible] = useState(true);
   const { publish, clear } = useHeaderStats();
@@ -221,6 +233,7 @@ export function CardGrid({
   const showPrices = exchangeRates !== null;
 
   const catalogueSlots = useMemo(() => buildSortedCatalogueSlots(cards), [cards]);
+  const setOptions = useMemo(() => uniqueSetsFromCards(cards), [cards]);
   const totalVariants = catalogueSlots.length;
   const validSlotKeys = useMemo(
     () => new Set(catalogueSlots.map((slot) => slot.slotKey)),
@@ -312,12 +325,33 @@ export function CardGrid({
       if (isPublic && !owned) return false;
       if (!isPublic && filter === "owned" && !owned) return false;
       if (!isPublic && filter === "missing" && owned) return false;
+      if (!matchesEeveelutionFilter(slot.card, eeveelution, includeCameos)) return false;
+      if (!matchesSetFilter(slot.card, setName)) return false;
 
       if (searchTokens.length === 0) return true;
       const haystack = slotHaystack(slot);
       return searchTokens.every((token) => haystack.includes(token));
     });
-  }, [catalogueSlots, ownedKeys, filter, isPublic, searchTokens]);
+  }, [
+    catalogueSlots,
+    ownedKeys,
+    filter,
+    isPublic,
+    searchTokens,
+    eeveelution,
+    includeCameos,
+    setName,
+  ]);
+
+  const filtersActive =
+    eeveelution !== "all" || setName !== "all" || includeCameos !== true || search.trim() !== "";
+
+  function clearCollectionFilters() {
+    setEeveelution("all");
+    setSetName("all");
+    setIncludeCameos(true);
+    setSearch("");
+  }
 
   function renderSlotTile(slot: VariantSlot) {
     const { card, variant, slotKey } = slot;
@@ -407,26 +441,68 @@ export function CardGrid({
 
         {isPublic && <DisplayCurrencyPicker variant="chips" />}
 
-        {!isPublic && (
-          <div className="chip-row chip-row-scroll">
-            {(
-              [
-                ["all", "All"],
-                ["owned", "Owned"],
-                ["missing", "Missing"],
-              ] as const
-            ).map(([value, label]) => (
-              <button
-                key={value}
-                type="button"
-                className={`filter-chip ${filter === value ? "is-active" : ""}`}
-                onClick={() => setFilter(value)}
-              >
-                {label}
-              </button>
-            ))}
-          </div>
-        )}
+        <div className="filter-toolbar">
+          {!isPublic && (
+            <div className="chip-row chip-row-scroll ownership-chips" role="group" aria-label="Ownership">
+              {(
+                [
+                  ["all", "All"],
+                  ["owned", "Owned"],
+                  ["missing", "Missing"],
+                ] as const
+              ).map(([value, label]) => (
+                <button
+                  key={value}
+                  type="button"
+                  className={`filter-chip ${filter === value ? "is-active" : ""}`}
+                  onClick={() => setFilter(value)}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+          )}
+
+          <FilterDropdown
+            label="Eeveelution"
+            className="eeveelution-select"
+            value={eeveelution}
+            onChange={(next) => setEeveelution(next as EeveelutionFilter)}
+            options={[
+              { value: "all", label: "All Eeveelutions", icon: <EeveelutionIcon name="all" /> },
+              ...EEVEELUTIONS.map((name) => ({
+                value: name,
+                label: name,
+                icon: <EeveelutionIcon name={name} />,
+              })),
+            ]}
+          />
+
+          <FilterDropdown
+            label="Set"
+            className="set-select"
+            value={setName}
+            searchable
+            searchPlaceholder="Search sets"
+            onChange={setSetName}
+            options={[
+              { value: "all", label: "All Sets" },
+              ...setOptions.map((option) => ({
+                value: option.name,
+                label: option.name,
+              })),
+            ]}
+          />
+
+          <label className="cameo-checkbox">
+            <input
+              type="checkbox"
+              checked={includeCameos}
+              onChange={(e) => setIncludeCameos(e.target.checked)}
+            />
+            <span>Include Cameos</span>
+          </label>
+        </div>
       </div>
 
       {isLoading ? (
@@ -439,8 +515,13 @@ export function CardGrid({
       ) : filteredSlots.length === 0 ? (
         <div className="empty-state">
           <div className="empty-state-orb" />
-          <h2>No matching cards</h2>
-          <p>Try a different search, or switch back to the full collection view.</p>
+          <h2>No cards match the selected filters.</h2>
+          <p>Try a different search, or clear the extra collection filters.</p>
+          {filtersActive ? (
+            <button type="button" className="secondary-button empty-state-clear" onClick={clearCollectionFilters}>
+              Clear filters
+            </button>
+          ) : null}
         </div>
       ) : (
         <div className="collection-grid">

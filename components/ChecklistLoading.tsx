@@ -59,6 +59,12 @@ export function ChecklistLoading() {
               <span className="filter-chip-skeleton shimmer short" />
               <span className="filter-chip-skeleton shimmer" />
             </div>
+
+            <div className="filter-toolbar" aria-hidden="true">
+              <span className="filter-select-skeleton shimmer" />
+              <span className="filter-select-skeleton shimmer" />
+              <span className="cameo-checkbox-skeleton shimmer" />
+            </div>
           </div>
 
           <CardSkeletons />

@@ -1681,22 +1681,17 @@
       "cardName": "Umbreon",
       "setName": "Call of Legends",
       "cardNumber": "22",
-      "priceSheetVariant": "holo",
-      "sqliteVariants": []
-    },
-    "col1-22.normal": {
-      "cardName": "Umbreon",
-      "setName": "Call of Legends",
-      "cardNumber": "22",
-      "priceSheetVariant": "normal",
-      "sqliteVariants": []
+      "priceSheetVariant": "reverse",
+      "sqliteVariants": [],
+      "note": "Catalogue holo slot uses Pokewallet reverse-holofoil pricing (TCGdex label inverted vs Cardmarket)."
     },
     "col1-22.reverse": {
       "cardName": "Umbreon",
       "setName": "Call of Legends",
       "cardNumber": "22",
-      "priceSheetVariant": "reverse",
-      "sqliteVariants": []
+      "priceSheetVariant": "holo",
+      "sqliteVariants": [],
+      "note": "Catalogue reverse slot uses Pokewallet holofoil pricing (TCGdex label inverted vs Cardmarket)."
     },
     "col1-4.holo": {
       "cardName": "Espeon",
