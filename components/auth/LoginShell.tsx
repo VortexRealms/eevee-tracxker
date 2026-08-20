@@ -1,3 +1,4 @@
+import { BuildStamp } from "./BuildStamp";
 import { LoginCard } from "./LoginCard";
 import { LoginFeatureCards } from "./LoginFeatureCards";
 import { LoginHero } from "./LoginHero";
@@ -27,6 +28,10 @@ export function LoginShell({ showError = false, showSessionError = false }: Logi
             <LoginFeatureCards />
           </div>
         </section>
+
+        <footer className={styles.buildFooter}>
+          <BuildStamp />
+        </footer>
       </div>
     </main>
   );

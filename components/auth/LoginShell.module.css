@@ -22,6 +22,21 @@
   gap: 16px;
 }
 
+.buildFooter {
+  margin-top: auto;
+  flex-shrink: 0;
+}
+
+.buildStamp {
+  margin: 0;
+  padding: 4px 8px 0;
+  color: #8f7668;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-align: center;
+  line-height: 1.4;
+}
+
 .brandBar {
   display: flex;
   align-items: center;
