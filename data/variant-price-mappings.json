@@ -655,12 +655,13 @@
       "priceSheetVariant": "normal",
       "sqliteVariants": []
     },
-    "bwp-2012.normal": {
+    "bwp-2012.jumbo": {
       "cardName": "_____'s Pikachu",
       "setName": "BW-P Promos",
       "cardNumber": "©2012",
-      "priceSheetVariant": null,
-      "sqliteVariants": []
+      "priceSheetVariant": "jumbo",
+      "sqliteVariants": [],
+      "note": "Jumbo-only 2012 Pokémon Center birthday print (Cardmarket s-Pikachu-V2)."
     },
     "bwp-BW87.normal": {
       "cardName": "Leafeon",
@@ -4316,12 +4317,13 @@
       "priceSheetVariant": "normal",
       "sqliteVariants": []
     },
-    "smp-jp-zeraora-jumbo.normal": {
+    "smp-jp-zeraora-jumbo.jumbo": {
       "cardName": "Zeraora and Friends",
       "setName": "SM-P Promos",
       "cardNumber": "-",
-      "priceSheetVariant": null,
-      "sqliteVariants": []
+      "priceSheetVariant": "jumbo",
+      "sqliteVariants": [],
+      "note": "Jumbo-only SM-P promo; priced from eBay active listings (SM-P Zeraora and Friends Jumbo pokemon card)."
     },
     "sv1-183.normal": {
       "cardName": "Penny",

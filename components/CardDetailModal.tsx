@@ -386,7 +386,7 @@ export function CardDetailModal({ card, variant, prices, onClose }: CardDetailMo
 
               <div className={styles.marketplaceRow}>
                 <a
-                  href={getEbaySearchUrl(card)}
+                  href={getEbaySearchUrl(card, variant)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`secondary-button ${styles.marketplaceButton}`}

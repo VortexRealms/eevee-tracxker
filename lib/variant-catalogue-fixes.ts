@@ -10,6 +10,10 @@ export const CATALOGUE_VARIANT_OVERRIDES: Record<string, string[]> = {
   // Holo Rare only — no non-holo printing; Pokewallet lists Holofoil + Reverse Holofoil
   // but TCGdex labels are inverted vs Cardmarket for this card.
   "col1-22": ["holo", "reverse"],
+  // 2012 Pokémon Center birthday jumbo only (Cardmarket s-Pikachu-V2).
+  "bwp-2012": ["jumbo"],
+  // SM-P Zeraora and Friends is jumbo-only (no standard-size printing).
+  "smp-jp-zeraora-jumbo": ["jumbo"],
 };
 
 /**
@@ -35,6 +39,12 @@ export const VARIANT_OWNERSHIP_MIGRATIONS: Record<
     reverse: "holo",
     holo: "reverse",
     normal: null,
+  },
+  "bwp-2012": {
+    normal: "jumbo",
+  },
+  "smp-jp-zeraora-jumbo": {
+    normal: "jumbo",
   },
 };
 

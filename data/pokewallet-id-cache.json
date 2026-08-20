@@ -4169,6 +4169,22 @@
     "matchScore": 160,
     "searchQuery": "Pokémon Center 190"
   },
+  "bwp-2012": {
+    "pokewalletId": "f6f40401904e19a75dd9d366a47141a18cb64070a1335a03fb4bc9a4bc878ec5",
+    "setCode": "BW-P",
+    "resolvedAt": "2026-08-20",
+    "matchScore": 160,
+    "searchQuery": "Pikachu BW-P s-Pikachu-V2 jumbo",
+    "variants": {
+      "jumbo": {
+        "pokewalletId": "f6f40401904e19a75dd9d366a47141a18cb64070a1335a03fb4bc9a4bc878ec5",
+        "setCode": "BW-P",
+        "resolvedAt": "2026-08-20",
+        "matchScore": 160,
+        "searchQuery": "Pikachu BW-P s-Pikachu-V2 jumbo"
+      }
+    }
+  },
   "smp-jp-005": {
     "pokewalletId": "pk_dbe7c9d34a20492cad4957c5f909016b0f8068a9ca548cb6a8ff909d044c3d8937cf8e5436b1087d611bfc3ff40230",
     "setCode": "SM-P",

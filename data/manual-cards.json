@@ -148,8 +148,8 @@
       "releaseDate": "2011/07/01"
     },
     "images": {
-      "small": "https://images.scrydex.com/pokemon/back/medium",
-      "large": "https://images.scrydex.com/pokemon/back/medium"
+      "small": "https://www.serebii.net/card/bwpromo/190.jpg",
+      "large": "https://www.serebii.net/card/bwpromo/190.jpg"
     },
     "variants": [
       "normal"
@@ -168,11 +168,11 @@
       "releaseDate": "2011/07/01"
     },
     "images": {
-      "small": "https://images.scrydex.com/pokemon/back/medium",
-      "large": "https://images.scrydex.com/pokemon/back/medium"
+      "small": "/media/pikachu-bw-pr-promo.webp",
+      "large": "/media/pikachu-bw-pr-promo.webp"
     },
     "variants": [
-      "normal"
+      "jumbo"
     ],
     "catalogueLanguage": "ja"
   },
@@ -3150,8 +3150,8 @@
       "releaseDate": "2017/02/03"
     },
     "images": {
-      "small": "https://assets.tcgdex.net/en/sm/sm1/101a/low.webp",
-      "large": "https://assets.tcgdex.net/en/sm/sm1/101a/high.png"
+      "small": "/media/SUM_101a_R_EN.webp",
+      "large": "/media/SUM_101a_R_EN.webp"
     },
     "variants": [
       "normal"
@@ -3169,8 +3169,8 @@
       "releaseDate": "2017/03/01"
     },
     "images": {
-      "small": "https://images.scrydex.com/pokemon/back/medium",
-      "large": "https://images.scrydex.com/pokemon/back/medium"
+      "small": "/media/Sapporos-Pikachu.webp",
+      "large": "/media/Sapporos-Pikachu.webp"
     },
     "variants": [
       "normal"
@@ -3209,8 +3209,8 @@
       "releaseDate": "2017/03/01"
     },
     "images": {
-      "small": "https://images.scrydex.com/pokemon/back/medium",
-      "large": "https://images.scrydex.com/pokemon/back/medium"
+      "small": "/media/ponchoEevee137.webp",
+      "large": "/media/ponchoEevee137.webp"
     },
     "variants": [
       "normal"
@@ -3229,8 +3229,8 @@
       "releaseDate": "2017/03/01"
     },
     "images": {
-      "small": "https://images.scrydex.com/pokemon/back/medium",
-      "large": "https://images.scrydex.com/pokemon/back/medium"
+      "small": "/media/ponchoEevee138.webp",
+      "large": "/media/ponchoEevee138.webp"
     },
     "variants": [
       "normal"
@@ -3249,8 +3249,8 @@
       "releaseDate": "2017/03/01"
     },
     "images": {
-      "small": "https://images.scrydex.com/pokemon/back/medium",
-      "large": "https://images.scrydex.com/pokemon/back/medium"
+      "small": "/media/ponchoEevee139.webp",
+      "large": "/media/ponchoEevee139.webp"
     },
     "variants": [
       "normal"
@@ -3269,8 +3269,8 @@
       "releaseDate": "2017/03/01"
     },
     "images": {
-      "small": "https://images.scrydex.com/pokemon/back/medium",
-      "large": "https://images.scrydex.com/pokemon/back/medium"
+      "small": "/media/ponchoEevee140.webp",
+      "large": "/media/ponchoEevee140.webp"
     },
     "variants": [
       "normal"
@@ -3289,8 +3289,8 @@
       "releaseDate": "2017/03/01"
     },
     "images": {
-      "small": "https://images.scrydex.com/pokemon/back/medium",
-      "large": "https://images.scrydex.com/pokemon/back/medium"
+      "small": "/media/ponchoEevee141.webp",
+      "large": "/media/ponchoEevee141.webp"
     },
     "variants": [
       "normal"
@@ -3309,8 +3309,8 @@
       "releaseDate": "2017/03/01"
     },
     "images": {
-      "small": "https://images.scrydex.com/pokemon/back/medium",
-      "large": "https://images.scrydex.com/pokemon/back/medium"
+      "small": "https://www.serebii.net/card/smpromo/142.jpg",
+      "large": "https://www.serebii.net/card/smpromo/142.jpg"
     },
     "variants": [
       "normal"
@@ -3329,8 +3329,8 @@
       "releaseDate": "2017/03/01"
     },
     "images": {
-      "small": "https://images.scrydex.com/pokemon/back/medium",
-      "large": "https://images.scrydex.com/pokemon/back/medium"
+      "small": "/media/ponchoEevee143.webp",
+      "large": "/media/ponchoEevee143.webp"
     },
     "variants": [
       "normal"
@@ -3349,8 +3349,8 @@
       "releaseDate": "2017/03/01"
     },
     "images": {
-      "small": "https://images.scrydex.com/pokemon/back/medium",
-      "large": "https://images.scrydex.com/pokemon/back/medium"
+      "small": "/media/ponchoEevee144.webp",
+      "large": "/media/ponchoEevee144.webp"
     },
     "variants": [
       "normal"
@@ -3369,11 +3369,11 @@
       "releaseDate": "2017/03/01"
     },
     "images": {
-      "small": "https://images.scrydex.com/pokemon/back/medium",
-      "large": "https://images.scrydex.com/pokemon/back/medium"
+      "small": "/media/smp-zeraoraandfriends-jumbo-promo.webp",
+      "large": "/media/smp-zeraoraandfriends-jumbo-promo.webp"
     },
     "variants": [
-      "normal"
+      "jumbo"
     ],
     "catalogueLanguage": "ja"
   },

@@ -100,6 +100,37 @@
       "mappingVersion": "2026-08-17",
       "note": "SM174 Eevee GX jumbo has a Pokewallet product but no Pokewallet price data; use active eBay asking median."
     },
+    "smp-jp-zeraora-jumbo.jumbo": {
+      "cardId": "smp-jp-zeraora-jumbo",
+      "variant": "jumbo",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "SM-P Zeraora and Friends Jumbo pokemon card"
+      ],
+      "requiredTerms": ["zeraora", "friends"],
+      "preferredTerms": ["jumbo", "oversized", "oversize"],
+      "excludedTerms": [
+        "regular",
+        "standard",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-20",
+      "note": "SM-P Zeraora and Friends jumbo — active eBay asking median from the two-result search."
+    },
     "smp-SM175.jumbo": {
       "cardId": "smp-SM175",
       "variant": "jumbo",

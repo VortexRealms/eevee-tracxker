@@ -132,7 +132,7 @@ function CardTile({
               <span className="card-detail-line">{detailLineThree}</span>
             ) : null}
             {cameoLine ? (
-              <span className="card-detail-line">{cameoLine}</span>
+              <span className="card-detail-line card-cameo-line">{cameoLine}</span>
             ) : null}
           </div>
           <div className="card-subtitle-row card-subtitle-desktop">
@@ -155,11 +155,17 @@ function CardTile({
   );
 }
 
-function MarketplaceLinks({ card }: { card: PokemonCard }) {
+function MarketplaceLinks({
+  card,
+  variant,
+}: {
+  card: PokemonCard;
+  variant?: string;
+}) {
   return (
     <>
       <a
-        href={getEbaySearchUrl(card)}
+        href={getEbaySearchUrl(card, variant)}
         target="_blank"
         rel="noopener noreferrer"
         className="secondary-button search-button"
@@ -365,7 +371,7 @@ export function CardGrid({
         status={owned ? "owned" : "missing"}
         onOpen={() => onCardClick(card.id, variant)}
         isPublic={isPublic}
-        marketplaceLinks={<MarketplaceLinks card={card} />}
+        marketplaceLinks={<MarketplaceLinks card={card} variant={variant} />}
         priceNode={
           showPrices && exchangeRates ? (
             (() => {

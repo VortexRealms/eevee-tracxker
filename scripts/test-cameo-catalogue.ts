@@ -81,6 +81,25 @@ const catalogue = loadCameoCatalogue();
 }
 
 {
+  const dawn = catalogue.entries.find((e) => e.catalogueId === "dp5-79");
+  assert.ok(dawn, "Dawn Stadium dp5-79 missing from cameo catalogue");
+  assert.deepEqual(
+    [...(dawn!.cameoOf ?? [])].sort(),
+    ["Glaceon", "Leafeon"]
+  );
+
+  const byId = cameoOfByCatalogueId();
+  assert.deepEqual(byId.get("dp5-79"), ["Leafeon", "Glaceon"]);
+
+  const cardsPath = path.join(process.cwd(), "data", "cards.json");
+  const cards = JSON.parse(fs.readFileSync(cardsPath, "utf8")) as PokemonCard[];
+  const printed = cards.find((c) => c.id === "dp5-79");
+  assert.ok(printed, "dp5-79 missing from cards.json");
+  assert.deepEqual([...(printed!.cameoOf ?? [])].sort(), ["Glaceon", "Leafeon"]);
+  assert.deepEqual(printed!.variants, ["normal", "reverse"]);
+}
+
+{
   const masterIds = cameoMasterSetIds();
   assert.ok(masterIds.has("basep-49"), "cameo EN card should be master-set whitelisted");
   assert.ok(masterIds.has("bwp-190"), "cameo manual card should be master-set whitelisted");
@@ -99,6 +118,10 @@ const catalogue = loadCameoCatalogue();
     assert.equal(stub.id, entry.catalogueId);
     assert.equal(stub.catalogueLanguage, entry.language);
   }
+
+  const zeraoraEntry = catalogue.entries.find((e) => e.catalogueId === "smp-jp-zeraora-jumbo");
+  assert.ok(zeraoraEntry, "Zeraora and Friends cameo entry missing");
+  assert.deepEqual(buildCameoManualStub(zeraoraEntry!).variants, ["jumbo"]);
 }
 
 {
@@ -135,6 +158,65 @@ const catalogue = loadCameoCatalogue();
 
     const ids = new Set(cards.map((c) => c.id));
     assert.equal(ids.size, cards.length, "cards.json must not duplicate catalogue IDs");
+
+    const bwp190 = cards.find((c) => c.id === "bwp-190");
+    assert.ok(bwp190, "bwp-190 missing from cards.json");
+    assert.equal(
+      hasCustomCardImages(bwp190!.images),
+      true,
+      "BW-P #190 Pokémon Center should use custom art, not the card back"
+    );
+
+    const pikachu2012 = cards.find((c) => c.id === "bwp-2012");
+    assert.ok(pikachu2012, "bwp-2012 missing from cards.json");
+    assert.equal(
+      hasCustomCardImages(pikachu2012!.images),
+      true,
+      "BW-P _____'s Pikachu jumbo should use custom art, not the card back"
+    );
+
+    const poncho142 = cards.find((c) => c.id === "smp-jp-poncho-142");
+    assert.ok(poncho142, "smp-jp-poncho-142 missing from cards.json");
+    assert.equal(
+      hasCustomCardImages(poncho142!.images),
+      true,
+      "SM-P #142 Poncho-wearing Eevee should use custom art, not the card back"
+    );
+
+    for (const n of [137, 138, 139, 140, 141, 143, 144]) {
+      const poncho = cards.find((c) => c.id === `smp-jp-poncho-${n}`);
+      assert.ok(poncho, `smp-jp-poncho-${n} missing from cards.json`);
+      assert.equal(
+        poncho!.images.small,
+        `/media/ponchoEevee${n}.webp`,
+        `SM-P #${n} Poncho-wearing Eevee should use the local scan`
+      );
+    }
+
+    const sm1101a = cards.find((c) => c.id === "sm1-101a");
+    assert.ok(sm1101a, "sm1-101a missing from cards.json");
+    assert.equal(
+      sm1101a!.images.small,
+      "/media/SUM_101a_R_EN.webp",
+      "Sun & Moon Eevee #101a should use the local reverse scan"
+    );
+
+    const zeraoraJumbo = cards.find((c) => c.id === "smp-jp-zeraora-jumbo");
+    assert.ok(zeraoraJumbo, "smp-jp-zeraora-jumbo missing from cards.json");
+    assert.deepEqual(zeraoraJumbo!.variants, ["jumbo"]);
+    assert.equal(
+      zeraoraJumbo!.images.small,
+      "/media/smp-zeraoraandfriends-jumbo-promo.webp",
+      "SM-P Zeraora and Friends jumbo should use the local scan"
+    );
+
+    const sapporoPikachu = cards.find((c) => c.id === "smp-jp-005");
+    assert.ok(sapporoPikachu, "smp-jp-005 missing from cards.json");
+    assert.equal(
+      sapporoPikachu!.images.small,
+      "/media/Sapporos-Pikachu.webp",
+      "SM-P #5 Sapporo's Pikachu should use the local scan"
+    );
   }
 }
 

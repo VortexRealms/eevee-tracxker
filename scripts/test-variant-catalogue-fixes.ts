@@ -53,6 +53,10 @@ assert.equal(migrateOwnershipVariant("col1-22", "reverse"), "holo");
 assert.equal(migrateOwnershipVariant("col1-22", "holo"), "reverse");
 assert.equal(migrateOwnershipVariant("col1-22", "normal"), null);
 assert.equal(migrateOwnershipVariant("xy7-22", "holo"), "holo");
+assert.equal(migrateOwnershipVariant("bwp-2012", "normal"), "jumbo");
+assert.equal(migrateOwnershipVariant("bwp-2012", "jumbo"), "jumbo");
+assert.equal(migrateOwnershipVariant("smp-jp-zeraora-jumbo", "normal"), "jumbo");
+assert.equal(migrateOwnershipVariant("smp-jp-zeraora-jumbo", "jumbo"), "jumbo");
 
 const catalogueEntry = remapPriceEntryVariantsToCatalogue("col1-22", pokewalletEntry);
 assert.equal(catalogueEntry.variants?.holo?.usd, 137.49);

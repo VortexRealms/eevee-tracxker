@@ -778,6 +778,12 @@ input {
   white-space: nowrap;
 }
 
+.card-cameo-line {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+}
+
 .card-footer-row {
   display: none;
   justify-content: flex-end;

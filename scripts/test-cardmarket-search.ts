@@ -110,6 +110,25 @@ check("Penny eBay URL", pennyEbay.includes(encodeURIComponent("Penny 10 04/04"))
 check("Penny eBay full fraction", pennyEbay.includes("04%2F04"));
 check("Penny eBay no set", !pennyEbay.includes("Gem"));
 
+const zeraoraEbay = getEbaySearchUrl(
+  {
+    id: "smp-jp-zeraora-jumbo",
+    name: "Zeraora and Friends",
+    number: "-",
+    set: {
+      id: "smp-jp",
+      name: "SM-P Promos",
+      series: "Sun & Moon",
+      releaseDate: "2017/03/01",
+    },
+  },
+  "jumbo"
+);
+check(
+  "Zeraora jumbo eBay URL uses mapped query",
+  zeraoraEbay.includes(encodeURIComponent("SM-P Zeraora and Friends Jumbo pokemon card"))
+);
+
 const mcdUrl = getCardmarketSearchUrl({
   name: "Pikachu",
   number: "01 01/15",

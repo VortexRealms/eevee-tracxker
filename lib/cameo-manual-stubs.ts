@@ -126,7 +126,7 @@ export function buildCameoManualStub(entry: CameoCardEntry): PokemonCard {
     supertype: inferSupertype(entry.cardName),
     set,
     images: cardBackImages(),
-    variants: ["normal"],
+    variants: entry.notes?.toLowerCase().includes("jumbo") ? ["jumbo"] : ["normal"],
     catalogueLanguage: entry.language,
   };
 }

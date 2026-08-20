@@ -16,7 +16,7 @@ import {
 
 function card(
   partial: Pick<PokemonCard, "id" | "name" | "set"> &
-    Partial<Pick<PokemonCard, "cameoOf" | "number">>
+    Partial<Pick<PokemonCard, "cameoOf" | "number" | "variants">>
 ): PokemonCard {
   return {
     supertype: "Pokémon",
@@ -74,6 +74,19 @@ const multiCameo = card({
   cameoOf: ["Eevee", "Umbreon"],
   set: { id: "sv1", name: "Scarlet & Violet", series: "Scarlet & Violet", releaseDate: "2023/03/31" },
 });
+const dawnStadium = card({
+  id: "dp5-79",
+  name: "Dawn Stadium",
+  number: "79",
+  cameoOf: ["Glaceon", "Leafeon"],
+  variants: ["normal", "reverse"],
+  set: {
+    id: "dp5",
+    name: "Majestic Dawn",
+    series: "Diamond & Pearl",
+    releaseDate: "2008/05/01",
+  },
+});
 const tPromoVaporeon = card({
   id: "tpp-jp-2",
   name: "Vaporeon",
@@ -127,11 +140,11 @@ assert.equal(isCameoCard(umbreon), false);
 }
 
 {
-  assert.equal(matchesEeveelutionFilter(tPromoVaporeon, "all", false), false);
-  assert.equal(matchesEeveelutionFilter(tPromoVaporeon, "Vaporeon", false), false);
-  assert.equal(matchesEeveelutionFilter(tPromoVaporeon, "Vaporeon", true), true);
-  assert.equal(matchesEeveelutionFilter(tPromoVaporeon, "Jolteon", true), true);
-  assert.equal(matchesEeveelutionFilter(tPromoVaporeon, "Umbreon", true), false);
+  assert.equal(matchesEeveelutionFilter(dawnStadium, "Glaceon", true), true);
+  assert.equal(matchesEeveelutionFilter(dawnStadium, "Leafeon", true), true);
+  assert.equal(matchesEeveelutionFilter(dawnStadium, "Glaceon", false), false);
+  assert.equal(matchesEeveelutionFilter(dawnStadium, "Leafeon", false), false);
+  assert.equal(matchesEeveelutionFilter(dawnStadium, "Umbreon", true), false);
 }
 
 {

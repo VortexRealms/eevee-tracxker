@@ -1,6 +1,17 @@
+import ebayPriceMappingsFile from "../data/ebay-price-mappings.json";
 import type { PokemonCard } from "../types";
 
-type SearchCard = Pick<PokemonCard, "name" | "number" | "set">;
+type SearchCard = Pick<PokemonCard, "name" | "number" | "set"> & { id?: string };
+
+function ebayQueryFromMapping(cardId?: string, variant?: string): string | undefined {
+  if (!cardId || !variant) return undefined;
+  const mappings = ebayPriceMappingsFile.mappings as Record<
+    string,
+    { queries?: string[] }
+  >;
+  const query = mappings[`${cardId}.${variant}`]?.queries?.[0];
+  return query?.trim() || undefined;
+}
 
 /** CBB2C numbers like "10 04/04" or "01 01/15" — search by line only ("10", "01"). */
 export function searchNumberForCard(card: SearchCard): string {
@@ -43,8 +54,10 @@ function ebaySearchNumberForCard(card: SearchCard): string {
   return normalizeCardNumberForListing(raw);
 }
 
-export function getEbaySearchUrl(card: SearchCard): string {
-  const query = buildQuery(card, ebaySearchNumberForCard(card));
+export function getEbaySearchUrl(card: SearchCard, variant?: string): string {
+  const query =
+    ebayQueryFromMapping(card.id, variant) ??
+    buildQuery(card, ebaySearchNumberForCard(card));
   return `https://www.ebay.com/sch/i.html?_nkw=${encodeURIComponent(query)}`;
 }
 

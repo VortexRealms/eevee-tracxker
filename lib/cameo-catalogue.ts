@@ -4,6 +4,7 @@
 
 import cameoData from "../data/cameo-cards.json";
 import type { PokemonCard, PokemonName } from "../types";
+import { EEVEELUTIONS } from "./collection-filters";
 
 export type CameoLanguage = "en" | "ja" | "zh-cn";
 export type CameoResolutionStatus =
@@ -121,7 +122,7 @@ export function cameoOfByCatalogueId(
 
   const merged = new Map<string, PokemonName[]>();
   for (const [id, names] of out) {
-    merged.set(id, [...names].sort());
+    merged.set(id, sortCameoNames([...names]));
   }
   return merged;
 }
@@ -149,5 +150,12 @@ export function cameoMasterSetIds(
 
 export function formatCameoLabel(cameoOf: PokemonName[] | undefined): string | null {
   if (!cameoOf?.length) return null;
-  return cameoOf.join(", ");
+  return sortCameoNames(cameoOf).join(", ");
+}
+
+function sortCameoNames(names: PokemonName[]): PokemonName[] {
+  const order = new Map(EEVEELUTIONS.map((name, index) => [name, index]));
+  return [...names].sort(
+    (a, b) => (order.get(a) ?? 99) - (order.get(b) ?? 99) || a.localeCompare(b)
+  );
 }
