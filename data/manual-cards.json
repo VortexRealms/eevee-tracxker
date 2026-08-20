@@ -3806,5 +3806,90 @@
       "normal"
     ],
     "catalogueLanguage": "ja"
+  },
+  {
+    "id": "MEE-001",
+    "name": "Jolteon",
+    "number": "001",
+    "rarity": "Uncommon",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "types": [
+      "Lightning"
+    ],
+    "hp": "110",
+    "set": {
+      "id": "MEE",
+      "name": "Starter Set ex Eevee ex",
+      "series": "Mega Evolution",
+      "releaseDate": "2026/07/31"
+    },
+    "images": {
+      "small": "/media/mee01.webp",
+      "large": "/media/mee01.webp"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "ja"
+  },
+  {
+    "id": "MEE-008",
+    "name": "Eevee",
+    "number": "008",
+    "rarity": "Common",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "hp": "70",
+    "set": {
+      "id": "MEE",
+      "name": "Starter Set ex Eevee ex",
+      "series": "Mega Evolution",
+      "releaseDate": "2026/07/31"
+    },
+    "images": {
+      "small": "/media/mee008.webp",
+      "large": "/media/mee008.webp"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "ja"
+  },
+  {
+    "id": "MEE-009",
+    "name": "Eevee ex",
+    "number": "009",
+    "rarity": "Double Rare",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic",
+      "ex"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "hp": "200",
+    "set": {
+      "id": "MEE",
+      "name": "Starter Set ex Eevee ex",
+      "series": "Mega Evolution",
+      "releaseDate": "2026/07/31"
+    },
+    "images": {
+      "small": "/media/mee009.webp",
+      "large": "/media/mee009.webp"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "ja"
   }
 ]

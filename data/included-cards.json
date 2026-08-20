@@ -246,6 +246,21 @@
     "number": "XY124"
   },
   {
+    "name": "Jolteon",
+    "setId": "MEE",
+    "number": "001"
+  },
+  {
+    "name": "Eevee",
+    "setId": "MEE",
+    "number": "008"
+  },
+  {
+    "name": "Eevee ex",
+    "setId": "MEE",
+    "number": "009"
+  },
+  {
     "name": "Eevee",
     "setId": "MEE",
     "number": "020"

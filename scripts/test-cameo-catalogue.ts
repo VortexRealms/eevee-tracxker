@@ -225,6 +225,18 @@ const catalogue = loadCameoCatalogue();
       "/media/mee20jpg.webp",
       "MEE 020/019 Eevee AR should use the local scan"
     );
+
+    for (const [id, image] of [
+      ["MEE-001", "/media/mee01.webp"],
+      ["MEE-008", "/media/mee008.webp"],
+      ["MEE-009", "/media/mee009.webp"],
+    ] as const) {
+      const card = cards.find((c) => c.id === id);
+      assert.ok(card, `${id} missing from cards.json`);
+      assert.equal(card!.set.id, "MEE", `${id} should be in Starter Set ex Eevee ex`);
+      assert.equal(card!.catalogueLanguage, "ja", `${id} should be JP catalogue language`);
+      assert.equal(card!.images.small, image, `${id} should use the local scan`);
+    }
   }
 }
 
