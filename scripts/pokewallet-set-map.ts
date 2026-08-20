@@ -27,4 +27,8 @@ export const OUR_SET_TO_POKEWALLET: Record<string, SetLookupHint> = {
   mcd19: { pokewalletSetCode: "2019SM" },
   mcd24: { pokewalletSetCode: "MCD24" },
   base2: { pokewalletSetCode: "JU", language: "eng" },
+  vs: { pokewalletSetCode: "24180", language: "jap" },
+  "svp-jp": { pokewalletSetCode: "SV-P", language: "jap" },
+  "smp-jp": { pokewalletSetCode: "SM-P", language: "jap" },
+  vending1: { pokewalletSetCode: "24206", language: "jap" },
 };

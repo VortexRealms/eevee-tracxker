@@ -541,6 +541,12 @@ export function buildSearchQueries(
   const setEntry = lookupSetForCard(card, allSets);
   const num = searchNumberForCard(card);
 
+  // Pokewallet has no printed set number for vending cards; "Eevee 032" hits SV-P.
+  if (card.set.id === "vending1" || card.id.startsWith("vending1-")) {
+    add(`${card.name} Vending Machine cards Series 1`);
+    add(`${card.name} 24206`);
+  }
+
   // Name-first queries tend to be most accurate on Pokewallet /search
   add(`${card.name} ${card.set.name} ${num}`);
   add(`${card.name} ${num}`);
@@ -559,6 +565,21 @@ export function buildSearchQueries(
       : num;
     add(`${card.name} CBB5C ${csNum}`);
     add(`CBB5C ${csNum}`);
+  }
+
+  if (card.set.id === "svp-jp" || card.id.startsWith("svp-jp-")) {
+    add(`${card.name} ${num}/SV-P`);
+    add(`SV-P ${num}`);
+  }
+
+  if (card.set.id === "smp-jp" || card.id.startsWith("smp-jp-")) {
+    add(`${card.name} ${num}/SM-P`);
+    add(`SM-P ${num}`);
+  }
+
+  if (card.set.id === "vs" || card.id.startsWith("vs-")) {
+    add(`${card.name} ${num}/141`);
+    add(`Pokemon VS ${num}`);
   }
 
   if (setEntry) {

@@ -3067,6 +3067,118 @@
       "sqliteVariants": [],
       "note": "MEE 020/019 Art Rare (JP starter deck). Priced from eBay until Pokewallet lists the product."
     },
+    "vending1-032.normal": {
+      "cardName": "Eevee",
+      "setName": "Expansion Sheet 1",
+      "cardNumber": "032",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": [],
+      "note": "JP Expansion Sheet 1 / Vending Series 1 (Blue) 32/36. Priced from Pokewallet TCGPlayer (set 24206)."
+    },
+    "vs-56.normal": {
+      "cardName": "Sabrina's Espeon",
+      "setName": "Pokémon VS",
+      "cardNumber": "056",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": [],
+      "note": "Pokémon VS 056/141. Priced from Pokewallet TCGPlayer (set 24180)."
+    },
+    "vs-76.normal": {
+      "cardName": "Will's Espeon",
+      "setName": "Pokémon VS",
+      "cardNumber": "076",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": [],
+      "note": "Pokémon VS 076/141. Priced from Pokewallet TCGPlayer (set 24180)."
+    },
+    "vs-89.normal": {
+      "cardName": "Karen's Flareon",
+      "setName": "Pokémon VS",
+      "cardNumber": "089",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": [],
+      "note": "Pokémon VS 089/141. Priced from Pokewallet TCGPlayer (set 24180)."
+    },
+    "vs-91.normal": {
+      "cardName": "Karen's Umbreon",
+      "setName": "Pokémon VS",
+      "cardNumber": "091",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": [],
+      "note": "Pokémon VS 091/141 Holo Rare. Priced from Pokewallet TCGPlayer Normal (set 24180)."
+    },
+    "svp-jp-062.holo": {
+      "cardName": "Eevee",
+      "setName": "SV-P Promotional Cards",
+      "cardNumber": "062",
+      "priceSheetVariant": "holo",
+      "sqliteVariants": [],
+      "note": "YU NAGABA JP promo 062/SV-P. Priced from Pokewallet TCGPlayer Holofoil (set SV-P)."
+    },
+    "svp-jp-063.holo": {
+      "cardName": "Vaporeon",
+      "setName": "SV-P Promotional Cards",
+      "cardNumber": "063",
+      "priceSheetVariant": "holo",
+      "sqliteVariants": [],
+      "note": "YU NAGABA JP promo 063/SV-P. Priced from Pokewallet TCGPlayer Holofoil (set SV-P)."
+    },
+    "svp-jp-064.holo": {
+      "cardName": "Jolteon",
+      "setName": "SV-P Promotional Cards",
+      "cardNumber": "064",
+      "priceSheetVariant": "holo",
+      "sqliteVariants": [],
+      "note": "YU NAGABA JP promo 064/SV-P. Priced from Pokewallet TCGPlayer Holofoil (set SV-P)."
+    },
+    "svp-jp-065.holo": {
+      "cardName": "Flareon",
+      "setName": "SV-P Promotional Cards",
+      "cardNumber": "065",
+      "priceSheetVariant": "holo",
+      "sqliteVariants": [],
+      "note": "YU NAGABA JP promo 065/SV-P. Priced from Pokewallet TCGPlayer Holofoil (set SV-P)."
+    },
+    "svp-jp-066.holo": {
+      "cardName": "Espeon",
+      "setName": "SV-P Promotional Cards",
+      "cardNumber": "066",
+      "priceSheetVariant": "holo",
+      "sqliteVariants": [],
+      "note": "YU NAGABA JP promo 066/SV-P. Priced from Pokewallet TCGPlayer Holofoil (set SV-P)."
+    },
+    "svp-jp-067.holo": {
+      "cardName": "Umbreon",
+      "setName": "SV-P Promotional Cards",
+      "cardNumber": "067",
+      "priceSheetVariant": "holo",
+      "sqliteVariants": [],
+      "note": "YU NAGABA JP promo 067/SV-P. Priced from Pokewallet TCGPlayer Holofoil (set SV-P)."
+    },
+    "svp-jp-068.holo": {
+      "cardName": "Leafeon",
+      "setName": "SV-P Promotional Cards",
+      "cardNumber": "068",
+      "priceSheetVariant": "holo",
+      "sqliteVariants": [],
+      "note": "YU NAGABA JP promo 068/SV-P. Priced from Pokewallet TCGPlayer Holofoil (set SV-P)."
+    },
+    "svp-jp-069.holo": {
+      "cardName": "Glaceon",
+      "setName": "SV-P Promotional Cards",
+      "cardNumber": "069",
+      "priceSheetVariant": "holo",
+      "sqliteVariants": [],
+      "note": "YU NAGABA JP promo 069/SV-P. Priced from Pokewallet TCGPlayer Holofoil (set SV-P)."
+    },
+    "svp-jp-070.holo": {
+      "cardName": "Sylveon",
+      "setName": "SV-P Promotional Cards",
+      "cardNumber": "070",
+      "priceSheetVariant": "holo",
+      "sqliteVariants": [],
+      "note": "YU NAGABA JP promo 070/SV-P. Priced from Pokewallet TCGPlayer Holofoil (set SV-P)."
+    },
     "mep-052.normal": {
       "cardName": "Grookey",
       "setName": "MEP Promos",
@@ -4285,6 +4397,30 @@
       "cardNumber": "5",
       "priceSheetVariant": "normal",
       "sqliteVariants": []
+    },
+    "smp-jp-287.holo": {
+      "cardName": "Eevee",
+      "setName": "SM-P Promos",
+      "cardNumber": "287",
+      "priceSheetVariant": "holo",
+      "sqliteVariants": [],
+      "note": "Munch: A Retrospective Eevee 287/SM-P. Priced from Pokewallet TCGPlayer Holofoil (set SM-P)."
+    },
+    "smp-jp-371.holo": {
+      "cardName": "Eevee",
+      "setName": "SM-P Promos",
+      "cardNumber": "371",
+      "priceSheetVariant": "holo",
+      "sqliteVariants": [],
+      "note": "Friendly Shop campaign Eevee 371/SM-P. Priced from Pokewallet TCGPlayer Holofoil (set SM-P)."
+    },
+    "smp-jp-399.holo": {
+      "cardName": "Eevee",
+      "setName": "SM-P Promos",
+      "cardNumber": "399",
+      "priceSheetVariant": "holo",
+      "sqliteVariants": [],
+      "note": "Friendly Shop campaign Eevee 399/SM-P. Priced from Pokewallet TCGPlayer Holofoil (set SM-P)."
     },
     "smp-jp-288.normal": {
       "cardName": "Pikachu",

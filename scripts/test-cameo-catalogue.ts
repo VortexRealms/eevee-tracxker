@@ -237,6 +237,92 @@ const catalogue = loadCameoCatalogue();
       assert.equal(card!.catalogueLanguage, "ja", `${id} should be JP catalogue language`);
       assert.equal(card!.images.small, image, `${id} should use the local scan`);
     }
+
+    for (const [id, name, image] of [
+      ["vs-56", "Sabrina's Espeon", "/media/vs-56.webp"],
+      ["vs-76", "Will's Espeon", "/media/vs-76.webp"],
+      ["vs-89", "Karen's Flareon", "/media/vs-89.webp"],
+      ["vs-91", "Karen's Umbreon", "/media/vs-91.webp"],
+    ] as const) {
+      const card = cards.find((c) => c.id === id);
+      assert.ok(card, `${id} missing from cards.json`);
+      assert.equal(card!.name, name, `${id} should keep the trainer Pokémon name`);
+      assert.equal(card!.set.id, "vs", `${id} should be in Pokémon VS`);
+      assert.equal(card!.catalogueLanguage, "ja", `${id} should be JP catalogue language`);
+      assert.equal(card!.images.small, image, `${id} should use the local scan`);
+    }
+
+    for (const [id, name] of [
+      ["svp-jp-062", "Eevee"],
+      ["svp-jp-063", "Vaporeon"],
+      ["svp-jp-064", "Jolteon"],
+      ["svp-jp-065", "Flareon"],
+      ["svp-jp-066", "Espeon"],
+      ["svp-jp-067", "Umbreon"],
+      ["svp-jp-068", "Leafeon"],
+      ["svp-jp-069", "Glaceon"],
+      ["svp-jp-070", "Sylveon"],
+    ] as const) {
+      const card = cards.find((c) => c.id === id);
+      assert.ok(card, `${id} missing from cards.json`);
+      assert.equal(card!.name, name, `${id} should keep the Eeveelution name`);
+      assert.equal(card!.set.id, "svp-jp", `${id} should be in Japanese SV-P Promos`);
+      assert.equal(card!.catalogueLanguage, "ja", `${id} should be JP catalogue language`);
+      assert.deepEqual(card!.variants, ["holo"], `${id} should be holo-only`);
+      assert.ok(
+        card!.images.small.includes("tcgplayer-cdn.tcgplayer.com/product/"),
+        `${id} should use the TCGPlayer scan (Scrydex maps these numbers to English SVP)`
+      );
+    }
+
+    const munchEevee = cards.find((c) => c.id === "smp-jp-287");
+    assert.ok(munchEevee, "smp-jp-287 missing from cards.json");
+    assert.equal(munchEevee!.name, "Eevee");
+    assert.equal(munchEevee!.set.id, "smp-jp");
+    assert.equal(munchEevee!.number, "287");
+    assert.equal(munchEevee!.catalogueLanguage, "ja");
+    assert.deepEqual(munchEevee!.variants, ["holo"]);
+    assert.ok(
+      munchEevee!.images.small.includes("598364"),
+      "SM-P 287 Eevee should use the TCGPlayer Munch scan"
+    );
+
+    const friendlyShopEevee = cards.find((c) => c.id === "smp-jp-371");
+    assert.ok(friendlyShopEevee, "smp-jp-371 missing from cards.json");
+    assert.equal(friendlyShopEevee!.name, "Eevee");
+    assert.equal(friendlyShopEevee!.set.id, "smp-jp");
+    assert.equal(friendlyShopEevee!.number, "371");
+    assert.equal(friendlyShopEevee!.catalogueLanguage, "ja");
+    assert.deepEqual(friendlyShopEevee!.variants, ["holo"]);
+    assert.ok(
+      friendlyShopEevee!.images.small.includes("598448"),
+      "SM-P 371 Eevee should use the TCGPlayer Friendly Shop scan"
+    );
+
+    const friendlyShopEeveeOct = cards.find((c) => c.id === "smp-jp-399");
+    assert.ok(friendlyShopEeveeOct, "smp-jp-399 missing from cards.json");
+    assert.equal(friendlyShopEeveeOct!.name, "Eevee");
+    assert.equal(friendlyShopEeveeOct!.set.id, "smp-jp");
+    assert.equal(friendlyShopEeveeOct!.number, "399");
+    assert.equal(friendlyShopEeveeOct!.catalogueLanguage, "ja");
+    assert.deepEqual(friendlyShopEeveeOct!.variants, ["holo"]);
+    assert.ok(
+      friendlyShopEeveeOct!.images.small.includes("598476"),
+      "SM-P 399 Eevee should use the TCGPlayer Friendly Shop scan"
+    );
+
+    const vendingEevee = cards.find((c) => c.id === "vending1-032");
+    assert.ok(vendingEevee, "vending1-032 missing from cards.json");
+    assert.equal(vendingEevee!.name, "Eevee");
+    assert.equal(vendingEevee!.number, "032");
+    assert.equal(vendingEevee!.set.id, "vending1");
+    assert.equal(vendingEevee!.set.name, "Expansion Sheet 1");
+    assert.equal(vendingEevee!.catalogueLanguage, "ja");
+    assert.deepEqual(vendingEevee!.variants, ["normal"]);
+    assert.ok(
+      vendingEevee!.images.small.includes("617447"),
+      "Expansion Sheet 1 Eevee should use the TCGPlayer vending scan"
+    );
   }
 }
 

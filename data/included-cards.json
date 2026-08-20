@@ -266,6 +266,108 @@
     "number": "020"
   },
   {
+    "id": "smp-jp-287",
+    "name": "Eevee",
+    "setId": "smp-jp",
+    "number": "287"
+  },
+  {
+    "id": "smp-jp-371",
+    "name": "Eevee",
+    "setId": "smp-jp",
+    "number": "371"
+  },
+  {
+    "id": "smp-jp-399",
+    "name": "Eevee",
+    "setId": "smp-jp",
+    "number": "399"
+  },
+  {
+    "id": "vs-56",
+    "name": "Sabrina's Espeon",
+    "setId": "vs",
+    "number": "056"
+  },
+  {
+    "id": "vs-76",
+    "name": "Will's Espeon",
+    "setId": "vs",
+    "number": "076"
+  },
+  {
+    "id": "vs-89",
+    "name": "Karen's Flareon",
+    "setId": "vs",
+    "number": "089"
+  },
+  {
+    "id": "vs-91",
+    "name": "Karen's Umbreon",
+    "setId": "vs",
+    "number": "091"
+  },
+  {
+    "id": "vending1-032",
+    "name": "Eevee",
+    "setId": "vending1",
+    "number": "032"
+  },
+  {
+    "id": "svp-jp-062",
+    "name": "Eevee",
+    "setId": "svp-jp",
+    "number": "062"
+  },
+  {
+    "id": "svp-jp-063",
+    "name": "Vaporeon",
+    "setId": "svp-jp",
+    "number": "063"
+  },
+  {
+    "id": "svp-jp-064",
+    "name": "Jolteon",
+    "setId": "svp-jp",
+    "number": "064"
+  },
+  {
+    "id": "svp-jp-065",
+    "name": "Flareon",
+    "setId": "svp-jp",
+    "number": "065"
+  },
+  {
+    "id": "svp-jp-066",
+    "name": "Espeon",
+    "setId": "svp-jp",
+    "number": "066"
+  },
+  {
+    "id": "svp-jp-067",
+    "name": "Umbreon",
+    "setId": "svp-jp",
+    "number": "067"
+  },
+  {
+    "id": "svp-jp-068",
+    "name": "Leafeon",
+    "setId": "svp-jp",
+    "number": "068"
+  },
+  {
+    "id": "svp-jp-069",
+    "name": "Glaceon",
+    "setId": "svp-jp",
+    "number": "069"
+  },
+  {
+    "id": "svp-jp-070",
+    "name": "Sylveon",
+    "setId": "svp-jp",
+    "number": "070"
+  },
+  {
     "id": "xyp-XY177",
     "name": "Karen",
     "setId": "xyp",

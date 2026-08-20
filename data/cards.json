@@ -67,6 +67,34 @@
     "catalogueLanguage": "ja"
   },
   {
+    "id": "vending1-032",
+    "name": "Eevee",
+    "number": "032",
+    "rarity": "Common",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "hp": "30",
+    "set": {
+      "id": "vending1",
+      "name": "Expansion Sheet 1",
+      "series": "Expansion Sheet",
+      "releaseDate": "1998/03/23"
+    },
+    "images": {
+      "small": "https://tcgplayer-cdn.tcgplayer.com/product/617447_in_400x400.jpg",
+      "large": "https://tcgplayer-cdn.tcgplayer.com/product/617447_in_1000x1000.jpg"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "ja"
+  },
+  {
     "id": "base2-3",
     "name": "Flareon",
     "number": "3",
@@ -511,6 +539,118 @@
       "normal",
       "firstEdition"
     ]
+  },
+  {
+    "id": "vs-56",
+    "name": "Sabrina's Espeon",
+    "number": "056",
+    "rarity": "Common",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Psychic"
+    ],
+    "hp": "60",
+    "set": {
+      "id": "vs",
+      "name": "Pokémon VS",
+      "series": "VS",
+      "releaseDate": "2001/03/19"
+    },
+    "images": {
+      "small": "/media/vs-56.webp",
+      "large": "/media/vs-56.webp"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "ja"
+  },
+  {
+    "id": "vs-76",
+    "name": "Will's Espeon",
+    "number": "076",
+    "rarity": "Common",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Psychic"
+    ],
+    "hp": "60",
+    "set": {
+      "id": "vs",
+      "name": "Pokémon VS",
+      "series": "VS",
+      "releaseDate": "2001/03/19"
+    },
+    "images": {
+      "small": "/media/vs-76.webp",
+      "large": "/media/vs-76.webp"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "ja"
+  },
+  {
+    "id": "vs-89",
+    "name": "Karen's Flareon",
+    "number": "089",
+    "rarity": "Common",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Fire"
+    ],
+    "hp": "60",
+    "set": {
+      "id": "vs",
+      "name": "Pokémon VS",
+      "series": "VS",
+      "releaseDate": "2001/03/19"
+    },
+    "images": {
+      "small": "/media/vs-89.webp",
+      "large": "/media/vs-89.webp"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "ja"
+  },
+  {
+    "id": "vs-91",
+    "name": "Karen's Umbreon",
+    "number": "091",
+    "rarity": "Holo Rare",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Darkness"
+    ],
+    "hp": "60",
+    "set": {
+      "id": "vs",
+      "name": "Pokémon VS",
+      "series": "VS",
+      "releaseDate": "2001/03/19"
+    },
+    "images": {
+      "small": "/media/vs-91.webp",
+      "large": "/media/vs-91.webp"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "ja"
   },
   {
     "id": "neo2-1",
@@ -6850,6 +6990,34 @@
     ]
   },
   {
+    "id": "smp-jp-287",
+    "name": "Eevee",
+    "number": "287",
+    "rarity": "Promo",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "hp": "60",
+    "set": {
+      "id": "smp-jp",
+      "name": "SM-P Promos",
+      "series": "Sun & Moon",
+      "releaseDate": "2018/10/01"
+    },
+    "images": {
+      "small": "https://tcgplayer-cdn.tcgplayer.com/product/598364_in_400x400.jpg",
+      "large": "https://tcgplayer-cdn.tcgplayer.com/product/598364_in_1000x1000.jpg"
+    },
+    "variants": [
+      "holo"
+    ],
+    "catalogueLanguage": "ja"
+  },
+  {
     "id": "2018sm-11",
     "name": "Eevee",
     "number": "11",
@@ -7152,6 +7320,34 @@
     "variants": [
       "normal"
     ]
+  },
+  {
+    "id": "smp-jp-371",
+    "name": "Eevee",
+    "number": "371",
+    "rarity": "Promo",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "hp": "60",
+    "set": {
+      "id": "smp-jp",
+      "name": "SM-P Promos",
+      "series": "Sun & Moon",
+      "releaseDate": "2019/07/05"
+    },
+    "images": {
+      "small": "https://tcgplayer-cdn.tcgplayer.com/product/598448_in_400x400.jpg",
+      "large": "https://tcgplayer-cdn.tcgplayer.com/product/598448_in_1000x1000.jpg"
+    },
+    "variants": [
+      "holo"
+    ],
+    "catalogueLanguage": "ja"
   },
   {
     "id": "sm11-72",
@@ -7584,6 +7780,34 @@
     "variants": [
       "holo"
     ]
+  },
+  {
+    "id": "smp-jp-399",
+    "name": "Eevee",
+    "number": "399",
+    "rarity": "Promo",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "hp": "60",
+    "set": {
+      "id": "smp-jp",
+      "name": "SM-P Promos",
+      "series": "Sun & Moon",
+      "releaseDate": "2019/10/01"
+    },
+    "images": {
+      "small": "https://tcgplayer-cdn.tcgplayer.com/product/598476_in_400x400.jpg",
+      "large": "https://tcgplayer-cdn.tcgplayer.com/product/598476_in_1000x1000.jpg"
+    },
+    "variants": [
+      "holo"
+    ],
+    "catalogueLanguage": "ja"
   },
   {
     "id": "sm12-25",
@@ -11043,6 +11267,258 @@
     "cameoOf": [
       "Eevee"
     ]
+  },
+  {
+    "id": "svp-jp-062",
+    "name": "Eevee",
+    "number": "062",
+    "rarity": "Promo",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "hp": "50",
+    "set": {
+      "id": "svp-jp",
+      "name": "SV-P Promotional Cards",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023/05/24"
+    },
+    "images": {
+      "small": "https://tcgplayer-cdn.tcgplayer.com/product/587820_in_400x400.jpg",
+      "large": "https://tcgplayer-cdn.tcgplayer.com/product/587820_in_1000x1000.jpg"
+    },
+    "variants": [
+      "holo"
+    ],
+    "catalogueLanguage": "ja"
+  },
+  {
+    "id": "svp-jp-063",
+    "name": "Vaporeon",
+    "number": "063",
+    "rarity": "Promo",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "types": [
+      "Water"
+    ],
+    "hp": "120",
+    "set": {
+      "id": "svp-jp",
+      "name": "SV-P Promotional Cards",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023/05/24"
+    },
+    "images": {
+      "small": "https://tcgplayer-cdn.tcgplayer.com/product/587821_in_400x400.jpg",
+      "large": "https://tcgplayer-cdn.tcgplayer.com/product/587821_in_1000x1000.jpg"
+    },
+    "variants": [
+      "holo"
+    ],
+    "catalogueLanguage": "ja"
+  },
+  {
+    "id": "svp-jp-064",
+    "name": "Jolteon",
+    "number": "064",
+    "rarity": "Promo",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "types": [
+      "Lightning"
+    ],
+    "hp": "90",
+    "set": {
+      "id": "svp-jp",
+      "name": "SV-P Promotional Cards",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023/05/24"
+    },
+    "images": {
+      "small": "https://tcgplayer-cdn.tcgplayer.com/product/587822_in_400x400.jpg",
+      "large": "https://tcgplayer-cdn.tcgplayer.com/product/587822_in_1000x1000.jpg"
+    },
+    "variants": [
+      "holo"
+    ],
+    "catalogueLanguage": "ja"
+  },
+  {
+    "id": "svp-jp-065",
+    "name": "Flareon",
+    "number": "065",
+    "rarity": "Promo",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "types": [
+      "Fire"
+    ],
+    "hp": "120",
+    "set": {
+      "id": "svp-jp",
+      "name": "SV-P Promotional Cards",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023/05/24"
+    },
+    "images": {
+      "small": "https://tcgplayer-cdn.tcgplayer.com/product/587823_in_400x400.jpg",
+      "large": "https://tcgplayer-cdn.tcgplayer.com/product/587823_in_1000x1000.jpg"
+    },
+    "variants": [
+      "holo"
+    ],
+    "catalogueLanguage": "ja"
+  },
+  {
+    "id": "svp-jp-066",
+    "name": "Espeon",
+    "number": "066",
+    "rarity": "Promo",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "types": [
+      "Psychic"
+    ],
+    "hp": "110",
+    "set": {
+      "id": "svp-jp",
+      "name": "SV-P Promotional Cards",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023/05/24"
+    },
+    "images": {
+      "small": "https://tcgplayer-cdn.tcgplayer.com/product/587824_in_400x400.jpg",
+      "large": "https://tcgplayer-cdn.tcgplayer.com/product/587824_in_1000x1000.jpg"
+    },
+    "variants": [
+      "holo"
+    ],
+    "catalogueLanguage": "ja"
+  },
+  {
+    "id": "svp-jp-067",
+    "name": "Umbreon",
+    "number": "067",
+    "rarity": "Promo",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "types": [
+      "Darkness"
+    ],
+    "hp": "100",
+    "set": {
+      "id": "svp-jp",
+      "name": "SV-P Promotional Cards",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023/05/24"
+    },
+    "images": {
+      "small": "https://tcgplayer-cdn.tcgplayer.com/product/587825_in_400x400.jpg",
+      "large": "https://tcgplayer-cdn.tcgplayer.com/product/587825_in_1000x1000.jpg"
+    },
+    "variants": [
+      "holo"
+    ],
+    "catalogueLanguage": "ja"
+  },
+  {
+    "id": "svp-jp-068",
+    "name": "Leafeon",
+    "number": "068",
+    "rarity": "Promo",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "types": [
+      "Grass"
+    ],
+    "hp": "110",
+    "set": {
+      "id": "svp-jp",
+      "name": "SV-P Promotional Cards",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023/05/24"
+    },
+    "images": {
+      "small": "https://tcgplayer-cdn.tcgplayer.com/product/587826_in_400x400.jpg",
+      "large": "https://tcgplayer-cdn.tcgplayer.com/product/587826_in_1000x1000.jpg"
+    },
+    "variants": [
+      "holo"
+    ],
+    "catalogueLanguage": "ja"
+  },
+  {
+    "id": "svp-jp-069",
+    "name": "Glaceon",
+    "number": "069",
+    "rarity": "Promo",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "types": [
+      "Water"
+    ],
+    "hp": "110",
+    "set": {
+      "id": "svp-jp",
+      "name": "SV-P Promotional Cards",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023/05/24"
+    },
+    "images": {
+      "small": "https://tcgplayer-cdn.tcgplayer.com/product/587827_in_400x400.jpg",
+      "large": "https://tcgplayer-cdn.tcgplayer.com/product/587827_in_1000x1000.jpg"
+    },
+    "variants": [
+      "holo"
+    ],
+    "catalogueLanguage": "ja"
+  },
+  {
+    "id": "svp-jp-070",
+    "name": "Sylveon",
+    "number": "070",
+    "rarity": "Promo",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "types": [
+      "Psychic"
+    ],
+    "hp": "100",
+    "set": {
+      "id": "svp-jp",
+      "name": "SV-P Promotional Cards",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023/05/24"
+    },
+    "images": {
+      "small": "https://tcgplayer-cdn.tcgplayer.com/product/587828_in_400x400.jpg",
+      "large": "https://tcgplayer-cdn.tcgplayer.com/product/587828_in_1000x1000.jpg"
+    },
+    "variants": [
+      "holo"
+    ],
+    "catalogueLanguage": "ja"
   },
   {
     "id": "sv2-268",
