@@ -80,6 +80,85 @@ assert.equal(plan.ebayJobs.length, 1);
 assert.equal(plan.ebayJobs[0]?.variant, "jumbo");
 assert.ok(plan.pokewalletGroups.size >= 1);
 
+const crackedIceIds = [
+  "pl2-60",
+  "hgss3-2",
+  "hgss3-10",
+  "bw9-11",
+  "xy3-72",
+  "sm8-155",
+] as const;
+const ebayMappings = loadEbayPriceMappings();
+for (const cardId of crackedIceIds) {
+  const mapping = ebayMappings[`${cardId}.crackedIce`];
+  assert.ok(mapping, `${cardId}.crackedIce should have an eBay mapping`);
+  assert.equal(mapping!.variant, "crackedIce");
+  assert.ok(mapping!.queries.length >= 1);
+}
+
+const crackedIcePlan = buildProviderPlan({
+  cards: crackedIceIds.map((id) => ({
+    id,
+    name: "Test",
+    number: "1",
+    supertype: "Pokémon" as const,
+    set: { id: "test", name: "Test", series: "Test", releaseDate: "2000/01/01" },
+    images: { small: "https://example.com/s.webp", large: "https://example.com/l.png" },
+    variants: ["normal", "reverse", "crackedIce"],
+  })),
+  cache: Object.fromEntries(
+    crackedIceIds.map((id) => [
+      id,
+      { pokewalletId: `pk_${id}`, setCode: "TEST", resolvedAt: "2026-08-21" },
+    ])
+  ),
+  ebayMappings,
+});
+assert.deepEqual(
+  crackedIcePlan.ebayJobs.map((job) => job.cardId).sort(),
+  [...crackedIceIds].sort()
+);
+assert.equal(
+  crackedIcePlan.pokewalletGroups.size,
+  crackedIceIds.length,
+  "cracked-ice slots should bypass Pokewallet even when the base card is cached"
+);
+
+const ebayOnlyVariantSlots = [
+  ["ex2-16", "exBattleStadiumDeckExclusive"],
+  ["ex2-63", "exBattleStadiumDeckExclusive"],
+  ["sm115-49", "mewtwoStamp"],
+  ["sm115-49", "battleAcademyCharizardStamp26"],
+  ["sm115-49", "battleAcademyCharizardStamp36"],
+  ["sm8-89", "mewtwoStamp"],
+  ["smp-SM186", "battleAcademyCharizardStamp27"],
+  ["smp-SM186", "battleAcademyCharizardStamp44"],
+  ["swshp-SWSH065", "eeveeStamp"],
+  ["ex10-102", "worldChampionshipDeck2006JimmyBallard"],
+  ["ex10-102", "worldChampionshipDeck2007TomRoos"],
+  ["ex10-112", "worldChampionshipDeck2006JimmyBallard"],
+  ["ex11-68", "worldChampionshipDeck2007JunHasebe"],
+  ["ex11-69", "worldChampionshipDeck2006JimmyBallard"],
+  ["ex11-69", "worldChampionshipDeck2007TomRoos"],
+  ["ex11-108", "worldChampionshipDeck2006JimmyBallard"],
+  ["ex11-109", "worldChampionshipDeck2006JimmyBallard"],
+  ["ex11-109", "worldChampionshipDeck2007JunHasebe"],
+  ["ex11-109", "worldChampionshipDeck2007TomRoos"],
+  ["ex11-110", "worldChampionshipDeck2006JimmyBallard"],
+  ["ex11-110", "worldChampionshipDeck2007JunHasebe"],
+  ["ex11-110", "worldChampionshipDeck2007TomRoos"],
+  ["ex16-101", "worldChampionshipDeck2007TomRoos"],
+  ["ex16-101", "worldChampionshipDeck2008JasonKlaczynski"],
+  ["xy9-52", "worldChampionshipDeck2017KabuFukase"],
+  ["sm11-72", "worldChampionshipDeck2019HenryBrand"],
+  ["wcd2010-espeon", "normal"],
+] as const;
+for (const [cardId, variant] of ebayOnlyVariantSlots) {
+  const mapping = ebayMappings[`${cardId}.${variant}`];
+  assert.ok(mapping, `${cardId}.${variant} should have an eBay mapping`);
+  assert.equal(mapping!.variant, variant);
+}
+
 const mixedCachePlan = buildProviderPlan({
   cards: [
     {

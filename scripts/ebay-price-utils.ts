@@ -175,7 +175,7 @@ export function estimateEbayAskingMedian(input: {
     });
   }
 
-  const minSamples = Math.max(2, input.mapping.minSamples ?? 2);
+  const minSamples = Math.max(1, input.mapping.minSamples ?? 2);
   const totals = accepted.map((a) => a.totalUsd);
   const filtered = filterIqrOutliers(totals);
   const med = median(filtered);

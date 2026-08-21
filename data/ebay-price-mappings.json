@@ -11,8 +11,15 @@
         "Espeon Aquapolis oversized 11",
         "Pokemon Espeon AQ11 jumbo"
       ],
-      "requiredTerms": ["espeon", "aquapolis"],
-      "preferredTerms": ["jumbo", "oversized", "11"],
+      "requiredTerms": [
+        "espeon",
+        "aquapolis"
+      ],
+      "preferredTerms": [
+        "jumbo",
+        "oversized",
+        "11"
+      ],
       "excludedTerms": [
         "h9",
         "reverse",
@@ -44,8 +51,16 @@
         "Pokemon SM36 jumbo promo",
         "Umbreon GX SM36 oversize"
       ],
-      "requiredTerms": ["umbreon", "gx", "sm36"],
-      "preferredTerms": ["jumbo", "oversized", "oversize"],
+      "requiredTerms": [
+        "umbreon",
+        "gx",
+        "sm36"
+      ],
+      "preferredTerms": [
+        "jumbo",
+        "oversized",
+        "oversize"
+      ],
       "excludedTerms": [
         "regular",
         "standard",
@@ -77,8 +92,16 @@
         "Eevee GX SM174 oversized",
         "Pokemon SM174 jumbo promo"
       ],
-      "requiredTerms": ["eevee", "gx", "sm174"],
-      "preferredTerms": ["jumbo", "oversized", "oversize"],
+      "requiredTerms": [
+        "eevee",
+        "gx",
+        "sm174"
+      ],
+      "preferredTerms": [
+        "jumbo",
+        "oversized",
+        "oversize"
+      ],
       "excludedTerms": [
         "regular",
         "standard",
@@ -108,8 +131,15 @@
       "queries": [
         "SM-P Zeraora and Friends Jumbo pokemon card"
       ],
-      "requiredTerms": ["zeraora", "friends"],
-      "preferredTerms": ["jumbo", "oversized", "oversize"],
+      "requiredTerms": [
+        "zeraora",
+        "friends"
+      ],
+      "preferredTerms": [
+        "jumbo",
+        "oversized",
+        "oversize"
+      ],
       "excludedTerms": [
         "regular",
         "standard",
@@ -141,7 +171,11 @@
         "Jolteon mEEv001 japanese pokemon card",
         "MEGA Starter Set Eevee ex Jolteon 001 japanese"
       ],
-      "requiredTerms": ["jolteon", "001", "mee"],
+      "requiredTerms": [
+        "jolteon",
+        "001",
+        "mee"
+      ],
       "excludedTerms": [
         "lot",
         "bundle",
@@ -176,7 +210,11 @@
         "Eevee mEEv008 japanese pokemon card",
         "MEGA Starter Set Eevee ex Eevee 008 japanese"
       ],
-      "requiredTerms": ["eevee", "008", "mee"],
+      "requiredTerms": [
+        "eevee",
+        "008",
+        "mee"
+      ],
       "excludedTerms": [
         "009",
         "020",
@@ -215,7 +253,11 @@
         "Eevee ex mEEv009 japanese pokemon card",
         "MEGA Starter Set Eevee ex 009 japanese"
       ],
-      "requiredTerms": ["eevee", "009", "mee"],
+      "requiredTerms": [
+        "eevee",
+        "009",
+        "mee"
+      ],
       "excludedTerms": [
         "020",
         "art",
@@ -252,8 +294,18 @@
         "Eevee mEEv020 AR japanese pokemon card",
         "MEE Eevee 020 art rare japanese"
       ],
-      "requiredTerms": ["eevee", "020"],
-      "preferredTerms": ["ar", "art", "mee", "starter", "japanese", "mega"],
+      "requiredTerms": [
+        "eevee",
+        "020"
+      ],
+      "preferredTerms": [
+        "ar",
+        "art",
+        "mee",
+        "starter",
+        "japanese",
+        "mega"
+      ],
       "excludedTerms": [
         "lot",
         "bundle",
@@ -288,8 +340,16 @@
         "Eevee GX SM175 oversized",
         "Pokemon SM175 jumbo promo"
       ],
-      "requiredTerms": ["eevee", "gx", "sm175"],
-      "preferredTerms": ["jumbo", "oversized", "oversize"],
+      "requiredTerms": [
+        "eevee",
+        "gx",
+        "sm175"
+      ],
+      "preferredTerms": [
+        "jumbo",
+        "oversized",
+        "oversize"
+      ],
       "excludedTerms": [
         "regular",
         "standard",
@@ -310,6 +370,3745 @@
       "limitPerPage": 50,
       "mappingVersion": "2026-08-17",
       "note": "SM175 Eevee GX jumbo has a Pokewallet product but no Pokewallet price data; use active eBay asking median."
+    },
+    "pl2-60.crackedIce": {
+      "cardId": "pl2-60",
+      "variant": "crackedIce",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Flareon Rising Rivals 60 cracked ice prerelease",
+        "Flareon E4 Rising Rivals cracked ice promo",
+        "Pokemon Flareon 60 pl2 cracked ice"
+      ],
+      "requiredTerms": [
+        "flareon",
+        "60"
+      ],
+      "preferredTerms": [
+        "cracked",
+        "ice",
+        "crackle",
+        "prerelease"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21",
+      "note": "Rising Rivals Flareon 4 #60 cracked-ice prerelease — no Pokewallet variant; active eBay asking median."
+    },
+    "hgss3-2.crackedIce": {
+      "cardId": "hgss3-2",
+      "variant": "crackedIce",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Espeon Undaunted 2 cracked ice prerelease",
+        "Espeon HGSS Undaunted cracked ice promo 2",
+        "Pokemon Espeon 2 undaunted cracked ice"
+      ],
+      "requiredTerms": [
+        "espeon",
+        "undaunted"
+      ],
+      "preferredTerms": [
+        "cracked",
+        "ice",
+        "crackle",
+        "prerelease"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21",
+      "note": "Undaunted Espeon #2 cracked-ice prerelease — no Pokewallet variant; active eBay asking median."
+    },
+    "hgss3-10.crackedIce": {
+      "cardId": "hgss3-10",
+      "variant": "crackedIce",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Umbreon Undaunted 10 cracked ice prerelease",
+        "Umbreon HGSS Undaunted cracked ice promo 10",
+        "Pokemon Umbreon 10 undaunted cracked ice"
+      ],
+      "requiredTerms": [
+        "umbreon",
+        "undaunted"
+      ],
+      "preferredTerms": [
+        "cracked",
+        "ice",
+        "crackle",
+        "prerelease"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21",
+      "note": "Undaunted Umbreon #10 cracked-ice prerelease — no Pokewallet variant; active eBay asking median."
+    },
+    "bw9-11.crackedIce": {
+      "cardId": "bw9-11",
+      "variant": "crackedIce",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Leafeon Plasma Freeze 11 cracked ice prerelease",
+        "Leafeon bw9 cracked ice promo 11",
+        "Pokemon Leafeon 11 plasma freeze cracked ice"
+      ],
+      "requiredTerms": [
+        "leafeon",
+        "plasma"
+      ],
+      "preferredTerms": [
+        "cracked",
+        "ice",
+        "crackle",
+        "prerelease"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "master",
+        "ball",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21",
+      "note": "Plasma Freeze Leafeon #11 cracked-ice prerelease — no Pokewallet variant; active eBay asking median."
+    },
+    "xy3-72.crackedIce": {
+      "cardId": "xy3-72",
+      "variant": "crackedIce",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Sylveon Furious Fists 72 cracked ice prerelease",
+        "Sylveon xy3 cracked ice promo 72",
+        "Pokemon Sylveon 72 furious fists cracked ice"
+      ],
+      "requiredTerms": [
+        "sylveon",
+        "furious"
+      ],
+      "preferredTerms": [
+        "cracked",
+        "ice",
+        "crackle",
+        "prerelease"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21",
+      "note": "Furious Fists Sylveon #72 cracked-ice prerelease — no Pokewallet variant; active eBay asking median."
+    },
+    "sm8-155.crackedIce": {
+      "cardId": "sm8-155",
+      "variant": "crackedIce",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Eevee Lost Thunder 155 cracked ice prerelease",
+        "Eevee sm8 155 cracked ice promo",
+        "Pokemon Eevee 155 lost thunder cracked ice"
+      ],
+      "requiredTerms": [
+        "eevee",
+        "155"
+      ],
+      "preferredTerms": [
+        "cracked",
+        "ice",
+        "crackle",
+        "prerelease",
+        "lost",
+        "thunder"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21",
+      "note": "Lost Thunder Eevee #155 cracked-ice prerelease — no Pokewallet variant; active eBay asking median."
+    },
+    "ex2-16.exBattleStadiumDeckExclusive": {
+      "cardId": "ex2-16",
+      "variant": "exBattleStadiumDeckExclusive",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Espeon Sandstorm 16 EX Battle Stadium deck exclusive",
+        "Espeon ex sandstorm 16 battle stadium promo",
+        "Pokemon Espeon 16 ex battle stadium"
+      ],
+      "requiredTerms": [
+        "espeon",
+        "16"
+      ],
+      "preferredTerms": [
+        "battle",
+        "stadium",
+        "exclusive",
+        "sandstorm",
+        "deck"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21",
+      "note": "Sandstorm Espeon #16 EX Battle Stadium deck exclusive — no Pokewallet variant; active eBay asking median."
+    },
+    "ex2-63.exBattleStadiumDeckExclusive": {
+      "cardId": "ex2-63",
+      "variant": "exBattleStadiumDeckExclusive",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Eevee Sandstorm 63 EX Battle Stadium deck exclusive",
+        "Eevee ex sandstorm 63 battle stadium promo",
+        "Pokemon Eevee 63 ex battle stadium"
+      ],
+      "requiredTerms": [
+        "eevee",
+        "63"
+      ],
+      "preferredTerms": [
+        "battle",
+        "stadium",
+        "exclusive",
+        "sandstorm",
+        "deck"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21",
+      "note": "Sandstorm Eevee #63 EX Battle Stadium deck exclusive — no Pokewallet variant; active eBay asking median."
+    },
+    "sm115-49.mewtwoStamp": {
+      "cardId": "sm115-49",
+      "variant": "mewtwoStamp",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Eevee Hidden Fates 49 Mewtwo stamp battle academy",
+        "Hidden Fates Eevee 49 mewtwo stamp promo",
+        "Pokemon Eevee 49 hidden fates mewtwo stamp"
+      ],
+      "requiredTerms": [
+        "eevee",
+        "49",
+        "mewtwo"
+      ],
+      "preferredTerms": [
+        "stamp",
+        "battle",
+        "academy",
+        "hidden",
+        "fates"
+      ],
+      "excludedTerms": [
+        "charizard",
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21",
+      "note": "Hidden Fates Eevee #49 Mewtwo stamp — no Pokewallet variant; active eBay asking median."
+    },
+    "sm115-49.battleAcademyCharizardStamp26": {
+      "cardId": "sm115-49",
+      "variant": "battleAcademyCharizardStamp26",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Eevee Hidden Fates 49 Charizard stamp 26 battle academy",
+        "Hidden Fates Eevee 49 charizard stamp 26",
+        "Pokemon Eevee 49 battle academy stamp 26"
+      ],
+      "requiredTerms": [
+        "eevee",
+        "49",
+        "26",
+        "charizard"
+      ],
+      "preferredTerms": [
+        "stamp",
+        "battle",
+        "academy",
+        "hidden",
+        "fates"
+      ],
+      "excludedTerms": [
+        "mewtwo",
+        "36",
+        "27",
+        "44",
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21",
+      "note": "Hidden Fates Eevee #49 Battle Academy Charizard stamp 26 — no Pokewallet variant; active eBay asking median."
+    },
+    "sm115-49.battleAcademyCharizardStamp36": {
+      "cardId": "sm115-49",
+      "variant": "battleAcademyCharizardStamp36",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Eevee Hidden Fates 49 Charizard stamp 36 battle academy",
+        "Hidden Fates Eevee 49 charizard stamp 36",
+        "Pokemon Eevee 49 battle academy stamp 36"
+      ],
+      "requiredTerms": [
+        "eevee",
+        "49",
+        "36",
+        "charizard"
+      ],
+      "preferredTerms": [
+        "stamp",
+        "battle",
+        "academy",
+        "hidden",
+        "fates"
+      ],
+      "excludedTerms": [
+        "mewtwo",
+        "26",
+        "27",
+        "44",
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21",
+      "note": "Hidden Fates Eevee #49 Battle Academy Charizard stamp 36 — no Pokewallet variant; active eBay asking median."
+    },
+    "sm8-89.mewtwoStamp": {
+      "cardId": "sm8-89",
+      "variant": "mewtwoStamp",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Espeon Lost Thunder 89 Mewtwo stamp battle academy",
+        "Espeon sm8 89 mewtwo stamp promo",
+        "Pokemon Espeon 89 lost thunder mewtwo stamp"
+      ],
+      "requiredTerms": [
+        "espeon",
+        "89",
+        "mewtwo"
+      ],
+      "preferredTerms": [
+        "stamp",
+        "battle",
+        "academy",
+        "lost",
+        "thunder"
+      ],
+      "excludedTerms": [
+        "charizard",
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21",
+      "note": "Lost Thunder Espeon #89 Mewtwo stamp — no Pokewallet variant; active eBay asking median."
+    },
+    "smp-SM186.battleAcademyCharizardStamp27": {
+      "cardId": "smp-SM186",
+      "variant": "battleAcademyCharizardStamp27",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Flareon SM186 Charizard stamp 27 battle academy",
+        "Flareon SM186 stamp 27 promo",
+        "Pokemon Flareon sm186 battle academy stamp 27"
+      ],
+      "requiredTerms": [
+        "flareon",
+        "sm186",
+        "27",
+        "charizard"
+      ],
+      "preferredTerms": [
+        "stamp",
+        "battle",
+        "academy"
+      ],
+      "excludedTerms": [
+        "mewtwo",
+        "26",
+        "36",
+        "44",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21",
+      "note": "SM186 Flareon Battle Academy Charizard stamp 27 — no Pokewallet variant; active eBay asking median."
+    },
+    "smp-SM186.battleAcademyCharizardStamp44": {
+      "cardId": "smp-SM186",
+      "variant": "battleAcademyCharizardStamp44",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Flareon SM186 Charizard stamp 44 battle academy",
+        "Flareon SM186 stamp 44 promo",
+        "Pokemon Flareon sm186 battle academy stamp 44"
+      ],
+      "requiredTerms": [
+        "flareon",
+        "sm186",
+        "44",
+        "charizard"
+      ],
+      "preferredTerms": [
+        "stamp",
+        "battle",
+        "academy"
+      ],
+      "excludedTerms": [
+        "mewtwo",
+        "26",
+        "36",
+        "27",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21",
+      "note": "SM186 Flareon Battle Academy Charizard stamp 44 — no Pokewallet variant; active eBay asking median."
+    },
+    "swshp-SWSH065.eeveeStamp": {
+      "cardId": "swshp-SWSH065",
+      "variant": "eeveeStamp",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Eevee V SWSH065 Eevee stamp battle academy",
+        "Eevee V swsh065 stamp promo",
+        "Pokemon Eevee V swsh065 eevee stamp"
+      ],
+      "requiredTerms": [
+        "eevee",
+        "swsh065"
+      ],
+      "preferredTerms": [
+        "stamp",
+        "battle",
+        "academy"
+      ],
+      "excludedTerms": [
+        "charizard",
+        "mewtwo",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc",
+        "jumbo",
+        "oversized"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21",
+      "note": "SWSH065 Eevee V Eevee stamp — no Pokewallet variant; active eBay asking median."
+    },
+    "ex10-102.worldChampionshipDeck2006JimmyBallard": {
+      "cardId": "ex10-102",
+      "variant": "worldChampionshipDeck2006JimmyBallard",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Espeon ex 102 World Championship Deck 2006 Jimmy Ballard",
+        "Espeon ex 102 WCD Jimmy Ballard",
+        "Pokemon Espeon ex 102 unseen forces world championship deck 2006"
+      ],
+      "requiredTerms": [
+        "espeon",
+        "102",
+        "ballard"
+      ],
+      "preferredTerms": [
+        "world",
+        "championship",
+        "deck",
+        "wcd",
+        "worlds"
+      ],
+      "excludedTerms": [
+        "roos",
+        "hasebe",
+        "klaczynski",
+        "fukase",
+        "brand",
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21",
+      "note": "Unseen Forces Espeon ex #102 WCD 2006 Jimmy Ballard — active eBay asking median."
+    },
+    "ex10-102.worldChampionshipDeck2007TomRoos": {
+      "cardId": "ex10-102",
+      "variant": "worldChampionshipDeck2007TomRoos",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Espeon ex 102 World Championship Deck 2007 Tom Roos",
+        "Espeon ex 102 WCD Tom Roos",
+        "Pokemon Espeon ex 102 world championship deck 2007"
+      ],
+      "requiredTerms": [
+        "espeon",
+        "102",
+        "roos"
+      ],
+      "preferredTerms": [
+        "world",
+        "championship",
+        "deck",
+        "wcd",
+        "worlds"
+      ],
+      "excludedTerms": [
+        "ballard",
+        "hasebe",
+        "klaczynski",
+        "fukase",
+        "brand",
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21",
+      "note": "Unseen Forces Espeon ex #102 WCD 2007 Tom Roos — active eBay asking median."
+    },
+    "ex10-112.worldChampionshipDeck2006JimmyBallard": {
+      "cardId": "ex10-112",
+      "variant": "worldChampionshipDeck2006JimmyBallard",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Umbreon ex 112 World Championship Deck 2006 Jimmy Ballard",
+        "Umbreon ex 112 WCD Jimmy Ballard",
+        "Pokemon Umbreon ex 112 unseen forces world championship deck"
+      ],
+      "requiredTerms": [
+        "umbreon",
+        "112",
+        "ballard"
+      ],
+      "preferredTerms": [
+        "world",
+        "championship",
+        "deck",
+        "wcd",
+        "worlds"
+      ],
+      "excludedTerms": [
+        "roos",
+        "hasebe",
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21",
+      "note": "Unseen Forces Umbreon ex #112 WCD 2006 Jimmy Ballard — active eBay asking median."
+    },
+    "ex11-68.worldChampionshipDeck2007JunHasebe": {
+      "cardId": "ex11-68",
+      "variant": "worldChampionshipDeck2007JunHasebe",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Eevee delta 68 World Championship Deck 2007 Jun Hasebe",
+        "Eevee 68 WCD Jun Hasebe delta species",
+        "Pokemon Eevee 68 world championship deck 2007"
+      ],
+      "requiredTerms": [
+        "eevee",
+        "68",
+        "hasebe"
+      ],
+      "preferredTerms": [
+        "world",
+        "championship",
+        "deck",
+        "wcd",
+        "worlds",
+        "delta"
+      ],
+      "excludedTerms": [
+        "ballard",
+        "roos",
+        "klaczynski",
+        "69",
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21",
+      "note": "Delta Species Eevee δ #68 WCD 2007 Jun Hasebe — active eBay asking median."
+    },
+    "ex11-69.worldChampionshipDeck2006JimmyBallard": {
+      "cardId": "ex11-69",
+      "variant": "worldChampionshipDeck2006JimmyBallard",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Eevee 69 World Championship Deck 2006 Jimmy Ballard",
+        "Eevee 69 WCD Jimmy Ballard delta species",
+        "Pokemon Eevee 69 world championship deck 2006"
+      ],
+      "requiredTerms": [
+        "eevee",
+        "69",
+        "ballard"
+      ],
+      "preferredTerms": [
+        "world",
+        "championship",
+        "deck",
+        "wcd",
+        "worlds"
+      ],
+      "excludedTerms": [
+        "roos",
+        "hasebe",
+        "68",
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21",
+      "note": "Delta Species Eevee #69 WCD 2006 Jimmy Ballard — active eBay asking median."
+    },
+    "ex11-69.worldChampionshipDeck2007TomRoos": {
+      "cardId": "ex11-69",
+      "variant": "worldChampionshipDeck2007TomRoos",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Eevee 69 World Championship Deck 2007 Tom Roos",
+        "Eevee 69 WCD Tom Roos delta species",
+        "Pokemon Eevee 69 world championship deck 2007"
+      ],
+      "requiredTerms": [
+        "eevee",
+        "69",
+        "roos"
+      ],
+      "preferredTerms": [
+        "world",
+        "championship",
+        "deck",
+        "wcd",
+        "worlds"
+      ],
+      "excludedTerms": [
+        "ballard",
+        "hasebe",
+        "68",
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21",
+      "note": "Delta Species Eevee #69 WCD 2007 Tom Roos — active eBay asking median."
+    },
+    "ex11-108.worldChampionshipDeck2006JimmyBallard": {
+      "cardId": "ex11-108",
+      "variant": "worldChampionshipDeck2006JimmyBallard",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Flareon ex 108 World Championship Deck 2006 Jimmy Ballard",
+        "Flareon ex 108 WCD Jimmy Ballard",
+        "Pokemon Flareon ex 108 delta species world championship deck"
+      ],
+      "requiredTerms": [
+        "flareon",
+        "108",
+        "ballard"
+      ],
+      "preferredTerms": [
+        "world",
+        "championship",
+        "deck",
+        "wcd",
+        "worlds"
+      ],
+      "excludedTerms": [
+        "roos",
+        "hasebe",
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21",
+      "note": "Delta Species Flareon ex #108 WCD 2006 Jimmy Ballard — active eBay asking median."
+    },
+    "ex11-109.worldChampionshipDeck2006JimmyBallard": {
+      "cardId": "ex11-109",
+      "variant": "worldChampionshipDeck2006JimmyBallard",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Jolteon ex 109 World Championship Deck 2006 Jimmy Ballard",
+        "Jolteon ex 109 WCD Jimmy Ballard",
+        "Pokemon Jolteon ex 109 delta species world championship deck 2006"
+      ],
+      "requiredTerms": [
+        "jolteon",
+        "109",
+        "ballard"
+      ],
+      "preferredTerms": [
+        "world",
+        "championship",
+        "deck",
+        "wcd",
+        "worlds"
+      ],
+      "excludedTerms": [
+        "roos",
+        "hasebe",
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21",
+      "note": "Delta Species Jolteon ex #109 WCD 2006 Jimmy Ballard — active eBay asking median."
+    },
+    "ex11-109.worldChampionshipDeck2007JunHasebe": {
+      "cardId": "ex11-109",
+      "variant": "worldChampionshipDeck2007JunHasebe",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Jolteon ex 109 World Championship Deck 2007 Jun Hasebe",
+        "Jolteon ex 109 WCD Jun Hasebe",
+        "Pokemon Jolteon ex 109 world championship deck 2007"
+      ],
+      "requiredTerms": [
+        "jolteon",
+        "109",
+        "hasebe"
+      ],
+      "preferredTerms": [
+        "world",
+        "championship",
+        "deck",
+        "wcd",
+        "worlds"
+      ],
+      "excludedTerms": [
+        "ballard",
+        "roos",
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21",
+      "note": "Delta Species Jolteon ex #109 WCD 2007 Jun Hasebe — active eBay asking median."
+    },
+    "ex11-109.worldChampionshipDeck2007TomRoos": {
+      "cardId": "ex11-109",
+      "variant": "worldChampionshipDeck2007TomRoos",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Jolteon ex 109 World Championship Deck 2007 Tom Roos",
+        "Jolteon ex 109 WCD Tom Roos",
+        "Pokemon Jolteon ex 109 world championship deck 2007"
+      ],
+      "requiredTerms": [
+        "jolteon",
+        "109",
+        "roos"
+      ],
+      "preferredTerms": [
+        "world",
+        "championship",
+        "deck",
+        "wcd",
+        "worlds"
+      ],
+      "excludedTerms": [
+        "ballard",
+        "hasebe",
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21",
+      "note": "Delta Species Jolteon ex #109 WCD 2007 Tom Roos — active eBay asking median."
+    },
+    "ex11-110.worldChampionshipDeck2006JimmyBallard": {
+      "cardId": "ex11-110",
+      "variant": "worldChampionshipDeck2006JimmyBallard",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Vaporeon ex 110 World Championship Deck 2006 Jimmy Ballard",
+        "Vaporeon ex 110 WCD Jimmy Ballard",
+        "Pokemon Vaporeon ex 110 delta species world championship deck"
+      ],
+      "requiredTerms": [
+        "vaporeon",
+        "110",
+        "ballard"
+      ],
+      "preferredTerms": [
+        "world",
+        "championship",
+        "deck",
+        "wcd",
+        "worlds"
+      ],
+      "excludedTerms": [
+        "roos",
+        "hasebe",
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21",
+      "note": "Delta Species Vaporeon ex #110 WCD 2006 Jimmy Ballard — active eBay asking median."
+    },
+    "ex11-110.worldChampionshipDeck2007JunHasebe": {
+      "cardId": "ex11-110",
+      "variant": "worldChampionshipDeck2007JunHasebe",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Vaporeon ex 110 World Championship Deck 2007 Jun Hasebe",
+        "Vaporeon ex 110 WCD Jun Hasebe",
+        "Pokemon Vaporeon ex 110 world championship deck 2007"
+      ],
+      "requiredTerms": [
+        "vaporeon",
+        "110",
+        "hasebe"
+      ],
+      "preferredTerms": [
+        "world",
+        "championship",
+        "deck",
+        "wcd",
+        "worlds"
+      ],
+      "excludedTerms": [
+        "ballard",
+        "roos",
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21",
+      "note": "Delta Species Vaporeon ex #110 WCD 2007 Jun Hasebe — active eBay asking median."
+    },
+    "ex11-110.worldChampionshipDeck2007TomRoos": {
+      "cardId": "ex11-110",
+      "variant": "worldChampionshipDeck2007TomRoos",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Vaporeon ex 110 World Championship Deck 2007 Tom Roos",
+        "Vaporeon ex 110 WCD Tom Roos",
+        "Pokemon Vaporeon ex 110 world championship deck 2007"
+      ],
+      "requiredTerms": [
+        "vaporeon",
+        "110",
+        "roos"
+      ],
+      "preferredTerms": [
+        "world",
+        "championship",
+        "deck",
+        "wcd",
+        "worlds"
+      ],
+      "excludedTerms": [
+        "ballard",
+        "hasebe",
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21",
+      "note": "Delta Species Vaporeon ex #110 WCD 2007 Tom Roos — active eBay asking median."
+    },
+    "ex16-101.worldChampionshipDeck2007TomRoos": {
+      "cardId": "ex16-101",
+      "variant": "worldChampionshipDeck2007TomRoos",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Jolteon star 101 World Championship Deck 2007 Tom Roos",
+        "Jolteon 101 WCD Tom Roos power keepers",
+        "Pokemon Jolteon star 101 world championship deck 2007"
+      ],
+      "requiredTerms": [
+        "jolteon",
+        "101",
+        "roos"
+      ],
+      "preferredTerms": [
+        "world",
+        "championship",
+        "deck",
+        "wcd",
+        "worlds",
+        "star"
+      ],
+      "excludedTerms": [
+        "klaczynski",
+        "ballard",
+        "hasebe",
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21",
+      "note": "Power Keepers Jolteon ☆ #101 WCD 2007 Tom Roos — active eBay asking median."
+    },
+    "ex16-101.worldChampionshipDeck2008JasonKlaczynski": {
+      "cardId": "ex16-101",
+      "variant": "worldChampionshipDeck2008JasonKlaczynski",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Jolteon star 101 World Championship Deck 2008 Jason Klaczynski",
+        "Jolteon 101 WCD Jason Klaczynski",
+        "Pokemon Jolteon star 101 world championship deck 2008"
+      ],
+      "requiredTerms": [
+        "jolteon",
+        "101",
+        "klaczynski"
+      ],
+      "preferredTerms": [
+        "world",
+        "championship",
+        "deck",
+        "wcd",
+        "worlds",
+        "star"
+      ],
+      "excludedTerms": [
+        "roos",
+        "ballard",
+        "hasebe",
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21",
+      "note": "Power Keepers Jolteon ☆ #101 WCD 2008 Jason Klaczynski — active eBay asking median."
+    },
+    "xy9-52.worldChampionshipDeck2017KabuFukase": {
+      "cardId": "xy9-52",
+      "variant": "worldChampionshipDeck2017KabuFukase",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Espeon EX 52 World Championship Deck 2017 Kabu Fukase",
+        "Espeon EX 52 WCD Kabu Fukase breakpoint",
+        "Pokemon Espeon EX 52 world championship deck 2017"
+      ],
+      "requiredTerms": [
+        "espeon",
+        "52",
+        "fukase"
+      ],
+      "preferredTerms": [
+        "world",
+        "championship",
+        "deck",
+        "wcd",
+        "worlds"
+      ],
+      "excludedTerms": [
+        "brand",
+        "ballard",
+        "roos",
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21",
+      "note": "BREAKpoint Espeon EX #52 WCD 2017 Kabu Fukase — active eBay asking median."
+    },
+    "sm11-72.worldChampionshipDeck2019HenryBrand": {
+      "cardId": "sm11-72",
+      "variant": "worldChampionshipDeck2019HenryBrand",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Espeon Deoxys GX 72 World Championship Deck 2019 Henry Brand",
+        "Espeon Deoxys GX 72 WCD 2019",
+        "Espeon Deoxys GX unified minds 72 world championship deck",
+        "TAG TEAM Espeon Deoxys GX 72 worlds deck"
+      ],
+      "requiredTerms": [
+        "espeon",
+        "72",
+        "2019"
+      ],
+      "preferredTerms": [
+        "world",
+        "championship",
+        "worlds",
+        "wcd",
+        "henry",
+        "brand"
+      ],
+      "excludedTerms": [
+        "fukase",
+        "ballard",
+        "roos",
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21",
+      "note": "Unified Minds Espeon & Deoxys GX #72 WCD 2019 Henry Brand — active eBay asking median."
+    },
+    "wcd2010-espeon.normal": {
+      "cardId": "wcd2010-espeon",
+      "variant": "normal",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "2010 World Championship Deck Psychic Energy Espeon",
+        "2010 worlds deck psychic energy promo",
+        "Pokemon world championship deck 2010 psychic energy"
+      ],
+      "requiredTerms": [
+        "psychic",
+        "energy",
+        "2010"
+      ],
+      "preferredTerms": [
+        "world",
+        "championship",
+        "deck",
+        "wcd",
+        "worlds",
+        "espeon"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc",
+        "basic",
+        "double"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21",
+      "note": "2010 World Championships Decks Psychic Energy (Espeon cameo) — active eBay asking median."
+    },
+    "dp5-20.snowflake": {
+      "cardId": "dp5-20",
+      "variant": "snowflake",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Glaceon 20 Majestic Dawn snowflake promo",
+        "glaceon 20 snowflake holo pokemon",
+        "Pokemon glaceon 20 snowflake"
+      ],
+      "requiredTerms": [
+        "glaceon",
+        "20",
+        "snowflake"
+      ],
+      "preferredTerms": [
+        "dawn",
+        "holo",
+        "promo"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc",
+        "burger",
+        "king"
+      ],
+      "note": "Majestic Dawn Glaceon #20 Snowflake — active eBay asking median."
+    },
+    "dp5-20.burgerKing": {
+      "cardId": "dp5-20",
+      "variant": "burgerKing",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Glaceon 20 Majestic Dawn burger king promo",
+        "glaceon 20 majestic dawn burger king holo",
+        "Pokemon glaceon 20 burger king"
+      ],
+      "requiredTerms": [
+        "glaceon",
+        "20",
+        "king"
+      ],
+      "preferredTerms": [
+        "burger",
+        "majestic",
+        "dawn"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc",
+        "snowflake"
+      ],
+      "note": "Majestic Dawn Glaceon #20 Burger King — active eBay asking median."
+    },
+    "dp5-24.burgerKing": {
+      "cardId": "dp5-24",
+      "variant": "burgerKing",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Leafeon 24 Majestic Dawn burger king promo",
+        "leafeon 24 majestic dawn burger king holo",
+        "Pokemon leafeon 24 burger king"
+      ],
+      "requiredTerms": [
+        "leafeon",
+        "24",
+        "king"
+      ],
+      "preferredTerms": [
+        "burger",
+        "majestic",
+        "dawn"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc",
+        "snowflake"
+      ],
+      "note": "Majestic Dawn Leafeon #24 Burger King — active eBay asking median."
+    },
+    "dp5-62.burgerKing": {
+      "cardId": "dp5-62",
+      "variant": "burgerKing",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Eevee 62 Majestic Dawn burger king promo",
+        "eevee 62 majestic dawn burger king holo",
+        "Pokemon eevee 62 burger king"
+      ],
+      "requiredTerms": [
+        "eevee",
+        "62",
+        "king"
+      ],
+      "preferredTerms": [
+        "burger",
+        "majestic",
+        "dawn"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc",
+        "snowflake"
+      ],
+      "note": "Majestic Dawn Eevee #62 Burger King — active eBay asking median."
+    },
+    "hgss3-17.expansion": {
+      "cardId": "hgss3-17",
+      "variant": "expansion",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Leafeon 17 Undaunted prerelease promo",
+        "leafeon 17 undaunted prerelease holo",
+        "Pokemon leafeon 17 expansion prerelease"
+      ],
+      "requiredTerms": [
+        "leafeon",
+        "17",
+        "prerelease"
+      ],
+      "preferredTerms": [
+        "expansion",
+        "undaunted",
+        "holo"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "staff"
+      ],
+      "note": "Undaunted Leafeon #17 Expansion — active eBay asking median."
+    },
+    "hgss3-17.expansionStaff": {
+      "cardId": "hgss3-17",
+      "variant": "expansionStaff",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Leafeon 17 Undaunted prerelease staff promo",
+        "leafeon 17 undaunted staff prerelease",
+        "Pokemon leafeon 17 expansion staff"
+      ],
+      "requiredTerms": [
+        "leafeon",
+        "17",
+        "staff"
+      ],
+      "preferredTerms": [
+        "prerelease",
+        "expansion",
+        "undaunted"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "league"
+      ],
+      "note": "Undaunted Leafeon #17 Expansion Staff — active eBay asking median."
+    },
+    "bw5-12.staff": {
+      "cardId": "bw5-12",
+      "variant": "staff",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Flareon 12 Dark Explorers staff promo crosshatch",
+        "flareon 12 explorers staff regional promo",
+        "Pokemon flareon 12 staff promo"
+      ],
+      "requiredTerms": [
+        "flareon",
+        "12",
+        "staff"
+      ],
+      "preferredTerms": [
+        "explorers",
+        "promo",
+        "crosshatch",
+        "regional"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "league"
+      ],
+      "note": "Dark Explorers Flareon #12 Staff — active eBay asking median."
+    },
+    "bw5-12.league": {
+      "cardId": "bw5-12",
+      "variant": "league",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Flareon 12 Dark Explorers regional championship promo",
+        "flareon 12 explorers crosshatch regional holo",
+        "Pokemon flareon 12 championship promo"
+      ],
+      "requiredTerms": [
+        "flareon",
+        "12"
+      ],
+      "preferredTerms": [
+        "regional",
+        "championship",
+        "champions",
+        "crosshatch",
+        "promo"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "staff"
+      ],
+      "note": "Dark Explorers Flareon #12 League — active eBay asking median."
+    },
+    "bw5-25.staff": {
+      "cardId": "bw5-25",
+      "variant": "staff",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Vaporeon 25 Dark Explorers staff promo crosshatch",
+        "vaporeon 25 explorers staff regional promo",
+        "Pokemon vaporeon 25 staff promo"
+      ],
+      "requiredTerms": [
+        "vaporeon",
+        "25",
+        "staff"
+      ],
+      "preferredTerms": [
+        "explorers",
+        "promo",
+        "crosshatch",
+        "regional"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "league"
+      ],
+      "note": "Dark Explorers Vaporeon #25 Staff — active eBay asking median."
+    },
+    "bw5-25.league": {
+      "cardId": "bw5-25",
+      "variant": "league",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Vaporeon 25 Dark Explorers regional championship promo",
+        "vaporeon 25 explorers crosshatch regional holo",
+        "Pokemon vaporeon 25 championship promo"
+      ],
+      "requiredTerms": [
+        "vaporeon",
+        "25"
+      ],
+      "preferredTerms": [
+        "regional",
+        "championship",
+        "champions",
+        "crosshatch",
+        "promo"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "staff"
+      ],
+      "note": "Dark Explorers Vaporeon #25 League — active eBay asking median."
+    },
+    "bw5-37.staff": {
+      "cardId": "bw5-37",
+      "variant": "staff",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Jolteon 37 Dark Explorers staff promo crosshatch",
+        "jolteon 37 explorers staff regional promo",
+        "Pokemon jolteon 37 staff promo"
+      ],
+      "requiredTerms": [
+        "jolteon",
+        "37",
+        "staff"
+      ],
+      "preferredTerms": [
+        "explorers",
+        "promo",
+        "crosshatch",
+        "regional"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "league"
+      ],
+      "note": "Dark Explorers Jolteon #37 Staff — active eBay asking median."
+    },
+    "bw5-37.league": {
+      "cardId": "bw5-37",
+      "variant": "league",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Jolteon 37 Dark Explorers regional championship promo",
+        "jolteon 37 explorers crosshatch regional holo",
+        "Pokemon jolteon 37 championship promo"
+      ],
+      "requiredTerms": [
+        "jolteon",
+        "37"
+      ],
+      "preferredTerms": [
+        "regional",
+        "championship",
+        "champions",
+        "crosshatch",
+        "promo"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "staff"
+      ],
+      "note": "Dark Explorers Jolteon #37 League — active eBay asking median."
+    },
+    "bw5-48.staff": {
+      "cardId": "bw5-48",
+      "variant": "staff",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 1,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Espeon 48 Dark Explorers staff promo crosshatch",
+        "espeon 48 explorers staff regional promo",
+        "Pokemon espeon 48 staff promo",
+        "Espeon staff national championships dark explorers 48"
+      ],
+      "requiredTerms": [
+        "espeon",
+        "48",
+        "staff"
+      ],
+      "preferredTerms": [
+        "explorers",
+        "promo",
+        "crosshatch",
+        "regional"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "league"
+      ],
+      "note": "Dark Explorers Espeon #48 Staff — active eBay asking median."
+    },
+    "bw5-48.league": {
+      "cardId": "bw5-48",
+      "variant": "league",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Espeon 48 Dark Explorers regional championship promo",
+        "espeon 48 explorers crosshatch regional holo",
+        "Pokemon espeon 48 championship promo"
+      ],
+      "requiredTerms": [
+        "espeon",
+        "48"
+      ],
+      "preferredTerms": [
+        "regional",
+        "championship",
+        "champions",
+        "crosshatch",
+        "promo"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "staff"
+      ],
+      "note": "Dark Explorers Espeon #48 League — active eBay asking median."
+    },
+    "bw5-60.staff": {
+      "cardId": "bw5-60",
+      "variant": "staff",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Umbreon 60 Dark Explorers staff promo crosshatch",
+        "umbreon 60 explorers staff regional promo",
+        "Pokemon umbreon 60 staff promo"
+      ],
+      "requiredTerms": [
+        "umbreon",
+        "60",
+        "staff"
+      ],
+      "preferredTerms": [
+        "explorers",
+        "promo",
+        "crosshatch",
+        "regional"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "league"
+      ],
+      "note": "Dark Explorers Umbreon #60 Staff — active eBay asking median."
+    },
+    "bw5-60.league": {
+      "cardId": "bw5-60",
+      "variant": "league",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Umbreon 60 Dark Explorers regional championship promo",
+        "umbreon 60 explorers crosshatch regional holo",
+        "Pokemon umbreon 60 championship promo"
+      ],
+      "requiredTerms": [
+        "umbreon",
+        "60"
+      ],
+      "preferredTerms": [
+        "regional",
+        "championship",
+        "champions",
+        "crosshatch",
+        "promo"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "staff"
+      ],
+      "note": "Dark Explorers Umbreon #60 League — active eBay asking median."
+    },
+    "bw5-84.staff": {
+      "cardId": "bw5-84",
+      "variant": "staff",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Eevee 84 Dark Explorers staff promo crosshatch",
+        "eevee 84 explorers staff regional promo",
+        "Pokemon eevee 84 staff promo"
+      ],
+      "requiredTerms": [
+        "eevee",
+        "84",
+        "staff"
+      ],
+      "preferredTerms": [
+        "explorers",
+        "promo",
+        "crosshatch",
+        "regional"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "league"
+      ],
+      "note": "Dark Explorers Eevee #84 Staff — active eBay asking median."
+    },
+    "bw5-84.league": {
+      "cardId": "bw5-84",
+      "variant": "league",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Eevee 84 Dark Explorers regional championship promo",
+        "eevee 84 explorers crosshatch regional holo",
+        "Pokemon eevee 84 championship promo"
+      ],
+      "requiredTerms": [
+        "eevee",
+        "84"
+      ],
+      "preferredTerms": [
+        "regional",
+        "championship",
+        "champions",
+        "crosshatch",
+        "promo"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "staff"
+      ],
+      "note": "Dark Explorers Eevee #84 League — active eBay asking median."
+    },
+    "bw9-11.staff": {
+      "cardId": "bw9-11",
+      "variant": "staff",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Leafeon 11 Plasma Freeze staff promo crosshatch",
+        "leafeon 11 freeze staff regional promo",
+        "Pokemon leafeon 11 staff promo"
+      ],
+      "requiredTerms": [
+        "leafeon",
+        "11",
+        "staff"
+      ],
+      "preferredTerms": [
+        "freeze",
+        "promo",
+        "crosshatch",
+        "regional"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "league"
+      ],
+      "note": "Plasma Freeze Leafeon #11 Staff — active eBay asking median."
+    },
+    "bw9-11.league": {
+      "cardId": "bw9-11",
+      "variant": "league",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Leafeon 11 Plasma Freeze regional championship promo",
+        "leafeon 11 freeze crosshatch regional holo",
+        "Pokemon leafeon 11 championship promo"
+      ],
+      "requiredTerms": [
+        "leafeon",
+        "11"
+      ],
+      "preferredTerms": [
+        "regional",
+        "championship",
+        "champions",
+        "crosshatch",
+        "promo"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "staff"
+      ],
+      "note": "Plasma Freeze Leafeon #11 League — active eBay asking median."
+    },
+    "bw9-23.staff": {
+      "cardId": "bw9-23",
+      "variant": "staff",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Glaceon 23 Plasma Freeze staff promo crosshatch",
+        "glaceon 23 freeze staff regional promo",
+        "Pokemon glaceon 23 staff promo"
+      ],
+      "requiredTerms": [
+        "glaceon",
+        "23",
+        "staff"
+      ],
+      "preferredTerms": [
+        "freeze",
+        "promo",
+        "crosshatch",
+        "regional"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "league"
+      ],
+      "note": "Plasma Freeze Glaceon #23 Staff — active eBay asking median."
+    },
+    "bw9-23.league": {
+      "cardId": "bw9-23",
+      "variant": "league",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Glaceon 23 Plasma Freeze regional championship promo",
+        "glaceon 23 freeze crosshatch regional holo",
+        "Pokemon glaceon 23 championship promo"
+      ],
+      "requiredTerms": [
+        "glaceon",
+        "23"
+      ],
+      "preferredTerms": [
+        "regional",
+        "championship",
+        "champions",
+        "crosshatch",
+        "promo"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "staff"
+      ],
+      "note": "Plasma Freeze Glaceon #23 League — active eBay asking median."
+    },
+    "xy7-13.cosmos": {
+      "cardId": "xy7-13",
+      "variant": "cosmos",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Flareon 13 Ancient Origins cosmos holo",
+        "flareon 13 origins cosmos holo pokemon",
+        "Pokemon flareon 13 cosmic holo origins"
+      ],
+      "requiredTerms": [
+        "flareon",
+        "13"
+      ],
+      "preferredTerms": [
+        "cosmos",
+        "cosmic",
+        "holo"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "note": "Ancient Origins Flareon #13 Cosmos — active eBay asking median."
+    },
+    "xy7-22.cosmos": {
+      "cardId": "xy7-22",
+      "variant": "cosmos",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Vaporeon 22 Ancient Origins cosmos holo",
+        "vaporeon 22 origins cosmos holo pokemon",
+        "Pokemon vaporeon 22 cosmic holo origins"
+      ],
+      "requiredTerms": [
+        "vaporeon",
+        "22"
+      ],
+      "preferredTerms": [
+        "cosmos",
+        "cosmic",
+        "holo"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "note": "Ancient Origins Vaporeon #22 Cosmos — active eBay asking median."
+    },
+    "xy7-26.cosmos": {
+      "cardId": "xy7-26",
+      "variant": "cosmos",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Jolteon 26 Ancient Origins cosmos holo",
+        "jolteon 26 origins cosmos holo pokemon",
+        "Pokemon jolteon 26 cosmic holo origins"
+      ],
+      "requiredTerms": [
+        "jolteon",
+        "26"
+      ],
+      "preferredTerms": [
+        "cosmos",
+        "cosmic",
+        "holo"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "note": "Ancient Origins Jolteon #26 Cosmos — active eBay asking median."
+    },
+    "xy7-63.buildABear": {
+      "cardId": "xy7-63",
+      "variant": "buildABear",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Eevee 63 Ancient Origins build a bear promo",
+        "Eevee 63 build bear ancient origins",
+        "Pokemon Eevee 63 build a bear"
+      ],
+      "requiredTerms": [
+        "eevee",
+        "63",
+        "bear"
+      ],
+      "preferredTerms": [
+        "build",
+        "ancient",
+        "origins"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "note": "Ancient Origins Eevee #63 Build-A-Bear — active eBay asking median."
+    },
+    "sm1-101.cosmos": {
+      "cardId": "sm1-101",
+      "variant": "cosmos",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Eevee 101 Sun & Moon cosmos holo",
+        "eevee 101 moon cosmos holo pokemon",
+        "Pokemon eevee 101 cosmic holo moon"
+      ],
+      "requiredTerms": [
+        "eevee",
+        "101"
+      ],
+      "preferredTerms": [
+        "cosmos",
+        "cosmic",
+        "holo"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "note": "Sun & Moon Eevee #101 Cosmos — active eBay asking median."
+    },
+    "sm1-101.sequin": {
+      "cardId": "sm1-101",
+      "variant": "sequin",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Eevee 101 Sun Moon sequin promo",
+        "Eevee 101 sequin holo sun moon",
+        "Pokemon Eevee 101 sequin"
+      ],
+      "requiredTerms": [
+        "eevee",
+        "101",
+        "sequin"
+      ],
+      "preferredTerms": [
+        "sun",
+        "moon",
+        "holo"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc",
+        "cosmos"
+      ],
+      "note": "Sun & Moon Eevee #101 Sequin — active eBay asking median."
+    },
+    "sm8-89.cosmos": {
+      "cardId": "sm8-89",
+      "variant": "cosmos",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Espeon 89 Lost Thunder cosmos holo",
+        "espeon 89 thunder cosmos holo pokemon",
+        "Pokemon espeon 89 cosmic holo thunder"
+      ],
+      "requiredTerms": [
+        "espeon",
+        "89"
+      ],
+      "preferredTerms": [
+        "cosmos",
+        "cosmic",
+        "holo"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "note": "Lost Thunder Espeon #89 Cosmos — active eBay asking median."
+    },
+    "sm8-120.cosmos": {
+      "cardId": "sm8-120",
+      "variant": "cosmos",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Umbreon 120 Lost Thunder cosmos holo",
+        "umbreon 120 thunder cosmos holo pokemon",
+        "Pokemon umbreon 120 cosmic holo thunder"
+      ],
+      "requiredTerms": [
+        "umbreon",
+        "120"
+      ],
+      "preferredTerms": [
+        "cosmos",
+        "cosmic",
+        "holo"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "note": "Lost Thunder Umbreon #120 Cosmos — active eBay asking median."
+    },
+    "swshp-SWSH149.playPokemon": {
+      "cardId": "swshp-SWSH149",
+      "variant": "playPokemon",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Flareon V SWSH149 play pokemon prize pack stamp",
+        "Flareon V SWSH149 prize pack play pokemon promo",
+        "Pokemon SWSH149 prize pack play stamp"
+      ],
+      "requiredTerms": [
+        "flareon",
+        "swsh149",
+        "prize"
+      ],
+      "preferredTerms": [
+        "pack",
+        "play",
+        "stamp"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint"
+      ],
+      "note": "SWSH Black Star Promos Flareon V #SWSH149 Play! Pokémon stamp — active eBay asking median."
+    },
+    "swshp-SWSH150.playPokemon": {
+      "cardId": "swshp-SWSH150",
+      "variant": "playPokemon",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Vaporeon V SWSH150 play pokemon prize pack stamp",
+        "Vaporeon V SWSH150 prize pack play pokemon promo",
+        "Pokemon SWSH150 prize pack play stamp"
+      ],
+      "requiredTerms": [
+        "vaporeon",
+        "swsh150",
+        "prize"
+      ],
+      "preferredTerms": [
+        "pack",
+        "play",
+        "stamp"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint"
+      ],
+      "note": "SWSH Black Star Promos Vaporeon V #SWSH150 Play! Pokémon stamp — active eBay asking median."
+    },
+    "swshp-SWSH151.playPokemon": {
+      "cardId": "swshp-SWSH151",
+      "variant": "playPokemon",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Jolteon V SWSH151 play pokemon prize pack stamp",
+        "Jolteon V SWSH151 prize pack play pokemon promo",
+        "Pokemon SWSH151 prize pack play stamp"
+      ],
+      "requiredTerms": [
+        "jolteon",
+        "swsh151",
+        "prize"
+      ],
+      "preferredTerms": [
+        "pack",
+        "play",
+        "stamp"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint"
+      ],
+      "note": "SWSH Black Star Promos Jolteon V #SWSH151 Play! Pokémon stamp — active eBay asking median."
+    },
+    "swsh4-26.cosmos": {
+      "cardId": "swsh4-26",
+      "variant": "cosmos",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Flareon 26 Vivid Voltage cosmos holo",
+        "flareon 26 voltage cosmos holo pokemon",
+        "Pokemon flareon 26 cosmic holo voltage"
+      ],
+      "requiredTerms": [
+        "flareon",
+        "26"
+      ],
+      "preferredTerms": [
+        "cosmos",
+        "cosmic",
+        "holo"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "note": "Vivid Voltage Flareon #26 Cosmos — active eBay asking median."
+    },
+    "swsh4-30.cosmos": {
+      "cardId": "swsh4-30",
+      "variant": "cosmos",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Vaporeon 30 Vivid Voltage cosmos holo",
+        "vaporeon 30 voltage cosmos holo pokemon",
+        "Pokemon vaporeon 30 cosmic holo voltage"
+      ],
+      "requiredTerms": [
+        "vaporeon",
+        "30"
+      ],
+      "preferredTerms": [
+        "cosmos",
+        "cosmic",
+        "holo"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "note": "Vivid Voltage Vaporeon #30 Cosmos — active eBay asking median."
+    },
+    "swsh4-47.cosmos": {
+      "cardId": "swsh4-47",
+      "variant": "cosmos",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Jolteon 47 Vivid Voltage cosmos holo",
+        "jolteon 47 voltage cosmos holo pokemon",
+        "Pokemon jolteon 47 cosmic holo voltage"
+      ],
+      "requiredTerms": [
+        "jolteon",
+        "47"
+      ],
+      "preferredTerms": [
+        "cosmos",
+        "cosmic",
+        "holo"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "note": "Vivid Voltage Jolteon #47 Cosmos — active eBay asking median."
+    },
+    "swsh4-130.cosmos": {
+      "cardId": "swsh4-130",
+      "variant": "cosmos",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Eevee 130 Vivid Voltage cosmos holo",
+        "eevee 130 voltage cosmos holo pokemon",
+        "Pokemon eevee 130 cosmic holo voltage"
+      ],
+      "requiredTerms": [
+        "eevee",
+        "130"
+      ],
+      "preferredTerms": [
+        "cosmos",
+        "cosmic",
+        "holo"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "note": "Vivid Voltage Eevee #130 Cosmos — active eBay asking median."
+    },
+    "swsh7-7.playPokemon": {
+      "cardId": "swsh7-7",
+      "variant": "playPokemon",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Leafeon V 007/203 prize pack play pokemon stamp",
+        "Leafeon V 7 Evolving Skies prize pack play pokemon",
+        "Pokemon leafeon 007 prize pack play stamp"
+      ],
+      "requiredTerms": [
+        "leafeon",
+        "007",
+        "prize"
+      ],
+      "preferredTerms": [
+        "pack",
+        "play",
+        "stamp"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint"
+      ],
+      "note": "Evolving Skies Leafeon V #7 Play! Pokémon stamp — active eBay asking median."
+    },
+    "swsh7-8.playPokemon": {
+      "cardId": "swsh7-8",
+      "variant": "playPokemon",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Leafeon VMAX 008/203 prize pack play pokemon stamp",
+        "Leafeon VMAX 8 Evolving Skies prize pack play pokemon",
+        "Pokemon leafeon 008 prize pack play stamp"
+      ],
+      "requiredTerms": [
+        "leafeon",
+        "008",
+        "prize"
+      ],
+      "preferredTerms": [
+        "pack",
+        "play",
+        "stamp"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint"
+      ],
+      "note": "Evolving Skies Leafeon VMAX #8 Play! Pokémon stamp — active eBay asking median."
+    },
+    "swsh7-18.playPokemon": {
+      "cardId": "swsh7-18",
+      "variant": "playPokemon",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Flareon VMAX 018/203 prize pack play pokemon stamp",
+        "Flareon VMAX 18 Evolving Skies prize pack play pokemon",
+        "Pokemon flareon 018 prize pack play stamp"
+      ],
+      "requiredTerms": [
+        "flareon",
+        "018",
+        "prize"
+      ],
+      "preferredTerms": [
+        "pack",
+        "play",
+        "stamp"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint"
+      ],
+      "note": "Evolving Skies Flareon VMAX #18 Play! Pokémon stamp — active eBay asking median."
+    },
+    "swsh7-30.playPokemon": {
+      "cardId": "swsh7-30",
+      "variant": "playPokemon",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Vaporeon VMAX 030/203 prize pack play pokemon stamp",
+        "Vaporeon VMAX 30 Evolving Skies prize pack play pokemon",
+        "Pokemon vaporeon 030 prize pack play stamp"
+      ],
+      "requiredTerms": [
+        "vaporeon",
+        "030",
+        "prize"
+      ],
+      "preferredTerms": [
+        "pack",
+        "play",
+        "stamp"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint"
+      ],
+      "note": "Evolving Skies Vaporeon VMAX #30 Play! Pokémon stamp — active eBay asking median."
+    },
+    "swsh7-40.playPokemon": {
+      "cardId": "swsh7-40",
+      "variant": "playPokemon",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Glaceon V 040/203 prize pack play pokemon stamp",
+        "Glaceon V 40 Evolving Skies prize pack play pokemon",
+        "Pokemon glaceon 040 prize pack play stamp"
+      ],
+      "requiredTerms": [
+        "glaceon",
+        "040",
+        "prize"
+      ],
+      "preferredTerms": [
+        "pack",
+        "play",
+        "stamp"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint"
+      ],
+      "note": "Evolving Skies Glaceon V #40 Play! Pokémon stamp — active eBay asking median."
+    },
+    "swsh7-40.snowflake": {
+      "cardId": "swsh7-40",
+      "variant": "snowflake",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Glaceon V 040 Evolving Skies snowflake promo",
+        "glaceon 040 snowflake holo pokemon",
+        "Pokemon glaceon 040 snowflake"
+      ],
+      "requiredTerms": [
+        "glaceon",
+        "040",
+        "snowflake"
+      ],
+      "preferredTerms": [
+        "skies",
+        "holo",
+        "promo"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc",
+        "burger",
+        "king"
+      ],
+      "note": "Evolving Skies Glaceon V #40 Snowflake — active eBay asking median."
+    },
+    "swsh7-41.playPokemon": {
+      "cardId": "swsh7-41",
+      "variant": "playPokemon",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Glaceon VMAX 041/203 prize pack play pokemon stamp",
+        "Glaceon VMAX 41 Evolving Skies prize pack play pokemon",
+        "Pokemon glaceon 041 prize pack play stamp"
+      ],
+      "requiredTerms": [
+        "glaceon",
+        "041",
+        "prize"
+      ],
+      "preferredTerms": [
+        "pack",
+        "play",
+        "stamp"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint"
+      ],
+      "note": "Evolving Skies Glaceon VMAX #41 Play! Pokémon stamp — active eBay asking median."
+    },
+    "swsh7-41.snowflake": {
+      "cardId": "swsh7-41",
+      "variant": "snowflake",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Glaceon VMAX 041 Evolving Skies snowflake promo",
+        "glaceon 041 snowflake holo pokemon",
+        "Pokemon glaceon 041 snowflake"
+      ],
+      "requiredTerms": [
+        "glaceon",
+        "041",
+        "snowflake"
+      ],
+      "preferredTerms": [
+        "skies",
+        "holo",
+        "promo"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc",
+        "burger",
+        "king"
+      ],
+      "note": "Evolving Skies Glaceon VMAX #41 Snowflake — active eBay asking median."
+    },
+    "swsh7-51.playPokemon": {
+      "cardId": "swsh7-51",
+      "variant": "playPokemon",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Jolteon VMAX 051/203 prize pack play pokemon stamp",
+        "Jolteon VMAX 51 Evolving Skies prize pack play pokemon",
+        "Pokemon jolteon 051 prize pack play stamp"
+      ],
+      "requiredTerms": [
+        "jolteon",
+        "051",
+        "prize"
+      ],
+      "preferredTerms": [
+        "pack",
+        "play",
+        "stamp"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint"
+      ],
+      "note": "Evolving Skies Jolteon VMAX #51 Play! Pokémon stamp — active eBay asking median."
+    },
+    "swsh7-64.playPokemon": {
+      "cardId": "swsh7-64",
+      "variant": "playPokemon",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Espeon V 064/203 prize pack play pokemon stamp",
+        "Espeon V 64 Evolving Skies prize pack play pokemon",
+        "Pokemon espeon 064 prize pack play stamp"
+      ],
+      "requiredTerms": [
+        "espeon",
+        "064",
+        "prize"
+      ],
+      "preferredTerms": [
+        "pack",
+        "play",
+        "stamp"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint"
+      ],
+      "note": "Evolving Skies Espeon V #64 Play! Pokémon stamp — active eBay asking median."
+    },
+    "swsh7-65.playPokemon": {
+      "cardId": "swsh7-65",
+      "variant": "playPokemon",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 1,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Espeon VMAX 065/203 prize pack play pokemon stamp",
+        "Espeon VMAX 65 Evolving Skies prize pack play pokemon",
+        "Pokemon espeon 065 prize pack play stamp"
+      ],
+      "requiredTerms": [
+        "espeon",
+        "065",
+        "prize"
+      ],
+      "preferredTerms": [
+        "pack",
+        "play",
+        "stamp"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint"
+      ],
+      "note": "Evolving Skies Espeon VMAX #65 Play! Pokémon stamp — active eBay asking median."
+    },
+    "swsh7-74.playPokemon": {
+      "cardId": "swsh7-74",
+      "variant": "playPokemon",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Sylveon V 074/203 prize pack play pokemon stamp",
+        "Sylveon V 74 Evolving Skies prize pack play pokemon",
+        "Pokemon sylveon 074 prize pack play stamp"
+      ],
+      "requiredTerms": [
+        "sylveon",
+        "074",
+        "prize"
+      ],
+      "preferredTerms": [
+        "pack",
+        "play",
+        "stamp"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint"
+      ],
+      "note": "Evolving Skies Sylveon V #74 Play! Pokémon stamp — active eBay asking median."
+    },
+    "swsh7-75.playPokemon": {
+      "cardId": "swsh7-75",
+      "variant": "playPokemon",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Sylveon VMAX 075/203 prize pack play pokemon stamp",
+        "Sylveon VMAX 75 Evolving Skies prize pack play pokemon",
+        "Pokemon sylveon 075 prize pack play stamp"
+      ],
+      "requiredTerms": [
+        "sylveon",
+        "075",
+        "prize"
+      ],
+      "preferredTerms": [
+        "pack",
+        "play",
+        "stamp"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint"
+      ],
+      "note": "Evolving Skies Sylveon VMAX #75 Play! Pokémon stamp — active eBay asking median."
+    },
+    "swsh7-94.playPokemon": {
+      "cardId": "swsh7-94",
+      "variant": "playPokemon",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Umbreon V 094/203 prize pack play pokemon stamp",
+        "Umbreon V 94 Evolving Skies prize pack play pokemon",
+        "Pokemon umbreon 094 prize pack play stamp"
+      ],
+      "requiredTerms": [
+        "umbreon",
+        "094",
+        "prize"
+      ],
+      "preferredTerms": [
+        "pack",
+        "play",
+        "stamp"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint"
+      ],
+      "note": "Evolving Skies Umbreon V #94 Play! Pokémon stamp — active eBay asking median."
+    },
+    "swsh7-95.playPokemon": {
+      "cardId": "swsh7-95",
+      "variant": "playPokemon",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21b",
+      "queries": [
+        "Umbreon VMAX 095/203 prize pack play pokemon stamp",
+        "Umbreon VMAX 95 Evolving Skies prize pack play pokemon",
+        "Pokemon umbreon 095 prize pack play stamp"
+      ],
+      "requiredTerms": [
+        "umbreon",
+        "095",
+        "prize"
+      ],
+      "preferredTerms": [
+        "pack",
+        "play",
+        "stamp"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint"
+      ],
+      "note": "Evolving Skies Umbreon VMAX #95 Play! Pokémon stamp — active eBay asking median."
+    },
+    "sv8pt5-5.cosmos": {
+      "cardId": "sv8pt5-5",
+      "variant": "cosmos",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21-cosmos-pe-b",
+      "queries": [
+        "Leafeon 005/131 Prismatic Evolutions cosmos holo",
+        "leafeon 005 prismatic evolutions cosmos holo",
+        "Pokemon leafeon 005 cosmic holo prismatic evolutions"
+      ],
+      "requiredTerms": [
+        "leafeon",
+        "005"
+      ],
+      "preferredTerms": [
+        "cosmos",
+        "cosmo",
+        "cosmic",
+        "prismatic",
+        "evolutions"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc",
+        "pokeball",
+        "masterball",
+        "poke",
+        "ball"
+      ],
+      "note": "Prismatic Evolutions Leafeon #5 Cosmos — active eBay asking median."
+    },
+    "sv8pt5-13.cosmos": {
+      "cardId": "sv8pt5-13",
+      "variant": "cosmos",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21-cosmos-pe-b",
+      "queries": [
+        "Flareon 013/131 Prismatic Evolutions cosmos holo",
+        "flareon 013 prismatic evolutions cosmos holo",
+        "Pokemon flareon 013 cosmic holo prismatic evolutions"
+      ],
+      "requiredTerms": [
+        "flareon",
+        "013"
+      ],
+      "preferredTerms": [
+        "cosmos",
+        "cosmo",
+        "cosmic",
+        "prismatic",
+        "evolutions"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc",
+        "pokeball",
+        "masterball",
+        "poke",
+        "ball"
+      ],
+      "note": "Prismatic Evolutions Flareon #13 Cosmos — active eBay asking median."
+    },
+    "sv8pt5-22.cosmos": {
+      "cardId": "sv8pt5-22",
+      "variant": "cosmos",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21-cosmos-pe-b",
+      "queries": [
+        "Vaporeon 022/131 Prismatic Evolutions cosmos holo",
+        "vaporeon 022 prismatic evolutions cosmos holo",
+        "Pokemon vaporeon 022 cosmic holo prismatic evolutions"
+      ],
+      "requiredTerms": [
+        "vaporeon",
+        "022"
+      ],
+      "preferredTerms": [
+        "cosmos",
+        "cosmo",
+        "cosmic",
+        "prismatic",
+        "evolutions"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc",
+        "pokeball",
+        "masterball",
+        "poke",
+        "ball"
+      ],
+      "note": "Prismatic Evolutions Vaporeon #22 Cosmos — active eBay asking median."
+    },
+    "sv8pt5-25.cosmos": {
+      "cardId": "sv8pt5-25",
+      "variant": "cosmos",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21-cosmos-pe-b",
+      "queries": [
+        "Glaceon 025/131 Prismatic Evolutions cosmos holo",
+        "glaceon 025 prismatic evolutions cosmos holo",
+        "Pokemon glaceon 025 cosmic holo prismatic evolutions"
+      ],
+      "requiredTerms": [
+        "glaceon",
+        "025"
+      ],
+      "preferredTerms": [
+        "cosmos",
+        "cosmo",
+        "cosmic",
+        "prismatic",
+        "evolutions"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc",
+        "pokeball",
+        "masterball",
+        "poke",
+        "ball"
+      ],
+      "note": "Prismatic Evolutions Glaceon #25 Cosmos — active eBay asking median."
+    },
+    "sv8pt5-29.cosmos": {
+      "cardId": "sv8pt5-29",
+      "variant": "cosmos",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21-cosmos-pe-b",
+      "queries": [
+        "Jolteon 029/131 Prismatic Evolutions cosmos holo",
+        "jolteon 029 prismatic evolutions cosmos holo",
+        "Pokemon jolteon 029 cosmic holo prismatic evolutions"
+      ],
+      "requiredTerms": [
+        "jolteon",
+        "029"
+      ],
+      "preferredTerms": [
+        "cosmos",
+        "cosmo",
+        "cosmic",
+        "prismatic",
+        "evolutions"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc",
+        "pokeball",
+        "masterball",
+        "poke",
+        "ball"
+      ],
+      "note": "Prismatic Evolutions Jolteon #29 Cosmos — active eBay asking median."
+    },
+    "sv8pt5-33.cosmos": {
+      "cardId": "sv8pt5-33",
+      "variant": "cosmos",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21-cosmos-pe-b",
+      "queries": [
+        "Espeon 033/131 Prismatic Evolutions cosmos holo",
+        "espeon 033 prismatic evolutions cosmos holo",
+        "Pokemon espeon 033 cosmic holo prismatic evolutions"
+      ],
+      "requiredTerms": [
+        "espeon",
+        "033"
+      ],
+      "preferredTerms": [
+        "cosmos",
+        "cosmo",
+        "cosmic",
+        "prismatic",
+        "evolutions"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc",
+        "pokeball",
+        "masterball",
+        "poke",
+        "ball"
+      ],
+      "note": "Prismatic Evolutions Espeon #33 Cosmos — active eBay asking median."
+    },
+    "sv8pt5-40.cosmos": {
+      "cardId": "sv8pt5-40",
+      "variant": "cosmos",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21-cosmos-pe-b",
+      "queries": [
+        "Sylveon 040/131 Prismatic Evolutions cosmos holo",
+        "sylveon 040 prismatic evolutions cosmos holo",
+        "Pokemon sylveon 040 cosmic holo prismatic evolutions"
+      ],
+      "requiredTerms": [
+        "sylveon",
+        "040"
+      ],
+      "preferredTerms": [
+        "cosmos",
+        "cosmo",
+        "cosmic",
+        "prismatic",
+        "evolutions"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc",
+        "pokeball",
+        "masterball",
+        "poke",
+        "ball"
+      ],
+      "note": "Prismatic Evolutions Sylveon #40 Cosmos — active eBay asking median."
+    },
+    "sv8pt5-59.cosmos": {
+      "cardId": "sv8pt5-59",
+      "variant": "cosmos",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-21-cosmos-pe-b",
+      "queries": [
+        "Umbreon 059/131 Prismatic Evolutions cosmos holo",
+        "umbreon 059 prismatic evolutions cosmos holo",
+        "Pokemon umbreon 059 cosmic holo prismatic evolutions"
+      ],
+      "requiredTerms": [
+        "umbreon",
+        "059"
+      ],
+      "preferredTerms": [
+        "cosmos",
+        "cosmo",
+        "cosmic",
+        "prismatic",
+        "evolutions"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc",
+        "pokeball",
+        "masterball",
+        "poke",
+        "ball"
+      ],
+      "note": "Prismatic Evolutions Umbreon #59 Cosmos — active eBay asking median."
     }
   }
 }
