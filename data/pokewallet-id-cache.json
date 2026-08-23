@@ -2844,7 +2844,16 @@
     "setCode": "PRE",
     "resolvedAt": "2026-07-20",
     "matchScore": 185,
-    "searchQuery": "Eevee Prismatic Evolutions 74"
+    "searchQuery": "Eevee Prismatic Evolutions 74",
+    "variants": {
+      "pokemonDay": {
+        "pokewalletId": "78ec92624156b27d4302a358df103338b34d2453e435abf08f7637cc0ccce4c6",
+        "setCode": "xPRE",
+        "resolvedAt": "2026-08-23",
+        "matchScore": 200,
+        "searchQuery": "Eevee V3 xPRE074 Prismatic Evolutions Additionals Pokemon Day"
+      }
+    }
   },
   "sv8pt5-75": {
     "pokewalletId": "pk_efc7c6d1c868a335243d1da6f99932508e20f086cd6200ccc8e932b110a80acd7dd725cbd645d6ffa21a099230cd55",

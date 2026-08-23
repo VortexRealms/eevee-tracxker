@@ -4183,6 +4183,41 @@
         "150"
       ],
       "note": "Prismatic Evolutions Glaceon ex #26 Snowflake — active eBay asking median."
+    },
+    "sv3-130.expansion": {
+      "cardId": "sv3-130",
+      "variant": "expansion",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-23",
+      "queries": [
+        "Umbreon 130/197 Obsidian Flames stamped reverse holo promo",
+        "Umbreon 130 Obsidian Flames stamped promo expansion",
+        "Pokemon umbreon 130 obsidian flames reverse holo stamped"
+      ],
+      "requiredTerms": [
+        "umbreon",
+        "130"
+      ],
+      "preferredTerms": [
+        "stamped",
+        "stamp"
+      ],
+      "excludedTerms": [
+        "gamestop",
+        "ebgames",
+        "halloween",
+        "trick",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint"
+      ],
+      "note": "Obsidian Flames Umbreon #130 Expansion stamp — active eBay asking median."
     }
   }
 }
