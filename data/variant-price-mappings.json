@@ -4651,7 +4651,7 @@
       "cardNumber": "133",
       "priceSheetVariant": null,
       "sqliteVariants": [],
-      "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
+      "note": "151 Eevee #133 Snowflake. Priced from eBay (no Pokewallet variant)."
     },
     "sv3pt5-134.holo": {
       "cardName": "Vaporeon",
@@ -5167,7 +5167,7 @@
       "cardNumber": "26",
       "priceSheetVariant": null,
       "sqliteVariants": [],
-      "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
+      "note": "Prismatic Evolutions Glaceon ex #26 Snowflake. Priced from eBay (no Pokewallet variant)."
     },
     "sv8pt5-29.cosmos": {
       "cardName": "Jolteon",

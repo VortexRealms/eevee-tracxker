@@ -4109,6 +4109,80 @@
         "ball"
       ],
       "note": "Prismatic Evolutions Umbreon #59 Cosmos — active eBay asking median."
+    },
+    "sv3pt5-133.snowflake": {
+      "cardId": "sv3pt5-133",
+      "variant": "snowflake",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-23",
+      "queries": [
+        "Eevee 133/165 151 snowflake stamp holo",
+        "Eevee 133 holiday calendar snowflake promo 151",
+        "Pokemon eevee 133 snowflake holo 151"
+      ],
+      "requiredTerms": [
+        "eevee",
+        "133",
+        "snowflake"
+      ],
+      "preferredTerms": [
+        "holo",
+        "151",
+        "stamp",
+        "holiday"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "pikachu"
+      ],
+      "note": "151 Eevee #133 Snowflake — active eBay asking median."
+    },
+    "sv8pt5-26.snowflake": {
+      "cardId": "sv8pt5-26",
+      "variant": "snowflake",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-23",
+      "queries": [
+        "Glaceon ex 026/131 Prismatic Evolutions snowflake stamp",
+        "Glaceon ex 026 snowflake prismatic evolutions holo",
+        "Pokemon glaceon ex 026 snowflake prismatic evolutions"
+      ],
+      "requiredTerms": [
+        "glaceon",
+        "026",
+        "snowflake"
+      ],
+      "preferredTerms": [
+        "holo",
+        "prismatic",
+        "evolutions",
+        "stamp"
+      ],
+      "excludedTerms": [
+        "reverse",
+        "normal",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "150"
+      ],
+      "note": "Prismatic Evolutions Glaceon ex #26 Snowflake — active eBay asking median."
     }
   }
 }
