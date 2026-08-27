@@ -13,10 +13,14 @@ function ebayQueryFromMapping(cardId?: string, variant?: string): string | undef
   return query?.trim() || undefined;
 }
 
-/** CBB2C numbers like "10 04/04" or "01 01/15" — search by line only ("10", "01"). */
+function isGemPackSet(card: SearchCard): boolean {
+  return /^cbb\d+c$/i.test(card.set?.id ?? "");
+}
+
+/** Gem Pack numbers like "10 04/04" or "04 01/07" — search by line only ("10", "04"). */
 export function searchNumberForCard(card: SearchCard): string {
   const raw = (card.number ?? "").trim();
-  if (card.set?.id === "cbb2c") {
+  if (isGemPackSet(card)) {
     const line = raw.match(/^(\S+)\s+\d+\/\d+$/);
     if (line) return line[1];
   }
@@ -45,10 +49,10 @@ function buildQuery(card: SearchCard, number: string): string {
   return `${card.name} ${number}`.trim();
 }
 
-/** eBay: CBB2C keeps full slot number (e.g. "10 04/04"); other sets use normalized number. */
+/** eBay: Gem Pack sets keep full slot number (e.g. "04 01/07"); other sets use normalized number. */
 function ebaySearchNumberForCard(card: SearchCard): string {
   const raw = (card.number ?? "").trim();
-  if (card.set?.id === "cbb2c") {
+  if (isGemPackSet(card)) {
     return raw;
   }
   return normalizeCardNumberForListing(raw);

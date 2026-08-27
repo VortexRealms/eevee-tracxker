@@ -19,6 +19,13 @@ const cbb2cSet: PokemonCardSet = {
   releaseDate: "2025/05/16",
 };
 
+const cbb4cSet: PokemonCardSet = {
+  id: "cbb4c",
+  name: "Gem Pack Vol. 4",
+  series: "Other",
+  releaseDate: "2026/02/06",
+};
+
 const jungleSet: PokemonCardSet = {
   id: "base2",
   name: "Jungle",
@@ -69,6 +76,11 @@ check(
 check(
   "cbb2c Eevee line number",
   searchNumberForCard({ name: "Eevee", number: "01 01/15", set: cbb2cSet }) === "01"
+);
+
+check(
+  "cbb4c Eevee line number",
+  searchNumberForCard({ name: "Eevee", number: "04 01/07", set: cbb4cSet }) === "04"
 );
 
 check(

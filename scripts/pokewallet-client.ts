@@ -131,10 +131,10 @@ function parseIntHeader(value: string | null): number | null {
   return Number.isFinite(n) ? n : null;
 }
 
-/** Set-bulk IDs (e.g. CBB2C) use 64-char hex; search-resolved IDs use pk_ prefix. */
+/** Set-bulk IDs (e.g. CBB2C / CBB4C) use 64-char hex; search-resolved IDs use pk_ prefix. */
 function normalizeCardIdForApi(id: string, setCode?: string): string {
   const trimmed = id.trim();
-  if (setCode === "CBB2C" && trimmed.startsWith("pk_")) {
+  if (/^CBB\d+C$/i.test(setCode ?? "") && trimmed.startsWith("pk_")) {
     return trimmed.slice(3);
   }
   return trimmed;

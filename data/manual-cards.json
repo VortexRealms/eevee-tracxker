@@ -2896,6 +2896,195 @@
     }
   },
   {
+    "id": "cbb4c-401",
+    "name": "Eevee",
+    "number": "04 01/07",
+    "rarity": "Type/attribute pattern",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "set": {
+      "id": "cbb4c",
+      "name": "Gem Pack Vol. 4",
+      "series": "Other",
+      "releaseDate": "2026/02/06"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb4/401.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb4/401.png"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "zh-cn"
+  },
+  {
+    "id": "cbb4c-402",
+    "name": "Eevee",
+    "number": "04 02/07",
+    "rarity": "Type/attribute pattern",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "set": {
+      "id": "cbb4c",
+      "name": "Gem Pack Vol. 4",
+      "series": "Other",
+      "releaseDate": "2026/02/06"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb4/402.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb4/402.png"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "zh-cn"
+  },
+  {
+    "id": "cbb4c-403",
+    "name": "Eevee",
+    "number": "04 03/07",
+    "rarity": "Poké Ball pattern",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "set": {
+      "id": "cbb4c",
+      "name": "Gem Pack Vol. 4",
+      "series": "Other",
+      "releaseDate": "2026/02/06"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb4/403.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb4/403.png"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "zh-cn"
+  },
+  {
+    "id": "cbb4c-404",
+    "name": "Eevee",
+    "number": "04 04/07",
+    "rarity": "Master Ball pattern",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "set": {
+      "id": "cbb4c",
+      "name": "Gem Pack Vol. 4",
+      "series": "Other",
+      "releaseDate": "2026/02/06"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb4/404.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb4/404.png"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "zh-cn"
+  },
+  {
+    "id": "cbb4c-405",
+    "name": "Eevee",
+    "number": "04 05/07",
+    "rarity": "Gem Pack logo gold foil",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "set": {
+      "id": "cbb4c",
+      "name": "Gem Pack Vol. 4",
+      "series": "Other",
+      "releaseDate": "2026/02/06"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb4/405.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb4/405.png"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "zh-cn"
+  },
+  {
+    "id": "cbb4c-406",
+    "name": "Eevee",
+    "number": "04 06/07",
+    "rarity": "Full art",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "set": {
+      "id": "cbb4c",
+      "name": "Gem Pack Vol. 4",
+      "series": "Other",
+      "releaseDate": "2026/02/06"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb4/406.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb4/406.png"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "zh-cn"
+  },
+  {
+    "id": "cbb4c-407",
+    "name": "Eevee",
+    "number": "04 07/07",
+    "rarity": "Special art",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Colorless"
+    ],
+    "set": {
+      "id": "cbb4c",
+      "name": "Gem Pack Vol. 4",
+      "series": "Other",
+      "releaseDate": "2026/02/06"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb4/407.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_cbb4/407.png"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "zh-cn"
+  },
+  {
     "id": "cdc2010-jp-zorua",
     "name": "Illusion's Zorua",
     "number": "Pucchigumi",

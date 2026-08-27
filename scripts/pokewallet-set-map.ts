@@ -13,6 +13,7 @@ export interface SetLookupHint {
 /** Our set.id -> Pokewallet set code or numeric set_id */
 export const OUR_SET_TO_POKEWALLET: Record<string, SetLookupHint> = {
   cbb2c: { pokewalletSetCode: "CBB2C" },
+  cbb4c: { pokewalletSetCode: "CBB4C", language: "chn" },
   cs6bc: { pokewalletSetCode: "CBB5C", language: "chn" },
   mep: { pokewalletSetCode: "MEP", language: "eng" },
   smp: { pokewalletSetCode: "SMP", language: "eng" },

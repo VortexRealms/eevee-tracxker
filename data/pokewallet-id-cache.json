@@ -4382,5 +4382,54 @@
     "resolvedAt": "2026-08-20",
     "matchScore": 165,
     "searchQuery": "Eevee Vending Machine cards Series 1"
+  },
+  "cbb4c-401": {
+    "pokewalletId": "2db1eadc40c0bb46f1b45934ff96f87c21ef02ae1a3687d22a13b0f5de827e21",
+    "setCode": "CBB4C",
+    "resolvedAt": "2026-08-27",
+    "matchScore": 100,
+    "searchQuery": "CBB4C line:4 slot:01/07"
+  },
+  "cbb4c-402": {
+    "pokewalletId": "3eda39b01961036ec0a2e8e13d100d109ad92ed76d1e60577b6defb6470cb274",
+    "setCode": "CBB4C",
+    "resolvedAt": "2026-08-27",
+    "matchScore": 100,
+    "searchQuery": "CBB4C line:4 slot:02/07"
+  },
+  "cbb4c-403": {
+    "pokewalletId": "bb356fe3f03a31f59c0eb986fc88f9e9841b7ac53429a48547f8dd7b3128c36f",
+    "setCode": "CBB4C",
+    "resolvedAt": "2026-08-27",
+    "matchScore": 100,
+    "searchQuery": "CBB4C line:4 slot:03/07"
+  },
+  "cbb4c-404": {
+    "pokewalletId": "9bd1822d2f0d631aadb38b43c0a81cf77c19539abcbb72b94fc9c8200cb6e45d",
+    "setCode": "CBB4C",
+    "resolvedAt": "2026-08-27",
+    "matchScore": 100,
+    "searchQuery": "CBB4C line:4 slot:04/07"
+  },
+  "cbb4c-405": {
+    "pokewalletId": "ab54f10702e880f9a2169405c30062e1ebb36a40f481c8ef589fb68201e308c1",
+    "setCode": "CBB4C",
+    "resolvedAt": "2026-08-27",
+    "matchScore": 100,
+    "searchQuery": "CBB4C line:4 slot:05/07"
+  },
+  "cbb4c-406": {
+    "pokewalletId": "a7b99aabdff62f403c391485fc3d14635869e31542cbb1fd808fd0019439818c",
+    "setCode": "CBB4C",
+    "resolvedAt": "2026-08-27",
+    "matchScore": 100,
+    "searchQuery": "CBB4C line:4 slot:06/07"
+  },
+  "cbb4c-407": {
+    "pokewalletId": "bccf0e8cf31393c4f93ddca2d0cec5ec000d59375b7de2430c410c3f2ae2b179",
+    "setCode": "CBB4C",
+    "resolvedAt": "2026-08-27",
+    "matchScore": 100,
+    "searchQuery": "CBB4C line:4 slot:07/07"
   }
 }

@@ -1,0 +1,15 @@
+{
+  "_meta": {
+    "source": "CBB4C line 4 Eevee from live Pokewallet set 2026-08-27",
+    "setCode": "CBB4C",
+    "cardCount": 7,
+    "idFormat": "64-char hex (no pk_ prefix — required for GET /cards/:id on set-bulk IDs)"
+  },
+  "cbb4c-401": "2db1eadc40c0bb46f1b45934ff96f87c21ef02ae1a3687d22a13b0f5de827e21",
+  "cbb4c-402": "3eda39b01961036ec0a2e8e13d100d109ad92ed76d1e60577b6defb6470cb274",
+  "cbb4c-403": "bb356fe3f03a31f59c0eb986fc88f9e9841b7ac53429a48547f8dd7b3128c36f",
+  "cbb4c-404": "9bd1822d2f0d631aadb38b43c0a81cf77c19539abcbb72b94fc9c8200cb6e45d",
+  "cbb4c-405": "ab54f10702e880f9a2169405c30062e1ebb36a40f481c8ef589fb68201e308c1",
+  "cbb4c-406": "a7b99aabdff62f403c391485fc3d14635869e31542cbb1fd808fd0019439818c",
+  "cbb4c-407": "bccf0e8cf31393c4f93ddca2d0cec5ec000d59375b7de2430c410c3f2ae2b179"
+}

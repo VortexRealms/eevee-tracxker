@@ -511,8 +511,9 @@ export function lookupSetForCard(
 }
 
 export function searchNumberForCard(card: PokemonCard): string {
-  if (card.id.startsWith("cbb2c-")) {
-    return card.id.slice("cbb2c-".length);
+  const gemPackId = card.id.match(/^(cbb\d+c)-(.+)$/i);
+  if (gemPackId) {
+    return gemPackId[2];
   }
   if (card.id.startsWith("cs6bc-")) {
     return card.id.slice("cs6bc-".length);
@@ -557,6 +558,14 @@ export function buildSearchQueries(
       : num;
     add(`${card.name} CBB2C ${cbbNum}`);
     add(`CBB2C ${cbbNum}`);
+  }
+
+  if (card.set.id === "cbb4c" || card.id.startsWith("cbb4c-")) {
+    const cbbNum = card.id.startsWith("cbb4c-")
+      ? card.id.slice("cbb4c-".length)
+      : num;
+    add(`${card.name} CBB4C ${cbbNum}`);
+    add(`CBB4C ${cbbNum}`);
   }
 
   if (card.set.id === "cs6bc" || card.id.startsWith("cs6bc-")) {

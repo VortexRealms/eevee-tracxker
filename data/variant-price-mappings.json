@@ -1643,6 +1643,62 @@
       "priceSheetVariant": "normal",
       "sqliteVariants": []
     },
+    "cbb4c-401.normal": {
+      "cardName": "Eevee",
+      "setName": "Gem Pack Vol. 4",
+      "cardNumber": "04 01/07",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": [],
+      "note": "Gem Pack Vol. 4 Eevee #04 01/07. Priced from Pokewallet (Cardmarket CBB4C04 V1)."
+    },
+    "cbb4c-402.normal": {
+      "cardName": "Eevee",
+      "setName": "Gem Pack Vol. 4",
+      "cardNumber": "04 02/07",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": [],
+      "note": "Gem Pack Vol. 4 Eevee #04 02/07. Priced from Pokewallet (Cardmarket CBB4C04 V2)."
+    },
+    "cbb4c-403.normal": {
+      "cardName": "Eevee",
+      "setName": "Gem Pack Vol. 4",
+      "cardNumber": "04 03/07",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": [],
+      "note": "Gem Pack Vol. 4 Eevee #04 03/07. Priced from Pokewallet (Cardmarket CBB4C04 V3)."
+    },
+    "cbb4c-404.normal": {
+      "cardName": "Eevee",
+      "setName": "Gem Pack Vol. 4",
+      "cardNumber": "04 04/07",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": [],
+      "note": "Gem Pack Vol. 4 Eevee #04 04/07. Priced from Pokewallet (Cardmarket CBB4C04 V4)."
+    },
+    "cbb4c-405.normal": {
+      "cardName": "Eevee",
+      "setName": "Gem Pack Vol. 4",
+      "cardNumber": "04 05/07",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": [],
+      "note": "Gem Pack Vol. 4 Eevee #04 05/07. Priced from Pokewallet (Cardmarket CBB4C04 V5)."
+    },
+    "cbb4c-406.normal": {
+      "cardName": "Eevee",
+      "setName": "Gem Pack Vol. 4",
+      "cardNumber": "04 06/07",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": [],
+      "note": "Gem Pack Vol. 4 Eevee #04 06/07. Priced from Pokewallet (Cardmarket CBB4C04 V6)."
+    },
+    "cbb4c-407.normal": {
+      "cardName": "Eevee",
+      "setName": "Gem Pack Vol. 4",
+      "cardNumber": "04 07/07",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": [],
+      "note": "Gem Pack Vol. 4 Eevee #04 07/07. Priced from Pokewallet (Cardmarket CBB4C04 V7)."
+    },
     "cdc2010-jp-zorua.normal": {
       "cardName": "Illusion's Zorua",
       "setName": "2010 Card Design Contest",
