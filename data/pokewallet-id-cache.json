@@ -4431,5 +4431,12 @@
     "resolvedAt": "2026-08-27",
     "matchScore": 100,
     "searchQuery": "CBB4C line:4 slot:07/07"
+  },
+  "xyp-jp-90": {
+    "pokewalletId": "pk_94a62aaf75c79f6acf2ed0cfb9a07284d998160dd94fbeb334a2092c8551c36f5abeda3be0ed9bc6cae351bc03d0c44a",
+    "setCode": "XY-P",
+    "resolvedAt": "2026-08-30",
+    "matchScore": 140,
+    "searchQuery": "Pikachu XY-P Promos 90"
   }
 }

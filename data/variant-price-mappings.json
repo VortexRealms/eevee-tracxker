@@ -7065,9 +7065,10 @@
     "xyp-jp-90.normal": {
       "cardName": "Pikachu",
       "setName": "XY-P Promos",
-      "cardNumber": "90",
-      "priceSheetVariant": null,
-      "sqliteVariants": []
+      "cardNumber": "090/XY-P",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": [],
+      "note": "XY-P 090 Pikachu (Cardmarket V9). Pokewallet ID cached but priced via eBay (Pokewallet yen mislabeled as USD/EUR)."
     }
   }
 }

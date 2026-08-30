@@ -4218,6 +4218,47 @@
         "reprint"
       ],
       "note": "Obsidian Flames Umbreon #130 Expansion stamp — active eBay asking median."
+    },
+    "xyp-jp-90.normal": {
+      "cardId": "xyp-jp-90",
+      "variant": "normal",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Pikachu 090/XY-P japanese pokemon card",
+        "XY-P 090 Pikachu japanese promo",
+        "Pikachu XY-P 90 japanese pokemon"
+      ],
+      "requiredTerms": [
+        "pikachu",
+        "090"
+      ],
+      "preferredTerms": [
+        "japanese",
+        "xy-p",
+        "promo"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc",
+        "cosplay",
+        "warm",
+        "poncho"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-08-30",
+      "note": "XY-P 090 Pikachu (Cardmarket V9). Pokewallet ID exists but yen prices are mislabeled as USD/EUR; use eBay asking median."
     }
   }
 }

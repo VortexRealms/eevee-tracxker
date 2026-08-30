@@ -4708,8 +4708,16 @@
   {
     "id": "xyp-jp-90",
     "name": "Pikachu",
-    "number": "90",
+    "number": "090/XY-P",
+    "rarity": "Common",
     "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Lightning"
+    ],
+    "hp": "60",
     "set": {
       "id": "xyp-jp",
       "name": "XY-P Promos",
@@ -4717,8 +4725,8 @@
       "releaseDate": "2014/01/01"
     },
     "images": {
-      "small": "https://images.scrydex.com/pokemon/back/medium",
-      "large": "https://images.scrydex.com/pokemon/back/medium"
+      "small": "https://tcgplayer-cdn.tcgplayer.com/product/601995_in_400x400.jpg",
+      "large": "https://tcgplayer-cdn.tcgplayer.com/product/601995_in_1000x1000.jpg"
     },
     "variants": [
       "normal"

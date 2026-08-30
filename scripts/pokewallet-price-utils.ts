@@ -586,6 +586,13 @@ export function buildSearchQueries(
     add(`SM-P ${num}`);
   }
 
+  if (card.set.id === "xyp-jp" || card.id.startsWith("xyp-jp-")) {
+    const xypNum = num.replace(/\/XY-P$/i, "").replace(/^0+/, "") || num;
+    add(`${card.name} ${xypNum}/XY-P`);
+    add(`XY-P ${xypNum}`);
+    add(`${card.name} XY-P ${xypNum}`);
+  }
+
   if (card.set.id === "vs" || card.id.startsWith("vs-")) {
     add(`${card.name} ${num}/141`);
     add(`Pokemon VS ${num}`);

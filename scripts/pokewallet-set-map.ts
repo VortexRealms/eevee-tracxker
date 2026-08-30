@@ -31,5 +31,6 @@ export const OUR_SET_TO_POKEWALLET: Record<string, SetLookupHint> = {
   vs: { pokewalletSetCode: "24180", language: "jap" },
   "svp-jp": { pokewalletSetCode: "SV-P", language: "jap" },
   "smp-jp": { pokewalletSetCode: "SM-P", language: "jap" },
+  "xyp-jp": { pokewalletSetCode: "XY-P", language: "jap" },
   vending1: { pokewalletSetCode: "24206", language: "jap" },
 };
