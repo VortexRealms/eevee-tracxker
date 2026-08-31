@@ -4438,5 +4438,12 @@
     "resolvedAt": "2026-08-30",
     "matchScore": 140,
     "searchQuery": "Pikachu XY-P Promos 90"
+  },
+  "csv95c-234": {
+    "pokewalletId": "2c704ad7d681eb8d02935a7e538c75329b352618d918be2127447a77eda828c7",
+    "setCode": "CSV9.5C",
+    "resolvedAt": "2026-08-31",
+    "matchScore": 160,
+    "searchQuery": "Sylveon ex CSV9.5C 234"
   }
 }

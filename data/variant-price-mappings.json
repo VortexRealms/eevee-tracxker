@@ -1699,6 +1699,14 @@
       "sqliteVariants": [],
       "note": "Gem Pack Vol. 4 Eevee #04 07/07. Priced from Pokewallet (Cardmarket CBB4C04 V7)."
     },
+    "csv95c-234.normal": {
+      "cardName": "Sylveon ex",
+      "setName": "Terastal Gathering",
+      "cardNumber": "234/208",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": [],
+      "note": "Terastal Gathering Sylveon ex SAR (CSV9.5C 234). Priced from Pokewallet (Cardmarket Sylveon ex V3)."
+    },
     "cdc2010-jp-zorua.normal": {
       "cardName": "Illusion's Zorua",
       "setName": "2010 Card Design Contest",

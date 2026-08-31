@@ -3085,6 +3085,34 @@
     "catalogueLanguage": "zh-cn"
   },
   {
+    "id": "csv95c-234",
+    "name": "Sylveon ex",
+    "number": "234/208",
+    "rarity": "Special Art Rare",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1",
+      "ex"
+    ],
+    "types": [
+      "Psychic"
+    ],
+    "set": {
+      "id": "csv95c",
+      "name": "Terastal Gathering",
+      "series": "Other",
+      "releaseDate": "2026/06/12"
+    },
+    "images": {
+      "small": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_csv95/234.png",
+      "large": "https://dextcg.com/cdn-cgi/image/w%3D2048%2Cq%3D75%2Cf%3Dauto/https%3A//static.dextcg.com/cards/scn_csv95/234.png"
+    },
+    "variants": [
+      "normal"
+    ],
+    "catalogueLanguage": "zh-cn"
+  },
+  {
     "id": "cdc2010-jp-zorua",
     "name": "Illusion's Zorua",
     "number": "Pucchigumi",

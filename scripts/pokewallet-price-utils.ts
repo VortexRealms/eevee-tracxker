@@ -568,6 +568,14 @@ export function buildSearchQueries(
     add(`CBB4C ${cbbNum}`);
   }
 
+  if (card.set.id === "csv95c" || card.id.startsWith("csv95c-")) {
+    const csvNum = card.id.startsWith("csv95c-")
+      ? card.id.slice("csv95c-".length)
+      : num;
+    add(`${card.name} CSV9.5C ${csvNum}`);
+    add(`CSV9.5C ${csvNum}`);
+  }
+
   if (card.set.id === "cs6bc" || card.id.startsWith("cs6bc-")) {
     const csNum = card.id.startsWith("cs6bc-")
       ? card.id.slice("cs6bc-".length)
