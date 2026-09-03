@@ -4259,6 +4259,84 @@
       "limitPerPage": 50,
       "mappingVersion": "2026-08-30",
       "note": "XY-P 090 Pikachu (Cardmarket V9). Pokewallet ID exists but yen prices are mislabeled as USD/EUR; use eBay asking median."
+    },
+    "g1-28a.normal": {
+      "cardId": "g1-28a",
+      "variant": "normal",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Jolteon EX 28a/83 Generations full art",
+        "Jolteon EX 28a Generations alternate art holo",
+        "Pokemon Jolteon EX 28a 83 full art ultra rare"
+      ],
+      "requiredTerms": [
+        "jolteon",
+        "28a"
+      ],
+      "preferredTerms": [
+        "full art",
+        "alternate art",
+        "generations",
+        "83"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-09-03",
+      "note": "Generations Jolteon-EX 28a/83 alternate/full art (Mega Powers Collection). Pokewallet ID 404s on GET /cards — collides with base card g1-28; use eBay asking median."
+    },
+    "bwp-BW97.normal": {
+      "cardId": "bwp-BW97",
+      "variant": "normal",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Eevee BW97 Black Star Promo holo",
+        "Eevee BW97 Black White Legendary Treasures promo",
+        "Pokemon Eevee BW97 holo promo card"
+      ],
+      "requiredTerms": [
+        "eevee",
+        "bw97"
+      ],
+      "preferredTerms": [
+        "black star",
+        "promo",
+        "holo",
+        "legendary treasures"
+      ],
+      "excludedTerms": [
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-09-03",
+      "note": "BW Black Star Promos Eevee BW97. Pokewallet ID returns no tcgplayer/cardmarket price data at all; use eBay asking median."
     }
   }
 }
