@@ -1471,6 +1471,38 @@ input {
   font-size: 0.9rem;
 }
 
+.scroll-to-top {
+  position: fixed;
+  right: max(16px, env(safe-area-inset-right));
+  bottom: max(20px, env(safe-area-inset-bottom));
+  z-index: 80;
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  color: var(--text-0);
+  background: linear-gradient(180deg, rgba(45, 31, 25, 0.96), rgba(21, 15, 14, 0.98));
+  border: 1px solid rgba(255, 227, 197, 0.14);
+  box-shadow: var(--shadow-card);
+  cursor: pointer;
+}
+
+.scroll-to-top svg {
+  width: 22px;
+  height: 22px;
+}
+
+.scroll-to-top:hover {
+  background: linear-gradient(180deg, rgba(62, 42, 34, 0.98), rgba(28, 19, 17, 0.98));
+}
+
+.scroll-to-top:focus-visible {
+  outline: 2px solid #f4d4ac;
+  outline-offset: 3px;
+}
+
 .toast-success {
   color: #dcfce7;
   background: linear-gradient(135deg, rgba(6, 78, 59, 0.94), rgba(5, 46, 22, 0.96));
@@ -1561,6 +1593,13 @@ input {
 
   .ownership-chips {
     flex: 1 0 100%;
+  }
+
+  .scroll-to-top {
+    right: max(14px, env(safe-area-inset-right));
+    bottom: max(18px, env(safe-area-inset-bottom));
+    width: 52px;
+    height: 52px;
   }
 }
 
