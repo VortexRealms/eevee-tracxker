@@ -18,6 +18,7 @@ import {
 import { buildCameoManualStub, isCameoManualEntry } from "../lib/cameo-manual-stubs";
 import { CARD_BACK_IMAGE, hasCustomCardImages } from "../lib/card-image-placeholder";
 import { isMasterSetCatalogueCard } from "../lib/master-set-extras";
+import { getVariantLabel } from "../lib/variant-labels";
 import type { PokemonCard } from "../types";
 import { searchNumberForCard } from "./pokewallet-price-utils";
 
@@ -58,6 +59,9 @@ const catalogue = loadCameoCatalogue();
   const byId = cameoOfByCatalogueId();
   assert.deepEqual(byId.get("swsh7-212")?.sort(), ["Eevee", "Vaporeon"].sort());
   assert.deepEqual(byId.get("sv4pt5-236")?.sort(), ["Eevee", "Sylveon"].sort());
+  assert.deepEqual(byId.get("30c-148"), ["Eevee"]);
+  assert.deepEqual(byId.get("30c-149"), ["Espeon"]);
+  assert.deepEqual(byId.get("30c-150"), ["Eevee"]);
 }
 
 {
@@ -174,6 +178,36 @@ const catalogue = loadCameoCatalogue();
       true,
       "BW-P _____'s Pikachu jumbo should use custom art, not the card back"
     );
+
+    const greninja148 = cards.find((c) => c.id === "30c-148");
+    assert.ok(greninja148, "30c-148 missing from cards.json");
+    assert.deepEqual(greninja148!.cameoOf, ["Eevee"]);
+    assert.equal(
+      greninja148!.images.large.startsWith("https://assets.tcgdex.net/"),
+      true,
+      "30c-148 should use TCGdex art now that 30th Celebration is indexed"
+    );
+    const pikachu149 = cards.find((c) => c.id === "30c-149");
+    assert.ok(pikachu149, "30c-149 missing from cards.json");
+    assert.deepEqual(pikachu149!.cameoOf, ["Espeon"]);
+    const pikachu150 = cards.find((c) => c.id === "30c-150");
+    assert.ok(pikachu150, "30c-150 missing from cards.json");
+    assert.deepEqual(pikachu150!.cameoOf, ["Eevee"]);
+    const eevee116 = cards.find((c) => c.id === "30c-116");
+    assert.ok(eevee116, "30c-116 missing from cards.json");
+    assert.deepEqual(eevee116!.variants, ["holo", "cosmos"]);
+    assert.equal(getVariantLabel("holo"), "Holofoil");
+    assert.equal(getVariantLabel("cosmos"), "Cosmos Holofoil");
+    assert.equal(getVariantLabel("jumbo"), "Jumbo");
+    const mep100 = cards.find((c) => c.id === "mep-100");
+    assert.ok(mep100, "mep-100 missing from cards.json");
+    assert.deepEqual(mep100!.variants, ["holo", "jumbo"]);
+    assert.equal(
+      mep100!.images.small,
+      "https://images.scrydex.com/pokemon/mep-100/medium",
+      "mep-100 holo and jumbo should share the Scrydex Sylveon ex art"
+    );
+    assert.equal(hasCustomCardImages(mep100!.images), true, "mep-100 should not use the card back");
 
     const poncho142 = cards.find((c) => c.id === "smp-jp-poncho-142");
     assert.ok(poncho142, "smp-jp-poncho-142 missing from cards.json");

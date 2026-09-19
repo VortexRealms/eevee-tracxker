@@ -161,6 +161,50 @@
       "mappingVersion": "2026-08-20",
       "note": "SM-P Zeraora and Friends jumbo — active eBay asking median from the two-result search."
     },
+    "mep-100.jumbo": {
+      "cardId": "mep-100",
+      "variant": "jumbo",
+      "marketplaceId": "EBAY_US",
+      "categoryId": "183454",
+      "queries": [
+        "Sylveon ex MEP 100 jumbo",
+        "Sylveon ex MEP100 oversized",
+        "Pokemon MEP100 jumbo promo Sylveon"
+      ],
+      "requiredTerms": [
+        "sylveon",
+        "mep"
+      ],
+      "preferredTerms": [
+        "jumbo",
+        "oversized",
+        "oversize",
+        "100",
+        "mep100"
+      ],
+      "excludedTerms": [
+        "regular",
+        "standard",
+        "lot",
+        "bundle",
+        "proxy",
+        "custom",
+        "reprint",
+        "graded",
+        "slab",
+        "psa",
+        "bgs",
+        "cgc",
+        "sgc",
+        "30c071",
+        "30c153"
+      ],
+      "minSamples": 2,
+      "maxPages": 3,
+      "limitPerPage": 50,
+      "mappingVersion": "2026-09-19",
+      "note": "MEP100 Sylveon ex oversized/jumbo promo — no Cardmarket listing yet; use active eBay asking median. Standard MEP100 stays on PokéWallet."
+    },
     "MEE-001.normal": {
       "cardId": "MEE-001",
       "variant": "normal",

@@ -28,6 +28,12 @@ export const VARIANT_PRICE_STORAGE_ALIASES: Record<
     holo: "reverse",
     reverse: "holo",
   },
+  // Pokewallet/Cardmarket still emit Normal + Holofoil; 116's pack foil is
+  // holofoil and the extra printing is cosmos holofoil.
+  "30c-116": {
+    holo: "normal",
+    cosmos: "holo",
+  },
 };
 
 /** Legacy ownership variant keys → new catalogue key (null = drop). */
@@ -45,6 +51,10 @@ export const VARIANT_OWNERSHIP_MIGRATIONS: Record<
   },
   "smp-jp-zeraora-jumbo": {
     normal: "jumbo",
+  },
+  "30c-116": {
+    normal: "holo",
+    holo: "cosmos",
   },
 };
 
@@ -87,8 +97,8 @@ export function remapPriceEntryVariantsToCatalogue(
     remapped[catalogueKey] = record;
   }
 
-  const usdOrder = ["normal", "reverse", "holo", "firstEdition"];
-  const eurOrder = ["normal", "holo", "reverse", "firstEdition"];
+  const usdOrder = ["normal", "reverse", "holo", "cosmos", "firstEdition"];
+  const eurOrder = ["normal", "holo", "cosmos", "reverse", "firstEdition"];
   let usd: number | null = null;
   let eur: number | null = null;
   for (const key of usdOrder) {

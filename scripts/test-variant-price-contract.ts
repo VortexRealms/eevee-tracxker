@@ -152,6 +152,7 @@ const ebayOnlyVariantSlots = [
   ["xy9-52", "worldChampionshipDeck2017KabuFukase"],
   ["sm11-72", "worldChampionshipDeck2019HenryBrand"],
   ["wcd2010-espeon", "normal"],
+  ["mep-100", "jumbo"],
 ] as const;
 for (const [cardId, variant] of ebayOnlyVariantSlots) {
   const mapping = ebayMappings[`${cardId}.${variant}`];

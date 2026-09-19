@@ -17,6 +17,7 @@ export const OUR_SET_TO_POKEWALLET: Record<string, SetLookupHint> = {
   csv95c: { pokewalletSetCode: "CSV9.5C", language: "chn" },
   cs6bc: { pokewalletSetCode: "CBB5C", language: "chn" },
   mep: { pokewalletSetCode: "MEP", language: "eng" },
+  "30c": { pokewalletSetCode: "30C", language: "eng" },
   smp: { pokewalletSetCode: "SMP", language: "eng" },
   svp: { pokewalletSetCode: "SVP", language: "eng" },
   basep: { pokewalletSetCode: "BASEP", language: "eng" },

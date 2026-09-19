@@ -40,6 +40,8 @@ export const TCGDEX_TO_PTCG_SET: Record<string, string> = {
   "swsh9.5tg": "swsh9tg",
   // Other
   fut2020: "fut20",
+  // Official abbreviation is 30C; keep PokéWallet/catalogue ids as 30c-71 not 30th-071.
+  "30th": "30c",
   // cel25 -> cel25 for regular cards; Classic Collection handled specially in normalizeCardId
 };
 
@@ -51,6 +53,7 @@ const PADDED_SETS = new Set([
   "sv10.5w", "sv10.5b",
   "svp",
   "swsh10.5", "swsh12.5",
+  "30th",
 ]);
 
 /**
@@ -63,6 +66,7 @@ const PADDED_SETS = new Set([
  *   swsh12.5gg-GG35 -> swsh12pt5gg-GG35  (current split sub-set)
  *   swsh9-TG22      -> swsh9tg-TG22       (legacy merged format)
  *   swsh9.5tg-TG22  -> swsh9tg-TG22       (current split sub-set)
+ *   30th-071    -> 30c-71
  *   cel25-17A   -> cel25c-17_A
  *   base2-3     -> base2-3   (unchanged)
  *   fut2020-2   -> fut20-2
@@ -116,6 +120,7 @@ export const PTCG_TO_TCGDEX_SET: Record<string, string> = {
   swsh9tg: "swsh9.5tg",
   cel25c: "cel25",
   fut20: "fut2020",
+  "30c": "30th",
 };
 
 export function toTcgdexCardId(ptcgId: string): string {

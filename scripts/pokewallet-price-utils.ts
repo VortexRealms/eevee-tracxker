@@ -52,6 +52,8 @@ const TCG_SUBTYPE_TO_VARIANT: Record<string, string> = {
   unlimited: "normal",
   holofoil: "holo",
   "unlimited holofoil": "holo",
+  "cosmos holofoil": "cosmos",
+  cosmos: "cosmos",
   "reverse holofoil": "reverse",
   "1st edition": "firstEdition",
   "1st edition holofoil": "firstEdition",
@@ -61,6 +63,7 @@ const TCG_SUBTYPE_TO_VARIANT: Record<string, string> = {
 const CM_VARIANT_TO_OUR: Record<string, string> = {
   normal: "normal",
   holo: "holo",
+  cosmos: "cosmos",
   reverse: "reverse",
   "reverse holo": "reverse",
 };

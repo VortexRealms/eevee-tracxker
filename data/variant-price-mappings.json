@@ -13,7 +13,7 @@
       }
     },
     "generatedBy": "scripts/build-variant-price-mappings.ts",
-    "updatedAt": "2026-08-17",
+    "updatedAt": "2026-09-19",
     "notes": "Every catalogue slot is listed. priceSheetVariant uses the normalized key stored in prices.variantsJson (normal, holo, reverse, or firstEdition), or null for manual-only/no API pricing. sqliteVariants contains only legacy price-history aliases; empty means use the catalogue variant key as-is.",
     "unresolvedCardIds": {
       "description": "Legacy references whose base cardId no longer exists in data/cards.json.",
@@ -47,6 +47,99 @@
       "setName": "McDonald's Collection 2024",
       "cardNumber": "9",
       "priceSheetVariant": "normal",
+      "sqliteVariants": []
+    },
+    "30c-116.cosmos": {
+      "cardName": "Eevee",
+      "setName": "30th Celebration",
+      "cardNumber": "116",
+      "priceSheetVariant": "holo",
+      "sqliteVariants": [],
+      "note": "Catalogue cosmos slot uses Pokewallet Holofoil (mapped from the former holo slot)."
+    },
+    "30c-116.holo": {
+      "cardName": "Eevee",
+      "setName": "30th Celebration",
+      "cardNumber": "116",
+      "priceSheetVariant": "normal",
+      "sqliteVariants": [],
+      "note": "Catalogue holo slot uses Pokewallet/Cardmarket Normal (mapped from the former normal slot)."
+    },
+    "30c-117.holo": {
+      "cardName": "Eevee",
+      "setName": "30th Celebration",
+      "cardNumber": "117",
+      "priceSheetVariant": null,
+      "sqliteVariants": []
+    },
+    "30c-118.holo": {
+      "cardName": "Eevee",
+      "setName": "30th Celebration",
+      "cardNumber": "118",
+      "priceSheetVariant": null,
+      "sqliteVariants": []
+    },
+    "30c-148.holo": {
+      "cardName": "Greninja ex",
+      "setName": "30th Celebration",
+      "cardNumber": "148",
+      "priceSheetVariant": null,
+      "sqliteVariants": []
+    },
+    "30c-149.holo": {
+      "cardName": "Pikachu ex",
+      "setName": "30th Celebration",
+      "cardNumber": "149",
+      "priceSheetVariant": null,
+      "sqliteVariants": []
+    },
+    "30c-150.holo": {
+      "cardName": "Pikachu ex",
+      "setName": "30th Celebration",
+      "cardNumber": "150",
+      "priceSheetVariant": null,
+      "sqliteVariants": []
+    },
+    "30c-153.holo": {
+      "cardName": "Sylveon ex",
+      "setName": "30th Celebration",
+      "cardNumber": "153",
+      "priceSheetVariant": null,
+      "sqliteVariants": []
+    },
+    "30c-69.holo": {
+      "cardName": "Espeon",
+      "setName": "30th Celebration",
+      "cardNumber": "69",
+      "priceSheetVariant": null,
+      "sqliteVariants": []
+    },
+    "30c-70.holo": {
+      "cardName": "Espeon ex",
+      "setName": "30th Celebration",
+      "cardNumber": "70",
+      "priceSheetVariant": null,
+      "sqliteVariants": []
+    },
+    "30c-71.holo": {
+      "cardName": "Sylveon ex",
+      "setName": "30th Celebration",
+      "cardNumber": "71",
+      "priceSheetVariant": null,
+      "sqliteVariants": []
+    },
+    "30c-91.holo": {
+      "cardName": "Umbreon",
+      "setName": "30th Celebration",
+      "cardNumber": "91",
+      "priceSheetVariant": null,
+      "sqliteVariants": []
+    },
+    "30c-92.holo": {
+      "cardName": "Umbreon ex",
+      "setName": "30th Celebration",
+      "cardNumber": "92",
+      "priceSheetVariant": null,
       "sqliteVariants": []
     },
     "base2-12.firstEdition": {
@@ -3130,6 +3223,22 @@
       "priceSheetVariant": "normal",
       "sqliteVariants": [],
       "note": "MEE 020/019 Art Rare (JP starter deck). Priced from eBay until Pokewallet lists the product."
+    },
+    "mep-100.holo": {
+      "cardName": "Sylveon ex",
+      "setName": "MEP Promos",
+      "cardNumber": "100",
+      "priceSheetVariant": null,
+      "sqliteVariants": [],
+      "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
+    },
+    "mep-100.jumbo": {
+      "cardName": "Sylveon ex",
+      "setName": "MEP Promos",
+      "cardNumber": "100",
+      "priceSheetVariant": null,
+      "sqliteVariants": [],
+      "note": "Manual price only unless you set priceSheetVariant to a Sheet key."
     },
     "vending1-032.normal": {
       "cardName": "Eevee",

@@ -24,6 +24,20 @@ const LOCAL_CATALOGUE_VARIANT_OVERRIDES: Record<string, string[]> = {
   "sv1-252": ["holo"],
   // BREAKpoint Rare; TCGdex omits reverse but Pokewallet lists Reverse Holofoil.
   "xy9-54": ["normal", "reverse"],
+  // 30th Celebration is foil-in-pack; Pokewallet lists Holofoil. TCGdex currently flags
+  // every card as "normal" only. 116 is regular holofoil plus cosmos holofoil.
+  "30c-69": ["holo"],
+  "30c-70": ["holo"],
+  "30c-71": ["holo"],
+  "30c-91": ["holo"],
+  "30c-92": ["holo"],
+  "30c-116": ["holo", "cosmos"],
+  "30c-117": ["holo"],
+  "30c-118": ["holo"],
+  "30c-148": ["holo"],
+  "30c-149": ["holo"],
+  "30c-150": ["holo"],
+  "30c-153": ["holo"],
 };
 
 const MERGED_CATALOGUE_VARIANT_OVERRIDES: Record<string, string[]> = {

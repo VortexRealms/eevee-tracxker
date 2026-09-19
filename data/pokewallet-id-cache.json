@@ -4445,5 +4445,96 @@
     "resolvedAt": "2026-08-31",
     "matchScore": 160,
     "searchQuery": "Sylveon ex CSV9.5C 234"
+  },
+  "mep-100": {
+    "pokewalletId": "pk_1351383f45a2d24ce738840b9e063ecedc15a118365a65d1d0ace51301fb37b82d4eb40bf4caa5680103a1e0",
+    "setCode": "MEP",
+    "resolvedAt": "2026-09-19",
+    "matchScore": 140,
+    "searchQuery": "Sylveon ex 100"
+  },
+  "30c-71": {
+    "pokewalletId": "pk_556455cd6a4a3c42626cdc5c20c8ad5a02bbd372d6d1493c5fc1c11c00eac16150fe6992bcfb191d75ff86cd390f8a",
+    "setCode": "30C",
+    "resolvedAt": "2026-09-19",
+    "matchScore": 155,
+    "searchQuery": "Sylveon ex 30th Celebration 71"
+  },
+  "30c-91": {
+    "pokewalletId": "pk_b3d046896a08eee6e574fef73bbf8a90cc056bd319b8dc958895d52d1ed73c797c2b5b4a7145a7013a94e8eaeccaf0",
+    "setCode": "30C",
+    "resolvedAt": "2026-09-19",
+    "matchScore": 175,
+    "searchQuery": "Umbreon 30th Celebration 91"
+  },
+  "30c-92": {
+    "pokewalletId": "pk_c96a3aa0d51dbfd886f4672c4584ed77e7c805de0907a9f695bb0bdbb5405f05cc7ec5da3750f8c47f956ab3286727",
+    "setCode": "30C",
+    "resolvedAt": "2026-09-19",
+    "matchScore": 175,
+    "searchQuery": "Umbreon ex 30th Celebration 92"
+  },
+  "30c-116": {
+    "pokewalletId": "pk_e903cdc3f938e6155809c0855a72872e7fe9953cd4c227eeb20ef2c3d25f83261fc684a245ed56ae3fce6019f811a9bf",
+    "setCode": "30C",
+    "resolvedAt": "2026-09-19",
+    "matchScore": 165,
+    "searchQuery": "Eevee 30th Celebration 116"
+  },
+  "30c-117": {
+    "pokewalletId": "pk_71cc0cb9c5d7331b513f41b0a7079583cce175b5de21b121f3fe8a7f4330e7eaedd924ac2128712058054b4a2df2ea78",
+    "setCode": "30C",
+    "resolvedAt": "2026-09-19",
+    "matchScore": 155,
+    "searchQuery": "Eevee 30th Celebration 117"
+  },
+  "30c-118": {
+    "pokewalletId": "pk_916a86021cae8fb34c7eca6f855c7d89476da0b6ca51d1b633861d3ed65d3737b7ce3c97fcf7d65bdc8d39b15f82fdce",
+    "setCode": "30C",
+    "resolvedAt": "2026-09-19",
+    "matchScore": 155,
+    "searchQuery": "Eevee 30th Celebration 118"
+  },
+  "30c-148": {
+    "pokewalletId": "pk_a319e57b17f5f42290fa1f655e9f09434d11e17b80c85838da472d030cc9546d4df1556929b0f1587f5198db55d51842",
+    "setCode": "30C",
+    "resolvedAt": "2026-09-19",
+    "matchScore": 155,
+    "searchQuery": "Greninja ex 30th Celebration 148"
+  },
+  "30c-149": {
+    "pokewalletId": "pk_c03907de26bc54b6b37fb6495295bb2ff79221604941a98776b5e6f904f88d651275fdaefcd657f38b8e82771088eb93",
+    "setCode": "30C",
+    "resolvedAt": "2026-09-19",
+    "matchScore": 155,
+    "searchQuery": "Pikachu ex 30th Celebration 149"
+  },
+  "30c-150": {
+    "pokewalletId": "pk_d63a0db12aad24da0c23d4c979b62bb4bee32ca55cf02dc14ffb8c2cf03958f559efe07b8685a3b929907fada2c24873",
+    "setCode": "30C",
+    "resolvedAt": "2026-09-19",
+    "matchScore": 155,
+    "searchQuery": "Pikachu ex 30th Celebration 150"
+  },
+  "30c-153": {
+    "pokewalletId": "pk_a9fae0df1bcabaad988df8de0e11affcbb20c22a0e462037775fec11ffe9d6aaa4442a1875d2e7e778c7f58fa3dc9f42",
+    "setCode": "30C",
+    "resolvedAt": "2026-09-19",
+    "matchScore": 155,
+    "searchQuery": "Sylveon ex 30th Celebration 153"
+  },
+  "30c-69": {
+    "pokewalletId": "pk_15bf3c2694166d02e88bc2873a73f1f2cd1469bc0e6a71abdb92c6083a590c98e0a31bab2011f0bf12a7a702e01a81",
+    "setCode": "30C",
+    "resolvedAt": "2026-09-19",
+    "matchScore": 175,
+    "searchQuery": "Espeon 30th Celebration 69"
+  },
+  "30c-70": {
+    "pokewalletId": "pk_35bade3853ade8103c775544c63424312d1241f8d268689917963ff30b16b580641d09d5fc7412adea60164ac29868",
+    "setCode": "30C",
+    "resolvedAt": "2026-09-19",
+    "matchScore": 175,
+    "searchQuery": "Espeon ex 30th Celebration 70"
   }
 }

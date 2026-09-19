@@ -1,7 +1,34 @@
 {
-  "updatedAt": "2026-08-13",
-  "totalEntries": 70,
+  "updatedAt": "2026-09-19",
+  "totalEntries": 73,
   "entries": [
+    {
+      "catalogueId": "30c-148",
+      "status": "included-existing",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "language": "en",
+      "notes": "SIR V2; Eevee cameo"
+    },
+    {
+      "catalogueId": "30c-149",
+      "status": "included-existing",
+      "cameoOf": [
+        "Espeon"
+      ],
+      "language": "en",
+      "notes": "SIR V2 day; Espeon cameo"
+    },
+    {
+      "catalogueId": "30c-150",
+      "status": "included-existing",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "language": "en",
+      "notes": "SIR V2 night; Eevee cameo"
+    },
     {
       "catalogueId": "basep-49",
       "status": "included-existing",
@@ -607,7 +634,7 @@
     }
   ],
   "summary": {
-    "included-existing": 39,
+    "included-existing": 42,
     "manual-updated": 22,
     "catalogue-existing": 9
   }

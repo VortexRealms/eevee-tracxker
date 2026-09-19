@@ -1,7 +1,49 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-13",
+  "updatedAt": "2026-09-19",
   "entries": [
+    {
+      "key": "en|30th celebration|148|greninja ex",
+      "cardName": "Greninja ex",
+      "setName": "30th Celebration",
+      "number": "148",
+      "language": "en",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "notes": "SIR V2; Eevee cameo",
+      "catalogueId": "30c-148",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "en|30th celebration|149|pikachu ex",
+      "cardName": "Pikachu ex",
+      "setName": "30th Celebration",
+      "number": "149",
+      "language": "en",
+      "cameoOf": [
+        "Espeon"
+      ],
+      "notes": "SIR V2 day; Espeon cameo",
+      "catalogueId": "30c-149",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
+    {
+      "key": "en|30th celebration|150|pikachu ex",
+      "cardName": "Pikachu ex",
+      "setName": "30th Celebration",
+      "number": "150",
+      "language": "en",
+      "cameoOf": [
+        "Eevee"
+      ],
+      "notes": "SIR V2 night; Eevee cameo",
+      "catalogueId": "30c-150",
+      "resolution": "resolved",
+      "ingest": "tcgdx-included"
+    },
     {
       "key": "en|wizards promos|49|snorlax",
       "cardName": "Snorlax",

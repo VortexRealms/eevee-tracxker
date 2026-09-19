@@ -31,6 +31,12 @@ const SET_BY_PREFIX: Record<string, PokemonCardSet> = {
     series: "Scarlet & Violet",
     releaseDate: "2023/03/31",
   },
+  "30c": {
+    id: "30c",
+    name: "30th Celebration",
+    series: "Mega Evolution",
+    releaseDate: "2026/09/16",
+  },
   cs6bc: {
     id: "cs6bc",
     name: "Gem Pack Vol. 5",

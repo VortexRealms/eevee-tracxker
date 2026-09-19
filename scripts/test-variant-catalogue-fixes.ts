@@ -48,6 +48,8 @@ const pokewalletEntry: PriceEntry = {
 assert.equal(resolvePriceStorageVariant("col1-22", "holo"), "reverse");
 assert.equal(resolvePriceStorageVariant("col1-22", "reverse"), "holo");
 assert.equal(resolvePriceStorageVariant("xy7-22", "holo"), "holo");
+assert.equal(resolvePriceStorageVariant("30c-116", "holo"), "normal");
+assert.equal(resolvePriceStorageVariant("30c-116", "cosmos"), "holo");
 
 assert.equal(migrateOwnershipVariant("col1-22", "reverse"), "holo");
 assert.equal(migrateOwnershipVariant("col1-22", "holo"), "reverse");
@@ -57,6 +59,9 @@ assert.equal(migrateOwnershipVariant("bwp-2012", "normal"), "jumbo");
 assert.equal(migrateOwnershipVariant("bwp-2012", "jumbo"), "jumbo");
 assert.equal(migrateOwnershipVariant("smp-jp-zeraora-jumbo", "normal"), "jumbo");
 assert.equal(migrateOwnershipVariant("smp-jp-zeraora-jumbo", "jumbo"), "jumbo");
+assert.equal(migrateOwnershipVariant("30c-116", "normal"), "holo");
+assert.equal(migrateOwnershipVariant("30c-116", "holo"), "cosmos");
+assert.equal(migrateOwnershipVariant("30c-116", "cosmos"), "cosmos");
 
 const catalogueEntry = remapPriceEntryVariantsToCatalogue("col1-22", pokewalletEntry);
 assert.equal(catalogueEntry.variants?.holo?.usd, 137.49);
@@ -83,5 +88,37 @@ assert.equal(byVariant.reverse, 172.83);
 
 const holoRecord = getVariantPriceRecord(colUmbreon, "holo", catalogueEntry);
 assert.equal(holoRecord?.usd, 137.49);
+
+const eevee116: PokemonCard = {
+  ...colUmbreon,
+  id: "30c-116",
+  name: "Eevee",
+  number: "116",
+  variants: ["holo", "cosmos"],
+};
+
+const eevee116Pw: PriceEntry = {
+  usd: 0.39,
+  eur: 0.5,
+  updatedAt: "2026-09-19",
+  source: "pokewallet",
+  variants: {
+    holo: { usd: 0.39, eur: null, updatedAt: "2026-09-19", source: "pokewallet" },
+    normal: { usd: null, eur: 0.5, updatedAt: "2026-09-19", source: "pokewallet" },
+  },
+};
+
+const eevee116Catalogue = remapPriceEntryVariantsToCatalogue("30c-116", eevee116Pw);
+assert.equal(eevee116Catalogue.variants?.holo?.eur, 0.5);
+assert.equal(eevee116Catalogue.variants?.cosmos?.usd, 0.39);
+assert.equal(eevee116Catalogue.variants?.normal, undefined);
+assert.equal(getPriceForCard(eevee116, "holo", {
+  meta: { ratesUpdatedAt: "" },
+  entries: { "30c-116": eevee116Catalogue },
+}).eur, 0.5);
+assert.equal(getPriceForCard(eevee116, "cosmos", {
+  meta: { ratesUpdatedAt: "" },
+  entries: { "30c-116": eevee116Catalogue },
+}).usd, 0.39);
 
 console.log("variant-catalogue-fixes: ok");

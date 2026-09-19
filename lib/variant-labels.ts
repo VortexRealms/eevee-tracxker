@@ -2,6 +2,8 @@ export const VARIANT_LABELS: Record<string, string> = {
   normal: "Normal",
   reverse: "Reverse Holofoil",
   holo: "Holofoil",
+  cosmos: "Cosmos Holofoil",
+  jumbo: "Jumbo",
   pokeball: "Poké Ball",
   masterball: "Master Ball",
   firstEdition: "1st Edition",

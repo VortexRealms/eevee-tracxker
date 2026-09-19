@@ -142,6 +142,9 @@ const RAW_ROWS: RawRow[] = [
   { cameoOf: "Sylveon", cardName: "Poncho-wearing Eevee", setName: "SM-P Promos", number: "144", language: "ja", catalogueId: "smp-jp-poncho-144", resolution: "manual", ingest: "manual-only", notes: "costume" },
   { cameoOf: "Sylveon", cardName: "Delcatty", setName: "Darkness Ablaze", number: "142", catalogueId: "swsh3-142", resolution: "resolved", ingest: "tcgdx-included", notes: "hairbrush" },
   { cameoOf: "Sylveon", cardName: "Jacinthe", setName: "Perfect Order", number: "122", catalogueId: "me03-122", resolution: "resolved", ingest: "tcgdx-included" },
+  { cameoOf: "Eevee", cardName: "Greninja ex", setName: "30th Celebration", number: "148", catalogueId: "30c-148", resolution: "resolved", ingest: "tcgdx-included", notes: "SIR V2; Eevee cameo" },
+  { cameoOf: "Espeon", cardName: "Pikachu ex", setName: "30th Celebration", number: "149", catalogueId: "30c-149", resolution: "resolved", ingest: "tcgdx-included", notes: "SIR V2 day; Espeon cameo" },
+  { cameoOf: "Eevee", cardName: "Pikachu ex", setName: "30th Celebration", number: "150", catalogueId: "30c-150", resolution: "resolved", ingest: "tcgdx-included", notes: "SIR V2 night; Eevee cameo" },
 ];
 
 function dedupeRows(rows: RawRow[]): CameoCardEntry[] {

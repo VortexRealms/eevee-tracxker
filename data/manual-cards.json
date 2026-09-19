@@ -3348,6 +3348,36 @@
     "catalogueLanguage": "en"
   },
   {
+    "id": "mep-100",
+    "name": "Sylveon ex",
+    "number": "100",
+    "rarity": "Promo",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1",
+      "ex"
+    ],
+    "types": [
+      "Psychic"
+    ],
+    "hp": "270",
+    "set": {
+      "id": "mep",
+      "name": "MEP Promos",
+      "series": "Scarlet & Violet",
+      "releaseDate": "2023/03/31"
+    },
+    "images": {
+      "small": "https://images.scrydex.com/pokemon/mep-100/medium",
+      "large": "https://images.scrydex.com/pokemon/mep-100/medium"
+    },
+    "variants": [
+      "holo",
+      "jumbo"
+    ],
+    "catalogueLanguage": "en"
+  },
+  {
     "id": "sm1-101a",
     "name": "Eevee",
     "number": "101a",
