@@ -69,10 +69,11 @@ export interface CollectionSetOption {
 }
 
 export function uniqueSetsFromCards(
-  cards: Pick<PokemonCard, "set">[]
+  cards: Pick<PokemonCard, "set" | "variants">[]
 ): CollectionSetOption[] {
   const byName = new Map<string, string>();
   for (const card of cards) {
+    if (!card.variants?.length) continue;
     const name = card.set.name;
     const date = card.set.releaseDate ?? "";
     const existing = byName.get(name);

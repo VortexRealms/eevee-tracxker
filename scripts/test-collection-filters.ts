@@ -154,11 +154,23 @@ assert.equal(isCameoCard(umbreon), false);
 }
 
 {
+  const emptySetCard = card({
+    id: "mee-1",
+    name: "Grass Energy",
+    set: {
+      id: "mee",
+      name: "Mega Evolution Energy",
+      series: "Mega Evolution",
+      releaseDate: "2025/09/25",
+    },
+    variants: [],
+  });
   const sets = uniqueSetsFromCards([
     umbreon,
     espeon,
     aquapolisUmbreon,
     darkFlareon,
+    emptySetCard,
   ]);
   assert.deepEqual(
     sets.map((s) => s.name),
