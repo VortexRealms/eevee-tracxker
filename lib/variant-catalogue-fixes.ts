@@ -56,6 +56,9 @@ export const VARIANT_OWNERSHIP_MIGRATIONS: Record<
     normal: "holo",
     holo: "cosmos",
   },
+  "swshp-SWSH129": {
+    normal: "holo",
+  },
 };
 
 export function resolvePriceStorageVariant(

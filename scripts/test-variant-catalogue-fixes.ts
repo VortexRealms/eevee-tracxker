@@ -3,7 +3,9 @@
  */
 
 import assert from "node:assert/strict";
-import { getPriceForCard, getVariantPriceRecord } from "../lib/cards";
+import cardsData from "../data/cards.json";
+import { getPriceForCard, getVariantPriceRecord, shouldMergeNormalOntoHolo } from "../lib/cards";
+import { mergeCatalogueCards } from "../lib/merge-catalogue";
 import {
   migrateOwnershipVariant,
   remapPriceEntryVariantsToCatalogue,
@@ -62,6 +64,8 @@ assert.equal(migrateOwnershipVariant("smp-jp-zeraora-jumbo", "jumbo"), "jumbo");
 assert.equal(migrateOwnershipVariant("30c-116", "normal"), "holo");
 assert.equal(migrateOwnershipVariant("30c-116", "holo"), "cosmos");
 assert.equal(migrateOwnershipVariant("30c-116", "cosmos"), "cosmos");
+assert.equal(migrateOwnershipVariant("swshp-SWSH129", "normal"), "holo");
+assert.equal(migrateOwnershipVariant("swshp-SWSH129", "holo"), "holo");
 
 const catalogueEntry = remapPriceEntryVariantsToCatalogue("col1-22", pokewalletEntry);
 assert.equal(catalogueEntry.variants?.holo?.usd, 137.49);
@@ -120,5 +124,37 @@ assert.equal(getPriceForCard(eevee116, "cosmos", {
   meta: { ratesUpdatedAt: "" },
   entries: { "30c-116": eevee116Catalogue },
 }).usd, 0.39);
+
+const swsh129FromFile = (cardsData as PokemonCard[]).find(
+  (card) => card.id === "swshp-SWSH129"
+);
+assert.ok(swsh129FromFile);
+assert.deepEqual(swsh129FromFile.variants, ["holo"]);
+assert.equal(shouldMergeNormalOntoHolo(swsh129FromFile), true);
+
+const { cards: mergedWithSpuriousNormal } = mergeCatalogueCards([
+  { ...swsh129FromFile, variants: ["normal", "holo"] },
+]);
+assert.deepEqual(
+  mergedWithSpuriousNormal.find((card) => card.id === "swshp-SWSH129")?.variants,
+  ["holo"]
+);
+
+const swsh129Pw: PriceEntry = {
+  usd: 19.67,
+  eur: 11.44,
+  updatedAt: "2026-09-30",
+  source: "pokewallet",
+  variants: {
+    holo: { usd: 19.67, eur: null, updatedAt: "2026-09-30", source: "pokewallet" },
+    normal: { usd: null, eur: 11.44, updatedAt: "2026-09-30", source: "pokewallet" },
+  },
+};
+const swsh129MergedPrice = getPriceForCard(swsh129FromFile, "holo", {
+  meta: { ratesUpdatedAt: "" },
+  entries: { "swshp-SWSH129": swsh129Pw },
+});
+assert.equal(swsh129MergedPrice.usd, 19.67);
+assert.equal(swsh129MergedPrice.eur, 11.44);
 
 console.log("variant-catalogue-fixes: ok");

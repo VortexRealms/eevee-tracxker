@@ -95,7 +95,11 @@ export function resolveSingleVariantAlias(
 }
 
 /** Cards where Pokewallet splits TCG holo USD and CM normal EUR onto separate keys. */
-const NORMAL_ONTO_HOLO_MERGE_IDS = new Set(["smp-SM240", "sm11-72"]);
+const NORMAL_ONTO_HOLO_MERGE_IDS = new Set([
+  "smp-SM240",
+  "sm11-72",
+  "swshp-SWSH129",
+]);
 
 export function shouldMergeNormalOntoHolo(card: PokemonCard): boolean {
   return NORMAL_ONTO_HOLO_MERGE_IDS.has(card.id);

@@ -16,6 +16,8 @@ import { CATALOGUE_VARIANT_OVERRIDES } from "./variant-catalogue-fixes";
 const LOCAL_CATALOGUE_VARIANT_OVERRIDES: Record<string, string[]> = {
   // Wizards promo #11 is holofoil-only plus the Jr Stamp Rally printing.
   "basep-11": ["holo", "wPromo"],
+  // SWSH129 is a holo-only Black Star promo; TCGdex also emits a spurious "normal" slot.
+  "swshp-SWSH129": ["holo"],
   // SWSH195 is a holo promo; TCGdex also emits a spurious "normal" slot with no price.
   "swshp-SWSH195": ["holo", "playPokemon", "jumbo"],
   // SWSH197 is the same pattern as SWSH195 (holo promo + Prize Pack + jumbo).
